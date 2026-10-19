@@ -217,3 +217,34 @@
 - Cassia: vigilância discreta (Halsey + 2 à paisana); prisão no dia da operação. "Ninguém perto dele antes disso."
 - Cisternas Dia 11: 123 °C. Ramal da Rede Cívica chega à galeria 3 "amanhã à tarde" (Dia 12).
 - Anel: Aurelia no escritório do porteiro olhando a 61; Ilan promete contar o "preço" quando souber.
+
+### Cap. 22 (Dia 12, Aurelia)
+- Discurso na base do leão de bronze (10h). Homem: mãe Ilka Torven, 76, rua dos Cardadores 11. Maren Duur apoia. Brígida (lenço vermelho) ergue a mão.
+- Tamsin autoriza abrir a 61 para operação de interdição sob Cassia. 6 homens dos Reinos derrubam a parede de tijolo (1h30).
+- Ramal da Rede Cívica chega à galeria 3 às 16h40 (23 pessoas; inclui Gorm, 3 dos Reinos, 6 alunos de Liesl, 4 de Neska); cano da grossura de um braço, feltro e lona, braçadeiras de 3 em 3 m no parapeito da ponte. Oriel abriu a porta da galeria e perguntou "esperando o quê?" — "a hora". Nara chora; Hanne a abraça. Tibo, Gorm e 2 guardas de vigia no cano.
+- Três trovões às 17h15; Ulvra deixa cair bolsa de pastor (4 furos de garra) com casca de bétula em runas (Thor): Hvel no alto, 12 famílias; barragem "chora", água sobe 1 palmo/hora; segura até amanhã à noite. Ulvra: 8 homens, gordo de luvas, magro que come maçã, caixa quente num trenó de vela no pátio; vão partir.
+- Operação marcada para o meio-dia do Dia 13.
+- Tenda: o Guardião deixou instrução ("o Carrasco pode velar").
+- Rio a oeste, estrelas, sem lua: declarações; um beijo; "depois depois".
+
+### Cap. 23 (Dia 13, 0h10–2h05, Sevran)
+- Oriel confessa: Calvenor contou-lhe em fev. 1184 e pediu que trouxesse o Carrasco; Oriel adiou 3 anos por medo. Outono de 1185: Ithren (velho, magro, cabelo branco curto, mãos cuidadosas) veio como peregrino; tinha o **original do Plano** (saiu da Casa do Fiel antes do incêndio); doutrina: Coroa = arquitetura/forma separável; "Credores"; Assembleia; leu o tratado de Oriel.
+- Oriel disse a Calvenor que o Carrasco recusara e que um agrimensor da Ordem faria. Depois Ithren mandou trazer Ilan (bode expiatório); Calvenor ditou a carta à Arrimo.
+- Hollen Vask começou a perguntar em setembro; Oriel assinou a dispensa e inventou a irmã; não sabe o destino de Vask.
+- Na Vigília: Ithren nas Cisternas junto à válvula (Interdição de fora para dentro pelas âncoras nos nós); Oriel subiu à plataforma do Sol a pedido de Calvenor ("fica comigo. É a última vez"); levou o **fiel** (agulha de bronze com balança gravada no cabo, instrumento da Ordem); "agora, Oriel"; pôs o fiel na junção ao lado das 3 marcas do menino; no fim Calvenor percebeu o destino e olhou para Oriel; Retorno.
+- Ithren prometera "uma semana" de frio; Brannoc passou pela válvula numa roupa feita por Ithren, com o fluxo parado 10 min; caixa = Mandato de Calvenor (cerâmica e cristal, "do tamanho de um homem dobrado"), precisa ficar quente.
+- Mortos: 208 (contados por Oriel).
+- Sevran revela o plano (meio-dia); Oriel quase diz sim; "se eu parar agora, ele morreu por nada"; tranca Sevran; toca o **sino das galerias** (3 + 3).
+- Sevran sai pela janela redonda girando o caixilho, pela calha da cúpula (41 passos), escada dos limpadores, telhado do 2º anel, muro do jardim do Banco; torce o tornozelo esquerdo. Avisa os guardas à paisana; Mara; vai à delegação.
+
+### Cap. 24 (Dia 13, ~3h–5h32, Mara)
+- Ilan dá o anel a Mara (dedo médio esquerdo, folgado). Ilan e Aurelia partem pela 61 (~4h).
+- Descida às 4h10: Cassia, Halsey, 6 guardas, Nara, Sevran, Mara (+ Tibo, Gorm, 2 guardas no cano). Oriel desceu às 1h05 pela escada do 3º anel até a galeria 2. Válvula aberta às 1h: cano zumbe mais alto; dreno ≈ 12–15 °C/dia (≈2 dias até 90 °C).
+- Galeria 3: rampa ~200 m; antecâmara redonda com 4 saídas (>40 °C); lã molhada (10 min).
+- Abóbada externa norte: sal-gema, ~60 m diâmetro, ~30 m altura, paredes ~108 °C, brilho avermelhado. Válvula = arco de pedra branca com batentes de bronze, 4 m × 3 m, raízes de cabos de cobre e prata; pelo vão, a noite do Passo Cinzento.
+- Pele: 23 discos falsos (iscas para placa) + 19 âncoras verdadeiras enterradas ~2 palmos sob o sal. Contraprova: placa (mente) × sonda (disco à temperatura do sal, 108) × Escuta das Pedras.
+- 1ª explosão: jorro de ar a ~200 °C; guarda de bigode ralo queimado (vive). **Segunda Muralha** de Cassia: 3 muralhas preparadas no caminho; 1ª rompe.
+- Ithren: véu de Clarão (rosto que não se fixa); sabe da recusa de Mara ao Decanato; "a Ordem estava errada… não sobre como. Sobre o quê… nenhuma está [bem]… A minha mestra descobriu… e a Ordem não quis ouvir. Então a Ordem caiu."; "toda coroa é uma dívida… a questão é só quem". Foge por **galeria de mineração** antiga (sai no leito do Lento, a 2 km, sob a Fornalha Velha; reaberta em outubro).
+- 2ª explosão: Nara queimada levemente; última muralha "gasta". **Placa de registro luminoso** (vidro de Clarão com sais de prata do Arquipélago; 3 por ano) registra o rosto real: comprido, magro, maçãs salientes, nariz curvo partido e mal consertado, olhos fundos claros, sobrancelhas brancas, cicatriz no canto esquerdo da boca.
+- Restam 17 âncoras; Sevran e Nara atravessam (20 min); Nara põe 17 **âncoras de sacrifício** (cerâmica das células do Orsk) nos caminhos junto à base do arco. 5h32: pele cai; Aurelia sente a ferida inteira.
+- Oriel ajoelhado junto à base do batente com o **fiel** encostado ao bronze.
