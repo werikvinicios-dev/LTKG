@@ -176,3 +176,23 @@
 - Ithren chamava a técnica de "evidência incompleta".
 - Par de soleiras: dois anéis de bronze escuro (300 anos; feitos para Ione, que nunca usou); passagem de 2 dedos (ar, som, papel); Aurelia pode fechar. Ilan usa no dedo médio da mão direita (em Ardósia: direita = dívida paga). Aurelia no dedo médio da mão esquerda, sob a luva.
 - Plano esboçado: alguém nas Cisternas, alguém no Passo Cinzento, alguém para fechar; comunicação pelo anel.
+
+### Cap. 18 (Dia 8)
+- Cisternas: 141 °C (7h, Politécnica).
+- Ulvra: cinza-azulada (ardósia molhada com prata), ~30 m, crista de espinhos translúcidos, olhos brancos de granizo; faz a própria nuvem; pousa no Sol; virote de besta de guarnição (guarda de 18 anos) fura a asa esquerda.
+- Descarga: Ilan corta o tentáculo da praça com Fio de Interdição na pata direita levantada do leão de bronze; Pivô de Cobre de Nara (base da torre, face leste, preso ao tronco leste) destruído (cratera); porta de ferro da escada de serviço arrancada; janelas da praça quebradas; gelo do rio rachado; ninguém morre. **Célula 1 (antiga) estoura**; queimadura de 2º grau no dorso da mão esquerda.
+- Aurelia abre a porta de Soleira (Ponte de Custódia, 40 u.v., 479 anos de existência) com "30 segundos de antecedência"; Cassia organiza a fila; 6.140 pessoas ao Átrio (Ione recebe). Sevran conduz os 40 mil da Feira para a margem sul a partir de um trenó.
+- Ulvra: Passo Cinzento; "casa de pedra encostada na montanha" com muitas portas; calor desde a noite mais longa; glaciar da Garganta derrete por baixo; barragem de gelo; Hvel (12 famílias, cabras); 3 ovos no gelo de cima (postos no outono; precisam de frio). 6–8 pessoas; trenós; cães; Brannoc apareceu na manhã do Dia 7 "de dentro da casa" (não pela estrada). Alguém apontou "coisa de metal comprida" (âncora) para ela.
+- Tratado no gelo (caderno de Mara): reconhecimento; cessar desvio; indenização (tribunal de danos de Retorno); direito de ninho; assento com voz sem voto no Conselho (terças). Ulvra: vigiar e informar; ajudar. Assinatura: risco de garra numa placa de vidro grossa. Assinam Garrod, Thor (runas), Cassia.
+- Ulvra a Aurelia: Calvenor dizia que ela "era a única de vocês que ainda não sabia o preço".
+- Sino de fim de perigo (não tocava há 112 anos).
+
+### Cap. 19 (Dia 9, Aurelia)
+- Ione vem a Vhalessa: 6.140 no Átrio; Salão das Tarifas virou dormitório (42 bebês em cestos). Mestre Ossan doou 200 sacos de grão (e quer revisão da tarifa). Ione abraça Aurelia ("menina"); trabalha para ela há 41 anos.
+- Tamsin: reabertura humanitária sob fiscalização (exceto 61 e extremidades adormecidas/não registradas); **advertência formal** à Soberania (primeira em mil anos). Parecer revisto de Cassia: favorável.
+- Neska (regente Ingeborg): cobre e cerâmica, 4 engenheiros; ~40 carrinhos. Hanne: "Agora a senhora pode."
+- Nova célula 1: hexagonal, cinza-escura, irregular, feita por Nara com a cerâmica das 2 células mortas do favo de Orsk (= receita da Ordem) + caulim + pó de ferro; molde de gesso; forno da Cooperativa.
+- Plano (Cozinha do Lento): (1) Cisternas: tirar a pele falsa (Mara, Sevran — Escuta das Pedras, Nara, Cassia); (2) Passo Cinzento: Ilan desmonta o recebimento; (3) Nara recebe o retorno pela Rede Cívica (ramal do Cobre pela ponte até a galeria 3; com engenheiros de Neska e 6 alunos da Politécnica enviados por Liesl Kaltz; 3 dias) e troncos da torre; Aurelia fecha do lado do Passo (estação dela desde 1098). Thor parte à noite com 12 homens, 6 trenós e os bodes para Hvel (3 dias). Cassia pedirá desinterdição da 61 ou assumirá. Ulvra avisará com três trovões. Operação em 4 dias (Dia 13); Cisternas ≈ 111 °C.
+- Plantas originais da estação do Passo Cinzento: 11 portas em arco na fachada, saguão, nível de serviço escavado na rocha.
+- Treino no saguão: portas 12 e 31 (30 m); 5ª tentativa: saída a 90° (Vetor Passante). Comando "agora" pelo anel. Contrapasso com bolas de neve de Tibo (portas 12/31 e 12/40 em ângulo); 16/20 em curva.
+- Marca no pulso: aos 18, ferro aquecido; frase "A Última Sentença pesa" — "Em quem a dá." Quase beijo: "Depois."
