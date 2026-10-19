@@ -94,3 +94,17 @@
 
 ## Contagem de mortos (sino da Alta Mesa)
 - Manhã Dia 1: 9 · Noite Dia 2: 23+
+
+### Cap. 10 (Dia 3, Sevran)
+- Sevran: acorda 4h30 há 29 anos; entrou na Casa aos 23 (1158); 26 anos na Casa; pregador dos domingos nos últimos 8; saiu em 1184 após 4 domingos repetindo a fórmula "O Sol não se apaga. O Sol de Inverno é eterno como o inverno."
+- Palavras da manhã: "Que o Sol se lembre de nós no frio. Que nós nos lembremos dele no calor."
+- Quartinho: catre, cadeira bamba, baú (carta lacrada com cera laranja e sinete do sol, embrulhada em linho, sob a brasa de altar fria), 12 livros.
+- Mesa de Avó Ruta com o nome do marido entalhado (tábua guardada). Gorm e a mãe dormem na Cozinha.
+- Nara: favo de Orsk — 2 células mortas, 6 cansadas; plano: coletor na chaminé + favo (3 dias); cobre: ~300 m de cabos de Orsk.
+- Revelação de Sevran (fev. 1184): Calvenor morrendo — há 30 anos tira mais das Cisternas do que o verão devolve; põe a diferença da Identidade; 5–10 invernos; quer "acabar direito", "entregar a casa arrumada"; Pacto vence em 1188.
+- Calvenor sobre a carta: "entregue-a só se tiver certeza de que não foi ele que me matou"; "ainda não sei se ele é o homem que eu acho que é".
+- Oriel e Sevran: noviços no mesmo ano, dividiram cela 2 anos. Tratado "Do Sol que se Dá" (frase sublinhada: "Toda coroa é uma dívida, e toda dívida deve ser paga a quem a sustentou").
+- Oriel nega saber de plano; "eu via"; diz que todo ano **ia atrás dele até a plataforma de baixo** (contradiz "primeira fila da praça" do cap. 6 — pista para o cap. 21).
+- Oriel encaminhou as cartas de Sevran à Arrimo (a Casa tem acordo de inspeção com a Arrimo).
+- Tamsin: nunca houve auto de recolhimento.
+- Mara joga Muralhas com Sevran e perde (52ª jogada). Mara vai "requisitar" 2 sacas de carvão da Câmara para a Cozinha (art. 22).
