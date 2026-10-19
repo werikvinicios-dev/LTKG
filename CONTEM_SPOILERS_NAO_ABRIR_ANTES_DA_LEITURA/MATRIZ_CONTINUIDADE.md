@@ -127,3 +127,34 @@
 - Dorn: parada, reanimado; em coma no São Brúlio.
 - Caderno de Dorn: "honor. 60 — pago adiant. pelo cliente"; "Exigência do cliente: I. V. pessoalmente"; "Cláusula de perman. 3 d. — exig. do cliente (não é padrão; consultar jurídico)"; "Cliente:" ilegível.
 - Aurelia aquece as mãos de Ilan; "vou cobrar… mais do que 112 dobras".
+
+### Cap. 13 (Dia 5, Nara)
+- Cabos de Orsk: 312 m. Coletor da Cozinha: manga de cobre por fora da chaminé.
+- Ilan: costelas — 1 quebrada, 1 trincada; enfaixadas no São Brúlio.
+- Os Sete Dedos: tubos de aferição pública (cláusula do Pacto); inspetor extinto há ~80 anos. Tampa da Politécnica: "AFERIÇÃO PÚBLICA — III — 905"; 38 m. Mercado do Sal (sob banco junto à fonte): 41 m (emenda com o último carretel de fio de prata de Ilan). Praça do Meio-Dia (sob a pata direita de um leão de bronze): 39 m.
+- Sonda: par termoelétrico ferro–cobre, 40 m de fio, mostrador calibrado por Nara.
+- Medições (Dia 5): Politécnica 161 °C (10h), 159 °C (17h40); Mercado do Sal 158; Praça 155. Normal: 184 °C em fev./1179 (aula de Nara); ~200+ em novembro. Queda ≈ 6 °C/dia (20× o consumo do deus vivo; 60× o vazamento natural). Limite útil ~90 °C → 10–12 dias (≈ Dia 16).
+- Elo necessário: "seção de uma porta".
+- Mara conta a Ilan sobre os relatórios; ele já percebera (olha as mãos); Mara enviou a recusa pela via ordinária às 6h.
+- Aurelia revela o pico de 19h02 e os registros "perfeitos" do teste de Brannoc.
+- Cassia: inspeção do nível de serviço no dia seguinte; pede que Aurelia comunique com antecedência seu trânsito pessoal. A curva de Nara fica presa na parede do gabinete.
+
+### Cap. 14 (Dia 5 noite, Aurelia)
+- Discussão na rua: "você centraliza tudo" × "alfaiates de forca"; "porque você ia perceber".
+- Escritório de Brannoc: estufa de carvão; chá do Delta com casca de laranja; xícaras lascadas; miniatura de Lys (16 anos, trança, sorriso torto); Lys queria ser cartógrafa (conheceu Fil aos 12); fez mapa da estação. Brannoc era regente em Tollsund em 1178 (40 km de Marenna). Lys foi visitar uma tia. "Não foi culpa sua."
+- Nível de serviço: 84 bancos abertos para inspeção. Porta 61 (emparedada): construída em 1098 para mina de estanho no Passo Cinzento (140 km NO); mina fechou em 1147; extremidade do Passo dormente; banco "perfeito demais" (sem ruído).
+- Fala de Brannoc: "dizem que há uma fêmea de tempestade que fez ninho lá em cima, num dos glaciares".
+- Livro de delegações (couro vermelho), renovação de 9 set. 1187: escopo inclui "manutenção de extremidades externas e válvulas de serviço vinculadas à estação"; explicação de Brannoc: válvulas de compensação térmica em 3 prédios da rua de trás.
+- Porteiro: Tobbe. Ilan espera 11h30–3h no banco em frente. Ilan agora dorme num quarto dos fundos da serralheria de Gunnar.
+
+### Cap. 15 (Dia 6)
+- Inspeção dos engenheiros da Câmara (chefe Ostrander): nada; porta 61 "adormecido, sem tensão residual, conforme".
+- Brannoc: palma direita enfaixada sob a luva ("queimei carregando braseiros no São Brúlio").
+- Porta da Neve (arco da muralha velha, norte). Comboio: ~60 trenós (outros 58 a caminho, +4 dias); bodes; canção de trabalho; perderam 2 bodes numa avalanche no Hrimgard.
+- Thor: ~2,15–2,20 m; barba ruiva em duas tranças com anéis de ferro; casaco de urso; cinto largo cravejado de ferro; luvas de ferro; martelo de cabo curto. Bodes Tanngrisnir e Tanngnjóstr.
+- Nove casas de abrigo do Hrimgard aquecidas por Calvenor há 200 anos; pastor morto na 7ª.
+- Skarsvik não assinou a Concordata. Assembleia.
+- Halsey desembainha; empurrão de Thor; Ilan intercepta; célula provisória (última porcelana de Hanne) com rede de trincas, inteira. Thor promete anel de ferro a Halsey.
+- Calvenor visitou Thor no verão passado: "Tor, quando eu me for, cuida dos meus."
+- Coroa de Hrímvald executada em 1172 (vale de Skjold, 3 dias de Skarsvik), 5 executores, 4 meses de plano; Thor carregou âncoras de dissipação; deu luvas de pele de lobo forradas de lã de bode ao menino de 19 anos (Ilan). Ilan as usou 2 invernos.
+- Thor fica até a cidade estar quente.
