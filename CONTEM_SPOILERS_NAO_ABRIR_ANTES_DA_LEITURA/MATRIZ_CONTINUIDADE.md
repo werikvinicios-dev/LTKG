@@ -108,3 +108,22 @@
 - Oriel encaminhou as cartas de Sevran à Arrimo (a Casa tem acordo de inspeção com a Arrimo).
 - Tamsin: nunca houve auto de recolhimento.
 - Mara joga Muralhas com Sevran e perde (52ª jogada). Mara vai "requisitar" 2 sacas de carvão da Câmara para a Cozinha (art. 22).
+
+### Cap. 11 (Dia 4, Mara)
+- Instrução reservada do Decanato do Colégio (recebida dia 1): registrar métodos de Ilan, relatar ao Decanato, confidencial em relação à Câmara. Relatório n.º 3: "improvável que seja o executor"; não relata técnicas. Mara conta a Cassia; escreve recusa da instrução (guardada, a decidir).
+- Edifício Kaltz: granito rosado; fornalha a carvão própria há 10+ anos. Liesl Kaltz (~30, chefe da contabilidade, óculos de metal).
+- Primo Anselm Breck: 8 distribuidoras licenciadas nos últimos 2 anos (nº 17 vendeu a Mara a 2 dobras). Cassia vai requisitar 9 mil t a preço de custo (art. 22).
+- Encomenda especial n.º 1187-44 (14 set.): Fiança Ltda. (Soleira), 900 células favo (pat. Kaltz 1181-07), cerâmica de lastro (ficha anexa em letra angulosa arcaica = receita da Ordem), punção fornecido pelo cliente, entrega armazém 14 cais do Lento, carta de crédito do Banco de Reservas. Pagou o triplo. Primeiro lote rejeitado (6 trincas de queima) → vendido pelo primo a Orsk.
+- Patente 1181-07 sem assinatura do inventor → nula (art. 31 do Estatuto da Liga dos Peritos de Âncora). Mara promete outra auditoria.
+- Armazém 14: varrido; buracos de âncoras de piso (bancada de teste); lona "F. L. — FRÁG"; carretel vazio de fio de prata fino; disco-selo de serviço do Consórcio das Passagens "VHL" com chave em relevo, gravado 87-09-22.
+- −28 °C.
+
+### Cap. 12 (Dia 4 noite)
+- Gralha Branca (dono velho e gordo). Dorn levado "para assinar algo"; sem casaco; cachecol verde ficou (Ilan o leva e o põe em Dorn depois).
+- Canal das Tinas: banhos públicos; bocas de pedra mantinham água aberta; gelo fino de 3 dias.
+- Eron Tahl: Registro de Mercenários nº 4011; sotaque das Cidades Livres do oeste (litoral); contrato: recuperar docs de Tamsin + Dorn sem depor por ≥10 dias; 200 dobras. Linha Seca: calcanhar e punho. Aprendeu com o barbudo (tavernas) que Ilan rouba âncoras carregadas e conta tempos.
+- Halsey: antebraço quebrado. Ilan: ferida de espada no braço direito de Eron; Ilan com 2 costelas quebradas (flanco esq.), hipotermia; perde 1 carretel de fio de prata no canal.
+- Eron: "Boa escolha, Carrasco. Ruim para você."
+- Dorn: parada, reanimado; em coma no São Brúlio.
+- Caderno de Dorn: "honor. 60 — pago adiant. pelo cliente"; "Exigência do cliente: I. V. pessoalmente"; "Cláusula de perman. 3 d. — exig. do cliente (não é padrão; consultar jurídico)"; "Cliente:" ilegível.
+- Aurelia aquece as mãos de Ilan; "vou cobrar… mais do que 112 dobras".
