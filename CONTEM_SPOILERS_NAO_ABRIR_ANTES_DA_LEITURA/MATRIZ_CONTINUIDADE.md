@@ -158,3 +158,21 @@
 - Calvenor visitou Thor no verão passado: "Tor, quando eu me for, cuida dos meus."
 - Coroa de Hrímvald executada em 1172 (vale de Skjold, 3 dias de Skarsvik), 5 executores, 4 meses de plano; Thor carregou âncoras de dissipação; deu luvas de pele de lobo forradas de lã de bode ao menino de 19 anos (Ilan). Ilan as usou 2 invernos.
 - Thor fica até a cidade estar quente.
+
+### Cap. 16 (Dia 7, Aurelia)
+- Cartório: senhor Ambrós Pimm (72, escrivão-chefe há 48 anos); formulário 7-B em 3 vias (regulamento de 1022, art. 4º §2º). Livro "VHALESSA — ESTAÇÃO DAS PORTAS — REGISTRO DE SERVIÇOS EXTERNOS — 1180–", p. 212+.
+- Válvulas 1–3: rua dos Tanoeiros 14, 16, 21 (0,4/0,3/0,4 u.v.). Válvula 4 (22 set. 1187): Cisternas, abóbada externa norte, acesso pela galeria técnica nº 3 da Casa da Fornalha; 40 u.v. (= porta de carga); autorização de acesso: Hollen Vask, Mestre das Galerias; nota a lápis de Pimm: "Cap. justif. pelo regente: pico do Acendimento. A. P."
+- Brannoc partiu às 5h com bolsa de viagem; levou a miniatura de Lys; deixou a carta ("toda coroa é uma dívida. Eu vim cobrar a minha").
+- Mara esteve em Marenna (auditora júnior, 29 anos, fev. 1178; 7 semanas lá dentro).
+- Revogação da delegação de Brannoc: tudo se apaga exceto a extremidade das Cisternas, envolta por "pele falsa" de âncoras alheias; aberta e passando calor. Forçar = Retorno nas Cisternas sob a Alta Mesa (15 mil pessoas).
+- Cassia emite ordem de detenção de Brannoc; manda guardas à galeria 3; Aurelia pede manutenção da suspensão. Aperto de mão entre Cassia e Aurelia.
+- Rede Cívica: 800 m² (Dia 7).
+
+### Cap. 17 (Dia 7 tarde/noite, Ilan)
+- Nara põe a última célula provisória de porcelana; próxima seria do favo (cerâmica das 2 células mortas do Orsk, moída e prensada).
+- Hollen Vask: pediu dispensa em 2 out. (irmã doente no Cais de Tamsin); Oriel diz que não via todas as autorizações; Mara consulta o Cais de Tamsin (2 dias) e pede lista das autorizações de Vask desde janeiro.
+- Marenna: febre; 14 portas; carta dos médicos em 16 mar.; fechamento em 17 mar. ao meio-dia; 40.312 mortos até maio; Aurelia leu todos os nomes em um ano. Lys Ister, 16, rua dos Tecelões 8, casa de Ilse Ister, tia paterna, †29 mar.
+- Noite das Sentenças: Ilan na estalagem Lanterna Torta (cais), copiando o mapa 3 noites; Casa do Fiel em Lumen (montanhas entre Bronze e Delta; 12 dias; ele fez em 9, matou um cavalo). Coalizão (mercenários + guardas de 3 Soberanias com ordem da Câmara) incendiou por 3 dias. Lista da Câmara: 108 nomes (Iolanthe, Ithren, aprendizes Sel e Marit, 11 e 12 anos). Ilan cavou 9 covas sem nome.
+- Ithren chamava a técnica de "evidência incompleta".
+- Par de soleiras: dois anéis de bronze escuro (300 anos; feitos para Ione, que nunca usou); passagem de 2 dedos (ar, som, papel); Aurelia pode fechar. Ilan usa no dedo médio da mão direita (em Ardósia: direita = dívida paga). Aurelia no dedo médio da mão esquerda, sob a luva.
+- Plano esboçado: alguém nas Cisternas, alguém no Passo Cinzento, alguém para fechar; comunicação pelo anel.
