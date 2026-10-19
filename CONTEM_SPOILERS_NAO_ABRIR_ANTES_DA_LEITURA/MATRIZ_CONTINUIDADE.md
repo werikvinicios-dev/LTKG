@@ -248,3 +248,16 @@
 - 2ª explosão: Nara queimada levemente; última muralha "gasta". **Placa de registro luminoso** (vidro de Clarão com sais de prata do Arquipélago; 3 por ano) registra o rosto real: comprido, magro, maçãs salientes, nariz curvo partido e mal consertado, olhos fundos claros, sobrancelhas brancas, cicatriz no canto esquerdo da boca.
 - Restam 17 âncoras; Sevran e Nara atravessam (20 min); Nara põe 17 **âncoras de sacrifício** (cerâmica das células do Orsk) nos caminhos junto à base do arco. 5h32: pele cai; Aurelia sente a ferida inteira.
 - Oriel ajoelhado junto à base do batente com o **fiel** encostado ao bronze.
+
+### Caps. 25–27 (Dia 13, ~4h–6h20) — CLÍMAX
+- Passagem pela 61: Passo Cinzento a 2.100 m (Vhalessa 300 m); ar quente/úmido, enxofre; estação aquecida pelo corredor.
+- Estação do Passo Cinzento: saguão com 11 portas em arco na parede da montanha; 61 = 3ª; válvula/corredor = **7ª** (porta de carga). Sala dos Ferrolhos (porta de madeira à direita) — Brannoc lá dentro com o livro de delegações (1098).
+- Nível de serviço (ex-câmara de compensação da mina): anel de ferro de ~8 m com 7 âncoras-mestras (desenho tipo favo de Nara); distribui para a rocha (reserva), para o poço do pátio (a caixa) e para a parede de gelo (Garganta) → rio de degelo → lago → barragem → Hvel. Engenheiro **Pell Andrask** (contratado em Neska) mantém a Jurisdição; ajuda Ilan. 3 homens: besteiro (nocauteado via âncora na água), espadachim (nocauteado via âncora carregada), Pell.
+- Fechamento de Contas: Ilan marca as 7 âncoras-mestras (giz, cauda à esquerda).
+- CISTERNAS: Oriel segura a junção aberta com um **2º fiel** no batente; Sevran o convence (bolo de mel) e Oriel solta o fiel. Aurelia pode fechar.
+- Trenó de vela no pátio: caixa (Mandato de Calvenor) com 3 cabos ao telhado; 12 cães; Eron Tahl. Partem ao amanhecer (6h20) com vento do glaciar.
+- Vetor Passante/Contrapasso no saguão: portas 3 e 9 (30 m). Aurelia segura a âncora do calcanhar de Eron contra a pedra dela (ele cai). Ilan chega à 7ª, segura o Fechamento; Aurelia fecha a porta. Eron escolhe o trenó e parte.
+- Retorno volta pelo cano da Rede Cívica → Cobre + 3 abrigos (noite tropical) + troncos da torre (Gorm/alavanca vermelha). Cisternas ficam ~118 °C (resto preservado).
+- Ulvra leva Ilan, Aurelia e Pell à barragem. **Thor** segura a barragem há 1 dia congelando o gelo (Brasa reversa); Hvel (pessoas/cabras) no alto; 12 casas perdidas.
+- Ilan pula no trenó (pego por Ulvra). Eron ajuda a abrir a caixa ("cumprindo o contrato de um jeito que o cliente não vai poder reclamar"). Aurelia abre uma soleira improvisada da água do lago (0 °C) sobre a caixa; cerâmica de lastro racha; **o Mandato de Calvenor se desfaz** (não é entregue a ninguém). Custo físico alto para Aurelia.
+- MUDANÇA vs. plano: a Matriz/Mandato é destruída, não entregue a Iolanthe. Credores seguem existindo; Ithren escapou (galeria de mineração); Brannoc preso? (resolver cap. 28). Epílogo ajustado.
