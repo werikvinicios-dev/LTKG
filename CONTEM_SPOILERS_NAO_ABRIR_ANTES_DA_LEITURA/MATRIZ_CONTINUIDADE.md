@@ -196,3 +196,24 @@
 - Plantas originais da estação do Passo Cinzento: 11 portas em arco na fachada, saguão, nível de serviço escavado na rocha.
 - Treino no saguão: portas 12 e 31 (30 m); 5ª tentativa: saída a 90° (Vetor Passante). Comando "agora" pelo anel. Contrapasso com bolas de neve de Tibo (portas 12/31 e 12/40 em ângulo); 16/20 em curva.
 - Marca no pulso: aos 18, ferro aquecido; frase "A Última Sentença pesa" — "Em quem a dá." Quase beijo: "Depois."
+
+### Cap. 20 (Dia 10)
+- Dorn acorda (cama 14, 3º andar do São Brúlio); quer o cachecol; propõe 12ª categoria de incidente; admite que os caibros não estavam podres.
+- Cliente da Arrimo: Casa da Fornalha (contrato de inspeção desde 1150 e tantos). Carta recebida em 29 out. 1187: "O Sol de Inverno deseja que o senhor Varek seja contratado e que permaneça em Vhalessa os três dias seguintes ao serviço. Ele deseja falar-lhe depois da Vigília." Assinada "Pela Intendência — O. Mast", sinete do sol em cera laranja. Ilan estava em Ardósia em outubro. Casa pagou o triplo, adiantado.
+- Dossiê chegou de Tamsin pelo relé (Tribunal dos Danos de Retorno), 18 folhas.
+- Memória: na mesa de pedra, Ilan pediu "Posso?"; Calvenor: "Dói ser Carrasco?" — "Ainda não sei."
+- Cozinha: favo ligado; mesas emprestadas; Gorm organiza a fila; Avó Ruta joga cartas com o velho de nariz roxo.
+- **Carta de Calvenor** (fev. 1184): ver texto no cap.; Iolanthe veio a Vhalessa 3 dias no fim do outono de 1175 sem avisar Ilan; desenhou o Plano; deixou cópia inacabada; Calvenor soube há "um ano" (1183) que o mais novo executor vivia; pediu a Oriel que o encontrasse (3 anos de demora); Oriel "tem ideias sobre o que eu sou"; Plano "debaixo da Fornalha, onde o meu varredor gosta de sentar".
+- Sevran percebe a mentira de Oriel; revela que Oriel mandou suas cartas do Sete Chaminés à Arrimo.
+- Lista de mortos de um quarteirão da Fornalha Velha: 11 nomes.
+
+### Cap. 21 (Dias 10–11)
+- Porta dos fundos da Casa: range passada a metade (Sevran e Oriel saíam de madrugada para bolo de mel; Oriel pagava).
+- Degrau largo do lado norte do pedestal; argamassa refeita; cilindro de latão com sinete do sol (laranja) e da balança (preta, rachada).
+- Plano: 42 folhas de papel de trapo, letra minúscula sem inclinação de Iolanthe ("I. N., outono de 1175"); usa o mapa de campo de Ilan (nota: "o menino mede bem. confiar no mapa dele."); declínio da Sustentação (10–15 invernos); "executar com plano antes disso. ele concorda."; Interdição de fora para dentro; Acendimento; "Com o consentimento dele, a junção não oferece resistência. Sem ele, seria impossível." (folha 22); rede de custódia civil (folhas 31–38) = Rede Cívica; folha 39: para no meio — "rota de transição: a definir. hipótese: rede de limiares… consultar a Soberania dos Limiares." / "ela ainda não sabe o preço. não lhe dizer antes da hora."
+- Mara: os assassinos seguiram o original do Plano e mudaram o destino na "folha 39".
+- Registros contra Oriel: assinatura igual na carta à Arrimo e na nota da lista de autorizações de Vask (112 itens; falta a da galeria 3); Cais de Tamsin: nenhum Vask, nenhuma irmã (registro sem falhas desde 1160); Vask na Casa desde 1172. Testemunha **Brígida Orn** (castanhas há 30 anos, esquina da face leste, 20 m do nicho; come na Cozinha às segundas): homem de capa laranja com gola brilhante, capuz, lanterna, mãos "como pão queimado", saiu pela porta de ferro logo após o baque e foi para a escadaria do rio. Contradição: "primeira fila" (tenda) × "subia atrás dele até a plataforma de baixo" (Sevran). Frase do tratado na carta de Brannoc.
+- Mara: hipótese alternativa (Oriel cúmplice ingênuo do consentimento, queimado pelo Retorno).
+- Cassia: vigilância discreta (Halsey + 2 à paisana); prisão no dia da operação. "Ninguém perto dele antes disso."
+- Cisternas Dia 11: 123 °C. Ramal da Rede Cívica chega à galeria 3 "amanhã à tarde" (Dia 12).
+- Anel: Aurelia no escritório do porteiro olhando a 61; Ilan promete contar o "preço" quando souber.
