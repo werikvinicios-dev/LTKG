@@ -190,7 +190,8 @@ peça a alguém de confiança que aplique as decisões.
 
 ### PDF para gráfica — `exportacoes/Leis_para_Matar_Deuses_Vol1_GRAFICA_sangria.pdf`
 O mesmo miolo, com 3 mm de sangria e as caixas de refile e de sangria (TrimBox e BleedBox)
-definidas em todas as páginas.
+definidas em todas as páginas. Nos dois PDFs, todas as fontes estão embutidas: nenhuma
+fonte-padrão do sistema é referenciada.
 
 ### EPUB 3 de luxo — `exportacoes/Leis_para_Matar_Deuses_Vol1_LUXO.epub`
 - **Validação:** aprovado no EpubCheck, o validador oficial, sem erros nem avisos.

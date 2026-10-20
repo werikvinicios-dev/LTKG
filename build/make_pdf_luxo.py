@@ -44,6 +44,12 @@ reg("GarSC", "EBGaramondSC-Regular.ttf")
 reg("Cin", "Cinzel-Regular.ttf"); reg("Cin-B", "Cinzel-Bold.ttf"); reg("Cin-SB", "Cinzel-SemiBold.ttf")
 pdfmetrics.registerFontFamily("Gar", normal="Gar", bold="Gar-SB", italic="Gar-I", boldItalic="Gar-SBI")
 pdfmetrics.registerFontFamily("GarSC", normal="GarSC", bold="GarSC", italic="Gar-I", boldItalic="Gar-I")
+# nenhuma fonte-padrão não embutida no PDF (gráficas costumam rejeitar): fonte inicial do canvas
+# e fonte padrão dos desenhos vetoriais passam a ser a EB Garamond embutida
+import reportlab.rl_config as _rlc
+from reportlab.graphics import shapes as _shapes
+_rlc.canvas_basefontname = "Gar"
+_shapes.STATE_DEFAULTS["fontName"] = "Gar"
 
 INK = HexColor("#1b1814")
 BRONZE = HexColor("#8a6631")
