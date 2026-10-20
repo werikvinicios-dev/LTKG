@@ -10,6 +10,7 @@ from fontTools.pens.transformPen import TransformPen
 
 FONTS = "/home/user/LTKG/build/fonts"
 CHROME = "/opt/pw-browsers/chromium-1194/chrome-linux/chrome"
+SHELL = "/opt/pw-browsers/chromium_headless_shell-1194/chrome-linux/headless_shell"
 
 _cache = {}
 
@@ -55,7 +56,7 @@ def text_path(text, font, size, x, y, tracking=0.0, anchor="start"):
     return pen.getCommands()
 
 def render(html_or_svg_path, png_path, width, height, transparent=True, scale=1):
-    args = [CHROME, "--headless=new", "--no-sandbox", "--disable-gpu", "--hide-scrollbars",
+    args = [SHELL, "--no-sandbox", "--disable-gpu", "--hide-scrollbars",
             f"--window-size={width},{height}", f"--force-device-scale-factor={scale}",
             f"--screenshot={png_path}"]
     if transparent:

@@ -82,7 +82,7 @@ def emblem(fill, uid="e"):
 
 def grad_def(uid):
     stops = "".join(f'<stop offset="{o}" stop-color="{c}"/>' for o, c in BRONZE_GRAD)
-    return f'<linearGradient id="{uid}-g" x1="0" y1="0" x2="1" y2="1">{stops}</linearGradient>'
+    return f'<linearGradient id="{uid}-g" gradientUnits="userSpaceOnUse" x1="0" y1="0" x2="1000" y2="1000">{stops}</linearGradient>'
 
 def wordmark(fill, x_center, y_top, scale=1.0):
     """Devolve caminhos do logotipo: 'LEIS PARA' entre filetes + 'MATAR DEUSES'."""
@@ -96,7 +96,8 @@ def wordmark(fill, x_center, y_top, scale=1.0):
     for side in (-1, 1):
         xa = x_center + side * (w1 / 2 + gap)
         xb = xa + side * rule
-        out.append(f'<line x1="{xa:.1f}" y1="{y1 - small*0.36:.1f}" x2="{xb:.1f}" y2="{y1 - small*0.36:.1f}" stroke="{fill}" stroke-width="{2.4*s:.1f}"/>')
+        xl, xr = min(xa, xb), max(xa, xb)
+        out.append(f'<rect x="{xl:.1f}" y="{y1 - small*0.36 - 1.3*s:.1f}" width="{xr-xl:.1f}" height="{2.6*s:.1f}" fill="{fill}"/>')
         xd = xb + side * 14 * s
         yd = y1 - small * 0.36
         d = 9 * s
@@ -124,7 +125,7 @@ def build(variant, fill_kind, bg=None):
     open(f"{OUT}/emblema_{variant}.svg", "w").write(em)
     svg_to_png(em, f"{OUT}/emblema_{variant}.png", 1000, 1000, transparent=bg is None)
     # --- assinatura vertical: emblema + logotipo ---
-    W, H = 1600, 1560
+    W, H = 1600, 1330
     ed2, eb2 = emblem(fill, uid + "V")
     wm, ww, wh = wordmark(fill, W / 2, 1010, 1.0)
     body = f'<g transform="translate({(W-860)/2},40) scale(0.86)">{eb2}</g>{wm}'
