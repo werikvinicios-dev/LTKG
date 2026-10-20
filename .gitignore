@@ -1,3 +1,6 @@
 build/pg-*.png
 build/chap-*.png
 *.tmp
+build/_*/
+build/_*.html
+build/fonts_src/

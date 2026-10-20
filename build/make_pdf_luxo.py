@@ -60,6 +60,7 @@ FW = TW - M_IN - M_OUT
 FH = TH - M_TOP - M_BOT
 
 BODY_SIZE, LEAD = 11.3, 15.2
+DROP_DY = 0.0
 hy = dict(hyphenationLang="pt_BR", embeddedHyphenation=1, uriWasteReduce=0.3)
 ST = {
     "body": ParagraphStyle("body", fontName="Gar", fontSize=BODY_SIZE, leading=LEAD,
@@ -87,8 +88,16 @@ NUM_EXT = ["", "Um", "Dois", "Três", "Quatro", "Cinco", "Seis", "Sete", "Oito",
 def esc(t):
     return t.replace("&", "&amp;").replace("<", "&lt;").replace(">", "&gt;")
 
+def curly(t):
+    """Aspas retas → tipográficas (“ ” e ‘ ’)."""
+    t = re.sub(r'(^|[\s(\[—–-])"', r'\1“', t)
+    t = t.replace('"', '”')
+    t = re.sub(r"(^|[\s(\[—–-])'", r"\1‘", t)
+    t = t.replace("'", "’")
+    return t
+
 def md_inline(t):
-    t = esc(t)
+    t = esc(curly(t))
     t = re.sub(r"\*\*(.+?)\*\*", r"<b>\1</b>", t)
     t = re.sub(r"\*(.+?)\*", r"<i>\1</i>", t)
     return t
@@ -145,20 +154,20 @@ class SceneBreak(Flowable):
             c.drawPath(p, fill=1, stroke=0)
 
 class DropCap(Flowable):
-    """Capitular de três linhas em Cinzel bronze."""
-    LINES = 3
+    """Capitular de duas linhas em Cinzel bronze (calibrada para o ParagraphAndImage)."""
+    LINES = 2
+    FIRST_BASE = 8.9           # base da 1ª linha medida a partir do topo da caixa da capitular
     def __init__(self, letter):
         Flowable.__init__(self); self.letter = letter
-        cap_h = (self.LINES - 1) * LEAD + BODY_SIZE * 0.66   # do topo das maiúsculas da 1ª linha à base da 3ª
-        self.size = cap_h / 0.70                              # altura de maiúscula do Cinzel ≈ 0,70 em
+        cap_h = (self.LINES - 1) * LEAD + BODY_SIZE * 0.66
+        self.size = cap_h / 0.70
         self.width = pdfmetrics.stringWidth(letter, "Cin", self.size)
-        self.height = self.LINES * LEAD - 2.2
+        self.height = self.LINES * LEAD - 0.5
     def wrap(self, aw, ah):
         return self.width, self.height
     def draw(self):
         c = self.canv; c.setFillColor(BRONZE); c.setFont("Cin", self.size)
-        # base da 3ª linha: a 1ª linha tem base em height - (LEAD - descida); aproximação calibrada
-        base = self.height - (self.LINES - 1) * LEAD - BODY_SIZE * 0.98 + 2.2
+        base = self.height - (self.FIRST_BASE + (self.LINES - 1) * LEAD) + DROP_DY
         c.drawString(0, base, self.letter)
 
 class Marker(Flowable):
@@ -198,10 +207,12 @@ class PlateMarker(Flowable):
     def __init__(self, image, caption):
         Flowable.__init__(self); self.image, self.caption = image, caption; self.width = self.height = 0
     def wrap(self, aw, ah): return 0, 0
-    def draw(self):
-        doc = self.canv._doctemplate
+    def drawOn(self, canvas, x, y, _sW=0):
+        doc = canvas._doctemplate
         doc.page_flags.update({"nohead", "nofolio"})
-        draw_plate(self.canv, self.image, self.caption)
+        draw_plate(canvas, self.image, self.caption)
+    def draw(self):
+        pass
 
 def draw_plate(c, image, caption):
     c.saveState()
@@ -214,7 +225,6 @@ def draw_plate(c, image, caption):
     c.drawImage(ir, x, y, w, h)
     c.setFillColor(HexColor("#c9a46a")); c.setFont("GarSC", 10.5)
     tw = pdfmetrics.stringWidth(caption, "GarSC", 10.5) + 1.2 * (len(caption) - 1)
-    c.drawString((PW - tw) / 2, y - 11 * mm, "")
     to = c.beginText(); to.setFont("GarSC", 10.5); to.setCharSpace(1.2)
     to.setTextOrigin((PW - tw) / 2, y - 11 * mm); to.textOut(caption); c.drawText(to)
     c.restoreState()
@@ -307,6 +317,10 @@ def opening_paragraph(text):
         k = 3 if len(words) > 4 else 1
         head, tail = " ".join(words[:k]), " ".join(words[k:])
         return Paragraph(f"— <font name='GarSC'>{md_inline(head)}</font> {md_inline(tail)}", ST["first"])
+    if len(t) < 95:
+        words = t.split(" ")
+        k = 3 if len(words) > 4 else 1
+        return Paragraph(f"<font name='GarSC'>{md_inline(' '.join(words[:k]))}</font> {md_inline(' '.join(words[k:]))}", ST["first"])
     m = re.match(r"^([\"“«]?)([A-Za-zÀ-ÿ])(\S*)\s(.*)$", t)
     letter, rest_word, tail = m.group(2), m.group(3), m.group(4)
     words = tail.split(" ")
@@ -381,14 +395,34 @@ def front_matter(toc_entries):
     st += [PageBreak(), Marker("nofolio"), Marker("nohead"), Spacer(1, 118 * mm)]
     st += [Paragraph(c if c else "&nbsp;", ST["small"]) for c in cred]
     # 5: sumário (recto)
-    st += [PageBreak(), ToParity(odd=True), Marker("nohead"), Marker("nofolio"), Spacer(1, 16 * mm),
+    st += [PageBreak(), ToParity(odd=True), Marker("nohead"), Marker("nofolio"), Spacer(1, 6 * mm),
            tracked("SUMÁRIO", "Cin", 12, 3.4, BRONZE), Spacer(1, 2 * mm), Fleuron(), Spacer(1, 7 * mm)]
     for label, name, page in toc_entries:
-        dots = f"<font color='#b9b2a6'> {'·' * 3} </font>"
-        st.append(Paragraph(
-            f"<font name='GarSC' color='#8a6631'>{esc(label)}</font>&nbsp;&nbsp;<i>{esc(name)}</i>"
-            f"{dots}<font name='Gar'>{page}</font>", ST["toc"]))
+        st.append(TocLine(label, name, page))
     return st
+
+class TocLine(Flowable):
+    H = 13.1
+    def __init__(self, label, name, page):
+        Flowable.__init__(self); self.label, self.name, self.page = label, name, str(page)
+    def wrap(self, aw, ah):
+        self.aw = aw; return aw, self.H
+    def draw(self):
+        c = self.canv; y = 3
+        lab = self.label
+        c.setFillColor(BRONZE)
+        t = c.beginText(); t.setFont("GarSC", 9.4); t.setCharSpace(0.6); t.setTextOrigin(0, y); t.textOut(lab); c.drawText(t)
+        lw = pdfmetrics.stringWidth(lab, "GarSC", 9.4) + 0.6 * (len(lab) - 1)
+        x0 = 33 * mm if lw < 31 * mm else lw + 2 * mm
+        c.setFillColor(INK); c.setFont("Gar-I", 10.8); c.drawString(x0, y, self.name)
+        nw = pdfmetrics.stringWidth(self.name, "Gar-I", 10.8)
+        c.setFont("Gar", 10.4); c.drawRightString(self.aw, y, self.page)
+        pw = pdfmetrics.stringWidth(self.page, "Gar", 10.4)
+        c.setFillColor(HexColor("#b9b2a6")); c.setFont("Gar", 9)
+        xs, xe = x0 + nw + 2.2 * mm, self.aw - pw - 2.2 * mm
+        x = xe
+        while x > xs:
+            c.drawCentredString(x, y, "·"); x -= 2.3 * mm
 
 def back_matter():
     colofao = ("Este livro foi composto em EB Garamond, revival de Georg Duffner e Octavio Pardo "

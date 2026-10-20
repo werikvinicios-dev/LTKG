@@ -1,0 +1,70 @@
+/* Leis para Matar Deuses — EPUB de luxo */
+@font-face { font-family: "EB Garamond"; font-style: normal; font-weight: normal; src: url("../fonts/EBGaramond-Regular.ttf"); }
+@font-face { font-family: "EB Garamond"; font-style: italic; font-weight: normal; src: url("../fonts/EBGaramond-Italic.ttf"); }
+@font-face { font-family: "EB Garamond"; font-style: normal; font-weight: bold; src: url("../fonts/EBGaramond-SemiBold.ttf"); }
+@font-face { font-family: "EB Garamond SC"; font-style: normal; font-weight: normal; src: url("../fonts/EBGaramondSC-Regular.ttf"); }
+@font-face { font-family: "Cinzel"; font-style: normal; font-weight: normal; src: url("../fonts/Cinzel-Regular.ttf"); }
+
+html, body { margin: 0; padding: 0; }
+body {
+  font-family: "EB Garamond", Garamond, "Times New Roman", serif;
+  font-size: 1em; line-height: 1.45;
+  color: #1b1814;
+  text-align: justify;
+  -webkit-hyphens: auto; -epub-hyphens: auto; hyphens: auto;
+  orphans: 2; widows: 2;
+}
+p { margin: 0; text-indent: 1.3em; }
+em, i { font-style: italic; }
+
+/* abertura de capítulo */
+section.level1 { page-break-before: always; break-before: page; }
+h1 {
+  font-family: "EB Garamond", serif; font-style: italic; font-weight: normal;
+  font-size: 1.75em; line-height: 1.2; text-align: center; color: #1b1814;
+  margin: 3.2em 0 0.35em 0; page-break-after: avoid; break-after: avoid;
+  -webkit-hyphens: none; hyphens: none;
+}
+h1 .num {
+  display: block; font-family: "Cinzel", serif; font-style: normal;
+  font-size: 0.42em; letter-spacing: 0.22em; color: #8a6631; margin-bottom: 0.9em;
+  text-transform: uppercase;
+}
+h1 .sep { display: none; }
+h1.unnumbered { display: none; }
+img.emblema-img { display: block; margin: 0.6em auto 2.2em auto; width: 2.6em; height: auto; }
+p:has(> img.emblema-img) { text-indent: 0; text-align: center; }
+.fleuron { text-align: center; text-indent: 0; color: #8a6631; font-size: 0.8em; margin: 0.2em 0 2.4em 0; letter-spacing: 0.4em; }
+
+/* primeiro parágrafo: capitular + versalete */
+.abertura p { text-indent: 0; }
+.abertura p::first-line { font-variant: small-caps; font-variant-caps: small-caps; letter-spacing: 0.03em; }
+.abertura.capitular p::first-letter {
+  float: left; font-family: "Cinzel", serif; color: #8a6631;
+  font-size: 3.05em; line-height: 0.82; margin: 0.06em 0.09em 0 0; padding: 0;
+}
+
+/* quebra de cena */
+p.quebra { text-align: center; text-indent: 0; color: #8a6631; font-size: 0.7em; letter-spacing: 0.9em;
+  margin: 1.1em 0 1.1em 0; page-break-after: avoid; }
+p.quebra + p, p.depois-quebra { text-indent: 0; }
+
+/* fim */
+.fim p { text-align: center; text-indent: 0; font-style: italic; color: #8a6631; margin-top: 1.2em; }
+
+/* pranchas */
+div.prancha { text-align: center; page-break-before: always; break-before: page; margin: 0; padding: 0; }
+div.prancha img { max-width: 100%; max-height: 92vh; height: auto; }
+div.prancha p { text-indent: 0; text-align: center; }
+div.prancha p:last-child { text-indent: 0; text-align: center; font-variant: small-caps; letter-spacing: 0.12em;
+  color: #8a6631; font-size: 0.85em; margin-top: 0.6em; }
+
+/* páginas pré-textuais */
+.rosto { text-align: center; text-indent: 0; }
+.rosto img.logo { width: 78%; max-width: 22em; height: auto; margin-top: 2.5em; }
+.rosto p { text-indent: 0; text-align: center; }
+.rosto .volume { font-family: "Cinzel", serif; letter-spacing: 0.3em; color: #8a6631; font-size: 0.8em; margin-top: 1.4em; }
+.rosto .subtitulo { font-style: italic; font-size: 1.35em; margin-top: 0.3em; }
+.rosto .autor { font-family: "Cinzel", serif; letter-spacing: 0.25em; font-size: 0.95em; margin-top: 3em; }
+.creditos p { text-indent: 0; text-align: left; font-size: 0.78em; color: #5d5850; margin-bottom: 0.6em; line-height: 1.35; }
+.colofao p { text-indent: 0; text-align: center; font-style: italic; font-size: 0.85em; color: #6f6a62; margin-top: 2em; }
