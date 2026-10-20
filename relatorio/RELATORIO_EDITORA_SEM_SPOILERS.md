@@ -116,7 +116,60 @@ original.
 
 ## 6. Continuidade: correções e pendências
 
-<!-- PREENCHER: resultado da revisão de continuidade -->
+Depois da revisão de prosa, um editor de continuidade conferiu o livro inteiro. Ele usou as
+pendências registradas capítulo a capítulo e a matriz de fatos.
+
+**Correções mecânicas aplicadas (9 itens, 10 edições, capítulos 3, 5, 10, 12, 13, 18, 19 e 20).**
+Todas são referências de tempo relativas ("ontem", "anteontem", "há quatro dias", "doze dias
+antes", "a tarde inteira") que não batiam com a contagem de dias do próprio livro. Já estavam
+assim na V1. Cada uma tem uma única correção possível e não muda quem fez o quê, nem quando
+alguma coisa é revelada. Todas estão listadas, com o trecho antes e depois, no registro interno.
+
+**Pendências para sua decisão (37 itens, nenhum alterado no texto).** São pontos em que a solução
+depende de uma escolha sua: blocagem e geometria de cenas, horários de sequências
+simultâneas, números de fundo, duas questões de regra de magia e imprecisões que podem ser falas
+deliberadas de personagem. Nenhum muda o enredo. A maioria se resolve com uma palavra ou meia
+frase. A tabela abaixo descreve cada item sem contar a história. O texto exato, o contexto e a
+proposta detalhada estão no §4 do registro interno, que tem spoilers: leia depois do livro, ou
+peça a alguém de confiança que aplique as decisões.
+
+| # | Cap(s). | Natureza (sem spoiler) | Proposta | Impacto |
+|---|---|---|---|---|
+| 1 | 24 | Um efeito de resistência ao calor aparece sem fonte nem custo visíveis (regra da magia). | Meia frase que mostre a fonte e o custo, ou manter como mistério deliberado para os próximos volumes. | Alta |
+| 2 | 24–26 | Os horários de uma sequência simultânea em dois lugares não fecham entre si. | Ajustar dois horários. | Alta |
+| 3 | 24–25 | Uma personagem secundária aparece em dois lugares no mesmo horário. | Trocar por outro oficial numa das cenas. | Alta |
+| 4 | 25–26 | A orientação de uma manobra entre duas portas (esquerda/direita, leste) é ambígua. | Fixar de que lado se faz a contagem. | Alta |
+| 5 | 26 | As distâncias de um personagem em relação a duas portas são geometricamente impossíveis. | Ajustar um número. | Média |
+| 6 | 12 | Um acoplamento a distância não mostra como o fio chega ao ponto de apoio (regra da magia). | Meia frase de blocagem. | Alta |
+| 7 | 18 | Um intervalo de “pouco mais de um segundo” não comporta as ações que acontecem nele. | “Vários segundos”, ou uma pausa explícita. | Média |
+| 8 | 24 | Uma fala cita uma das sete leis pelo número errado. | Trocar o número da lei. | Alta |
+| 9 | 30 | Uma fala atribui a um objeto acontecimentos de antes de ele existir. | Trocar o objeto ou a lista de acontecimentos. | Alta |
+| 10 | 17 | Uma imagem é vista através de um objeto antes de o par dele estar no lugar. | Trocar o que se vê. | Média |
+| 11 | 19 | A contagem de um prazo de dez dias dá um dia de diferença. | Não fixar a data na fala. | Média |
+| 12 | 24 e 26 | O fim de um capítulo e o início de outro dão posições diferentes para o mesmo personagem. | Ajustar uma frase. | Média |
+| 13 | 24 | As distâncias internas de um ambiente não fecham. | Ajustar dois números. | Média |
+| 14 | 19 | A trajetória de um objeto lançado num treino não fecha com a parede do fundo. | Uma oração de blocagem. | Média |
+| 15 | 18 | A mesma figurante aparece em dois lugares distantes no mesmo momento. | Trocar o artigo definido por indefinido numa das cenas. | Baixa |
+| 16 | 19, 24, 27 | A temperatura de um reservatório sobe sem causa narrada. | Ajustar o número final. | Média |
+| 17 | 11 | Um objeto é guardado ao lado de outro que já estava com outra pessoa. | Trocar o objeto de referência. | Baixa |
+| 18 | 11 | “As três” sugere a presença de alguém que não é citado na cena. | Decidir a presença ou trocar por “as duas”. | Média |
+| 19 | 16 | O tempo em que um objeto ficou num lugar não fecha com a biografia do personagem. | “Durante anos”. | Média |
+| 20 | 1 e 21 | A quantidade de um equipamento urbano diverge entre dois capítulos. | Fixar um único número. | Média |
+| 21 | 9 | As datas de uma história pregressa ficam um ano fora de uma data documental. | Ajustar um dos dois números. | Baixa |
+| 22 | 14 | “No ano passado” não bate com registros do ano corrente. | “Na primavera” (se não for imprecisão de personagem). | Baixa |
+| 23 | 7 | Uma fala situa uma frase num lugar onde ela não foi dita. | Trocar o lugar. | Baixa |
+| 24 | 15 | “Nunca o vi” pode contradizer uma lembrança posterior. | Manter (é coerente) ou acrescentar um gesto de reconhecimento. | Baixa |
+| 25–27 | 21 e 23 | Três referências de tempo em cenas de madrugada (“ontem”, “na véspera”) dependem de contar a madrugada como o dia anterior. | Escolher uma convenção. | Baixa |
+| 28 | 23–24 | Duas estimativas de horário para o mesmo fato. | Manter (são estimativas de personagem). | Baixa |
+| 29 | 11 | “Dois dias antes” pode ser “três”. | Conferir se houve conversa fora de cena. | Baixa |
+| 30 | 13 | Um “ontem” fica apertado na agenda de uma personagem. | Manter. | Baixa |
+| 31 | 8 | O lugar de uma fala lembrada difere do lugar onde ela foi dita. | Trocar o lugar. | Baixa |
+| 32 | 7 | A descrição de uma corrente de ar se contradiz no mesmo parágrafo. | Trocar “base” por “alto”. | Baixa |
+| 33 | 10 | “A terceira carta” não bate com a contagem do capítulo 1. | “A última carta”. | Baixa |
+| 34 | 3 | Uma personagem fala de um interrogatório que ainda não aconteceu. | Manter (evasiva) ou ajustar o tempo verbal. | Baixa |
+| 35 | 24 | A impressão sensorial (“lugar frio”) de um lugar quente, ouvida à distância. | Manter. | Baixa |
+| 36 | 17 e 19 | Um item de equipamento aparece desgastado sem causa narrada. | Meia frase ou retirar o desgaste. | Média |
+| 37 | 4 | A contagem “segunda noite” depende de onde se começa a contar. | Manter. | Baixa |
 
 ## 7. Diagramação e parte gráfica
 

@@ -1076,7 +1076,7 @@ Ione leu por cima do ombro dela.
 
 — Eu sei que ela está seguindo o artigo 14. Eu ajudei a escrever o artigo 14. — Aurelia ergueu os olhos para Ione. — Um suspeito sob custódia. Quem?
 
-Ione hesitou. Depois foi até a mesa de Fil, onde se acumulavam os papéis que chegavam de toda parte pelos relés do Átrio, e remexeu na pilha até achar uma folha amarela, de uma agência de notícias das Cidades de Bronze, que tinha chegado pela porta de Vhalessa uma hora antes e que ninguém tinha lido. Leu em silêncio e a entregou a Aurelia.
+Ione hesitou. Depois foi até a mesa de Fil, onde se acumulavam os papéis que chegavam de toda parte pelos relés do Átrio, e remexeu na pilha até achar uma folha amarela, de uma agência de notícias das Cidades de Bronze, que tinha chegado pela porta de Vhalessa pouco antes e que ninguém tinha lido. Leu em silêncio e a entregou a Aurelia.
 
 Eram três linhas, mal impressas, com um borrão de tinta no canto.
 
@@ -1948,7 +1948,7 @@ Ela o olhou com mais curiosidade do que gostaria.
 
 Mara Quen fez um barulhinho que podia ser uma tosse.
 
-— Senhor Varek — disse Aurelia, devagar —, eu passei mil anos pedindo às pessoas que *não* se ajoelhassem. Hoje de manhã pedi a um homem que vende bolinhos de grão-de-bico que não se ajoelhasse. Ontem pedi a um mestre de guilda. O senhor seria o primeiro, em muito tempo, a não me obrigar a pedir.
+— Senhor Varek — disse Aurelia, devagar —, eu passei mil anos pedindo às pessoas que *não* se ajoelhassem. Ontem à noite pedi a um homem que vende bolinhos de grão-de-bico que não se ajoelhasse. Ontem pedi a um mestre de guilda. O senhor seria o primeiro, em muito tempo, a não me obrigar a pedir.
 
 — Então estamos de acordo nisso.
 
@@ -3818,7 +3818,7 @@ Avó Ruta tirou a mão do braço dele.
 
 Nara Voss chegou às sete, com Tibo e um carrinho de mão cheio de ferramentas, e subiu direto para o sótão sem tomar a sopa que ele ofereceu.
 
-Ele subiu atrás, só para ver — não entendia de reservatórios, e ela deixou isso claro em menos de um minuto. Ficou encostado no batente da porta de carvalho reforçado, a que o doutor Orsk tinha aberto para o Carrasco duas noites antes, e olhou.
+Ele subiu atrás, só para ver — não entendia de reservatórios, e ela deixou isso claro em menos de um minuto. Ficou encostado no batente da porta de carvalho reforçado, a que o doutor Orsk tinha aberto para o Carrasco quatro noites antes, e olhou.
 
 O sótão estava frio agora, frio como o resto do prédio, e cheirava a madeira queimada e enxofre. O favo do doutor Orsk continuava no meio, entre as vigas inclinadas do telhado: um armário de cerâmica branca e bronze com trezentos e vinte e quatro alvéolos, todos opacos, todos frios. Os cabos de cobre que desciam dele para as paredes estavam soltos, desligados, enrolados no chão como cobras mortas. Alguém da Casa da Fornalha tinha vindo na manhã da Vigília arrancar os pregos das paredes, como o Carrasco prometera. Arrancaram e foram embora sem levar o favo. Depois o deus caiu, e ninguém mais veio.
 
@@ -3934,7 +3934,7 @@ Não falou da carta.
 
 — Oriel. — Sevran ouviu o próprio tom ao dizer o nome e não gostou dele, sem saber direito o que nele o incomodava. — Nós fomos noviços juntos. Entramos no mesmo ano. Dividimos cela durante dois anos. Ele é… — Hesitou. — É o homem mais devoto que eu já conheci. Amava Calvenor do jeito que algumas pessoas amam o mar. Sem precisar que o mar soubesse que elas existiam.
 
-— Ele disse ontem, na tenda — falou a Soberania —, que Calvenor lutou até o fim.
+— Ele disse anteontem, na tenda — falou a Soberania —, que Calvenor lutou até o fim.
 
 — Imagino que tenha dito.
 
@@ -4838,7 +4838,7 @@ Ela não soltou as mãos dele.
 
 — Quem é ele?
 
-— Eron Tahl. Mercenário registrado. Número quatro mil e onze. Ele me disse, para o caso de eu querer processar. — Ilan abriu os olhos. — É o melhor lutador que eu já enfrentei, Aurelia. Ele não tem nada para ler. E sabia exatamente como eu ia lutar, porque um homem que eu derrotei há quatro dias anda contando a história em todas as tavernas da margem sul.
+— Eron Tahl. Mercenário registrado. Número quatro mil e onze. Ele me disse, para o caso de eu querer processar. — Ilan abriu os olhos. — É o melhor lutador que eu já enfrentei, Aurelia. Ele não tem nada para ler. E sabia exatamente como eu ia lutar, porque um homem que eu derrotei há cinco dias anda contando a história em todas as tavernas da margem sul.
 
 — Você perdeu.
 
@@ -5062,7 +5062,7 @@ Nara olhou para ele.
 
 — Os manômetros da Casa…
 
-— Os manômetros da Casa são da Casa. Ligados às Cisternas por tubos que passam pela Casa, calibrados por técnicos da Casa, lidos na galeria de controle da Casa. Se alguém quisesse que os manômetros dissessem que está tudo bem, Nara, não precisaria mexer nas Cisternas. Bastaria mexer nos manômetros. — Ele fez uma pausa. — Anteontem, no alto da torre, alguém pôs no piso uma trilha de âncoras que respondiam a qualquer sondagem com a mesma resposta, para quem perguntasse duas vezes no mesmo ritmo achar que estava tudo bem. Eu não confio mais em nada nesta cidade que só tenha um jeito de ser medido.
+— Os manômetros da Casa são da Casa. Ligados às Cisternas por tubos que passam pela Casa, calibrados por técnicos da Casa, lidos na galeria de controle da Casa. Se alguém quisesse que os manômetros dissessem que está tudo bem, Nara, não precisaria mexer nas Cisternas. Bastaria mexer nos manômetros. — Ele fez uma pausa. — Há três dias, no alto da torre, alguém pôs no piso uma trilha de âncoras que respondiam a qualquer sondagem com a mesma resposta, para quem perguntasse duas vezes no mesmo ritmo achar que estava tudo bem. Eu não confio mais em nada nesta cidade que só tenha um jeito de ser medido.
 
 Nara pôs a tigela de sopa no banco, intacta.
 
@@ -5152,7 +5152,7 @@ Nara olhou para ela.
 
 — A senhora vai andar comigo a cidade inteira atrás de tampas de bronze?
 
-— Eu andei mil cento e quarenta degraus atrás de uma armadilha anteontem. — A deusa se levantou da neve e limpou o casaco com as mãos. — Tampas de bronze vão ser um descanso.
+— Eu andei mil cento e quarenta degraus atrás de uma armadilha há três dias. — A deusa se levantou da neve e limpou o casaco com as mãos. — Tampas de bronze vão ser um descanso.
 
 ---
 
@@ -7026,7 +7026,7 @@ Tinha trazido. Nara Voss não saía de casa sem pelo menos um Pivô de Cobre na 
 
 — A base da torre! — gritou ele. — Face leste! Na porta da escada de serviço! Crava no chão e prende no tronco!
 
-O tronco: a coluna de bronze da grossura de um homem, embutida na parede da escada de serviço, que subia das Cisternas Quentes até o Sol. Ilan a tinha tocado quatro dias antes, subindo a escada, e a sentira fria e sob tensão. Era bronze maciço, duzentos e vinte metros dele, do alto da torre até o chão e abaixo do chão, até a rocha. E lá em cima, agarrada à armação da lente, estava uma dragoa de tempestade com a crista carregada até a ponta dos espinhos.
+O tronco: a coluna de bronze da grossura de um homem, embutida na parede da escada de serviço, que subia das Cisternas Quentes até o Sol. Ilan a tinha tocado seis dias antes, subindo a escada, e a sentira fria e sob tensão. Era bronze maciço, duzentos e vinte metros dele, do alto da torre até o chão e abaixo do chão, até a rocha. E lá em cima, agarrada à armação da lente, estava uma dragoa de tempestade com a crista carregada até a ponta dos espinhos.
 
 Um raio procura o caminho mais fácil até a terra. Da crista da dragoa até a praça, o caminho mais fácil era o ar úmido daquela chuva que congelava: direto, duzentos e vinte metros para baixo, até a primeira coisa alta, molhada e condutora que encontrasse. A multidão.
 
@@ -7758,7 +7758,7 @@ A segunda tentativa foi menos desastrosa. Desta vez ele empurrou tarde: ficou es
 
 Na terceira, saiu da trinta e um indo para o leste. Não muito. Uns trinta graus. Mas para o leste.
 
-Na quarta, quem errou foi ela. Disse *agora* um instante antes da hora, porque estava cansada e porque tinha passado a tarde inteira segurando a porta de Neska aberta para o cobre. Ele empurrou quando ela disse, o piso do arco de saída não estava lá, e ele bateu na parede de novo, desta vez com o ombro direito. Ela gritou e correu até ele — e o encontrou sentado no chão, rindo, de olhos fechados, com as duas mãos apertando o flanco.
+Na quarta, quem errou foi ela. Disse *agora* um instante antes da hora, porque estava cansada e porque tinha passado a manhã inteira segurando a porta de Neska aberta para o cobre. Ele empurrou quando ela disse, o piso do arco de saída não estava lá, e ele bateu na parede de novo, desta vez com o ombro direito. Ela gritou e correu até ele — e o encontrou sentado no chão, rindo, de olhos fechados, com as duas mãos apertando o flanco.
 
 — Desculpa — disse ela, se ajoelhando ao lado dele. — Desculpa, Ilan. Fui eu. Falei cedo.
 
@@ -8256,7 +8256,7 @@ Ela não insistiu. Ele ficou grato por isso também.
 
 Voltaram a andar. No fim da rua, onde ela desembocava no cais, o rio congelado se abria diante deles, com a Feira do Gelo cheia de fumaça; do outro lado, a Praça do Meio-Dia; e, acima dela, a torre, escura, com o Sol apagado lá no alto como um olho fechado.
 
-Ilan tirou do bolso do colete a carta, dobrada nas três dobras, e a olhou mais uma vez. Depois a guardou de volta no bolso de dentro, junto ao peito, onde tinha guardado, doze dias antes, um fragmento de cerâmica com uma balança torta.
+Ilan tirou do bolso do colete a carta, dobrada nas três dobras, e a olhou mais uma vez. Depois a guardou de volta no bolso de dentro, junto ao peito, onde tinha guardado, onze dias antes, um fragmento de cerâmica com uma balança torta.
 
 — Hoje à noite — disse.
 
