@@ -1,0 +1,47 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 1000" width="1000" height="1000"><defs><mask id="bronze_chapadoE-disk" maskUnits="userSpaceOnUse" x="0" y="0" width="1000" height="1000">
+      <rect width="1000" height="1000" fill="white"/>
+      <polyline points="372,404 446,470 428,500 522,562 506,594 628,652" fill="none" stroke="black" stroke-width="13" stroke-linejoin="miter"/>
+      <polygon points="486,336 514,336 514,768 500,884 486,768" fill="black" stroke="black" stroke-width="22" stroke-linejoin="miter"/>
+    </mask></defs><circle cx="500" cy="500" r="440" fill="none" stroke="#B48C4E" stroke-width="7"/>
+<circle cx="500" cy="500" r="412" fill="none" stroke="#B48C4E" stroke-width="2.4"/>
+<polygon points="500.0,36.0 513.0,60.0 500.0,84.0 487.0,60.0" fill="#B48C4E"/>
+<polygon points="862.8,210.7 852.1,235.8 825.2,240.6 835.9,215.5" fill="#B48C4E"/>
+<polygon points="952.4,603.2 926.1,610.6 905.6,592.6 931.9,585.2" fill="#B48C4E"/>
+<polygon points="701.3,918.0 679.2,902.1 680.5,874.8 702.6,890.8" fill="#B48C4E"/>
+<polygon points="298.7,918.0 297.4,890.8 319.5,874.8 320.8,902.1" fill="#B48C4E"/>
+<polygon points="47.6,603.2 68.1,585.2 94.4,592.6 73.9,610.6" fill="#B48C4E"/>
+<polygon points="137.2,210.7 164.1,215.5 174.8,240.6 147.9,235.8" fill="#B48C4E"/>
+<polygon points="667.7,490.6 706.0,500.0 667.7,509.4" fill="#B48C4E"/>
+<polygon points="664.4,534.4 683.5,549.2 659.6,552.5" fill="#B48C4E"/>
+<polygon points="650.0,575.7 678.4,603.0 640.6,592.0" fill="#B48C4E"/>
+<polygon points="625.2,612.0 634.4,634.4 612.0,625.2" fill="#B48C4E"/>
+<polygon points="388.0,625.2 365.6,634.4 374.8,612.0" fill="#B48C4E"/>
+<polygon points="359.4,592.0 321.6,603.0 350.0,575.7" fill="#B48C4E"/>
+<polygon points="340.4,552.5 316.5,549.2 335.6,534.4" fill="#B48C4E"/>
+<polygon points="332.3,509.4 294.0,500.0 332.3,490.6" fill="#B48C4E"/>
+<polygon points="335.6,465.6 316.5,450.8 340.4,447.5" fill="#B48C4E"/>
+<polygon points="350.0,424.3 321.6,397.0 359.4,408.0" fill="#B48C4E"/>
+<polygon points="374.8,388.0 365.6,365.6 388.0,374.8" fill="#B48C4E"/>
+<polygon points="612.0,374.8 634.4,365.6 625.2,388.0" fill="#B48C4E"/>
+<polygon points="640.6,408.0 678.4,397.0 650.0,424.3" fill="#B48C4E"/>
+<polygon points="659.6,447.5 683.5,450.8 664.4,465.6" fill="#B48C4E"/>
+<circle cx="500" cy="500" r="146" fill="#B48C4E" mask="url(#bronze_chapadoE-disk)"/>
+<circle cx="500" cy="128" r="21" fill="#B48C4E"/>
+<rect x="491" y="146" width="18" height="150" fill="#B48C4E"/>
+<rect x="485" y="160" width="30" height="6" fill="#B48C4E"/>
+<rect x="485" y="182" width="30" height="6" fill="#B48C4E"/>
+<rect x="485" y="204" width="30" height="6" fill="#B48C4E"/>
+<rect x="485" y="226" width="30" height="6" fill="#B48C4E"/>
+<rect x="485" y="248" width="30" height="6" fill="#B48C4E"/>
+<rect x="485" y="270" width="30" height="6" fill="#B48C4E"/>
+<polygon points="486,336 514,336 514,768 500,884 486,768" fill="#B48C4E"/>
+<polygon points="201.3,344.6 796.8,271.5 798.7,287.4 203.2,360.5" fill="#B48C4E"/>
+<polygon points="472,316 500,300 528,316 500,346" fill="#B48C4E"/>
+<circle cx="202.2" cy="352.6" r="11" fill="#B48C4E"/>
+<line x1="202.2" y1="352.6" x2="146.2" y2="524.6" stroke="#B48C4E" stroke-width="3.2"/>
+<line x1="202.2" y1="352.6" x2="258.2" y2="524.6" stroke="#B48C4E" stroke-width="3.2"/>
+<path d="M140.2,524.6 Q202.2,570.6 264.2,524.6 Z" fill="#B48C4E"/>
+<circle cx="797.8" cy="279.4" r="11" fill="#B48C4E"/>
+<line x1="797.8" y1="279.4" x2="741.8" y2="451.4" stroke="#B48C4E" stroke-width="3.2"/>
+<line x1="797.8" y1="279.4" x2="853.8" y2="451.4" stroke="#B48C4E" stroke-width="3.2"/>
+<path d="M735.8,451.4 Q797.8,497.4 859.8,451.4 Z" fill="#B48C4E"/></svg>
