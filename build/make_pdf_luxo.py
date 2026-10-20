@@ -7,7 +7,7 @@ Margens espelhadas, hifenização pt-BR, sem viúvas nem órfãs, capitulares, c
 abrindo sempre em página ímpar, pranchas ilustradas, sumário com páginas reais.
 
 Uso: python3 build/make_pdf_luxo.py [--sangria]   (--sangria gera a versão de gráfica,
-     com 3 mm de sangria e marcas de corte)
+     com 3 mm de sangria e TrimBox/BleedBox definidos em todas as páginas)
 """
 import os, re, sys, glob
 from reportlab.lib.units import mm
@@ -246,6 +246,9 @@ class Book(BaseDocTemplate):
     # margens espelhadas: ímpar (recto) tem a margem interna à esquerda
     def _begin(self, canv, doc):
         canv._doctemplate = self
+        if BLEED:   # caixas PDF para a gráfica: refile (TrimBox) e sangria (BleedBox)
+            canv.setTrimBox((B, B, B + TW, B + TH))
+            canv.setBleedBox((0, 0, PW, PH))
         odd = self.page % 2 == 1
         self.body_frame._x1 = B + (M_IN if odd else M_OUT)
         self.body_frame._geom()
@@ -282,8 +285,6 @@ class Book(BaseDocTemplate):
                 p = canv.beginPath(); p.moveTo(xx, yy + d); p.lineTo(xx + d, yy); p.lineTo(xx, yy - d); p.lineTo(xx - d, yy); p.close()
                 canv.drawPath(p, fill=1, stroke=0)
         canv.restoreState()
-        if BLEED:
-            crop_marks(canv)
 
 def crop_marks(c):
     c.saveState(); c.setStrokeColor(HexColor("#000000")); c.setLineWidth(0.25)
@@ -432,7 +433,9 @@ def back_matter():
     return [PageBreak(), ToParity(odd=True), Marker("nohead"), Marker("nofolio"), Spacer(1, 120 * mm),
             SVGFlow(f"{LOGO}/emblema_bronze_chapado.svg", 12 * mm), Spacer(1, 6 * mm),
             Paragraph(colofao, ParagraphStyle("col", parent=ST["center"], fontName="Gar-I", fontSize=9.6,
-                                              leading=13.5, textColor=GREY))]
+                                              leading=13.5, textColor=GREY)),
+            # última página em branco (verso), para o miolo fechar em número par
+            PageBreak(), Marker("nofolio"), Marker("nohead"), Spacer(1, 1)]
 
 PLATES = {
     3: (f"{ART}/atrio.jpg", "O Átrio de Soleira"),

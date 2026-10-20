@@ -144,7 +144,7 @@ if __name__ == "__main__":
                                         "EBGaramond-SemiBold.ttf", "EBGaramondSC-Regular.ttf",
                                         "Cinzel-Regular.ttf")]
     cmd = ["pandoc", emd, "-f", "markdown+fenced_divs+bracketed_spans+raw_html", "-t", "epub3",
-           "--epub-title-page=false", f"--css={B}/epub.css", f"--epub-cover-image={EXP}/capa_ebook.jpg",
+           "--epub-title-page=false", f"--css={B}/epub.css", f"--epub-cover-image={EXP}/capa/capa_ebook.jpg",
            "--toc", "--toc-depth=1", "--split-level=1", "-o", f"{EXP}/Leis_para_Matar_Deuses_Vol1_LUXO.epub"]
     for f in fonts:
         cmd.append(f"--epub-embed-font={f}")

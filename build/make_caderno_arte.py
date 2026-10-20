@@ -266,20 +266,19 @@ pages.append(page(f"""
 # 13 — o livro: abertura e miolo
 pages.append(page(f"""
 <div style="position:absolute;left:18mm;top:16mm" class="kicker">O livro</div>
-<div style="position:absolute;left:18mm;top:28mm;display:flex;gap:6mm">
+<div style="position:absolute;left:0;right:0;top:26mm;display:flex;gap:8mm;justify-content:center">
   <img src="{ART}/miolo-007.png" style="height:150mm;box-shadow:0 2mm 7mm rgba(0,0,0,.6)">
   <img src="{ART}/miolo-008.png" style="height:150mm;box-shadow:0 2mm 7mm rgba(0,0,0,.6)">
-  <img src="{ART}/miolo-009.png" style="height:150mm;box-shadow:0 2mm 7mm rgba(0,0,0,.6)">
 </div>
-<div style="position:absolute;left:18mm;right:18mm;top:184mm"><p class="small">Miolo em 16 × 23 cm: EB Garamond
+<div style="position:absolute;left:33.5mm;right:33.5mm;top:184mm"><p class="small">Miolo em 16 × 23 cm: EB Garamond
 11,3/15,2, margens espelhadas, capitulares em Cinzel bronze, primeiras palavras em versalete, quebras de cena com
 três losangos, capítulos sempre em página ímpar, pranchas sobre fundo noturno.</p></div>""", folio="13"))
 # 14 — capa completa
 pages.append(page(f"""
 <div style="position:absolute;left:18mm;top:16mm" class="kicker">A capa</div>
-<img src="{ROOT}/exportacoes/capa/capa_completa_previa.png" style="position:absolute;left:18mm;top:28mm;width:261mm;
+<img src="{ROOT}/exportacoes/capa/capa_completa_previa.png" style="position:absolute;left:33.5mm;top:26mm;width:230mm;
  box-shadow:0 2mm 7mm rgba(0,0,0,.6)">
-<div style="position:absolute;left:18mm;right:18mm;top:184mm"><p class="small">Contracapa, lombada e frente, com
+<div style="position:absolute;left:33.5mm;right:33.5mm;top:186mm"><p class="small">Contracapa, lombada e frente, com
 3 mm de sangria. A largura da lombada é calculada a partir do número de páginas e da gramatura do papel.</p></div>""",
                   folio="14"))
 # 15 — créditos

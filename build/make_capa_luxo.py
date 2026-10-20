@@ -130,7 +130,7 @@ if __name__ == "__main__":
     from PIL import Image
     im = Image.open(f"{OUT}/capa_frente_300dpi.png").convert("RGB")
     im.save(f"{OUT}/capa_frente.jpg", quality=92)
-    im.resize((1600, round(1600 * im.height / im.width)), Image.LANCZOS).save(f"{ROOT}/exportacoes/capa_ebook.jpg", quality=90)
+    im.resize((1600, round(1600 * im.height / im.width)), Image.LANCZOS).save(f"{OUT}/capa_ebook.jpg", quality=90)
     # ---- capa completa com sangria
     W = BL + TW + SPINE + TW + BL; H = BL + TH + BL
     blurb = "".join(f"<p>{t}</p>" for t in BLURB)
