@@ -346,4 +346,4 @@ if TESTE:
             if mk.frame <= f: S.camera = mk.camera
         S.render.filepath = f"{OUT}/teste_{f:04d}.png"; bpy.ops.render.render(write_still=True)
 else:
-    S.render.filepath = f"{OUT}/q_"; bpy.ops.render.render(animation=True)
+    S.render.filepath = f"{OUT}/q_"; S.render.use_overwrite = False; bpy.ops.render.render(animation=True)   # retoma: pula quadros prontos
