@@ -218,21 +218,21 @@ PERS = {
     "mara": ("Mara Quen", "Auditora dos pactos", "Humana · 32 anos · Jurista · Auditora",
              "Analisa pactos, coleta provas e mantém a memória do que foi acordado. Rígida, perspicaz e implacável com contradições.",
              "Sem prova, não há lei. Sem memória, tudo se repete.", ["#3A3A3A", "#EFE8DA", "#5E1B17", "#C9A15A", "#8E1B22"]),
-    "nara": ("Nara Voss", "Engenheira de âncoras", "Humana · 28 anos · Construtora · Arquiteta",
+    "nara": ("Nara Voss", "Engenheira de âncoras", "Humana · 29 anos · Construtora · Arquiteta",
              "Projeta, constrói e mantém as âncoras que sustentam portais. Prática, brilhante e teimosa. Acredita em soluções, não em milagres.",
              "Alguém precisa construir o que outros apenas invocam.", ["#6E6E6E", "#3B2F26", "#2E5DA8", "#B4532A", "#8E1B22"]),
     "sevran": ("Sevran", "O ex-sacerdote", "Humano · 45 anos · Memória institucional",
                "Carrega a memória das instituições e de tudo que já caiu. Irônico, compassivo e perigosamente esperançoso.",
                "Até deuses caem. E alguém precisa cuidar dos que ficam.", ["#3B2F26", "#6B3B2A", "#EFE8DA", "#C9C2B3", "#2F4A3A"]),
 }
-def ficha(x, y, w, h, key, img, big=False, flip=False):
+def ficha(x, y, w, h, key, img, big=False, flip=False, vpos="22%", fit="cover"):
     n, r, dados, txt, quote, pal = PERS[key]
     chips = "".join(f'<span style="display:inline-block;width:20px;height:14px;background:{c};margin-right:3px;border:1px solid #5a4a2e"></span>' for c in pal)
     side = "right" if not flip else "left"
     ipos = "left" if not flip else "right"
     fade = "fade-l" if not flip else "fade-r"
     tw = w * (0.46 if big else 0.5)
-    return panel(x, y, w, h, "", A(img), f"{ipos} 22%", extra=
+    return panel(x, y, w, h, "", A(img), f"{ipos} {vpos}", fit=fit, extra=
                  f'<div class="img {fade}"></div><div style="position:absolute;{side}:16px;top:14px;width:{tw:.0f}px;z-index:4">'
                  f'<div class="h1" style="font-size:{30 if big else 21}px;letter-spacing:3px">{n.upper()}</div>'
                  f'<div class="sc" style="font-size:{11 if big else 9}px;margin:3px 0 9px">{r}</div>'
@@ -250,7 +250,7 @@ def prancha_5():
                    '<div class="sc" style="position:absolute;left:0;right:0;bottom:16px;text-align:center;font-size:8.5px;line-height:1.7">Portais · Leis · Povos<br>Deuses · Consequências</div>'))
     b.append(ficha(868, 8, 572, 470, "aurelia", "06_personagens/PE-012_aurelia_dourada_retrato.png", True, flip=True))
     b.append(ficha(8, 486, 472, 340, "mara", "06_personagens/PE-003_mara_quen_retrato.png"))
-    b.append(ficha(488, 486, 472, 340, "nara", "06_personagens/PE-004_nara_voss_retrato.png"))
+    b.append(ficha(488, 486, 472, 340, "nara", "06_personagens/PE-028_nara_voss_ponte_da_cidade.png", vpos="4%", fit="auto 140%;background-repeat:no-repeat"))
     b.append(ficha(968, 486, 472, 340, "sevran", "06_personagens/PE-005_sevran_retrato.png"))
     b.append(panel(8, 834, 470, 244, "Silhuetas e posturas", A("06_personagens/PE-007_silhuetas_elenco.png"), "center 60%", "",
                    labels(4, 220, 462, [("Ilan", ""), ("Aurelia", ""), ("Mara", ""), ("Nara", ""), ("Sevran", "")], 18)))

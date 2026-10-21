@@ -496,7 +496,7 @@ A oficina era maior por dentro do que parecia de fora, e mais quente do que qual
 
 — Não é do deus — confirmou uma voz de mulher, lá do fundo, atrás de uma bancada coberta de peças. — É nosso. E se o senhor tocar em alguma coisa sem perguntar, eu quebro a outra mão.
 
-Nara Voss era baixa e larga de ombros, com o cabelo cor de cobre, ondulado, preso atrás num nó apertado, sardas no nariz e nas maçãs do rosto e os antebraços cobertos de velhas cicatrizes de queimadura que pareciam mapas de rios. Usava óculos de aumento empurrados para a testa e segurava um ferro de soldar. Não se levantou. Olhou para ele por cima da bancada como se ele fosse uma peça que alguém tinha largado ali sem etiqueta.
+Nara Voss era baixa e larga de ombros, com o cabelo cor de cobre numa trança longa e grossa, de onde escapavam fios crespos, sardas no rosto e nos ombros e os antebraços cobertos de velhas cicatrizes de queimadura que pareciam mapas de rios. Usava um colete de couro sem mangas, luvas sem dedos e um cinto de ferramentas pesado, e tinha óculos de aumento de latão empurrados para a testa e segurava um ferro de soldar. Não se levantou. Olhou para ele por cima da bancada como se ele fosse uma peça que alguém tinha largado ali sem etiqueta.
 
 — O Tibo disse que é cerâmica de lastro — falou.
 
@@ -3392,7 +3392,7 @@ Aurelia leu a frase duas vezes antes de entrar.
 
 ---
 
-A oficina estava cheia de gente, de cobre, de fumaça de solda e de uma mulher baixa e ruiva, de cabelo acobreado preso atrás e óculos de aumento na testa, ajoelhada no chão no meio de um emaranhado de tubos de cobre, gritando ordens para três rapazes e uma moça que corriam de um lado para o outro carregando coisas. Quando a porta abriu, ela levantou os olhos, viu Ilan e disse, sem se levantar:
+A oficina estava cheia de gente, de cobre, de fumaça de solda e de uma mulher baixa e ruiva, de trança acobreada e óculos de aumento na testa, ajoelhada no chão no meio de um emaranhado de tubos de cobre, gritando ordens para três rapazes e uma moça que corriam de um lado para o outro carregando coisas. Quando a porta abriu, ela levantou os olhos, viu Ilan e disse, sem se levantar:
 
 — Se você quebrou a manopla de novo, eu te mato.
 
@@ -7120,7 +7120,7 @@ Do outro lado da praça, na base da torre, na face leste, havia uma cratera.
 
 Era pequena: um buraco no chão do tamanho de uma mesa, com as bordas de pedra vitrificada e fumegante. No meio, o que sobrava do Pivô de Cobre de Nara — uma poça de cobre derretido que já começava a endurecer, com cacos de cerâmica branca espalhados em volta. O cabo que o prendia ao tronco tinha virado um fio preto e retorcido. A porta de ferro da escada de serviço tinha sido arrancada das dobradiças e estava caída três metros adiante.
 
-Nara estava de pé a uns dez metros da cratera, com Tibo agarrado à cintura, olhando para o buraco. Tinha o cabelo meio solto e o rosto preto de fuligem. Estava inteira.
+Nara estava de pé a uns dez metros da cratera, com Tibo agarrado à cintura, olhando para o buraco. Tinha a trança meio desfeita e o rosto preto de fuligem. Estava inteira.
 
 Ela levantou os olhos e o viu do outro lado da praça. Levantou a mão, e ele levantou a dele — a direita, a do anel. Não ouviu o que ela gritou, mas viu a boca dela formar as palavras, e as palavras eram *meu pivô*.
 

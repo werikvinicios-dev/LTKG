@@ -6,7 +6,8 @@
    misturarem.
 2. **Referências.** Anexe as imagens indicadas em cada cena. Ficam em `06_personagens/`:
    - Ilan: `PE-001_ilan_varek_retrato.png`;
-   - Aurelia: `PE-012_aurelia_dourada_retrato.png`.
+   - Aurelia: `PE-012_aurelia_dourada_retrato.png`;
+   - Nara: `PE-028_nara_voss_ponte_da_cidade.png`.
 3. **O prompt.** Cole o bloco inteiro, em inglês, do jeito que está.
 4. **Conferência.** Se a manopla vier no braço direito, se aparecer texto na imagem ou se o rosto mudar, responda
    no ChatGPT: *"Keep everything, but put the gauntlet on his LEFT forearm"* (ou *"remove all text"*, ou *"keep his

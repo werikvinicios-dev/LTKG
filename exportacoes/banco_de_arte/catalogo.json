@@ -306,7 +306,7 @@
   "altura": 1536,
   "modelo": "gpt-image-2.5",
   "versao": "v1",
-  "status": "proposta — aguardando aprovação do autor",
+  "status": "substituída pela nova direção da Nara (PE-027 a PE-029)",
   "spoiler": false,
   "prompt": "Nara Voss, ~28, engenheira de âncoras, cabelo ruivo, óculos de proteção, cristal azul",
   "data": "2026-10-21"
@@ -861,6 +861,42 @@
   "status": "proposta — aguardando aprovação do autor",
   "spoiler": false,
   "prompt": "Ilan em aferição: giz, fio de prata, pinos de bronze, lente revelando o calor em âmbar (ref. PE-001 v2) — espelhada para a manopla ficar no braço esquerdo (Weave, plano grátis)",
+  "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-027_nara_voss_passarela_das_maquinas.png",
+  "categoria": "06_personagens",
+  "largura": 1024,
+  "altura": 1536,
+  "modelo": "gpt-image (ChatGPT, gerado pelo autor)",
+  "versao": "v1",
+  "status": "aprovada pelo autor — nova direção visual da Nara (out. 2026)",
+  "spoiler": false,
+  "prompt": "Nara Voss na passarela de ferro sobre a sala das máquinas, de costas, com a maleta de ferramentas",
+  "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-028_nara_voss_ponte_da_cidade.png",
+  "categoria": "06_personagens",
+  "largura": 1024,
+  "altura": 1536,
+  "modelo": "gpt-image (ChatGPT, gerado pelo autor)",
+  "versao": "v1",
+  "status": "aprovada pelo autor — nova direção visual da Nara (out. 2026)",
+  "spoiler": false,
+  "prompt": "Nara Voss de frente, caminhando numa ponte de pedra da cidade, óculos de latão na cabeça e maleta na mão",
+  "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-029_nara_voss_oficina.png",
+  "categoria": "06_personagens",
+  "largura": 1536,
+  "altura": 1024,
+  "modelo": "gpt-image (ChatGPT, gerado pelo autor)",
+  "versao": "v1",
+  "status": "aprovada pelo autor — nova direção visual da Nara (out. 2026)",
+  "spoiler": false,
+  "prompt": "Nara Voss na oficina, ajustando um mecanismo de engrenagens, com a forja e os carretéis de cobre ao fundo",
   "data": "2026-10-21"
  }
 ]

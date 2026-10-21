@@ -52,7 +52,8 @@ pintura digital cinematográfica, paleta negro, grafite, âmbar e prata, com ana
   - Ilan desvia o canal ionizado para o Sol de bronze aterrado da torre, usando o Pivô de Cobre de Nara como âncora
     intermediária.
   - Um fio de prata de interdição corta o canal secundário e a célula 1 queima.
-  - Nara: 29 anos, baixa, forte, cabelo cor de cobre ondulado preso atrás, sardas, óculos de aumento de latão na testa.
+  - Nara: bloco fixo de `06_personagens/NARA_FICHA_DE_CONTINUIDADE.md` (trança cor de cobre, sardas, óculos de latão, colete de
+    couro, luvas sem dedos, cinto de ferramentas). Na rua, no inverno, casaco longo de couro encerado por cima.
 - **IL-S06**, cap. 26, Vetor Passante:
   - Dois arcos de pedra a 30 m um do outro, na Estação do Passo Cinzento.
   - Aurelia (loira) sincroniza os limiares.

@@ -1,7 +1,7 @@
 # ⚠️ Contém spoilers: prompts para o ChatGPT das cenas IL-S01 a IL-S08 e do anel de soleira
 
 O uso é igual ao de `../PROMPTS_CHATGPT.md`: uma conversa por cena, anexar as referências e colar o bloco inteiro.
-- **Referências:** ficam em `06_personagens/`. Ilan: `PE-001`; Aurelia: `PE-012`; Mara: `PE-003`; Nara: `PE-004`.
+- **Referências:** ficam em `06_personagens/`. Ilan: `PE-001`; Aurelia: `PE-012`; Mara: `PE-003`; Nara: `PE-028`.
 - **Magia:** os blocos seguem `exportacoes/identidade_aresta/GUIA_VISUAL_DA_MAGIA.md`.
 - **Regra fixa:** a manopla fica sempre no antebraço ESQUERDO.
 
@@ -49,11 +49,11 @@ Scene: on the ice of a frozen river, THOR (an enormous red-bearded god in furs a
 ```
 
 ## IL-S05 · Cap. 18, a descarga de Ulvra (horizontal)
-Anexar: Ilan e Nara.
+Anexar: Ilan e Nara (`PE-028`).
 ```
 Image 1 is ILAN VAREK and image 2 is NARA VOSS: keep both faces and outfits like the references. Landscape 3:2. Epic cinematic dark-fantasy painting, night storm over a snowy city square, selectively visible brushstrokes, not plastic. Correct anatomy and hands. No text or watermarks. Magic is engineering: every lightning bolt has a source and a ground; no runes, no energy orbs, no vortex.
 ILAN VAREK: man of 34, tall, lean, short dark-brown hair, stubble, chin scar, steel-grey eyes, long charcoal-black coat, steel gauntlet with three ceramic cells on his LEFT forearm.
-NARA VOSS: short, sturdy woman of 29, wavy copper-red hair tied back, freckles, brass magnifying goggles on her forehead, burn scars on her forearms, leather work apron.
+NARA VOSS: strong athletic woman of 29, long thick copper-red hair in a heavy braid with curly strands, freckles, brass two-lens goggles pushed up on her head, burn scars on her forearms, a long oiled-leather winter coat with a fur collar open over a sleeveless leather corset-vest, fingerless gloves, a heavy leather tool belt, tall buckled boots.
 Scene: ULVRA, a colossal storm dragon with a crest of lightning-like blades, unleashes a channel of lightning toward a fleeing crowd. On the tower steps, Ilan raises his left gauntlet and bends the channel: the lightning passes through a tall copper stake with a ceramic base that Nara has driven into the stones, then up into a huge bronze sun disc on the tower, which is grounded by a thick copper cable. A taut silver wire stretched by Ilan cuts a secondary branch, which ends in sparks against it. Ilan's first gauntlet cell bursts in sparks and goes dark. Ozone haze and Lichtenberg burn patterns on the stones.
 ```
 

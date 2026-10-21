@@ -60,7 +60,10 @@ estão em `../banco_de_arte_4x/` e são feitas com `build/aresta/ampliar.py`.
 - `PE-001_ilan_varek_retrato.png` — 1024×1536 — Ilan Varek, ~34, cabelo escuro ondulado, barba curta, capa negra, couro, espada ao ombro
 - `PE-002_aurelia_retrato.png` — 1024×1536 — Aurelia, deusa original dos limiares, coroa de raios, negro/marfim/ouro
 - `PE-003_mara_quen_retrato.png` — 1024×1536 — Mara Quen, ~32, auditora dos pactos, óculos redondos, livro-razão
-- `PE-004_nara_voss_retrato.png` — 1024×1536 — Nara Voss, ~28, engenheira de âncoras, cabelo ruivo, óculos de proteção, cristal azul
+- `PE-004_nara_voss_retrato.png` — 1024×1536 — Nara Voss, ~28, engenheira de âncoras, cabelo ruivo, óculos de proteção, cristal azul (histórico; substituída por PE-027 a PE-029)
+- `PE-027_nara_voss_passarela_das_maquinas.png` — 1024×1536 — Nara Voss, nova direção (gerada pelo autor no ChatGPT)
+- `PE-028_nara_voss_ponte_da_cidade.png` — 1024×1536 — Nara Voss, nova direção, de frente (referência principal)
+- `PE-029_nara_voss_oficina.png` — 1536×1024 — Nara Voss, nova direção, na oficina
 - `PE-005_sevran_retrato.png` — 1024×1536 — Sevran, ~45, ex-sacerdote, barba grisalha, cachecol creme, livro antigo
 - `PE-006_dinamica_do_grupo.png` — 1536×1024 — Cinco companheiros de costas entrando no salão
 - `PE-007_silhuetas_elenco.png` — 1536×1024 — Silhuetas de corpo inteiro dos cinco personagens

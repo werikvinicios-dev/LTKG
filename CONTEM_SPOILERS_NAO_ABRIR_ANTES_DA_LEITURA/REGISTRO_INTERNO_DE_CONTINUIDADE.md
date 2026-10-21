@@ -406,3 +406,11 @@ com o motivo); "Eu leio coisas" 3 → 3; "Me dizem isso" 3 → 3; "É por isso q
     aumento na testa viram a marca dela (caps. 2, 9 e 18). O lenço de Hanne Voss continua.
   - **Sevran.** Passa de 52 para 45 anos (cap. 23). Ganha cabelo escuro e crespo salpicado de branco (cap. 1) e mantém
     a barba grisalha. As durações "vinte e nove anos" (caps. 10, 20 e 23) continuam valendo: ele começou aos 16.
+- **Nara: nova direção visual do autor (out. 2026).** O autor gerou no ChatGPT as imagens PE-027 a PE-029, que
+  passam a ser a referência da personagem. A ficha está em `06_personagens/NARA_FICHA_DE_CONTINUIDADE.md`.
+  - **Texto alinhado** nos caps. 2, 9 e 18, em `V1_revisao_linguagem/` e `capitulos/`: trança longa no lugar do nó;
+    colete de couro sem mangas, luvas sem dedos e cinto de ferramentas na apresentação; "trança meio desfeita" no
+    cap. 18.
+  - **Mantidos:** as sardas, os óculos de aumento, as cicatrizes de queimadura e a descrição "baixa e larga de
+    ombros", que espera a decisão do autor.
+  - **Regra de inverno:** sem mangas só dentro da oficina; na rua, casaco de couro encerado.
