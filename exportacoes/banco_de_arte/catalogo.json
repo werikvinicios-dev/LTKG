@@ -694,5 +694,65 @@
   "spoiler": false,
   "prompt": "Emblema isolado em medalhão negro com aro de ouro, para páginas claras (aberturas de capítulo)",
   "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-008_aurelia_dourada_portal.png",
+  "categoria": "06_personagens",
+  "largura": 1024,
+  "altura": 1536,
+  "modelo": "gpt-image-2.5",
+  "versao": "v1",
+  "status": "proposta — aguardando aprovação do autor",
+  "spoiler": false,
+  "prompt": "Aurelia, versão loira dourada, de pé diante do portal, vestido de seda translúcida com fenda (variante a aprovar)",
+  "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-009_aurelia_dourada_costas.png",
+  "categoria": "06_personagens",
+  "largura": 1024,
+  "altura": 1536,
+  "modelo": "gpt-image-2.5",
+  "versao": "v1",
+  "status": "proposta — aguardando aprovação do autor",
+  "spoiler": false,
+  "prompt": "Aurelia, versão loira dourada, de costas olhando por sobre o ombro, vestido sem costas",
+  "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-010_aurelia_dourada_escadaria.png",
+  "categoria": "06_personagens",
+  "largura": 1024,
+  "altura": 1536,
+  "modelo": "gpt-image-2.5",
+  "versao": "v1",
+  "status": "proposta — aguardando aprovação do autor",
+  "spoiler": false,
+  "prompt": "Aurelia, versão loira dourada, descendo a escadaria entre figuras curvadas",
+  "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-011_aurelia_dourada_trono.png",
+  "categoria": "06_personagens",
+  "largura": 1024,
+  "altura": 1536,
+  "modelo": "gpt-image-2.5",
+  "versao": "v1",
+  "status": "proposta — aguardando aprovação do autor",
+  "spoiler": false,
+  "prompt": "Aurelia, versão loira dourada, sentada no trono-portal",
+  "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-012_aurelia_dourada_retrato.png",
+  "categoria": "06_personagens",
+  "largura": 1024,
+  "altura": 1536,
+  "modelo": "gpt-image-2.5",
+  "versao": "v1",
+  "status": "proposta — aguardando aprovação do autor",
+  "spoiler": false,
+  "prompt": "Aurelia, versão loira dourada, retrato de busto, olhos âmbar",
+  "data": "2026-10-21"
  }
 ]
