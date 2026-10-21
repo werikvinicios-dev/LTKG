@@ -20,6 +20,7 @@ from reportlab.platypus import (BaseDocTemplate, PageTemplate, Frame, Paragraph,
                                 PageBreak, NextPageTemplate, Flowable)
 from reportlab.platypus.flowables import ParagraphAndImage
 from reportlab.lib.utils import ImageReader
+from PIL import Image
 from svglib.svglib import svg2rlg
 
 ROOT = "/home/user/LTKG"
@@ -457,8 +458,20 @@ def back_matter():
             # última página em branco (verso), para o miolo fechar em número par
             PageBreak(), Marker("nofolio"), Marker("nohead"), Spacer(1, 1)]
 
+def em_alta(path, lado=2400):
+    """Versão ampliada 4× (exportacoes/banco_de_arte_4x), reduzida para `lado` px, quando existe."""
+    cat, nome = path.split("/")[-2:]
+    a4x = f"{ROOT}/exportacoes/banco_de_arte_4x/{cat}/{os.path.splitext(nome)[0]}_4x.jpg"
+    if not os.path.exists(a4x):
+        return path
+    os.makedirs(f"{ROOT}/build/_pranchas", exist_ok=True)
+    out = f"{ROOT}/build/_pranchas/{os.path.splitext(nome)[0]}_{lado}.jpg"
+    if not os.path.exists(out) or os.path.getmtime(out) < os.path.getmtime(a4x):
+        im = Image.open(a4x); im.thumbnail((lado, lado), Image.LANCZOS); im.save(out, quality=90)
+    return out
+
 PLATES = {
-    1: (f"{ROOT}/exportacoes/banco_de_arte/05_mundo/MU-009_vhalessa_fornalha_velha_noite.png", "Fornalha Velha, vinte e dois graus abaixo de zero"),
+    1: (em_alta(f"{ROOT}/exportacoes/banco_de_arte/05_mundo/MU-009_vhalessa_fornalha_velha_noite.png"), "Fornalha Velha, vinte e dois graus abaixo de zero"),
     3: (f"{ART}/atrio.jpg", "O Átrio de Soleira"),
     5: (f"{ART}/ilan_aurelia.jpg", "Ilan Varek e a Soberania dos Limiares"),
 }

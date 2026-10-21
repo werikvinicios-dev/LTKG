@@ -2,8 +2,8 @@
 # -*- coding: utf-8 -*-
 """Capa v2 (identidade Aresta) do Volume I: frente a partir da arte CA-001, capa do EPUB, miniatura,
 versão sem texto (pôster) e capa completa aberta (verso + lombada + frente) para prévia.
-Saída: exportacoes/capa_v2/. A arte gerada tem 1024 × 1536 px: serve para digital; impressão a 300 dpi
-pede ampliação profissional (registrado como pendência no relatório)."""
+Saída: exportacoes/capa_v2/. Usa a versão ampliada 4× da arte (build/aresta/ampliar.py) quando existe:
+capa do e-book com 2560 px de altura e frente em alta resolução (4096 px de largura)."""
 import os, subprocess, sys
 from PIL import Image
 ROOT = "/home/user/LTKG"
@@ -15,11 +15,14 @@ os.makedirs(OUT, exist_ok=True)
 paginas = int(sys.argv[1]) if len(sys.argv) > 1 else 500
 lombada = round(paginas * 0.056, 1)          # mm, papel pólen 80 g (mesma regra da capa v1)
 
-src = Image.open(f"{BA}/07_capas/CA-001_capa_vol1_o_deus_que_caiu_do_ceu.png").convert("RGB")
+A4X = f"{ROOT}/exportacoes/banco_de_arte_4x/07_capas/CA-001_capa_vol1_o_deus_que_caiu_do_ceu_4x.jpg"
+src = Image.open(A4X if os.path.exists(A4X) else f"{BA}/07_capas/CA-001_capa_vol1_o_deus_que_caiu_do_ceu.png").convert("RGB")
 W, H = src.size; h = round(W * 230 / 160); top = (H - h) // 2
 front = src.crop((0, top, W, top + h))
-front.save(f"{OUT}/capa_frente_digital.png")
-front.save(f"{OUT}/capa_ebook.jpg", quality=92)
+tam = lambda alt: (round(alt * W / h), alt)
+front.resize(tam(min(h, 2944)), Image.LANCZOS).save(f"{OUT}/capa_frente_digital.png")
+front.resize(tam(min(h, 2560)), Image.LANCZOS).save(f"{OUT}/capa_ebook.jpg", quality=92)
+if W >= 4096: front.save(f"{OUT}/capa_frente_alta_resolucao.jpg", quality=93, subsampling=0)
 front.resize((200, round(200 * h / W)), Image.LANCZOS).save(f"{OUT}/capa_miniatura_200px.jpg", quality=90)
 Image.open(f"{BA}/10_promocional/PR-001_poster_cinematografico.png").convert("RGB").save(f"{OUT}/arte_promocional_poster.jpg", quality=92)
 

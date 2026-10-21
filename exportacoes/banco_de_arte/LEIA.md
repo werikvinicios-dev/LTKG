@@ -5,8 +5,9 @@ Cada arquivo tem ficha em `catalogo.json`: dimensões, modelo, prompt resumido, 
 
 **Status de todas as peças:** proposta, aguardando aprovação do autor. Nenhuma contém spoiler.
 
-**Resolução:** 1024 a 1536 px no lado maior. Serve para EPUB, redes, pranchas e telas. A impressão a 300 dpi
-exige ampliação profissional ou reprodução em resolução maior (ver relatório).
+**Resolução:** 1024 a 1536 px no lado maior. Serve para EPUB, redes, pranchas e telas. As versões
+ampliadas 4× (4096 a 6144 px) das capas, da divulgação, da prancha da Fornalha Velha e dos retratos principais
+estão em `../banco_de_arte_4x/` e são feitas com `build/aresta/ampliar.py`.
 
 ## 01_identidade (9)
 

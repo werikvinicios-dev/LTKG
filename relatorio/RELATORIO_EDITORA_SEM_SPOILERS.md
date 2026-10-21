@@ -276,8 +276,11 @@ O banco de arte cobre:
   O original preservado ficou intacto.
 
 ## 8. Pendências técnicas (sem conteúdo narrativo)
-- **Resolução das artes geradas.** O gerador entrega de 1024 a 1536 px. É suficiente para EPUB, redes e pranchas.
-  Para imprimir capa e pranchas a 300 dpi, é preciso ampliação profissional ou reprodução em resolução maior.
+- **Resolução das artes geradas.** O gerador entrega de 1024 a 1536 px. Por enquanto o livro é só digital.
+  As capas, a divulgação, a prancha da Fornalha Velha e os retratos principais foram ampliados 4×
+  (Real-ESRGAN, `build/aresta/ampliar.py`) e estão em `exportacoes/banco_de_arte_4x/`. A capa do e-book tem
+  2560 px de altura, o tamanho que as lojas recomendam. Para imprimir, a capa ampliada dá cerca de 650 dpi
+  na frente de 16 × 23 cm, mas convém uma revisão humana dos detalhes finos antes da gráfica.
   A capa aberta em `capa_v2/` é uma prévia, não um arquivo final de gráfica.
 - **Consistência de rosto.** Há um retrato canônico por personagem, a partir das referências. Ilustrar cenas com os
   mesmos rostos exige que o autor aprove esses retratos e que se use um gerador que aceite imagem de referência.
