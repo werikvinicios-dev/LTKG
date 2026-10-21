@@ -25,6 +25,7 @@ Em cena urbana, o cabelo pode estar preso em coque atravessado pela chave de bro
 `PE-008` a `PE-018` (variações de figurino e pose), `PE-019` (com Ilan, em Vhalessa) e `PE-006` v2 (grupo).
 `PE-002` (cabelo escuro) fica só como histórico.
 
-## Atenção ao texto do livro
-O manuscrito descreve o cabelo dela como negro em uma passagem do Volume I. Se esta direção valer para o livro,
-essa palavra precisa ser ajustada no texto, com autorização do autor.
+## Texto do livro
+Ajustado por decisão do autor. A única menção que contradizia a nova direção (cabelo negro) passou a "cabelo dourado"
+no manuscrito ativo. O PDF, o EPUB, o Markdown e o DOCX foram regenerados. O texto não descreve cor de olhos nem de pele
+dela; a ficha interna da personagem foi alinhada a esta direção.

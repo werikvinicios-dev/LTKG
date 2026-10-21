@@ -384,3 +384,13 @@ Calvenor, Plano, carta de Brannoc, tratado no gelo, nota a lápis de Pimm) perma
 com o motivo); "Eu leio coisas" 3 → 3; "Me dizem isso" 3 → 3; "É por isso que agradeço" 4 → 4;
 "lido em voz alta" 3 → 3; "depois depois" 3 → 3; "Ainda não sei" 9 → 9; "Toda coroa é uma dívida"
 9 → 9; "mede bem"/"media bem" 4/4 → 4/4; "para não ranger" 2 → 2; "ainda não sabia o preço" 3 → 3.
+
+
+## 7. Decisões do autor posteriores à revisão
+
+- **Aparência de Aurelia (out. 2026).** O autor aprovou uma nova direção visual: cabelo loiro dourado, olhos âmbar,
+  diadema de raios, colar de filigrana e braceletes de ouro. No texto, a única menção que contradizia a nova direção
+  era "o cabelo negro solto" (cap. 27), trocada por "o cabelo dourado solto" em `V1_revisao_linguagem/` e em
+  `capitulos/`. `V1_original_preservado/` fica intacto como registro histórico. A ficha da Bíblia interna foi
+  atualizada. Nenhuma outra passagem descreve cor de cabelo, olhos ou pele dela. O coque com a chave de bronze
+  (cap. 3) foi mantido e incorporado à ficha visual.
