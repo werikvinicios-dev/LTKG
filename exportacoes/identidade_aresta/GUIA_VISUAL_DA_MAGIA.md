@@ -139,7 +139,9 @@ A cidade é industrial-arcana: latão, cobre, cerâmica e fuligem.
 > and snow, vibrating surfaces, redirected light), through its anchors (copper nails, bronze pins, iron plates,
 > white chalk survey marks, ceramic cells, silver wire) and, only where described, through thin straight taut lines
 > with fine iridescent interference fringes in the discipline color. Every effect has a visible source and a
-> visible cost.
+> visible cost. Anchors are ordinary physical objects (copper nails painted the color of the wall, bronze pins,
+> iron plates, ceramic cells, bronze discs, boot soles), never glowing symbols; they glow only when charged, from
+> dull red to dirty orange.
 
 **Por disciplina** (usar só as da cena):
 - **Pulse:** kinetic force: dust and snow blown in straight radial streaks, faint broken shock rings in the air, the anchor taking the recoil (cracked stone, boots sinking, wall denting); any visible link is a thin taut line with steel-blue fringes.
@@ -182,3 +184,27 @@ Há exemplos animados em `exportacoes/motion/magia/` (feitos com `build/motion/m
 - **Células:** enchem da base para o topo.
 - **Retorno:** tremor e fumaça no equipamento.
 - **Limiares:** a costura corre pela borda do arco antes de o vão mostrar o outro lado.
+
+## 12. Âncoras: como o livro as descreve
+
+Prancha: `pranchas/PR-09_ancoras.png`. Uma âncora é um objeto ou um ponto da estrutura onde o elo se prende. Nunca é
+um símbolo nem uma luz. Em geral parece comum. O que a revela é o que passa por ela.
+
+| Tipo | Como aparece | Cap. |
+|---|---|---|
+| Improvisada | prego de cobre de cabeça chata, pintado da cor da parede, cravado a dois dedos de cada brasa; grade de ferro tocada com a mão | 1, 4 |
+| No corpo | dois pontos em cada sola e um prego da parede; calcanhar e punho, onde a âncora "nasce" e some | 1, 12, 26 |
+| Inercial | chapas de ferro (lastro) nas botas | 15 |
+| Portátil | Pivô de Cobre: estaca do comprimento de um antebraço, grossa como dois dedos, base larga de cerâmica, argola no alto para o cabo | 18 |
+| Trilha de contato | pontos de apoio cravados no piso a intervalos regulares; discos de bronze na superfície; cerâmica enterrada no sal | 8, 24 |
+| Carregada | anel de ferro de oito metros com âncoras de cerâmica branca "brilhando num laranja sujo"; sete maiores e escuras seguram as outras | 25 |
+| Coronal | a infraestrutura do deus: brasas de parede, Campos de Espelho, poços geotérmicos, sóis de bronze, até a pata de um leão de bronze | 3, 6, 18 |
+| De limiar | anéis de bronze, arcos de pedra, piso de ardósia e colunas de ferro | 3, 17, 26 |
+| Marca de cobrança | quase invisível e efêmera, feita com giz de aferição ou dois dedos da manopla | 4, 18, 25 |
+
+**Como se denuncia:** esquenta ou esfria, zumbe numa nota, vira franjas coloridas na lente e nas placas, brilha quando
+carregada, e as oficiais têm lacre. Estados: improvisada (rápida, arriscada), calibrada (estável) e integrada (ligada
+a uma Malha).
+
+**Na imagem:** objetos pequenos e discretos de cobre, bronze, ferro ou cerâmica, cravados, pintados ou enterrados.
+Mais carga significa mais calor e mais brilho. As coronais são a própria arquitetura e não se pintam à parte.
