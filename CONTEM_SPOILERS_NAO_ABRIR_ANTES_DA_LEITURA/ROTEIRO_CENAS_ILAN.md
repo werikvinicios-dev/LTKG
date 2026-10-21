@@ -5,7 +5,9 @@ O autor liberou cenas com spoiler para uso futuro. Elas ficam em
 próprio. São enviadas ao autor como anexo, nunca com pré-visualização, e sempre com aviso. As cenas sem spoiler vão
 para `06_personagens/`.
 
-Todo prompt começa com o bloco fixo de `06_personagens/ILAN_FICHA_DE_CONTINUIDADE.md`. Usar gpt-image-2.5-sunburst,
+Todo prompt começa com o bloco fixo de `06_personagens/ILAN_FICHA_DE_CONTINUIDADE.md`. Nas cenas com magia, acrescentar
+os blocos de `exportacoes/identidade_aresta/GUIA_VISUAL_DA_MAGIA.md`: o bloco fixo, as disciplinas da cena, Ilan ou
+Aurelia, e o negativo. Usar gpt-image-2.5-sunburst,
 pintura digital cinematográfica, paleta negro, grafite, âmbar e prata, com anatomia correta e sem texto.
 
 ## Sem spoiler (banco principal)
