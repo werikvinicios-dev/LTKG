@@ -132,6 +132,20 @@ class SVGFlow(Flowable):
         x = (self.aw - self.width) / 2 if self.align == "center" else 0
         self.d.drawOn(self.canv, x, 0)
 
+EMB_NOVO = f"{ROOT}/exportacoes/banco_de_arte/01_identidade/ID-009_emblema_medalhao.png"
+LETTERING = f"{ROOT}/exportacoes/banco_de_arte/01_identidade/ID-006_lettering_transparente.png"
+
+class ImgFlow(Flowable):
+    """Imagem centralizada com largura fixa (identidade Aresta: emblema e lettering)."""
+    def __init__(self, path, width):
+        Flowable.__init__(self)
+        self.ir = ImageReader(path); iw, ih = self.ir.getSize()
+        self.width = width; self.height = width * ih / iw
+    def wrap(self, aw, ah):
+        self.aw = aw; return aw, self.height
+    def draw(self):
+        self.canv.drawImage(self.ir, (self.aw - self.width) / 2, 0, self.width, self.height, mask="auto")
+
 class Fleuron(Flowable):
     """Filete – losango – filete, em bronze."""
     def __init__(self, w=26 * mm, h=7 * mm):
@@ -345,7 +359,7 @@ def chapter_story(path, plate=None):
     else:
         st += [PageBreak()]
     st += [ToParity(odd=True), Marker("chapter", name), Spacer(1, 38 * mm),
-           SVGFlow(f"{LOGO}/emblema_bronze_chapado.svg", 15 * mm), Spacer(1, 7 * mm),
+           ImgFlow(EMB_NOVO, 16 * mm), Spacer(1, 7 * mm),
            Paragraph(label.upper(), ParagraphStyle("cn", parent=ST["chapnum"])),
            Spacer(1, 2.5 * mm), Paragraph(esc(name), ST["chaptitle"]), Spacer(1, 3 * mm),
            Fleuron(), Spacer(1, 12 * mm)]
@@ -374,13 +388,13 @@ def tracked(text, font, size, cs, color=INK, align=TA_CENTER, leading=None):
 
 def front_matter(toc_entries):
     st = [Marker("nofolio"), Marker("nohead"), Spacer(1, 70 * mm),
-          SVGFlow(f"{LOGO}/logotipo_tinta.svg", 62 * mm)]
+          ImgFlow(LETTERING, 70 * mm)]
     # 2: frontispício (verso)
     st += [PageBreak(), PlateMarker(f"{ART}/vhalessa.jpg", "Vhalessa, na véspera da noite mais longa")]
     # 3: folha de rosto (recto)
     st += [PageBreak(), Marker("nofolio"), Marker("nohead"), Spacer(1, 30 * mm),
-           SVGFlow(f"{LOGO}/emblema_bronze_chapado.svg", 34 * mm), Spacer(1, 10 * mm),
-           SVGFlow(f"{LOGO}/logotipo_tinta.svg", 92 * mm), Spacer(1, 9 * mm),
+           ImgFlow(EMB_NOVO, 36 * mm), Spacer(1, 10 * mm),
+           ImgFlow(LETTERING, 100 * mm), Spacer(1, 9 * mm),
            tracked("VOLUME 1", "Cin", 10, 3.2, BRONZE), Spacer(1, 3 * mm),
            Paragraph(SUBTITLE, ParagraphStyle("sub", fontName="Gar-I", fontSize=17, leading=21,
                                               alignment=TA_CENTER, textColor=INK)),
@@ -434,16 +448,17 @@ class TocLine(Flowable):
 def back_matter():
     colofao = ("Este livro foi composto em EB Garamond, revival de Georg Duffner e Octavio Pardo "
                "das tipografias de Claude Garamont, com títulos em Cinzel, de Natanael Gama, "
-               "inspirada nas inscrições romanas. Os sete losangos do emblema são as sete leis da "
+               "inspirada nas inscrições romanas. As sete pérolas do emblema são as sete leis da "
                "Transposição.")
     return [PageBreak(), ToParity(odd=True), Marker("nohead"), Marker("nofolio"), Spacer(1, 120 * mm),
-            SVGFlow(f"{LOGO}/emblema_bronze_chapado.svg", 12 * mm), Spacer(1, 6 * mm),
+            ImgFlow(EMB_NOVO, 14 * mm), Spacer(1, 6 * mm),
             Paragraph(colofao, ParagraphStyle("col", parent=ST["center"], fontName="Gar-I", fontSize=9.6,
                                               leading=13.5, textColor=GREY)),
             # última página em branco (verso), para o miolo fechar em número par
             PageBreak(), Marker("nofolio"), Marker("nohead"), Spacer(1, 1)]
 
 PLATES = {
+    1: (f"{ROOT}/exportacoes/banco_de_arte/05_mundo/MU-009_vhalessa_fornalha_velha_noite.png", "Fornalha Velha, vinte e dois graus abaixo de zero"),
     3: (f"{ART}/atrio.jpg", "O Átrio de Soleira"),
     5: (f"{ART}/ilan_aurelia.jpg", "Ilan Varek e a Soberania dos Limiares"),
 }

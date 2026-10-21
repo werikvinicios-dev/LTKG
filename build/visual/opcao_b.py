@@ -171,7 +171,7 @@ def sword_geom(beam=-7.0, swing=0.0):
     return S, Cut, Fac, blade
 
 def emblem(c, uid="B", doors=0.0, rays=1.0, rise=1.0, crack=1.0, sword=1.0, beam=-7.0, swing=0.0,
-           lit=7.0, frame=1.0, bevel=False, crown=1.0, micro=True):
+           lit=7.0, frame=1.0, bevel=False, crown=1.0, micro=True, glow=0.0, flash=0.0):
     """Porta déco. Parâmetros de animação: doors (fração fechada das folhas), rays, rise, crack, sword, beam,
     swing (balanço dos pratos, graus), lit (losangos acesos), frame (desenho dos contornos)."""
     out, defs = [], []
@@ -196,6 +196,12 @@ def emblem(c, uid="B", doors=0.0, rays=1.0, rise=1.0, crack=1.0, sword=1.0, beam
     defs.append(f'<clipPath id="{uid}-sky"><path d="{arch_d(cx, yc, a0 - 12, yh - 8)} Z"/></clipPath>')
     defs.append(f'<clipPath id="{uid}-vao"><path d="{inner}"/></clipPath>')
     bg = []          # tudo o que fica atrás da espada
+    if glow > 0:
+        defs.append(f'<radialGradient id="{uid}-gl" gradientUnits="userSpaceOnUse" cx="{sx}" cy="{sy}" r="{360 + 140 * flash:.1f}">'
+                    f'<stop offset="0" stop-color="{CH1}" stop-opacity="{0.55 * glow + 0.4 * flash:.3f}"/>'
+                    f'<stop offset="0.45" stop-color="{CH2}" stop-opacity="{0.16 * glow + 0.15 * flash:.3f}"/>'
+                    f'<stop offset="1" stop-color="{CH3}" stop-opacity="0"/></radialGradient>')
+        bg.append(f'<g clip-path="url(#{uid}-sky)"><rect x="0" y="0" width="{W}" height="{H}" fill="url(#{uid}-gl)"/></g>')
     # ---- raios do sunburst (alternados grosso/fino), do centro do sol
     if rays > 0:
         rr0 = rs + 22
@@ -703,46 +709,449 @@ def build_principles():
     open(f"{OUT}/sinais_principios_limiar.svg", "w").write(s)
     to_png(s, f"{OUT}/sinais_principios_limiar.png", 4000)
 
-# ------------------------------------------------------------------ guarda: escamas de leque (sóis nascentes)
-def fan_tile(x, y, r, c, bg):
-    """Leque déco aberto para cima, centro da base em (x, y)."""
-    o = [f'<path d="M{x - r},{y} A{r},{r} 0 0 1 {x + r},{y} Z" fill="{bg}" stroke="{c}" stroke-width="2"/>']
-    o.append(f'<path d="M{x - r + 7},{y} A{r - 7},{r - 7} 0 0 1 {x + r - 7},{y}" fill="none" stroke="{c}" stroke-width="0.7"/>')
-    o.append(f'<path d="M{x - r + 12},{y} A{r - 12},{r - 12} 0 0 1 {x + r - 12},{y}" fill="none" stroke="{c}" stroke-width="0.7"/>')
-    rays = []
-    for k in range(1, 18):
-        ang = 180 + k * 10
-        if k % 2:
-            p0 = polar(x, y, r * 0.30, ang)
-            p1, p2 = polar(x, y, r - 18, ang - 2.1), polar(x, y, r - 18, ang + 2.1)
-            rays.append(f'<path d="M{P(*p0)} L{P(*p1)} L{P(*p2)} Z" fill="{c}"/>')
+# ------------------------------------------------------------------ guarda: arlequim de losangos com leques
+def endpaper(W=3200, H=2000, c="url(#gfoil)", bg=NOITE, A=160, B=212):
+    out, clipA = [], []
+    fans, plains = [], []
+    nx, ny = int(W / (2 * A)) + 2, int(H / (2 * B)) + 2
+    for j in range(-1, ny + 1):
+        for i in range(-1, nx + 1):
+            fans.append((i * 2 * A, j * 2 * B))
+            plains.append((i * 2 * A + A, j * 2 * B + B))
+    ins = 9
+    def loz(x, y, a, b): return f"M{x:.1f},{y - b:.1f} L{x + a:.1f},{y:.1f} L{x:.1f},{y + b:.1f} L{x - a:.1f},{y:.1f} Z"
+    k_in = ins * math.hypot(A, B) / A                 # recuo vertical equivalente a 'ins' perpendicular
+    for x, y in fans:
+        clipA.append(f'<path d="{loz(x, y, A - ins * math.hypot(A, B) / B, B - k_in)}"/>')
+    # leques: pivô no vértice inferior de cada losango A
+    F = []
+    half = math.degrees(math.atan2(A, B))
+    for x, y in fans:
+        vx, vy = x, y + B
+        for k in range(-7, 8):
+            ang = 270 + k * (half * 2 / 14) * 0.98
+            if k % 2 == 0:
+                p0 = polar(vx, vy, 58, ang)
+                p1, p2 = polar(vx, vy, 2 * B, ang - 1.3), polar(vx, vy, 2 * B, ang + 1.3)
+                F.append(f'<path d="M{P(*p0)} L{P(*p1)} L{P(*p2)} Z" fill="{c}"/>')
+            else:
+                p0, p1 = polar(vx, vy, 66, ang), polar(vx, vy, 2 * B, ang)
+                F.append(f'<path d="M{P(*p0)} L{P(*p1)}" stroke="{c}" stroke-width="0.7"/>')
+        for rr, w in ((40, 1.0), (47, 0.6)):
+            F.append(f'<circle cx="{vx}" cy="{vy}" r="{rr:.1f}" fill="none" stroke="{c}" stroke-width="{w}"/>')
+        F.append(f'<circle cx="{vx}" cy="{vy}" r="30" fill="{c}"/>')
+    out.append(f'<g clip-path="url(#gclipA)">{"".join(F)}</g>')
+    # losangos B: losangos concêntricos e losango escalonado ao centro
+    Bp = []
+    for x, y in plains:
+        for f_, w in ((0.80, 0.7), (0.74, 0.7), (0.40, 1.2)):
+            Bp.append(f'<path d="{loz(x, y, (A - ins) * f_, (B - ins) * f_)}" fill="none" stroke="{c}" stroke-width="{w}"/>')
+        Bp.append(f'<path d="{stepped_diamond(x, y, 34, 3)}" fill="none" stroke="{c}" stroke-width="1.1"/>')
+        Bp.append(f'<path d="{diamond(x, y, 11, 14)}" fill="{VERDETE}"/>')
+        for sgn in (-1, 1):
+            Bp.append(f'<path d="{diamond(x, y + sgn * (B - ins) * 0.6, 4, 7)}" fill="{c}"/>')
+    out.append("".join(Bp))
+    # treliça: fios duplos ao longo das duas diagonais
+    L = []
+    span = W + H
+    for t in range(-int(span / A) - 2, int(span / A) + 3):
+        x0 = t * 2 * A
+        for dx in (-3.2, 3.2):
+            # direção (A, B) e (A, -B) passando pelos vértices
+            L.append(f'M{x0 + dx - 10 * A:.1f},{-10 * B + B:.1f} L{x0 + dx + 10 * A:.1f},{10 * B + B:.1f}')
+            L.append(f'M{x0 + dx - 10 * A:.1f},{10 * B + B:.1f} L{x0 + dx + 10 * A:.1f},{-10 * B + B:.1f}')
+    out.append(f'<path d="{" ".join(L)}" stroke="{c}" stroke-width="0.9" fill="none"/>')
+    # cravos nos cruzamentos
+    for x, y in fans:
+        for vx, vy in ((x - A, y), (x + A, y)):
+            pass
+    for j in range(-1, ny + 2):
+        for i in range(-1, nx + 2):
+            for vx, vy in ((i * 2 * A + A, j * 2 * B), (i * 2 * A, j * 2 * B + B)):
+                out.append(f'<path d="{diamond(vx, vy, 9, 9)}" fill="{bg}" stroke="{c}" stroke-width="1"/>'
+                           f'<path d="{diamond(vx, vy, 4, 4)}" fill="{c}"/>')
+    defs = foil_defs("gfoil", (0, 0, W, H)) + f'<clipPath id="gclipA">{"".join(clipA)}</clipPath>'
+    return svg(W, H, "".join(out), defs, bg=bg)
+
+# ------------------------------------------------------------------ moldura déco com cantos escalonados
+def notched_rect(x0, y0, x1, y1, n=36, d=0):
+    """Retângulo com cantos em degrau duplo (recuo d mantém os degraus paralelos)."""
+    x0, y0, x1, y1 = x0 + d, y0 + d, x1 - d, y1 - d
+    h = n / 2
+    pts = [(x0, y0 + n), (x0 + h, y0 + n), (x0 + h, y0 + h), (x0 + n, y0 + h), (x0 + n, y0),
+           (x1 - n, y0), (x1 - n, y0 + h), (x1 - h, y0 + h), (x1 - h, y0 + n), (x1, y0 + n),
+           (x1, y1 - n), (x1 - h, y1 - n), (x1 - h, y1 - h), (x1 - n, y1 - h), (x1 - n, y1),
+           (x0 + n, y1), (x0 + n, y1 - h), (x0 + h, y1 - h), (x0 + h, y1 - n), (x0, y1 - n)]
+    return polyline(pts, True)
+
+def corner_fan(x, y, sx, sy, c, r=120):
+    """Leque de quarto de círculo num canto; (sx, sy) = direção para dentro."""
+    o = []
+    base = math.degrees(math.atan2(sy, sx))           # bissetriz
+    for k in range(0, 10):
+        ang = base - 45 + k * 10
+        if k % 2 == 0:
+            p0 = polar(x, y, 26, ang)
+            p1, p2 = polar(x, y, r, ang - 1.6), polar(x, y, r, ang + 1.6)
+            o.append(f'<path d="M{P(*p0)} L{P(*p1)} L{P(*p2)} Z" fill="{c}"/>')
         else:
-            p0, p1 = polar(x, y, r * 0.36, ang), polar(x, y, r - 18, ang)
-            rays.append(f'<path d="M{P(*p0)} L{P(*p1)}" stroke="{c}" stroke-width="0.6"/>')
-    o.append("".join(rays))
-    o.append(f'<path d="M{x - r * .22:.1f},{y} A{r * .22:.1f},{r * .22:.1f} 0 0 1 {x + r * .22:.1f},{y} Z" fill="{c}"/>')
-    o.append(f'<path d="M{x - r * .27:.1f},{y} A{r * .27:.1f},{r * .27:.1f} 0 0 1 {x + r * .27:.1f},{y}" fill="none" stroke="{c}" stroke-width="0.7"/>')
+            p0, p1 = polar(x, y, 32, ang), polar(x, y, r - 4, ang)
+            o.append(f'<path d="M{P(*p0)} L{P(*p1)}" stroke="{c}" stroke-width="0.8"/>')
+    a0, a1 = polar(x, y, r + 10, base - 45), polar(x, y, r + 10, base + 45)
+    o.append(f'<path d="M{P(*a0)} A{r + 10},{r + 10} 0 0 1 {P(*a1)}" fill="none" stroke="{c}" stroke-width="1"/>')
+    a0, a1 = polar(x, y, r + 16, base - 45), polar(x, y, r + 16, base + 45)
+    o.append(f'<path d="M{P(*a0)} A{r + 16},{r + 16} 0 0 1 {P(*a1)}" fill="none" stroke="{c}" stroke-width="2.2"/>')
+    o.append(f'<path d="M{x},{y} m{-18 * (1 if sx > 0 else -1) * 0},0" />')
+    a0, a1 = polar(x, y, 18, base - 45), polar(x, y, 18, base + 45)
+    o.append(f'<path d="M{x},{y} L{P(*a0)} A18,18 0 0 1 {P(*a1)} Z" fill="{c}"/>')
     return "".join(o)
 
-def endpaper(W=3200, H=2000, c="url(#gfoil)", bg=NOITE):
-    r = 120
-    out = []
-    rows = int(H / r) + 3
-    for k in range(rows):
-        y = -r + k * r
-        off = (k % 2) * r
-        for j in range(-1, int(W / (2 * r)) + 2):
-            x = j * 2 * r + off
-            out.append(fan_tile(x, y, r, c, bg))
-    # losangos nos vãos entre as escamas
-    for k in range(rows):
-        y = -r + k * r
-        off = (k % 2) * r
-        for j in range(-1, int(W / (2 * r)) + 2):
-            x = j * 2 * r + off + r
-            out.append(f'<path d="{diamond(x, y + r * 0.0 - 0.0, 0, 0)}"/>')
-    defs = foil_defs("gfoil", (0, 0, W, H))
-    return svg(W, H, "".join(out), defs, bg=bg)
+def cloth_defs():
+    return ('<filter id="cloth" x="0" y="0" width="100%" height="100%" color-interpolation-filters="sRGB">'
+            '<feTurbulence type="fractalNoise" baseFrequency="0.95 0.06" numOctaves="2" seed="11" result="w"/>'
+            '<feTurbulence type="fractalNoise" baseFrequency="0.05 0.95" numOctaves="2" seed="4" result="v"/>'
+            '<feBlend in="w" in2="v" mode="multiply" result="m"/>'
+            '<feColorMatrix in="m" type="matrix" values="0 0 0 0 0.55  0 0 0 0 0.62  0 0 0 0 0.80  1.25 0 0 0 -0.52" result="lt"/>'
+            '<feTurbulence type="fractalNoise" baseFrequency="0.012" numOctaves="3" seed="2" result="slub"/>'
+            '<feColorMatrix in="slub" type="matrix" values="0 0 0 0 0  0 0 0 0 0  0 0 0 0 0.02  0 0 0 0.55 -0.2" result="dk"/>'
+            '<feMerge><feMergeNode in="lt"/><feMergeNode in="dk"/></feMerge></filter>'
+            '<pattern id="weave" patternUnits="userSpaceOnUse" width="4" height="4">'
+            '<rect width="4" height="2" fill="#ffffff" opacity=".022"/><rect width="2" height="4" fill="#000000" opacity=".05"/></pattern>'
+            '<filter id="stamp" x="-3%" y="-3%" width="106%" height="106%" color-interpolation-filters="sRGB">'
+            '<feTurbulence type="fractalNoise" baseFrequency="1.1" numOctaves="2" seed="9" result="n"/>'
+            '<feColorMatrix in="n" type="matrix" values="0 0 0 0 1  0 0 0 0 1  0 0 0 0 1  0 0 0 -0.55 0.55" result="nm"/>'
+            '<feComposite in="nm" in2="SourceAlpha" operator="in" result="speck"/>'
+            '<feGaussianBlur in="SourceAlpha" stdDeviation="1.1" result="b"/><feOffset in="b" dx="0.6" dy="1.4" result="o"/>'
+            '<feFlood flood-color="#03060C" flood-opacity=".85"/><feComposite in2="o" operator="in" result="sh"/>'
+            '<feMerge><feMergeNode in="sh"/><feMergeNode in="SourceGraphic"/><feMergeNode in="speck"/></feMerge></filter>')
+
+def cover_cloth():
+    W, H = 1600, 2300
+    defs = [cloth_defs(), foil_defs("cf", (0, 0, W, H)), foil_defs("foil", (0, 0, 1000, 1200)),
+            foil_defs("wf", (0, 0, 1400, 420))]
+    ink = "url(#cf)"
+    ed, eb = emblem("url(#foil)", uid="Cv", bevel=True)
+    wd, wb, wh = wordmark("url(#wf)", "Cw")
+    defs += [ed, wd]
+    F = []
+    # moldura tripla com cantos escalonados
+    m = 74
+    F.append(f'<path d="{notched_rect(m, m, W - m, H - m, 44, 0)}" fill="none" stroke="{ink}" stroke-width="3.2"/>')
+    F.append(f'<path d="{notched_rect(m, m, W - m, H - m, 44, 9)}" fill="none" stroke="{ink}" stroke-width="0.9"/>')
+    F.append(f'<path d="{notched_rect(m, m, W - m, H - m, 44, 15)}" fill="none" stroke="{ink}" stroke-width="0.9"/>')
+    # leques nos cantos internos
+    ci = m + 15 + 44
+    for (x, y, sx, sy) in ((ci, ci, 1, 1), (W - ci, ci, -1, 1), (ci, H - ci, 1, -1), (W - ci, H - ci, -1, -1)):
+        F.append(corner_fan(x, y, sx, sy, ink, 92))
+    # emblema
+    es = 0.8
+    ex, ey = (W - 1000 * es) / 2, 236
+    F.append(f'<g transform="translate({ex:.1f} {ey}) scale({es})">{eb}</g>')
+    # horizonte do emblema prolongado até a moldura (linha tripla)
+    hy = ey + EYH * es
+    zx = (EC - 404) * es + ex
+    for xa, xb in ((m + 15, zx - 14), (W - zx + 14, W - m - 15)):
+        F.append(triple_h(xa, xb, hy + 0.0, ink, 5.5, th=(0.8, 2.6, 0.8)))
+    # título
+    ws = 0.92
+    wx = (W - 1400 * ws) / 2
+    F.append(f'<g transform="translate({wx:.1f} 1262) scale({ws})">{wb}</g>')
+    # autor
+    F.append(f'<path d="{tp("WERIK MARTINS", ITA, 50, W / 2, 1782, 0.42, "middle")}" fill="{ink}"/>')
+    aw = text_width("WERIK MARTINS", ITA, 50, 0.42)
+    for side in (-1, 1):
+        F.append(f'<path d="{diamond(W / 2 + side * (aw / 2 + 40), 1782 - 18, 5, 7.5)}" fill="{ink}"/>')
+    # placa da edição numerada
+    py = 1980
+    pw, ph = 560, 74
+    F.append(f'<path d="{notched_rect(W / 2 - pw / 2, py - ph / 2, W / 2 + pw / 2, py + ph / 2, 14, 0)}" fill="none" stroke="{ink}" stroke-width="1.6"/>')
+    F.append(f'<path d="{notched_rect(W / 2 - pw / 2, py - ph / 2, W / 2 + pw / 2, py + ph / 2, 14, 6)}" fill="none" stroke="{ink}" stroke-width="0.7"/>')
+    F.append(f'<path d="{tp("EDIÇÃO NUMERADA  Nº 0001 / 1187", JB, 19, W / 2, py + 7, 0.36, "middle")}" fill="{ink}"/>')
+    for side in (-1, 1):
+        F.append(triple_h(W / 2 + side * (pw / 2 + 16), W / 2 + side * (pw / 2 + 170), py, ink, 4.5, th=(0.7, 1.8, 0.7)))
+    body = (f'<rect width="{W}" height="{H}" fill="url(#weave)"/>'
+            f'<rect width="{W}" height="{H}" filter="url(#cloth)"/>'
+            f'<g filter="url(#stamp)">{"".join(F)}</g>')
+    return svg(W, H, body, "".join(defs), bg=NOITE)
+
+# ------------------------------------------------------------------ sobrecapa: janela em arco escalonado
+def tritone_filter(fid, lo=(0.035, 0.058, 0.110), mid=(0.235, 0.300, 0.400), hi=(0.965, 0.905, 0.760), gamma=1.0, contrast=1.0):
+    tv = lambda k: f"{lo[k]:.3f} {mid[k]:.3f} {hi[k]:.3f}"
+    return (f'<filter id="{fid}" color-interpolation-filters="sRGB" x="0" y="0" width="100%" height="100%">'
+            '<feColorMatrix type="matrix" values="0.30 0.59 0.11 0 0  0.30 0.59 0.11 0 0  0.30 0.59 0.11 0 0  0 0 0 1 0"/>'
+            f'<feComponentTransfer><feFuncR type="gamma" amplitude="{contrast}" exponent="{gamma}" offset="0"/>'
+            f'<feFuncG type="gamma" amplitude="{contrast}" exponent="{gamma}" offset="0"/><feFuncB type="gamma" amplitude="{contrast}" exponent="{gamma}" offset="0"/></feComponentTransfer>'
+            f'<feComponentTransfer><feFuncR type="table" tableValues="{tv(0)}"/><feFuncG type="table" tableValues="{tv(1)}"/>'
+            f'<feFuncB type="table" tableValues="{tv(2)}"/></feComponentTransfer></filter>')
+
+def portal(cx, yc, a0, yb, c, uid, zig_widths=None, lit=7, micro_text=None, crown=True, sill_ext=0):
+    """Moldura de portal déco genérica (linhas triplas, faixa dos 7 losangos, coroa em zigurate com arquivoltas)."""
+    o, d = [], []
+    for off, w in ((0, 3.0), (8, 0.9), (13, 0.9), (36, 0.9), (74, 0.9), (79, 0.9), (86, 3.0)):
+        o.append(f'<path d="{arch_d(cx, yc, a0 + off, yb)}" fill="none" stroke="{c}" stroke-width="{w}"/>')
+    if micro_text:
+        t1, t2 = micro_text
+        rmt = a0 + 20
+        o.append(f'<path d="{arc_text(t1, JB, 11, cx, yc, rmt, 181.5, 266.5)} {arc_text(t2, JB, 11, cx, yc, rmt, 273.5, 358.5)}" fill="{c}"/>')
+        o.append(f'<path d="{diamond(cx, yc - rmt - 4, 4, 6)}" fill="{c}"/>')
+    for k in range(7):
+        ang = 180 + 30 * k
+        x, y = polar(cx, yc, a0 + 55, ang)
+        o.append(f'<g transform="translate({x:.2f} {y:.2f}) rotate({ang + 90:.2f})">'
+                 f'<path d="{diamond(0, 0, 10, 15)}" fill="none" stroke="{c}" stroke-width="1"/>'
+                 f'<path d="{diamond(0, 0, 6.5, 10.5)}" fill="{c}" opacity="{clamp(lit - k):.3f}"/></g>')
+    flu = []
+    for side in (-1, 1):
+        for off in (17, 21, 25, 29):
+            flu.append(f'M{cx + side * (a0 + off):.1f},{yc + 24} V{yb - 4}')
+        for off in (49, 55, 61):
+            flu.append(f'M{cx + side * (a0 + off):.1f},{yc + 30} V{yb - 4}')
+    o.append(f'<path d="{" ".join(flu)}" stroke="{c}" stroke-width="0.6" fill="none"/>')
+    if crown:
+        Ra = a0 + 86
+        widths = zig_widths or [Ra + 42, Ra + 2, Ra - 58, Ra - 140, Ra - 236]
+        steps = zig_auto(yc, Ra + 30, widths, 40)
+        zb = yb + 52
+        o.append(f'<path d="{zig_d(cx, steps, zb)}" fill="none" stroke="{c}" stroke-width="3"/>')
+        o.append(f'<path d="{zig_d(cx, offset_steps(steps, 9), zb)}" fill="none" stroke="{c}" stroke-width="0.9"/>')
+        o.append(f'<path d="{zig_d(cx, offset_steps(steps, 14), zb)}" fill="none" stroke="{c}" stroke-width="0.9"/>')
+        d.append(f'<clipPath id="{uid}cr"><path d="{zig_d(cx, offset_steps(steps, 22), zb)}"/></clipPath>')
+        arcs = "".join(f'<path d="{arch_d(cx, yc, r, zb)}" stroke-width="{1.4 if k % 4 == 0 else 0.6}"/>'
+                       for k, r in enumerate(range(int(Ra + 14), int(Ra + 400), 9)))
+        o.append(f'<g clip-path="url(#{uid}cr)" fill="none" stroke="{c}">{arcs}</g>')
+        o.append(f'<rect x="{cx - widths[0] - 16 - sill_ext}" y="{zb}" width="{2 * (widths[0] + 16 + sill_ext)}" height="3" fill="{c}"/>')
+        o.append(f'<rect x="{cx - widths[0] - 16 - sill_ext}" y="{zb + 8}" width="{2 * (widths[0] + 16 + sill_ext)}" height="0.9" fill="{c}"/>')
+    # soleira
+    o.append(triple_h(cx - a0 - 86, cx + a0 + 86, yb + 8, c, 5, th=(3, 0.9, 0.9)))
+    return "".join(d), "".join(o)
+
+JTONE = dict(gamma=1.9, lo=(0.03, 0.05, 0.095), mid=(0.20, 0.235, 0.30), hi=(0.985, 0.90, 0.70))
+
+def jacket(art="atrio.jpg", fit="xMidYMid slice", tone=JTONE, shift=(0, 0), zoom=1.0):
+    W, H = 1600, 2300
+    cx, yc, a0, yb = W / 2, 760, 470, 1440
+    defs = [foil_defs("jf", (0, 0, W, H)), foil_defs("wf", (0, 0, 1400, 420)),
+            tritone_filter("tri", **(tone or {}))]
+    ink = "url(#jf)"
+    dd, fr = portal(cx, yc, a0, yb, ink, "J", micro_text=("CONSERVAÇÃO · VÍNCULO · COMPATIBILIDADE ·", "VAZÃO · DISSIPAÇÃO · CAPACIDADE · RETORNO"))
+    defs.append(dd)
+    defs.append(f'<clipPath id="win"><path d="{arch_closed(cx, yc, a0 - 2, yb)}"/></clipPath>')
+    iw, ih = 2 * a0 * zoom, (yb - yc + a0) * zoom
+    ix, iy = cx - iw / 2 + shift[0], yc - a0 - (ih - (yb - yc + a0)) / 2 + shift[1]
+    img = (f'<g clip-path="url(#win)"><image href="{ART}{art}" x="{ix:.1f}" y="{iy:.1f}" width="{iw:.1f}" height="{ih:.1f}" '
+           f'preserveAspectRatio="{fit}" filter="url(#tri)"/>'
+           f'<rect x="{cx - a0}" y="{yc - a0}" width="{2 * a0}" height="{yb - yc + a0}" fill="url(#jvig)"/></g>')
+    defs.append(f'<radialGradient id="jvig" gradientUnits="userSpaceOnUse" cx="{cx}" cy="{(yc - a0 + yb) / 2}" r="{a0 * 1.25}">'
+                f'<stop offset="0.55" stop-color="{NOITE}" stop-opacity="0"/><stop offset="1" stop-color="{NOITE}" stop-opacity=".55"/></radialGradient>')
+    wd, wb, wh = wordmark("url(#wf)", "Jw")
+    defs.append(wd)
+    ws = 0.9
+    body = (img + fr +
+            f'<g transform="translate({(W - 1400 * ws) / 2:.1f} 1618) scale({ws})">{wb}</g>' +
+            f'<path d="{tp("WERIK MARTINS", ITA, 48, W / 2, 2108, 0.42, "middle")}" fill="{ink}"/>')
+    aw = text_width("WERIK MARTINS", ITA, 48, 0.42)
+    for side in (-1, 1):
+        body += f'<path d="{diamond(W / 2 + side * (aw / 2 + 40), 2108 - 17, 5, 7.5)}" fill="{ink}"/>'
+    body += f'<rect x="40" y="40" width="{W - 80}" height="{H - 80}" fill="none" stroke="{ink}" stroke-width="1.2"/>'
+    return svg(W, H, body, "".join(defs), bg=NOITE)
+
+# ------------------------------------------------------------------ abertura de capítulo
+P1 = "O contrato tinha onze páginas, e Pelle Dorn fazia questão de que Ilan Varek conhecesse cada uma delas antes de entrar no prédio."
+P2 = ("— Cláusula sétima — leu o agente da seguradora, segurando o papel aberto contra o vento, o nariz vermelho "
+      "afundado num cachecol verde. — “O contratado se compromete a não causar dano estrutural ao imóvel segurado.”")
+
+def justify(paras, x, y, width, size, lead, drop=None, sc_words=0, indent=0, ink=NOITE):
+    """Composição justificada com hifenização (pt_BR); drop=(linhas, recuo) para a capitular; versaletes nas primeiras palavras."""
+    import pyphen
+    hy = pyphen.Pyphen(lang="pt_BR")
+    sp = text_width(" ", GAR, size)
+    out = []; line_no = 0
+    for pi, para in enumerate(paras):
+        raw = para.split(" ")
+        toks = []
+        k = 0
+        while k < len(raw):
+            w = raw[k]
+            if w == "—" and k + 1 < len(raw):
+                w = "— " + raw[k + 1]; k += 1
+            toks.append(w); k += 1
+        items = []
+        for wi, w in enumerate(toks):
+            f = GARSC if (pi == 0 and wi < sc_words) else GAR
+            items.append([w.lower() if f == GARSC else w, f])
+        lines, cur = [], []
+        def lim_for(n, first):
+            L = width
+            if drop and n < drop[0]: L -= drop[1]
+            if first and indent and pi > 0: L -= indent
+            return L
+        i = 0
+        while i < len(items):
+            t, f = items[i]
+            n = line_no + len(lines)
+            L = lim_for(n, not lines)
+            used = sum(text_width(a, b, size) for a, b in cur) + sp * len(cur)
+            tw = text_width(t, f, size)
+            if used + tw <= L or not cur:
+                cur.append([t, f]); i += 1; continue
+            if " " not in t:
+                for a_, b_ in hy.iterate(t):
+                    if len(a_) >= 3 and len(b_) >= 3 and used + text_width(a_ + "-", f, size) <= L:
+                        cur.append([a_ + "-", f]); items[i] = [b_, f]; break
+            lines.append((cur, L, n)); cur = []
+        if cur:
+            n = line_no + len(lines)
+            lines.append((cur, lim_for(n, not lines), n))
+        for li, (ln, L, n) in enumerate(lines):
+            lx = x + (drop[1] if drop and n < drop[0] else 0) + (indent if (li == 0 and indent and pi > 0) else 0)
+            ws = [text_width(a, b, size) for a, b in ln]
+            last = li == len(lines) - 1
+            gap = sp if last or len(ln) == 1 else (L - sum(ws)) / (len(ln) - 1)
+            cx_ = lx
+            for (tx, f), w_ in zip(ln, ws):
+                out.append(text_path(tx, f, size, cx_, y))
+                cx_ += w_ + gap
+            y += lead
+        line_no += len(lines)
+    return f'<path d="{" ".join(out)}" fill="{ink}"/>', y
+
+def chapter_page():
+    W, H = 1600, 2300
+    PAPER, INK = MARFIM, NOITE
+    defs = [lin_grad("au", [(0, "#B8955A"), (0.45, CH3), (0.75, "#A88850"), (1, "#7A5E32")], user=(0, 0, W, H))]
+    gold = "url(#au)"
+    o = []
+    # cabeçalho em arco escalonado: numeral do capítulo diante de um sol nascente
+    cx, yc, a0, yb = W / 2, 700, 150, 1000
+    for aa, w in ((a0, 1.6), (a0 + 7, 0.7), (a0 + 18, 2.6)):
+        o.append(f'<path d="{arch_d(cx, yc, aa, yb)}" fill="none" stroke="{gold}" stroke-width="{w}"/>')
+    steps = zig_auto(yc, a0 + 18 + 30, [a0 + 52, a0 + 34, a0 + 6, a0 - 30, a0 - 76], 12)
+    o.append(f'<path d="{zig_d(cx, steps, yb)}" fill="none" stroke="{gold}" stroke-width="1.8"/>')
+    o.append(f'<path d="{zig_d(cx, offset_steps(steps, 6), yb)}" fill="none" stroke="{gold}" stroke-width="0.6"/>')
+    defs.append(f'<clipPath id="chz"><path d="{zig_d(cx, offset_steps(steps, 11), yb)}"/></clipPath>')
+    arcs = "".join(f'<path d="{arch_d(cx, yc, r, yb)}"/>' for r in range(a0 + 26, a0 + 120, 8))
+    o.append(f'<g clip-path="url(#chz)" fill="none" stroke="{gold}" stroke-width="0.55">{arcs}</g>')
+    o.append(f'<path d="{diamond(cx, yc - a0 - 9, 5, 8)}" fill="{gold}"/>')
+    # sol nascente + raios
+    num_d = tp("I", ITA, 330, cx, yb - 36, 0, "middle")
+    defs.append(f'<clipPath id="chv"><path d="{arch_closed(cx, yc, a0 - 8, yb - 34)}"/></clipPath>')
+    defs.append(f'<mask id="chm" maskUnits="userSpaceOnUse" x="0" y="0" width="{W}" height="{H}"><rect width="{W}" height="{H}" fill="white"/>'
+                f'<path d="{num_d}" fill="black" stroke="black" stroke-width="22" stroke-linejoin="round"/></mask>')
+    R = []
+    sx, sy = cx, yb - 34
+    for k in range(-16, 17):
+        ang = 270 + k * 5
+        if k % 4 == 0:
+            p0 = polar(sx, sy, 92, ang); p1, p2 = polar(sx, sy, 420, ang - 1.1), polar(sx, sy, 420, ang + 1.1)
+            R.append(f'<path d="M{P(*p0)} L{P(*p1)} L{P(*p2)} Z" fill="{gold}"/>')
+        else:
+            p0, p1 = polar(sx, sy, 98 if k % 2 == 0 else 112, ang), polar(sx, sy, 420, ang)
+            R.append(f'<path d="M{P(*p0)} L{P(*p1)}" stroke="{gold}" stroke-width="{0.9 if k % 2 == 0 else 0.5}"/>')
+    R.append(f'<path d="M{sx - 72},{sy} A72,72 0 0 1 {sx + 72},{sy} Z" fill="{gold}"/>')
+    R.append(f'<path d="M{sx - 82},{sy} A82,82 0 0 1 {sx + 82},{sy}" fill="none" stroke="{gold}" stroke-width="1"/>')
+    o.append(f'<g clip-path="url(#chv)"><g mask="url(#chm)">{"".join(R)}</g></g>')
+    o.append(f'<path d="{num_d}" fill="{INK}"/>')
+    o.append(triple_h(cx - a0, cx + a0, sy + 1, gold, 4.5, th=(2.4, 0.7, 0.7)))
+    o.append(triple_h(cx - a0 - 70, cx + a0 + 70, yb + 8, gold, 4.5, th=(2.4, 0.7, 0.7)))
+    # rótulo, título, fio
+    o.append(f'<path d="{tp("CAPÍTULO UM", JB, 22, cx, 1100, 0.6, "middle")}" fill="{INK}"/>')
+    o.append(f'<path d="{tp("Noite tropical", ITA, 104, cx, 1232, 0.02, "middle")}" fill="{INK}"/>')
+    o.append(triple_h(cx - 250, cx - 46, 1292, gold, 4.5, th=(0.7, 2.0, 0.7)))
+    o.append(triple_h(cx + 46, cx + 250, 1292, gold, 4.5, th=(0.7, 2.0, 0.7)))
+    o.append(step_orn(cx, 1292, gold, 0.85))
+    # capitular déco
+    x0, y0 = 200, 1460
+    size, lead = 44, 66
+    cap_top = y0 - 0.66 * size - 2
+    cap_s = 2 * lead + 0.66 * size + 2 + 10
+    bx, by = x0, cap_top
+    o.append(f'<path d="{notched_rect(bx, by, bx + cap_s, by + cap_s, 18, 0)}" fill="none" stroke="{gold}" stroke-width="2.2"/>')
+    o.append(f'<path d="{notched_rect(bx, by, bx + cap_s, by + cap_s, 18, 7)}" fill="none" stroke="{gold}" stroke-width="0.7"/>')
+    ccx, ccy = bx + cap_s / 2, by + cap_s - 16
+    fan = []
+    defs.append(f'<clipPath id="capc"><rect x="{bx + 14}" y="{by + 14}" width="{cap_s - 28}" height="{cap_s - 30}"/></clipPath>')
+    for k in range(-8, 9):
+        ang = 270 + k * 10.5
+        p0, p1 = polar(ccx, ccy, 30, ang), polar(ccx, ccy, cap_s, ang)
+        fan.append(f'M{P(*p0)} L{P(*p1)}')
+    o.append(f'<path d="{" ".join(fan)}" stroke="{gold}" stroke-width="0.8" clip-path="url(#capc)"/>')
+    o.append(f'<rect x="{bx + 14}" y="{ccy}" width="{cap_s - 28}" height="1.6" fill="{gold}"/>')
+    capd = tp("O", ITA, 170, ccx, by + cap_s - 24, 0, "middle")
+    o.append(f'<path d="{capd}" fill="{PAPER}" stroke="{PAPER}" stroke-width="16" stroke-linejoin="round"/>')
+    o.append(f'<path d="{capd}" fill="{INK}"/>')
+    txt, yend = justify([P1[2:], P2], x0, y0, W - 2 * x0, size, lead, drop=(3, cap_s + 24), sc_words=2, indent=66, ink=INK)
+    o.append(txt)
+    # fólio
+    o.append(f'<path d="{tp("9", JL, 26, cx, H - 150, 0, "middle")}" fill="{INK}"/>')
+    for side in (-1, 1):
+        o.append(f'<path d="{diamond(cx + side * 30, H - 159, 3.5, 5.5)}" fill="{gold}"/>')
+        o.append(f'<rect x="{min(cx + side * 44, cx + side * 120)}" y="{H - 159.4}" width="76" height="0.8" fill="{gold}"/>')
+    return svg(W, H, "".join(o), "".join(defs), bg=PAPER)
+
+# ------------------------------------------------------------------ animação (8 s)
+def damped(u, amp, freq=2.2, tau=0.28):
+    return amp * math.exp(-u / tau) * math.sin(2 * math.pi * freq * u)
+
+def motion_frame(i, t):
+    W, H = 1920, 1080
+    es = 0.60
+    ex, ey = (W - 1000 * es) / 2, 30
+    # cronograma
+    fr = ease_in_out(seg(t, 0.03, 0.22))
+    cr = ease(seg(t, 0.10, 0.26))
+    doors = 1 - ease_in_out(seg(t, 0.24, 0.42))
+    rays = seg(t, 0.32, 0.52)
+    rise = seg(t, 0.34, 0.54)
+    crack = seg(t, 0.545, 0.585)
+    flash = math.sin(math.pi * seg(t, 0.545, 0.62)) if 0.545 <= t <= 0.62 else 0.0
+    sword = seg(t, 0.56, 0.68)
+    ub = seg(t, 0.67, 1.0)
+    beam = -7.0 * ease_out(seg(t, 0.67, 0.74)) + (damped(ub * 2.4, 2.2, 1.6, 0.35) if t > 0.67 else 0)
+    swing = (damped(ub * 2.4, 6.5, 1.25, 0.42) if t > 0.67 else 0)
+    lit = 7 * seg(t, 0.72, 0.86)
+    glint = seg(t, 0.80, 0.93)
+    glow = ease_out(seg(t, 0.36, 0.6))
+    ed, eb = emblem("url(#mf)", uid="M", doors=doors, rays=rays, rise=rise, crack=crack, sword=sword,
+                    beam=beam, swing=swing, lit=lit, frame=fr, bevel=True, crown=cr, glow=glow, flash=flash)
+    # título com tracking que se fecha
+    tu = ease_out(seg(t, 0.74, 0.95))
+    wd, wb, wh = wordmark("url(#mw)", "Mw", tr_big=0.16 + 0.34 * (1 - tu))
+    ws = 0.56
+    wy = 30 + 1200 * es + 18
+    defs = [foil_defs("mf", (0, 0, 1000, 1200), glint=glint if 0 < glint < 1 else None),
+            foil_defs("mw", (0, 0, 1400, 420), glint=seg(t, 0.86, 0.97) if 0 < seg(t, 0.86, 0.97) < 1 else None),
+            foil_defs("mh", (0, 0, W, H)), ed, wd,
+            f'<radialGradient id="mbg" gradientUnits="userSpaceOnUse" cx="{W / 2}" cy="{H * 0.42}" r="{W * 0.62}">'
+            f'<stop offset="0" stop-color="{NOITE2}"/><stop offset="0.6" stop-color="{NOITE}"/><stop offset="1" stop-color="#070B14"/></radialGradient>']
+    # horizonte prolongado (desenha das bordas para o centro)
+    hy = ey + EYH * es
+    zx = ex + (EC - 404) * es
+    hp = ease_in_out(seg(t, 0.0, 0.16))
+    hz = ""
+    if hp > 0:
+        L = (zx - 14) * hp
+        hz = (triple_h(0, L, hy, "url(#mh)", 5, th=(0.7, 2.2, 0.7)) +
+              triple_h(W - L, W, hy, "url(#mh)", 5, th=(0.7, 2.2, 0.7)))
+    # luz que escapa da porta: raios largos e tênues no fundo
+    bgr = ""
+    rv = ease_out(seg(t, 0.40, 0.70))
+    if rv > 0:
+        sx, sy = ex + EC * es, ey + EYH * es
+        Rr = 300 + 1500 * rv
+        wed = []
+        for k in range(-8, 9):
+            ang = 270 + k * 10
+            p0 = polar(sx, sy, 60, ang)
+            p1, p2 = polar(sx, sy, Rr, ang - 1.9), polar(sx, sy, Rr, ang + 1.9)
+            wed.append(f'M{P(*p0)} L{P(*p1)} L{P(*p2)} Z')
+        defs.append(f'<radialGradient id="mrg" gradientUnits="userSpaceOnUse" cx="{sx}" cy="{sy}" r="{Rr:.0f}">'
+                    f'<stop offset="0" stop-color="{CH2}" stop-opacity=".065"/><stop offset="1" stop-color="{CH2}" stop-opacity="0"/></radialGradient>')
+        defs.append(f'<clipPath id="msky"><rect x="0" y="0" width="{W}" height="{sy - 6:.1f}"/></clipPath>')
+        bgr = f'<path d="{" ".join(wed)}" fill="url(#mrg)" clip-path="url(#msky)"/>'
+    body = (f'<rect width="{W}" height="{H}" fill="url(#mbg)"/>' + bgr + hz +
+            f'<g transform="translate({ex:.1f} {ey}) scale({es})">{eb}</g>'
+            f'<g transform="translate({(W - 1400 * ws) / 2:.1f} {wy + 14 * (1 - tu):.1f}) scale({ws})" opacity="{ease(seg(t, 0.74, 0.86)):.3f}">{wb}</g>')
+    return svg(W, H, body, "".join(defs))
 
 def build_signs():
     W, H = 2000, 470
@@ -780,9 +1189,23 @@ if __name__ == "__main__":
         build_emblems()
     if "logo" in only or "all" in only:
         build_logo()
+    if "capa" in only or "all" in only:
+        to_png(cover_cloth(), f"{OUT}/capa_tecido_champanhe.png", 1600)
+    if "sobrecapa" in only or "all" in only:
+        to_png(jacket(), f"{OUT}/sobrecapa_limiar.png", 1600)
+    if "capitulo" in only or "all" in only:
+        to_png(chapter_page(), f"{OUT}/abertura_capitulo.png", 1600)
     if "guarda" in only or "all" in only:
         to_png(endpaper(), f"{OUT}/guarda_limiar.png", 3200)
     if "sinais" in only or "all" in only:
         build_signs()
         build_principles()
+    if "frames" in only:
+        S = "/tmp/claude-0/-home-user-LTKG/0ae43a17-9955-54f0-9172-040bd4d1f0e3/scratchpad/t/"
+        for tt in [float(a) for a in os.environ.get('TT', '0.12,0.33,0.5,0.6,0.78,0.9,1.0').split(',')]:
+            t1 = time.time()
+            to_png(motion_frame(int(tt * 239), tt), f"{S}mf_{int(tt * 100):03d}.png", 1920)
+            print("frame", tt, round(time.time() - t1, 2), "s")
+    if "motion" in only or "all" in only:
+        animate(motion_frame, 240, f"{OUT}/animacao_limiar.mp4", gif=f"{OUT}/animacao_limiar.gif")
     print("B ok", round(time.time() - t0, 1), "s")

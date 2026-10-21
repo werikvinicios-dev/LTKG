@@ -238,34 +238,49 @@ São 15 páginas em A4 horizontal, sem spoilers:
 - amostras do miolo e da capa;
 - créditos.
 
-### Identidade visual v2: três direções — `exportacoes/identidade_v2/`
-Três direções completas para o mesmo brasão (sete losangos, sol de inverno rachado, espada com a
-guarda em balança e o prato esquerdo mais baixo). Todo o desenho é vetorial e foi gerado por código
-próprio: curvas de torno, microtexto, hachuras, escalas. Não entra imagem de banco nem licença de
-terceiros. As fontes são de licença aberta (SIL OFL).
+### Identidade definitiva: Aresta (a partir das referências do autor)
+O autor enviou seis pranchas de referência e pediu fidelidade a elas, com peças a mais e tudo em
+imagem, não em vetor. A direção aprovada passou a ser esta. A exploração anterior (`exportacoes/identidade_v2/`,
+opção A "Apólice") fica guardada como alternativa. As opções B e C dessa exploração foram interrompidas
+antes do fim e substituídas por esta direção.
 
-| Opção | Linguagem | Paleta | Tipografia |
-|---|---|---|---|
-| A · Apólice | gravura de segurança: guilhochê, talho-doce, microtexto | vinho, bronze, papel apólice | Playfair Display SC, EB Garamond |
-| B · Limiar | art déco: portal escalonado, sunburst | meia-noite, champanhe, verdete | Italiana, Josefin Sans, EB Garamond |
-| C · Instrumento | astrolábio e óptica: limbo graduado, rete, lente | obsidiana, prata, latão, toque iridescente | Instrument Serif, IBM Plex Mono, EB Garamond |
+| Pasta | Conteúdo |
+|---|---|
+| `exportacoes/banco_de_arte/` | 58 imagens individuais com ficha em `catalogo.json` (prompt, modelo, versão, status) e índice em `LEIA.md` |
+| `exportacoes/identidade_aresta/pranchas/` (e `pranchas_jpg/`) | 6 pranchas no layout das referências + 1 extra (kit de lançamento) |
+| `exportacoes/identidade_aresta/Biblia_Visual_Leis_para_Matar_Deuses.pdf` | Bíblia Visual da Saga, 20 páginas |
+| `exportacoes/capa_v2/` | Capa do Volume I: frente, EPUB, miniatura, capa aberta com lombada de 28,1 mm (502 p) |
+| `exportacoes/identidade_aresta/logo/` e `simbolos/` | Matrizes vetoriais de uma cor, para hot stamping e gravação (não são as artes finais) |
 
-Cada pasta contém:
-- emblema (SVG e PNG) e versão em foil;
-- logotipo;
-- sinais das sete leis e dos seis princípios;
-- folha de guarda;
-- capa em tecido com hot-stamping;
-- sobrecapa com a arte do livro;
-- abertura de capítulo;
-- animação de 8 s (MP4 e GIF).
+O banco de arte cobre:
+- identidade: logos, monograma, selo, versões transparentes e medalhão;
+- símbolos: sete leis, seis disciplinas, etapas da Transposição;
+- facções e casas;
+- objetos: selos de cera, medalhões, anéis, estandartes, marcadores, manuscritos, artefatos;
+- mundo: oito regiões, Vhalessa e mapa conceitual;
+- personagens: cinco retratos, silhuetas e dinâmica do grupo;
+- capas dos quatro volumes, lombadas, caixa de colecionador e apresentação;
+- editorial: livro aberto, ornamentos, texturas;
+- engenharia arcana: registro, fluxograma, circuitos, instrumentos, materiais, portais, interdição, redes;
+- promocional: pôster e post.
 
-A apresentação comparada está em `Identidade_visual_v2_tres_opcoes.pdf`, com pranchas 16:9,
-comparativo e referências. As imagens de cada prancha ficam em `pranchas/`. Para reconstruir:
-`python3 build/visual/opcao_a.py --motion` (idem `opcao_b.py`, `opcao_c.py`), depois
-`python3 build/visual/pranchas.py`.
+**Aplicado ao livro:**
+- o PDF de luxo, o PDF de gráfica e o EPUB foram refeitos com o medalhão do emblema nas aberturas e na folha
+  de rosto, e com o lettering novo;
+- o livro ganhou uma prancha antes do capítulo 1 (a Fornalha Velha à noite);
+- o colofão foi atualizado: as sete pérolas são as sete leis;
+- o EPUB usa a capa nova e foi validado no EpubCheck sem erros;
+- o PDF tem 502 páginas.
 
 ## 8. Pendências técnicas (sem conteúdo narrativo)
+- **Resolução das artes geradas.** O gerador entrega de 1024 a 1536 px. É suficiente para EPUB, redes e pranchas.
+  Para imprimir capa e pranchas a 300 dpi, é preciso ampliação profissional ou reprodução em resolução maior.
+  A capa aberta em `capa_v2/` é uma prévia, não um arquivo final de gráfica.
+- **Consistência de rosto.** Há um retrato canônico por personagem, a partir das referências. Ilustrar cenas com os
+  mesmos rostos exige que o autor aprove esses retratos e que se use um gerador que aceite imagem de referência.
+- **Google Drive.** O conector só recebe arquivos pelo conteúdo da própria mensagem, o que inviabiliza enviar
+  centenas de megabytes de imagens. No Drive ficam os documentos e o índice com as imagens incorporadas. Os
+  arquivos em resolução cheia ficam no repositório e no arquivo do Figma "Leis para Matar Deuses — Banco de Arte".
 
 - **ISBN e código de barras:** a contracapa tem um espaço reservado. Falta registrar a obra.
 - **Lombada:** depende do papel e da gráfica. A capa pode ser regenerada com outro número de

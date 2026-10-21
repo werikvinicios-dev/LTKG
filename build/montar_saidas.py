@@ -44,9 +44,9 @@ def epub_images():
         if im.width > 1600:
             im = im.resize((1600, round(1600 * im.height / im.width)), Image.LANCZOS)
         p = f"{TMP}/{name}.jpg"; im.save(p, quality=84); out[name] = p
-    emb = Image.open(f"{EXP}/grafico/logo/emblema_bronze_chapado.png")
+    emb = Image.open(f"{EXP}/banco_de_arte/01_identidade/ID-009_emblema_medalhao.png")
     emb.resize((240, 240), Image.LANCZOS).save(f"{TMP}/emblema.png")
-    logo = Image.open(f"{EXP}/grafico/logo/logotipo_tinta.png")
+    logo = Image.open(f"{EXP}/banco_de_arte/01_identidade/ID-006_lettering_transparente.png")
     logo.resize((1200, round(1200 * logo.height / logo.width)), Image.LANCZOS).save(f"{TMP}/logotipo.png")
     return out
 
@@ -104,7 +104,7 @@ def epub_md(imgs):
             L += ["::: prancha", "", f"![]({imgs[key]})", "", cap, "", ":::", ""]
     L += ["::: colofao", "",
           "Composto em EB Garamond, de Georg Duffner e Octavio Pardo, e Cinzel, de Natanael Gama. "
-          "Os sete losangos do emblema são as sete leis da Transposição.", "", ":::", ""]
+          "As sete pérolas do emblema são as sete leis da Transposição.", "", ":::", ""]
     p = f"{TMP}/livro_epub.md"
     open(p, "w", encoding="utf-8").write("\n".join(L))
     return p
@@ -144,7 +144,7 @@ if __name__ == "__main__":
                                         "EBGaramond-SemiBold.ttf", "EBGaramondSC-Regular.ttf",
                                         "Cinzel-Regular.ttf")]
     cmd = ["pandoc", emd, "-f", "markdown+fenced_divs+bracketed_spans+raw_html", "-t", "epub3",
-           "--epub-title-page=false", f"--css={B}/epub.css", f"--epub-cover-image={EXP}/capa/capa_ebook.jpg",
+           "--epub-title-page=false", f"--css={B}/epub.css", f"--epub-cover-image={EXP}/capa_v2/capa_ebook.jpg",
            "--toc", "--toc-depth=1", "--split-level=1", "-o", f"{EXP}/Leis_para_Matar_Deuses_Vol1_LUXO.epub"]
     for f in fonts:
         cmd.append(f"--epub-embed-font={f}")
