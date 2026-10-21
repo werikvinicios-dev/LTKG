@@ -276,18 +276,6 @@
   "data": "2026-10-21"
  },
  {
-  "arquivo": "06_personagens/PE-001_ilan_varek_retrato.png",
-  "categoria": "06_personagens",
-  "largura": 1024,
-  "altura": 1536,
-  "modelo": "gpt-image-2.5",
-  "versao": "v1",
-  "status": "proposta — aguardando aprovação do autor",
-  "spoiler": false,
-  "prompt": "Ilan Varek, ~34, cabelo escuro ondulado, barba curta, capa negra, couro, espada ao ombro",
-  "data": "2026-10-21"
- },
- {
   "arquivo": "06_personagens/PE-002_aurelia_retrato.png",
   "categoria": "06_personagens",
   "largura": 1024,
@@ -837,6 +825,18 @@
   "status": "direção aprovada pelo autor (Aurelia loira dourada); peça a confirmar",
   "spoiler": false,
   "prompt": "Cinco companheiros de costas; Aurelia loira (v2, substitui a v1)",
+  "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-001_ilan_varek_retrato.png",
+  "categoria": "06_personagens",
+  "largura": 1024,
+  "altura": 1536,
+  "modelo": "gpt-image-2.5",
+  "versao": "v2",
+  "status": "direção protagonista (alinhada ao manuscrito); aguardando aprovação do autor",
+  "spoiler": false,
+  "prompt": "Ilan Varek v2 (direção canônica): cabelo castanho-escuro curto, barba de três dias, cicatriz no queixo, olhos cinzentos, casaco negro, manopla esquerda com três células, lente no colete, espada de ferro simples",
   "data": "2026-10-21"
  }
 ]
