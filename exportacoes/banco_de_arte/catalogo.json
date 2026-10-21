@@ -294,7 +294,7 @@
   "altura": 1536,
   "modelo": "gpt-image-2.5",
   "versao": "v1",
-  "status": "proposta — aguardando aprovação do autor",
+  "status": "substituída — direção anterior (cabelo escuro); manter só como histórico",
   "spoiler": false,
   "prompt": "Aurelia, deusa original dos limiares, coroa de raios, negro/marfim/ouro",
   "data": "2026-10-21"
@@ -552,18 +552,6 @@
   "data": "2026-10-21"
  },
  {
-  "arquivo": "06_personagens/PE-006_dinamica_do_grupo.png",
-  "categoria": "06_personagens",
-  "largura": 1536,
-  "altura": 1024,
-  "modelo": "gpt-image-2.5",
-  "versao": "v1",
-  "status": "proposta — aguardando aprovação do autor",
-  "spoiler": false,
-  "prompt": "Cinco companheiros de costas entrando no salão",
-  "data": "2026-10-21"
- },
- {
   "arquivo": "04_objetos/OB-007_artefatos_de_colecao.png",
   "categoria": "04_objetos",
   "largura": 1536,
@@ -702,7 +690,7 @@
   "altura": 1536,
   "modelo": "gpt-image-2.5",
   "versao": "v1",
-  "status": "proposta — aguardando aprovação do autor",
+  "status": "direção aprovada pelo autor (Aurelia loira dourada); peça a confirmar",
   "spoiler": false,
   "prompt": "Aurelia, versão loira dourada, de pé diante do portal, vestido de seda translúcida com fenda (variante a aprovar)",
   "data": "2026-10-21"
@@ -714,7 +702,7 @@
   "altura": 1536,
   "modelo": "gpt-image-2.5",
   "versao": "v1",
-  "status": "proposta — aguardando aprovação do autor",
+  "status": "direção aprovada pelo autor (Aurelia loira dourada); peça a confirmar",
   "spoiler": false,
   "prompt": "Aurelia, versão loira dourada, de costas olhando por sobre o ombro, vestido sem costas",
   "data": "2026-10-21"
@@ -726,7 +714,7 @@
   "altura": 1536,
   "modelo": "gpt-image-2.5",
   "versao": "v1",
-  "status": "proposta — aguardando aprovação do autor",
+  "status": "direção aprovada pelo autor (Aurelia loira dourada); peça a confirmar",
   "spoiler": false,
   "prompt": "Aurelia, versão loira dourada, descendo a escadaria entre figuras curvadas",
   "data": "2026-10-21"
@@ -738,7 +726,7 @@
   "altura": 1536,
   "modelo": "gpt-image-2.5",
   "versao": "v1",
-  "status": "proposta — aguardando aprovação do autor",
+  "status": "direção aprovada pelo autor (Aurelia loira dourada); peça a confirmar",
   "spoiler": false,
   "prompt": "Aurelia, versão loira dourada, sentada no trono-portal",
   "data": "2026-10-21"
@@ -750,9 +738,105 @@
   "altura": 1536,
   "modelo": "gpt-image-2.5",
   "versao": "v1",
-  "status": "proposta — aguardando aprovação do autor",
+  "status": "direção aprovada pelo autor (Aurelia loira dourada); peça a confirmar",
   "spoiler": false,
   "prompt": "Aurelia, versão loira dourada, retrato de busto, olhos âmbar",
+  "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-013_aurelia_veu_dourado_vento.png",
+  "categoria": "06_personagens",
+  "largura": 1024,
+  "altura": 1536,
+  "modelo": "gpt-image-2.5",
+  "versao": "v1",
+  "status": "direção aprovada pelo autor (Aurelia loira dourada); peça a confirmar",
+  "spoiler": false,
+  "prompt": "Aurelia (direção loira): véu dourado transparente ao vento, sacada ao amanhecer",
+  "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-014_aurelia_regalia_de_batalha.png",
+  "categoria": "06_personagens",
+  "largura": 1024,
+  "altura": 1536,
+  "modelo": "gpt-image-2.5",
+  "versao": "v1",
+  "status": "direção aprovada pelo autor (Aurelia loira dourada); peça a confirmar",
+  "spoiler": false,
+  "prompt": "Aurelia: corpete de filigrana de ouro sobre seda, saia de gaze, anel de luz",
+  "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-015_aurelia_reclinada_templo.png",
+  "categoria": "06_personagens",
+  "largura": 1536,
+  "altura": 1024,
+  "modelo": "gpt-image-2.5",
+  "versao": "v1",
+  "status": "direção aprovada pelo autor (Aurelia loira dourada); peça a confirmar",
+  "spoiler": false,
+  "prompt": "Aurelia: reclinada em almofadas de seda, drapeado translúcido",
+  "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-016_aurelia_luar_sacada.png",
+  "categoria": "06_personagens",
+  "largura": 1024,
+  "altura": 1536,
+  "modelo": "gpt-image-2.5",
+  "versao": "v1",
+  "status": "direção aprovada pelo autor (Aurelia loira dourada); peça a confirmar",
+  "spoiler": false,
+  "prompt": "Aurelia: seda prateada translúcida sem costas, sacada ao luar",
+  "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-017_aurelia_chiffon_grego.png",
+  "categoria": "06_personagens",
+  "largura": 1024,
+  "altura": 1536,
+  "modelo": "gpt-image-2.5",
+  "versao": "v1",
+  "status": "direção aprovada pelo autor (Aurelia loira dourada); peça a confirmar",
+  "spoiler": false,
+  "prompt": "Aurelia: chiffon translúcido em estilo grego, portal",
+  "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-018_aurelia_lago_de_luz.png",
+  "categoria": "06_personagens",
+  "largura": 1024,
+  "altura": 1536,
+  "modelo": "gpt-image-2.5",
+  "versao": "v1",
+  "status": "direção aprovada pelo autor (Aurelia loira dourada); peça a confirmar",
+  "spoiler": false,
+  "prompt": "Aurelia: em pé num espelho d'água de luz dourada, seda colada",
+  "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-019_ilan_e_aurelia_vhalessa.png",
+  "categoria": "06_personagens",
+  "largura": 1024,
+  "altura": 1536,
+  "modelo": "gpt-image-2.5",
+  "versao": "v1",
+  "status": "direção aprovada pelo autor (Aurelia loira dourada); peça a confirmar",
+  "spoiler": false,
+  "prompt": "Ilan e Aurelia (loira, coque com chave de bronze, casaco de pele) numa rua de Vhalessa à noite",
+  "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-006_dinamica_do_grupo.png",
+  "categoria": "06_personagens",
+  "largura": 1536,
+  "altura": 1024,
+  "modelo": "gpt-image-2.5",
+  "versao": "v2",
+  "status": "direção aprovada pelo autor (Aurelia loira dourada); peça a confirmar",
+  "spoiler": false,
+  "prompt": "Cinco companheiros de costas; Aurelia loira (v2, substitui a v1)",
   "data": "2026-10-21"
  }
 ]

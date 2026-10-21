@@ -214,7 +214,7 @@ PERS = {
              "Deuses também sangram. A diferença é que alguém precisa lembrar das consequências.", ["#2B2D31", "#4A4B4F", "#C8B79A", "#6B5A47", "#8E1B22"]),
     "aurelia": ("Aurelia", "A original dos limiares", "Deusa · Atemporal<br>Soberana dos Limiares<br>Inteligência · Autonomia",
                 "Uma das deusas originais. Senhora dos Limiares, portais e transições. Elegante, poderosa e implacável quando necessário.",
-                "Entre um mundo e outro, eu decido o que passa.", ["#B9A57A", "#EFE8DA", "#8C9096", "#4F79B8", "#1E2C4A"]),
+                "Entre um mundo e outro, eu decido o que passa.", ["#E3C27A", "#EFE8DA", "#C9A15A", "#B07A3E", "#1E2C4A"]),
     "mara": ("Mara Quen", "Auditora dos pactos", "Humana · 32 anos · Jurista · Auditora",
              "Analisa pactos, coleta provas e mantém a memória do que foi acordado. Rígida, perspicaz e implacável com contradições.",
              "Sem prova, não há lei. Sem memória, tudo se repete.", ["#3A3A3A", "#EFE8DA", "#5E1B17", "#C9A15A", "#8E1B22"]),
@@ -248,7 +248,7 @@ def prancha_5():
                    '<div class="sc" style="position:absolute;left:0;right:0;top:12px;text-align:center;font-size:10px;z-index:4">Personagens principais</div>'
                    f'<div style="position:absolute;left:14px;right:14px;top:34px;bottom:70px;background:url({A("01_identidade/ID-007_logo_vertical_transparente.png")}) center/contain no-repeat"></div>'
                    '<div class="sc" style="position:absolute;left:0;right:0;bottom:16px;text-align:center;font-size:8.5px;line-height:1.7">Portais · Leis · Povos<br>Deuses · Consequências</div>'))
-    b.append(ficha(868, 8, 572, 470, "aurelia", "06_personagens/PE-002_aurelia_retrato.png", True, flip=True))
+    b.append(ficha(868, 8, 572, 470, "aurelia", "06_personagens/PE-012_aurelia_dourada_retrato.png", True, flip=True))
     b.append(ficha(8, 486, 472, 340, "mara", "06_personagens/PE-003_mara_quen_retrato.png"))
     b.append(ficha(488, 486, 472, 340, "nara", "06_personagens/PE-004_nara_voss_retrato.png"))
     b.append(ficha(968, 486, 472, 340, "sevran", "06_personagens/PE-005_sevran_retrato.png"))
@@ -294,7 +294,7 @@ def prancha_6():
         f'<div class="sc" style="position:absolute;left:{10 + k * 145}px;top:128px;width:139px;text-align:center;font-size:7.5px">{n}</div>' for k, (n, f) in enumerate(locs))))
     b.append(panel(896, 694, 544, 150, "Personagens centrais", None, extra=
                    f'<div style="position:absolute;left:10px;top:28px;width:258px;height:114px;background:url({A("06_personagens/PE-001_ilan_varek_retrato.png")}) center 18%/cover"></div>'
-                   f'<div style="position:absolute;left:276px;top:28px;width:258px;height:114px;background:url({A("06_personagens/PE-002_aurelia_retrato.png")}) center 18%/cover"></div>'
+                   f'<div style="position:absolute;left:276px;top:28px;width:258px;height:114px;background:url({A("06_personagens/PE-012_aurelia_dourada_retrato.png")}) center 18%/cover"></div>'
                    '<div class="h1" style="position:absolute;left:18px;top:118px;font-size:12px;z-index:4">ILAN VAREK</div>'
                    '<div class="h1" style="position:absolute;left:284px;top:118px;font-size:12px;z-index:4">AURELIA</div>'))
     b.append(panel(8, 852, 300, 226, "Facções e símbolos", A("03_faccoes/FA-001_seis_faccoes.png"), "0% 30%", fit="auto 230%"))
