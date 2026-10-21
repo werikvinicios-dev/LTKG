@@ -3,7 +3,9 @@
 """Ampliação 4× com Real-ESRGAN x4plus, rodando na CPU via onnxruntime (sem PyTorch).
 A rede RRDBNet é montada como grafo ONNX a partir dos pesos em safetensors
 (huggingface.co/Comfy-Org/Real-ESRGAN_repackaged, licença BSD-3) e processada em blocos.
-Uso: python3 ampliar.py <entrada.png> [<entrada2> ...]
+Uso: python3 ampliar.py [--mistura=0.6] <entrada.png> [<entrada2> ...]
+--mistura mistura o resultado com a ampliação Lanczos do original (0.6 = 60% Real-ESRGAN). Usar em
+retratos: o modelo puro deixa a pele lisa demais. Capas e cenários ficam melhores com o resultado puro.
 Os pesos são baixados uma vez para build/_modelos/ (fora do git).
 Saída: exportacoes/banco_de_arte_4x/<categoria>/<nome>_4x.jpg"""
 import os, subprocess, sys, time
@@ -92,12 +94,18 @@ if __name__ == "__main__":
     if not os.path.exists(PESOS):
         os.makedirs(os.path.dirname(PESOS), exist_ok=True)
         subprocess.run(["curl", "-sSfL", "-o", PESOS, URL], check=True)
+    mistura = 1.0
+    args = [a for a in sys.argv[1:] if not a.startswith("--mistura=")]
+    for a in sys.argv[1:]:
+        if a.startswith("--mistura="): mistura = float(a.split("=", 1)[1])
     sess = rede(PESOS)
-    for src in sys.argv[1:]:
+    for src in args:
         t0 = time.time()
         cat = os.path.basename(os.path.dirname(src))
         os.makedirs(f"{OUT}/{cat}", exist_ok=True)
         dst = f"{OUT}/{cat}/{os.path.splitext(os.path.basename(src))[0]}_4x.jpg"
         im = ampliar(sess, Image.open(src))
+        if mistura < 1:
+            im = Image.blend(Image.open(src).convert("RGB").resize(im.size, Image.LANCZOS), im, mistura)
         im.save(dst, quality=93, subsampling=0, optimize=True)
         print(dst, im.size, f"{time.time() - t0:.0f}s", flush=True)
