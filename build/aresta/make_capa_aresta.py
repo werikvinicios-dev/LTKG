@@ -24,7 +24,9 @@ front.resize(tam(min(h, 2944)), Image.LANCZOS).save(f"{OUT}/capa_frente_digital.
 front.resize(tam(min(h, 2560)), Image.LANCZOS).save(f"{OUT}/capa_ebook.jpg", quality=92)
 if W >= 4096: front.save(f"{OUT}/capa_frente_alta_resolucao.jpg", quality=93, subsampling=0)
 front.resize((200, round(200 * h / W)), Image.LANCZOS).save(f"{OUT}/capa_miniatura_200px.jpg", quality=90)
-Image.open(f"{BA}/10_promocional/PR-001_poster_cinematografico.png").convert("RGB").save(f"{OUT}/arte_promocional_poster.jpg", quality=92)
+P4X = f"{ROOT}/exportacoes/banco_de_arte_4x/10_promocional/PR-001_poster_cinematografico_4x.jpg"
+poster = Image.open(P4X if os.path.exists(P4X) else f"{BA}/10_promocional/PR-001_poster_cinematografico.png").convert("RGB")
+poster.thumbnail((3072, 3072), Image.LANCZOS); poster.save(f"{OUT}/arte_promocional_poster.jpg", quality=92)
 
 Image.open(f"{BA}/01_identidade/ID-001_logo_principal_vertical.png").convert("RGB").crop((0, 1430, 1024, 1536)).resize((1024, 212)).save(f"{ROOT}/build/_pedra.jpg", quality=90)
 mm = lambda v: f"{v}mm"
