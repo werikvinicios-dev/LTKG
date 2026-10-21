@@ -174,6 +174,8 @@ A cidade é industrial-arcana: latão, cobre, cerâmica e fuligem.
 
 ## 11. Animação (motion)
 
+Há exemplos animados em `exportacoes/motion/magia/` (feitos com `build/motion/magia_canonica.py`).
+
 - **Elos:** esticam e vibram como cabos.
 - **Franjas:** deslizam no sentido do fluxo.
 - **Corte:** a franja para de repente e a ponta se desfaz em calor.
