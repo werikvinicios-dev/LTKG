@@ -162,7 +162,7 @@ def sifao(t):
 
 
 EV_SIFAO = ([(0.3, "sopro", dict(d=1.6, g=.15)), (2.8, "zumbido", dict(d=2.9, f=70, g=.14)), (5.75, "estalo", dict(d=.5, g=.6)),
-             (5.75, "baque", dict(d=1.2, f=90, f1=40, g=.4)), (10.2, "chiado", dict(d=2.8, g=.35)), (10.9, "estalo", dict(d=.6, g=.7))]
+             (5.75, "baque", dict(d=1.2, f0=90, f1=40, g=.4)), (10.2, "chiado", dict(d=2.8, g=.35)), (10.9, "estalo", dict(d=.6, g=.7))]
             + [(6.8 + .75 * k, "sino", dict(f0=196 * 1.122 ** k, d=1.6, g=.16)) for k in range(5)])
 
 
@@ -297,7 +297,7 @@ def guarda(t):
     return transicao(a_img, img, seg(t, 2.5, 2.9)) if t < 2.9 else img
 
 
-EV_GUARDA = [(0.3, "sopro", dict(d=1.6, g=.15)), (3.0, "crepita", dict(d=2.7, g=.25)), (5.75, "baque", dict(d=2.2, f=70, f1=26, g=.9)),
+EV_GUARDA = [(0.3, "sopro", dict(d=1.6, g=.15)), (3.0, "crepita", dict(d=2.7, g=.25)), (5.75, "baque", dict(d=2.2, f0=70, f1=26, g=.9)),
              (5.75, "estalo", dict(d=.8, g=.8)), (6.0, "crepita", dict(d=1.0, g=.4)), (6.3, "estalo", dict(d=.6, g=.5)),
              (8.1, "sopro", dict(d=.7, g=.4)), (9.8, "zumbido", dict(d=1.2, f=60, g=.12))]
 
@@ -380,7 +380,7 @@ def descarga_ulvra(t):
 
 
 EV_ULVRA = [(0.3, "sopro", dict(d=1.6, g=.15)), (2.9, "crepita", dict(d=2.5, g=.2)), (5.4, "zumbido", dict(d=.8, f=140, g=.12)),
-            (6.0, "baque", dict(d=2.6, f=60, f1=24, g=1.0)), (6.0, "estalo", dict(d=1.0, g=.9)), (6.1, "crepita", dict(d=3.6, g=.45)),
+            (6.0, "baque", dict(d=2.6, f0=60, f1=24, g=1.0)), (6.0, "estalo", dict(d=1.0, g=.9)), (6.1, "crepita", dict(d=3.6, g=.45)),
             (7.2, "vidro", dict(f=2600, d=.8, g=.08)), (7.75, "estalo", dict(d=.5, g=.6)), (9.8, "estalo", dict(d=.6, g=.7))]
 
 
@@ -498,7 +498,7 @@ def vetor(t):
 
 EV_VETOR = [(0.3, "sopro", dict(d=1.6, g=.15)), (3.0, "vidro", dict(f=1100, d=2.4, g=.12)), (4.7, "sopro", dict(d=1.5, g=.35)),
             (6.2, "zumbido", dict(d=.6, f=220, g=.2)), (6.7, "sopro", dict(d=.9, g=.4)), (6.75, "estalo", dict(d=.4, g=.4)),
-            (7.75, "baque", dict(d=1.0, f=140, f1=60, g=.6)), (7.75, "estalo", dict(d=.3, g=.5))]
+            (7.75, "baque", dict(d=1.0, f0=140, f1=60, g=.6)), (7.75, "estalo", dict(d=.3, g=.5))]
 
 
 # ================================================================== 8. Fechamento de Contas (cap. 26)
@@ -562,7 +562,7 @@ def fechamento(t):
 
 
 EV_FECHAMENTO = ([(0.3, "sopro", dict(d=1.6, g=.15)), (3.0, "zumbido", dict(d=5.0, f=65, g=.12)), (8.0, "vidro", dict(f=990, d=1.6, g=.12)),
-                  (9.4, "zumbido", dict(d=1.0, f=130, g=.2)), (10.3, "baque", dict(d=3.0, f=55, f1=22, g=1.0)), (10.3, "chiado", dict(d=2.6, g=.5)),
+                  (9.4, "zumbido", dict(d=1.0, f=130, g=.2)), (10.3, "baque", dict(d=3.0, f0=55, f1=22, g=1.0)), (10.3, "chiado", dict(d=2.6, g=.5)),
                   (10.4, "estalo", dict(d=.8, g=.8))]
                  + [(5.0 + .42 * i, "sino", dict(f0=294 * 1.122 ** i, d=1.0, g=.12)) for i in range(7)])
 
