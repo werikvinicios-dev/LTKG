@@ -11,3 +11,4 @@ Fichas técnicas F1 a F8 da bíblia interna, animadas. Os nomes dos arquivos sã
 | `MG-S07_cena.mp4` | Vetor Passante (Costura de Limiares + Pulso) | 26 |
 | `MG-S08_cena.mp4` | Fechamento de Contas; Fecho de Fronteira; manopla destruída | 26 |
 | `MG_rolo_completo.mp4` | as oito animações em sequência, incluindo as duas do cap. 1 | — |
+| `MG3D-S04_cena.mp4` | Guarda de Retorno em 3D real (Blender/Cycles, 192 quadros, 1080p, formato de cinema): close da manopla, o arco entrando na célula 3 até saturar e o contragolpe trincando o gelo | 15 |
