@@ -35,7 +35,7 @@ pintura digital cinematográfica, paleta negro, grafite, âmbar e prata, com ana
 - **IL-S02**, cap. 8, sondagem dupla:
   - No alto de uma torre, Ilan sonda em cadência irregular.
   - Âncoras falsas respondem com eco atrasado (pulsos fantasmas).
-  - Mara (38 anos, alta, magra, cabelo grisalho curto, maleta de placas de aferição) anota.
+  - Mara (32 anos, alta, magra, cabelo escuro em coque, óculos redondos, casaco escuro de gola alta, colete cor de vinho, maleta de placas de aferição) anota.
 - **IL-S03**, cap. 12, Linha Seca:
   - Ilan, ferido pelo frio, tira Dorn da água gelada.
   - Eron Tahl (≈41 anos, magro, cabeça raspada) golpeia com Pulso entre duas âncoras, calcanhar e punho.
@@ -50,7 +50,7 @@ pintura digital cinematográfica, paleta negro, grafite, âmbar e prata, com ana
   - Ilan desvia o canal ionizado para o Sol de bronze aterrado da torre, usando o Pivô de Cobre de Nara como âncora
     intermediária.
   - Um fio de prata de interdição corta o canal secundário e a célula 1 queima.
-  - Nara: 29 anos, baixa, forte, cabelo ruivo-escuro preso com lenço.
+  - Nara: 29 anos, baixa, forte, cabelo cor de cobre ondulado preso atrás, sardas, óculos de aumento de latão na testa.
 - **IL-S06**, cap. 26, Vetor Passante:
   - Dois arcos de pedra a 30 m um do outro, na Estação do Passo Cinzento.
   - Aurelia (loira) sincroniza os limiares.

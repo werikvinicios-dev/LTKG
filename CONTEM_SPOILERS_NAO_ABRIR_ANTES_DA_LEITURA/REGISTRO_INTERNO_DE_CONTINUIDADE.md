@@ -394,3 +394,15 @@ com o motivo); "Eu leio coisas" 3 → 3; "Me dizem isso" 3 → 3; "É por isso q
   `capitulos/`. `V1_original_preservado/` fica intacto como registro histórico. A ficha da Bíblia interna foi
   atualizada. Nenhuma outra passagem descreve cor de cabelo, olhos ou pele dela. O coque com a chave de bronze
   (cap. 3) foi mantido e incorporado à ficha visual.
+- **Mara, Nara e Sevran alinhados às imagens (out. 2026).** O autor mandou alinhar o texto aos retratos PE-003, PE-004
+  e PE-005 do banco de arte. As mudanças valem para `V1_revisao_linguagem/` e `capitulos/`; `V1_original_preservado/`
+  fica intacto.
+  - **Mara.** Passa de 38 para 32 anos, com cabelo escuro em coque, óculos redondos, pele clara, casaco de gola alta e
+    colete cor de vinho. A apresentação no cap. 4 também deixa de dizer "mais velha que a Comissária", que já contradizia
+    os 46 anos de Cassia; agora ela é "mais nova". Foram retirados o cabelo grisalho e as rugas (caps. 4, 13, 16 e 18).
+    O tempo de Câmara cai de vinte para onze anos (caps. 6, 7, 10, 11, 13 e 24). Em Marenna, 1178, ela tinha 23 anos, e
+    não 29 (cap. 16). As contas fecham: entrou na Câmara aos 21, em 1176, e era júnior em 1178.
+  - **Nara.** Tem cabelo cor de cobre, ondulado e preso atrás, e sardas. O lenço sujo de graxa sai, e os óculos de
+    aumento na testa viram a marca dela (caps. 2, 9 e 18). O lenço de Hanne Voss continua.
+  - **Sevran.** Passa de 52 para 45 anos (cap. 23). Ganha cabelo escuro e crespo salpicado de branco (cap. 1) e mantém
+    a barba grisalha. As durações "vinte e nove anos" (caps. 10, 20 e 23) continuam valendo: ele começou aos 16.

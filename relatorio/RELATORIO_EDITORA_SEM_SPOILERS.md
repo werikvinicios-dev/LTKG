@@ -271,6 +271,9 @@ O banco de arte cobre:
 - o colofão foi atualizado: as sete pérolas são as sete leis;
 - o EPUB usa a capa nova e foi validado no EpubCheck sem erros;
 - o PDF tem 502 páginas.
+- o texto foi alinhado aos retratos. Aurelia, Mara, Nara e Sevran agora aparecem no texto como nas
+  imagens (cabelo, óculos, roupas e idade). Isso vale na revisão de linguagem e na versão de trabalho.
+  O original preservado ficou intacto.
 
 ## 8. Pendências técnicas (sem conteúdo narrativo)
 - **Resolução das artes geradas.** O gerador entrega de 1024 a 1536 px. É suficiente para EPUB, redes e pranchas.

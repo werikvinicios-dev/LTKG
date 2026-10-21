@@ -52,7 +52,7 @@ Dorn levantou os olhos. No alto do Sete Chaminés, entre as chaminés mortas, ha
 
 — O senhorio não aquece nem os inquilinos — disse uma voz atrás deles.
 
-Ilan se virou. O homem que saía pela porta lateral com dois baldes de cinzas era alto e curvado, mas não pela idade: era o jeito de quem passa a vida abaixando a cabeça em portas baixas. Tinha barba grisalha, mãos grandes e um avental de cozinha por cima de um casaco que já tinha sido bom. Esvaziou os baldes num monte de cinza encostado à parede, onde algumas crianças catavam pedaços de carvão ainda morno, e se voltou para eles.
+Ilan se virou. O homem que saía pela porta lateral com dois baldes de cinzas era alto e curvado, mas não pela idade: era o jeito de quem passa a vida abaixando a cabeça em portas baixas. Tinha o cabelo escuro e crespo salpicado de branco, barba grisalha, mãos grandes e um avental de cozinha por cima de um casaco que já tinha sido bom. Esvaziou os baldes num monte de cinza encostado à parede, onde algumas crianças catavam pedaços de carvão ainda morno, e se voltou para eles.
 
 — O senhor é o homem da seguradora — disse a Dorn. Depois olhou para Ilan, da cabeça às botas, sem nenhuma pressa. — E o senhor é o homem que a seguradora mandou.
 
@@ -496,7 +496,7 @@ A oficina era maior por dentro do que parecia de fora, e mais quente do que qual
 
 — Não é do deus — confirmou uma voz de mulher, lá do fundo, atrás de uma bancada coberta de peças. — É nosso. E se o senhor tocar em alguma coisa sem perguntar, eu quebro a outra mão.
 
-Nara Voss era baixa e larga de ombros, com o cabelo ruivo-escuro amarrado num lenço sujo de graxa e os antebraços cobertos de velhas cicatrizes de queimadura que pareciam mapas de rios. Usava óculos de aumento empurrados para a testa e segurava um ferro de soldar. Não se levantou. Olhou para ele por cima da bancada como se ele fosse uma peça que alguém tinha largado ali sem etiqueta.
+Nara Voss era baixa e larga de ombros, com o cabelo cor de cobre, ondulado, preso atrás num nó apertado, sardas no nariz e nas maçãs do rosto e os antebraços cobertos de velhas cicatrizes de queimadura que pareciam mapas de rios. Usava óculos de aumento empurrados para a testa e segurava um ferro de soldar. Não se levantou. Olhou para ele por cima da bancada como se ele fosse uma peça que alguém tinha largado ali sem etiqueta.
 
 — O Tibo disse que é cerâmica de lastro — falou.
 
@@ -1334,7 +1334,7 @@ A sala de interrogatório ficava no térreo. Tinha uma janela alta voltada para 
 
 A Comissária Cassia Vale estava sentada do lado da mesa voltado para a porta, com uma pasta fechada à frente, as mãos cruzadas sobre ela e o casaco abotoado até o pescoço. Tinha o cabelo preto trançado e preso na nuca, rosto anguloso, a pele pálida de uma noite sem dormir e olhos escuros que se fixaram em Ilan assim que ele entrou e não o largaram mais. Ele conhecia aquele olhar. Era o olhar de alguém decidido a não piscar primeiro.
 
-Ao lado dela, um pouco recuada, numa cadeira posta de lado em relação à mesa — nem do lado da Comissária, nem do lado dele —, estava outra mulher. Mais velha que a Comissária, alta, magra, de cabelo grisalho cortado curto e rosto comprido, pele morena-clara, rugas finas nos cantos dos olhos. Tinha no colo uma maleta de couro aberta, cheia de placas finas de vidro arrumadas em fendas, como cartas num baralho, e segurava uma delas entre o polegar e o indicador, sem olhar para ela. Olhava para Ilan com uma atenção diferente da da Comissária: curiosa, sem hostilidade nenhuma. O que era pior.
+Ao lado dela, um pouco recuada, numa cadeira posta de lado em relação à mesa — nem do lado da Comissária, nem do lado dele —, estava outra mulher. Mais nova que a Comissária, de uns trinta e poucos anos, alta, magra, de cabelo escuro preso num coque firme e rosto comprido, pele clara, óculos redondos de aro fino sobre olhos escuros e atentos. Usava um casaco escuro de gola alta por cima de um colete cor de vinho. Tinha no colo uma maleta de couro aberta, cheia de placas finas de vidro arrumadas em fendas, como cartas num baralho, e segurava uma delas entre o polegar e o indicador, sem olhar para ela. Olhava para Ilan com uma atenção diferente da da Comissária: curiosa, sem hostilidade nenhuma. O que era pior.
 
 — Sente-se — disse Cassia Vale.
 
@@ -1560,7 +1560,7 @@ Se dissesse aquilo agora, a Comissária Vale o trancaria naquele porão gelado p
 
 — Pode.
 
-Houve um silêncio. Mara Quen o observava com aquela atenção de pássaro, e ele soube, sem nenhuma dúvida, que ela tinha percebido a hesitação de antes e percebido esta, e que as duas estavam anotadas em algum lugar dentro daquela cabeça grisalha, ao lado da cláusula de permanência e do processo de 1179.
+Houve um silêncio. Mara Quen o observava com aquela atenção de pássaro, e ele soube, sem nenhuma dúvida, que ela tinha percebido a hesitação de antes e percebido esta, e que as duas estavam anotadas em algum lugar atrás daqueles óculos redondos, ao lado da cláusula de permanência e do processo de 1179.
 
 — O senhor está se recusando a responder — disse Cassia Vale.
 
@@ -2106,7 +2106,7 @@ Aurelia olhou para a auditora com outros olhos.
 
 — A senhora é de Vhalessa?
 
-— Do Delta. Mas leio relatórios de inverno há vinte anos.
+— Do Delta. Mas leio relatórios de inverno há onze anos.
 
 O lugar onde o deus tinha caído ficava a uns duzentos metros da margem norte, bem em frente à escadaria da Praça do Meio-Dia, e não era difícil de achar: era para lá que a multidão não ia. Em volta dele, num raio de uns quarenta metros, o gelo estava vazio. No limite desse vazio, alguém tinha esticado uma corda presa a estacas de ferro cravadas no gelo. Atrás da corda, de pé, em fila, estavam homens e mulheres de capa cor de laranja — a cor da brasa, a cor da Casa da Fornalha —, de costas para o centro e de frente para a cidade. Não estavam armados. Nem precisavam. Ninguém tentava passar.
 
@@ -2436,7 +2436,7 @@ Mara Quen esperou a deusa subir alguns degraus e então desceu um, até ficar ao
 
 Ele não respondeu.
 
-— Eu ouvi o senhor perguntar ao Intendente, na tenda, enquanto a Soberania falava com os veladores — disse Mara Quen. — Se a Casa guardava documentos de serviços que a Ordem tivesse feito para ela. Ele disse que guardava. Disse que, depois da Noite das Sentenças, vieram homens da Câmara dos Pactos recolher tudo o que fosse da Ordem, de todos os arquivos da Concordata, e levaram. — Fez uma pausa. — Trabalho para a Câmara há vinte anos, senhor Varek. Nunca ouvi falar de nenhum recolhimento dos documentos da Ordem.
+— Eu ouvi o senhor perguntar ao Intendente, na tenda, enquanto a Soberania falava com os veladores — disse Mara Quen. — Se a Casa guardava documentos de serviços que a Ordem tivesse feito para ela. Ele disse que guardava. Disse que, depois da Noite das Sentenças, vieram homens da Câmara dos Pactos recolher tudo o que fosse da Ordem, de todos os arquivos da Concordata, e levaram. — Fez uma pausa. — Trabalho para a Câmara há onze anos, senhor Varek. Nunca ouvi falar de nenhum recolhimento dos documentos da Ordem.
 
 Ilan olhou para ela.
 
@@ -2620,7 +2620,7 @@ Era a primeira vez que ela falava desde que tinham entrado na tenda.
 
 — A senhora não pode ter certeza disso — disse Oriel Mast.
 
-— Ainda não. — Mara Quen não se levantou do banquinho. — Mas eu trabalho para a Câmara há vinte anos, Intendente, e nunca vi um único registro de recolhimento. Vou verificar. Se houve recolhimento, vai haver um auto, com o nome de quem recolheu e o de quem entregou. A Câmara não tira uma folha de papel de lugar nenhum sem um auto. É a coisa mais irritante e mais útil da Câmara.
+— Ainda não. — Mara Quen não se levantou do banquinho. — Mas eu trabalho para a Câmara há onze anos, Intendente, e nunca vi um único registro de recolhimento. Vou verificar. Se houve recolhimento, vai haver um auto, com o nome de quem recolheu e o de quem entregou. A Câmara não tira uma folha de papel de lugar nenhum sem um auto. É a coisa mais irritante e mais útil da Câmara.
 
 — Então o senhor está dizendo — disse Cassia Vale, voltando-se devagar para Ilan — que alguém usou o mapa que o senhor fez, doze anos atrás, para executar a Coroa que o senhor mapeou. E que esse alguém reavivou as marcas que o senhor deixou no avatar, para usá-las como referência.
 
@@ -3392,7 +3392,7 @@ Aurelia leu a frase duas vezes antes de entrar.
 
 ---
 
-A oficina estava cheia de gente, de cobre, de fumaça de solda e de uma mulher baixa e ruiva, de lenço sujo de graxa e óculos de aumento na testa, ajoelhada no chão no meio de um emaranhado de tubos de cobre, gritando ordens para três rapazes e uma moça que corriam de um lado para o outro carregando coisas. Quando a porta abriu, ela levantou os olhos, viu Ilan e disse, sem se levantar:
+A oficina estava cheia de gente, de cobre, de fumaça de solda e de uma mulher baixa e ruiva, de cabelo acobreado preso atrás e óculos de aumento na testa, ajoelhada no chão no meio de um emaranhado de tubos de cobre, gritando ordens para três rapazes e uma moça que corriam de um lado para o outro carregando coisas. Quando a porta abriu, ela levantou os olhos, viu Ilan e disse, sem se levantar:
 
 — Se você quebrou a manopla de novo, eu te mato.
 
@@ -4108,7 +4108,7 @@ Sevran guardou a torre na caixa. Fechou a tampa.
 
 Ela não respondeu. Ele viu que tinha acertado em alguma coisa, não soube exatamente em quê, e não perguntou.
 
-— O Carrasco me disse que as âncoras da trilha na torre eram falsas — disse ela, devagar. — Que gravavam a primeira resposta e a devolviam a quem batesse de novo. Que quem as fez sabia exatamente como um agrimensor bem treinado ia sondá-las. — Pegou a tigela vazia, olhou dentro dela e a pôs de volta na mesa. — Passei vinte anos confiando em registros, senhor Sevran, porque registros não querem nada. Mas alguém nesta cidade sabe fazer registros que querem.
+— O Carrasco me disse que as âncoras da trilha na torre eram falsas — disse ela, devagar. — Que gravavam a primeira resposta e a devolviam a quem batesse de novo. Que quem as fez sabia exatamente como um agrimensor bem treinado ia sondá-las. — Pegou a tigela vazia, olhou dentro dela e a pôs de volta na mesa. — Passei onze anos confiando em registros, senhor Sevran, porque registros não querem nada. Mas alguém nesta cidade sabe fazer registros que querem.
 
 — Então a senhora vai precisar de testemunhos.
 
@@ -4354,7 +4354,7 @@ O registro de patente número 1181-07 da Companhia Térmica Kaltz e Filhas — *
 
 Não estava assinado pelo inventor.
 
-Mara leu o formulário duas vezes, devagar, linha por linha. Depois tirou da maleta o caderninho onde guardava, havia vinte anos, os artigos de estatuto que mais usava, e procurou um.
+Mara leu o formulário duas vezes, devagar, linha por linha. Depois tirou da maleta o caderninho onde guardava, havia onze anos, os artigos de estatuto que mais usava, e procurou um.
 
 — Artigo trinta e um do Estatuto da Liga dos Peritos de Âncora — leu, em voz alta. — "Nenhum registro de patente técnica será considerado válido sem a assinatura do inventor ou inventores, ou de procurador com poderes específicos, ainda que a titularidade dos direitos econômicos pertença a terceiro por força de contrato." — Ela levantou os olhos. — A senhora assinou alguma procuração para a Companhia Kaltz, senhora Voss?
 
@@ -5246,9 +5246,9 @@ Ilan ficou olhando para ela no meio da rua escura e vazia. Atrás, Nara prendia 
 
 — Por que recusou. — Ele inclinou a cabeça. — A senhora podia ter continuado escrevendo relatórios vazios. Eu nunca ia saber o que estava neles. O Decanato ia ficar satisfeito. A senhora não ia ter processo nenhum.
 
-A auditora pensou na pergunta. Nara via que ela pensava: o rosto comprido e grisalho ficava imóvel daquele jeito de quando ela fazia uma conta.
+A auditora pensou na pergunta. Nara via que ela pensava: o rosto comprido, atrás dos óculos redondos, ficava imóvel daquele jeito de quando ela fazia uma conta.
 
-— Porque o Colégio dos Auditores de Pacto existe para verificar se as Coroas cumprem o que prometem — disse ela, por fim. — Não para aprender a matá-las. E porque alguém, nesta cidade, sabe matá-las. Alguém treinado pela sua Ordem, que não é o senhor. E de repente o Decanato do meu Colégio, que em vinte anos nunca se interessou pela Ordem, quer saber, com o máximo de pormenor possível, como o senhor faz o que faz. Na semana em que um deus morreu do jeito que o senhor sabe fazer. — Ela não piscou. — Eu não gosto de coincidências, senhor Varek. São registros que ainda não sabemos ler.
+— Porque o Colégio dos Auditores de Pacto existe para verificar se as Coroas cumprem o que prometem — disse ela, por fim. — Não para aprender a matá-las. E porque alguém, nesta cidade, sabe matá-las. Alguém treinado pela sua Ordem, que não é o senhor. E de repente o Decanato do meu Colégio, que em onze anos nunca se interessou pela Ordem, quer saber, com o máximo de pormenor possível, como o senhor faz o que faz. Na semana em que um deus morreu do jeito que o senhor sabe fazer. — Ela não piscou. — Eu não gosto de coincidências, senhor Varek. São registros que ainda não sabemos ler.
 
 Ilan não respondeu logo. Devagar, estendeu a mão direita para ela.
 
@@ -6352,7 +6352,7 @@ Aurelia ficou imóvel.
 
 — Em Marenna — repetiu.
 
-— Em Marenna. — Mara pôs as folhas de chá nas xícaras, devagar. — Eu tinha vinte e nove anos. Era auditora júnior do Colégio. Tinha sido mandada a Marenna em fevereiro de 1178 para auditar o contrato de manutenção da rede de água da cidade. A febre começou na segunda semana de março. A senhora fechou as portas na terceira.
+— Em Marenna. — Mara pôs as folhas de chá nas xícaras, devagar. — Eu tinha vinte e três anos. Era auditora júnior do Colégio. Tinha sido mandada a Marenna em fevereiro de 1178 para auditar o contrato de manutenção da rede de água da cidade. A febre começou na segunda semana de março. A senhora fechou as portas na terceira.
 
 A chaleira começou a chiar. Mara a tirou da estufa, derramou a água nas xícaras e pôs uma diante de Aurelia, ao lado da carta. Depois se sentou na outra cadeira do escritório, a dos visitantes, do outro lado da mesa, com a outra xícara nas mãos.
 
@@ -6366,7 +6366,7 @@ Ela bebeu um gole de chá.
 
 — E eu sei, também, o que é estar do lado errado de uma conta certa — disse. — As duas coisas são verdade ao mesmo tempo. Levei dez anos para conseguir pensar nas duas ao mesmo tempo sem que uma apagasse a outra. Ele — ela fez um gesto pequeno para a carta — não conseguiu. Escolheu uma.
 
-Aurelia olhou para ela. Olhou para o rosto comprido e grisalho, para as rugas finas nos cantos dos olhos, para as mãos que seguravam firme a xícara lascada, para a maleta de couro no chão, ao lado da cadeira. Pensou em todas as vezes, nos últimos sete dias, em que tinha olhado para aquela mulher e visto uma auditora. Pensou na pergunta que Mara tinha feito a ela no corredor da delegação, no primeiro dia: *a Soberania sentiu alguma coisa ontem à noite? Na estação?* Pensou que, em todo aquele tempo, Mara Quen nunca tinha se curvado diante dela, nem uma vez, e que ela tinha tomado aquilo por independência. Era. E era também outra coisa.
+Aurelia olhou para ela. Olhou para o rosto comprido, para os óculos redondos e o cabelo escuro preso no alto da cabeça, para as mãos que seguravam firme a xícara lascada, para a maleta de couro no chão, ao lado da cadeira. Pensou em todas as vezes, nos últimos sete dias, em que tinha olhado para aquela mulher e visto uma auditora. Pensou na pergunta que Mara tinha feito a ela no corredor da delegação, no primeiro dia: *a Soberania sentiu alguma coisa ontem à noite? Na estação?* Pensou que, em todo aquele tempo, Mara Quen nunca tinha se curvado diante dela, nem uma vez, e que ela tinha tomado aquilo por independência. Era. E era também outra coisa.
 
 — Você nunca me disse — falou, e a voz saiu rouca.
 
@@ -6888,7 +6888,7 @@ Ficou ali até ela acordar.
 
 Discutiram a manhã inteira, exatamente como Aurelia tinha dito que iam discutir.
 
-Estavam todos no gabinete do térreo da delegação da Câmara, o que nunca tinha acontecido antes. A Comissária atrás da mesa, com a curva de Nara presa na parede às costas. Mara sentada de lado, com a maleta no colo. Nara de pé junto à janela, de braços cruzados, com o lenço sujo de graxa na cabeça. Sevran na cadeira de espaldar reto junto à porta, com o gorro de lã nas mãos. A Soberania perto da estufa, que a Comissária tinha mandado acender com o carvão requisitado da Kaltz. Ilan encostado à parede do fundo, porque sentado as costelas doíam mais. E Thor, que não cabia em nenhuma cadeira do gabinete e tinha se sentado no chão, de pernas cruzadas, encostado à parede ao lado da porta: ocupava um terço da sala, com os joelhos na altura do queixo de Sevran.
+Estavam todos no gabinete do térreo da delegação da Câmara, o que nunca tinha acontecido antes. A Comissária atrás da mesa, com a curva de Nara presa na parede às costas. Mara sentada de lado, com a maleta no colo. Nara de pé junto à janela, de braços cruzados, com os óculos de aumento na testa. Sevran na cadeira de espaldar reto junto à porta, com o gorro de lã nas mãos. A Soberania perto da estufa, que a Comissária tinha mandado acender com o carvão requisitado da Kaltz. Ilan encostado à parede do fundo, porque sentado as costelas doíam mais. E Thor, que não cabia em nenhuma cadeira do gabinete e tinha se sentado no chão, de pernas cruzadas, encostado à parede ao lado da porta: ocupava um terço da sala, com os joelhos na altura do queixo de Sevran.
 
 — Não é uma certeza — disse Mara.
 
@@ -7022,7 +7022,7 @@ Ela estava a vinte metros dele, junto à escadaria, com Tibo agarrado ao braço,
 
 — O pivô! O de cobre! Você trouxe?
 
-Tinha trazido. Nara Voss não saía de casa sem pelo menos um Pivô de Cobre na bolsa de ferramentas, assim como não saía sem o lenço na cabeça; Ilan tinha reparado nisso desde o primeiro dia. Era uma estaca de cobre do comprimento de um antebraço, grossa como dois dedos, com uma base larga de cerâmica e uma argola no alto para prender cabo. Uma âncora portátil de Carga, feita para ser cravada no chão e dar a um circuito de descarga uma saída segura. Ela a tirou da bolsa sem perguntar para quê. Ele viu que ela já sabia.
+Tinha trazido. Nara Voss não saía de casa sem pelo menos um Pivô de Cobre na bolsa de ferramentas, assim como não saía sem os óculos de aumento na testa; Ilan tinha reparado nisso desde o primeiro dia. Era uma estaca de cobre do comprimento de um antebraço, grossa como dois dedos, com uma base larga de cerâmica e uma argola no alto para prender cabo. Uma âncora portátil de Carga, feita para ser cravada no chão e dar a um circuito de descarga uma saída segura. Ela a tirou da bolsa sem perguntar para quê. Ele viu que ela já sabia.
 
 — A base da torre! — gritou ele. — Face leste! Na porta da escada de serviço! Crava no chão e prende no tronco!
 
@@ -7120,7 +7120,7 @@ Do outro lado da praça, na base da torre, na face leste, havia uma cratera.
 
 Era pequena: um buraco no chão do tamanho de uma mesa, com as bordas de pedra vitrificada e fumegante. No meio, o que sobrava do Pivô de Cobre de Nara — uma poça de cobre derretido que já começava a endurecer, com cacos de cerâmica branca espalhados em volta. O cabo que o prendia ao tronco tinha virado um fio preto e retorcido. A porta de ferro da escada de serviço tinha sido arrancada das dobradiças e estava caída três metros adiante.
 
-Nara estava de pé a uns dez metros da cratera, com Tibo agarrado à cintura, olhando para o buraco. Tinha o lenço meio caído e o rosto preto de fuligem. Estava inteira.
+Nara estava de pé a uns dez metros da cratera, com Tibo agarrado à cintura, olhando para o buraco. Tinha o cabelo meio solto e o rosto preto de fuligem. Estava inteira.
 
 Ela levantou os olhos e o viu do outro lado da praça. Levantou a mão, e ele levantou a dele — a direita, a do anel. Não ouviu o que ela gritou, mas viu a boca dela formar as palavras, e as palavras eram *meu pivô*.
 
@@ -7256,7 +7256,7 @@ Ninguém achou o que dizer.
 
 Então Mara Quen desceu a escadaria.
 
-Desceu devagar, degrau por degrau, com a maleta debaixo do braço, até o último. Depois pisou no rio congelado e andou pelo gelo rachado até ficar a dez metros da cabeça da dragoa, e ali parou. Uma mulher alta e magra, de cabelo grisalho cortado curto, de pé no gelo diante de uma criatura de trinta metros com uma crista de lâminas de raio. Da escadaria, Ilan viu que as mãos dela não tremiam, e soube que tremiam.
+Desceu devagar, degrau por degrau, com a maleta debaixo do braço, até o último. Depois pisou no rio congelado e andou pelo gelo rachado até ficar a dez metros da cabeça da dragoa, e ali parou. Uma mulher alta e magra, de óculos redondos e cabelo escuro preso, de pé no gelo diante de uma criatura de trinta metros com uma crista de lâminas de raio. Da escadaria, Ilan viu que as mãos dela não tremiam, e soube que tremiam.
 
 — Meu nome é Mara Quen — disse ela. — Sou auditora de pactos do Colégio dos Auditores, a serviço da Câmara dos Pactos neste inquérito. A senhora tem nome?
 
@@ -9182,7 +9182,7 @@ E o viu parar ali.
 
 Ele se levantou.
 
-Sevran se levantou também, mas devagar, porque tinha cinquenta e dois anos e os joelhos estalavam, e porque ainda não sabia o que o amigo ia fazer. Viu Oriel contornar a mesa. Pegar a capa laranja do prego atrás da porta, com as mãos enfaixadas, desajeitado, e jogá-la sobre os ombros. Tirar do bolso da túnica um molho de chaves de ferro.
+Sevran se levantou também, mas devagar, porque tinha quarenta e cinco anos e os joelhos estalavam, e porque ainda não sabia o que o amigo ia fazer. Viu Oriel contornar a mesa. Pegar a capa laranja do prego atrás da porta, com as mãos enfaixadas, desajeitado, e jogá-la sobre os ombros. Tirar do bolso da túnica um molho de chaves de ferro.
 
 — Oriel — disse.
 
@@ -9212,7 +9212,7 @@ Levou quarenta minutos para sair do gabinete.
 
 A porta não ia ceder; o caminho era a janela redonda que dava para a cúpula. Aos vinte e quatro anos, ele e Oriel tinham descoberto que ela se abria girando o caixilho inteiro para a direita, porque o trinco fora mal instalado no século anterior e nunca consertado. Do lado de fora corria uma calha de bronze em volta da base da cúpula, larga o bastante para um homem magro andar de lado. Eles tinham andado por ela uma vez, numa noite de verão, para ver as estrelas do alto da cúpula. Oriel ficou com tanto medo que vomitou. Sevran riu dele durante um mês.
 
-A calha estava coberta de geada. Sevran tinha cinquenta e dois anos e não era magro.
+A calha estava coberta de geada. Sevran tinha quarenta e cinco anos e não era magro.
 
 Foi mesmo assim. De lado, com as costas coladas ao bronze gelado da cúpula, as mãos espalmadas na geada, os pés na calha, um passo de cada vez, sem olhar para baixo, onde havia quinze metros de nada até o pátio de pedra da Casa. Contou os passos. Era defeito profissional de outra pessoa, mas ele o tinha pegado nas últimas semanas, de tanto ver um homem contar tudo. Quarenta e um passos até a escada de ferro dos limpadores de calha, do lado oeste da cúpula. Escorregou duas vezes. Na segunda, ficou pendurado pelos dedos na borda da calha durante um tempo que pareceu muito longo, com as botas soltas no ar, e pensou, com uma clareza estranha, que, se caísse ali, ia morrer num pátio de pedra da Casa onde tinha passado vinte e seis anos, sem ter contado a ninguém o que Oriel tinha dito a ele — e que essa era a pior forma de morrer que conseguia imaginar. E puxou. E subiu de volta para a calha. E continuou.
 
@@ -9476,7 +9476,7 @@ Mara olhou para a placa. A placa dizia vinte e três âncoras, todas iguais, tod
 
 — A sua — disse Nara.
 
-— A minha. — Mara não se surpreendeu. Tinha passado vinte anos confiando naquela placa, e os últimos treze dias aprendendo que alguém em Vhalessa sabia fazer os registros dizerem o que ele queria. — Os discos são falsos. São iscas. Devolvem à placa a tensão que a placa espera, porque quem os pôs ali sabia que o Colégio mede pele de limiar com placa de aferição. As âncoras de verdade estão embaixo, no sal, onde a placa não alcança, porque o sal quente atrapalha a leitura. E onde ninguém pensaria em procurar, porque a placa já respondeu.
+— A minha. — Mara não se surpreendeu. Tinha passado onze anos confiando naquela placa, e os últimos treze dias aprendendo que alguém em Vhalessa sabia fazer os registros dizerem o que ele queria. — Os discos são falsos. São iscas. Devolvem à placa a tensão que a placa espera, porque quem os pôs ali sabia que o Colégio mede pele de limiar com placa de aferição. As âncoras de verdade estão embaixo, no sal, onde a placa não alcança, porque o sal quente atrapalha a leitura. E onde ninguém pensaria em procurar, porque a placa já respondeu.
 
 — *Quem ensina a porta a responder pode ensinar a porta a mentir* — disse Sevran, baixo, de olhos fechados.
 
