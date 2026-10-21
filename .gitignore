@@ -4,3 +4,4 @@ build/chap-*.png
 build/_*/
 build/_*.html
 build/fonts_src/
+__pycache__/

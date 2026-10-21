@@ -238,6 +238,33 @@ São 15 páginas em A4 horizontal, sem spoilers:
 - amostras do miolo e da capa;
 - créditos.
 
+### Identidade visual v2: três direções — `exportacoes/identidade_v2/`
+Três direções completas para o mesmo brasão (sete losangos, sol de inverno rachado, espada com a
+guarda em balança e o prato esquerdo mais baixo). Todo o desenho é vetorial e foi gerado por código
+próprio: curvas de torno, microtexto, hachuras, escalas. Não entra imagem de banco nem licença de
+terceiros. As fontes são de licença aberta (SIL OFL).
+
+| Opção | Linguagem | Paleta | Tipografia |
+|---|---|---|---|
+| A · Apólice | gravura de segurança: guilhochê, talho-doce, microtexto | vinho, bronze, papel apólice | Playfair Display SC, EB Garamond |
+| B · Limiar | art déco: portal escalonado, sunburst | meia-noite, champanhe, verdete | Italiana, Josefin Sans, EB Garamond |
+| C · Instrumento | astrolábio e óptica: limbo graduado, rete, lente | obsidiana, prata, latão, toque iridescente | Instrument Serif, IBM Plex Mono, EB Garamond |
+
+Cada pasta contém:
+- emblema (SVG e PNG) e versão em foil;
+- logotipo;
+- sinais das sete leis e dos seis princípios;
+- folha de guarda;
+- capa em tecido com hot-stamping;
+- sobrecapa com a arte do livro;
+- abertura de capítulo;
+- animação de 8 s (MP4 e GIF).
+
+A apresentação comparada está em `Identidade_visual_v2_tres_opcoes.pdf`, com pranchas 16:9,
+comparativo e referências. As imagens de cada prancha ficam em `pranchas/`. Para reconstruir:
+`python3 build/visual/opcao_a.py --motion` (idem `opcao_b.py`, `opcao_c.py`), depois
+`python3 build/visual/pranchas.py`.
+
 ## 8. Pendências técnicas (sem conteúdo narrativo)
 
 - **ISBN e código de barras:** a contracapa tem um espaço reservado. Falta registrar a obra.
