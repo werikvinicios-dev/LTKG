@@ -9,9 +9,9 @@ Todo prompt começa com o bloco fixo de `06_personagens/ILAN_FICHA_DE_CONTINUIDA
 pintura digital cinematográfica, paleta negro, grafite, âmbar e prata, com anatomia correta e sem texto.
 
 ## Sem spoiler (banco principal)
-- **PE-020** (1536×1024): diante do prédio de sete chaminés, só duas fumegando, janelas de cima congeladas, −22 °C, à
+- **PE-020** (feita no Weave, 2528×1696, espelhada para a manopla ficar no braço esquerdo): diante do prédio de sete chaminés, só duas fumegando, janelas de cima congeladas, −22 °C, à
   noite. Pelle Dorn ao lado (homem baixo, cachecol verde) lê o contrato de onze páginas.
-- **PE-021** (1536×1024): aferição.
+- **PE-021** (feita no Weave, 2528×1696, espelhada para a manopla ficar no braço esquerdo): aferição.
   - Ajoelhado num corredor de tijolo gelado, traça sinais de giz.
   - Fios de prata ligam pinos de bronze na parede.
   - A lente erguida revela o calor em correntes âmbar.

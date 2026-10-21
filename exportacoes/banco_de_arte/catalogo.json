@@ -838,5 +838,29 @@
   "spoiler": false,
   "prompt": "Ilan Varek v2 (direção canônica): cabelo castanho-escuro curto, barba de três dias, cicatriz no queixo, olhos cinzentos, casaco negro, manopla esquerda com três células, lente no colete, espada de ferro simples",
   "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-020_ilan_sete_chamines.png",
+  "categoria": "06_personagens",
+  "largura": 2528,
+  "altura": 1696,
+  "modelo": "nano-banana-2.1",
+  "versao": "v1",
+  "status": "proposta — aguardando aprovação do autor",
+  "spoiler": false,
+  "prompt": "Ilan diante do prédio de sete chaminés, à noite, com o contratante lendo o contrato (ref. PE-001 v2) — espelhada para a manopla ficar no braço esquerdo (Weave, plano grátis)",
+  "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-021_ilan_afericao.png",
+  "categoria": "06_personagens",
+  "largura": 2528,
+  "altura": 1696,
+  "modelo": "nano-banana-2.1",
+  "versao": "v1",
+  "status": "proposta — aguardando aprovação do autor",
+  "spoiler": false,
+  "prompt": "Ilan em aferição: giz, fio de prata, pinos de bronze, lente revelando o calor em âmbar (ref. PE-001 v2) — espelhada para a manopla ficar no braço esquerdo (Weave, plano grátis)",
+  "data": "2026-10-21"
  }
 ]
