@@ -810,7 +810,7 @@
   "altura": 1536,
   "modelo": "gpt-image-2.5",
   "versao": "v1",
-  "status": "direção aprovada pelo autor (Aurelia loira dourada); peça a confirmar",
+  "status": "substituída por PE-019 v2 (Ilan no visual novo)",
   "spoiler": false,
   "prompt": "Ilan e Aurelia (loira, coque com chave de bronze, casaco de pele) numa rua de Vhalessa à noite",
   "data": "2026-10-21"
@@ -898,5 +898,59 @@
   "spoiler": false,
   "prompt": "Nara Voss na oficina, ajustando um mecanismo de engrenagens, com a forja e os carretéis de cobre ao fundo",
   "data": "2026-10-21"
+ },
+ {
+  "arquivo": "06_personagens/PE-024_ilan_estalagem.png",
+  "categoria": "06_personagens",
+  "largura": 1024,
+  "altura": 1536,
+  "modelo": "gpt-image-2.5-sunburst",
+  "versao": "v1",
+  "status": "proposta — aguardando aprovação do autor",
+  "spoiler": false,
+  "prompt": "Ilan na estalagem, mangas arregaçadas, balança torta marcada no pulso esquerdo, contrato, manopla fria na mesa",
+  "data": "2026-10-22",
+  "nota": "espelhada para a balança marcada ficar no braço esquerdo",
+  "versao_4x": "exportacoes/banco_de_arte_4x/06_personagens/PE-024_ilan_estalagem_4x.jpg"
+ },
+ {
+  "arquivo": "06_personagens/PE-025_ilan_ponte_nevasca.png",
+  "categoria": "06_personagens",
+  "largura": 1536,
+  "altura": 1024,
+  "modelo": "gpt-image-2.5-sunburst",
+  "versao": "v1",
+  "status": "proposta — aguardando aprovação do autor",
+  "spoiler": false,
+  "prompt": "Ilan atravessa ponte de Vhalessa na nevasca, plano heroico, Sol de bronze ao fundo",
+  "data": "2026-10-22",
+  "versao_4x": "exportacoes/banco_de_arte_4x/06_personagens/PE-025_ilan_ponte_nevasca_4x.jpg"
+ },
+ {
+  "arquivo": "06_personagens/PE-026_ilan_folha_de_personagem.png",
+  "categoria": "06_personagens",
+  "largura": 1536,
+  "altura": 1024,
+  "modelo": "gpt-image-2.5-sunburst",
+  "versao": "v1",
+  "status": "proposta — aguardando aprovação do autor",
+  "spoiler": false,
+  "prompt": "Folha de personagem do Ilan em pergaminho: frente, perfil, costas e estudos de equipamento",
+  "data": "2026-10-22",
+  "versao_4x": "exportacoes/banco_de_arte_4x/06_personagens/PE-026_ilan_folha_de_personagem_4x.jpg"
+ },
+ {
+  "arquivo": "06_personagens/PE-019_ilan_e_aurelia_vhalessa_v2.png",
+  "categoria": "06_personagens",
+  "largura": 1024,
+  "altura": 1536,
+  "modelo": "gpt-image-2.5-sunburst",
+  "versao": "v1",
+  "status": "proposta — aguardando aprovação do autor",
+  "spoiler": false,
+  "prompt": "Ilan (novo visual) e Aurelia loira caminhando juntos numa rua de Vhalessa à noite",
+  "data": "2026-10-22",
+  "nota": "substitui PE-019 em build/arte/ilan_aurelia.jpg (PDF, EPUB e caderno)",
+  "versao_4x": "exportacoes/banco_de_arte_4x/06_personagens/PE-019_ilan_e_aurelia_vhalessa_v2_4x.jpg"
  }
 ]

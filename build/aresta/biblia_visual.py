@@ -141,6 +141,10 @@ pages.append(pg("08 · Personagens", "Fichas de continuidade", '<div style="disp
     f'<p class="q" style="font-size:8.6pt;line-height:1.32;margin-top:1mm">{b}</p></div>' for n, f, a, b in FICHA) + '</div>'
     '<p style="font-size:9pt;margin-top:3mm;color:#B8A887">Imutáveis: rosto, cabelo, idade aparente, proporções. Substituíveis: figurino de viagem, formal e de combate. '
     'Regra absoluta: a imagem nova representa a mesma pessoa. As fichas seguem as referências do autor e devem ser conferidas por ele antes de virarem canônicas.</p>'))
+pages.append(pg("08 · Personagens", "Ilan em cena (sem magia em uso)", f'''{im('06_personagens/PE-026_ilan_folha_de_personagem.png', 261, 84, "background-position:center 40%")}
+<div style="display:grid;grid-template-columns:76mm 103mm 76mm;gap:3mm;margin-top:3mm">{im('06_personagens/PE-024_ilan_estalagem.png', 76, 58, "background-position:center 30%")}
+{im('06_personagens/PE-025_ilan_ponte_nevasca.png', 103, 58, "background-position:center 40%")}{im('06_personagens/PE-019_ilan_e_aurelia_vhalessa_v2.png', 76, 58, "background-position:center 25%")}</div>
+<p style="font-size:9pt;margin-top:3mm;color:#B8A887">Folha de personagem (PE-026), estalagem (PE-024), ponte na nevasca (PE-025) e Ilan com Aurelia em Vhalessa (PE-019 v2). Conferência obrigatória: manopla no antebraço <b>esquerdo</b>; a balança torta marcada no pulso esquerdo.</p>'''))
 pages.append(pg("09 · Mundo", "Aresta: regiões e atmosfera", f'''<div class="cols"><div>{im('05_mundo/MU-010_mapa_de_aresta_conceitual.png', 125, 84)}
 <p style="margin-top:2mm;font-size:9.5pt">Mapa <b>conceitual</b>, das referências do autor. Distâncias e rotas não são canônicas até a geografia ser consolidada.</p></div>
 <div style="display:grid;grid-template-columns:1fr 1fr;gap:3mm">{im('05_mundo/MU-002_reinos_do_norte.png', 61, 40)}{im('05_mundo/MU-003_delta_e_arquivos.png', 61, 40)}

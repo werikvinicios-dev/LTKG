@@ -67,6 +67,10 @@ estão em `../banco_de_arte_4x/` e são feitas com `build/aresta/ampliar.py`.
 - `PE-005_sevran_retrato.png` — 1024×1536 — Sevran, ~45, ex-sacerdote, barba grisalha, cachecol creme, livro antigo
 - `PE-006_dinamica_do_grupo.png` — 1536×1024 — Cinco companheiros de costas entrando no salão
 - `PE-007_silhuetas_elenco.png` — 1536×1024 — Silhuetas de corpo inteiro dos cinco personagens
+- `PE-019_ilan_e_aurelia_vhalessa_v2.png` — 1024×1536 — Ilan (visual novo) e Aurelia loira numa rua de Vhalessa à noite (substitui PE-019 no livro)
+- `PE-024_ilan_estalagem.png` — 1024×1536 — Ilan na estalagem: contrato, caneca, balança torta marcada no pulso esquerdo, manopla fria na mesa
+- `PE-025_ilan_ponte_nevasca.png` — 1536×1024 — Ilan atravessa uma ponte de Vhalessa na nevasca, plano heroico
+- `PE-026_ilan_folha_de_personagem.png` — 1536×1024 — Folha de personagem do Ilan: frente, perfil, costas e estudos de equipamento
 
 ## 07_capas (7)
 

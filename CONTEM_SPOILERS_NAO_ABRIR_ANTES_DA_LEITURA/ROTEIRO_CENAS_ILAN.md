@@ -18,17 +18,19 @@ pintura digital cinematográfica, paleta negro, grafite, âmbar e prata, com ana
   - Fios de prata ligam pinos de bronze na parede.
   - A lente erguida revela o calor em correntes âmbar.
   - As células da manopla brilham.
-- **PE-024** (1024×1536): estalagem quente. Mangas arregaçadas, a balança torta marcada a ferro no pulso interno
+- **PE-024** (1024×1536, feita em 22/10, espelhada): estalagem quente. Mangas arregaçadas, a balança torta marcada a ferro no pulso interno
   esquerdo, papéis do contrato e uma caneca.
-- **PE-025** (1536×1024): atravessa uma ponte de Vhalessa na nevasca, casaco ao vento; plano heroico.
-- **PE-026** (1536×1024): folha de personagem em pergaminho.
+- **PE-025** (1536×1024, feita em 22/10): atravessa uma ponte de Vhalessa na nevasca, casaco ao vento; plano heroico.
+- **PE-026** (1536×1024, feita em 22/10): folha de personagem em pergaminho.
   - Frente, perfil e costas.
   - Detalhes da manopla com três células, da lente, do giz e do fio de prata, da espada de ferro e das botas com
     chapas.
-- **PE-019 v2** (1024×1536): Ilan (novo visual) e Aurelia (ficha loira: coque com chave de bronze, casaco de pele) numa
+- **PE-019 v2** (1024×1536, feita em 22/10): Ilan (novo visual) e Aurelia (ficha loira: coque com chave de bronze, casaco de pele) numa
   rua de Vhalessa à noite. Substitui `build/arte/ilan_aurelia.jpg`; refazer PDF, EPUB e caderno.
 
 ## Com spoiler (pasta separada)
+IL-S01 a IL-S07 mostram magia em uso: só gerar depois que os selos mágicos forem aplicados ao livro e ao guia visual.
+
 - **IL-S01**, cap. 1, reversão do sifão:
   - Dentro do Sete Chaminés, o reservatório superaquecido brilha.
   - Ilan desacopla o controle das âncoras de parede improvisadas.
@@ -63,4 +65,4 @@ pintura digital cinematográfica, paleta negro, grafite, âmbar e prata, com ana
   - Ilan conduz o Retorno para o lago de degelo, numa explosão de vapor.
   - A manopla se despedaça e o antebraço esquerdo queima.
   - Aurelia fecha o corredor com a Fronteira em ouro.
-- **IL-S08**, caps. 28–30: depois de tudo, braço esquerdo enfaixado, sem manopla, sentado na neve ao amanhecer.
+- **IL-S08** (feita em 22/10, `cenas/IL-S08_cena.png`), caps. 28–30: depois de tudo, braço esquerdo enfaixado, sem manopla, sentado na neve ao amanhecer.
