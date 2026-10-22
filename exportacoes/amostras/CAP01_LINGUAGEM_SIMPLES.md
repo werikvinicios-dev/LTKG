@@ -1,0 +1,455 @@
+# Capítulo 1 — Noite tropical
+
+O contrato tinha onze páginas, e Pelle Dorn queria que Ilan Varek ouvisse todas antes de entrar no prédio.
+
+— Cláusula sétima — leu o agente da seguradora, segurando o papel aberto contra o vento, com o nariz vermelho enfiado num cachecol verde. — "O contratado se compromete a não causar dano estrutural ao imóvel segurado." Cláusula oitava: "O contratado se compromete a preservar, sempre que possível, o ativo térmico penhorado, ou seja, o calor guardado no reservatório." Cláusula nona…
+
+— Senhor Dorn.
+
+— Sim?
+
+— Está fazendo vinte graus abaixo de zero.
+
+— Vinte e dois — corrigiu Dorn, satisfeito por ter olhado o termômetro da esquina. — Cláusula nona: "O contratado ficará em Vhalessa por três dias depois do serviço, para prestar depoimento à Companhia Arrimo."
+
+Ilan olhou para o prédio, e não para o papel. O Sete Chaminés era uma caixa de tijolos de seis andares, espremida entre outras caixas iguais na Fornalha Velha, o bairro que a cidade inteira fingia não ver. Das sete chaminés, só duas soltavam fumaça. Isso não queria dizer nada. Em Vhalessa ninguém queimava lenha para esquentar a casa. Quem esquentava as casas era o deus.
+
+As janelas dos dois primeiros andares estavam limpas. Do terceiro para cima, tinham gelo. E o gelo estava do lado de dentro, não do lado de fora, em placas brancas desenhadas como folhas de samambaia. Ilan contou as janelas e depois as que tinham gelo. O gelo não seguia os andares. Seguia uma linha torta, que subia da esquina do térreo até o outro lado do telhado. Tudo o que ficava acima dessa linha estava morrendo de frio.
+
+— Por que três dias? — perguntou.
+
+— Perdão?
+
+— A cláusula nona. Por que três dias? Eu termino hoje, vocês me pagam hoje, e amanhã estou num trenó para o sul.
+
+Dorn piscou. Tinha gelo nos cílios.
+
+— É a cláusula padrão da Arrimo para trabalhos de alto risco, senhor Varek.
+
+— Já trabalhei para a Arrimo duas vezes. Não tinha essa cláusula.
+
+— Então não eram trabalhos de alto risco.
+
+Era uma resposta tão inútil que Ilan quase gostou. Deixou para lá. Sessenta dobras por uma noite de trabalho faziam qualquer um engolir uma cláusula esquisita. Com o que ele já tinha guardado, faltavam cento e doze para comprar um terreno de pedra e mato nas colinas de Tarvel, onde nunca nevava. Ali ele pretendia, um dia, plantar figueiras e nunca mais fazer nada de interessante.
+
+— O senhor reparou no telhado? — perguntou.
+
+Dorn olhou para cima. No telhado do Sete Chaminés, entre as chaminés apagadas, havia quatro caixas-d'água de madeira com cintas de ferro. Três estavam cobertas de gelo, com pingentes compridos escorrendo pelos lados. A quarta, no canto, estava limpa e soltava um fiozinho de vapor, tão fino que só dava para ver contra o céu escuro.
+
+— Uma caixa-d'água — disse Dorn.
+
+— Uma caixa-d'água que não congela a vinte e dois abaixo de zero.
+
+— Talvez o senhorio a aqueça.
+
+— O senhorio não aquece nem os inquilinos — disse uma voz atrás deles.
+
+Ilan se virou. O homem que saía pela porta lateral com dois baldes de cinza era alto e curvado. Não era a idade: era o jeito de quem passou a vida se abaixando para passar em portas baixas. Tinha o cabelo escuro e crespo, com fios brancos, barba grisalha, mãos grandes e um avental de cozinha por cima de um casaco que já tinha sido bom. Despejou a cinza num monte encostado na parede, onde algumas crianças catavam pedaços de carvão ainda morno, e se virou para eles.
+
+— O senhor é o homem da seguradora — disse para Dorn. Depois olhou Ilan da cabeça às botas, sem pressa. — E o senhor é o homem que a seguradora mandou.
+
+— Ilan.
+
+— Sevran. Eu cozinho aqui embaixo. — Apontou com o queixo a porta, de onde vinha um cheiro de cebola, cevada e de alguma carne que talvez tivesse sido de carneiro. — Fui eu que escrevi para a Arrimo.
+
+Dorn se endireitou dentro do cachecol.
+
+— A Companhia agradece o seu aviso, senhor Sevran. Como cidadão…
+
+— Escrevi primeiro para o Conselho, três vezes, e para a Casa da Fornalha, duas — disse Sevran, no mesmo tom. — O Conselho mandou um fiscal. O fiscal tomou uma sopa e foi embora. A Casa da Fornalha respondeu que as brasas de parede do prédio estavam funcionando perfeitamente, o que é verdade. Aí eu descobri que o doutor Orsk tinha feito seguro do reservatório dele e dado o calor como garantia de um empréstimo. E pensei: se o deus não liga e o Conselho não liga, quem sabe o dinheiro liga.
+
+— O dinheiro sempre liga — disse Ilan.
+
+— É uma das poucas coisas em que dá para confiar. — Sevran deu um passo para o lado e abriu a porta. — Entrem. Ninguém trabalha bem com fome, e lá em cima ninguém vai oferecer nada.
+
+---
+
+A Cozinha do Lento ocupava o térreo inteiro: um salão de teto baixo, mesas compridas, bancos, um fogão de ferro do tamanho de uma carroça e um calor tão bom que doía nas orelhas. Estava lotada. Tinha operários do turno da noite ainda com pó de fundição no rosto, velhas enroladas em três xales, crianças comendo com uma concentração de quem reza e um homem num canto tocando uma rabeca desafinada sem que ninguém mandasse parar. Na parede atrás do fogão, dentro do tijolo, uma placa de bronze do tamanho de um prato brilhava num laranja calmo. Era uma brasa de parede, com o selo da Casa da Fornalha gravado no meio. Havia centenas de milhares delas na cidade, e o deus mantinha todas acesas de novembro a março. O calor do salão vinha dela. O fogão era só para a sopa.
+
+Sevran serviu duas tigelas sem perguntar. Dorn ficou sem graça, mas aceitou, com cara de quem não tinha jantado. Ilan comeu de pé, encostado na parede, com a tigela numa mão e a outra aberta no tijolo, ao lado da placa.
+
+O calor saía da placa e entrava na parede, como devia. Ele fechou os olhos e prestou atenção. Primeiro veio o zumbido baixo que todo vínculo de Brasa faz no material por onde passa, tão fraco que a maioria das pessoas acharia que era o próprio sangue nos ouvidos. Depois veio o desenho do calor, abrindo em leque pelos tijolos até a quina. E, na quina, um desvio. Uma parte do calor saía do leque e subia, torta, como água que acha uma rachadura.
+
+Ele abriu os olhos, soltou do colete uma lente redonda de vidro, presa numa corrente curta, e olhou a parede através dela. Nenhum vidro mostra calor. Aquele mostrava o caminho do calor. Os vínculos apareciam como franjinhas coloridas, deitadas no sentido em que o calor corria, e os selos, mesmo escondidos, apareciam como um risco de brasa por baixo de papel. As franjas apontavam para cima e para a esquerda, na direção da escada. E na quina, por baixo da cal, havia um selo do tamanho de uma moeda, com a cauda virada para o mesmo lado.
+
+— O senhor faz isso com tudo? — perguntou Sevran, que olhava para ele de concha na mão.
+
+— Faço isso com o que me paga.
+
+— A sopa é de graça.
+
+— Então só estou sendo curioso.
+
+O canto da boca de Sevran se mexeu. Era um rosto que tinha sorrido muito, um dia, e depois perdido o costume.
+
+— A Avó Ruta mora no quarto andar — disse ele. — Faz duas semanas que ela dorme aqui embaixo, num banco, porque o quarto dela tem gelo nas paredes. Ela tem oitenta e um anos. Se o senhor puder ser curioso por ela também, eu agradeço.
+
+Numa das mesas, uma mulher miudinha enrolada num cobertor xadrez levantou a mão, como aluna respondendo à chamada. Ilan cumprimentou com a cabeça. Ela respondeu com um gesto feio e carinhoso que ele não esperava, e as velhas em volta caíram na risada.
+
+— É o jeito dela de desejar boa sorte — explicou Sevran.
+
+— Já fui abençoado de jeitos piores.
+
+Ilan terminou a sopa e devolveu a tigela. Tirou o casaco pesado, dobrou e entregou para Dorn, que segurou espantado, como se tivesse ganhado um bebê no colo. Por baixo, Ilan usava um colete de couro com bolsos demais e uma camisa de lã escura. Na mão esquerda, subindo até o meio do braço, tinha uma manopla de couro e aço, com três cilindros de cerâmica branca encaixados nas costas da mão, como balas grossas. Na cintura, uma espada reta e simples, sem enfeite nenhum, numa bainha cheia de remendos. Nas solas das botas, placas de ferro escuro que estalavam no chão.
+
+Era um homem de altura média, de ombros comuns e de um silêncio que chamava atenção. Barba de três dias, uma cicatriz fina no queixo, olhos cinzentos que pareciam estar sempre medindo a distância até a porta. Tinha trinta e quatro anos e às vezes parecia mais velho, principalmente quando ficava quieto.
+
+— Quantos homens o doutor Orsk tem lá em cima? — perguntou a Sevran.
+
+— Três, que eu saiba. Às vezes quatro. Um se chama Gorm e é sobrinho de alguém. Os outros eu não sei. — Sevran parou um pouco. — Não matem ninguém, se der. O Gorm é um idiota, mas a mãe dele vem comer aqui às quintas.
+
+— Eu vim desligar um reservatório — disse Ilan. — Não ganho por cabeça.
+
+— Isso também é cláusula? — perguntou Dorn, esperançoso.
+
+— É temperamento.
+
+---
+
+A escada do Sete Chaminés era de madeira, estreita, e subia em quadrado em volta de um vão onde alguém tinha pendurado roupa para secar. A roupa tinha congelado com formato de gente. Entre o segundo e o terceiro andar, a temperatura caiu de repente, como se ele tivesse passado por uma porta. A respiração virou fumaça. As paredes do corredor do terceiro andar tinham uma camada fina de gelo. As placas de bronze das brasas de parede, uma a cada dois quartos, estavam quentes, quentes demais, e o tijolo a um palmo delas estava gelado.
+
+Era um trabalho bonito, pensou Ilan, e não gostou de pensar isso.
+
+Quem fez aquilo não tinha mexido nas brasas do deus. Seria burrice. As placas de bronze tinham selos da Coroa gravados por dentro, ligados a Calvenor por uma rede que nenhum mortal via inteira, e qualquer mexida faria a Casa da Fornalha perceber em minutos. Então o instalador fez outra coisa. Gravou no tijolo, a dois dedos de cada placa, um selo dele. Eram pequenos, do tamanho de uma moeda, de traço limpo, cobertos com cal da cor da parede. Todos tinham o sinal de Brasa no meio e a cauda para cima, e todos estavam presos num mesmo vínculo que subia pela parede até o telhado. O calor saía da brasa do deus e entrava no tijolo, como sempre. Mas, antes de chegar ao quarto, o tijolo passava o calor para o selo, e o selo mandava tudo para cima.
+
+O deus continuava fazendo o trabalho dele. A Casa da Fornalha continuava vendo brasas perfeitas. E quem morava do terceiro ao sexto andar continuava com gelo do lado de dentro das janelas.
+
+Ilan se agachou perto de um deles e raspou a cal com a unha. O selo apareceu: um desenho fino e escuro, sem brilho nenhum a olho nu, gravado fundo, com a calma de quem tinha tempo. Pela lente, as franjas do vínculo estavam apertadas e corriam para cima. Ele calculou quanto calor passava por ali. Pouco, em cada selo. Mas eram muitos selos, e alguém tinha passado meses gravando aquilo, um quarto de cada vez.
+
+No patamar do quarto andar, um rapaz enorme estava sentado num caixote, com uma manta nos ombros e um bastão com ponta de ferro atravessado no colo. Tinha o rosto redondo e vermelho de quem nunca passou fome. Olhava Ilan subir com a cara de quem foi avisado de que alguma coisa podia acontecer naquela noite e torcia muito para que não acontecesse.
+
+— Gorm? — perguntou Ilan.
+
+O rapaz arregalou os olhos.
+
+— Quem disse?
+
+— Sua mãe come lá embaixo às quintas.
+
+— Ela… — Gorm ficou entre ofendido e com saudade. — O que você quer?
+
+— Falar com o doutor Orsk.
+
+— O doutor não recebe ninguém.
+
+— Eu sou da seguradora.
+
+— Não parece da seguradora.
+
+— A seguradora está lá embaixo, segurando o meu casaco. — Ilan apoiou o pé no último degrau. — Gorm, presta atenção. Eu vou subir. Você pode me deixar subir e ir jantar, ou pode tentar me impedir e depois ir jantar com um braço só funcionando. Nos dois casos, você janta.
+
+Gorm se levantou. Era meia cabeça mais alto que Ilan e tinha o dobro da largura. Segurou o bastão com as duas mãos e plantou os pés no chão. Ilan viu um risco azul acender na madeira, debaixo do calcanhar direito do rapaz. Era um selo de Pulso, feito às pressas e torto, com um traço de terra que parecia um rabisco. Com ele, o golpe ia empurrar contra o prédio inteiro, e não só contra o peso do corpo. Pulso de escola de bairro. Mas funcionava.
+
+— Desce — disse Gorm. A voz tremeu um pouco.
+
+— Não.
+
+O bastão desceu com uma força que, apoiada no chão daquele jeito, quebraria o ombro de qualquer um.
+
+Ilan já não estava ali.
+
+Estava meio metro para o lado, e não tinha pulado. Na quina do degrau, onde o pé esquerdo tinha encostado, um selo do tamanho de uma unha acendeu e apagou, tão rápido que mais pareceu uma lembrança. Por um instante, o degrau virou o ponto de apoio de onde ele empurrou o próprio corpo para longe do golpe. Foi um movimento curto e seco, sem dobrar as pernas, como se o mundo tivesse dado o passo por ele. Debaixo da luva, no pulso esquerdo, a velha marca da balança esquentou, como sempre esquentava quando segurava um tranco. O bastão acertou o corrimão, que gemeu. Ilan já estava colado no rapaz. Pôs a mão esquerda, a da manopla, aberta no peito de Gorm, e sentiu o vínculo que descia do corpo dele até o selo do calcanhar: um fio esticado até a madeira, como a corda de um arco.
+
+Não cortou o fio. Apagou o traço de terra.
+
+Não foi difícil. O selo era torto e feito com pressa, sem reforço nenhum. Bastou passar o polegar da manopla por cima do risco, como quem borra uma letra com a tinta ainda molhada. Sem o traço de terra, o tranco que o rapaz tinha posto no golpe não tinha para onde ir, e voltou para ele. Gorm tinha jogado o peso todo para a frente, contando que o chão ia segurar, e de repente o chão não segurava mais. Ele perdeu o equilíbrio. Ilan deu um empurrãozinho, quase gentil, no lugar certo, e o rapaz sentou de volta no caixote com tanta força que o caixote se desmanchou.
+
+— Vai jantar — disse Ilan.
+
+Gorm ficou no chão, no meio das tábuas, olhando para as próprias mãos como se a culpa fosse delas. Depois olhou para Ilan.
+
+— Você é o quê?
+
+— Atrasado — disse Ilan, e continuou subindo.
+
+---
+
+Os outros dois estavam no quinto andar e tinham ouvido o barulho.
+
+O corredor do quinto andar era comprido, cheio de portas dos dois lados, com uma janela coberta de gelo no fundo e uma única lâmpada de Clarão presa no teto. Era uma dessas lâmpadas de vidro que guardam a luz do dia e devolvem aos poucos durante a noite, e àquela hora já estava fraca. Os dois homens estavam no meio do corredor, um atrás do outro, e não eram como Gorm. O da frente era baixo, de barba trançada, e tinha nas mãos duas meias-luas de ferro presas aos pulsos com correias. Era arma de quem bate com Pulso e não quer quebrar os próprios dedos. O de trás era magro, segurava uma besta pequena de repetição e estava de lado, mirando por cima do ombro do companheiro.
+
+Eram profissionais. Ilan parou no alto da escada e não entrou no corredor.
+
+— Boa noite — disse.
+
+— O doutor não recebe — disse o barbudo.
+
+— Já me disseram.
+
+— O Gorm está vivo?
+
+— O Gorm está decepcionado.
+
+O barbudo fez que sim, como se aquilo fosse uma informação técnica importante. Ele também tinha selos nos pés, como Gorm, só que mais caprichados: dois em cada sola, gravados no couro e reacendidos com um toque. E tinha um terceiro, conjurado na hora na parede da direita, na altura do quadril: um anel azul que ele mantinha aceso só com o canto do olho. Era um apoio para se jogar de lado. Ilan notou o anel e notou que o homem tinha parado a um palmo da parede justamente para poder usar. O besteiro tinha um selo só, gravado no arco da arma, que dava um empurrão extra no virote na hora do tiro. Selo gravado aguenta muito, mas esvazia a cada tiro e demora um pouco para encher de novo.
+
+Três segundos de vantagem para quem soubesse contar. Ilan sabia.
+
+— Proponho o seguinte — disse. — Vocês vão para o fim do corredor, eu subo para o sexto e converso com o doutor Orsk. Se a conversa for boa, ninguém se machuca. Se for ruim, vocês vão estar entre mim e a janela, eu vou estar entre vocês e a escada, e todo mundo vai ter tempo de pensar melhor.
+
+— Ou — disse o besteiro — eu te ponho um virote no olho daqui.
+
+— Também é uma opção. Mas o seu amigo está na frente.
+
+— Eu atiro por cima.
+
+— Você atira por cima do ombro esquerdo dele. Sempre. Por isso ele fica um palmo à direita do meio do corredor. — Ilan inclinou a cabeça. — Vocês treinam juntos faz tempo. É bonito de ver.
+
+Os dois não se olharam, mas os ombros do barbudo ficaram duros, com a raiva de quem é lido em voz alta.
+
+O besteiro atirou.
+
+Ilan já tinha ido para a esquerda. A esquerda dele, a direita do barbudo: o lado por onde o virote não podia vir sem atravessar o companheiro. O virote passou zunindo onde estava a cabeça dele e se cravou no batente da escada. Na mesma hora, o barbudo avançou. O anel da parede acendeu forte e jogou o homem de lado, direto em cima de Ilan, deixando no ar um rastro azul que sumiu atrás dele. As meias-luas vinham uma por cima e outra por baixo.
+
+Ilan bloqueou a de cima com a manopla.
+
+O impacto foi brutal. Não pela força do braço do homem, mas pelo que vinha junto: o corpo inteiro, mais o empurrão do chão e da parede, tudo num arco de ferro do tamanho de uma mão. No osso, teria quebrado o osso. Na manopla, o golpe entrou no couro e no aço e não parou ali. Quando levantou o braço, Ilan já tinha conjurado o caminho: três selos seguidos, rápidos como três batidas de dedo na mesa. Um nas costas da manopla, um na placa de ferro da bota esquerda e um no chão, com o traço de terra apontado para a viga grossa que segurava aquele lado do corredor. O golpe correu por eles como água numa calha: da manopla para a bota, da bota para o chão, do chão para a viga. Os três riscos acenderam em fila, do braço até o piso, e apagaram juntos. A viga levou o golpe inteiro. A madeira estalou, caiu poeira do teto e a lâmpada balançou. Ilan sentiu o tranco nos dentes e nos joelhos, mas continuou de pé.
+
+O golpe de baixo ele não bloqueou. Deixou passar a um dedo da coxa, porque já estava segurando o pulso do barbudo com a mão direita e com o joelho onde devia estar o joelho dele.
+
+Não brigou com os selos das solas. Brigou com o da parede. Era o mais longe do corpo, o mais exposto, e o barbudo tinha acabado de usar o anel para avançar. Por isso ele ainda estava aceso, cheio do impulso que não tinha sido gasto. Ilan encostou dois dedos da manopla no anel azul e escreveu por cima dele, num gesto curto, a própria marca: uma cauda virada para o outro lado. O anel tremeu e mudou de letra, como uma assinatura rasurada. Por meio segundo, o impulso que o barbudo tinha deixado guardado na parede ficou sendo de Ilan. E ele devolveu tudo, no sentido contrário.
+
+O homem voou de lado, como se uma mão invisível tivesse agarrado a cintura dele. Bateu com o ombro na parede da frente, a das portas, e escorregou até o chão sem ar.
+
+O besteiro já tinha recarregado. Três segundos. Ilan contava desde o primeiro tiro e estava em dois e meio. Em vez de correr para o homem, correu para a lâmpada.
+
+Pulou, agarrou o globo de vidro com a mão direita e arrancou do suporte. O vidro trincou entre os dedos, e a luz guardada lá dentro, que devia sair devagar até de manhã, escapou toda de uma vez: um clarão branco, curto e total, que encheu o corredor como água enche uma garrafa. Ilan estava de olhos fechados. O besteiro, não.
+
+O virote seguinte foi parar no teto. Ilan atravessou o corredor no escuro que veio depois do clarão. Ia guiado pela memória de onde estava cada coisa e pelo barulho do homem esfregando os olhos e xingando a mãe dele, a mãe de Gorm e a mãe do doutor Orsk, nessa ordem. Tirou a besta das mãos dele, desmontou a parte de repetição em dois movimentos e devolveu a arma vazia.
+
+— Quando você voltar a enxergar — disse —, vai querer cuidar do seu amigo. A clavícula está inteira, mas o ombro talvez tenha saído do lugar. Põe de volta antes que inche.
+
+— Eu vou te matar — disse o besteiro, piscando lágrimas.
+
+— Hoje, não.
+
+Ilan voltou para a escada do sexto. Atrás dele, o barbudo tinha conseguido sentar e olhava para ele com os olhos meio fechados de dor.
+
+— A parede — disse, com dificuldade. — Você usou o meu selo.
+
+— Você deixou ele aceso.
+
+— Ninguém faz isso.
+
+— Alguém faz — disse Ilan. — Agora você sabe.
+
+---
+
+O sexto andar não tinha corredor. Tinha uma porta só, no alto da escada, de carvalho reforçado com ferro. Atrás dela havia tanto calor que a madeira suava.
+
+Ilan encostou a mão direita na porta, a mão sem manopla, e sentiu. Era como pôr a mão na barriga de um bicho enorme com febre. Atrás da madeira, a menos de oito metros, alguma coisa guardava mais calor do que cabia num sótão. E esse calor não estava parado. Pulsava torto: uma batida forte e uma fraca, uma forte e duas fracas, como um coração com defeito. Ele já tinha ouvido aquele ritmo antes, em lugares onde preferia não ter estado. E aquele ritmo sempre acabava do mesmo jeito.
+
+Bateu na porta.
+
+— Doutor Orsk. Meu nome é Ilan Varek. Venho em nome da Companhia Arrimo, que fez o seguro do seu reservatório. O seu reservatório está trincado.
+
+Silêncio. Depois, uma voz de homem, abafada pela madeira:
+
+— O meu reservatório está perfeito.
+
+— Tem pelo menos duas células trincadas no lado norte. O senhor sabe disso. Faz uma semana que o senhor tenta compensar jogando carga nas células boas, e faz três dias que as células boas estão cheias demais. O senhor está usando a caixa-d'água do canto como válvula de escape. A água não congela porque o senhor joga nela o calor que não cabe mais no reservatório. — Ilan esperou um pouco. — Ela vai ferver antes de amanhecer. Depois disso, a sobra não vai ter para onde ir.
+
+Silêncio de novo. Mais longo.
+
+A porta se abriu.
+
+O doutor Pellam Orsk tinha cinquenta e poucos anos, era careca, de bigode bem aparado, e usava uma camisa de seda aberta no peito, encharcada de suor. Estava descalço em cima de um tapete grosso. Atrás dele, no meio do sótão, entre as vigas do telhado, havia uma coisa parecida com uma colmeia do tamanho de um armário. Eram centenas de favos de cerâmica branca, de seis lados, cada um do tamanho de um punho, empilhados e presos com cintas de bronze, todos ligados por fios de cobre a um painel cheio de alavancas e mostradores. A cerâmica brilhava num vermelho escuro e sujo, como brasa debaixo da cinza. Do teto pingava água quente, da neve que derretia no telhado. Pelos lados da colmeia desciam, como raízes, dezenas de cabos de cobre que entravam nas paredes e no chão: os vínculos que vinham dos selos de todos os quartos lá de baixo.
+
+Ilan viu a colmeia e, por um instante, esqueceu o homem.
+
+Era um reservatório em favo. Ele já tinha ouvido falar daquele modelo, com cada célula separada, para que, se uma falhasse, as outras não fossem junto. Mas nunca tinha visto um tão grande. E era um bom modelo. Quem projetou aquilo sabia o que estava fazendo. Quem fabricou também. Quem estava usando, não.
+
+— O senhor é o Carrasco — disse Orsk.
+
+Ilan voltou a olhar para ele.
+
+— Eu sou o homem da seguradora.
+
+— A Arrimo mandou um Carrasco para desligar um reservatório de aquecimento. — Orsk riu, um riso agudo e sem fôlego. — Fico lisonjeado. Quanto estão te pagando?
+
+— Mais do que o senhor gostaria.
+
+— Eu pago o dobro para você ir embora.
+
+— O senhor não tem o dobro. O senhor deu o calor desse reservatório como garantia de um empréstimo que vence no fim do mês. Quem comprava o seu calor era a casa de banhos da rua das Tinas, imagino, pelo cheiro de enxofre nos seus cabos. Eles pararam de comprar faz duas semanas, porque o calor começou a chegar irregular e uma das piscinas quase cozinhou um cliente. Desde então o senhor continua puxando calor dos inquilinos, porque não sabe parar sem que a pressão nas células trincadas suba. Não tem para quem vender. E não tem coragem de chamar um engenheiro, porque o engenheiro chamaria a Casa da Fornalha.
+
+Orsk ficou parado.
+
+— Quem te contou isso?
+
+— Os seus cabos — disse Ilan. — E o seu bigode. O senhor ainda apara o bigode toda manhã. Homem que já desistiu deixa o bigode crescer. O senhor ainda acha que tem saída. E tem. A saída sou eu.
+
+Atrás de Orsk, a colmeia mudou de ritmo. A batida forte ficou mais forte. Uma das células do lado norte, na terceira fileira, perto da base, passou do vermelho sujo para um laranja vivo. Uma rachadura fina, que até ali era só um risco escuro, se abriu com um estalo seco que todo mundo ouviu.
+
+Orsk se virou para o painel. As mãos dele foram direto para uma alavanca de bronze à esquerda, a maior, com uma placa vermelha. Ilan entendeu o que ela fazia porque viu para onde ia o cabo que saía dela: para a caixa-d'água do canto, a que não congelava. Orsk ia jogar tudo lá de uma vez. Era o pânico de um homem que tinha passado uma semana com medo de incêndio e agora queria jogar o fogo inteiro num balde.
+
+O balde não ia aguentar. Era uma caixa de madeira com uns mil litros, já quase fervendo. Com aquela carga, a água ia virar vapor em segundos, e o vapor, preso pela tampa e pelas cintas de ferro, ia transformar a caixa numa bomba em cima do telhado. E, mesmo que isso não acontecesse, a descarga de uma vez ia arrancar das células boas mais carga do que elas aguentavam, e o favo inteiro…
+
+— Não — disse Ilan.
+
+Orsk puxou a alavanca.
+
+Ilan não estava perto o bastante para segurar a mão dele. Mas estava perto o bastante para segurar o cabo. Havia três metros entre ele e o painel. A uns dois metros, o cabo da alavanca vermelha passava junto de uma viga do telhado, preso por uma braçadeira de bronze. Ilan ergueu a mão esquerda, apontou dois dedos da manopla para a braçadeira e conjurou. No bronze acendeu um risco âmbar do tamanho de uma unha. Durou uma piscada e sumiu para os olhos, mas não para o fio que agora ligava a braçadeira à manopla.
+
+Pelo fio, ele chegou ao cabo. Pelo cabo, chegou ao vínculo que a alavanca tinha acabado de abrir entre o painel e a caixa-d'água. Estava escancarado, e a carga já começava a correr por ele como água por uma comporta aberta. Ilan se pôs no meio do caminho.
+
+Não tentou fechar a comporta. Fechar de uma vez um vínculo que já estava levando carga era como fechar de uma vez um cano com a água correndo: a pressão ia voltar para trás, para o favo, e o favo ia explodir do mesmo jeito. Então ele aceitou a primeira onda. Deixou a carga entrar pelo selo e pela manopla, e foi guardando nas três células de cerâmica nas costas da mão. Sentiu as células encherem, a primeira, a segunda. O calor subiu pelo couro, pelo aço e pela pele: primeiro um calor bom, depois um calor de panela, depois um calor que doía. Enquanto as células enchiam, ele ia apertando o vínculo, um pouco de cada vez, para que a pressão voltasse para o favo devagar. Devagar o bastante para as células boas aguentarem.
+
+Três segundos. Quatro. A terceira célula da manopla começou a encher.
+
+Era o limite. Ele sabia exatamente onde ficava, porque tinha passado anos aprendendo a sentir o equipamento como parte do corpo. As células estavam quase cheias. O vínculo para a caixa-d'água estava só meio fechado. E o favo do doutor Orsk ainda tinha mais calor do que três células de cerâmica iam conseguir segurar.
+
+— Doutor Orsk — disse Ilan, muito calmo. — Sai de perto do painel.
+
+Orsk estava encostado na parede, de olhos arregalados, com as duas mãos na boca. Saiu.
+
+Na subida, Ilan tinha notado uma coisa em que ainda não tinha tido tempo de pensar. O calor tinha subido dos quartos para o sótão por dezenas de cabos, vindos de dezenas de selos, em dezenas de paredes geladas. Os cabos ainda estavam ali. Os selos continuavam gravados ao lado das brasas do deus. E os vínculos que Orsk montou com cuidado e manteve por semanas continuavam abertos, prontos para levar calor.
+
+Tinham sido feitos para levar calor das paredes até o reservatório. A cauda de cada selo apontava para cima, mas a cauda de um selo de Brasa só diz por onde o calor pode passar. Quem decide para que lado ele vai é a diferença entre o quente e o frio. Durante semanas, o lado quente tinha sido a parede, perto das brasas do deus, e o lado frio, o reservatório. Agora o reservatório estava quase rachando de tão quente. E as paredes, graças ao próprio Orsk, estavam cheias de gelo.
+
+A conta tinha virado. Só faltava tirar a mão de Orsk do caminho.
+
+O controle de Orsk ficava no painel: uma fileira de reguladores que deixavam os vínculos dos selos abertos num sentido só, como torneiras que só deixam a água passar para um lado. Ilan não tinha tempo de desmontar um por um. Nem precisava. Precisava saber qual regulador segurava qual andar, e em que ordem tinham sido instalados. E isso ele sabia. Tinha visto a linha torta de gelo nas janelas, e ela contava a história da instalação melhor do que qualquer planta. Orsk tinha começado pelo canto do terceiro andar e subido, um quarto de cada vez, durante meses. Os reguladores no painel seguiam a mesma linha. O primeiro cabo da esquerda era o mais antigo. O último da direita, o mais novo.
+
+Ilan apontou a manopla para o painel e soltou o primeiro regulador.
+
+O calor desceu de uma vez pelo primeiro cabo. Ele sentiu o calor ir embora, como uma língua de fogo invisível descendo pela parede até um quarto do terceiro andar, onde o gelo das janelas, ele sabia, devia estar começando a escorrer. Esperou uma batida do coração defeituoso do favo. Soltou o segundo. Esperou. O terceiro, o quarto.
+
+Não podia soltar todos de uma vez. O favo ia descarregar rápido demais, e os selos, gravados para um fio de calor e não para uma enxurrada, iam estourar dentro das paredes. O estouro ia voltar por cada vínculo até a mão de quem estava segurando. Também não podia soltar devagar demais. A terceira célula da manopla estava cheia e começava a doer de outro jeito, mais fundo. Não era mais calor. Era tensão: a cerâmica sendo esticada além do que foi feita para aguentar.
+
+Era uma questão de ritmo. O favo batia irregular, uma forte e duas fracas, uma forte e uma fraca, e ele soltava os reguladores sempre na batida fraca, para que cada descarga roubasse um pouco da força da próxima batida forte. Aos poucos, o ritmo do favo mudou. Ficou mais lento. Mais certo. O laranja da célula rachada voltou para o vermelho, e o vermelho, para o vermelho sujo de brasa velha.
+
+No décimo nono regulador, a terceira célula da manopla rachou.
+
+Ele sentiu antes de ouvir: uma pontada nas costas da mão, como uma agulha entrando até o osso, depois o estalo, depois o cheiro de couro queimado. Não podia soltar o que tinha guardado nas células sem ter para onde mandar. O vínculo da caixa-d'água ainda estava meio aberto, e ele usou esse caminho: esvaziou as três células de uma vez na caixa do canto. Em cima da cabeça dele, o telhado fez o barulho de uma panela gigante que finalmente ferve.
+
+Os últimos seis reguladores ele soltou quase juntos. Não havia mais risco. O favo estava morno, só morno, e o calor descia pelos cabos até as paredes do Sete Chaminés com a calma de um rio voltando para o leito.
+
+Ilan ficou parado no meio do sótão, com a mão esquerda erguida e soltando fumaça, até ter certeza. Depois baixou a mão e tirou a manopla com cuidado. A palma estava vermelha, cheia de bolhinhas na base dos dedos. A terceira célula de cerâmica tinha uma rachadura de ponta a ponta.
+
+— Merda — disse ele, com sentimento.
+
+Do outro lado do sótão, o doutor Orsk escorregou pela parede até sentar no chão.
+
+---
+
+Do lado de fora, o Sete Chaminés soltava vapor.
+
+O vapor vinha da caixa-d'água do canto, que tinha perdido a tampa e fervia aberta para a noite. Uma coluna branca e grossa subia reta no ar parado e, lá no alto, se abria como a copa de uma árvore. Vista do chão, com a luz dos postes por baixo, parecia uma chama branca. O pessoal da Fornalha Velha saía de casa para olhar.
+
+Mas o espetáculo de verdade estava nas janelas.
+
+Uma a uma, do terceiro andar para cima, seguindo a linha torta, as janelas do Sete Chaminés tinham perdido o gelo. E uma a uma iam se abrindo. Primeiro com cuidado, só uma fresta. Depois escancaradas. Gente aparecia de camisola, de braço de fora, se abanando, rindo. Uma mulher do quarto andar se debruçou na janela e gritou alguma coisa para a vizinha da frente, que não entendeu e gritou de volta. Um homem do quinto pendurou a manta para fora como uma bandeira. No sexto, duas crianças jogaram uma bacia de água pela janela e ficaram olhando, encantadas, a água congelar no ar antes de bater na calçada. Fazia vinte e dois graus abaixo de zero na rua, e no Sete Chaminés, por uma hora, foi verão.
+
+Na porta da Cozinha do Lento, Pelle Dorn segurava o casaco de Ilan com as duas mãos e olhava para cima de boca aberta.
+
+— O ativo — disse ele, quando Ilan saiu pela porta lateral com a mão enrolada num pano molhado. — O ativo térmico penhorado.
+
+— Está nas paredes.
+
+— Nas paredes.
+
+— Nas paredes de onde foi tirado. — Ilan pegou o casaco e vestiu com uma mão só, meio sem jeito. — O reservatório está frio e seguro, os vínculos estão abertos e eu travei o painel na posição de descarga. Amanhã alguém da Casa da Fornalha vem raspar os selos, e a Arrimo pode mandar buscar o favo. Está inteiro, menos duas células que já estavam trincadas antes de eu chegar. Vai estar no relatório. Não houve dano estrutural, a não ser…
+
+— A não ser?
+
+— Umas vigas queimadas no sótão. E a tampa da caixa-d'água, que deve estar em algum telhado da rua de trás.
+
+Dorn abriu a boca. Fechou. Tirou do bolso de dentro um caderninho e um lápis e anotou alguma coisa, sério como um escrivão de cartório.
+
+— A Companhia não vai chamar isso de preservar o ativo — disse, sem levantar os olhos. — O ativo era o calor guardado. O calor foi… espalhado.
+
+— Foi devolvido. Na contabilidade, faz diferença.
+
+— A Companhia não vai ver essa diferença.
+
+— Então a Companhia que cobre dos inquilinos — disse Ilan. — Pode começar pela Avó Ruta. Ela tem oitenta e um anos e um vocabulário que eu adoraria ver usado num auditor.
+
+Dorn olhou para ele por cima do caderno. Por um segundo pareceu que ia sorrir. Depois lembrou quem era.
+
+— Vou propor à Companhia o pagamento integral, menos o estrago no telhado — disse. — Calculo… doze, talvez quinze dobras de desconto.
+
+— Quinze dobras por uma tampa de caixa-d'água.
+
+— E as vigas.
+
+— As vigas já estavam podres.
+
+— Não está no relatório que estavam podres.
+
+— Vai estar.
+
+Dorn anotou. Depois fechou o caderno e, sabe-se lá por quê, estendeu a mão. Ilan apertou com a direita, a boa.
+
+— Lembre da cláusula nona — disse Dorn. — Três dias. A Companhia vai precisar do seu depoimento. Estou hospedado na pensão Gralha Branca, perto do cais. Se alguém procurar o senhor, é lá que o senhor deve me procurar.
+
+— Procurado por quem?
+
+Dorn demorou a responder.
+
+— Pela Companhia — disse, por fim. — Naturalmente.
+
+E foi embora rua abaixo, um homem miúdo enrolado num cachecol verde, desviando com cuidado das placas de gelo, sem olhar para trás. Ilan ficou olhando até ele virar a esquina, sem saber bem por quê.
+
+---
+
+Sevran estava encostado no batente da porta da cozinha, de braços cruzados, olhando as janelas abertas. Tinha no rosto uma expressão que Ilan demorou a reconhecer. Quando reconheceu, não esperava: era reprovação.
+
+— O senhor tirou o gelo das paredes — disse Sevran.
+
+— Era o trabalho.
+
+— E agora as paredes estão quentes demais e as pessoas abriram as janelas. — Ele apontou com o queixo. — Daqui a uma ou duas horas, quando o calor que o senhor devolveu se espalhar, o tijolo volta ao normal. Mas as janelas vão continuar abertas, porque o pessoal vai ter pegado no sono. A água que jogaram para fora vai congelar nas frestas. Amanhã de manhã, metade dessas janelas não fecha.
+
+Ilan olhou para as janelas. Depois para Sevran.
+
+— Isso é problema da seguradora — disse.
+
+— É problema da Avó Ruta, que mora no quarto andar. E a janela dela, já vou avisando, é aquela aberta ali, com a cortina amarela.
+
+Era. A cortina amarela balançava para fora, e uma cabecinha enrolada num lenço se debruçava na janela, olhando a rua com ar de rainha na sacada.
+
+Ilan suspirou. A mão doía. Estava com fome de novo, mesmo depois da sopa, e cansado de um jeito que não tinha nada a ver com o corpo.
+
+— O senhor quer que eu suba lá e feche as janelas.
+
+— Quero que o senhor suba lá e explique, para quem quiser ouvir, que o calor vai passar e que é para fechar as janelas antes de dormir. As pessoas acreditam em quem as salvou. Em mim elas acreditam por costume, e não é a mesma coisa.
+
+— Eu não salvei ninguém. Eu desliguei um reservatório.
+
+— O senhor fez as duas coisas — disse Sevran, com toda a paciência, como quem explica o óbvio para uma criança teimosa. — Uma era o trabalho. A outra foi escolha sua. Não precisa ter vergonha da segunda.
+
+Ilan não respondeu. Ficou olhando aquele homem alto e curvado, de avental de cozinha, com a sensação chata de que também tinha sido lido em voz alta.
+
+Subiu. Bateu de porta em porta, do terceiro ao sexto andar, e disse a mesma coisa para todo mundo, em poucas palavras: que o calor era de verdade e ia durar, mas não daquele jeito; que era para fechar as janelas antes de dormir; e que no dia seguinte alguém vinha raspar uns selos das paredes, e era para deixar. Ninguém perguntou quem ele era. Uma mulher ofereceu um pedaço de bolo de mel. Um velho quis saber se ele era casado, porque tinha uma neta. No quarto andar, a Avó Ruta ouviu tudo de braços cruzados e depois disse, com uma voz grossa demais para alguém daquele tamanho:
+
+— Tinha gelo nas minhas paredes desde a lua nova.
+
+— Eu sei.
+
+— O doutor Orsk vai preso?
+
+— Não sei. Provavelmente não. Vai perder o reservatório e pagar o empréstimo com o que tiver. Talvez perca o prédio.
+
+— Que perca. — Ela olhou para a mão enrolada dele. — Queimou?
+
+— Um pouco.
+
+Ela foi até um armário e voltou com um pote de barro. Dentro havia uma pasta amarela com cheiro de cera, de mel e de alguma erva amarga.
+
+— Banha de ganso com calêndula — disse. — Passa à noite e não enfaixa apertado.
+
+Ele aceitou e agradeceu. Ela fechou sozinha a janela da cortina amarela e botou Ilan porta afora com a mesma autoridade.
+
+---
+
+Já passava das dez quando ele voltou para a rua. A coluna de vapor do telhado tinha virado um fio. As janelas do Sete Chaminés estavam fechadas, e atrás delas havia luz e, pela primeira vez em semanas, nenhum gelo.
+
+Ele parou na esquina e tirou do bolso do colete uma coisa que tinha pegado no sótão antes de descer: um caco de cerâmica do tamanho de uma ameixa, curvo, liso de um lado e áspero do outro. Era um pedaço de uma das células trincadas do favo de Orsk, que tinha se soltado e caído no tapete quando ele aliviou a pressão. Ilan não sabia direito por que tinha guardado aquilo. Talvez porque o favo era bom demais para um homem como Orsk. Talvez porque a cerâmica tinha uma textura que ele não reconhecia, e ele não gostava de não reconhecer as coisas. Virou o caco entre os dedos. No lado liso havia uma marca de fabricante, carimbada antes de a peça ir ao forno. Ele sentiu o relevo com o polegar. Mas a rua estava escura, ele estava cansado e a mão doía. Guardou de volta.
+
+Do outro lado do rio, por cima dos telhados, ficava a Torre do Meio-Dia.
+
+Era impossível não ver. Eram duzentos e vinte metros de pedra cinzenta e bronze. Lá em cima, como uma flor de metal na ponta de um caule, ficava o Sol: uma lente enorme e redonda de bronze e vidro que, o inverno inteiro, brilhava sobre Vhalessa com uma luz morna e dourada, devolvendo o calor que o deus tinha guardado durante o verão. Naquela noite, o Sol estava apagado. Ia ficar apagado até a noite seguinte, a mais longa do ano. Então a cidade inteira ia se juntar na Praça do Meio-Dia, nos telhados e no rio congelado para ver Calvenor, o Sol de Inverno, subir ao alto da torre e acender o Sol de novo, como fazia havia quase trezentos anos.
+
+Ilan nunca tinha visto o Acendimento. Tinha estado em Vhalessa uma vez, muito tempo antes, no outono, e foi embora antes do inverno. Não gostava de pensar naquele outono, e não pensou. Olhou a torre escura, com o Sol apagado lá em cima como um olho fechado, e pensou em quinze dobras de desconto; numa célula de cerâmica rachada que ia custar pelo menos oito para trocar; numa cláusula de três dias que não fazia sentido; e num terreno nas colinas de Tarvel onde nunca nevava.
+
+Depois foi procurar alguém que consertasse uma manopla às dez e meia da noite, véspera de feriado, numa cidade onde não conhecia ninguém. Não achou. Dormiu numa pensão do Cobre, com a mão besuntada de banha de ganso e calêndula, e sonhou, coisa que quase nunca fazia, com uma balança.
