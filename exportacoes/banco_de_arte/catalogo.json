@@ -952,5 +952,41 @@
   "data": "2026-10-22",
   "nota": "substitui PE-019 em build/arte/ilan_aurelia.jpg (PDF, EPUB e caderno)",
   "versao_4x": "exportacoes/banco_de_arte_4x/06_personagens/PE-019_ilan_e_aurelia_vhalessa_v2_4x.jpg"
+ },
+ {
+  "arquivo": "11_edicao/IL-C01a_corredor_guarda_de_retorno.png",
+  "categoria": "11_edicao",
+  "largura": 1024,
+  "altura": 1536,
+  "modelo": "gpt-image-2.5-sunburst",
+  "versao": "v1",
+  "status": "proposta — aguardando aprovação do autor",
+  "spoiler": false,
+  "prompt": "Cap.1: Guarda de Retorno no corredor do quinto andar, três selos azuis em fila",
+  "data": "2026-10-23"
+ },
+ {
+  "arquivo": "11_edicao/IL-C01b_sete_chamines_verao.png",
+  "categoria": "11_edicao",
+  "largura": 1024,
+  "altura": 1536,
+  "modelo": "gpt-image-2.5-sunburst",
+  "versao": "v1",
+  "status": "proposta — aguardando aprovação do autor",
+  "spoiler": false,
+  "prompt": "Cap.1: Sete Chaminés solta vapor, janelas abertas, verão por uma hora",
+  "data": "2026-10-23"
+ },
+ {
+  "arquivo": "11_edicao/IL-C01c_sotao_favo.png",
+  "categoria": "11_edicao",
+  "largura": 1536,
+  "altura": 1024,
+  "modelo": "gpt-image-2.5-sunburst",
+  "versao": "v1",
+  "status": "proposta — aguardando aprovação do autor",
+  "spoiler": false,
+  "prompt": "Cap.1: sótão de Orsk, favo térmico, Ilan segura a carga com a manopla",
+  "data": "2026-10-23"
  }
 ]
