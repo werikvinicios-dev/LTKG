@@ -198,7 +198,7 @@ body{{font-family:EBG;color:#2A2420;-webkit-print-color-adjust:exact;print-color
 
 
 def compor(pecas, capitulos, saida_pdf, titulo="Leis para Matar Deuses", extra_css=""):
-    hp = saida_pdf.replace(".pdf", ".html")
+    hp = f"{B}/_html_" + os.path.basename(saida_pdf).replace(".pdf", ".html")
     doc = (f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>{esc(titulo)}</title>'
            f'<style>{css(capitulos)}{extra_css}</style></head><body>{"".join(pecas)}</body></html>')
     open(hp, "w", encoding="utf-8").write(doc)

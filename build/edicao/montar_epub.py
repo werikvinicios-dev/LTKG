@@ -152,6 +152,7 @@ def montar():
     L.pagina_imagem("contracapa", f"{ME.DR}/capas_e_marca/C02_Contracapa_Arte_Sem_Texto.png", "Contracapa")
     L.b.toc = L.toc
     L.b.add_item(epub.EpubNcx()); L.b.add_item(epub.EpubNav())
+    L.b.get_item_with_id("cover").is_linear = True
     L.b.spine = ["cover", "nav"] + L.itens
     epub.write_epub(OUT, L.b)
     return OUT

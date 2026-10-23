@@ -39,10 +39,10 @@ ARTE = {
     25: ("C25-0", ["C25-2"], ["C25-4"]), 26: ("C26-0", [], ["C26-1"]), 27: ("C27-0", ["C27-2"], ["C27-3"]),
     28: ("C28-0", [], ["C28-4"]), 29: ("C29-0", [], ["C29-1"]), 30: ("C30-0", [], ["C30-3"]), 31: ("C31-0", [], ["C31-1"]),
 }
-RESPIROS = [f"{DR}/cenarios/S01_Vhalessa_Inverno.png", f"{B4}/../06_personagens/PE-025_ilan_ponte_nevasca_4x.jpg", f"{BA}/05_mundo/MU-002_reinos_do_norte.png",
-            f"{DR}/producao_v2/CV01.png", f"{DR}/producao_v2/D01.png", f"{BA}/05_mundo/MU-009_vhalessa_fornalha_velha_noite.png",
-            f"{DR}/cenarios/S02_Atrio_da_Soleira.png", f"{DR}/producao_v2/P01_01.png", f"{BA}/05_mundo/MU-005_terras_dos_dragoes.png",
-            f"{DR}/cenarios/S05_Passo_Cinzento.png", f"{BA}/06_personagens/PE-020_ilan_sete_chamines.png"]
+RESPIROS = [f"{DR}/cenarios/S01_Vhalessa_Inverno.png", f"{B4}/PE-025_ilan_ponte_nevasca_4x.jpg", f"{BA}/05_mundo/MU-002_reinos_do_norte.png",
+            f"{BA}/05_mundo/MU-009_vhalessa_fornalha_velha_noite.png", f"{DR}/cenarios/S02_Atrio_da_Soleira.png", f"{DR}/producao_v2/P01_01.png",
+            f"{BA}/06_personagens/PE-020_ilan_sete_chamines.png", f"{DR}/producao_v2/S03.png", f"{BA}/05_mundo/MU-001_cidade_de_limiar.png",
+            f"{DR}/producao_v2/CV01.png", f"{BA}/06_personagens/PE-021_ilan_afericao.png"]
 
 
 def arq(k):
@@ -129,7 +129,9 @@ def capitulo(n):
         ins.setdefault(i, "")
         ins[i] += doc_html(d)
     epi = pl.get("epigrafe_sugerida") or None
-    pecas = [abertura_capitulo(n if rot == "Capítulo" else None, titulo, arq(abertura), "center", None, epi, rot)]
+    ab = abertura_capitulo(n if rot == "Capítulo" else None, titulo, arq(abertura), "center", None, epi, rot)
+    ab = ab[:ab.rfind("</section>")] + f'<span class="mk">MARCACAP{n:02d}FIM</span></section>'
+    pecas = [ab]
     pecas.append(capitulo_texto(n, titulo_curto(titulo), corpo, ins))
     pecas += [pagina_final(arq(f)) for f in finais]
     q = pl.get("citacao_respiro")
@@ -260,6 +262,7 @@ CSS_LIVRO = f"""
 .cc{{position:absolute;left:18mm;right:18mm;bottom:22mm;text-align:center;color:#F1E8D4}} .cc p{{font:11.5pt/1.5 EBG;margin:0 0 3mm;text-shadow:0 0 3mm #000}}
 .texto p{{hanging-punctuation:first}}
 .capitular{{width:22mm;height:22mm}}
+.mk{{position:absolute;left:2mm;bottom:1mm;font:2pt EBG;letter-spacing:0;color:#121110}}
 """
 
 
@@ -310,16 +313,10 @@ def livro(paginas_caps):
 
 def paginas_dos_capitulos(pdf):
     from pypdf import PdfReader
-    r = PdfReader(pdf)
     achados = {}
-    for i, p in enumerate(r.pages):
-        t = p.extract_text() or ""
-        m = re.search(r"Cap[íi]tulo\s*\n?\s*(\d+)\s*\n", t)
-        if m and "Sumário" not in t:
-            n = int(m.group(1))
-            achados.setdefault(n, i + 1)
-        if "Epílogo" in t and 31 not in achados and "Sumário" not in t and len(t) < 600:
-            achados[31] = i + 1
+    for i, p in enumerate(PdfReader(pdf).pages):
+        for m in re.finditer(r"MARCACAP(\d\d)FIM", (p.extract_text() or "").replace(" ", "")):
+            achados.setdefault(int(m.group(1)), i + 1)
     return achados
 
 
