@@ -1,0 +1,200 @@
+[
+  {
+    "code": "CV01",
+    "file": "CV01.png",
+    "width": 1024,
+    "height": 1536,
+    "sha256": "120aa2585f92c9727f1547b0d7245f12050bdef14043563ea64dde269c9b9701",
+    "status": "proposta_visual_revisada",
+    "native_pixels": true,
+    "maximum_width_at_300ppi_mm": 86.7,
+    "tool": "imagegen_builtin"
+  },
+  {
+    "code": "D01",
+    "file": "D01.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "6e49d1a5225ac753837fed3094ca722285713f21eefd64040b0c5a54b9b7cfdf",
+    "status": "substituida_por_v2",
+    "native_pixels": true,
+    "maximum_width_at_300ppi_mm": 130.05,
+    "tool": "imagegen_builtin"
+  },
+  {
+    "code": "D01_v2",
+    "file": "D01_v2.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "2e19d8d808484bdbfff6e25adf7acb87a16996fe97a05e6337c98f46e3c4ef77",
+    "status": "proposta_visual_revisada",
+    "native_pixels": true,
+    "maximum_width_at_300ppi_mm": 130.05,
+    "tool": "imagegen_builtin"
+  },
+  {
+    "code": "F01",
+    "file": "F01.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "199d3340136ef95abd6db3c2a861c83e74cb02021ac306d4fc88a3416ce52c42",
+    "status": "proposta_visual_revisada",
+    "native_pixels": true,
+    "maximum_width_at_300ppi_mm": 130.05,
+    "tool": "imagegen_builtin"
+  },
+  {
+    "code": "F02",
+    "file": "F02.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "a5a994c0c3b218fe7986d2cbba04aeffb7d5366e087b87c2834026aa22cc21da",
+    "status": "proposta_visual_revisada",
+    "native_pixels": true,
+    "maximum_width_at_300ppi_mm": 130.05,
+    "tool": "imagegen_builtin"
+  },
+  {
+    "code": "F03",
+    "file": "F03.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "08657021ce92cc37c7d2201c6daaf91e23ef16279034914173e44786f4eab933",
+    "status": "proposta_visual_revisada",
+    "native_pixels": true,
+    "maximum_width_at_300ppi_mm": 130.05,
+    "tool": "imagegen_builtin"
+  },
+  {
+    "code": "F04",
+    "file": "F04.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "4a9c83e5a9ae4c36c16dabfc8ea6a57b6df8428b1815a7076f529a17ebb4e255",
+    "status": "proposta_visual_revisada",
+    "native_pixels": true,
+    "maximum_width_at_300ppi_mm": 130.05,
+    "tool": "imagegen_builtin"
+  },
+  {
+    "code": "F05",
+    "file": "F05.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "b9b415a67cb4d884c5ab054d3775de9db19f8e1f9b0a48a68041f2de0f160dfa",
+    "status": "proposta_visual_revisada",
+    "native_pixels": true,
+    "maximum_width_at_300ppi_mm": 130.05,
+    "tool": "imagegen_builtin"
+  },
+  {
+    "code": "GN01",
+    "file": "GN01.png",
+    "width": 1024,
+    "height": 1536,
+    "sha256": "e9ed33bdf9edc2532999a84b7abc91ea6e6db413d622977c7b4bbbab1574c97b",
+    "status": "proposta_visual_revisada",
+    "native_pixels": true,
+    "maximum_width_at_300ppi_mm": 86.7,
+    "tool": "imagegen_builtin"
+  },
+  {
+    "code": "M01",
+    "file": "M01.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "274637761fac0240ef210192a29ef343dac23c9f4aeb4f7afa9afa40d32ee0aa",
+    "status": "mockup_conceitual",
+    "native_pixels": true,
+    "maximum_width_at_300ppi_mm": 130.05,
+    "tool": "imagegen_builtin"
+  },
+  {
+    "code": "P01_01",
+    "file": "P01_01.png",
+    "width": 1024,
+    "height": 1536,
+    "sha256": "2417314526190f8cd70ac6ee10a01f1f82f85c33fc131e7d11575717ce959fd5",
+    "status": "proposta_visual_revisada",
+    "native_pixels": true,
+    "maximum_width_at_300ppi_mm": 86.7,
+    "tool": "imagegen_builtin"
+  },
+  {
+    "code": "P02_01",
+    "file": "P02_01.png",
+    "width": 1024,
+    "height": 1536,
+    "sha256": "d948a5cfae24d6507d28f4afa1b566613a9e66f56d00b186b336874bf85bcec1",
+    "status": "proposta_visual_revisada",
+    "native_pixels": true,
+    "maximum_width_at_300ppi_mm": 86.7,
+    "tool": "imagegen_builtin"
+  },
+  {
+    "code": "P04_01",
+    "file": "P04_01.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "61580e8a53de3f08010ffa88905651d2b3a06f42768a343a90b1334fee643a28",
+    "status": "proposta_visual_revisada",
+    "native_pixels": true,
+    "maximum_width_at_300ppi_mm": 130.05,
+    "tool": "imagegen_builtin"
+  },
+  {
+    "code": "P05_01",
+    "file": "P05_01.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "0aff6d79ddeda2a8f04328386c69b1fe5de76009ab5af8eba511fd3a176aae35",
+    "status": "proposta_visual_revisada",
+    "native_pixels": true,
+    "maximum_width_at_300ppi_mm": 130.05,
+    "tool": "imagegen_builtin"
+  },
+  {
+    "code": "S03",
+    "file": "S03.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "6225399b18bade60c43ea78e55bc8e2e25eb207dad4ea6c54c1d1bf1ee4a2e84",
+    "status": "proposta_visual_revisada",
+    "native_pixels": true,
+    "maximum_width_at_300ppi_mm": 130.05,
+    "tool": "imagegen_builtin"
+  },
+  {
+    "code": "S09_01",
+    "file": "S09_01.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "7d33ac4e283874c0166cc563a40d99aa7bf265633bc164c2748b0b7f8ee9e723",
+    "status": "proposta_visual_revisada",
+    "native_pixels": true,
+    "maximum_width_at_300ppi_mm": 130.05,
+    "tool": "imagegen_builtin"
+  },
+  {
+    "code": "W01",
+    "file": "W01.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "d113a8bb5037b78bfb0943c25ad2a88e1124e355e115dc0d6fb9ae658c07d4a0",
+    "status": "substituida_por_v2",
+    "native_pixels": true,
+    "maximum_width_at_300ppi_mm": 130.05,
+    "tool": "imagegen_builtin"
+  },
+  {
+    "code": "W01_v2",
+    "file": "W01_v2.png",
+    "width": 1536,
+    "height": 1024,
+    "sha256": "190de6440d5e26aa51142970c9f1c90e1543e521c1be17331d4f92b2befac301",
+    "status": "proposta_visual_revisada",
+    "native_pixels": true,
+    "maximum_width_at_300ppi_mm": 130.05,
+    "tool": "imagegen_builtin"
+  }
+]

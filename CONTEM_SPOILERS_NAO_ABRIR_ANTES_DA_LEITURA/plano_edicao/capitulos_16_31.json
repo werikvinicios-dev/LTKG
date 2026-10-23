@@ -1,0 +1,2271 @@
+[
+ {
+  "cap": 16,
+  "pov": "Aurelia (terceira pessoa próxima)",
+  "resumo": "No Cartório de Limiar, o escrivão Ambrós Pimm obriga Aurelia a preencher o formulário sete-B e mostra a válvula de serviço n.º 4: uma passagem clandestina de 40 u.v. nas Cisternas Quentes, registrada com o selo dela por delegação de Brannoc e autorizada por Hollen Vask, da Casa da Fornalha. Na estação, Brannoc fugiu deixando uma carta em que confessa ter vindo 'cobrar a dívida' de Marenna, onde a filha Lys morreu; Mara faz chá e revela que estava dentro de Marenna durante a quarentena. Aurelia revoga a delegação, descobre que a porta debaixo da Alta Mesa está aberta e envolta por uma pele falsa, percebe que não pode forçá-la sem que o Retorno exploda as Cisternas, e entrega tudo à Comissária Vale, pedindo que a própria estação continue suspensa.",
+  "locais": [
+   {
+    "nome": "Cartório de Limiar de Vhalessa",
+    "cidade_ou_regiao": "Vhalessa — Alta Mesa",
+    "descricao_fisica": "Balcão de carvalho, estantes ao fundo, livros de registro de capa de couro com cantoneiras de latão; porta aberta às oito por um escrivão de 72 anos.",
+    "relacao_espacial": "Na calçada da Alta Mesa, sobre as Cisternas Quentes; de lá a rua desce em ladeira até o rio.",
+    "citacao_curta": "viu a Soberania dos Limiares de pé na calçada da Alta Mesa"
+   },
+   {
+    "nome": "Estação das Portas — escritório de Brannoc",
+    "cidade_ou_regiao": "Vhalessa — margem norte, no cais",
+    "descricao_fisica": "Escritório no andar de cima: estufa de ferro, chaleira, duas xícaras brancas lascadas, mesa arrumada, estantes de registros; espaço vazio onde ficava a miniatura de Lys.",
+    "relacao_espacial": "Ao pé da ladeira da Alta Mesa, junto ao cais; entra-se pela porta lateral do cais.",
+    "citacao_curta": "Quando a viu entrar pela porta lateral do cais"
+   },
+   {
+    "nome": "Sala dos Ferrolhos (Estação das Portas)",
+    "cidade_ou_regiao": "Vhalessa — margem norte",
+    "descricao_fisica": "Sala da estação onde fica o livro de couro vermelho das delegações; cadeira, livro, chave de bronze.",
+    "relacao_espacial": "Dentro da estação; dali Aurelia sente a extremidade clandestina a quase 1 km, sob a Alta Mesa.",
+    "citacao_curta": "Ela tentou fechar a válvula quinze minutos depois, na Sala dos Ferrolhos."
+   },
+   {
+    "nome": "Cisternas Quentes — abóbada externa norte (apenas sentida)",
+    "cidade_ou_regiao": "Vhalessa — subsolo da Alta Mesa",
+    "descricao_fisica": "Abóbada de rocha e sal do tamanho de um bairro, a cerca de 150 graus, guardando o inverno inteiro da cidade.",
+    "relacao_espacial": "Debaixo da Alta Mesa, a quase um quilômetro da estação; acesso pela galeria técnica n.º 3 da Casa da Fornalha.",
+    "citacao_curta": "sob a Alta Mesa, a quase um quilômetro, no escuro da rocha"
+   },
+   {
+    "nome": "Gabinete do térreo da delegação da Câmara dos Pactos",
+    "cidade_ou_regiao": "Vhalessa — Alta Mesa",
+    "descricao_fisica": "Gabinete com a mesa da Comissária e a curva de Nara presa por dois alfinetes na parede; degraus de entrada com vista da cidade.",
+    "relacao_espacial": "Na Alta Mesa; dos degraus vê-se a Feira do Gelo, o Mercado do Sal e, ao longe, o Cobre.",
+    "citacao_curta": "no gabinete do térreo da delegação"
+   },
+   {
+    "nome": "Vista da cidade ao meio-dia (Feira do Gelo, Mercado do Sal, Cobre)",
+    "cidade_ou_regiao": "Vhalessa",
+    "descricao_fisica": "Feira do Gelo cheia de trenós dos Reinos; depósitos do Mercado do Sal soltando fumaça de carvão; no Cobre, uma ilha de janelas sem gelo.",
+    "relacao_espacial": "O Cobre fica do outro lado da ponte, subindo ladeiras, visível de longe a partir da Alta Mesa.",
+    "citacao_curta": "lá longe, no Cobre, numa ilha de janelas sem gelo"
+   }
+  ],
+  "personagens_em_cena": [
+   "Aurelia",
+   "Mara Quen",
+   "Ambrós Pimm (escrivão-chefe do Cartório)",
+   "Tobbe (porteiro da estação)",
+   "Cassia Vale (Comissária de Segurança)",
+   "Brannoc Ister (ausente — só a carta)",
+   "Lys Ister (mencionada; a miniatura sumiu)",
+   "Hollen Vask (só no registro)"
+  ],
+  "faccoes_casas_guildas": [
+   "Cartório de Limiar — carimbo de madeira 'RECEBIDO', caixa de madeira 'ARQUIVO DA CÂMARA', livro de couro marrom com lombada gravada em ouro; escrivão de mangas de proteção pretas",
+   "Coroa dos Limiares (Aurelia) — a chave de bronze do cabelo usada como selo para lacrar o formulário e revogar a delegação",
+   "Câmara dos Pactos — delegação em Vhalessa, Comissária Vale, artigo 14 (suspensão da estação)",
+   "Casa da Fornalha — Intendência e 'Mestre das Galerias' (Hollen Vask) aparecem só no registro da válvula",
+   "Colégio dos Auditores de Pacto — Mara como auditora (caderno, maleta)",
+   "Conselho, Banco de Reservas — citados como prédios da Alta Mesa sobre as Cisternas"
+  ],
+  "objetos_e_armas": [
+   "formulário sete-B em três vias",
+   "pena emprestada pelo escrivão",
+   "livro 'VHALESSA — ESTAÇÃO DAS PORTAS — REGISTRO DE SERVIÇOS EXTERNOS — 1180–'",
+   "anotação a lápis na margem (A. P.)",
+   "carta de Brannoc dobrada em três, lacre de cera vermelha sem sinete",
+   "xícaras de louça branca de borda lascada, chaleira, estufa de ferro, lata de chá (laranja e fumaça)",
+   "pederneira e isca de Mara",
+   "livro de couro vermelho das delegações",
+   "chave de bronze de Aurelia",
+   "caderno pequeno de Mara",
+   "curva de temperatura de Nara presa na parede"
+  ],
+  "magia_em_uso": [
+   {
+    "disciplina": "Coroa (Limiares)",
+    "o_que_acontece": "Aurelia revoga a delegação de Brannoc pousando a chave de bronze sobre o próprio selo no livro; todas as permissões dele se apagam na estação, menos uma, longe, sob a Alta Mesa.",
+    "visual_com_selos": "On the red ledger page, her engraved coronal gold seals bearing the bronze-key mark of the Crown of Thresholds flares and then goes dark; across the station 84 doors' small engraved gold seals switch off one by one like lamps — except a single gold seal, far away in black rock, that stays lit."
+   },
+   {
+    "disciplina": "Brasa (passagem clandestina)",
+    "o_que_acontece": "A extremidade clandestina está aberta e drena calor das Cisternas, seis graus por dia.",
+    "visual_com_selos": "A door-sized gold seal under the rock with a thick Brasa red (#C8332F) flow line bleeding steadily out of it toward an unseen far side."
+   },
+   {
+    "disciplina": "Selos falsos (pele falsa)",
+    "o_que_acontece": "Uma camada de selos alheios, pequenos e precisos, envolve a extremidade e devolve à Coroa a resposta de uma porta adormecida.",
+    "visual_com_selos": "A tight mesh of tiny pale engraved seals around the gold one, all glowing evenly and perfectly still — Selos Vazios that look alive and lead nowhere, like a room where no one breathes."
+   }
+  ],
+  "ilustracoes": [
+   {
+    "tipo": "vinheta_abertura",
+    "momento": "~1%",
+    "trecho_ancora": "Formulário sete-B. Em três vias.",
+    "descricao_visual": "Dawn on the Alta Mesa: the small, thin clerk Ambros Pimm (72, thin white hair combed over a bald crown, round brass-rimmed glasses, grey wool waistcoat, black cloth sleeve protectors to the elbows, fingerless gloves, a ring of keys and a folder of blank forms under his arm) stands in the doorway of the Threshold Registry, unimpressed, facing Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) and Mara Quen (32, tall and thin, dark hair in a bun, round glasses, dark high-collared coat, burgundy waistcoat, leather satchel under her arm) on the snowy pavement. Grey sky, frost on the stone. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~18%",
+    "trecho_ancora": "Aurelia leu o registro uma vez. Depois releu a linha da capacidade nominal.",
+    "descricao_visual": "Close-up spot: a huge brown-leather ledger with brass corners open on an oak counter, a pale gloved finger stopped on one entry line, faint pencil note in the margin (illegible scribbles only), Pimm's ink-stained fingerless glove at the edge. Lamplight, dust. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~44%",
+    "trecho_ancora": "Depois puxou a cadeira de Brannoc de debaixo da mesa e se sentou.",
+    "descricao_visual": "The empty office of the station regent: cold iron stove now relit, a kettle, two chipped white cups, a folded letter with broken red wax under Aurelia's gloved hands, an empty dust-free rectangle on the desk where a small framed miniature used to stand. Mara Quen crouched at the stove striking a flint. Quiet, intimate, grey window light. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": true
+   },
+   {
+    "tipo": "pagina_inteira",
+    "momento": "~64%",
+    "trecho_ancora": "Ela as sentiu se apagar. Todas. Menos uma.",
+    "descricao_visual": "Aurelia sits eyes closed in the Room of Bolts, both hands on a red leather ledger, the bronze key laid on the page. Around her the walls dissolve into a visionary cutaway of the city: the Station's 84 doors with engraved gold seals going dark one after another, and far beneath the Alta Mesa, inside salt and rock, one door-sized gold seal still burning, wrapped in a mesh of tiny pale false seals, a thick red heat-line bleeding from it. Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) Mara silhouetted in the doorway. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": true
+   },
+   {
+    "tipo": "respiro",
+    "momento": "~99%",
+    "trecho_ancora": "Aurelia ficou um tempo parada nos degraus da delegação, olhando a cidade.",
+    "descricao_visual": "Wide quiet view from the steps of the Chamber delegation on the Alta Mesa at noon: snow-covered roofs sloping down to a frozen river crowded with the tents and sledges of the Ice Fair, coal smoke rising from the depot chimneys of the Salt Market, and far across the bridge, on the hills of the Copper district, a small island of windows without frost. A lone tall figure in a fur coat in the foreground, seen from behind. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   }
+  ],
+  "citacao_respiro": "Não sei onde está o outro lado da minha própria porta.",
+  "documentos_do_mundo": [
+   {
+    "tipo": "contrato",
+    "conteudo": "FORMULÁRIO SETE-B — Requerimento de consulta a registro de extremidade, vínculo ou serviço de limiar. Três vias (requerente / cartório / arquivo da Câmara). Finalidade da consulta: verificação de registros de extremidades externas e válvulas de serviço vinculadas à Estação das Portas de Vhalessa, para o inquérito sobre a morte da Coroa de Calvenor. Qualidade do requerente: Soberania titular da rede. Assinatura: [selada com a chave de bronze]. Carimbo: RECEBIDO.",
+    "onde_entra": "Preencher o formulário sete-B levou doze minutos."
+   },
+   {
+    "tipo": "livro-razão",
+    "conteudo": "Válvula de serviço n.º 4 — 22 set. 1187. Local: Cisternas Quentes de Vhalessa — abóbada externa norte — acesso pela galeria técnica n.º 3 da Casa da Fornalha. Função: compensação térmica dos bancos da estação; equalização de carga em período de Acendimento. Capacidade nominal: 40 u.v. Responsável técnico: B. Ister, regente, por delegação da Soberania. Autorização de acesso técnico: pela Intendência da Casa da Fornalha, Hollen Vask, Mestre das Galerias. [margem, a lápis:] Cap. justif. pelo regente: pico do Acendimento. A. P.",
+    "onde_entra": "Virou a página."
+   },
+   {
+    "tipo": "carta",
+    "conteudo": "Vossa Passagem, / A senhora fez a conta certa em Marenna. [...] Alguém me disse uma vez que toda coroa é uma dívida. Eu vim cobrar a minha. / Não me procure. A senhora não vai me encontrar pelas suas portas. Eu conheço todas. / Com o respeito e o afeto de sempre — B. [papel dobrado em três, lacre de cera vermelha comum, sem sinete]",
+    "onde_entra": "Aurelia atravessou o escritório, pegou a carta, quebrou o lacre e leu."
+   }
+  ],
+  "epigrafe_sugerida": "«Nenhuma consulta a registro será franqueada sem requerimento formal, qualquer que seja a qualidade do requerente, inclusive a Soberania titular da rede.» — Regulamento do Cartório de Limiar (1022), art. 4º, § 2º"
+ },
+ {
+  "cap": 17,
+  "pov": "Ilan (terceira pessoa próxima)",
+  "resumo": "Na oficina da porta verde, Nara troca a célula provisória da manopla, que aguentou a mão de Thor; Mara descobre que Hollen Vask pediu dispensa para cuidar de uma irmã no Cais de Tamsin. No telhado quente da serralheria, Aurelia conta a Ilan o Cartório, a carta de Brannoc e o fechamento de Marenna em 1178 (40.312 mortos, Lys entre eles), e Ilan conta a Noite das Sentenças, a queda da Casa do Fiel em Lumen e as nove covas sem nome. Aurelia lhe dá um dos dois anéis-soleira de bronze (ele o põe no dedo médio da direita), e Ilan deduz que a outra ponta da passagem clandestina é o Passo Cinzento e que será preciso alguém dos dois lados para fechá-la.",
+  "locais": [
+   {
+    "nome": "Oficina da porta verde / serralheria (Cooperativa)",
+    "cidade_ou_regiao": "Vhalessa — Cobre",
+    "descricao_fisica": "Oficina cheia de tubos de cobre e bancadas, fila de gente da serralheria, armário dos reservatórios, janela por onde entra luz; porta verde.",
+    "relacao_espacial": "No Cobre, do outro lado do rio em relação à torre e à Alta Mesa.",
+    "citacao_curta": "Do outro lado da oficina, junto à porta verde, Hanne Voss contava"
+   },
+   {
+    "nome": "Telhado da serralheria",
+    "cidade_ou_regiao": "Vhalessa — Cobre",
+    "descricao_fisica": "Telhado quente, tubos forrados de feltro com neve derretendo em trilhas escuras, mureta, chaminé morna; vista para a torre escura e uma fenda de estrelas nas nuvens.",
+    "relacao_espacial": "Diante da torre, do outro lado do rio.",
+    "citacao_curta": "Do outro lado do rio, a torre continuava escura."
+   },
+   {
+    "nome": "Casa do Fiel (flashback)",
+    "cidade_ou_regiao": "Lumen — montanhas entre as Cidades de Bronze e o Delta",
+    "descricao_fisica": "Sede da Ordem reduzida a um monte de pedra preta, queimada por três dias; vala da Câmara perto da estrada; nove covas cobertas de pedras.",
+    "relacao_espacial": "A doze dias de estrada de Vhalessa (Ilan fez em nove).",
+    "citacao_curta": "A Casa do Fiel ficava em Lumen, nas montanhas entre as Cidades de Bronze e o Delta."
+   },
+   {
+    "nome": "Estalagem Lanterna Torta (flashback)",
+    "cidade_ou_regiao": "Vhalessa — cais",
+    "descricao_fisica": "Estalagem do cais onde Ilan, aos 22, copiou à mão o mapa da Revelação de Calvenor; balcão com a folha amarela da agência de notícias.",
+    "relacao_espacial": "No cais de Vhalessa.",
+    "citacao_curta": "Estava numa estalagem do cais, a Lanterna Torta, copiando o mapa para o cliente."
+   },
+   {
+    "nome": "Marenna (relato)",
+    "cidade_ou_regiao": "Marenna — cidade portuária",
+    "descricao_fisica": "Cidade de 14 portas de Aurelia (ligadas a Tollsund, Neska, Dunmar, Soleira, o Delta); a febre começou no porto.",
+    "relacao_espacial": "Distante; ligada por portas a meio continente.",
+    "citacao_curta": "Começou no porto, na segunda semana de março"
+   }
+  ],
+  "personagens_em_cena": [
+   "Ilan",
+   "Nara Voss",
+   "Hanne Voss",
+   "Tibo",
+   "Mara Quen",
+   "Aurelia",
+   "mencionados: Hollen Vask, Iolanthe Ness, Ithren, Sel e Marit, Lys Ister, Ione, Thor"
+  ],
+  "faccoes_casas_guildas": [
+   "Cooperativa dos Reparadores do Cobre — forno de porcelana parado desde a Vigília por falta de lenha",
+   "Colégio (médicos) de Marenna — carta de cinco linhas pelo relé à Soberania",
+   "Ordem da Última Sentença / Casa do Fiel — lista de 108 mortos, executores, agrimensores, copistas, aprendizes",
+   "Câmara dos Pactos — equipe de identificação de corpos; ordem que autorizou o cerco",
+   "Mercenários de jurisdição e guardas de três Soberanias — a coalizão que incendiou a Casa do Fiel",
+   "Agência de notícias — a 'folha amarela'"
+  ],
+  "objetos_e_armas": [
+   "célula provisória de porcelana de Hanne com rachaduras capilares",
+   "pinças de prata, bandeja de cobre, lupa, óculos de aumento",
+   "célula nova branca e lisa ('a última')",
+   "faixas nas costelas de Ilan (sem camisa)",
+   "dois anéis de bronze escuro, grossos, sem pedra (par de soleiras), numa bolsinha de couro com cordão",
+   "molho de chaves de bronze de Aurelia",
+   "carta de Brannoc (lida em voz alta)",
+   "folha amarela da agência de notícias (flashback)",
+   "cópia à mão do mapa de Calvenor (flashback)"
+  ],
+  "magia_em_uso": [
+   {
+    "disciplina": "Coroa (Limiares) — par de soleiras",
+    "o_que_acontece": "Cada anel é uma extremidade; a passagem tem dois dedos de largura e deixa passar ar, som e papel pequeno. Ilan sussurra 'obrigado' e a voz sai da luva de Aurelia.",
+    "visual_com_selos": "Inside each bronze ring a hair-thin coronal gold seal bearing the bronze-key mark of the Crown of Thresholds circles the hole and glows faintly when the passage opens; through the hole, instead of stars, a lamp-lit white stone ceiling (or the wool lining of her glove)."
+   },
+   {
+    "disciplina": "Manopla de células (Ilan)",
+    "o_que_acontece": "Nara examina a célula provisória que absorveu o tranco do deus do trovão.",
+    "visual_com_selos": "No active seal: the cracked porcelain cell shows a fine web of hairline fractures against the window light; the gauntlet's own engraved seals are dark and cold."
+   }
+  ],
+  "ilustracoes": [
+   {
+    "tipo": "vinheta_abertura",
+    "momento": "~3%",
+    "trecho_ancora": "Nara ergueu a célula contra a luz da janela.",
+    "descricao_visual": "Nara Voss (long thick copper-red braid, freckles, brass goggles pushed up on her forehead, sleeveless leather vest, fingerless gloves, tool belt, old burn scars on her forearms) with magnifying goggles lowered, holding a cracked white porcelain hexagonal cell up to a frosted workshop window with silver tweezers. In the foreground, on the workbench, the opened steel gauntlet; Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, plain iron longsword at the hip, iron ballast plates on his boots, steel gauntlet with three ceramic cells on his LEFT forearm) sits shirtless on a tall stool, ribs bandaged, left arm stretched across the bench. Copper pipes everywhere, a green door in the background. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~51%",
+    "trecho_ancora": "Cavei mais nove covas, para os que eu consegui reconhecer, e pus pedras em cima.",
+    "descricao_visual": "Flashback vignette in desaturated tones: a mountain ridge in Lumen, a mound of blackened stone still smoking, a 22-year-old Ilan (lean, younger, same grey eyes, no gauntlet) alone with a shovel beside nine unmarked graves covered with stones; in the distance a long trench near a road. Bleak, silent. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "pagina_inteira",
+    "momento": "~73%",
+    "trecho_ancora": "Pelo furo onde entraria o dedo, Ilan viu as estrelas.",
+    "descricao_visual": "Night on the warm copper-district rooftop: felt-wrapped pipes with snow melting in dark trails, a warm chimney, a low parapet. Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) (hood up, snow on shoulders) holds a plain dark bronze ring up against a gap of stars; through its hole a tiny lamp-lit white stone ceiling is visible instead of sky, a hair-thin gold seal circling the rim. Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, plain iron longsword at the hip, iron ballast plates on his boots, steel gauntlet with three ceramic cells on his LEFT forearm) sits right beside her, shoulders almost touching. Across the river, the dark Tower of Noon. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "respiro",
+    "momento": "~100%",
+    "trecho_ancora": "Ficou ali até ela acordar.",
+    "descricao_visual": "Quiet atmosphere: the rooftop at deep night seen from a distance — two small figures on the parapet, one head resting on the other's shoulder, warm chimney breath rising, stars widening in a crack of clouds over a frozen river and a black tower. No faces, just stillness. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   }
+  ],
+  "citacao_respiro": "Uma porta pequena, entre mim e você.",
+  "documentos_do_mundo": [
+   {
+    "tipo": "carta",
+    "conteudo": "Colégio de Marenna — à Soberania dos Limiares, pelo relé, dia 16 [de março de 1178]. A febre passa de pessoa a pessoa pelo ar; o doente só sabe que está doente no segundo dia, quando já a passou a quem esteve perto. Se as portas continuarem abertas, a febre chega a Soleira em uma semana e ao Delta em duas. Pelas nossas contas, se sair de Marenna, morrerão entre dois e três milhões antes do verão. A decisão não é nossa. É da Soberania.",
+    "onde_entra": "Os médicos do Colégio de Marenna me mandaram uma carta pelo relé no dia dezesseis."
+   },
+   {
+    "tipo": "relatório",
+    "conteudo": "Lista dos mortos de Marenna (Câmara dos Pactos ao Átrio) — entrada: Lys Ister. Dezesseis anos. Natural de Tollsund. Hospedada na rua dos Tecelões, número oito, em casa de Ilse Ister, tia paterna. Falecida em vinte e nove de março.",
+    "onde_entra": "Lys Ister. Dezesseis anos."
+   },
+   {
+    "tipo": "cartaz",
+    "conteudo": "FOLHA AMARELA (agência de notícias): A Senhora dos Poços executada no Delta, sem plano. O Delta vai passar sede. A Concordata proscreve a Ordem da Última Sentença. — [três dias depois:] A Casa do Fiel caiu.",
+    "onde_entra": "o dono da estalagem tinha em cima do balcão uma folha amarela da agência de notícias"
+   }
+  ],
+  "epigrafe_sugerida": "«A decisão não é nossa. É da Soberania.» — carta do Colégio de Marenna, março de 1178"
+ },
+ {
+  "cap": 18,
+  "pov": "Ilan (com uma seção em Aurelia, na estação)",
+  "resumo": "Enquanto todos discutem se o Passo Cinzento é o outro lado da válvula, a dragoa de tempestade Ulvra, a Velha das Cristas, chega numa tempestade que ela mesma fez, pousa na Torre do Meio-Dia e exige que a cidade pare de 'roubar o inverno'; um guarda de 18 anos a acerta com uma besta e ela descarrega um raio. Ilan corta com o Fio de Interdição o tentáculo que ia para a multidão sob o leão de bronze, o Pivô de Cobre de Nara leva a descarga para a terra (e uma célula da manopla estoura, queimando-lhe a mão esquerda), enquanto Aurelia abre a porta de Soleira como Ponte de Custódia e evacua seis mil pessoas em quarenta minutos, com a Comissária organizando a fila. No gelo do rio, Mara negocia um tratado com Ulvra, que revela o Passo Cinzento, Hvel, os três ovos e a presença de Brannoc na estação; o sino de fim de perigo toca pela primeira vez em 112 anos.",
+  "locais": [
+   {
+    "nome": "Gabinete do térreo da delegação",
+    "cidade_ou_regiao": "Vhalessa — Alta Mesa",
+    "descricao_fisica": "Sala pequena com estufa acesa a carvão requisitado; Thor sentado no chão ocupa um terço do espaço; janela para o norte.",
+    "relacao_espacial": "A janela dá para os telhados da Alta Mesa e, além deles, as montanhas do norte/noroeste.",
+    "citacao_curta": "A do gabinete dava para o norte: para os telhados da Alta Mesa e, além deles, as montanhas."
+   },
+   {
+    "nome": "Praça do Meio-Dia",
+    "cidade_ou_regiao": "Vhalessa — margem norte",
+    "descricao_fisica": "Lajes com fogueiras e abrigos de neve, trenós dos Reinos descarregando carvão, fila de baldes do depósito municipal; escadaria descendo ao rio; leão de bronze com tubo de aferição.",
+    "relacao_espacial": "Abaixo da Alta Mesa; a escadaria desce ao rio, onde fica a Feira do Gelo; o leão está a ~50 m da base da torre.",
+    "citacao_curta": "Do outro lado da escadaria, no gelo do rio, estava a Feira do Gelo inteira"
+   },
+   {
+    "nome": "Torre do Meio-Dia — plataforma do Sol",
+    "cidade_ou_regiao": "Vhalessa — Praça do Meio-Dia",
+    "descricao_fisica": "Torre de 220 m; no alto, armação de bronze da lente; anel de distribuição sob a plataforma; quatro troncos de bronze maciço descem até a rocha das Cisternas; porta de ferro da escada de serviço na face leste.",
+    "relacao_espacial": "Domina a praça; a base leste fica do outro lado da praça em relação ao leão.",
+    "citacao_curta": "Pousou no alto da torre do Meio-Dia, na plataforma do Sol, a duzentos e vinte metros de altura."
+   },
+   {
+    "nome": "Base leste da torre / porta da escada de serviço",
+    "cidade_ou_regiao": "Vhalessa — Praça do Meio-Dia",
+    "descricao_fisica": "Junção velha e úmida do tronco leste com a rocha; depois da descarga, cratera do tamanho de uma mesa com bordas vitrificadas; porta de ferro arrancada caída a 3 m.",
+    "relacao_espacial": "Face leste da torre, oposta ao centro da praça.",
+    "citacao_curta": "Face leste! Na porta da escada de serviço!"
+   },
+   {
+    "nome": "Estação das Portas — saguão e arco de Soleira",
+    "cidade_ou_regiao": "Vhalessa — margem norte",
+    "descricao_fisica": "Saguão vazio, porta principal e porta lateral do cais, galeria norte com o arco de Soleira de bronze esverdeado (construído no ano 708), cadeado de ferro e papel da Câmara.",
+    "relacao_espacial": "A 400 m da praça, pela margem norte; da porta principal vê-se o cais, a praça e a torre.",
+    "citacao_curta": "Pela margem norte, entre as fogueiras, até a estação, a quatrocentos metros."
+   },
+   {
+    "nome": "Átrio de Soleira — galeria norte",
+    "cidade_ou_regiao": "Soleira",
+    "descricao_fisica": "Galeria morna e iluminada com lâmpadas, banco do guarda de plantão junto ao arco.",
+    "relacao_espacial": "A 1.900 km de Vhalessa, do outro lado do arco.",
+    "citacao_curta": "Do outro lado, a mil e novecentos quilômetros dali, estava a galeria norte do Átrio de Soleira, morna e iluminada."
+   },
+   {
+    "nome": "Rio congelado diante da escadaria (tenda de Calvenor)",
+    "cidade_ou_regiao": "Vhalessa — rio Lento",
+    "descricao_fisica": "Gelo rachado de margem a margem pela onda do trovão; a dragoa pousa com as asas abertas sobre ele.",
+    "relacao_espacial": "Diante da escadaria da praça, a ~100 m da tenda de Calvenor; a evacuação seguiu para o Cobre e a margem sul.",
+    "citacao_curta": "e pousou no gelo do rio, diante da escadaria da praça, a uns cem metros da tenda de Calvenor"
+   }
+  ],
+  "personagens_em_cena": [
+   "Ilan",
+   "Aurelia",
+   "Mara Quen",
+   "Nara Voss",
+   "Tibo",
+   "Sevran",
+   "Thor",
+   "Cassia Vale",
+   "Tenente Halsey (braço na tipoia)",
+   "Ulvra, a Velha das Cristas",
+   "Ione Varga (do outro lado do arco)",
+   "guarda municipal de 18 anos com besta",
+   "mulher com bebê",
+   "Conselheira-Presidente Ilse Garrod",
+   "homens dos Reinos"
+  ],
+  "faccoes_casas_guildas": [
+   "Câmara dos Pactos — papel de suspensão com o selo das duas mãos entrelaçadas sobre a balança reta; seis guardas de uniforme cinzento; artigos 14 e 22 da Concordata",
+   "Reinos da Tempestade — homens de casaco de pele de foca, trenós puxados por bodes; Thor assina o tratado em runas",
+   "Guarda municipal de Vhalessa — besta pesada de guarnição, de corda de aço",
+   "Conselho Municipal — a Conselheira-Presidente assina o tratado pela cidade",
+   "Companhia Kaltz — carvão requisitado para a estufa da delegação",
+   "Politécnica — tubo de aferição usado por Nara (141 graus)",
+   "Átrio de Soleira — guarda de plantão; a Chanceler de cinza"
+  ],
+  "objetos_e_armas": [
+   "Pivô de Cobre (estaca de cobre do comprimento de um antebraço, grossa como dois dedos, base larga de cerâmica, argola para cabo)",
+   "besta pesada de guarnição e virote de muralha de um palmo com ponta de ferro",
+   "lente de aferição de Ilan",
+   "manopla (a célula mais antiga estoura em calor)",
+   "pano molhado arrancado da saia de Nara",
+   "martelo de cabo curto e torto de Thor",
+   "caderno, lápis e placa de vidro de aferição de Mara (riscada pela garra da dragoa)",
+   "cadeado de ferro e papel da Câmara rasgado",
+   "gorro de lã de Sevran",
+   "trenó vazio no rio (púlpito improvisado de Sevran)"
+  ],
+  "magia_em_uso": [
+   {
+    "disciplina": "Carga / Pulso (biologia dracônica)",
+    "o_que_acontece": "Ulvra voa sustentada por Pulso acoplado à pressão do ar, carrega a crista em ondas de pouco mais de um segundo e descarrega na quarta.",
+    "visual_com_selos": "Natural charge, no seals: her translucent ice-blade spines light from nape to tail in waves, blue-white then white; hundreds of branching tentacles of ionized air fan out toward the bronze lens frame."
+   },
+   {
+    "disciplina": "Carga — Pivô de Cobre",
+    "o_que_acontece": "O raio hesita na junção ruim da base da torre e encontra a saída limpa do pivô cravado no gelo e cabeado ao tronco leste.",
+    "visual_com_selos": "The copper stake carries an engraved Carga electric gold (#D7B46A) seal with a clear ground-stroke; at the strike it blazes like a sun, the discharge diving through it into the earth; afterwards a puddle of molten copper and white ceramic shards in a glassy crater."
+   },
+   {
+    "disciplina": "Fio de Interdição + Marca de Cobrança (Ilan)",
+    "o_que_acontece": "Ilan escreve a própria marca na pata molhada do leão de bronze e estende dela um fio cortado; o tentáculo que descia para a multidão hesita e se desfaz.",
+    "visual_com_selos": "A fingernail-sized conjured seal in Carga electric gold (#D7B46A) flickers on the raised bronze paw, Ilan's own crooked handwriting; above it a hair-thin line of light that ends in a deliberate gap — the erased ground-stroke; the descending tentacle frays against it."
+   },
+   {
+    "disciplina": "Coroa (Limiares) — Ponte de Custódia",
+    "o_que_acontece": "Aurelia arranca o selo da Câmara e segura a porta de Soleira aberta a 40 u.v. por quarenta minutos, compensando pressão, calor, umidade e impulso; dói.",
+    "visual_com_selos": "Every engraved threshold seal in the stones of the greenish-bronze arch lights at once in coronal gold, a ring of light around warm lamp-glow from Soleira; faint gold compensation threads wrap each person who crosses."
+   }
+  ],
+  "ilustracoes": [
+   {
+    "tipo": "vinheta_abertura",
+    "momento": "~12%",
+    "trecho_ancora": "Do noroeste, por cima das cristas, vinha uma nuvem.",
+    "descricao_visual": "Through the north-facing window of a small office: snowy roofs of the Alta Mesa and, beyond, mountain crests under a uniform grey sky; from the northwest a single enormous storm cloud — black at the base, white towers on top — rolling against the wind toward the city, silent flashes inside. In the foreground the silhouettes of Thor (huge god, about 2.2 m, small narrowed blue eyes, short crooked-handled hammer at his belt, furs of the Storm Kingdoms) rising to his feet and Nara Voss (long thick copper-red braid, freckles, brass goggles pushed up on her forehead, sleeveless leather vest, fingerless gloves, tool belt, old burn scars on her forearms) stepping back from the glass. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "dupla",
+    "momento": "~46%",
+    "trecho_ancora": "E encontrou o Pivô de Nara.",
+    "descricao_visual": "Double-page spread: Ulvra, the Old Woman of the Crests (storm dragon about 30 m long; scales the blue-grey of wet slate with frost-silver edges; thin dark wing membranes like cured leather, veins visible against light; long narrow head, fine snout, two rows of short horns from brow to nape; solid white hailstone eyes with no iris or pupil; a dorsal crest of tall thin translucent ice-blade spines glowing cold blue-white from within) clinging to the bronze lens frame atop the 220 m Tower of Noon, wings spread, tail coiled twice round the tower, crest blazing white as she discharges; a fan of lightning slams into the bronze frame and races down the tower; at the tower's east base a copper stake flares electric gold; in the centre of the packed square below, under a bronze lion with raised right paw, Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, plain iron longsword at the hip, iron ballast plates on his boots, steel gauntlet with three ceramic cells on his LEFT forearm) lifts his gauntlet toward a hair-thin line of gold light above the paw where a smaller tentacle frays. Freezing rain, sixty thousand upturned faces, the Ice Fair on the river beyond. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~66%",
+    "trecho_ancora": "A primeira pessoa que entrou pela porta principal da estação foi a mulher com o bebê.",
+    "descricao_visual": "Inside the icy station hall: Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) (fur coat open) stands with both hands on the jamb of a greenish-bronze arch whose engraved seals all glow coronal gold; through it a warm lamp-lit gallery where Chancellor Ione Varga (old, very short, face wrinkled like a winter apple, grey clothes, grey shawl) waits with crossed arms. A soaked woman clutching a screaming baby, led by a man in a sealskin coat, hesitates at the threshold; grey-uniformed guards keep a line on the left; a torn paper with a seal on the floor. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "pagina_inteira",
+    "momento": "~93%",
+    "trecho_ancora": "A dragoa riscou a placa com a garra do meio.",
+    "descricao_visual": "On the cracked river ice: Mara Quen (32, tall and thin, dark hair in a bun, round glasses, dark high-collared coat, burgundy waistcoat, leather satchel under her arm) stands ten metres from the lowered head of Ulvra, the Old Woman of the Crests (storm dragon about 30 m long; scales the blue-grey of wet slate with frost-silver edges; thin dark wing membranes like cured leather, veins visible against light; long narrow head, fine snout, two rows of short horns from brow to nape; solid white hailstone eyes with no iris or pupil; a dorsal crest of tall thin translucent ice-blade spines glowing cold blue-white from within), whose snout rests three metres from her; the dragon extends a huge slate-blue forefoot and with its middle claw scores a single deep line across a thick glass assay plate laid on the ice. Behind Mara: Thor (huge god, about 2.2 m, small narrowed blue eyes, short crooked-handled hammer at his belt, furs of the Storm Kingdoms) as witness, a dishevelled councilwoman with a half-undone bun, the grey Commissioner; Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) standing silent. On the stone stairs above, Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes, long charcoal-black high-collared coat, plain iron longsword, iron ballast plates on boots, steel gauntlet with three ceramic cells on his LEFT forearm, LEFT hand wrapped in linen bandage at the edge of the gauntlet, guarding broken ribs, plain bronze ring on the middle finger of his RIGHT hand) sits with his left hand wrapped in a wet cloth. Grey light, steam from the dragon's breath. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "respiro",
+    "momento": "~98%",
+    "trecho_ancora": "Do outro lado da praça, na base da torre, a cratera do Pivô de Cobre ainda fumegava.",
+    "descricao_visual": "Quiet aftermath: the Square of Noon half empty under a low grey sky again, broken windows, a small smoking crater with glassy edges at the base of a dark tower, an iron door lying flat in the snow; on the river stairs tiny seated figures; far to the northwest a single dot disappearing over the mountains. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   }
+  ],
+  "citacao_respiro": "A única de vocês que ainda não sabia o preço",
+  "documentos_do_mundo": [
+   {
+    "tipo": "contrato",
+    "conteudo": "TRATADO DO GELO (a lápis, caderno de Mara Quen). A cidade de Vhalessa, pela sua Conselheira-Presidente, reconhece que o calor das Cisternas Quentes está sendo desviado, por ação criminosa de terceiros, para o vale do Passo Cinzento, com dano à senhora Ulvra e à sua prole e ameaça aos moradores do vale de Hvel; compromete-se a fazer cessar o desvio no menor prazo possível; a indenizar a senhora Ulvra nos termos que um tribunal de danos de Retorno fixar; a reconhecer o seu direito de fazer ninho nos glaciares do Passo Cinzento, sem pedágio e sem licença; e a conceder-lhe assento com voz, sem voto, no Conselho Municipal, para as questões das montanhas do noroeste. A senhora Ulvra compromete-se a não atacar a cidade, a vigiar a estação do Passo Cinzento e informar o que vir, e a ajudar, se puder, a fazer cessar o desvio. Assinam: I. Garrod (Conselheira-Presidente); [runas] (testemunha dos Reinos); C. Vale (testemunha da Câmara); [risco de garra na placa de vidro].",
+    "onde_entra": "O tratado foi escrito no gelo, a lápis, no caderno de Mara Quen"
+   },
+   {
+    "tipo": "relatório",
+    "conteudo": "Relatório da Comissária de Segurança em Vhalessa para Tamsin (minuta): a Comissária, diante de ameaça iminente à vida de sessenta mil pessoas, autorizou e supervisionou a abertura excepcional da porta de Soleira para evacuação de emergência, nos termos do artigo 22 da Concordata. Com antecedência de trinta segundos.",
+    "onde_entra": "— Eu vou pôr. — Cassia Vale olhou pelo arco"
+   }
+  ],
+  "epigrafe_sugerida": "«…assento com voz, sem voto, no Conselho Municipal de Vhalessa, para qualquer questão que diga respeito às montanhas do noroeste.» — Tratado do Gelo"
+ },
+ {
+  "cap": 19,
+  "pov": "Aurelia (terceira pessoa próxima)",
+  "resumo": "Ione chega com a conta das 6.140 pessoas no Átrio, o donativo de Mestre Ossan e a resolução de Tamsin: reabertura humanitária da estação e a primeira advertência formal à Soberania em mil anos; Aurelia passa a manhã segurando a porta de Neska para o cobre e empurra o último carrinho até a porta verde. Nara faz, com a cerâmica da Ordem tirada das células mortas de Orsk, uma célula cinza-escura para a manopla, e na Cozinha do Lento explica o plano em três frentes (pele falsa nas Cisternas, desmontagem no Passo Cinzento, Retorno pela Rede Cívica), enquanto Thor parte para salvar Hvel. À noite, no saguão escuro, Aurelia e Ilan treinam a Costura de Limiares entre as portas 12 e 31, cronometrada pelo anel, e o Contrapasso com as bolas de neve de Tibo; no banco do porteiro ela toca a balança torta no pulso dele, quase o beija, e os dois combinam: 'depois'.",
+  "locais": [
+   {
+    "nome": "Saguão da Estação das Portas — portas 12, 31 e 40",
+    "cidade_ou_regiao": "Vhalessa — margem norte",
+    "descricao_fisica": "Saguão de colunas de ferro, lâmpadas de Clarão, piso de ardósia; a 31 fica a 30 m da 12, virada para o sul; a 40 fica de lado; banco do porteiro com braseiro.",
+    "relacao_espacial": "Portas da mesma estação, à mesma altura, a trinta metros uma da outra.",
+    "citacao_curta": "de pé entre a porta doze e a porta trinta e um, no saguão vazio e escuro"
+   },
+   {
+    "nome": "Arco de Neska",
+    "cidade_ou_regiao": "Vhalessa — Estação das Portas",
+    "descricao_fisica": "Arco por onde chegam quarenta carrinhos de mão de tubo de cobre, conferidos por guardas da Câmara.",
+    "relacao_espacial": "Dentro do saguão; do outro lado, a cidade de Neska.",
+    "citacao_curta": "Aurelia passou a manhã inteira de pé junto ao arco de Neska"
+   },
+   {
+    "nome": "Rota do cobre até a porta verde",
+    "cidade_ou_regiao": "Vhalessa — margem norte → ponte → Cobre",
+    "descricao_fisica": "Ruas da margem norte, a ponte, ladeiras do Cobre, um pátio com uma porta verde e uma frase a giz.",
+    "relacao_espacial": "Da estação (margem norte), atravessando a ponte, subindo ao Cobre (margem sul).",
+    "citacao_curta": "pelas ruas da margem norte, pela ponte, pelas ladeiras do Cobre, até uma porta verde num pátio"
+   },
+   {
+    "nome": "Cozinha do Lento",
+    "cidade_ou_regiao": "Vhalessa — Fornalha Velha",
+    "descricao_fisica": "Salão com as duas últimas mesas juntadas no canto, sopa, Avó Ruta enrolada em cobertores num banco.",
+    "relacao_espacial": "Na Fornalha Velha (margem sul).",
+    "citacao_curta": "na Cozinha do Lento, o único lugar da cidade onde cabiam todos sentados e onde havia sopa"
+   },
+   {
+    "nome": "Átrio de Soleira — Salão das Tarifas (relato)",
+    "cidade_ou_regiao": "Soleira",
+    "descricao_fisica": "Salão transformado em dormitório; o estrado de pedra clara virou berçário com 42 cestos de vime; mercado da escadaria leste.",
+    "relacao_espacial": "Do outro lado da porta de Soleira.",
+    "citacao_curta": "Tive de transformar o Salão das Tarifas em dormitório."
+   }
+  ],
+  "personagens_em_cena": [
+   "Aurelia",
+   "Ione Varga",
+   "Ilan",
+   "Nara Voss",
+   "Hanne Voss",
+   "Tibo",
+   "Sevran",
+   "Thor",
+   "Cassia Vale",
+   "Tenente Halsey",
+   "Mara Quen",
+   "Avó Ruta",
+   "rapaz de bochechas vermelhas de Neska",
+   "mencionados: Ingeborg (regente de Neska), Mestre Ossan, Liesl Kaltz, Eron Tahl"
+  ],
+  "faccoes_casas_guildas": [
+   "Câmara dos Pactos — plenário de Tamsin (resolução e advertência formal); guardas de cinzento conferindo cargas com listas",
+   "Mesa das Coroas — onde a advertência fica registrada",
+   "Graneleiros do Delta (Mestre Ossan) — 200 sacos de grão pela porta de Dunmar",
+   "Neska — regente Ingeborg, cobre em barra, fio e tubo, cerâmica de reservatório, quatro engenheiros",
+   "Cooperativa dos Reparadores — forno aceso pela primeira vez desde a Vigília",
+   "Escola Politécnica — seis alunos enviados por Liesl Kaltz para puxar o ramal",
+   "Companhia Kaltz / Fiança — encomenda das 900 células com a receita de cerâmica da Casa do Fiel",
+   "Ordem da Última Sentença — a cerâmica de lastro; a marca da balança no pulso de Ilan"
+  ],
+  "objetos_e_armas": [
+   "xale cinzento e casaco de pele emprestado de Ione",
+   "papel dobrado da resolução de Tamsin",
+   "carrinhos de mão com rolos de tubo de cobre",
+   "célula hexagonal cinza-escura, do tamanho de um punho, superfície irregular como pedra de rio",
+   "pilão de ferro, molde de gesso, tenazes compridas, placa de ferro, fio de prata e mostrador",
+   "mapa de Nara em papel de embrulho, preso com tigelas de sopa, com a palavra CORREDOR",
+   "plantas originais do Passo Cinzento trazidas do Átrio",
+   "cesta de vime com bolas de neve",
+   "braseiro de Tobbe",
+   "anel de bronze"
+  ],
+  "magia_em_uso": [
+   {
+    "disciplina": "Coroa (Limiares) — Costura de Limiares",
+    "o_que_acontece": "Aurelia desfaz por um instante o par distante de duas portas do mesmo saguão e as costura entre si; a Costura não muda o movimento de quem passa.",
+    "visual_com_selos": "Both arches' engraved coronal gold seals bearing the bronze-key mark of the Crown of Thresholds light in the same heartbeat, joined by a single taut gold thread across thirty metres of dark hall."
+   },
+   {
+    "disciplina": "Pulso — Passo Vetorial dentro da porta",
+    "o_que_acontece": "Ilan empurra contra o piso do arco de saída no instante em que Aurelia diz 'agora' pelo anel, e sai em ângulo reto.",
+    "visual_com_selos": "A fingernail-sized conjured Pulso blue (#4F8BD6) seal blooms under his boot sole on the exit floor and fades in a second; his body bends east as if turning a corner inside the door."
+   },
+   {
+    "disciplina": "Coroa (Limiares) — Contrapasso",
+    "o_que_acontece": "Uma bola de neve que entra na 12 rumo às costas de Ilan sai pela 31 e se espatifa na parede.",
+    "visual_com_selos": "Gold seals of two arches flash; a snowball vanishes a metre from his back and bursts against the far wall in a spray of white."
+   },
+   {
+    "disciplina": "Selo gravado da Ordem (balança torta)",
+    "o_que_acontece": "Aurelia toca a cicatriz no pulso esquerdo de Ilan; ele conta a marcação aos 18 anos na Casa do Fiel.",
+    "visual_com_selos": "The brand is a dark engraved seal, unlit, smooth and cold under her fingertips — no glow in this scene."
+   }
+  ],
+  "ilustracoes": [
+   {
+    "tipo": "vinheta_abertura",
+    "momento": "~1%",
+    "trecho_ancora": "Seis mil cento e quarenta.",
+    "descricao_visual": "Chancellor Ione Varga (old, very short, face wrinkled like a winter apple, grey clothes, grey shawl) steps through a greenish-bronze arch into the frozen station hall wearing a borrowed fur coat over her grey shawl, breath steaming, a folded paper in her sleeve; Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) waits by the arch, arms crossed. Grey-uniformed guards at the main door; outside, a queue forming in the cold. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~22%",
+    "trecho_ancora": "Nara Voss fez a célula naquela tarde.",
+    "descricao_visual": "Nara Voss (long thick copper-red braid, freckles, brass goggles pushed up on her forehead, sleeveless leather vest, fingerless gloves, tool belt, old burn scars on her forearms) lifts a red-hot hexagonal ceramic cell out of a brick kiln with long tongs; the cell is dark grey, irregular like a river stone. Behind her, on a crate, Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) (hood fallen back, face flushed); Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes, long charcoal-black high-collared coat, plain iron longsword, iron ballast plates on boots, steel gauntlet with three ceramic cells on his LEFT forearm, LEFT hand wrapped in linen bandage at the edge of the gauntlet, guarding broken ribs, plain bronze ring on the middle finger of his RIGHT hand) waits on a tall stool without the gauntlet, left hand bandaged to the wrist. Kiln glow on copper pipes. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "pagina_inteira",
+    "momento": "~80%",
+    "trecho_ancora": "Na quinta tentativa, ele saiu da trinta e um indo para o leste, em ângulo reto, como se tivesse dobrado uma esquina dentro da porta.",
+    "descricao_visual": "The dark station hall at night, lit only by dim ivory ceiling lamps: two white-stone arches thirty metres apart joined by a thin gold thread of light; Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, plain iron longsword at the hip, iron ballast plates on his boots, steel gauntlet with three ceramic cells on his LEFT forearm) bursts out of the far arch at a right angle, sliding on the slate, gauntlet raised before his face, a tiny blue seal fading under his boot; on the other side Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) stands with her gloved left hand near her mouth, speaking into a ring. Iron columns, plaster dust, breath vapour. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~85%",
+    "trecho_ancora": "Tibo atirou a primeira bola de neve sem esperar que ninguém mandasse.",
+    "descricao_visual": "Tibo (14, runny nose, wool cap pulled down to the eyebrows) in mid-throw in the middle of the station hall, a wicker basket of tight snowballs at his feet; the snowball vanishes into a glowing arch a metre behind Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, plain iron longsword at the hip, iron ballast plates on his boots, steel gauntlet with three ceramic cells on his LEFT forearm)'s back and explodes against the wall of another arch across the hall. Playful, kinetic. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "respiro",
+    "momento": "~100%",
+    "trecho_ancora": "até o saguão ficar escuro de vez.",
+    "descricao_visual": "Stillness: the porter's bench by the station entrance, a small brazier with its last embers, two silhouettes sitting shoulder to shoulder, everything else of the vast hall sinking into darkness, the arches barely visible. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   }
+  ],
+  "citacao_respiro": "A Última Sentença pesa.",
+  "documentos_do_mundo": [
+   {
+    "tipo": "relatório",
+    "conteudo": "Câmara dos Pactos — plenário em sessão extraordinária (Tamsin). Autoriza-se a reabertura parcial da Estação das Portas de Vhalessa para trânsito humanitário — carvão, alimentos, medicamentos, materiais de reparo, pessoal médico e técnico, evacuação de civis vulneráveis —, sob fiscalização permanente da Câmara em cada porta. Excetuam-se a porta sessenta e um e quaisquer extremidades adormecidas ou não registradas vinculadas à estação. Registra-se advertência formal à Soberania dos Limiares pela abertura da porta de Soleira em desacordo com o artigo 14, reconhecido o caráter de emergência.",
+    "onde_entra": "Tirou da manga um papel dobrado e o estendeu."
+   },
+   {
+    "tipo": "bilhete",
+    "conteudo": "Pelo relé, à regente de Neska, 1h da manhã: Todo o cobre em barra, em fio e em tubo que a cidade puder ceder, e toda a cerâmica de reservatório, e quatro engenheiros de rede, para Vhalessa, assim que a Câmara autorizar. Eu pago. — A.",
+    "onde_entra": "A primeira coisa que passou pela porta de Neska, às nove, foi cobre."
+   },
+   {
+    "tipo": "mapa",
+    "conteudo": "Mapa de Nara Voss (lápis e régua em papel de embrulho). À esquerda: Cisternas Quentes sob a Alta Mesa — abóbadas, galerias técnicas, sete tubos de aferição, troncos da torre, emaranhado da Rede Cívica junto às Cisternas. À direita: estação do Passo Cinzento (copiada das plantas do Átrio) — casa de pedra encostada na montanha, onze portas em arco, saguão, nível de serviço. Ao meio, linha grossa: CORREDOR.",
+    "onde_entra": "Era um mapa, feito à mão, a lápis e régua"
+   }
+  ],
+  "epigrafe_sugerida": "«Excetuam-se da autorização a porta sessenta e um e quaisquer extremidades adormecidas ou não registradas.» — Resolução do plenário da Câmara dos Pactos, Tamsin"
+ },
+ {
+  "cap": 20,
+  "pov": "Ilan (terceira pessoa próxima)",
+  "resumo": "Pelle Dorn acorda no Hospital de São Brúlio pedindo o cachecol e revela que o cliente do serviço do Sete Chaminés era a Casa da Fornalha: uma carta assinada 'pela Intendência — O. Mast' exigia Ilan e os três dias em Vhalessa porque 'o Sol de Inverno deseja falar-lhe depois da Vigília'. Sevran tira do baú uma carta de Calvenor guardada desde 1184, 'Ao último Carrasco, se ele vier': o deus pedira à Ordem um Plano de Dissolução, desenhado pela mestra de Ilan com o mapa dele, escondido debaixo do degrau da Fornalha, e mandara Oriel buscar o último Carrasco. Ilan chora em silêncio; Sevran percebe que Oriel mentiu para ele, e marcam a entrada clandestina na Casa para aquela noite.",
+  "locais": [
+   {
+    "nome": "Hospital de São Brúlio — enfermaria do terceiro andar",
+    "cidade_ou_regiao": "Vhalessa — margem sul",
+    "descricao_fisica": "Enfermaria comprida, vinte camas de cada lado, duas estufas de ferro a carvão de Neska, ar quase tropical; cama catorze junto às janelas.",
+    "relacao_espacial": "Hospital da margem sul do Lento (situado nos caps. anteriores).",
+    "citacao_curta": "na porta da enfermaria do terceiro andar do Hospital de São Brúlio"
+   },
+   {
+    "nome": "Gabinete do térreo da delegação",
+    "cidade_ou_regiao": "Vhalessa — Alta Mesa",
+    "descricao_fisica": "Mesa da Comissária, dossiê de 18 folhas chegado em cápsula de bronze; janela para a rua.",
+    "relacao_espacial": "Na Alta Mesa; a janela dá para a rua da Alta Mesa.",
+    "citacao_curta": "olhando a rua da Alta Mesa coberta de neve suja"
+   },
+   {
+    "nome": "Cozinha do Lento — salão e quartinho atrás da despensa",
+    "cidade_ou_regiao": "Vhalessa — Fornalha Velha",
+    "descricao_fisica": "Salão morno (favo de Orsk ligado à chaminé do fogão de ferro de 1140 por uma manga de cobre), mesas emprestadas, fila; quartinho com baú, catre e prateleira de doze livros.",
+    "relacao_espacial": "Na Fornalha Velha, margem sul.",
+    "citacao_curta": "no quartinho atrás da despensa, de porta fechada"
+   },
+   {
+    "nome": "Esquina da Fornalha Velha / cais",
+    "cidade_ou_regiao": "Vhalessa — Fornalha Velha (margem sul)",
+    "descricao_fisica": "Parede de tijolo com uma lista de mortos do frio a carvão; a rua desemboca no cais; do outro lado, a Praça do Meio-Dia e a torre.",
+    "relacao_espacial": "Margem sul, em frente à Praça do Meio-Dia, do outro lado do rio.",
+    "citacao_curta": "No fim da rua, onde ela desembocava no cais, o rio congelado se abria diante deles"
+   },
+   {
+    "nome": "Sala da Casa da Fornalha com mesa de pedra (flashback 1175)",
+    "cidade_ou_regiao": "Vhalessa — Alta Mesa",
+    "descricao_fisica": "Mesa de pedra onde o deus de 2,5 m se deitou para ser medido.",
+    "relacao_espacial": "Dentro da Casa da Fornalha.",
+    "citacao_curta": "Via uma mesa de pedra numa sala da Casa da Fornalha"
+   }
+  ],
+  "personagens_em_cena": [
+   "Ilan",
+   "Mara Quen",
+   "Aurelia",
+   "Pelle Dorn",
+   "enfermeira",
+   "Cassia Vale",
+   "Sevran",
+   "Avó Ruta",
+   "Gorm",
+   "velho de nariz roxo",
+   "Calvenor (flashback e carta)",
+   "mencionados: Oriel Mast, Ysmera, a mestra"
+  ],
+  "faccoes_casas_guildas": [
+   "Companhia de Seguros Arrimo — cláusula décima segunda, formulário de onze categorias de incidente, jurídico em Tamsin; segura metade da Fornalha Velha",
+   "Casa da Fornalha — papel timbrado, 'pela Intendência — O. Mast', sinete do sol em cera laranja",
+   "Tribunal dos Danos de Retorno de Tamsin — cápsula de bronze lacrada com o selo do Tribunal",
+   "Ordem da Última Sentença — o costume de pedir licença antes de marcar uma Coroa viva"
+  ],
+  "objetos_e_armas": [
+   "cachecol verde de Pelle Dorn",
+   "prancheta, folha e lápis",
+   "cópia do dossiê da Arrimo (18 folhas)",
+   "brasa de parede de altar (disco de bronze frio)",
+   "embrulho de linho branco amarrado com cordão",
+   "carta lacrada com cera laranja e sinete de sol: 'Ao último Carrasco, se ele vier.'",
+   "giz de aferição e lente de vidro presa ao colete (flashback)",
+   "lista de onze mortos do frio pregada com prego enferrujado"
+  ],
+  "magia_em_uso": [
+   {
+    "disciplina": "Revelação (flashback, giz de aferição)",
+    "o_que_acontece": "Aos 22 anos, Ilan pede licença e marca o peito de bronze de Calvenor; a primeira marca tem uma pequena cauda à esquerda.",
+    "visual_com_selos": "On the god's bronze chest a small chalk-white measuring seal with a tiny tail to the left; beneath the skin, faint coronal gold seals bearing the sun mark of Calvenor answer like embers under ash."
+   }
+  ],
+  "ilustracoes": [
+   {
+    "tipo": "vinheta_abertura",
+    "momento": "~5%",
+    "trecho_ancora": "Pelle Dorn estava na cama catorze, do lado das janelas, recostado em três travesseiros",
+    "descricao_visual": "A long hospital ward with twenty beds a side and an iron stove at each end; in bed fourteen by the windows, Pelle Dorn — a small grey gaunt man with sunken eyes, a green scarf wound twice round his neck over a hospital gown — writes slowly on a borrowed clipboard; Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes, long charcoal-black high-collared coat, plain iron longsword, iron ballast plates on boots, steel gauntlet with three ceramic cells on his LEFT forearm, LEFT hand wrapped in linen bandage at the edge of the gauntlet, guarding broken ribs, plain bronze ring on the middle finger of his RIGHT hand) approaches, Mara Quen (32, tall and thin, dark hair in a bun, round glasses, dark high-collared coat, burgundy waistcoat, leather satchel under her arm) and Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) behind him. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~35%",
+    "trecho_ancora": "Via uma mesa de pedra numa sala da Casa da Fornalha, doze anos antes",
+    "descricao_visual": "Memory vignette in warm amber haze: a 2.5 m god with bronze skin and a long serene face lies on his back on a stone table, eyes open to the ceiling; a lean 22-year-old Ilan with a glass lens clipped to his waistcoat leans over him, the tip of an assay chalk one finger from the bronze skin, asking permission. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "pagina_inteira",
+    "momento": "~48%",
+    "trecho_ancora": "Ficou ajoelhado, com o embrulho nas mãos.",
+    "descricao_visual": "A cramped back room behind a pantry: Sevran (about 45, tall and stooped, dark curly hair streaked with white, grey beard, big careful hands, wool cap, cook's apron) kneels by an open wooden trunk, shirts, old boots and a cold bronze disc set on the floor beside him, holding up in both big hands a long thin bundle of white linen tied with cord. Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes, long charcoal-black high-collared coat, plain iron longsword, iron ballast plates on boots, steel gauntlet with three ceramic cells on his LEFT forearm, LEFT hand wrapped in linen bandage at the edge of the gauntlet, guarding broken ribs, plain bronze ring on the middle finger of his RIGHT hand) stands not yet taking it; Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) has risen from the trunk; Mara Quen (32, tall and thin, dark hair in a bun, round glasses, dark high-collared coat, burgundy waistcoat, leather satchel under her arm) leans against a shelf of twelve books. Single lamp. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "respiro",
+    "momento": "~99%",
+    "trecho_ancora": "acima dela, a torre, escura, com o Sol apagado lá no alto como um olho fechado.",
+    "descricao_visual": "Quiet urban landscape: the end of a soot-stained street of the Old Furnace district opening onto a frozen river full of smoking tents; across the ice a square and, above it, a tall dark tower whose great lens at the top is unlit like a closed eye. A brick wall in the foreground with a nailed paper (unreadable). Late winter light. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   }
+  ],
+  "citacao_respiro": "Eu só fui o caminho por onde ele voltava para casa.",
+  "documentos_do_mundo": [
+   {
+    "tipo": "carta",
+    "conteudo": "[Cópia do escriturário da Arrimo, Tamsin] Original em papel timbrado da Casa da Fornalha de Vhalessa, assinado 'pela Intendência — O. Mast', com sinete do sol em cera laranja. Recebido em 29 de outubro de 1187. — 'O Sol de Inverno deseja que o senhor Varek seja contratado e que permaneça em Vhalessa os três dias seguintes ao serviço. Ele deseja falar-lhe depois da Vigília.'",
+    "onde_entra": "A carta estava na sétima folha."
+   },
+   {
+    "tipo": "relatório",
+    "conteudo": "Companhia de Seguros Arrimo — Relatório de incidente (agente P. Dorn), nos termos da cláusula décima segunda. Categoria: [proposta de 12ª categoria] Salvamento de agente por contratado. Observação: propõe-se revisão do desconto pela tampa da caixa-d'água do Sete Chaminés.",
+    "onde_entra": "Vou ter de propor uma décima segunda."
+   },
+   {
+    "tipo": "carta",
+    "conteudo": "Ao último Carrasco, se ele vier. [...] O que eu lhe peço não é que me mate. É que termine o que a sua Ordem começou. O Plano da sua mestra está debaixo da Fornalha, onde o meu varredor gosta de sentar. [...] Ele não é meu. Nunca foi. É deles. [...] Com a gratidão de quem foi medido com cuidado, Calvenor, que aquece Vhalessa. [papel grosso, cera laranja, sinete de sol]",
+    "onde_entra": "Ele quebrou o lacre de pé, no meio do quartinho, e leu."
+   }
+  ],
+  "epigrafe_sugerida": "«Pede-se licença antes de marcar uma Coroa viva.» — ensinamento da Casa do Fiel"
+ },
+ {
+  "cap": 21,
+  "pov": "Ilan (terceira pessoa próxima)",
+  "resumo": "À noite, Sevran leva Ilan, Mara e Aurelia pela porta dos fundos da Casa da Fornalha até a rotunda, e sob o degrau norte da Fornalha encontram um cilindro de latão com o sinete do sol e o da balança torta: o Plano de Dissolução da Coroa de Calvenor, rascunho de 'I. N., outono de 1175', que usa o mapa de Ilan, prevê a Interdição de fora para dentro com o consentimento do deus e uma rede civil, e para na folha 39 com 'rota de transição: a definir… consultar a Soberania dos Limiares… ela ainda não sabe o preço'. Mara conclui que os assassinos seguiram o original do Plano e mudaram o destino; na manhã seguinte Ilan reconstrói a morte (Calvenor abriu a junção por dentro) e Mara empilha as provas contra Oriel Mast — a assinatura, a lista de Vask sem a galeria 3, a irmã inexistente, a testemunha Brígida Orn, a frase do livro dele. A Comissária opta por vigilância até o dia da operação; à noite, Ilan promete a Aurelia, pelo anel, contar o preço assim que souber.",
+  "locais": [
+   {
+    "nome": "Casa da Fornalha — porta dos fundos e corredor do primeiro anel",
+    "cidade_ou_regiao": "Vhalessa — Alta Mesa",
+    "descricao_fisica": "Porta que range depois da metade; corredor gelado com cheiro de cera fria e pedra; paredes de brasas (discos de bronze apagados) que refletem a lanterna como olhos de peixe.",
+    "relacao_espacial": "Porta dos fundos dos sacerdotes, num beco da Alta Mesa.",
+    "citacao_curta": "O corredor do primeiro anel estava escuro e gelado e cheirava a cera fria e a pedra."
+   },
+   {
+    "nome": "Rotunda e Fornalha",
+    "cidade_ou_regiao": "Vhalessa — Casa da Fornalha",
+    "descricao_fisica": "Rotunda escura sob cúpula (a luz não passa de 10 m); bacia redonda de bronze da largura de uma carroça sobre pedestal de pedra com cinco degraus amarelados, cheia de oferendas; o degrau de baixo do lado norte é mais largo e fundo.",
+    "relacao_espacial": "No centro da Casa; o degrau norte fica de costas para a porta da rotunda, encostado à bacia por baixo.",
+    "citacao_curta": "a grande bacia redonda de bronze, da largura de uma carroça"
+   },
+   {
+    "nome": "Degrau norte (esconderijo)",
+    "cidade_ou_regiao": "Vhalessa — Casa da Fornalha",
+    "descricao_fisica": "Laje única de quase dois metros, argamassa refeita mais clara na ponta direita, fenda de um dedo, vão escuro por baixo.",
+    "relacao_espacial": "Lado norte do pedestal, de costas para a porta da rotunda.",
+    "citacao_curta": "Sevran contornou o pedestal até o lado norte, o que dava as costas para a porta da rotunda."
+   },
+   {
+    "nome": "Barraca de castanhas de Brígida Orn (relato)",
+    "cidade_ou_regiao": "Vhalessa — Praça do Meio-Dia",
+    "descricao_fisica": "Ponto fixo há trinta anos.",
+    "relacao_espacial": "Junto à esquina da face leste da torre, a ~20 m do nicho da escada de serviço.",
+    "citacao_curta": "junto à esquina da face leste da torre, a uns vinte metros do nicho da escada de serviço"
+   },
+   {
+    "nome": "Plataforma dos guardas da torre (relato)",
+    "cidade_ou_regiao": "Vhalessa — Torre do Meio-Dia",
+    "descricao_fisica": "Plataforma inferior onde Oriel dizia ficar todo ano no Acendimento.",
+    "relacao_espacial": "Abaixo da plataforma do Sol, na escada da torre.",
+    "citacao_curta": "subia atrás do deus pela escada da torre até a plataforma de baixo, a dos guardas"
+   },
+   {
+    "nome": "Quarto dos fundos da serralheria de Gunnar",
+    "cidade_ou_regiao": "Vhalessa — Cobre",
+    "descricao_fisica": "Catre, cobertor, lamparina, teto de tábuas, zumbido dos tubos da Rede Cívica nas paredes.",
+    "relacao_espacial": "No Cobre, do outro lado da cidade em relação à estação (onde Aurelia está).",
+    "citacao_curta": "no quarto dos fundos da serralheria de Gunnar"
+   }
+  ],
+  "personagens_em_cena": [
+   "Ilan",
+   "Sevran",
+   "Mara Quen",
+   "Aurelia",
+   "Cassia Vale",
+   "Nara Voss",
+   "Tenente Halsey",
+   "mencionados: Oriel Mast, Brígida Orn, Hollen Vask, Iolanthe Ness (I. N.), Ithren, Brannoc"
+  ],
+  "faccoes_casas_guildas": [
+   "Casa da Fornalha — sinete de cera laranja com sol; capa laranja com gola bordada de fios de bronze; livro 'Do Sol que se Dá'; celas do terceiro anel",
+   "Ordem da Última Sentença — sinete de cera preta, mais antigo e rachado, com a balança torta (um prato mais baixo)",
+   "Câmara dos Pactos — registro de moradores do Cais de Tamsin; vigilância discreta",
+   "Credores (ainda sem nome) — a frase 'toda coroa é uma dívida' ligando Oriel a Brannoc"
+  ],
+  "objetos_e_armas": [
+   "lanternas de Sevran e Mara",
+   "chave da porta dos fundos dos sacerdotes",
+   "oferendas na Fornalha (velas, pães duros, carvão, luvas de criança, bonecos de palha, moedas, fitas laranja, uma brasa de parede pequena)",
+   "cilindro de latão do comprimento de um antebraço, tampas de rosca, sinetes laranja e preto",
+   "42 folhas de papel de trapo enroladas numa vareta, fita preta, letra minúscula",
+   "lupa de aro de bronze de Mara",
+   "lista das 112 autorizações de Vask",
+   "chave da plataforma do Sol (citada)",
+   "curva de Nara (123 graus)"
+  ],
+  "magia_em_uso": [
+   {
+    "disciplina": "Pulso — Passo Vetorial (força de alavanca)",
+    "o_que_acontece": "Ilan acopla a sola da bota ao chão e ergue a laje com a manopla, só o necessário.",
+    "visual_com_selos": "A small Pulso blue (#4F8BD6) conjured seal under his left boot, a second faint one under the gauntlet's palm on the stone; the slab tilts up a hand's breadth."
+   },
+   {
+    "disciplina": "Ausência de selos (esconderijo divino)",
+    "o_que_acontece": "A lente de aferição não acha selo nenhum: o deus escondeu o cilindro só com as mãos.",
+    "visual_com_selos": "Deliberately no light: the step is plain yellowish stone; the only clue is a paler line of mortar crumbling under a thumbnail."
+   }
+  ],
+  "ilustracoes": [
+   {
+    "tipo": "vinheta_abertura",
+    "momento": "~0%",
+    "trecho_ancora": "A porta dos fundos da Casa da Fornalha rangia, e Sevran sabia exatamente em que ponto.",
+    "descricao_visual": "Sevran (about 45, tall and stooped, dark curly hair streaked with white, grey beard, big careful hands, wool cap, cook's apron) in a narrow snowy alley at night, key in the lock, left palm flat on an old oak door held exactly half open; lantern light; behind him the shadows of Mara Quen (32, tall and thin, dark hair in a bun, round glasses, dark high-collared coat, burgundy waistcoat, leather satchel under her arm), Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) and Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes, long charcoal-black high-collared coat, plain iron longsword, iron ballast plates on boots, steel gauntlet with three ceramic cells on his LEFT forearm, LEFT hand wrapped in linen bandage at the edge of the gauntlet, guarding broken ribs, plain bronze ring on the middle finger of his RIGHT hand). Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "dupla",
+    "momento": "~14%",
+    "trecho_ancora": "Tirou de lá um cilindro de latão.",
+    "descricao_visual": "Spread: a dark domed rotunda whose walls are rows of dead bronze discs glinting like fish eyes; in the centre a cart-wide bronze basin on a stone pedestal with five yellowish steps, heaped with offerings — candles, stale loaves, coal, children's gloves, straw dolls, coins, orange ribbons. On the north side Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes, long charcoal-black high-collared coat, plain iron longsword, iron ballast plates on boots, steel gauntlet with three ceramic cells on his LEFT forearm, LEFT hand wrapped in linen bandage at the edge of the gauntlet, guarding broken ribs, plain bronze ring on the middle finger of his RIGHT hand) braces a tilted slab with his gauntlet while Sevran (about 45, tall and stooped, dark curly hair streaked with white, grey beard, big careful hands, wool cap, cook's apron) kneels pulling out a dusty brass cylinder sealed with orange and black wax. Two lanterns; the dome lost in darkness above. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "pagina_inteira",
+    "momento": "~19%",
+    "trecho_ancora": "Levou duas horas. Leu tudo, de ponta a ponta, as quarenta e duas folhas",
+    "descricao_visual": "Midnight in the back room of a soup kitchen: forty-two brittle sheets of rag paper covered in tiny illegible handwriting spread across a narrow cot by two oil lamps; Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes, long charcoal-black high-collared coat, plain iron longsword, iron ballast plates on boots, steel gauntlet with three ceramic cells on his LEFT forearm, LEFT hand wrapped in linen bandage at the edge of the gauntlet, guarding broken ribs, plain bronze ring on the middle finger of his RIGHT hand) reads, holding the curling corners; Mara Quen (32, tall and thin, dark hair in a bun, round glasses, dark high-collared coat, burgundy waistcoat, leather satchel under her arm) stands over his shoulder with a bronze-rimmed magnifier; Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) sits on a trunk, face carefully still; Sevran leans by the door. Warm lamplight, cold edges. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~68%",
+    "trecho_ancora": "Mas que a capa era laranja.",
+    "descricao_visual": "Night vignette as told by a witness: at the east corner of the dark Tower of Noon, a small iron door opens in a niche and a thin hooded figure in an orange cape with a collar glinting with metal thread hurries out with a lantern, holding both hands away from his chest, fingers curled as if holding burning bread; an old chestnut seller's brazier in the foreground. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": true
+   },
+   {
+    "tipo": "respiro",
+    "momento": "~89%",
+    "trecho_ancora": "Leu o Plano de novo naquela noite, sozinho, no quarto dos fundos da serralheria de Gunnar",
+    "descricao_visual": "Quiet: a plank-ceilinged back room, a man lying on a cot seen from above, sheets of tiny handwriting scattered over the blanket, one lamp, copper pipes along the wall, a bronze ring catching the light on his right hand near his mouth. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   }
+  ],
+  "citacao_respiro": "o menino mede bem. confiar no mapa dele.",
+  "documentos_do_mundo": [
+   {
+    "tipo": "relatório",
+    "conteudo": "Plano de Dissolução — Coroa de Calvenor (Vhalessa) — rascunho — I. N., outono de 1175. [margem, folha 4:] o menino mede bem. confiar no mapa dele. [folha 22:] Com o consentimento dele, a junção não oferece resistência. Sem ele, seria impossível. [folha 39, margem:] rota de transição: a definir. hipótese: rede de limiares. uma Ponte de Custódia de grande capacidade entre as Cisternas e um destino de espera, com retorno controlado. só uma Coroa pode sustentar. consultar a Soberania dos Limiares. — ela ainda não sabe o preço. não lhe dizer antes da hora.",
+    "onde_entra": "A primeira folha tinha um título."
+   },
+   {
+    "tipo": "relatório",
+    "conteudo": "Cais de Tamsin — resposta pelo relé: nenhum Hollen Vask chegou ao Cais em outubro, novembro ou qualquer mês do ano; nenhuma mulher de sobrenome Vask consta como moradora. (Registro de moradores mantido pela Câmara, sem falhas desde 1160.)",
+    "onde_entra": "O segundo registro era a resposta do Cais de Tamsin"
+   },
+   {
+    "tipo": "livro-razão",
+    "conteudo": "Casa da Fornalha — Autorizações técnicas assinadas por H. Vask, Mestre das Galerias, desde janeiro: 112 itens. [ausente: acesso à galeria n.º 3, 22 de setembro.] Nota de acompanhamento: O. Mast.",
+    "onde_entra": "Ao lado, a lista das autorizações técnicas assinadas por Hollen Vask desde janeiro"
+   }
+  ],
+  "epigrafe_sugerida": "«Com o consentimento dele, a junção não oferece resistência. Sem ele, seria impossível.» — Plano de Dissolução, folha 22"
+ },
+ {
+  "cap": 22,
+  "pov": "Aurelia (terceira pessoa próxima)",
+  "resumo": "Aurelia sobe na base do leão de bronze e confessa à praça que a porta clandestina tem o selo dela, pergunta o nome da mãe do homem que grita (Ilka Torven) e avisa da noite estranha que virá; a conselheira Maren Duur, da bancada da Fornalha Velha, promete votar a favor dela. Chega a autorização de Tamsin, os homens dos Reinos derrubam a parede de tijolo da porta 61, o ramal da Rede Cívica chega à galeria 3 (o Intendente abre a porta; Nara chora), e os três trovões trazem a casca de bétula de Thor: Hvel está a salvo, a barragem aguenta até a noite seguinte, e há uma caixa quente num trenó de vela prestes a partir. A operação é antecipada para o meio-dia; à noite, no meio do rio congelado, Aurelia e Ilan se declaram e se beijam uma vez — e a janela de Sevran está escura.",
+  "locais": [
+   {
+    "nome": "Base do leão de bronze, Praça do Meio-Dia",
+    "cidade_ou_regiao": "Vhalessa — margem norte",
+    "descricao_fisica": "Leão com a mancha preta na pata direita levantada; ponto mais alto da praça depois da torre; fogueiras, trenós de carvão.",
+    "relacao_espacial": "No centro da praça; gente chega pela escadaria do rio, da Feira do Gelo e pelas ruas da margem norte.",
+    "citacao_curta": "Era o ponto mais alto da Praça do Meio-Dia depois da torre"
+   },
+   {
+    "nome": "Porta sessenta e um (lado de Vhalessa)",
+    "cidade_ou_regiao": "Vhalessa — Estação das Portas",
+    "descricao_fisica": "Arco de pedra branca com batentes de bronze, emparedado há 40 anos com tijolos de barro cozido rebocados da cor da pedra; depois de derrubado, mostra só a pedra do fundo do nicho.",
+    "relacao_espacial": "No saguão da estação, uma das 84 portas (na galeria norte, cf. cap. 30).",
+    "citacao_curta": "Deste lado, a porta sessenta e um era um arco de pedra branca com batentes de bronze, como as outras oitenta e três, só que emparedado."
+   },
+   {
+    "nome": "Ramal da Rede Cívica na ponte e galeria técnica n.º 3",
+    "cidade_ou_regiao": "Vhalessa — ponte, ladeira da Alta Mesa, Casa da Fornalha",
+    "descricao_fisica": "Cano de cobre grosso como um braço, enrolado em feltro e lona, preso ao parapeito da ponte com braçadeiras de ferro a cada 3 m; sobe a ladeira da Alta Mesa pelo meio da rua até a porta da galeria 3.",
+    "relacao_espacial": "Da margem sul à margem norte pela ponte; a porta da galeria fica no subsolo da Casa da Fornalha, lado leste.",
+    "citacao_curta": "até a porta da galeria técnica número três, no subsolo da Casa da Fornalha, do lado leste"
+   },
+   {
+    "nome": "Tenda de Calvenor e corda das oferendas",
+    "cidade_ou_regiao": "Vhalessa — gelo do rio",
+    "descricao_fisica": "Tenda com a aba levantada; prancha de ferro, mortalha de linho encerado, fios de prata, tábua de pedra do Guardião; banquinhos de velador; lanternas baixas.",
+    "relacao_espacial": "No gelo, depois da Feira do Gelo, descendo a escadaria da praça.",
+    "citacao_curta": "Desceu a escadaria da praça, atravessou a Feira do Gelo, chegou à corda das oferendas"
+   },
+   {
+    "nome": "Meio do rio Lento, a oeste da cidade",
+    "cidade_ou_regiao": "Vhalessa — rio Lento",
+    "descricao_fisica": "Gelo cinza-azulado à luz das estrelas, sem lua; margens de pedra cobertas de neve; ninguém.",
+    "relacao_espacial": "A cidade e a torre ficam a leste; a oeste, o rio some entre colinas brancas.",
+    "citacao_curta": "A cidade ficava atrás deles, a leste, com as fogueiras e a torre escura."
+   },
+   {
+    "nome": "Fornalha Velha — janela da Cozinha do Lento",
+    "cidade_ou_regiao": "Vhalessa — margem sul",
+    "descricao_fisica": "Cozinha acesa como sempre; janela do quartinho de Sevran escura.",
+    "relacao_espacial": "Desvio de Aurelia pela margem sul antes de atravessar a ponte para a estação.",
+    "citacao_curta": "No caminho, desviou pela Fornalha Velha sem saber direito por quê."
+   }
+  ],
+  "personagens_em_cena": [
+   "Aurelia",
+   "Ilan",
+   "Cassia Vale",
+   "Tenente Halsey",
+   "filho de Ilka Torven (homem de casaco de couro)",
+   "Conselheira Maren Duur",
+   "Brígida Orn (lenço vermelho)",
+   "Tibo",
+   "homens dos Reinos",
+   "guarda à paisana",
+   "embalsamadores do Arquivo das Areias",
+   "Calvenor (corpo)",
+   "Ulvra (sobrevoo)",
+   "relatados: Nara, Hanne, Gorm, Oriel Mast, Thor, Ione (relé)"
+  ],
+  "faccoes_casas_guildas": [
+   "Câmara dos Pactos — autorização de uma linha do plenário; dez guardas à paisana na praça",
+   "Reinos da Tempestade — marretas, alavancas e canção de trabalho; bolsa de couro de pastor; casca de bétula com runas; runa do martelo",
+   "Conselho Municipal — Maren Duur, da bancada da Fornalha Velha, de roupa de operária e mãos enegrecidas",
+   "Cooperativa dos Reparadores do Cobre — porta verde com a frase a giz 'NÃO CONSERTAMOS MILAGRES'",
+   "Escola Politécnica e engenheiros de Neska — puxam o ramal",
+   "Arquivo das Areias / Guardião da Necrópole — embalsamadores e a instrução 'O Carrasco pode velar'",
+   "Casa da Fornalha — o Intendente abre a galeria 3 com a própria chave",
+   "Companhia Kaltz — o carvão a duas dobras a saca lembrado pelo homem que grita"
+  ],
+  "objetos_e_armas": [
+   "leão de bronze de pata marcada",
+   "marretas, alavancas, tijolos de barro cozido",
+   "cano de cobre com feltro e lona e braçadeiras de ferro",
+   "chave inglesa de Nara",
+   "bolsa de couro de pastor com quatro furos de garra",
+   "casca de bétula com runas a ponta de faca",
+   "banquinho de velador",
+   "prancha de ferro, mortalha de linho encerado, fios de prata, tábua de pedra",
+   "anel de bronze (morno)"
+  ],
+  "magia_em_uso": [
+   {
+    "disciplina": "Coroa (Limiares) — percepção da porta 61",
+    "o_que_acontece": "Aurelia sente as duas extremidades da 61 adormecidas 'perfeitamente', e agora sabe que é mentira.",
+    "visual_com_selos": "The engraved threshold seals in the white arch stones are dark, almost invisible; when she looks, they answer with a uniform, too-smooth faint gold — a perfect sleep with no breathing."
+   },
+   {
+    "disciplina": "Pulso (dragão)",
+    "o_que_acontece": "Ulvra passa alto com as asas imóveis e solta a bolsa sobre a praça.",
+    "visual_com_selos": "Natural, no seals: a grey shape against a red dusk band, crest faintly blue."
+   }
+  ],
+  "ilustracoes": [
+   {
+    "tipo": "vinheta_abertura",
+    "momento": "~0%",
+    "trecho_ancora": "Ela subiu na base do leão de bronze às dez da manhã.",
+    "descricao_visual": "Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) (hood down) standing on the plinth of a bronze lion whose raised right paw bears a black scorch mark; a cold crowd of thousands gathering around fires in the Square of Noon, nobody kneeling, faces red with cold and anger. The dark tower behind. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~34%",
+    "trecho_ancora": "Os homens dos Reinos derrubaram.",
+    "descricao_visual": "Inside the station hall: four broad men of the Storm Kingdoms in wool caps swinging sledgehammers and crowbars at a plastered brick wall bricked into a white-stone arch with bronze jambs; dust clouds, falling bricks, the grey Commissioner and Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) watching. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~48%",
+    "trecho_ancora": "e ela sentou no chão da galeria e começou a chorar",
+    "descricao_visual": "A brick-lined technical gallery under the House of the Furnace: an arm-thick copper pipe wrapped in felt and canvas clamped into a junction; Nara Voss (long thick copper-red braid, freckles, brass goggles pushed up on her forehead, sleeveless leather vest, fingerless gloves, tool belt, old burn scars on her forearms) sits on the floor with a wrench in her hand, crying silently, her mother in a headscarf hugging her; Tibo (14, runny nose, wool cap pulled down to the eyebrows), students and grey-uniformed guards standing awkwardly; a thin orange-caped figure by the open door. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "respiro",
+    "momento": "~51%",
+    "trecho_ancora": "Três. Do noroeste, por cima das montanhas, onde o céu do anoitecer tinha uma faixa estreita de vermelho entre a crista escura e as nuvens.",
+    "descricao_visual": "Wide quiet landscape at dusk: dark mountain crests to the northwest under a thin band of red between ridge and cloud; snowy roofs of the city in the foreground; a tiny grey dragon high above with motionless wings. Still air. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "pagina_inteira",
+    "momento": "~93%",
+    "trecho_ancora": "Ele a beijou. Ou ela a ele; depois, ela nunca soube direito quem se mexeu primeiro.",
+    "descricao_visual": "Night in the middle of the frozen river, far west of the city: a sky full of cold stars, no moon, blue-grey ice, white hills where the river disappears westward; behind, to the east, small fires and the dark tower. Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) (a full head taller) bends to kiss Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes, long charcoal-black high-collared coat, plain iron longsword, iron ballast plates on boots, steel gauntlet with three ceramic cells on his LEFT forearm, LEFT hand wrapped in linen bandage at the edge of the gauntlet, guarding broken ribs, plain bronze ring on the middle finger of his RIGHT hand); her hand at his nape under his hood, his right hand with the bronze ring on her cheek; their breath mingling in vapour. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   }
+  ],
+  "citacao_respiro": "Mas a porta é minha. Então a responsabilidade é minha.",
+  "documentos_do_mundo": [
+   {
+    "tipo": "bilhete",
+    "conteudo": "Casca de bétula, runas a ponta de faca (tradução dos homens dos Reinos): Cheguei. Hvel está no alto. Doze famílias. As cabras também, a maioria. A barragem chora. A água sobe um palmo por hora. Eu seguro até amanhã à noite. Não mais. / A Velha diz: oito homens na casa de pedra. Um gordo de luvas. Um magro que come maçã. Uma caixa grande no pátio da casa, num trenó de vela, e a caixa é quente: a neve derrete em volta dela. Estão carregando o trenó. A Velha acha que vão partir. Amanhã ou depois. — [runa do martelo]",
+    "onde_entra": "Dentro havia um pedaço de casca de bétula"
+   },
+   {
+    "tipo": "contrato",
+    "conteudo": "Câmara dos Pactos — Autoriza-se a abertura da porta sessenta e um da Estação das Portas de Vhalessa para operação de interdição do corredor clandestino identificado, sob responsabilidade e supervisão da Comissária de Segurança em Vhalessa, pelo prazo que esta julgar necessário.",
+    "onde_entra": "A autorização do plenário de Tamsin chegou ao meio-dia."
+   },
+   {
+    "tipo": "cartaz",
+    "conteudo": "NÃO CONSERTAMOS MILAGRES (a giz, na porta verde da Cooperativa)",
+    "onde_entra": "olhando a porta verde com a frase escrita a giz"
+   }
+  ],
+  "epigrafe_sugerida": "«O Carrasco pode velar, se quiser.» — instrução do Guardião da Necrópole"
+ },
+ {
+  "cap": 23,
+  "pov": "Sevran (terceira pessoa próxima)",
+  "resumo": "Desobedecendo à Comissária, Sevran entra pela porta dos fundos da Casa e confronta Oriel Mast no gabinete do terceiro anel; Oriel confessa: adiou por três anos buscar o Carrasco, aceitou a proposta de Ithren e dos Credores ('toda coroa é uma dívida'), mentiu a Calvenor, subiu à plataforma do Sol e cravou o fiel no peito do deus, que percebeu a traição no último instante; o Mandato foi tirado para uma caixa quente no Passo Cinzento e o calor nunca voltará à Fornalha Velha. Oriel chega à beira do sim, recusa ('senão ele morreu por nada'), tranca Sevran e toca o sino das galerias, três e três, para avisar Ithren. Sevran escapa pela calha de bronze da cúpula, torce o tornozelo e acorda Mara, que corre atrás de Ilan e do anel.",
+  "locais": [
+   {
+    "nome": "Beco da porta dos fundos",
+    "cidade_ou_regiao": "Vhalessa — Alta Mesa",
+    "descricao_fisica": "Beco estreito, sem vigilância, coberto de neve.",
+    "relacao_espacial": "Entre a Casa da Fornalha e o muro do jardim do Banco de Reservas.",
+    "citacao_curta": "A porta dos fundos dava para um beco estreito entre a Casa e o muro do jardim do Banco de Reservas."
+   },
+   {
+    "nome": "Travessia da ponte",
+    "cidade_ou_regiao": "Vhalessa — da Fornalha Velha à Alta Mesa",
+    "descricao_fisica": "Sevran sai pela porta dos fundos da Cozinha e cruza a ponte a pé sob as estrelas.",
+    "relacao_espacial": "A Cozinha do Lento (margem sul) fica do outro lado da ponte em relação à Casa (Alta Mesa).",
+    "citacao_curta": "saído pela porta dos fundos da Cozinha às onze e atravessado a ponte a pé"
+   },
+   {
+    "nome": "Escada do segundo anel e corredor do terceiro anel",
+    "cidade_ou_regiao": "Vhalessa — Casa da Fornalha",
+    "descricao_fisica": "38 degraus até o patamar, à direita mais 22; corredor das celas; no fim, o gabinete do Intendente.",
+    "relacao_espacial": "Andar superior da Casa.",
+    "citacao_curta": "Trinta e oito até o patamar."
+   },
+   {
+    "nome": "Gabinete do Intendente",
+    "cidade_ou_regiao": "Vhalessa — Casa da Fornalha, terceiro anel",
+    "descricao_fisica": "Papéis até a altura do peito, bacia de ataduras sujas, três xícaras com película, cheiro de pomada e cera; janela redonda para a cúpula de bronze verde coberta de geada; porta de carvalho de 300 anos.",
+    "relacao_espacial": "No fim do corredor do terceiro anel, sob a cúpula.",
+    "citacao_curta": "no parapeito da janela redonda que dava para a cúpula"
+   },
+   {
+    "nome": "Calha de bronze da cúpula",
+    "cidade_ou_regiao": "Vhalessa — Casa da Fornalha",
+    "descricao_fisica": "Calha estreita em volta da base da cúpula, coberta de geada; 15 m de queda até o pátio de pedra; escada de ferro dos limpadores do lado oeste; telhado do segundo anel; muro do jardim do Banco.",
+    "relacao_espacial": "Contorna a base da cúpula; 41 passos até a escada oeste.",
+    "citacao_curta": "Quarenta e um passos até a escada de ferro dos limpadores de calha, do lado oeste da cúpula."
+   },
+   {
+    "nome": "Sino das galerias",
+    "cidade_ou_regiao": "Vhalessa — Casa da Fornalha",
+    "descricao_fisica": "Sino pequeno de bronze com cordão de couro ligado a sinos iguais em todas as galerias sob a Casa e a Alta Mesa, até as Cisternas; não tocava há 30 anos.",
+    "relacao_espacial": "No alto da escada que desce do terceiro anel às galerias técnicas.",
+    "citacao_curta": "pendurado no alto da escada que descia do terceiro anel às galerias técnicas"
+   },
+   {
+    "nome": "Pensão de Mara Quen",
+    "cidade_ou_regiao": "Vhalessa — Alta Mesa",
+    "descricao_fisica": "Porta da pensão onde Mara atende de camisola de lã e casaco.",
+    "relacao_espacial": "Na rua de cima; dali uma ladeira desce para o rio.",
+    "citacao_curta": "para a pensão de Mara Quen, na rua de cima"
+   }
+  ],
+  "personagens_em_cena": [
+   "Sevran",
+   "Oriel Mast",
+   "Mara Quen",
+   "dois guardas à paisana",
+   "relatados: Ithren, Calvenor, Hollen Vask, Brannoc, Brígida Orn"
+  ],
+  "faccoes_casas_guildas": [
+   "Casa da Fornalha — capa laranja com bordado de fios de bronze na gola; livro 'Do Sol que se Dá'; sino das galerias; celas dos sacerdotes",
+   "Credores — doutrina de Ithren: a Coroa como arquitetura separável, a ser 'devolvida' a uma Assembleia",
+   "Ordem da Última Sentença — o 'fiel': agulha de bronze comprida e fina com uma balança gravada no cabo",
+   "Câmara dos Pactos — vigilância discreta na rua da frente (a tenente Halsey e dois guardas)",
+   "Conselho / Companhia Kaltz / bancos da Alta Mesa — citados por Oriel como os 'poderosos de sempre'"
+  ],
+  "objetos_e_armas": [
+   "livro 'Do Sol que se Dá' com régua de bronze sobre as páginas",
+   "pena",
+   "ataduras e bacia",
+   "capa laranja num prego",
+   "molho de chaves de ferro",
+   "o fiel (agulha de bronze com balança no cabo)",
+   "lamparina",
+   "sino das galerias",
+   "lamparina e maleta de Mara"
+  ],
+  "magia_em_uso": [
+   {
+    "disciplina": "Coroa (Calvenor) — o Acendimento e o fiel (relato de Oriel)",
+    "o_que_acontece": "Calvenor encosta as mãos na lente, a Rede inteira sobe e a junção se abre com consentimento; Oriel crava o fiel ao lado das três marcas de Ilan; o deus sente o destino errado e reage uma vez.",
+    "visual_com_selos": "The whole Network rising as a sea of coronal gold seals stamped with the sun mark, flowing up the tower into the lens; on the god's bronze chest three tiny white measuring marks and a dull bronze needle; at the end a single violent white-gold recoil."
+   },
+   {
+    "disciplina": "Sem magia ativa no presente",
+    "o_que_acontece": "O sino das galerias é mecânico (cordão de couro).",
+    "visual_com_selos": "No seals; only the small bronze bell swinging three times, a pause, three times."
+   }
+  ],
+  "ilustracoes": [
+   {
+    "tipo": "vinheta_abertura",
+    "momento": "~10%",
+    "trecho_ancora": "No meio de tudo, sentado à mesa, debaixo da lamparina, Oriel Mast escrevia.",
+    "descricao_visual": "Oriel Mast, Intendant of the House of the Furnace (gaunt, sunken red-rimmed eyes, both hands bandaged, plain tunic) sits under a lamp in an office drowned in paper piles, writing with a pen pinched between the two free fingers of a bandaged right hand in a large open book held flat by a bronze ruler; three tea cups with skin on them, a basin of dirty bandages; a round window shows a frosted green-bronze dome under stars; the orange cape hangs on a nail behind the door. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "pagina_inteira",
+    "momento": "~54%",
+    "trecho_ancora": "E eu pus o fiel.",
+    "descricao_visual": "Flashback, night of the Lighting, at the summit platform of the Tower of Noon: a 2.5 m bronze-skinned god stands arms open with his hands on a great bronze-and-glass lens blazing with honey-coloured light, a river of gold sun-marked seals pouring upward through him; looking back over his shoulder at a thin man in an orange cape who, holding a lantern, presses a long thin bronze needle into the god's chest beside three tiny white dots. The city far below crying out. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": true
+   },
+   {
+    "tipo": "dupla",
+    "momento": "~82%",
+    "trecho_ancora": "Foi mesmo assim. De lado, com as costas coladas ao bronze gelado da cúpula",
+    "descricao_visual": "Wide night spread: the great green-bronze dome of the House of the Furnace glittering with frost under stars; along a narrow bronze gutter at its base, a tiny heavy figure — Sevran (about 45, tall and stooped, dark curly hair streaked with white, grey beard, big careful hands, wool cap, cook's apron) — edges sideways with his back pressed to the dome, hands flat on the frost; fifteen metres below, a stone courtyard; on the west side an iron ladder; roofs of the Alta Mesa and the garden wall of the Reserve Bank around. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~89%",
+    "trecho_ancora": "Mara abriu em menos de um minuto, de camisola de lã e casaco por cima",
+    "descricao_visual": "Mara Quen (32, tall and thin, dark hair in a bun, round glasses, wool nightgown with a coat thrown over it, leather satchel under her arm) opens a boarding-house door at 2 a.m., lamp in one hand, satchel under her arm; facing her, Sevran (about 45, tall and stooped, dark curly hair streaked with white, grey beard, big careful hands, wool cap, cook's apron) with frost-scraped hands, unable to put weight on his left foot. Dark snowy street. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "respiro",
+    "momento": "~99%",
+    "trecho_ancora": "As janelas do terceiro anel estavam escuras, menos uma, redonda, no alto, debaixo da cúpula",
+    "descricao_visual": "Quiet night exterior: the dark mass of the House of the Furnace under a frosted dome, all windows black except one small round one high under the dome glowing yellow; a limping figure passing far below in the empty snowy street, not looking up. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   }
+  ],
+  "citacao_respiro": "Que o Sol se lembre de nós no frio.",
+  "documentos_do_mundo": [
+   {
+    "tipo": "livro-razão",
+    "conteudo": "Do Sol que se Dá (tratado de O. Mast) — página aberta: «Toda coroa é uma dívida, e toda dívida deve ser paga a quem a sustentou.» [sublinhado duas vezes; a pena rasgou o papel.]",
+    "onde_entra": "Diante dele, aberto, com a régua de bronze por cima para segurar as páginas, estava o livro."
+   },
+   {
+    "tipo": "aviso",
+    "conteudo": "SINO DAS GALERIAS — chama os técnicos de volta à superfície em caso de Retorno. Soa em todas as galerias debaixo da Casa e da Alta Mesa, até as Cisternas.",
+    "onde_entra": "Era o sino das galerias."
+   },
+   {
+    "tipo": "recibo",
+    "conteudo": "Casa da Fornalha — Dispensa de serviço: Hollen Vask, Mestre das Galerias, a partir de 2 de outubro, por motivo de família (irmã doente no Cais de Tamsin). Pela Intendência — O. Mast.",
+    "onde_entra": "Eu assinei a dispensa. Inventei a irmã."
+   }
+  ],
+  "epigrafe_sugerida": "«Toda coroa é uma dívida, e toda dívida deve ser paga a quem a sustentou.» — Oriel Mast, Do Sol que se Dá"
+ },
+ {
+  "cap": 24,
+  "pov": "Mara Quen (terceira pessoa próxima)",
+  "resumo": "Mara acorda Ilan na serralheria; ele avisa Aurelia pelo anel e o entrega a Mara, porque a equipe das Cisternas precisará mais dele. Às 4h10 a equipe desce pela galeria 3 até a abóbada externa norte, uma caverna de sal-gema incandescente onde a válvula (agora aberta ao dobro por Oriel) mostra a noite do Passo Cinzento; Mara desconfia da própria placa, descobre que os 23 discos brancos são iscas e que as âncoras verdadeiras estão enterradas no sal, e a Comissária salva um guarda com a Segunda Muralha. Ithren aparece com o rosto velado por Clarão, provoca, explica que 'a Ordem estava errada' e foge por uma galeria de mineração até o leito do Lento — mas a placa de registro luminoso de Mara fixa o seu rosto verdadeiro; Sevran, ouvindo as pedras, guia Nara até o arco, que neutraliza as 17 âncoras com âncoras de sacrifício, e às 5h32 a pele cai — e Oriel, ajoelhado junto ao batente, encosta nele o fiel.",
+  "locais": [
+   {
+    "nome": "Serralheria de Gunnar — quarto dos fundos e pátio",
+    "cidade_ou_regiao": "Vhalessa — Cobre",
+    "descricao_fisica": "Porta do quarto, pátio sob as estrelas, porta verde com a frase a giz; Nara dorme atrás do armário de ferro dos reservatórios, na oficina do outro lado do pátio.",
+    "relacao_espacial": "No Cobre; Ilan sai pela rua rumo à ponte (e à estação, na margem norte).",
+    "citacao_curta": "Parou junto à porta verde, a da frase escrita a giz"
+   },
+   {
+    "nome": "Galeria técnica n.º 3 (rampa)",
+    "cidade_ou_regiao": "Vhalessa — subsolo da Alta Mesa",
+    "descricao_fisica": "Túnel de pedra cortada da largura de duas pessoas, teto em arco, tijolo refratário, lâmpadas de Clarão a cada 30 m; calor de padaria que aumenta a cada vinte passos.",
+    "relacao_espacial": "Desce uns 200 m em rampa da porta da Casa da Fornalha por dentro da rocha da Alta Mesa; a galeria dois (escada do terceiro anel) liga-se a ela mais adiante.",
+    "citacao_curta": "a galeria três descia em rampa por uns duzentos metros, por dentro da rocha da Alta Mesa"
+   },
+   {
+    "nome": "Antecâmara redonda",
+    "cidade_ou_regiao": "Vhalessa — Cisternas",
+    "descricao_fisica": "Câmara redonda de pedra com quatro saídas, ar acima de 40 graus; a saída norte é um arco mais largo com luz do outro lado.",
+    "relacao_espacial": "No fim da rampa da galeria 3; a saída norte leva à abóbada externa norte.",
+    "citacao_curta": "a galeria se abria numa antecâmara redonda de pedra com quatro saídas"
+   },
+   {
+    "nome": "Abóbada externa norte das Cisternas Quentes",
+    "cidade_ou_regiao": "Vhalessa — sob a Alta Mesa",
+    "descricao_fisica": "Caverna cavada à mão numa camada de sal-gema: redonda, ~60 m de diâmetro, ~30 m de altura, paredes de sal branco, rosado e cinzento polidas como vidro, brilho fosco avermelhado do calor (cento e poucos graus). No centro, a válvula: arco de pedra branca com batentes de bronze de 4 × 3 m, com raízes de cabos de cobre e prata até as paredes; no vão, a noite do Passo Cinzento. Círculo de 23 discos de cerâmica branca a ~10 m do arco.",
+    "relacao_espacial": "Sob a rocha da Alta Mesa, além da antecâmara.",
+    "citacao_curta": "Era redonda, com uns sessenta metros de diâmetro e talvez trinta de altura"
+   },
+   {
+    "nome": "Galeria de mineração (fuga de Ithren)",
+    "cidade_ou_regiao": "Vhalessa — Cisternas → rio Lento",
+    "descricao_fisica": "Buraco estreito e escuro, do tamanho de um homem, na base da parede norte de sal; galeria do tempo da escavação, sem planta no arquivo, reaberta em outubro.",
+    "relacao_espacial": "Sai da parede norte da abóbada e vai dar no leito do Lento, a 2 km, por baixo da Fornalha Velha.",
+    "citacao_curta": "Ela vai dar no leito do Lento, a dois quilômetros, por baixo da Fornalha Velha."
+   }
+  ],
+  "personagens_em_cena": [
+   "Mara Quen",
+   "Ilan",
+   "Aurelia (voz pelo anel, no Passo Cinzento)",
+   "Nara Voss",
+   "Sevran",
+   "Cassia Vale",
+   "Tenente Halsey",
+   "seis guardas da Câmara (um rapaz de bigode ralo, ferido)",
+   "Tibo",
+   "Gorm",
+   "Mestre Ithren",
+   "Oriel Mast"
+  ],
+  "faccoes_casas_guildas": [
+   "Câmara dos Pactos — uniformes cinzentos, lanternas, espadas, duas bestas; a Segunda Muralha da Comissária",
+   "Colégio dos Auditores de Pacto — placas de vidro de aferição; placa de registro luminoso (vidro de Clarão com sais de prata do Arquipélago, três por ano por auditor); o Decanato e a 'instrução reservada' recusada",
+   "Cooperativa dos Reparadores — onze capuzes e mantos de lã costurados na véspera",
+   "Credores — Ithren e sua pele de discos falsos e âncoras enterradas",
+   "Casa da Fornalha — Oriel de capa laranja ajoelhado junto ao arco"
+  ],
+  "objetos_e_armas": [
+   "anel de bronze (passa ao dedo médio esquerdo de Mara, folgado)",
+   "manopla e espada de Ilan",
+   "lamparina e maleta de Mara",
+   "sonda (par termoelétrico) com fio de prata e caixa de madeira",
+   "onze capuzes e mantos de lã molhada, barril de água, cantis",
+   "cano da Rede Cívica preso à junção da abóbada norte",
+   "23 discos de cerâmica branca (iscas)",
+   "âncoras de sacrifício: discos cinza-escuros do tamanho de uma unha, da cerâmica de Orsk",
+   "placa de registro luminoso",
+   "o fiel nas mãos enfaixadas de Oriel"
+  ],
+  "magia_em_uso": [
+   {
+    "disciplina": "Selos falsos / Brasa (pele de Ithren)",
+    "o_que_acontece": "Os 23 discos devolvem à placa exatamente a tensão esperada; as 19 âncoras reais estão dois palmos dentro do sal; perto de ferro, soltam cones de ar a 200 graus.",
+    "visual_com_selos": "On each white disc a pale, perfectly even engraved seal that glows like a living one but has no tail and no ground-stroke — Selos Vazios; two palms beneath the salt, dark engraved Brasa red (#C8332F) seals that wake when a boot approaches and vent a red-orange cone of superheated air."
+   },
+   {
+    "disciplina": "Trama + Pulso — Segunda Muralha (Comissária Vale)",
+    "o_que_acontece": "Três muralhas em camadas, montadas ao longo do caminho com âncoras pequenas no chão e nas paredes, recebem o jorro e o espalham para o sal; a primeira se rompe, a segunda segura.",
+    "visual_com_selos": "Three ranks of small engraved seals flare up between her open hands and the heat — rows of Trama old gold (#C9A15A) interlaced with Pulso blue (#4F8BD6) — each rank a translucent wall that ripples the hot air aside like water against a rock; the first rank shatters into falling sparks."
+   },
+   {
+    "disciplina": "Clarão — véu de Ithren",
+    "o_que_acontece": "Uma camada de luz desviada em volta da cabeça faz o olhar escorregar: a cada olhada, outro rosto.",
+    "visual_com_selos": "A crown of hair-thin Clarao ivory-white (#F2E6C2) seal-lines orbiting his head, bending light so his face keeps changing (old man, girl with a braid, Sevran, a fat grey-bearded man)."
+   },
+   {
+    "disciplina": "Clarão — placa de registro luminoso (Mara)",
+    "o_que_acontece": "No meio segundo do clarão de outra âncora, o vidro fixa a luz que cai nele e revela o rosto verdadeiro.",
+    "visual_com_selos": "The silver-grey plate catches the white-orange flash; on it, like a photograph, the man crouching at the tunnel mouth with a clear, unveiled face."
+   },
+   {
+    "disciplina": "Âncoras de sacrifício (Nara)",
+    "o_que_acontece": "Em 17 pontos indicados por Sevran, Nara aperta discos cinza-escuros que oferecem a cada caminho uma saída melhor que o arco; a pele cai às 5h32.",
+    "visual_com_selos": "Nara presses a fingernail-sized grey ceramic disc into the salt; its engraved seal lights Brasa red (#C8332F) and the faint tail-line of a buried seal bends toward it, abandoning the arch; one by one the false skin's lines go slack."
+   },
+   {
+    "disciplina": "Coroa (Limiares) — anel",
+    "o_que_acontece": "Mara fala com Aurelia a 140 km a cada dez minutos.",
+    "visual_com_selos": "A hair-thin coronal gold seal glows inside the loose ring on Mara's left middle finger when she speaks into it."
+   }
+  ],
+  "ilustracoes": [
+   {
+    "tipo": "vinheta_abertura",
+    "momento": "~5%",
+    "trecho_ancora": "Toma — disse ele, com o anel na palma estendida.",
+    "descricao_visual": "Doorway of a small back room at night: Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, plain iron longsword at the hip, iron ballast plates on his boots, steel gauntlet with three ceramic cells on his LEFT forearm) fully dressed, sword at hip, holds out a plain dark bronze ring on his open palm to Mara Quen (32, tall and thin, dark hair in a bun, round glasses, a wool nightgown under a coat, leather satchel under her arm), lamp in her hand. Stars over a courtyard behind. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "respiro",
+    "momento": "~19%",
+    "trecho_ancora": "iluminado de trinta em trinta metros por lâmpadas de Clarão que ainda guardavam um resto da luz de algum verão.",
+    "descricao_visual": "Quiet descending tunnel: a long arched gallery of refractory brick sloping down into the rock, faint ivory lamps every thirty metres holding the last light of some summer, heat shimmer, small figures in soaked wool hoods receding into the depth. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "dupla",
+    "momento": "~22%",
+    "trecho_ancora": "A abóbada externa norte das Cisternas Quentes era uma caverna.",
+    "descricao_visual": "Spread: a hand-dug round cavern of rock salt, sixty metres across and thirty high, walls of white, pink and grey salt polished like glass glowing a faint dull red from heat; in the centre a free-standing white stone arch with bronze jambs, four metres tall, with thick copper and silver cables spreading like roots to the walls; through its opening a cold mountain night. A loose ring of small white ceramic discs scattered on the floor around it. At the entrance a team in steaming wet wool cloaks and hoods: Mara Quen (32, tall and thin, dark hair in a bun, round glasses, dark high-collared coat, burgundy waistcoat, leather satchel under her arm), Nara Voss (long thick copper-red braid, freckles, brass goggles pushed up on her forehead, sleeveless leather vest, fingerless gloves, tool belt, old burn scars on her forearms), Commissioner Cassia Vale (very tall, angular pale face, dark eyes, grey uniform of the Chamber of Pacts), guards with lanterns; Sevran (about 45, tall and stooped, dark curly hair streaked with white, grey beard, big careful hands, wool cap, cook's apron) kneeling with palms flat on the salt. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~43%",
+    "trecho_ancora": "Três muralhas, em camadas.",
+    "descricao_visual": "Commissioner Cassia Vale (very tall, angular pale face, dark eyes, grey uniform of the Chamber of Pacts) stands between a fallen young guard and a cone of red-orange superheated air bursting from the salt floor; before her open hands three layered translucent walls of small glowing seals in old gold and blue, the first one shattering into sparks, the hot air rippling aside around the second. Steam from vaporised wool. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "pagina_inteira",
+    "momento": "~54%",
+    "trecho_ancora": "E ele saiu.",
+    "descricao_visual": "Master Ithren (67, tall and thin, short white hair, dark wool tunic, trousers tucked into short boots, long careful hands) steps out from behind the valve arch into the red salt-light without any protection, untouched by the heat; around his head a crown of ivory-white light-lines; his face is impossible to fix — painted as several overlapping faces (an old man, a girl with a braid, a fat grey-bearded man) sliding over each other. Behind the arch, in shadow, a kneeling thin figure in an orange cape. In the foreground the back of Mara Quen's head and her raised hand with a glass plate. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": true
+   }
+  ],
+  "citacao_respiro": "Eu nunca pergunto o que as pessoas esperam",
+  "documentos_do_mundo": [
+   {
+    "tipo": "relatório",
+    "conteudo": "Colégio dos Auditores de Pacto — Registro de campo (M. Quen), abóbada externa norte, madrugada: placa de aferição indica 23 âncoras na superfície (discos). Sonda junto ao disco mais próximo: sal 108 graus; disco 108 graus (igual ao sal — incompatível com âncora em carga). Escuta (Sevran): disco calado; zumbido a seis passos à esquerda e dois palmos abaixo do disco. Conclusão: três instrumentos, dois concordam, um mente — discos falsos; âncoras verdadeiras enterradas. Anexo: placa de registro luminoso (rosto do suspeito na boca da galeria de mineração).",
+    "onde_entra": "Três instrumentos. Dois concordam. Um mente."
+   },
+   {
+    "tipo": "aviso",
+    "conteudo": "DAQUI EM DIANTE, LÃ MOLHADA. Molhar a cada dez minutos. Molhem antes de sentir. — N. V.",
+    "onde_entra": "Daqui em diante, lã molhada"
+   }
+  ],
+  "epigrafe_sugerida": "«Quem ensina a porta a responder pode ensinar a porta a mentir.» — dito de Mestre Ithren"
+ },
+ {
+  "cap": 25,
+  "pov": "Ilan (terceira pessoa próxima)",
+  "resumo": "Às 4h02 Aurelia acorda a porta 61, adormecida há quarenta anos, compensa os 1.800 m de diferença de altitude e Ilan atravessa para a estação do Passo Cinzento, quente, úmida e escorrendo degelo; a sétima porta, a maior, é a outra ponta da válvula, e no nível de serviço há uma Jurisdição montada sobre um anel de ferro que manda calor para a rocha, para a caixa no pátio e para o gelo da Garganta — de propósito, para que fechar o corredor ameace Hvel. Ilan derruba o homem da besta e o da faca usando as próprias âncoras deles, obriga o engenheiro Pell Andrask a mostrar as sete âncoras-mestras e as marca para um Fechamento de Contas; percebe que Ithren está enviando mensagens pelo fluxo e que o trenó partirá ao amanhecer (6h20). Enquanto Aurelia sente Brannoc andando atrás da porta da Sala dos Ferrolhos, Ilan sai ao pátio, onde Eron Tahl, de maçã na mão, guarda o trenó de vela com a caixa e começa a andar na direção dele.",
+  "locais": [
+   {
+    "nome": "Saguão de Vhalessa diante da porta 61",
+    "cidade_ou_regiao": "Vhalessa — Estação das Portas",
+    "descricao_fisica": "Arco aberto onde na véspera havia tijolo; pó de reboco no chão de ardósia; coluna de ferro próxima.",
+    "relacao_espacial": "Vhalessa está a 300 m de altitude; o Passo Cinzento, a 2.100 m.",
+    "citacao_curta": "Vhalessa, a trezentos."
+   },
+   {
+    "nome": "Estação do Passo Cinzento — saguão",
+    "cidade_ou_regiao": "Passo Cinzento (montanhas do noroeste)",
+    "descricao_fisica": "Saguão comprido de pedra escavado na base da montanha, teto em abóbada de berço, onze portas em arco na parede do fundo (a da montanha); água pingando do teto e escorrendo pelas paredes; ar quente com cheiro de enxofre e metal.",
+    "relacao_espacial": "A 61, deste lado, é a terceira a contar da esquerda; a sétima, no meio, é a maior (antiga porta de carga da mina); a Sala dos Ferrolhos fica atrás de uma porta de madeira à direita, no fundo.",
+    "citacao_curta": "Ele estava diante da terceira, a contar da esquerda"
+   },
+   {
+    "nome": "Escada para o nível de serviço",
+    "cidade_ou_regiao": "Passo Cinzento",
+    "descricao_fisica": "Escada de pedra estreita em caracol, molhada, quente, cheia de vapor; 42 degraus; corredor baixo de rocha bruta no fim.",
+    "relacao_espacial": "No canto esquerdo do saguão, atrás da primeira porta.",
+    "citacao_curta": "A escada para o nível de serviço ficava no canto esquerdo do saguão, atrás da primeira porta"
+   },
+   {
+    "nome": "Nível de serviço — câmara de compensação e Jurisdição",
+    "cidade_ou_regiao": "Passo Cinzento",
+    "descricao_fisica": "Caverna do tamanho de uma igreja pequena: onze bancos de compensação de ferro e cerâmica, mortos, ao longo da parede esquerda; galeria inclinada ao poço da mina de estanho no fundo; anel de ferro de ~8 m no chão com âncoras brancas em laranja sujo; poço vertical no teto, do lado da fachada, até o pátio; parede do fundo de gelo azul do glaciar com cavidades fumegantes; rio de degelo da largura de uma rua.",
+    "relacao_espacial": "Sob o saguão; a parede do fundo encosta na base do glaciar da Garganta; o rio sai pela parede direita para o vale e para o lago atrás da barragem.",
+    "citacao_curta": "saía por uma abertura na parede da direita — para fora, para baixo, para o vale."
+   },
+   {
+    "nome": "Vestíbulo e pátio da estação",
+    "cidade_ou_regiao": "Passo Cinzento",
+    "descricao_fisica": "Vestíbulo: sala estreita de pedra ao longo da fachada até a porta grande. Pátio: quadrado de pedra com muro baixo, agora um lago raso de água fumegante com placas de gelo; plataforma de pedra com o trenó.",
+    "relacao_espacial": "Diante da fachada; acima, o glaciar da Garganta apoiado no telhado; o vale desce largo e branco até sumir numa curva.",
+    "citacao_curta": "o pátio era um quadrado de pedra diante da fachada, cercado por um muro baixo"
+   },
+   {
+    "nome": "Glaciar da Garganta e vale do Passo Cinzento",
+    "cidade_ou_regiao": "Passo Cinzento",
+    "descricao_fisica": "Montanhas como muralhas brancas e negras; língua de gelo de centenas de metros, azul, branca e suja, que geme; vale branco descendo por quilômetros.",
+    "relacao_espacial": "O glaciar desce da crista e se apoia no telhado da estação; o trenó chega ao fundo do vale em duas horas.",
+    "citacao_curta": "se apoiava no telhado da estação como uma mão gigante apoiada numa mesa"
+   }
+  ],
+  "personagens_em_cena": [
+   "Ilan",
+   "Aurelia",
+   "Tenente Halsey",
+   "quatro homens dos Reinos",
+   "Pell Andrask (engenheiro de Neska)",
+   "homem da besta",
+   "homem da faca",
+   "Eron Tahl",
+   "seis homens no pátio e dois junto aos cães",
+   "Brannoc (atrás da porta da Sala dos Ferrolhos, só sentido)",
+   "Mara (voz no anel de Aurelia)"
+  ],
+  "faccoes_casas_guildas": [
+   "Credores — a Jurisdição do Passo Cinzento, técnicos contratados em Neska, mensagens moduladas por Ithren",
+   "Mercenário Eron Tahl — contrato de escolta da caixa; a 'Linha Seca'",
+   "Reinos da Tempestade — homens com marretas e gorros; uma oração (ou palavrão) em nórdico de vale",
+   "Câmara dos Pactos — a tenente Halsey guarda o arco ('Tijolo')",
+   "Coroa dos Limiares — estação do Passo Cinzento (dela desde 1098); livro das delegações de 1098 trazido de volta do arquivo do Átrio"
+  ],
+  "objetos_e_armas": [
+   "lente de aferição",
+   "giz de aferição",
+   "manopla com três células (cinza-escura de Nara, a velha, porcelana de Hanne)",
+   "besta pequena de repetição (cai no rio)",
+   "faca do homem alto",
+   "painel de controle de bronze num cavalete (reguladores, mostradores, alavancas)",
+   "trenó de vela: madeira escura, patins de ferro compridos, mastro, vela triangular de lona",
+   "doze cães cinzentos em pares",
+   "caixa de madeira e ferro do tamanho de um homem dobrado, acolchoada com lã e couro, três cabos ao telhado",
+   "maçã de Eron Tahl",
+   "livro das delegações do Passo Cinzento"
+  ],
+  "magia_em_uso": [
+   {
+    "disciplina": "Coroa (Limiares) — despertar da 61",
+    "o_que_acontece": "A porta acorda com um gemido grave do chão e das colunas; Aurelia compensa a pressão (como subir uma escada muito depressa).",
+    "visual_com_selos": "Engraved threshold seals in the arch stones wake one by one after forty years, coronal gold sluggish and uneven like stiff joints; the opening fills with a distant darkness."
+   },
+   {
+    "disciplina": "Brasa — Jurisdição de distribuição",
+    "o_que_acontece": "O anel de ferro recebe os elos da sétima porta e os divide entre a rocha (reserva), o poço para a caixa e a parede de gelo.",
+    "visual_com_selos": "Dozens of thick Brasa red (#C8332F) seal-lines hang from the cavern ceiling like roots of an upside-down tree into an 8 m iron ring studded with engraved seals glowing dirty orange; seven larger, darker seals among them; more red seals driven into the blue ice wall, steaming cavities around each."
+   },
+   {
+    "disciplina": "Marca de Cobrança (Ilan)",
+    "o_que_acontece": "Ilan escreve a própria marca numa âncora de Brasa submersa e desvia um fio de calor: a água nas botas do homem da besta vai de 60 a 90 graus.",
+    "visual_com_selos": "From twelve metres away a small mark in Ilan's crooked hand appears over an underwater red seal — the seal 'changes handwriting' — and a thread of red light flicks into the water around the man's boots."
+   },
+   {
+    "disciplina": "Pulso — Passo Vetorial e devolução de impulso",
+    "o_que_acontece": "Dois deslocamentos rasantes sobre boa rocha; depois Ilan puxa o acoplamento ainda carregado do pé do homem da faca e devolve o impulso.",
+    "visual_com_selos": "Fingernail Pulso blue (#4F8BD6) seals blink under Ilan's boot on the wet rock; under the knife-man's left heel a still-lit blue seal is overwritten by Ilan's mark and snaps the man sideways into the wall."
+   },
+   {
+    "disciplina": "Fechamento de Contas (preparação)",
+    "o_que_acontece": "Com giz e manopla, Ilan marca as sete âncoras-mestras do anel; cada marca fica acoplada à manopla.",
+    "visual_com_selos": "Seven chalk-white marks with a little tail to the left over seven dark seals; seven faint lines of tension running back to the gauntlet like fingers of a hand."
+   },
+   {
+    "disciplina": "Modulação de Ithren",
+    "o_que_acontece": "O fluxo do corredor treme num padrão (uma forte, duas fracas…): uma mensagem pelo próprio corredor.",
+    "visual_com_selos": "The red seal-lines rising through the ceiling shaft pulse out of rhythm in a code of one bright, two dim."
+   }
+  ],
+  "ilustracoes": [
+   {
+    "tipo": "vinheta_abertura",
+    "momento": "~6%",
+    "trecho_ancora": "E a porta acordou.",
+    "descricao_visual": "The dark station hall of Vhalessa, brick dust on the slate around an empty white-stone arch: Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) with her hand on the bronze jamb, eyes closed; the engraved seals in the arch stones waking in slow coronal gold; the air thickening into a deep distant darkness inside the arch. Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes, long charcoal-black high-collared coat, plain iron longsword, iron ballast plates on boots, steel gauntlet with three ceramic cells on his LEFT forearm, LEFT hand wrapped in linen bandage at the edge of the gauntlet, guarding broken ribs) two steps away; behind them men of the Storm Kingdoms with sledgehammers stepping back, a lieutenant with her arm in a sling. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "respiro",
+    "momento": "~14%",
+    "trecho_ancora": "Estava de pé num chão de pedra molhada, no escuro, com água escorrendo por cima das botas.",
+    "descricao_visual": "Near-black atmosphere: a long barrel-vaulted stone hall cut into a mountain, eleven arches faint along the back wall, water dripping from the ceiling and sheeting over the floor, warm vapour; one small human silhouette in the dark. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "pagina_inteira",
+    "momento": "~37%",
+    "trecho_ancora": "No meio da caverna, ocupando quase todo o espaço, estava a Jurisdição.",
+    "descricao_visual": "A cavern the size of a small church: along the left wall eleven dead rusted cabinets of iron and ceramic; in the centre an eight-metre iron ring on the rock floor studded with engraved seals glowing dirty orange; dozens of thick red seal-lines descending from the ceiling into it like inverted roots; the back wall is a glacier — blue, white and grey ice with deep steaming cavities; a street-wide meltwater river crosses the floor and exits through an opening on the right. Two men argue over a bronze control panel on an easel; a third sits on a crate by the river with a small repeating crossbow. In the vapour at a corridor mouth, Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes, long charcoal-black high-collared coat, plain iron longsword, iron ballast plates on boots, steel gauntlet with three ceramic cells on his LEFT forearm, LEFT hand wrapped in linen bandage at the edge of the gauntlet, guarding broken ribs) watches through a glass lens. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~68%",
+    "trecho_ancora": "Ele marcou a sétima às cinco e catorze.",
+    "descricao_visual": "Close spot: Ilan's chalk hand marking a large dark seal on an iron ring; beside him the engineer Pell Andrask (oil-stained hands, old burns on his forearms like Nara's, pale frightened face) pointing; steam, orange glow, seven chalk marks with little left tails visible around the ring. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "dupla",
+    "momento": "~88%",
+    "trecho_ancora": "Por cima da estação, encostado à montanha, estava o glaciar da Garganta",
+    "descricao_visual": "Dawn spread, blue-grey sky without stars: a stone station façade built into the base of a mountain, a huge dirty-blue glacier tongue descending from the crest and resting on its roof like a giant hand on a table; the walled courtyard in front turned into a steaming shallow lake with floating ice; on a stone platform a dark-wood sail sledge with long iron runners, a slack triangular canvas sail, twelve big grey dogs in pairs, and a padded wood-and-iron box with three thick cables rising to the roof, snow melted in a perfect circle around it. Eron Tahl — a lean mercenary biting an apple — stands by the box; men knee-deep in water tie ropes; in the station doorway, Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes, long charcoal-black high-collared coat, plain iron longsword, iron ballast plates on boots, steel gauntlet with three ceramic cells on his LEFT forearm, LEFT hand wrapped in linen bandage at the edge of the gauntlet, guarding broken ribs). The white valley falls away for kilometres behind. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   }
+  ],
+  "citacao_respiro": "Não foi uma luta. Foi uma conta.",
+  "documentos_do_mundo": [
+   {
+    "tipo": "mapa",
+    "conteudo": "Plantas da estação do Passo Cinzento (Coroa dos Limiares, 1098; arquivo do Átrio): saguão comprido escavado na base da montanha, abóbada de berço; onze portas em arco na parede da montanha (porta de carga da mina ao centro); escada em caracol no canto esquerdo, 42 degraus, ao nível de serviço (bancos de compensação e galeria ao poço do estanho); Sala dos Ferrolhos ao fundo, à direita; vestíbulo ao longo da fachada; pátio quadrado diante da fachada, com muro baixo.",
+    "onde_entra": "como nas plantas que Aurelia tinha mandado buscar no arquivo do Átrio"
+   },
+   {
+    "tipo": "contrato",
+    "conteudo": "Contrato de escolta (E. Tahl): escoltar a carga até o fim do vale e entregar a quem estiver esperando lá. Ao amanhecer. Carga: quente, frágil, não pode esfriar. Não se fazem perguntas.",
+    "onde_entra": "Escoltar a carga até o fim do vale e entregar a quem estiver esperando lá."
+   }
+  ],
+  "epigrafe_sugerida": "«Eu sempre deixo uma porta de trás.» — Mestre Ithren"
+ },
+ {
+  "cap": 26,
+  "pov": "Alternado: Cisternas (Mara/Sevran), Aurelia e Ilan no Passo Cinzento",
+  "resumo": "Nas Cisternas, Oriel segura a junção aberta com o segundo fiel, e Sevran, ajoelhado ao lado dele, lembra o bolo de mel da juventude até que o amigo abre os dedos e o fiel cai no sal. No Passo Cinzento, Aurelia chama Ilan pela pedra; ele usa a Costura entre a terceira e a nona porta para o Vetor Passante, sai pelas costas de Eron Tahl, e Aurelia agarra pela pedra a âncora do calcanhar de Eron, que cai de quatro. Ilan solta uma a uma as sete marcas do Fechamento de Contas, com Pell ajudando lá embaixo, Aurelia fecha a sétima porta e o Retorno vai pelo cano para o Cobre; Eron foge com o trenó e a caixa, e só então Aurelia lembra que, se o Mandato esfriar, Calvenor nunca poderá voltar — 'Agora eu preciso de uma porta', diz Ilan.",
+  "locais": [
+   {
+    "nome": "Abóbada externa norte — base do batente da válvula",
+    "cidade_ou_regiao": "Vhalessa — Cisternas",
+    "descricao_fisica": "Sal quente e vermelho, cabos zumbindo como abelhas, Oriel ajoelhado com o fiel encostado ao bronze.",
+    "relacao_espacial": "A 140 km da estação do Passo Cinzento, ligada a ela pelo corredor.",
+    "citacao_curta": "Nas Cisternas, a cento e quarenta quilômetros dali"
+   },
+   {
+    "nome": "Saguão do Passo Cinzento — terceira, sétima e nona portas",
+    "cidade_ou_regiao": "Passo Cinzento",
+    "descricao_fisica": "Onze arcos na parede do fundo; a terceira e a nona à mesma altura, a 30 m uma da outra; a sétima no meio, a da válvula.",
+    "relacao_espacial": "Ilan começa a 10 m da terceira e a 40 da nona; Eron entra pela porta da fachada vindo do vestíbulo.",
+    "citacao_curta": "Estava a dez metros da terceira porta e a quarenta da nona."
+   },
+   {
+    "nome": "Cobre — destino do Retorno (sentido à distância)",
+    "cidade_ou_regiao": "Vhalessa — Cobre",
+    "descricao_fisica": "Serpentinas nas paredes da oficina da porta verde e casas da rua do Estanho recebendo o calor devolvido.",
+    "relacao_espacial": "A 140 km do Passo Cinzento, pelo cano da galeria 3.",
+    "citacao_curta": "para as serpentinas nas paredes de uma oficina de porta verde, para as casas da rua do Estanho"
+   }
+  ],
+  "personagens_em_cena": [
+   "Oriel Mast",
+   "Sevran",
+   "Mara Quen",
+   "Aurelia",
+   "Ilan",
+   "Eron Tahl",
+   "Pell Andrask (no nível de serviço)",
+   "homens e cães do trenó"
+  ],
+  "faccoes_casas_guildas": [
+   "Ordem da Última Sentença — os fiéis feitos com o bronze das relíquias de uma Soberania executada",
+   "Credores — 'ele sempre deixa uma porta de trás': o segundo fiel",
+   "Cooperativa / Rede Cívica — o cano que recebe o Retorno",
+   "Mercenário Eron Tahl — escolhe o contrato (o trenó) e não a luta"
+  ],
+  "objetos_e_armas": [
+   "o segundo fiel (agulha de bronze com balança no cabo)",
+   "batente de bronze da válvula",
+   "manopla acoplada a sete marcas",
+   "trenó de vela com a caixa e cabos soltos",
+   "cães e vela"
+  ],
+  "magia_em_uso": [
+   {
+    "disciplina": "Fiel da Ordem contra a Coroa (Limiares)",
+    "o_que_acontece": "Enquanto a ponta do fiel toca o batente, a junção não fecha; Aurelia o sente como um dedo segurando uma ferida aberta.",
+    "visual_com_selos": "Aurelia's coronal gold seal on the valve jamb, pinned by a dull bronze needle that carries a faint dead-gold echo of a long-executed crown; when it drops, her gold seal brightens and steadies."
+   },
+   {
+    "disciplina": "Coroa (Limiares) — Costura + Vetor Passante",
+    "o_que_acontece": "A terceira porta solta a extremidade distante e se liga à nona; no 'agora' de Aurelia, Ilan empurra contra o piso do arco de saída e sai para o leste.",
+    "visual_com_selos": "A taut gold thread between the third and ninth arches; a tiny Pulso blue (#4F8BD6) seal flowering under Ilan's boot inside the exit arch; Aurelia's compensation as a gold glow along the threshold so the arch does not misalign."
+   },
+   {
+    "disciplina": "Coroa (Limiares) segurando a Linha Seca",
+    "o_que_acontece": "A âncora que Eron cria e desfaz no tempo do golpe toca a pedra de Aurelia; ela a segura por meio segundo e ele cai.",
+    "visual_com_selos": "Eron's split-second conjured seal under his left heel is seized by a web of gold seal-lines rising from the station floor, holding heel and hand to the stone like roots."
+   },
+   {
+    "disciplina": "Fechamento de Contas",
+    "o_que_acontece": "Ilan solta as sete marcas no ritmo; cada âncora-mestra encontra uma conta a pagar em vez de alívio e o anel para de puxar sem estourar.",
+    "visual_com_selos": "Beneath the floor, seven dark red seals on the iron ring switch to Ilan's handwriting one after another and dim; through the gauntlet seven threads go slack in sequence."
+   },
+   {
+    "disciplina": "Coroa (Limiares) — fechamento da sétima / Retorno para a Rede Cívica",
+    "o_que_acontece": "Com duas mãos no batente (a dela e a manopla de Ilan), Aurelia fecha a sétima; o Retorno volta pelo cano da galeria 3 para o Cobre.",
+    "visual_com_selos": "The great arch's gold seals contract inward like an iris closing; far away a Brasa red (#C8332F) line runs along a felt-wrapped copper pipe into a whole district's walls."
+   }
+  ],
+  "ilustracoes": [
+   {
+    "tipo": "vinheta_abertura",
+    "momento": "~19%",
+    "trecho_ancora": "Pousou a mão grande sobre a mão enfaixada de Oriel",
+    "descricao_visual": "Close and intimate in red salt-light: at the bronze base of the valve arch, Sevran (about 45, tall and stooped, dark curly hair streaked with white, grey beard, big careful hands, wool cap, cook's apron) kneels beside Oriel Mast, Intendant of the House of the Furnace (gaunt, sunken red-rimmed eyes, both hands bandaged, orange cape with a collar embroidered in bronze thread), his big hand resting lightly over Oriel's two bandaged fingers that press a long thin bronze needle against the jamb; cables humming around them. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": true
+   },
+   {
+    "tipo": "pagina_inteira",
+    "momento": "~49%",
+    "trecho_ancora": "Ilan saiu pelas costas dele.",
+    "descricao_visual": "The long stone hall of the Grey Pass station: Eron Tahl (lean mercenary, short boots, knife) waits braced in front of the ninth arch expecting someone to come out northward, while behind him Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes, long charcoal-black high-collared coat, plain iron longsword, iron ballast plates on boots, steel gauntlet with three ceramic cells on his LEFT forearm, LEFT hand wrapped in linen bandage at the edge of the gauntlet, guarding broken ribs) has already burst out of that arch at a right angle, sliding east across wet stone, gauntlet raised, a blue seal fading under his boot; a thin gold thread links the third and ninth arches; at the great central arch Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) holds the jamb, her gold seals running through the floor. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~62%",
+    "trecho_ancora": "Eron Tahl caiu. Não de qualquer jeito",
+    "descricao_visual": "Eron Tahl on all fours in the middle of the station floor, his left heel and one hand gripped by a web of fine gold seal-lines rising from the wet flagstones; water running; motion blur of Ilan limping past toward the central arch. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~86%",
+    "trecho_ancora": "fechou a sétima porta.",
+    "descricao_visual": "Detail: two hands side by side on a bronze jamb of a great white-stone arch — a woman's bare hand and a steel gauntlet with three ceramic cells — while the arch's ring of gold seals tightens like a closing iris and the cold darkness inside it shrinks to a thread. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "respiro",
+    "momento": "~98%",
+    "trecho_ancora": "O trenó já ia longe; ele ouvia, cada vez mais fraco, o chiado dos patins",
+    "descricao_visual": "Quiet dawn landscape seen from the station door: a vast white valley under a clearing sky, and far below a tiny dark sledge with a full white sail and a string of dogs vanishing toward a bend, a thin plume of snow behind it. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   }
+  ],
+  "citacao_respiro": "Deixa ele esfriar.",
+  "documentos_do_mundo": [
+   {
+    "tipo": "relatório",
+    "conteudo": "Anotações de M. Quen (Cisternas), madrugada do 13º dia: 5h10 — a engenheira chega ao arco. 17 pontos de âncora neutralizados (âncoras de sacrifício). 5h32 — a pele caiu; comunicado à Soberania pelo anel. Em seguida: o Intendente segura a junção com um fiel; o fiel cai — Sevran o tirou.",
+    "onde_entra": "— Caiu — disse Mara, ao anel."
+   }
+  ],
+  "epigrafe_sugerida": "«Um avatar destruído não é um deus morto.» — ensinamento da Ordem da Última Sentença"
+ },
+ {
+  "cap": 27,
+  "pov": "Nara (abertura), panorama do Cobre, depois Ilan",
+  "resumo": "Na galeria 3, o cano esquenta de uma vez: Nara distribui o Retorno entre os ramais da Rede Cívica e manda o excedente, pela alavanca vermelha de Gorm, para os quatro troncos mortos da torre; o Cobre e três abrigos da margem norte têm três horas de noite de verão, e a maior parte do calor fica nas Cisternas. No Passo Cinzento, Ilan quebra um globo de Clarão de quarenta anos como sinal, a Velha das Cristas vem e leva Ilan, Aurelia e Pell até a barragem da Garganta, onde Thor segura a muralha de gelo tirando calor dela há um dia. Ilan salta da encosta, é apanhado pela dragoa e solto dentro do trenó; Eron, sem contrato, ajuda a abrir a caixa, e Aurelia faz das próprias mãos as duas extremidades de uma passagem que despeja a água do lago sobre o Mandato do Sol de Inverno, cuja luz cor de mel se apaga.",
+  "locais": [
+   {
+    "nome": "Galeria técnica n.º 3 — junção da abóbada norte",
+    "cidade_ou_regiao": "Vhalessa — subsolo da Casa da Fornalha",
+    "descricao_fisica": "Cano de cobre grosso como um braço, enrolado em feltro e lona, preso por braçadeiras; painelzinho de reguladores; alavanca vermelha para os troncos da torre.",
+    "relacao_espacial": "Junto à junção da abóbada norte; um ramal vai ao Cobre, outro pela ponte a três abrigos da margem norte, um cano grosso aos quatro troncos da Torre do Meio-Dia.",
+    "citacao_curta": "Estava ajoelhada na galeria técnica número três, junto à junção da abóbada norte"
+   },
+   {
+    "nome": "Cobre — rua do Estanho e oficina da porta verde",
+    "cidade_ou_regiao": "Vhalessa — Cobre",
+    "descricao_fisica": "Serpentinas quentes nas paredes, tijolo que queima ao toque, janelas embaçando uma a uma; fila diante da serralheria.",
+    "relacao_espacial": "Margem sul; destino principal do Retorno.",
+    "citacao_curta": "para os prédios da rua do Estanho, onde as janelas começavam, uma a uma, a embaçar por dentro"
+   },
+   {
+    "nome": "Pátio da estação do Passo Cinzento",
+    "cidade_ou_regiao": "Passo Cinzento",
+    "descricao_fisica": "Lago raso fumegante; globo antigo de vidro de Clarão preso por argola de ferro ao lado da porta da fachada.",
+    "relacao_espacial": "A estação é o único ponto de Aurelia num raio de 100 km; a barragem fica 20–30 km vale abaixo.",
+    "citacao_curta": "A estação é o único ponto meu num raio de cem quilômetros."
+   },
+   {
+    "nome": "Barragem da Garganta e lago de degelo",
+    "cidade_ou_regiao": "Passo Cinzento — fundo do vale",
+    "descricao_fisica": "Muralha de gelo azul e branca de 30–40 m de altura, de uma encosta à outra, com fendas que choram água; do lado de cima, um lago novo, cinza-escuro, de degelo; neve derretida num raio de 20 m em volta de Thor.",
+    "relacao_espacial": "No fundo do vale, onde a Garganta o fecha; acima dela o lago, abaixo o vale de Hvel.",
+    "citacao_curta": "terminava numa muralha azul e branca de trinta ou quarenta metros de altura, de uma encosta à outra"
+   },
+   {
+    "nome": "Hvel",
+    "cidade_ou_regiao": "Vale de Hvel (abaixo da barragem)",
+    "descricao_fisica": "Aldeia de doze casas de pedra com telhados de turfa cobertos de neve, vazia; as famílias e as cabras mais acima na encosta.",
+    "relacao_espacial": "Encostada à montanha, no vale abaixo da barragem.",
+    "citacao_curta": "ficava uma aldeia de doze casas de pedra com telhados de turfa cobertos de neve"
+   }
+  ],
+  "personagens_em_cena": [
+   "Nara Voss",
+   "Tibo",
+   "Gorm",
+   "Hanne Voss",
+   "Ilan",
+   "Aurelia",
+   "Ulvra",
+   "Pell Andrask",
+   "Thor",
+   "Eron Tahl",
+   "oito homens do trenó",
+   "famílias de Hvel (ao longe)"
+  ],
+  "faccoes_casas_guildas": [
+   "Cooperativa dos Reparadores do Cobre / Rede Cívica — 'a rede da heresia' que segura o Retorno",
+   "Escola Politécnica — o tubo de medição (118 graus dois dias depois)",
+   "Reinos da Tempestade — Thor ('Odinsson') segurando a barragem pelas famílias de Hvel",
+   "Credores — o trenó e a caixa; Eron Tahl larga o contrato",
+   "Coroa dos Limiares — Aurelia sem portas no vale"
+  ],
+  "objetos_e_armas": [
+   "alavanca vermelha e painelzinho de reguladores",
+   "cano da Rede Cívica",
+   "globo de vidro de Clarão de quarenta anos",
+   "espinhos da crista da dragoa (onde se agarram)",
+   "trenó encalhado, correias cortadas pela faca de Eron, fechos de bronze da tampa",
+   "caixa com cerâmica de lastro cinza-escura",
+   "o Mandato: objeto de cerâmica branca e cristal, do tamanho de um homem dobrado, com nervuras, câmaras e fios de prata como veias, brilhando cor de mel",
+   "manopla com as três células vazias"
+  ],
+  "magia_em_uso": [
+   {
+    "disciplina": "Brasa — Retorno na Rede Cívica",
+    "o_que_acontece": "O que o corredor devolve corre pelo cano para dois ramais; o excedente sobe pelos troncos da torre e se perde na pedra.",
+    "visual_com_selos": "Bright Brasa red (#C8332F) flow-lines racing along felt-wrapped copper into the Copper district's walls; a second surge climbing the four dead bronze trunks of the Tower of Noon and fading into stone."
+   },
+   {
+    "disciplina": "Clarão — globo de quarenta anos",
+    "o_que_acontece": "Ilan esmaga o globo cheio de luz acumulada: um clarão branco absoluto que bate nas paredes do vale como sinal.",
+    "visual_com_selos": "A burst of Clarao ivory-white (#F2E6C2) light filling the courtyard and the valley walls for an instant, its old engraved Clarao seal cracking open like an eggshell."
+   },
+   {
+    "disciplina": "Brasa invertida — Thor segurando a barragem",
+    "o_que_acontece": "Thor tira calor da água, do ar e do próprio corpo e congela a base da barragem; o ar em volta dele treme de quente.",
+    "visual_com_selos": "From his raised hands into the ice base runs a fan of red Brasa seal-lines framed in coronal gold bearing his own mark, drawing heat OUT: frost knitting the cracks shut behind him while the air around his body ripples with heat and the snow is melted in a twenty-metre ring."
+   },
+   {
+    "disciplina": "Coroa (Limiares) — passagem de carne e osso",
+    "o_que_acontece": "Sem porta nem âncora no lugar, Aurelia põe uma palma no lago e a outra sobre o Mandato e empurra o lago inteiro por ela; o Retorno, sem pedra onde cair, cai no corpo dela.",
+    "visual_com_selos": "Two conjured coronal gold seals burn on her own palms — one under the grey water, one over the ceramic — joined by a link running through her body; no ground-stroke drawn, so the backlash visibly floods back into her as cracks of gold light up her arms; a wave of grey water bursts out of thin air over the box."
+   },
+   {
+    "disciplina": "Coroa (Calvenor) — o Mandato se desfaz",
+    "o_que_acontece": "A cerâmica de lastro racha com a água a zero grau e a luz do Sol de Inverno treme e se apaga.",
+    "visual_com_selos": "Inside the crystal-and-white-ceramic form, faint gold sun-marked seals along its veins flicker and go out; the honey light dies into steam and shards."
+   }
+  ],
+  "ilustracoes": [
+   {
+    "tipo": "vinheta_abertura",
+    "momento": "~0%",
+    "trecho_ancora": "Nara Voss soube que tinha dado certo porque o cano esquentou na mão dela.",
+    "descricao_visual": "Nara Voss (long thick copper-red braid, freckles, brass goggles pushed up on her forehead, sleeveless leather vest, fingerless gloves, tool belt, old burn scars on her forearms) kneels in a brick technical gallery with her palm flat on an arm-thick copper pipe wrapped in felt and canvas, the metal suddenly glowing warm; Tibo (14, runny nose, wool cap pulled down to the eyebrows) with his ear pressed to the pipe; a young man (Gorm) gripping a red lever on a small regulator panel. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~16%",
+    "trecho_ancora": "Durante três horas, na madrugada do décimo terceiro dia, o Cobre e três abrigos da margem norte de Vhalessa tiveram uma noite de verão.",
+    "descricao_visual": "Night in the Copper district: Hanne Voss (Nara's mother, headscarf, list in hand) shouting at the queue outside the green-doored workshop; along the steep street of tin-workers' houses every window fogging from inside, bricks steaming in the cold, people peeling off their coats, a faint red glow of seal-lines along the copper coils inside the walls. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "dupla",
+    "momento": "~49%",
+    "trecho_ancora": "E na base da barragem, de pé, com as costas contra a muralha de gelo que chorava e as duas mãos erguidas contra ela, estava Thor.",
+    "descricao_visual": "Spread: a 30–40 m wall of blue-white ice closing a valley from slope to slope, weeping water through dark cracks, a new grey meltwater lake pressing behind it; at its base Thor (huge god, about 2.2 m, small narrowed blue eyes, short crooked-handled hammer at his belt, furs of the Storm Kingdoms) stands with his back and both raised hands against the ice, a fan of red-and-gold seal-lines drawing heat out of it, the air around him shimmering, snow melted in a ring. Descending in a spiral above: Ulvra, the Old Woman of the Crests (storm dragon about 30 m long; scales the blue-grey of wet slate with frost-silver edges; thin dark wing membranes like cured leather, veins visible against light; long narrow head, fine snout, two rows of short horns from brow to nape; solid white hailstone eyes with no iris or pupil; a dorsal crest of tall thin translucent ice-blade spines glowing cold blue-white from within) with three riders clinging between her crest spines — Aurelia (goddess, a head taller than Ilan, golden-blonde long wavy hair torn loose by wind, amber eyes, gold filigree collar with diamond pendant, heavy fur coat), Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes, long charcoal-black high-collared coat, plain iron longsword, iron ballast plates on boots, steel gauntlet with three ceramic cells on his LEFT forearm, LEFT hand wrapped in linen bandage at the edge of the gauntlet, guarding broken ribs), and a terrified engineer. Below the dam, a tiny empty village of twelve stone houses with turf roofs; dark dots of people and goats higher on the slope. Dawn light. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "pagina_inteira",
+    "momento": "~94%",
+    "trecho_ancora": "Ela fez das próprias mãos as duas extremidades.",
+    "descricao_visual": "At the lake edge where a sail sledge has run aground sideways: Aurelia (goddess, a head taller than Ilan, golden-blonde long wavy hair torn loose by wind, amber eyes, gold filigree collar with diamond pendant, heavy fur coat) kneels between the grey water and the open box, her right hand plunged wrist-deep in the lake, her left laid on cracked dark ceramic around a glowing form of white ceramic and crystal with silver veins and honey-gold light; burning gold seals on both palms; a wave of icy water pouring out of the air onto the form, steam exploding. Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes, long charcoal-black high-collared coat, plain iron longsword, iron ballast plates on boots, steel gauntlet with three ceramic cells on his LEFT forearm, LEFT hand wrapped in linen bandage at the edge of the gauntlet, guarding broken ribs) and Eron Tahl thrown back on either side of the sledge. Behind them the weeping ice dam. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": true
+   },
+   {
+    "tipo": "respiro",
+    "momento": "~100%",
+    "trecho_ancora": "uma das cabras de Hvel balir.",
+    "descricao_visual": "Utter stillness after the storm of steam: a white valley floor, a grounded sledge with shards of dull ceramic in a steaming puddle, the great ice wall quiet; high up on the snowy slope, a single goat silhouetted against the morning sky. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   }
+  ],
+  "citacao_respiro": "Aguento porque não posso parar. É diferente.",
+  "documentos_do_mundo": [
+   {
+    "tipo": "aviso",
+    "conteudo": "NÃO ABRAM AS JANELAS! Vai passar! Não abram as janelas para dormir! (grito de Hanne Voss à fila e à rua do Estanho, transcrito como aviso de porta)",
+    "onde_entra": "Não abram as janelas!"
+   },
+   {
+    "tipo": "relatório",
+    "conteudo": "Medição pelo tubo da Politécnica — abóbada externa norte, dois dias após o fechamento: 118 graus. Perda atual: um décimo de grau por dia (perda natural de uma abóbada de sal). — N. Voss",
+    "onde_entra": "Dois dias depois, Nara ia medir pelo tubo da Politécnica"
+   }
+  ],
+  "epigrafe_sugerida": "«A Rede Cívica não aguenta tudo; mas aguenta o bastante, se for devagar.» — Nara Voss"
+ },
+ {
+  "cap": 28,
+  "pov": "Ilan (com relatos de Mara e da cidade)",
+  "resumo": "A barragem não rompe: Thor a segura até Pell desligar a Jurisdição e cai de joelhos ao lado da Velha das Cristas, e Hvel acolhe todos com sopa de cabra e licor; Oriel se deixa prender sem resistir e o inquérito vira uma investigação sobre os Credores, entregue a Mara. Ithren escapa pela galeria de mineração até o cais da Fornalha Velha, deixando um disco com a balança e o bilhete 'A dívida continua'; Brannoc, depois de deixar a miniatura de Lys sobre o livro de delegações, é encontrado morto no gelo do vale de cima, e Aurelia decide que suas portas precisam de uma assembleia e de recurso. A cidade atravessa o inverno com a Rede Cívica tornada serviço público, a Kaltz é processada, a patente do favo volta a Nara, e no fim de março Anúbis enterra Calvenor no gelo do Lento e lê a carta do deus diante de seiscentas mil pessoas, que respondem cantando.",
+  "locais": [
+   {
+    "nome": "Base da barragem da Garganta",
+    "cidade_ou_regiao": "Passo Cinzento — fundo do vale",
+    "descricao_fisica": "Neve derretida, o deus de joelhos, a dragoa deitada de crista apagada; sol nascendo atrás das montanhas do leste.",
+    "relacao_espacial": "No fundo do vale; Hvel logo abaixo.",
+    "citacao_curta": "subia por trás das montanhas do leste e caía sobre o vale branco"
+   },
+   {
+    "nome": "Casas de Hvel",
+    "cidade_ou_regiao": "Vale de Hvel",
+    "descricao_fisica": "Casas de pedra de telhado de turfa; fogo aceso; porta aberta por onde Gerda conversa com a dragoa deitada do lado de fora.",
+    "relacao_espacial": "Abaixo da barragem, intactas.",
+    "citacao_curta": "para as casas de pedra de telhado de turfa que a água não chegara a levar"
+   },
+   {
+    "nome": "Saída da galeria de mineração",
+    "cidade_ou_regiao": "Vhalessa — cais da Fornalha Velha",
+    "descricao_fisica": "Saída aberta e disfarçada numa parede do cais; pegadas de um homem só na neve rumo aos barcos; uma pedra com o disco e o papel.",
+    "relacao_espacial": "No leito do Lento, 2 km ao sul da abóbada norte, debaixo da Fornalha Velha; as pegadas seguem para o sul.",
+    "citacao_curta": "A galeria de mineração dava mesmo no leito do Lento, dois quilômetros ao sul, debaixo da Fornalha Velha, numa saída que alguém tinha aberto e disfarçado numa parede do cais."
+   },
+   {
+    "nome": "Vale de cima (onde Brannoc é encontrado)",
+    "cidade_ou_regiao": "Passo Cinzento",
+    "descricao_fisica": "Gelo acima da barragem, perto do ninho da dragoa, de frente para o lago que volta a congelar.",
+    "relacao_espacial": "Acima da barragem, não muito longe da estação.",
+    "citacao_curta": "no gelo do vale de cima, acima da barragem, perto do lugar onde a Velha das Cristas fazia ninho"
+   },
+   {
+    "nome": "Telhado da serralheria de Gunnar",
+    "cidade_ou_regiao": "Vhalessa — Cobre",
+    "descricao_fisica": "O mesmo telhado quente; vista da torre escura do outro lado do rio.",
+    "relacao_espacial": "No Cobre, de frente para a torre na outra margem.",
+    "citacao_curta": "Ela olhou para a torre do outro lado do rio, ainda escura."
+   },
+   {
+    "nome": "Gelo do rio Lento — túmulo de Calvenor",
+    "cidade_ou_regiao": "Vhalessa — rio Lento",
+    "descricao_fisica": "O lugar onde o deus caiu; a cidade inteira no gelo, nos telhados e nas janelas.",
+    "relacao_espacial": "Diante da Praça do Meio-Dia; um lado do rio começa a canção e o outro responde.",
+    "citacao_curta": "no gelo do rio Lento, no lugar onde ele tinha caído"
+   }
+  ],
+  "personagens_em_cena": [
+   "Thor",
+   "Ulvra",
+   "Ilan",
+   "Aurelia",
+   "Pell Andrask",
+   "homens de Eron Tahl",
+   "Gerda (a mais velha de Hvel)",
+   "Mara Quen",
+   "Sevran",
+   "Oriel Mast",
+   "Cassia Vale",
+   "Brannoc Ister (morto)",
+   "Anúbis, Guardião da Necrópole",
+   "embalsamadores do Arquivo das Areias",
+   "Nara Voss",
+   "Tibo",
+   "Liesl e Teodor Kaltz (relatados)",
+   "Avó Ruta (citada)"
+  ],
+  "faccoes_casas_guildas": [
+   "Câmara dos Pactos — prisão de Oriel; inquérito sobre a 'organização clandestina autodenominada Credores'; julgamento futuro em Tamsin",
+   "Colégio dos Auditores — carta do Decanato 'quase um pedido de desculpas'",
+   "Credores — disco de cerâmica branca com a balança torta e o bilhete 'A dívida continua.'",
+   "Arquivo das Areias / Necrópole (Anúbis) — tábua de pedra da custódia, embalsamadores, custódia para Brannoc",
+   "Conselho Municipal — a Rede Cívica declarada serviço público; Ulvra assiste do pátio pela janela",
+   "Cooperativa dos Reparadores do Cobre — encomenda de cobre e cerâmica a Neska",
+   "Liga dos Peritos de Âncora — anula e re-registra a patente do favo com a assinatura de Nara",
+   "Companhia Térmica Kaltz — processada no Tribunal dos Danos de Retorno; Fiança Limitada e o selo do Consórcio entre as provas",
+   "Fornalha Velha — canção de trabalho cantada de margem a margem"
+  ],
+  "objetos_e_armas": [
+   "armas largadas na neve pelos mercenários",
+   "sopa de cabra, pão escuro, licor de bagas",
+   "correntes nos pulsos enfaixados de Oriel",
+   "tabuleiro de Muralhas",
+   "disco de cerâmica branca com balança gravada e papel dobrado",
+   "placa de registro luminoso",
+   "miniatura de Lys (moça de 16 anos, cabelo castanho em trança, sorriso torto)",
+   "livro de delegações aberto na renovação de setembro",
+   "luvas tiradas de Brannoc",
+   "tábua de pedra do Guardião",
+   "carta de Calvenor"
+  ],
+  "magia_em_uso": [
+   {
+    "disciplina": "Desligamento manual da Jurisdição",
+    "o_que_acontece": "Pell desce ao nível de serviço e apaga com as mãos os elos que ainda levavam calor ao gelo.",
+    "visual_com_selos": "The last red seal-lines on the iron ring and in the ice wall going dark one by one under an engineer's hands."
+   },
+   {
+    "disciplina": "Brasa — Rede Cívica em expansão",
+    "o_que_acontece": "A Rede tira das Cisternas o que precisa para aquecer a cidade, com menos eficiência e mais custo.",
+    "visual_com_selos": "New copper pipes along streets carrying modest Brasa red (#C8332F) seal-lines, small and many, mortal-made, without any coronal gold."
+   }
+  ],
+  "ilustracoes": [
+   {
+    "tipo": "vinheta_abertura",
+    "momento": "~5%",
+    "trecho_ancora": "E os dois ficaram assim, o deus e o dragão, sem dizer nada",
+    "descricao_visual": "Thor (huge god, about 2.2 m, small narrowed blue eyes, short crooked-handled hammer at his belt, furs of the Storm Kingdoms) on his knees in melted snow at the foot of a vast ice wall, head bowed, breathing hard; Ulvra, the Old Woman of the Crests (storm dragon about 30 m long; scales the blue-grey of wet slate with frost-silver edges; thin dark wing membranes like cured leather, veins visible against light; long narrow head, fine snout, two rows of short horns from brow to nape; solid white hailstone eyes with no iris or pupil; a dorsal crest of tall thin translucent ice-blade spines glowing cold blue-white from within) lies enormous beside him on the ice with her crest unlit; the real winter sun rising behind eastern mountains over a white valley. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~34%",
+    "trecho_ancora": "um disco de cerâmica branca do tamanho de uma moeda, com uma balança gravada",
+    "descricao_visual": "Still-life spot: on a snowy stone by a disguised opening in an old quay wall, a coin-sized white ceramic disc engraved with a crooked balance (one pan lower) resting on a folded paper; single set of footprints leading away toward moored boats and the south. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": true
+   },
+   {
+    "tipo": "spot",
+    "momento": "~47%",
+    "trecho_ancora": "Aurelia foi buscá-lo.",
+    "descricao_visual": "On the upper glacier above the dam: a heavy grey-bearded man sits dead on the ice with his back to the mountain, gloves set beside him, hands crossed in his lap, peaceful face, facing a lake beginning to refreeze; Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) stands beside him holding a small framed miniature; two embalmers wait at a distance. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": true
+   },
+   {
+    "tipo": "respiro",
+    "momento": "~57%",
+    "trecho_ancora": "Ela olhou para a torre do outro lado do rio, ainda escura.",
+    "descricao_visual": "Night rooftop of the Copper district, warm pipes, snow; seen from behind, two figures on the parapet looking across a frozen river at a dark tower; a small miniature portrait in a gloved hand. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "pagina_inteira",
+    "momento": "~96%",
+    "trecho_ancora": "Depois, sem que ninguém mandasse, começou a cantar.",
+    "descricao_visual": "End of March on the frozen river Lento before the Square of Noon: Anubis, Guardian of the Necropolis (a god with a long jackal snout), stands on the ice reading a letter, a stone tablet beside him, two embalmers behind; Sevran (about 45, tall and stooped, dark curly hair streaked with white, grey beard, big careful hands, wool cap, cook's apron) in the front row; Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes, long charcoal-black high-collared coat, plain iron longsword, iron ballast plates on boots, steel gauntlet with three ceramic cells on his LEFT forearm, LEFT hand wrapped in linen bandage at the edge of the gauntlet, guarding broken ribs, plain bronze ring on the middle finger of his RIGHT hand) beside him; the whole city — six hundred thousand — on the ice, the roofs and the windows of both banks, mouths open in song; the dark tower above. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": true
+   }
+  ],
+  "citacao_respiro": "Entregue a casa arrumada.",
+  "documentos_do_mundo": [
+   {
+    "tipo": "bilhete",
+    "conteudo": "A dívida continua. [papel dobrado, letra impessoal, sob um disco de cerâmica branca com a balança torta gravada]",
+    "onde_entra": "três palavras, na letra impessoal de quem escreve devagar para não ser reconhecido pela letra"
+   },
+   {
+    "tipo": "relatório",
+    "conteudo": "Conselho Municipal de Vhalessa — sessão de terça-feira (treze horas): a Rede Cívica deixa de ser considerada irregular e passa a serviço público, a ser ampliada. Verba votada para a Cooperativa dos Reparadores do Cobre encomendar a Neska todo o cobre e toda a cerâmica de reservatório disponíveis, e quatro engenheiros. Presente, do pátio, pela janela: a senhora Ulvra (voz, sem voto).",
+    "onde_entra": "O Conselho, depois de treze horas de discussão numa terça-feira"
+   },
+   {
+    "tipo": "contrato",
+    "conteudo": "Liga dos Peritos de Âncora — Anula-se o registro da patente do favo de reservatório por falta da assinatura do inventor. Novo registro: inventora Nara Voss.",
+    "onde_entra": "A Liga dos Peritos de Âncora anulou a patente do favo de Nara"
+   }
+  ],
+  "epigrafe_sugerida": "«Em Hvel não se pergunta a um hóspede o que ele fez antes de bater à porta.» — costume das montanhas"
+ },
+ {
+  "cap": 29,
+  "pov": "Ilan e Aurelia (alternando)",
+  "resumo": "Aurelia leva duas semanas para 'voltar a ser deusa': come e dorme mais, segura portas com esforço, briga com Ione e é tratada pela cidade com uma intimidade áspera. Numa noite de neve ela bate duas vezes à porta do quarto de Ilan na serralheria e diz 'agora é depois', querendo ser tida 'gasta'; eles se amam com cuidado (ele pede licença a cada gesto, ela chora). No escuro, Ilan conta que entendeu o preço da folha 39: era o corpo e o poder que ela gastaria — e já pagou no Passo Cinzento; Aurelia responde que descobriu que pode diminuir, e talvez, diminuindo devagar, envelhecer um pouco ao lado dele.",
+  "locais": [
+   {
+    "nome": "Escritório do porteiro da estação",
+    "cidade_ou_regiao": "Vhalessa — Estação das Portas",
+    "descricao_fisica": "Escritório pequeno onde Ione e Aurelia ficam em silêncio comendo bolinhos.",
+    "relacao_espacial": "Dentro da estação, junto à entrada.",
+    "citacao_curta": "no escritório do porteiro da estação"
+   },
+   {
+    "nome": "Quarto dos fundos da serralheria de Gunnar",
+    "cidade_ou_regiao": "Vhalessa — Cobre",
+    "descricao_fisica": "Quarto pequeno, quente da Rede Cívica nas paredes; lamparina baixa; catre estreito; baú; neve caindo no pátio escuro.",
+    "relacao_espacial": "No Cobre; o zumbido da Rede Cívica corre pelas paredes.",
+    "citacao_curta": "Ilan estava no quarto dos fundos da serralheria de Gunnar, à noite"
+   },
+   {
+    "nome": "Átrio de Soleira — escadaria oeste (mencionada)",
+    "cidade_ou_regiao": "Soleira",
+    "descricao_fisica": "Onde o homem dos Altiplanos vende bolinhos de grão-de-bico.",
+    "relacao_espacial": "Do outro lado da porta de Soleira.",
+    "citacao_curta": "do homem dos Altiplanos da escadaria oeste do Átrio"
+   }
+  ],
+  "personagens_em_cena": [
+   "Aurelia",
+   "Ilan",
+   "Ione Varga",
+   "Avó Ruta (citada)",
+   "gigante ruivo das panquecas (citado)",
+   "irmã mais nova de Ingrith (citada)",
+   "Mara (devolveu o anel)"
+  ],
+  "faccoes_casas_guildas": [
+   "Mesa das Coroas — 'que vá comer molho de pimenta'",
+   "Câmara dos Pactos — vai receber o Plano como prova do inquérito dos Credores",
+   "Altiplanos da Serpente — o vendedor de bolinhos da escadaria oeste do Átrio"
+  ],
+  "objetos_e_armas": [
+   "as 42 folhas do Plano, guardadas no baú",
+   "lamparina",
+   "anel de bronze de volta ao dedo médio direito de Ilan (morno quando ela se aproxima)",
+   "embrulho de bolinhos de grão-de-bico",
+   "casaco de pele com neve nos ombros"
+  ],
+  "magia_em_uso": [
+   {
+    "disciplina": "Coroa (Limiares) diminuída",
+    "o_que_acontece": "Aurelia segura até as portas pequenas com uma lentidão nova; o anel fica morno quando ela chega.",
+    "visual_com_selos": "Her conjured gold seals now thinner and slower to light, flickering at the edges; the ring's tiny gold seal warming on Ilan's finger as she approaches the door."
+   }
+  ],
+  "ilustracoes": [
+   {
+    "tipo": "vinheta_abertura",
+    "momento": "~11%",
+    "trecho_ancora": "E as duas ficavam sentadas em silêncio no escritório do porteiro da estação.",
+    "descricao_visual": "A tiny porter's office in the station: Chancellor Ione Varga (old, very short, face wrinkled like a winter apple, grey clothes, grey shawl) and Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) (pale, tired) sitting side by side in silence, a paper parcel of warm chickpea cakes open between them, a small brazier, frost on the window. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "pagina_inteira",
+    "momento": "~27%",
+    "trecho_ancora": "Abriu. Era ela.",
+    "descricao_visual": "A narrow door of a workshop back room opening at night: on the threshold Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) with hood down and snow on her shoulders, a full head taller than Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes, long charcoal-black high-collared coat, plain iron longsword, iron ballast plates on boots, steel gauntlet with three ceramic cells on his LEFT forearm, LEFT hand wrapped in linen bandage at the edge of the gauntlet, guarding broken ribs, plain bronze ring on the middle finger of his RIGHT hand), who holds the door with a lamp-lit room behind him (cot, trunk, scattered papers); snow falling in the dark courtyard behind her. Her face open, without armour. Tender, restrained. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~46%",
+    "trecho_ancora": "Antes de tudo, ele tirou as quarenta e duas folhas do catre, uma por uma, com cuidado, e as guardou no baú.",
+    "descricao_visual": "Close spot, warm low lamplight: a man's hands, one bandaged, laying sheets of tiny handwriting one by one into an open wooden trunk with great care; a woman's fur coat draped nearby. Non-explicit, quiet. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "respiro",
+    "momento": "~62%",
+    "trecho_ancora": "A lamparina tinha apagado. O quarto estava escuro e quente.",
+    "descricao_visual": "Near-dark atmosphere: a small room seen only as faint warm shapes, copper pipes along the wall barely glowing, a window with snow falling outside under a faint night sky. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   }
+  ],
+  "citacao_respiro": "Agora é depois.",
+  "documentos_do_mundo": [
+   {
+    "tipo": "bilhete",
+    "conteudo": "[Plano de Dissolução, folha 39, nota de margem, relida por Ilan:] rota de transição: a definir. hipótese: rede de limiares. uma Ponte de Custódia de grande capacidade. só uma Coroa pode sustentar. consultar a Soberania dos Limiares. — ela ainda não sabe o preço. não lhe dizer antes da hora.",
+    "onde_entra": "Você lembra da nota na margem da folha trinta e nove."
+   }
+  ],
+  "epigrafe_sugerida": "«Ela ainda não sabe o preço. Não lhe dizer antes da hora.» — Plano de Dissolução, folha 39"
+ },
+ {
+  "cap": 30,
+  "pov": "Ilan (terceira pessoa próxima)",
+  "resumo": "Em abril, a Câmara inocenta Ilan e lhe oferece ser Carrasco registrado, pago e submetido ao plenário; ele recusa a 'coleira', mas promete colaboração voluntária no inquérito dos Credores, e a Comissária registra exatamente isso. Aurelia paga as 112 dobras do contrato, Ilan revela que eram o que faltava para um terreno em Tarvel, onde não neva, e ela propõe construir ali uma porta pequena na cerca, com trinco do lado dele e campainha do dela; ele decide comprar o terreno mas ficar por ora. Despedem-se de Sevran (que irá ao julgamento de Oriel em Tamsin e lhe dá bolo de mel), de Nara (que o abraça e pede a célula de volta quando trincar de vez) e atravessam de mãos dadas a porta de Soleira, deixando para trás a Torre do Meio-Dia apagada para sempre.",
+  "locais": [
+   {
+    "nome": "Gabinete do térreo da delegação (degelo)",
+    "cidade_ou_regiao": "Vhalessa — Alta Mesa",
+    "descricao_fisica": "Manhã de degelo; Aurelia encostada na janela, a Comissária atrás da mesa.",
+    "relacao_espacial": "Na Alta Mesa.",
+    "citacao_curta": "numa carta do plenário de Tamsin que a Comissária Vale levou ao gabinete do térreo da delegação"
+   },
+   {
+    "nome": "Tarvel (mencionado)",
+    "cidade_ou_regiao": "Tarvel — colinas",
+    "descricao_fisica": "Terreno nas colinas onde não neva nunca.",
+    "relacao_espacial": "Longe de Vhalessa; a ser ligado por uma porta pequena na cerca.",
+    "citacao_curta": "Para o terreno em Tarvel. Nas colinas. Onde não neva nunca."
+   },
+   {
+    "nome": "Cozinha do Lento",
+    "cidade_ou_regiao": "Vhalessa — Fornalha Velha",
+    "descricao_fisica": "Menos gente agora; Avó Ruta jogando cartas; porta dos fundos que range.",
+    "relacao_espacial": "Margem sul.",
+    "citacao_curta": "Foram à Cozinha do Lento."
+   },
+   {
+    "nome": "Oficina da porta verde",
+    "cidade_ou_regiao": "Vhalessa — Cobre",
+    "descricao_fisica": "Emaranhado de tubos de cobre no chão; Nara e Pell discutindo o novo ramal; Tibo num caixote com prancheta.",
+    "relacao_espacial": "No Cobre.",
+    "citacao_curta": "Nara Voss estava de joelhos no chão, no meio de um emaranhado de tubos de cobre."
+   },
+   {
+    "nome": "Saguão da estação e arco de Soleira",
+    "cidade_ou_regiao": "Vhalessa — Estação das Portas",
+    "descricao_fisica": "Colunas de ferro, lâmpadas de Clarão, 84 portas; arco de Soleira de bronze esverdeado (ano 708); a 61 reaberta no fundo da galeria norte com dois guardas da Câmara; pela porta principal, a margem norte, a Feira sendo desmontada, a praça e a torre.",
+    "relacao_espacial": "Na margem norte; do outro lado do arco, a galeria norte do Átrio de Soleira.",
+    "citacao_curta": "A sessenta e um reaberta no fundo da galeria norte, guardada agora por dois guardas da Câmara"
+   },
+   {
+    "nome": "Torre do Meio-Dia (vista final)",
+    "cidade_ou_regiao": "Vhalessa — Praça do Meio-Dia",
+    "descricao_fisica": "220 m de pedra e bronze; no alto, a grande lente de bronze e vidro rachada em diagonal, apagada.",
+    "relacao_espacial": "No alto da cidade, vista da porta principal da estação.",
+    "citacao_curta": "Duzentos e vinte metros de pedra e bronze, com o Sol lá no alto, a grande lente de bronze e vidro rachada em diagonal."
+   }
+  ],
+  "personagens_em_cena": [
+   "Ilan",
+   "Aurelia",
+   "Cassia Vale",
+   "Sevran",
+   "Avó Ruta",
+   "Nara Voss",
+   "Pell Andrask",
+   "Tibo",
+   "Ione Varga (do outro lado do arco)"
+  ],
+  "faccoes_casas_guildas": [
+   "Câmara dos Pactos — oferta de 'Carrasco da Câmara' (registrado, pago, proibido de agir sem mandado); relatório da Comissária",
+   "Coroa dos Limiares — documento de fim de custódia com o selo da chave de bronze; 341 portas no Átrio, duas mil e tantas em Aresta",
+   "Credores — Ithren 'vivo e solto', 'há outros'",
+   "Cooperativa / Rede Cívica — novo ramal para a galeria da Casa da Fornalha",
+   "Ordem da Última Sentença — o último executor recusa ser alistado"
+  ],
+  "objetos_e_armas": [
+   "carta do plenário de Tamsin",
+   "112 dobras",
+   "documento de fim de custódia selado com a chave de bronze",
+   "bolo de mel em papel (padaria da rua de baixo, reaberta)",
+   "manopla com três células (a cinza-escura trincada mas inteira)",
+   "prancheta de Tibo, chave inglesa de Nara",
+   "lista na mão de Ione"
+  ],
+  "magia_em_uso": [
+   {
+    "disciplina": "Coroa (Limiares) — porta de Soleira",
+    "o_que_acontece": "Aurelia põe a mão no batente e reconhece a porta; os dois atravessam para o Átrio.",
+    "visual_com_selos": "The greenish-bronze arch's engraved seals light in steady coronal gold — a little dimmer than before — framing the warm lamp-lit Atrium where a small grey figure waits with a list."
+   }
+  ],
+  "ilustracoes": [
+   {
+    "tipo": "vinheta_abertura",
+    "momento": "~7%",
+    "trecho_ancora": "Ilan leu a carta de pé, no gabinete, com Aurelia encostada na janela e a Comissária do outro lado da mesa.",
+    "descricao_visual": "Thaw-morning light in a small office: Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes, long charcoal-black high-collared coat, plain iron longsword, iron ballast plates on boots, steel gauntlet with three ceramic cells on his LEFT forearm, LEFT hand wrapped in linen bandage at the edge of the gauntlet, guarding broken ribs, plain bronze ring on the middle finger of his RIGHT hand) standing, reading a sealed letter; Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) leaning against the window with dripping icicles outside; Commissioner Cassia Vale (very tall, angular pale face, dark eyes, grey uniform of the Chamber of Pacts) behind the desk with crossed arms. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~59%",
+    "trecho_ancora": "Bolo de mel — disse. — Da padaria da rua de baixo.",
+    "descricao_visual": "Sevran (about 45, tall and stooped, dark curly hair streaked with white, grey beard, big careful hands, wool cap, cook's apron) at the door of the soup kitchen holding out a small paper parcel of honey cake to Ilan; behind them the old grandmother at a card table making a rude affectionate gesture. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "spot",
+    "momento": "~69%",
+    "trecho_ancora": "fez uma coisa que surpreendeu os dois: abraçou-o.",
+    "descricao_visual": "Nara Voss (long thick copper-red braid, freckles, brass goggles pushed up on her forehead, sleeveless leather vest, fingerless gloves, tool belt, old burn scars on her forearms) hugging Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes, long charcoal-black high-collared coat, plain iron longsword, iron ballast plates on boots, steel gauntlet with three ceramic cells on his LEFT forearm, LEFT hand wrapped in linen bandage at the edge of the gauntlet, guarding broken ribs, plain bronze ring on the middle finger of his RIGHT hand) quickly and awkwardly in the middle of a tangle of copper pipes on the workshop floor, he wincing over his ribs; an engineer with oil-stained hands across the tangle and Tibo (14, runny nose, wool cap pulled down to the eyebrows) on a crate raising a clipboard. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "pagina_inteira",
+    "momento": "~96%",
+    "trecho_ancora": "Os dois ficaram assim, de mãos dadas diante do arco aberto",
+    "descricao_visual": "Noon in the station hall: Ilan Varek (34, tall and lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes, long charcoal-black high-collared coat, plain iron longsword, iron ballast plates on boots, steel gauntlet with three ceramic cells on his LEFT forearm, LEFT hand wrapped in linen bandage at the edge of the gauntlet, guarding broken ribs, plain bronze ring on the middle finger of his RIGHT hand) and Aurelia, Sovereign of Thresholds (goddess; noticeably tall, a full head taller than Ilan; golden-blonde long wavy hair gathered in a winter bun pierced by a bronze key; amber eyes; gold filigree collar with a diamond pendant at the throat; heavy fur coat) hold hands (right hand in right hand, the bronze ring visible) before an open greenish-bronze arch glowing with gold seals; through it a warm vast lamp-lit gallery where Chancellor Ione Varga (old, very short, face wrinkled like a winter apple, grey clothes, grey shawl) stands very straight with a list. Behind them the empty hall, iron columns, and through the open main door April light, a thawing river and the dark tower. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "respiro",
+    "momento": "~99%",
+    "trecho_ancora": "a Torre do Meio-Dia erguia o seu Sol apagado, que nunca mais ia acender",
+    "descricao_visual": "Wide quiet cityscape in April: the 220 m stone-and-bronze Tower of Noon against a clear pale sky, the great bronze-and-glass lens at its top cracked diagonally and unlit; below, the Ice Fair being dismantled on a thawing river, thin smoke from chimneys, new copper pipes along the streets. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   }
+  ],
+  "citacao_respiro": "Que não vou descobrir sozinho.",
+  "documentos_do_mundo": [
+   {
+    "tipo": "carta",
+    "conteudo": "Câmara dos Pactos — Plenário (Tamsin), abril. Reconhecem-se os serviços do último membro conhecido da extinta Ordem da Última Sentença na elucidação da morte da Coroa de Calvenor e na interrupção da organização clandestina autodenominada Credores. Declara-se Ilan Varek inocentado, em caráter definitivo, de qualquer participação na morte da referida Coroa. Oferece-se a Ilan Varek a condição de Carrasco da Câmara dos Pactos: registrado, pago, submetido ao plenário, autorizado a executar apenas Coroas condenadas pela Concordata e proibido de agir sem mandado.",
+    "onde_entra": "A proposta veio em abril"
+   },
+   {
+    "tipo": "relatório",
+    "conteudo": "Relatório da Comissária de Segurança em Vhalessa: o senhor Varek recusou o registro, mas ofereceu colaboração voluntária, não vinculante, revogável à vontade.",
+    "onde_entra": "Vou pôr isso no relatório"
+   },
+   {
+    "tipo": "recibo",
+    "conteudo": "Encerramento da custódia — Ilan Varek. Pago ao custodiado: cento e doze dobras (valor do contrato firmado na cela). [selo da chave de bronze]",
+    "onde_entra": "ela entregou a ele cento e doze dobras, nem uma a mais, nem uma a menos"
+   }
+  ],
+  "epigrafe_sugerida": "«'Nada' já é uma escolha, e é a pior.» — Cassia Vale, Comissária de Segurança"
+ },
+ {
+  "cap": 31,
+  "pov": "Narrador externo (a velha mestra e Ithren)",
+  "resumo": "Numa cidade das Cidades Livres do oeste, numa sala de contabilidade sobre o armazém da Fiança Ltda. — a seguradora que encomendou as novecentas células —, uma velha de cabelo branco curto e pingente de balança torta espera notícias; Ithren chega de barco e conta a perda da caixa e do Mandato. Ela é a mestra de Ilan, viva, que queimou a Ordem com as próprias mãos depois de concluir, medindo mil Coroas, por que todas estão morrendo desde a Confluência; repreende a pressa de Ithren e decide não fazer nada com Ilan por enquanto, certa de que um dia ele verá o mesmo e virá procurá-la. Em Tarvel, o terreno já tem dono, uma cerca e uma porta pequena com trinco de um lado e campainha do outro.",
+  "locais": [
+   {
+    "nome": "Cidade portuária das Cidades Livres do oeste",
+    "cidade_ou_regiao": "Cidades Livres (oeste)",
+    "descricao_fisica": "Inverno que é só chuva; mar com cheiro de sal e alcatrão; porto com mastros contra o céu cinzento.",
+    "relacao_espacial": "Muito longe de Vhalessa; Ithren chegou descendo para o sul de barco em dois dias.",
+    "citacao_curta": "numa cidade das Cidades Livres do oeste, onde o inverno era só chuva e o mar cheirava a sal e alcatrão"
+   },
+   {
+    "nome": "Sala de contabilidade da Fiança Ltda.",
+    "cidade_ou_regiao": "Cidades Livres (oeste)",
+    "descricao_fisica": "Sala em cima de um armazém, livro-razão aberto, lamparina de óleo, janela para o porto; placa de latão polida na porta.",
+    "relacao_espacial": "No andar de cima do armazém, com vista para o porto.",
+    "citacao_curta": "foi até a janela, que dava para o porto, para os mastros recortados contra o céu cinzento do oeste"
+   },
+   {
+    "nome": "Terreno em Tarvel",
+    "cidade_ou_regiao": "Tarvel — colinas",
+    "descricao_fisica": "Terreno de pedra e mato, ainda sem figueiras; uma cerca e, nela, do lado de dentro, uma porta pequena.",
+    "relacao_espacial": "Nas colinas de Tarvel, longe de Vhalessa.",
+    "citacao_curta": "nas colinas de Tarvel, onde não nevava nunca, um terreno de pedra e mato tinha dono desde a primavera"
+   }
+  ],
+  "personagens_em_cena": [
+   "a mestra de Ilan (não nomeada no capítulo; pelo contexto, Iolanthe Ness)",
+   "Mestre Ithren",
+   "mencionados: Ilan, Eron Tahl, Aurelia"
+  ],
+  "faccoes_casas_guildas": [
+   "FIANÇA LTDA. — SEGUROS E GARANTIAS: placa de latão polida e discreta; empresa legal, paga impostos, segura cargas, garante empréstimos",
+   "Credores — a mestra e Ithren; 'cobrar a dívida'",
+   "Ordem da Última Sentença — pingente de bronze do tamanho de uma unha em forma de balança torta, escondido sob a gola de lã",
+   "Colégio dos Auditores / Decanato — a instrução reservada que ela mandou emitir"
+  ],
+  "objetos_e_armas": [
+   "livro-razão de capa de couro",
+   "lamparina de óleo",
+   "pena e tinteiro",
+   "pingente de balança torta",
+   "placa de latão da porta",
+   "porta pequena na cerca de Tarvel (trinco e campainha)"
+  ],
+  "magia_em_uso": [],
+  "ilustracoes": [
+   {
+    "tipo": "vinheta_abertura",
+    "momento": "~4%",
+    "trecho_ancora": "Na porta havia uma placa de latão, polida, discreta",
+    "descricao_visual": "Detail: a polished, discreet brass plaque (its engraving rendered as illegible abstract lines, no readable letters) on an old warehouse door at the top of a wooden stair; rain on the window beside it; smell of tar suggested by a harbour glimpse. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": true
+   },
+   {
+    "tipo": "pagina_inteira",
+    "momento": "~21%",
+    "trecho_ancora": "Perdemos a caixa — disse.",
+    "descricao_visual": "A counting room above a warehouse at dusk: a small old woman with short-cut white hair and the most careful hands sits at a ledger under an oil lamp, a tiny bronze balance pendant just visible under her wool collar, looking up without anger; before the desk stands Master Ithren (67, tall and thin, short white hair, dark wool tunic, trousers tucked into short boots, long careful hands) with his true face — a long thin face of fine wrinkled skin, high cheekbones, a curved nose broken once and badly set, deep pale eyes under white brows, a small scar at the left corner of the mouth - the face of a tired teacher — tired from travel. Window behind her: ship masts against a grey western sky, rain. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": true
+   },
+   {
+    "tipo": "spot",
+    "momento": "~89%",
+    "trecho_ancora": "Lá fora, no porto, um sino de navio tocou a troca de quarto, e a maré começou a virar.",
+    "descricao_visual": "Night harbour of a Free City in winter rain: masts, wet quays, a single ship's bell, black water turning with the tide; one dim lamp in a high warehouse window. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   },
+   {
+    "tipo": "respiro",
+    "momento": "~95%",
+    "trecho_ancora": "Tinha uma cerca e, na cerca, do lado de dentro, uma porta pequena",
+    "descricao_visual": "Quiet sunlit landscape: snowless rolling hills of Tarvel, a plot of stone and scrub with no fig trees yet, a simple fence, and set into it on the inside a small man-sized door frame with a latch on one side and a little bell on the other; nobody there; warm spring light. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
+    "spoiler": false
+   }
+  ],
+  "citacao_respiro": "O terreno esperava. A porta também.",
+  "documentos_do_mundo": [
+   {
+    "tipo": "cartaz",
+    "conteudo": "FIANÇA LTDA. — SEGUROS E GARANTIAS. (placa de latão polida da porta)",
+    "onde_entra": "Na porta havia uma placa de latão, polida, discreta"
+   },
+   {
+    "tipo": "livro-razão",
+    "conteudo": "Fiança Ltda. — Encomenda: novecentas células de cerâmica. Fornecedor: fundição do norte. Cliente: não identificado. Pagamento: o triplo, com carta de crédito.",
+    "onde_entra": "encomendava novecentas células de cerâmica a uma fundição do norte"
+   }
+  ],
+  "epigrafe_sugerida": "«Não precisamos ter pressa. Precisamos ter razão.» — a mestra"
+ }
+]
