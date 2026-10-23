@@ -8,3 +8,4 @@ __pycache__/
 build/_*.jpg
 build/edicao/_img/
 build/edicao/_armorial/
+build/edicao/_epub/
