@@ -1,5 +1,6 @@
 """Armorial e Codex de Aresta: só pranchas pintadas do nosso acervo (GitHub) e artes da coleção, em molduras de galeria."""
 from motor import *
+from motor import selar as _selar
 
 BA = "exportacoes/banco_de_arte"
 DR = "exportacoes/acervo_drive"
@@ -44,7 +45,7 @@ def heroi(path, titulo, sub, pos="center 20%"):
 
 def divisor(titulo, sub, selar="CODEX DE ARESTA"):
     return pagina(f'''<div class="parte">{anel_svg(44)}<div class="ptit" style="margin-top:8mm">{esc(titulo)}</div>{ornamento()}
-<div class="pepi"><p>{esc(sub)}</p></div><div class="selar">{esc(selar)}</div></div>''', "noite")
+<div class="pepi"><p>{esc(sub)}</p></div><div class="selar">{_selar(selar)}</div></div>''', "noite")
 
 
 INSIGNIAS = [("ordem_da_ultima_sentenca", "Ordem da Última Sentença"), ("os_carrascos", "Os Carrascos"), ("ilan_varek", "Ilan Varek"),

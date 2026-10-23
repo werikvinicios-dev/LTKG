@@ -177,7 +177,7 @@ def planta_vhalessa():
     s.append("".join(f'<rect x="{x}" y="1205" width="26" height="9" fill="{OURO}" opacity=".55" stroke="{TINTA2}" stroke-width=".6"/>' for x in range(120, 900, 60)))
     s.append(f'<path d="M940,470 L990,470" stroke="{CARMIM}" stroke-width="1.6" marker-end="url(#seta)"/>')
     s.append(rotulo(975, 455, "poços do leste", 9.5, 400, CARMIM, 1, "end", "FELL"))
-    s.append(rotulo(60, 690, "← o rio some nas colinas brancas", 9.5, 400, "#5C7480", 0, "start", "FELL"))
+    s.append(rotulo(60, 690, "‹ o rio some nas colinas brancas", 9.5, 400, "#5C7480", 0, "start", "FELL"))
     # marcas numeradas
     s.append("".join(marca(x, y, n) for n, _, x, y, _ in LOCAIS_VHALESSA))
     s.append(rosa(905, 1270, 46)); s.append(escala(80, 1290, 250, 1))
@@ -223,7 +223,7 @@ def mapa_norte():
     s.append(rotulo(200, 340, "cristas do noroeste", 12, 400, TINTA2, 2, "middle", "FELL", -12))
     s.append(rotulo(780, 690, "poços do leste", 11, 400, CARMIM, 1, "middle", "FELL"))
     s.append(rotulo(500, 1080, "encostas do sul · Campos de Espelho", 11, 400, TINTA2, 1, "middle", "FELL"))
-    s.append(rotulo(80, 900, "← o rio some", 10, 400, "#5C7480", 0, "start", "FELL"))
+    s.append(rotulo(80, 900, "‹ o rio some", 10, 400, "#5C7480", 0, "start", "FELL"))
     s.append(rotulo(80, 918, "nas colinas brancas", 10, 400, "#5C7480", 0, "start", "FELL"))
     for y, t in ((1290, "minas de carvão do sul · três semanas de estrada"), (1325, "colinas de Tarvel, onde nunca neva"),
                  (1360, "Tamsin · 1.200 km    ·    Delta das Duas Luas · 2.000 km"), (1395, "Soleira, no outro extremo do continente")):

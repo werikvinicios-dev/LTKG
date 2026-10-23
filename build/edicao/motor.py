@@ -2,7 +2,7 @@
 
 Cada página especial é um bloco HTML de tamanho fixo (página cheia, sem margem). O texto dos capítulos corre
 em páginas nomeadas, uma por capítulo, para o cabeçalho levar o título do capítulo."""
-import html, os, re, hashlib, subprocess
+import unicodedata, html, os, re, hashlib, subprocess
 import pyphen
 from PIL import Image
 
@@ -43,8 +43,23 @@ def hifen(t):
     return " ".join(_hy.inserted(w, hyphen="­") if len(w) > 7 and w.isalpha() else w for w in t.split(" "))
 
 
+def aspas(t):
+    """Aspas retas viram tipográficas."""
+    t = re.sub(r'(^|[\s(\[—])"', r"\1“", t)
+    return t.replace('"', "”")
+
+
+def selar(t, maximo=None):
+    """A fonte Selar só tem A–Z: tira acentos e pontuação, e corta na palavra."""
+    t = unicodedata.normalize("NFD", t.upper()).replace("-", " ")
+    t = " ".join(re.sub(r"[^A-Z ]", "", t).split())
+    if maximo and len(t) > maximo:
+        t = t[:maximo].rsplit(" ", 1)[0]
+    return t
+
+
 def inline(t):
-    t = esc(t)
+    t = esc(aspas(t))
     t = re.sub(r"\*\*([^*]+)\*\*", r"<b>\1</b>", t)
     t = re.sub(r"\*([^*]+)\*", r"<i>\1</i>", t)
     return t
@@ -93,7 +108,7 @@ def abertura_parte(num, titulo, epigrafe, path, pos="center", fonte_epi=None):
     fe = f'<div class="quem">{esc(fonte_epi)}</div>' if fonte_epi else ""
     return (imagem_cheia(path, pos) +
             pagina(f'''<div class="parte">{anel_svg(46)}<div class="pnum">Parte {esc(num)}</div><div class="ptit">{esc(titulo)}</div>
-{ornamento()}<div class="pepi"><p>{inline(epigrafe)}</p>{fe}</div><div class="selar">{esc(titulo.upper())}</div></div>''', "noite"))
+{ornamento()}<div class="pepi"><p>{inline(epigrafe)}</p>{fe}</div><div class="selar">{selar(titulo)}</div></div>''', "noite"))
 
 
 def abertura_capitulo(n, titulo, path, pos="center", disciplina=None, epigrafe=None, rotulo="Capítulo"):
@@ -101,7 +116,7 @@ def abertura_capitulo(n, titulo, path, pos="center", disciplina=None, epigrafe=N
     num = f'<div class="cnum">{n}</div>' if n else ""
     return (imagem_cheia(path, pos) +
             pagina(f'''<div class="cab">{anel_svg(34, disciplina=disciplina)}<div class="crot">{esc(rotulo)}</div>{num}
-<div class="ctit">{esc(titulo)}</div>{ornamento()}{epi}<div class="selar s2">{esc(re.sub(r"[^A-Za-z ]", "", titulo).upper()[:22])}</div></div>''', "noite cap-ab"))
+<div class="ctit">{esc(titulo)}</div>{ornamento()}{epi}<div class="selar s2">{selar(titulo, 22)}</div></div>''', "noite cap-ab"))
 
 
 def documento(html_interno, tipo="carta"):
@@ -138,6 +153,13 @@ def capitulo_texto(n, titulo_curto, md, insercoes=None):
         if ip in insercoes:
             out.append(insercoes[ip])
         ip += 1
+    # fim do capítulo: as últimas falas curtas descem juntas, nunca uma linha sozinha numa página nova
+    k = 0
+    while k < min(3, len(out) - 1) and out[-1 - k].startswith("<p>") and sum(len(x) for x in out[len(out) - 1 - k:]) < 450:
+        k += 1
+    if k >= 1:
+        k = max(k, 2) if out[-2].startswith("<p") else k
+        out[-k:] = [f'<div class="fimcap">{"".join(out[-k:])}</div>']
     return f'<section class="texto" style="page:cap{n}">{"".join(out)}</section>'
 
 
@@ -184,7 +206,7 @@ body{{font-family:EBG;color:#2A2420;-webkit-print-color-adjust:exact;print-color
 .cepi{{font:italic 10.5pt/1.45 EBG;color:#D9CFB8;margin-top:6mm;max-width:110mm}}
 .orn{{text-align:center;margin:4mm 0}} .texto .orn{{margin:5mm 0 4mm}}
 .texto{{font:10.6pt/1.47 EBG;text-align:justify;color:#2A2420}}
-.texto p{{margin:0;text-indent:5mm;orphans:2;widows:2}}
+.texto p{{margin:0;text-indent:5mm;orphans:2;widows:2}}.fimcap{{break-inside:avoid}}
 .texto p.p1,.texto .orn + p{{text-indent:0}}
 .capitular{{float:left;width:19mm;height:19mm;margin:.6mm 2.5mm 0 -1mm}}
 .banda{{margin:5mm 0;position:relative;break-inside:avoid;border-radius:.6mm;overflow:hidden;box-shadow:0 .4mm 1.6mm rgba(0,0,0,.35)}}

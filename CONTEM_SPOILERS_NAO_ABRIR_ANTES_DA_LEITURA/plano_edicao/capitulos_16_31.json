@@ -1186,7 +1186,7 @@
  {
   "cap": 24,
   "pov": "Mara Quen (terceira pessoa próxima)",
-  "resumo": "Mara acorda Ilan na serralheria; ele avisa Aurelia pelo anel e o entrega a Mara, porque a equipe das Cisternas precisará mais dele. Às 4h10 a equipe desce pela galeria 3 até a abóbada externa norte, uma caverna de sal-gema incandescente onde a válvula (agora aberta ao dobro por Oriel) mostra a noite do Passo Cinzento; Mara desconfia da própria placa, descobre que os 23 discos brancos são iscas e que as âncoras verdadeiras estão enterradas no sal, e a Comissária salva um guarda com a Segunda Muralha. Ithren aparece com o rosto velado por Clarão, provoca, explica que 'a Ordem estava errada' e foge por uma galeria de mineração até o leito do Lento — mas a placa de registro luminoso de Mara fixa o seu rosto verdadeiro; Sevran, ouvindo as pedras, guia Nara até o arco, que neutraliza as 17 âncoras com âncoras de sacrifício, e às 5h32 a pele cai — e Oriel, ajoelhado junto ao batente, encosta nele o fiel.",
+  "resumo": "Mara acorda Ilan na serralheria; ele avisa Aurelia pelo anel e o entrega a Mara, porque a equipe das Cisternas precisará mais dele. Às 4h10 a equipe desce pela galeria 3 até a abóbada externa norte, uma caverna de sal-gema incandescente onde a válvula (agora aberta ao dobro por Oriel) mostra a noite do Passo Cinzento; Mara desconfia da própria placa, descobre que os 23 discos brancos são iscas e que as selos verdadeiras estão enterradas no sal, e a Comissária salva um guarda com a Segunda Muralha. Ithren aparece com o rosto velado por Clarão, provoca, explica que 'a Ordem estava errada' e foge por uma galeria de mineração até o leito do Lento — mas a placa de registro luminoso de Mara fixa o seu rosto verdadeiro; Sevran, ouvindo as pedras, guia Nara até o arco, que neutraliza as 17 selos com selos de sacrifício, e às 5h32 a pele cai — e Oriel, ajoelhado junto ao batente, encosta nele o fiel.",
   "locais": [
    {
     "nome": "Serralheria de Gunnar — quarto dos fundos e pátio",
@@ -1242,7 +1242,7 @@
    "Câmara dos Pactos — uniformes cinzentos, lanternas, espadas, duas bestas; a Segunda Muralha da Comissária",
    "Colégio dos Auditores de Pacto — placas de vidro de aferição; placa de registro luminoso (vidro de Clarão com sais de prata do Arquipélago, três por ano por auditor); o Decanato e a 'instrução reservada' recusada",
    "Cooperativa dos Reparadores — onze capuzes e mantos de lã costurados na véspera",
-   "Credores — Ithren e sua pele de discos falsos e âncoras enterradas",
+   "Credores — Ithren e sua pele de discos falsos e selos enterradas",
    "Casa da Fornalha — Oriel de capa laranja ajoelhado junto ao arco"
   ],
   "objetos_e_armas": [
@@ -1253,19 +1253,19 @@
    "onze capuzes e mantos de lã molhada, barril de água, cantis",
    "cano da Rede Cívica preso à junção da abóbada norte",
    "23 discos de cerâmica branca (iscas)",
-   "âncoras de sacrifício: discos cinza-escuros do tamanho de uma unha, da cerâmica de Orsk",
+   "selos de sacrifício: discos cinza-escuros do tamanho de uma unha, da cerâmica de Orsk",
    "placa de registro luminoso",
    "o fiel nas mãos enfaixadas de Oriel"
   ],
   "magia_em_uso": [
    {
     "disciplina": "Selos falsos / Brasa (pele de Ithren)",
-    "o_que_acontece": "Os 23 discos devolvem à placa exatamente a tensão esperada; as 19 âncoras reais estão dois palmos dentro do sal; perto de ferro, soltam cones de ar a 200 graus.",
+    "o_que_acontece": "Os 23 discos devolvem à placa exatamente a tensão esperada; as 19 selos reais estão dois palmos dentro do sal; perto de ferro, soltam cones de ar a 200 graus.",
     "visual_com_selos": "On each white disc a pale, perfectly even engraved seal that glows like a living one but has no tail and no ground-stroke — Selos Vazios; two palms beneath the salt, dark engraved Brasa red (#C8332F) seals that wake when a boot approaches and vent a red-orange cone of superheated air."
    },
    {
     "disciplina": "Trama + Pulso — Segunda Muralha (Comissária Vale)",
-    "o_que_acontece": "Três muralhas em camadas, montadas ao longo do caminho com âncoras pequenas no chão e nas paredes, recebem o jorro e o espalham para o sal; a primeira se rompe, a segunda segura.",
+    "o_que_acontece": "Três muralhas em camadas, montadas ao longo do caminho com selos pequenas no chão e nas paredes, recebem o jorro e o espalham para o sal; a primeira se rompe, a segunda segura.",
     "visual_com_selos": "Three ranks of small engraved seals flare up between her open hands and the heat — rows of Trama old gold (#C9A15A) interlaced with Pulso blue (#4F8BD6) — each rank a translucent wall that ripples the hot air aside like water against a rock; the first rank shatters into falling sparks."
    },
    {
@@ -1275,11 +1275,11 @@
    },
    {
     "disciplina": "Clarão — placa de registro luminoso (Mara)",
-    "o_que_acontece": "No meio segundo do clarão de outra âncora, o vidro fixa a luz que cai nele e revela o rosto verdadeiro.",
+    "o_que_acontece": "No meio segundo do clarão de outra selo, o vidro fixa a luz que cai nele e revela o rosto verdadeiro.",
     "visual_com_selos": "The silver-grey plate catches the white-orange flash; on it, like a photograph, the man crouching at the tunnel mouth with a clear, unveiled face."
    },
    {
-    "disciplina": "Âncoras de sacrifício (Nara)",
+    "disciplina": "Selos de sacrifício (Nara)",
     "o_que_acontece": "Em 17 pontos indicados por Sevran, Nara aperta discos cinza-escuros que oferecem a cada caminho uma saída melhor que o arco; a pele cai às 5h32.",
     "visual_com_selos": "Nara presses a fingernail-sized grey ceramic disc into the salt; its engraved seal lights Brasa red (#C8332F) and the faint tail-line of a buried seal bends toward it, abandoning the arch; one by one the false skin's lines go slack."
    },
@@ -1330,7 +1330,7 @@
   "documentos_do_mundo": [
    {
     "tipo": "relatório",
-    "conteudo": "Colégio dos Auditores de Pacto — Registro de campo (M. Quen), abóbada externa norte, madrugada: placa de aferição indica 23 âncoras na superfície (discos). Sonda junto ao disco mais próximo: sal 108 graus; disco 108 graus (igual ao sal — incompatível com âncora em carga). Escuta (Sevran): disco calado; zumbido a seis passos à esquerda e dois palmos abaixo do disco. Conclusão: três instrumentos, dois concordam, um mente — discos falsos; âncoras verdadeiras enterradas. Anexo: placa de registro luminoso (rosto do suspeito na boca da galeria de mineração).",
+    "conteudo": "Colégio dos Auditores de Pacto — Registro de campo (M. Quen), abóbada externa norte, madrugada: placa de aferição indica 23 selos na superfície (discos). Sonda junto ao disco mais próximo: sal 108 graus; disco 108 graus (igual ao sal — incompatível com selo em carga). Escuta (Sevran): disco calado; zumbido a seis passos à esquerda e dois palmos abaixo do disco. Conclusão: três instrumentos, dois concordam, um mente — discos falsos; selos verdadeiras enterradas. Anexo: placa de registro luminoso (rosto do suspeito na boca da galeria de mineração).",
     "onde_entra": "Três instrumentos. Dois concordam. Um mente."
    },
    {
@@ -1344,7 +1344,7 @@
  {
   "cap": 25,
   "pov": "Ilan (terceira pessoa próxima)",
-  "resumo": "Às 4h02 Aurelia acorda a porta 61, adormecida há quarenta anos, compensa os 1.800 m de diferença de altitude e Ilan atravessa para a estação do Passo Cinzento, quente, úmida e escorrendo degelo; a sétima porta, a maior, é a outra ponta da válvula, e no nível de serviço há uma Jurisdição montada sobre um anel de ferro que manda calor para a rocha, para a caixa no pátio e para o gelo da Garganta — de propósito, para que fechar o corredor ameace Hvel. Ilan derruba o homem da besta e o da faca usando as próprias âncoras deles, obriga o engenheiro Pell Andrask a mostrar as sete âncoras-mestras e as marca para um Fechamento de Contas; percebe que Ithren está enviando mensagens pelo fluxo e que o trenó partirá ao amanhecer (6h20). Enquanto Aurelia sente Brannoc andando atrás da porta da Sala dos Ferrolhos, Ilan sai ao pátio, onde Eron Tahl, de maçã na mão, guarda o trenó de vela com a caixa e começa a andar na direção dele.",
+  "resumo": "Às 4h02 Aurelia acorda a porta 61, adormecida há quarenta anos, compensa os 1.800 m de diferença de altitude e Ilan atravessa para a estação do Passo Cinzento, quente, úmida e escorrendo degelo; a sétima porta, a maior, é a outra ponta da válvula, e no nível de serviço há uma Jurisdição montada sobre um anel de ferro que manda calor para a rocha, para a caixa no pátio e para o gelo da Garganta — de propósito, para que fechar o corredor ameace Hvel. Ilan derruba o homem da besta e o da faca usando as próprias selos deles, obriga o engenheiro Pell Andrask a mostrar as sete selos-mestras e as marca para um Fechamento de Contas; percebe que Ithren está enviando mensagens pelo fluxo e que o trenó partirá ao amanhecer (6h20). Enquanto Aurelia sente Brannoc andando atrás da porta da Sala dos Ferrolhos, Ilan sai ao pátio, onde Eron Tahl, de maçã na mão, guarda o trenó de vela com a caixa e começa a andar na direção dele.",
   "locais": [
    {
     "nome": "Saguão de Vhalessa diante da porta 61",
@@ -1370,7 +1370,7 @@
    {
     "nome": "Nível de serviço — câmara de compensação e Jurisdição",
     "cidade_ou_regiao": "Passo Cinzento",
-    "descricao_fisica": "Caverna do tamanho de uma igreja pequena: onze bancos de compensação de ferro e cerâmica, mortos, ao longo da parede esquerda; galeria inclinada ao poço da mina de estanho no fundo; anel de ferro de ~8 m no chão com âncoras brancas em laranja sujo; poço vertical no teto, do lado da fachada, até o pátio; parede do fundo de gelo azul do glaciar com cavidades fumegantes; rio de degelo da largura de uma rua.",
+    "descricao_fisica": "Caverna do tamanho de uma igreja pequena: onze bancos de compensação de ferro e cerâmica, mortos, ao longo da parede esquerda; galeria inclinada ao poço da mina de estanho no fundo; anel de ferro de ~8 m no chão com selos brancas em laranja sujo; poço vertical no teto, do lado da fachada, até o pátio; parede do fundo de gelo azul do glaciar com cavidades fumegantes; rio de degelo da largura de uma rua.",
     "relacao_espacial": "Sob o saguão; a parede do fundo encosta na base do glaciar da Garganta; o rio sai pela parede direita para o vale e para o lago atrás da barragem.",
     "citacao_curta": "saía por uma abertura na parede da direita — para fora, para baixo, para o vale."
    },
@@ -1435,7 +1435,7 @@
    },
    {
     "disciplina": "Marca de Cobrança (Ilan)",
-    "o_que_acontece": "Ilan escreve a própria marca numa âncora de Brasa submersa e desvia um fio de calor: a água nas botas do homem da besta vai de 60 a 90 graus.",
+    "o_que_acontece": "Ilan escreve a própria marca numa selo de Brasa submersa e desvia um fio de calor: a água nas botas do homem da besta vai de 60 a 90 graus.",
     "visual_com_selos": "From twelve metres away a small mark in Ilan's crooked hand appears over an underwater red seal — the seal 'changes handwriting' — and a thread of red light flicks into the water around the man's boots."
    },
    {
@@ -1445,7 +1445,7 @@
    },
    {
     "disciplina": "Fechamento de Contas (preparação)",
-    "o_que_acontece": "Com giz e manopla, Ilan marca as sete âncoras-mestras do anel; cada marca fica acoplada à manopla.",
+    "o_que_acontece": "Com giz e manopla, Ilan marca as sete selos-mestras do anel; cada marca fica acoplada à manopla.",
     "visual_com_selos": "Seven chalk-white marks with a little tail to the left over seven dark seals; seven faint lines of tension running back to the gauntlet like fingers of a hand."
    },
    {
@@ -1509,7 +1509,7 @@
  {
   "cap": 26,
   "pov": "Alternado: Cisternas (Mara/Sevran), Aurelia e Ilan no Passo Cinzento",
-  "resumo": "Nas Cisternas, Oriel segura a junção aberta com o segundo fiel, e Sevran, ajoelhado ao lado dele, lembra o bolo de mel da juventude até que o amigo abre os dedos e o fiel cai no sal. No Passo Cinzento, Aurelia chama Ilan pela pedra; ele usa a Costura entre a terceira e a nona porta para o Vetor Passante, sai pelas costas de Eron Tahl, e Aurelia agarra pela pedra a âncora do calcanhar de Eron, que cai de quatro. Ilan solta uma a uma as sete marcas do Fechamento de Contas, com Pell ajudando lá embaixo, Aurelia fecha a sétima porta e o Retorno vai pelo cano para o Cobre; Eron foge com o trenó e a caixa, e só então Aurelia lembra que, se o Mandato esfriar, Calvenor nunca poderá voltar — 'Agora eu preciso de uma porta', diz Ilan.",
+  "resumo": "Nas Cisternas, Oriel segura a junção aberta com o segundo fiel, e Sevran, ajoelhado ao lado dele, lembra o bolo de mel da juventude até que o amigo abre os dedos e o fiel cai no sal. No Passo Cinzento, Aurelia chama Ilan pela pedra; ele usa a Costura entre a terceira e a nona porta para o Vetor Passante, sai pelas costas de Eron Tahl, e Aurelia agarra pela pedra a selo do calcanhar de Eron, que cai de quatro. Ilan solta uma a uma as sete marcas do Fechamento de Contas, com Pell ajudando lá embaixo, Aurelia fecha a sétima porta e o Retorno vai pelo cano para o Cobre; Eron foge com o trenó e a caixa, e só então Aurelia lembra que, se o Mandato esfriar, Calvenor nunca poderá voltar — 'Agora eu preciso de uma porta', diz Ilan.",
   "locais": [
    {
     "nome": "Abóbada externa norte — base do batente da válvula",
@@ -1569,12 +1569,12 @@
    },
    {
     "disciplina": "Coroa (Limiares) segurando a Linha Seca",
-    "o_que_acontece": "A âncora que Eron cria e desfaz no tempo do golpe toca a pedra de Aurelia; ela a segura por meio segundo e ele cai.",
+    "o_que_acontece": "A selo que Eron cria e desfaz no tempo do golpe toca a pedra de Aurelia; ela a segura por meio segundo e ele cai.",
     "visual_com_selos": "Eron's split-second conjured seal under his left heel is seized by a web of gold seal-lines rising from the station floor, holding heel and hand to the stone like roots."
    },
    {
     "disciplina": "Fechamento de Contas",
-    "o_que_acontece": "Ilan solta as sete marcas no ritmo; cada âncora-mestra encontra uma conta a pagar em vez de alívio e o anel para de puxar sem estourar.",
+    "o_que_acontece": "Ilan solta as sete marcas no ritmo; cada selo-mestra encontra uma conta a pagar em vez de alívio e o anel para de puxar sem estourar.",
     "visual_com_selos": "Beneath the floor, seven dark red seals on the iron ring switch to Ilan's handwriting one after another and dim; through the gauntlet seven threads go slack in sequence."
    },
    {
@@ -1624,7 +1624,7 @@
   "documentos_do_mundo": [
    {
     "tipo": "relatório",
-    "conteudo": "Anotações de M. Quen (Cisternas), madrugada do 13º dia: 5h10 — a engenheira chega ao arco. 17 pontos de âncora neutralizados (âncoras de sacrifício). 5h32 — a pele caiu; comunicado à Soberania pelo anel. Em seguida: o Intendente segura a junção com um fiel; o fiel cai — Sevran o tirou.",
+    "conteudo": "Anotações de M. Quen (Cisternas), madrugada do 13º dia: 5h10 — a engenheira chega ao arco. 17 pontos de selo neutralizados (selos de sacrifício). 5h32 — a pele caiu; comunicado à Soberania pelo anel. Em seguida: o Intendente segura a junção com um fiel; o fiel cai — Sevran o tirou.",
     "onde_entra": "— Caiu — disse Mara, ao anel."
    }
   ],
@@ -1720,7 +1720,7 @@
    },
    {
     "disciplina": "Coroa (Limiares) — passagem de carne e osso",
-    "o_que_acontece": "Sem porta nem âncora no lugar, Aurelia põe uma palma no lago e a outra sobre o Mandato e empurra o lago inteiro por ela; o Retorno, sem pedra onde cair, cai no corpo dela.",
+    "o_que_acontece": "Sem porta nem selo no lugar, Aurelia põe uma palma no lago e a outra sobre o Mandato e empurra o lago inteiro por ela; o Retorno, sem pedra onde cair, cai no corpo dela.",
     "visual_com_selos": "Two conjured coronal gold seals burn on her own palms — one under the grey water, one over the ceramic — joined by a link running through her body; no ground-stroke drawn, so the backlash visibly floods back into her as cracks of gold light up her arms; a wave of grey water bursts out of thin air over the box."
    },
    {
@@ -1856,7 +1856,7 @@
    "Arquivo das Areias / Necrópole (Anúbis) — tábua de pedra da custódia, embalsamadores, custódia para Brannoc",
    "Conselho Municipal — a Rede Cívica declarada serviço público; Ulvra assiste do pátio pela janela",
    "Cooperativa dos Reparadores do Cobre — encomenda de cobre e cerâmica a Neska",
-   "Liga dos Peritos de Âncora — anula e re-registra a patente do favo com a assinatura de Nara",
+   "Liga dos Peritos de Selos — anula e re-registra a patente do favo com a assinatura de Nara",
    "Companhia Térmica Kaltz — processada no Tribunal dos Danos de Retorno; Fiança Limitada e o selo do Consórcio entre as provas",
    "Fornalha Velha — canção de trabalho cantada de margem a margem"
   ],
@@ -1936,8 +1936,8 @@
    },
    {
     "tipo": "contrato",
-    "conteudo": "Liga dos Peritos de Âncora — Anula-se o registro da patente do favo de reservatório por falta da assinatura do inventor. Novo registro: inventora Nara Voss.",
-    "onde_entra": "A Liga dos Peritos de Âncora anulou a patente do favo de Nara"
+    "conteudo": "Liga dos Peritos de Selos — Anula-se o registro da patente do favo de reservatório por falta da assinatura do inventor. Novo registro: inventora Nara Voss.",
+    "onde_entra": "A Liga dos Peritos de Selos anulou a patente do favo de Nara"
    }
   ],
   "epigrafe_sugerida": "«Em Hvel não se pergunta a um hóspede o que ele fez antes de bater à porta.» — costume das montanhas"
