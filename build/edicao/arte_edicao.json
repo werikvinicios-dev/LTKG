@@ -1,0 +1,78 @@
+{
+ "C01-a": {
+  "arquivo": "exportacoes/banco_de_arte/11_edicao/C01-a.png",
+  "w": 1024,
+  "h": 1536
+ },
+ "C02-0": {
+  "arquivo": "exportacoes/banco_de_arte/11_edicao/C02-0.png",
+  "w": 1024,
+  "h": 1536
+ },
+ "C02-2": {
+  "arquivo": "exportacoes/banco_de_arte/11_edicao/C02-2.png",
+  "w": 1024,
+  "h": 1536
+ },
+ "C02-3": {
+  "arquivo": "exportacoes/banco_de_arte/11_edicao/C02-3.png",
+  "w": 1536,
+  "h": 1024
+ },
+ "C03-0": {
+  "arquivo": "exportacoes/banco_de_arte/11_edicao/C03-0.png",
+  "w": 1024,
+  "h": 1536
+ },
+ "C03-1": {
+  "arquivo": "exportacoes/banco_de_arte/11_edicao/C03-1.png",
+  "w": 1536,
+  "h": 1024
+ },
+ "C03-3": {
+  "arquivo": "exportacoes/banco_de_arte/11_edicao/C03-3.png",
+  "w": 1024,
+  "h": 1536
+ },
+ "C01-b": {
+  "arquivo": "exportacoes/banco_de_arte/11_edicao/C01-b.png"
+ },
+ "C01-c": {
+  "arquivo": "exportacoes/banco_de_arte/11_edicao/C01-c.png"
+ },
+ "C04-0": {
+  "arquivo": "exportacoes/banco_de_arte/11_edicao/C04-0.png",
+  "w": 1024,
+  "h": 1536
+ },
+ "C04-1": {
+  "arquivo": "exportacoes/banco_de_arte/11_edicao/C04-1.png",
+  "w": 1024,
+  "h": 1536
+ },
+ "C05-0": {
+  "arquivo": "exportacoes/banco_de_arte/11_edicao/C05-0.png",
+  "w": 1024,
+  "h": 1536
+ },
+ "C05-2": {
+  "arquivo": "exportacoes/banco_de_arte/11_edicao/C05-2.png",
+  "w": 1024,
+  "h": 1536
+ },
+ "C06-0": {
+  "arquivo": "exportacoes/banco_de_arte/11_edicao/C06-0.png",
+  "w": 1024,
+  "h": 1536
+ },
+ "C06-2": {
+  "arquivo": "exportacoes/banco_de_arte/11_edicao/C06-2.png",
+  "w": 1536,
+  "h": 1024
+ },
+ "C07-1": {
+  "arquivo": "exportacoes/banco_de_arte/11_edicao/C07-1.png",
+  "w": 1024,
+  "h": 1536
+ }
+}
