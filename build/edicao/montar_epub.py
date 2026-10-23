@@ -72,6 +72,11 @@ class Livro:
         return self.doc(nome, titulo, f'<div class="cheia"><img src="{self.imagem(path)}" alt="{H.escape(alt or titulo)}"/></div>', toc, "img")
 
 
+def aspas(t):
+    t = re.sub(r'(^|[\s(\[—])"', r"\1“", t)
+    return t.replace('"', "”")
+
+
 def paragrafos(md, ins):
     blocos = [b.strip() for b in md.strip().split("\n\n") if b.strip()]
     out = []
@@ -79,7 +84,7 @@ def paragrafos(md, ins):
         if b == "---":
             out.append('<p class="orn">◆</p>')
         else:
-            t = H.escape(b, quote=False)
+            t = H.escape(aspas(b), quote=False)
             t = re.sub(r"\*\*([^*]+)\*\*", r"<b>\1</b>", t)
             t = re.sub(r"\*([^*]+)\*", r"<i>\1</i>", t)
             out.append(f'<p class="{"p1" if i == 0 else ""}">{t}</p>')
@@ -114,6 +119,45 @@ def capitulo(L, n, toc_parte):
     L.doc(f"cap{n:02d}", rotulo, cab + paragrafos(corpo, ins) + fim, toc_parte)
 
 
+import armorial as AR
+
+
+def figura(L, path, titulo=None, legenda=None):
+    cap = ""
+    if titulo or legenda:
+        cap = "<figcaption>" + (f"<b>{H.escape(titulo)}</b>" if titulo else "") + (f"<br/>{H.escape(legenda)}" if legenda else "") + "</figcaption>"
+    return f'<figure><img src="{L.imagem(path)}" alt="{H.escape(titulo or "")}"/>{cap}</figure>'
+
+
+def coletar(L, fn):
+    """Roda as funções do Codex do PDF trocando a diagramação por figuras com legenda (mesmo conteúdo)."""
+    out = []
+    salvo = {k: getattr(AR, k) for k in ("placa", "galeria", "heroi", "divisor", "insignias")}
+    AR.placa = lambda path, titulo, legenda, rotulo="": out.append(figura(L, path, titulo, legenda)) or ""
+    AR.galeria = lambda titulo, itens, *a, **k: out.append(f"<h2>{H.escape(titulo)}</h2>" + "".join(figura(L, p, t, x) for p, t, x in itens)) or ""
+    AR.heroi = lambda path, titulo, sub, pos="": out.append(figura(L, path, titulo, sub)) or ""
+    AR.divisor = lambda titulo, sub, selar="": out.append(f'<p class="nota">{H.escape(sub)}</p>') or ""
+    AR.insignias = lambda: out.append("<h2>Insígnias</h2><div class=\"insg\">" + "".join(
+        f'<div class="ins"><img src="{L.imagem(f"{ROOT}/{AR.SIM}/instituicoes/{k}_decorativa.png", 500)}" alt="{H.escape(t)}"/><p>{H.escape(t)}</p></div>' for k, t in AR.INSIGNIAS) + "</div>") or ""
+    try:
+        fn()
+    finally:
+        for k, v in salvo.items():
+            setattr(AR, k, v)
+    return "".join(out)
+
+
+def fig_gramatica():
+    import especiais
+    pg = especiais.gramatica_selo()
+    i0 = pg.index('<svg viewBox="0 0 400 330"'); svg = pg[i0:pg.index("</svg>", i0) + 6].replace("<svg ", '<svg xmlns="http://www.w3.org/2000/svg" ', 1)
+    hp, png = f"{TMP}/gram.html", f"{TMP}/gram.png"
+    open(hp, "w").write(f'<html><head><style>{CSS_TODO}</style></head><body style="margin:0;background:#141210">{svg.replace("width=\"128mm\" height=\"106mm\"", "width=\"1200\" height=\"990\"")}</body></html>')
+    subprocess.run([ME.SHELL, "--no-sandbox", "--disable-gpu", "--hide-scrollbars", "--window-size=1200,990", f"--screenshot={png}", "file://" + hp],
+                   check=True, stdout=subprocess.DEVNULL, stderr=subprocess.DEVNULL)
+    return png
+
+
 def montar():
     L = Livro()
     capa = f"{ROOT}/exportacoes/capa_v2/capa_ebook.jpg"
@@ -125,14 +169,31 @@ def montar():
     L.doc("creditos", "Créditos", '<div class="cred"><p>© Werik Martins. Todos os direitos reservados.</p><p>Edição Digital Imersiva, outubro de 2026. Texto da V2.</p>'
           '<p>Tipografia: Aresta Titular e Selar (criadas para esta edição), EB Garamond e IM Fell (SIL Open Font License).</p>'
           '<p><i>Fantasia para adultos. Contém violência, morte, linguagem forte e cenas de sexo.</i></p></div>')
-    atlas = renderizar("atlas", [pagina_mapa(mapa_norte()), pagina_mapa(planta_vhalessa()), legenda_vhalessa({})])
+    atlas = renderizar("atlas", [pagina_mapa(mapa_norte()), pagina_mapa(planta_vhalessa())])
     toc_atlas = []
-    for k, f in enumerate(atlas):
-        L.pagina_imagem(f"atlas{k}", f, ["O Norte", "Vhalessa", "Vhalessa, lugar por lugar"][k], toc_atlas)
-    mundo = renderizar("mundo", [ME.placa(f"{ME.R4}/RF-002_sete_leis_4x.jpg", "As Sete Leis", "", ""), ME.placa(f"{ME.R4}/RF-003_seis_disciplinas_4x.jpg", "Os Seis Sinais", "", ""), gramatica_selo(), ME.placa(f"{ME.BA}/02_simbolos/SI-003_etapas_da_transposicao.png", "Toda magia, em seis passos", "Fonte · Selo · Vínculo · Destino · Controle · Retorno", ""), ME.elenco()])
+    L.doc("atlas0", "Aresta", figura(L, f"{ME.R4}/RF-001_mapa_de_aresta_4x.jpg", "Aresta", "o continente, as suas terras e os caminhos que as ligam"), toc_atlas)
+    L.pagina_imagem("atlas1", atlas[0], "O Norte", toc_atlas)
+    L.pagina_imagem("atlas2", atlas[1], "Vhalessa", toc_atlas)
+    import mapas
+    L.doc("atlas3", "Vhalessa, lugar por lugar", "<h2>Vhalessa, lugar por lugar</h2>" + "".join(
+        f'<p class="lug"><b>{n}. {H.escape(nm)}</b> — {H.escape(lg)}</p>' for n, nm, _, _, lg in mapas.LOCAIS_VHALESSA), toc_atlas)
     toc_mundo = []
-    for k, f in enumerate(mundo):
-        L.pagina_imagem(f"mundo{k}", f, ["As Sete Leis", "Os Seis Sinais", "A gramática do selo", "Toda magia, em seis passos", "O elenco"][k], toc_mundo)
+    import especiais
+    L.doc("mundo0", "As Sete Leis", "<h2>As Sete Leis</h2>" + figura(L, f"{ME.R4}/RF-002_sete_leis_4x.jpg") +
+          "".join(f'<p class="lei"><b>{r} · {H.escape(n)}.</b> {H.escape(x)}</p>' for r, n, _, x in especiais.LEIS) +
+          '<p class="nota">Valem para mortais, deuses e dragões. Nenhum selo, nenhuma coroa e nenhuma prece muda uma vírgula delas.</p>', toc_mundo)
+    L.doc("mundo1", "Os Seis Sinais", "<h2>Os Seis Sinais</h2>" + figura(L, f"{ME.R4}/RF-003_seis_disciplinas_4x.jpg") +
+          "".join(f'<p class="lei"><b>{H.escape(n)}.</b> {H.escape(x)}; acende os selos em luz {c}.</p>' for n, _, x, c in especiais.DISC), toc_mundo)
+    L.doc("mundo2", "A gramática do selo", "<h2>A gramática do selo</h2>" + figura(L, fig_gramatica()) +
+          '<p class="lei"><b>1 · Sinal:</b> qual disciplina passa. <b>2 · Cauda:</b> por onde pode passar. <b>3 · Tamanho:</b> quanto cabe. <b>4 · Traço de terra:</b> para onde vai o tranco.</p>'
+          '<p class="lei"><b>Selo conjurado.</b> Sai da mão, do pé ou do olhar treinado. Um risco fino de luz que todo mundo vê. Dura segundos. É rápido, fraco e cansa.</p>'
+          '<p class="lei"><b>Selo gravado.</b> Fixado em pedra, couro, bronze ou osso, com tempo e ferramenta. Forte, dura anos. Pode ser raspado, rasurado ou tomado.</p>'
+          '<p class="nota">Um selo não é uma força. É um endereço. Quem paga a conta é o mundo. Selo sem traço de terra devolve o tranco a quem fez.</p>', toc_mundo)
+    L.doc("mundo3", "Toda magia, em seis passos", "<h2>Toda magia, em seis passos</h2>" + figura(L, f"{ME.BA}/02_simbolos/SI-003_etapas_da_transposicao.png") +
+          '<p class="lei">Fonte (de onde sai) · Selo (onde se prende) · Vínculo (por onde passa) · Destino (para onde vai) · Controle (quem segura) · Retorno (o que volta).</p>'
+          '<p class="nota">A magia não cria nada. Ela muda de lugar o que já existe.</p>', toc_mundo)
+    L.doc("mundo4", "O elenco", "<h2>O elenco</h2>" + "".join(
+        f'<div class="el"><img src="{L.imagem(p, 900)}" alt="{H.escape(n)}"/><p class="lei"><b>{H.escape(n)}.</b> {H.escape(t)}</p></div>' for n, p, t in ME.ELENCO), toc_mundo)
     L.toc += [(epub.Section("Atlas"), toc_atlas), (epub.Section("Antes de começar"), toc_mundo)]
     for num, tit, c0, c1, epi, fonte, im, pos in ME.PARTES:
         tp = []
@@ -141,11 +202,12 @@ def montar():
         for n in range(c0, c1 + 1):
             capitulo(L, n, tp)
         L.toc.append((epub.Section(f"Parte {num} · {tit}"), tp))
-    from armorial import aurelia, galeria_acervo, expressoes, arsenal, engenharia
-    codex_pecas = aurelia() + expressoes() + galeria_acervo() + arsenal() + engenharia() + armorial() + [ME.glossario()]
     toc_codex = []
-    for k, f in enumerate(renderizar("codex", codex_pecas)):
-        L.pagina_imagem(f"codex{k:02d}", f, "Codex de Aresta" if k == 0 else f"Codex {k}", toc_codex if k == 0 else None)
+    for nome, titulo, fn in (("codexA", "A Senhora dos Limiares", lambda: AR.aurelia()), ("codexB", "Galeria de personagens", lambda: AR.expressoes() + AR.galeria_acervo()),
+                             ("codexC", "Arsenal e artefatos", lambda: AR.arsenal()), ("codexD", "Engenharia arcana", lambda: AR.engenharia()),
+                             ("codexE", "Armorial de Aresta", lambda: AR.armorial())):
+        L.doc(nome, titulo, f"<h1>{H.escape(titulo)}</h1>" + coletar(L, fn).replace(f"<h2>{H.escape(titulo)}</h2>", ""), toc_codex)
+    L.doc("codexF", "Glossário", "<h1>Glossário</h1>" + "".join(f'<p class="lei"><b>{H.escape(t)}.</b> {H.escape(x)}</p>' for t, x in ME.GLOSSARIO), toc_codex)
     L.toc.append((epub.Section("Codex de Aresta"), toc_codex))
     L.pagina_imagem("contracapa", f"{ME.DR}/capas_e_marca/C02_Contracapa_Arte_Sem_Texto.png", "Contracapa")
     L.b.toc = L.toc
@@ -161,7 +223,7 @@ CSS_EPUB = """
 @font-face{font-family:EBG;font-weight:600;src:url(fonts/EBGaramond-SemiBold.ttf)} @font-face{font-family:AT;src:url(fonts/ArestaTitular-Bold.ttf)}
 @font-face{font-family:FELL;src:url(fonts/IMFeFCrm28P.ttf)}
 body{font-family:EBG,serif;line-height:1.5;margin:0 4%} p{margin:0;text-indent:1.2em;text-align:justify} p.p1,p.orn+p{text-indent:0}
-p.p1::first-letter{font-family:AT;font-size:3.2em;float:left;line-height:.9;margin:.05em .08em 0 0;color:#8E1B22}
+p.p1::first-letter{font-family:AT;font-size:1.9em;color:#8E1B22;line-height:1} p.p1::first-line{font-variant:small-caps;letter-spacing:.04em}
 h1{font-family:AT;font-weight:normal;text-align:center;font-size:1.5em;letter-spacing:.06em;margin:.3em 0 .6em}
 .cab,.parte{text-align:center;margin:1.5em 0 2em} .crot,.pnum{font-family:AT;letter-spacing:.3em;font-size:.8em;color:#9C7A3C;text-indent:0;text-align:center}
 .cnum{font-family:AT;font-size:3em;color:#9C7A3C;text-indent:0;text-align:center;margin:.1em 0}
@@ -174,6 +236,13 @@ body.img{margin:0} .cheia{margin:0;text-align:center}
 .rosto{text-align:center;margin-top:30%} .rosto p{text-indent:0;text-align:center} .r1{font-family:AT;font-size:2em}
 .r2{font-family:AT;letter-spacing:.3em;margin-top:1em} .r3{font-style:italic;font-size:1.2em} .r4{font-family:AT;margin-top:3em}
 .cred p{text-indent:0;margin:.6em 0;font-size:.9em}
+h2{font-family:AT;font-weight:normal;text-align:center;font-size:1.25em;letter-spacing:.05em;margin:1.4em 0 .6em;color:#6B5220}
+figure{margin:1.2em 0;text-align:center;page-break-inside:avoid} figure img{max-width:100%;max-height:92vh}
+figcaption{font-size:.85em;font-style:italic;margin-top:.4em;text-align:center} figcaption b{font-family:AT;font-style:normal;letter-spacing:.04em}
+p.lei{text-indent:0;text-align:left;margin:.5em 0} p.nota{text-indent:0;font-style:italic;text-align:center;margin:1em 0} p.lug{text-indent:0;margin:.35em 0}
+.el{margin:1.2em 0;page-break-inside:avoid} .el img{width:42%;float:left;margin:0 .8em .4em 0;border-radius:4px} .el:after{content:"";display:block;clear:both}
+.insg{text-align:center} .ins{display:inline-block;width:30%;vertical-align:top;margin:.4em 1%} .ins img{width:100%} .ins p{text-indent:0;text-align:center;font-size:.75em}
+.fig img,.cheia img{max-height:95vh}
 """
 
 if __name__ == "__main__":
