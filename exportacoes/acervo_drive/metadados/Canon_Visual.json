@@ -1,0 +1,48 @@
+{
+  "autor": "Werik Martins",
+  "saga": "Leis para Matar Deuses",
+  "volume": "O Deus que Caiu do Céu",
+  "base_narrativa": "Leis_para_Matar_Deuses_Vol1_LUXO.pdf",
+  "sha256": "b8776841911eb02f912cffb20cd6bb5051d40e2beec9d02b838dc402b1404619",
+  "paginas": 499,
+  "adocao_autor": "2026-10-21",
+  "escopo": "Criação visual e adaptação gráfica; autorização expressa para trabalhar com revelações. Não modificar o romance.",
+  "hierarquia": [
+    "Orientação visual expressa mais recente do autor: Aurélia e Mara devem seguir as pranchas; P02V2 e P03V2 são os modelos atuais. Aurélia deve transmitir beleza e encanto divinos.",
+    "PDF adotado pelo autor: acontecimentos, personagens, locais e fundamentos narrativos. O romance não é reescrito nesta etapa.",
+    "Bíblias aprovadas: sete leis e fundamentos técnicos, aplicadas sem inventar poderes.",
+    "Seis pranchas anexadas: referência estética; textos e detalhes divergentes não criam fatos.",
+    "Novos desenhos: propostas de direção de arte identificadas como tal."
+  ],
+  "paleta": {
+    "obsidiana": "#101519",
+    "bronze": "#B9965A",
+    "marfim": "#EEE8D7",
+    "sangue": "#681E2A",
+    "azul_inverno": "#617684",
+    "cobre": "#A3603D"
+  },
+  "leis": [
+    "Conservação",
+    "Vínculo",
+    "Compatibilidade",
+    "Vazão",
+    "Dissipação",
+    "Capacidade",
+    "Retorno"
+  ],
+  "disciplinas": {
+    "Pulso": "movimento e impulso",
+    "Brasa": "energia térmica",
+    "Trama": "tensões e estabilidade material",
+    "Clarão": "luz",
+    "Eco": "vibração e som",
+    "Carga": "carga elétrica"
+  },
+  "referencias_atuais": {
+    "Aurelia": "P02V2",
+    "Mara Quen": "P03V2",
+    "capa": "C01V2",
+    "graphic_novel_pagina_3": "GN03V2"
+  }
+}

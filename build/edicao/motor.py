@@ -197,10 +197,10 @@ body{{font-family:EBG;color:#2A2420;-webkit-print-color-adjust:exact;print-color
 """
 
 
-def compor(pecas, capitulos, saida_pdf, titulo="Leis para Matar Deuses"):
+def compor(pecas, capitulos, saida_pdf, titulo="Leis para Matar Deuses", extra_css=""):
     hp = saida_pdf.replace(".pdf", ".html")
     doc = (f'<!doctype html><html lang="pt-BR"><head><meta charset="utf-8"><title>{esc(titulo)}</title>'
-           f'<style>{css(capitulos)}</style></head><body>{"".join(pecas)}</body></html>')
+           f'<style>{css(capitulos)}{extra_css}</style></head><body>{"".join(pecas)}</body></html>')
     open(hp, "w", encoding="utf-8").write(doc)
     subprocess.run([SHELL, "--no-sandbox", "--disable-gpu", "--no-pdf-header-footer", "--allow-file-access-from-files",
                     "--virtual-time-budget=60000", f"--print-to-pdf={saida_pdf}", "file://" + hp],
