@@ -118,7 +118,7 @@ def montar():
     L = Livro()
     capa = f"{ROOT}/exportacoes/capa_v2/capa_ebook.jpg"
     L.b.set_cover("capa.jpg", open(capa, "rb").read())
-    L.pagina_imagem("guarda", renderizar("guarda", [pagina_mapa(mapa_aresta())])[0], "Aresta")
+    L.pagina_imagem("guarda", renderizar("guarda", [ME.mapa_ref()])[0], "Aresta")
     L.pagina_imagem("frontispicio", f"{ME.B4}/PE-019_ilan_e_aurelia_vhalessa_v2_4x.jpg", "Frontispício")
     L.doc("rosto", "Folha de rosto", '<div class="rosto"><p class="r1">Leis para Matar Deuses</p><p class="r2">Volume I</p>'
           '<p class="r3">O Deus que Caiu do Céu</p><p class="r4">Werik Martins</p></div>')
@@ -129,7 +129,7 @@ def montar():
     toc_atlas = []
     for k, f in enumerate(atlas):
         L.pagina_imagem(f"atlas{k}", f, ["O Norte", "Vhalessa", "Vhalessa, lugar por lugar"][k], toc_atlas)
-    mundo = renderizar("mundo", [leis(), disciplinas(), gramatica_selo(), arquitetura(), ME.elenco()])
+    mundo = renderizar("mundo", [ME.placa(f"{ME.R4}/RF-002_sete_leis_4x.jpg", "As Sete Leis", "", ""), ME.placa(f"{ME.R4}/RF-003_seis_disciplinas_4x.jpg", "Os Seis Sinais", "", ""), gramatica_selo(), ME.placa(f"{ME.BA}/02_simbolos/SI-003_etapas_da_transposicao.png", "Toda magia, em seis passos", "Fonte · Selo · Vínculo · Destino · Controle · Retorno", ""), ME.elenco()])
     toc_mundo = []
     for k, f in enumerate(mundo):
         L.pagina_imagem(f"mundo{k}", f, ["As Sete Leis", "Os Seis Sinais", "A gramática do selo", "Toda magia, em seis passos", "O elenco"][k], toc_mundo)
@@ -141,13 +141,11 @@ def montar():
         for n in range(c0, c1 + 1):
             capitulo(L, n, tp)
         L.toc.append((epub.Section(f"Parte {num} · {tit}"), tp))
-    codex_pecas = [ME.grade("Em Vhalessa e além", [(f"{ME.DR}/personagens/P07_Thor_Master.png", "Thor", ""), (f"{ME.DR}/personagens/P08_Anubis_Master.png", "Anúbis", ""),
-                                                   (f"{ME.DR}/personagens/P06_Cassia_Vale_Master.png", "Cassia Vale", ""), (f"{ME.DR}/personagens/P09_Eron_Tahl_Master.png", "Eron Tahl", ""),
-                                                   (f"{ME.DR}/personagens/P11_Ithren_Master.png", "Mestre Ithren", ""), (f"{ME.DR}/personagens/P10_Iolanthe_Ness_Master.png", "A velha mestra", "")], 3, 50)]
-    codex_pecas += armorial()[:17] + [ME.glossario()]
+    from armorial import aurelia, galeria_acervo, expressoes, arsenal, engenharia
+    codex_pecas = aurelia() + expressoes() + galeria_acervo() + arsenal() + engenharia() + armorial() + [ME.glossario()]
     toc_codex = []
     for k, f in enumerate(renderizar("codex", codex_pecas)):
-        L.pagina_imagem(f"codex{k:02d}", f, "Codex de Aresta" if k == 0 else f"Codex {k}", toc_codex if k in (0, 1, 2, len(codex_pecas) - 1) else None)
+        L.pagina_imagem(f"codex{k:02d}", f, "Codex de Aresta" if k == 0 else f"Codex {k}", toc_codex if k == 0 else None)
     L.toc.append((epub.Section("Codex de Aresta"), toc_codex))
     L.pagina_imagem("contracapa", f"{ME.DR}/capas_e_marca/C02_Contracapa_Arte_Sem_Texto.png", "Contracapa")
     L.b.toc = L.toc

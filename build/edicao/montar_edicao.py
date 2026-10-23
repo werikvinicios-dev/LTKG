@@ -7,7 +7,7 @@ import json, os, re, subprocess, sys
 sys.path.insert(0, os.path.dirname(__file__))
 from motor import *
 from especiais import leis, disciplinas, gramatica_selo, arquitetura, CSS_ESP
-from armorial import armorial, CSS_ARM
+from armorial import armorial, aurelia, galeria_acervo, expressoes, arsenal, engenharia, placa, moldura_img, CSS_ARM
 from mapas import planta_vhalessa, mapa_norte, mapa_aresta, pagina_mapa, legenda_vhalessa, CSS_MAPA
 
 V2 = f"{ROOT}/manuscrito/V2"
@@ -136,7 +136,8 @@ def capitulo(n):
     pecas += [pagina_final(arq(f)) for f in finais]
     q = pl.get("citacao_respiro")
     if q:
-        pecas.append(respiro(RESPIROS[(n - 1) % len(RESPIROS)], q, autor=f"{rot} {n}" if rot == "Capítulo" else "Epílogo"))
+        rim = f"{BA}/06_personagens/{AU[n]}.png" if n in AU else RESPIROS[(n - 1) % len(RESPIROS)]
+        pecas.append(respiro(rim, q, autor=f"{rot} {n}" if rot == "Capítulo" else "Epílogo"))
     return pecas, (n, titulo_curto(titulo).replace('"', "'"))
 
 
@@ -145,6 +146,17 @@ def folha_rosto():
     return pagina(f'''<div class="rosto">{anel_svg(30)}<div class="r1">Leis para<br>Matar Deuses</div>{ornamento()}
 <div class="r2">Volume I</div><div class="r3">O Deus que Caiu do Céu</div><div class="r4">Werik Martins</div>
 <div class="selar">LEIS PARA MATAR DEUSES</div></div>''', "noite")
+
+
+R4 = "exportacoes/banco_de_arte_4x/12_referencias"
+AU = {3: "PE-011_aurelia_dourada_trono", 5: "PE-009_aurelia_dourada_costas", 7: "PE-008_aurelia_dourada_portal", 9: "PE-010_aurelia_dourada_escadaria",
+      14: "PE-013_aurelia_veu_dourado_vento", 16: "PE-017_aurelia_chiffon_grego", 19: "PE-016_aurelia_luar_sacada", 22: "PE-014_aurelia_regalia_de_batalha",
+      27: "PE-018_aurelia_lago_de_luz", 29: "PE-015_aurelia_reclinada_templo"}
+
+
+def mapa_ref():
+    return pagina(f'<div class="pl" style="padding:12mm 9mm"><div class="ek">Atlas</div><div class="plt">Aresta</div>'
+                  f'{moldura_img(f"{R4}/RF-001_mapa_de_aresta_4x.jpg", 140, 156)}<div class="pll">O continente, as suas terras e os caminhos que as ligam.</div></div>', "noite")
 
 
 def falsa_rosto():
@@ -269,44 +281,32 @@ CSS_LIVRO = f"""
 def livro(paginas_caps):
     pecas, caps = [], []
     pecas.append(imagem_cheia("exportacoes/capa_v2/capa_ebook.jpg"))
-    pecas.append(pagina_mapa(mapa_aresta()))
+    pecas.append(mapa_ref())
     pecas.append(falsa_rosto())
     pecas.append(imagem_cheia(f"{B4}/PE-019_ilan_e_aurelia_vhalessa_v2_4x.jpg", "center 30%"))
     pecas.append(folha_rosto()); pecas.append(creditos()); pecas.append(epigrafe_livro())
     pecas.append(sumario(paginas_caps))
     pecas.append(divisor("Atlas", "Aresta, o Norte e a cidade de Vhalessa."))
+    pecas.append(mapa_ref())
     pecas.append(pagina_mapa(mapa_norte())); pecas.append(pagina_mapa(planta_vhalessa()))
     ims = {1: f"{E}/C02-2.png", 2: f"{E}/C22-0.png", 3: f"{E}/C09-0.png", 4: f"{E}/C03-3.png", 5: f"{E}/C08-0.png", 6: f"{E}/C04-0.png",
            7: f"{E}/C15-2.png", 8: f"{E}/C15-1.png", 9: f"{E}/C02-0.png", 10: f"{BA}/05_mundo/MU-009_vhalessa_fornalha_velha_noite.png",
            11: f"{E}/C05-0.png", 12: f"{E}/C12-1.png", 13: f"{E}/C13-1.png", 14: f"{E}/C12-0.png"}
     pecas.append(legenda_vhalessa(ims))
     pecas.append(divisor("Antes de começar", "O que todo mundo em Aresta aprende criança, e quase todo mundo esquece."))
-    pecas += [leis(), disciplinas(), gramatica_selo(), arquitetura(), elenco()]
+    pecas += [placa(f"{R4}/RF-002_sete_leis_4x.jpg", "As Sete Leis", "Valem para mortais, deuses e dragões. Nenhum selo, nenhuma coroa e nenhuma prece muda uma vírgula delas.", "O que todo mago aprende primeiro"),
+              placa(f"{R4}/RF-003_seis_disciplinas_4x.jpg", "Os Seis Sinais", "Pulso · Brasa · Trama · Clarão · Eco · Carga. Fogo, gelo, raio e vento são misturas destes seis.", "O que a magia move"),
+              gramatica_selo(),
+              placa(f"{BA}/02_simbolos/SI-003_etapas_da_transposicao.png", "Toda magia, em seis passos", "Fonte · Selo · Vínculo · Destino · Controle · Retorno. A magia não cria nada: muda de lugar o que já existe.", "A Transposição"),
+              elenco()]
     for num, tit, c0, c1, epi, fonte, im, pos in PARTES:
         pecas.append(abertura_parte(num, tit, epi, im, pos, fonte))
         for n in range(c0, c1 + 1):
             p, cab = capitulo(n)
             pecas += p; caps.append(cab)
     # Codex
-    pecas.append(divisor("Codex de Aresta", "Galeria, arsenal, armorial e glossário. Leia depois do livro: aqui não há segredos guardados."))
-    pecas.append(pagina_final(f"{DR}/producao_v2/F01.png")); pecas.append(pagina_final(f"{DR}/producao_v2/F02.png"))
-    pecas.append(pagina_final(f"{DR}/producao_v2/F03.png")); pecas.append(pagina_final(f"{DR}/producao_v2/F04.png"))
-    pecas.append(pagina_final(f"{DR}/producao_v2/F05.png"))
-    pecas.append(grade("Em Vhalessa e além", [(f"{DR}/personagens/P07_Thor_Master.png", "Thor", "senhor do trovão dos Reinos da Tempestade"),
-                                              (f"{DR}/personagens/P08_Anubis_Master.png", "Anúbis", "guardião da Necrópole do Poente"),
-                                              (f"{DR}/personagens/P06_Cassia_Vale_Master.png", "Cassia Vale", "comissária da Câmara dos Pactos"),
-                                              (f"{DR}/personagens/P09_Eron_Tahl_Master.png", "Eron Tahl", "a Linha Seca"),
-                                              (f"{DR}/personagens/P11_Ithren_Master.png", "Mestre Ithren", "o homem de muitos rostos"),
-                                              (f"{DR}/personagens/P10_Iolanthe_Ness_Master.png", "A velha mestra", "uma sala sobre um armazém, no oeste")], 3, 50))
-    pecas.append(grade("Arsenal e artefatos", [(f"{DR}/artefatos/A01_Manopla_Esquerda_Tres_Celulas.png", "A manopla de Ilan", "couro, aço e três células de cerâmica"),
-                                               (f"{DR}/artefatos/A02_Espada_de_Ilan.png", "A espada de Ilan", "ferro simples, guarda simples, bainha remendada"),
-                                               (f"{DR}/artefatos/A03_Martelo_de_Thor.png", "O martelo de Thor", "cabo curto demais para o tamanho do dono"),
-                                               (f"{DR}/artefatos/A04_Chave_e_Circlet_de_Aurelia.png", "A chave de bronze", "e o diadema da Senhora dos Limiares"),
-                                               (f"{DR}/artefatos/A05_Maleta_de_Placas_Mara.png", "As placas de Mara", "vidro fino que mede o que passa"),
-                                               (f"{DR}/artefatos/A06_Favo_Termico.png", "O favo térmico", "células de seis lados, cintas de bronze"),
-                                               (f"{DR}/artefatos/A07_Fiel_Agulha_de_Bronze.png", "O fiel", "uma agulha de bronze, longa e fina"),
-                                               (f"{BA}/01_identidade/ID-009_emblema_medalhao.png", "O emblema da saga", "a lâmina, a balança e o arco")], 2, 40))
-    pecas += armorial()
+    pecas.append(divisor("Codex de Aresta", "A Senhora dos Limiares, a galeria, o arsenal, a engenharia arcana e o armorial. Leia depois do livro: aqui não há segredos guardados."))
+    pecas += aurelia() + expressoes() + galeria_acervo() + arsenal() + engenharia() + armorial()
     pecas.append(glossario()); pecas.append(colofao()); pecas.append(contracapa())
     return pecas, caps
 

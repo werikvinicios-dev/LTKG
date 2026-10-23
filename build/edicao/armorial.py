@@ -1,87 +1,157 @@
-"""Armorial de Aresta — feito com os símbolos do nosso sistema (build/aresta/simbolos.py,
-exportacoes/identidade_aresta/simbolos/). Cada instituição e região ganha brasão, bandeira e estandarte no mesmo
-desenho; as pranchas pintadas do banco de arte (facções, estandartes, selos de cera, medalhões, anéis) entram em seguida."""
-import re
+"""Armorial e Codex de Aresta: só pranchas pintadas do nosso acervo (GitHub) e artes da coleção, em molduras de galeria."""
 from motor import *
 
-SIM = f"{ROOT}/exportacoes/identidade_aresta/simbolos"
-INST = [("ordem_da_ultima_sentenca", "Ordem da Última Sentença", "A lei acima de tudo.", "#283040", OURO),
-        ("os_carrascos", "Os Carrascos", "Equilíbrio pela ausência.", "#4E1216", "#D9B26A"),
-        ("ilan_varek", "Ilan Varek", "Sobrevivência é princípio.", "#26272A", "#C9A15A"),
-        ("aurelia", "Aurelia, Senhora dos Limiares", "Limiares, soberania, escolhas.", "#5E461A", "#F2DDA0"),
-        ("os_limiares", "Os Limiares", "Portais exigem testemunhas.", "#1D4442", OURO),
-        ("coroas_e_soberanias", "Coroas e Soberanias", "Entre mundos, há um trono.", "#40294F", "#E2C47E"),
-        ("companhia_arrimo", "Companhia Arrimo", "A apólice cobre o que pode.", "#3A362C", "#D7C08A"),
-        ("cidades_livres", "Cidades Livres", "Povos escolhem.", "#24425F", "#E2C47E"),
-        ("os_dragoes", "Os Dragões", "Memória mais antiga que os deuses.", "#62241A", "#E6B07A")]
-REG = [("cidade_de_limiar", "Cidade de Limiar", "Onde todos os caminhos se encontram.", "#22403F"),
-       ("reinos_do_norte", "Reinos do Norte", "Ferro, tempestade e juramento.", "#36404C"),
-       ("delta_e_arquivos", "Delta e Arquivos", "O que não pode ser esquecido.", "#2A4636"),
-       ("ilhas_prisma", "Ilhas-Prisma", "Luz dividida sobre o mar.", "#37305A"),
-       ("terras_dos_dragoes", "Terras dos Dragões", "Escama, soberania e tempo.", "#54221A"),
-       ("cidades_livres", "Cidades Livres", "Ninguém manda em quem escolhe.", "#4A4524"),
-       ("a_confluencia", "A Confluência", "O que liga e o que pode ruir.", "#283C58")]
+BA = "exportacoes/banco_de_arte"
+DR = "exportacoes/acervo_drive"
+B4 = "exportacoes/banco_de_arte_4x"
+SIM = "exportacoes/identidade_aresta/simbolos"
+
+CANTO = (f'<svg viewBox="0 0 40 40" class="ct"><path d="M2 38 V2 H38" fill="none" stroke="{OURO}" stroke-width="1.6"/>'
+         f'<path d="M7 38 V7 H38" fill="none" stroke="{OURO}" stroke-width=".6"/><circle cx="7" cy="7" r="2.4" fill="{OURO}"/></svg>')
 
 
-def simbolo(pasta, chave, cor):
-    s = open(f"{SIM}/{pasta}/{chave}_linear_marfim.svg", encoding="utf-8").read()
-    corpo = re.sub(r"^.*?<svg[^>]*>", "", s, flags=re.S).rsplit("</svg>", 1)[0]
-    return corpo.replace("#EFE8DA", cor)
+def moldura_img(path, w=None, h=None, pos="center", maxw=2000):
+    st = f"width:{w}mm;" if w else ""
+    st += f"height:{h}mm;" if h else ""
+    return (f'<div class="mol" style="{st}"><div class="moli" style="background-image:url({img(path, maxw)});background-position:{pos}"></div>'
+            f'{CANTO}{CANTO.replace("class=\"ct\"", "class=\"ct c2\"")}{CANTO.replace("class=\"ct\"", "class=\"ct c3\"")}{CANTO.replace("class=\"ct\"", "class=\"ct c4\"")}</div>')
 
 
-def brasao(sim, fundo, metal):
-    return f'''<svg viewBox="0 0 220 260" class="hb"><defs><linearGradient id="g{fundo[1:]}" x1="0" y1="0" x2="0" y2="1">
-<stop offset="0" stop-color="{fundo}" stop-opacity=".85"/><stop offset="1" stop-color="{fundo}"/></linearGradient></defs>
-<path d="M18 16 H202 V120 C202 190 150 230 110 248 C70 230 18 190 18 120 Z" fill="url(#g{fundo[1:]})" stroke="{metal}" stroke-width="5"/>
-<path d="M30 28 H190 V120 C190 182 145 216 110 233 C75 216 30 182 30 120 Z" fill="none" stroke="{metal}" stroke-width="1.2" opacity=".7"/>
-<g transform="translate(35 40) scale(.75)">{sim}</g></svg>'''
+def placa(path, titulo, legenda, rotulo="Armorial de Aresta"):
+    """Prancha de página inteira em paisagem, com moldura, título e legenda; a moldura segue a proporção da arte."""
+    from PIL import Image
+    w, h = Image.open(path if path.startswith("/") else f"{ROOT}/{path}").size
+    mw, mh = 200, 116
+    if w / h > mw / mh:
+        mh = round(mw * h / w)
+    else:
+        mw = round(mh * w / h)
+    return pagina(f'''<div class="pl"><div class="ek">{esc(rotulo)}</div><div class="plt">{esc(titulo)}</div>
+{moldura_img(path, mw + 5, mh + 5)}<div class="pll">{esc(legenda)}</div></div>''', "noite", nome="paisagem")
 
 
-def bandeira(sim, fundo, metal):
-    return f'''<svg viewBox="0 0 300 200" class="hf"><path d="M6 10 H294 L270 100 L294 190 H6 Z" fill="{fundo}" stroke="{metal}" stroke-width="3"/>
-<path d="M6 10 L110 100 L6 190" fill="none" stroke="{metal}" stroke-width="1.4" opacity=".55"/>
-<g transform="translate(115 30) scale(.7)">{sim}</g></svg>'''
+def galeria(titulo, itens, cols=2, alt=82, rotulo="Codex de Aresta", pos="center 22%"):
+    cards = "".join(f'<div class="gc">{moldura_img(p, None, alt, pos, 1300)}<div class="gt">{esc(t)}</div>'
+                    f'<div class="gx">{esc(x)}</div></div>' for p, t, x in itens)
+    return pagina(f'''<div class="gal"><div class="ek">{esc(rotulo)}</div><div class="plt">{esc(titulo)}</div>{ornamento()}
+<div class="gg2" style="grid-template-columns:repeat({cols},1fr)">{cards}</div></div>''', "noite")
 
 
-def estandarte(sim, fundo, metal):
-    franja = "".join(f'<line x1="{x}" y1="352" x2="{x}" y2="366" stroke="{metal}" stroke-width="2"/>' for x in range(34, 170, 9))
-    return f'''<svg viewBox="0 0 200 400" class="he"><line x1="10" y1="14" x2="190" y2="14" stroke="{metal}" stroke-width="5" stroke-linecap="round"/>
-<circle cx="10" cy="14" r="7" fill="{metal}"/><circle cx="190" cy="14" r="7" fill="{metal}"/>
-<path d="M30 20 H170 V340 L100 372 L30 340 Z" fill="{fundo}" stroke="{metal}" stroke-width="3"/>
-<path d="M40 30 H160 V334 L100 362 L40 334 Z" fill="none" stroke="{metal}" stroke-width="1" opacity=".6"/>
-<g transform="translate(40 90) scale(.6)">{sim}</g><circle cx="100" cy="290" r="8" fill="{metal}"/>{franja}</svg>'''
+def heroi(path, titulo, sub, pos="center 20%"):
+    return pagina(f'''<div class="bg" style="background-image:url({img(path, 2000)});background-position:{pos}"></div><div class="veu baixo"></div>
+<div class="her"><div class="ek">Codex de Aresta</div><div class="ptit">{esc(titulo)}</div>{ornamento()}<div class="pepi"><p>{esc(sub)}</p></div></div>''', "img")
 
 
-def pagina_armas(titulo, lema, sim, fundo, metal, rotulo):
-    return pagina(f'''<div class="arm"><div class="ek">{esc(rotulo)}</div><div class="et" style="font-size:19pt">{esc(titulo)}</div>{ornamento()}
-<div class="armg"><div class="ac">{estandarte(sim, fundo, metal)}<div class="al">Estandarte</div></div>
-<div class="ad"><div class="ac">{brasao(sim, fundo, metal)}<div class="al">Brasão</div></div>
-<div class="ac">{bandeira(sim, fundo, metal)}<div class="al">Bandeira</div></div></div></div>
-<div class="lema">“{esc(lema)}”</div><div class="selar" style="bottom:9mm">{esc(re.sub(r"[^A-Za-z ]", "", titulo).upper())}</div></div>''', "noite")
+def divisor(titulo, sub, selar="CODEX DE ARESTA"):
+    return pagina(f'''<div class="parte">{anel_svg(44)}<div class="ptit" style="margin-top:8mm">{esc(titulo)}</div>{ornamento()}
+<div class="pepi"><p>{esc(sub)}</p></div><div class="selar">{esc(selar)}</div></div>''', "noite")
+
+
+INSIGNIAS = [("ordem_da_ultima_sentenca", "Ordem da Última Sentença"), ("os_carrascos", "Os Carrascos"), ("ilan_varek", "Ilan Varek"),
+             ("aurelia", "Aurelia"), ("os_limiares", "Os Limiares"), ("coroas_e_soberanias", "Coroas e Soberanias"),
+             ("companhia_arrimo", "Companhia Arrimo"), ("cidades_livres", "Cidades Livres"), ("os_dragoes", "Os Dragões")]
+
+
+def insignias():
+    h = "".join(f'<div class="ins"><img src="{img(f"{SIM}/instituicoes/{k}_decorativa.png", 500)}"><div class="gt">{esc(t)}</div></div>' for k, t in INSIGNIAS)
+    return pagina(f'''<div class="gal"><div class="ek">Armorial de Aresta</div><div class="plt">Insígnias</div>{ornamento()}
+<div class="insg">{h}</div><div class="pll" style="margin-top:6mm">As marcas gravadas em sinetes, portas e lacres de cada ordem, casa e companhia.</div></div>''', "noite")
 
 
 def armorial():
-    pg = [pagina(f'''<div class="parte">{anel_svg(44)}<div class="ptit" style="margin-top:8mm">Armorial de Aresta</div>{ornamento()}
-<div class="pepi"><p>Brasões, bandeiras e estandartes das ordens, das casas, das companhias e das terras de Aresta.</p></div>
-<div class="selar">ARMORIAL</div></div>''', "noite")]
-    for k, t, lema, fundo, metal in INST:
-        pg.append(pagina_armas(t, lema, simbolo("instituicoes", k, metal), fundo, metal, "Ordens, casas e companhias"))
-    for k, t, lema, fundo in REG:
-        pg.append(pagina_armas(t, lema, simbolo("regioes_conceituais", k, OURO), fundo, OURO, "As terras de Aresta"))
-    BA = "exportacoes/banco_de_arte"
-    for p, leg in ((f"{BA}/03_faccoes/FA-001_seis_faccoes.png", "As seis facções"), (f"{BA}/03_faccoes/FA-002_outras_casas.png", "Outras casas"),
-                   (f"{BA}/04_objetos/OB-004_estandartes.png", "Estandartes das facções"), (f"{BA}/04_objetos/OB-001_selos_de_cera.png", "Sinetes e lacres"),
-                   (f"{BA}/04_objetos/OB-002_medalhoes.png", "Medalhões"), (f"{BA}/04_objetos/OB-003_aneis_de_autoridade.png", "Anéis de autoridade")):
-        pg.append(pagina(f'<div class="bg" style="background-image:url({img(p, 2200)})"></div><div class="veu"></div><div class="leg" style="font:700 10pt AT;letter-spacing:1.4mm">{esc(leg.upper())}</div>',
-                         "img", nome="paisagem"))
+    F, O = f"{BA}/03_faccoes", f"{BA}/04_objetos"
+    return [divisor("Armorial de Aresta", "Estandartes, brasões, sinetes e bandeiras das ordens, das casas, das companhias, dos deuses e das terras.", "ARMORIAL"),
+            placa(f"{F}/FA-001_seis_faccoes.png", "As seis facções", "Ordem da Última Sentença · Carrascos · Coroa dos Limiares · Convergência de Limiar · Cidades Livres · Dragões"),
+            placa(f"{F}/FA-002_outras_casas.png", "Outras casas", "Aurelia · Ilan Varek · Arquivistas · Círculo do Vazio Profundo · Senhorios de Aresta"),
+            placa(f"{F}/FA-003_vhalessa.png", "Vhalessa", "Casa da Fornalha · Coroa do Sol de Inverno · Câmara dos Pactos · Conselho da cidade"),
+            placa(f"{F}/FA-004_companhias_e_guildas.png", "Companhias e guildas", "Companhia Arrimo · Kaltz e Filhas · Guilda dos Graneleiros · Liga dos Peritos de Selos"),
+            placa(f"{F}/FA-005_deuses_vizinhos.png", "Soberanias vizinhas", "Reinos da Tempestade · Necrópole do Poente · Soberania dos Limiares · A Velha das Cristas"),
+            placa(f"{F}/FA-006_terras_de_aresta.png", "As terras de Aresta", "Reinos do Norte · Delta e Arquivos · Ilhas-Prisma · Terras dos Dragões · Cidade de Limiar · Cidades Livres · A Confluência"),
+            placa(f"{O}/OB-004_estandartes.png", "Estandartes das facções", "Os dez estandartes, como desfilam nas cortes de Aresta"),
+            insignias(),
+            placa(f"{O}/OB-001_selos_de_cera.png", "Sinetes e lacres", "Cera vermelha, azul, verde e marfim: cada cor, uma casa"),
+            placa(f"{O}/OB-002_medalhoes.png", "Medalhões", "As medalhas que se usam no peito e se escondem debaixo da gola"),
+            placa(f"{O}/OB-003_aneis_de_autoridade.png", "Anéis de autoridade", "Quem carimba com o anel responde pelo que carimbou"),
+            placa(f"{O}/OB-006_marcas_em_manuscritos.png", "Marcas em manuscritos", "Sigilos em tinta, nas margens dos livros que valem a pena roubar")]
+
+
+AURELIA = [("PE-012_aurelia_dourada_retrato", "A Senhora dos Limiares", "o rosto que a cidade inteira aprendeu a reconhecer"),
+           ("PE-008_aurelia_dourada_portal", "No portal", "toda porta é uma pergunta"),
+           ("PE-010_aurelia_dourada_escadaria", "A escadaria", "descer também é um jeito de chegar"),
+           ("PE-011_aurelia_dourada_trono", "O trono", "mil anos de audiências"),
+           ("PE-013_aurelia_veu_dourado_vento", "Véu ao vento", "nas varandas do Átrio"),
+           ("PE-014_aurelia_regalia_de_batalha", "Regalia de batalha", "quando a deusa decide lutar"),
+           ("PE-016_aurelia_luar_sacada", "Luar na sacada", "uma deusa também perde o sono"),
+           ("PE-017_aurelia_chiffon_grego", "Chiffon e ouro", "o luxo de não pedir desculpas"),
+           ("PE-018_aurelia_lago_de_luz", "O lago de luz", "a água lembra de tudo"),
+           ("PE-015_aurelia_reclinada_templo", "No templo", "o descanso depois da conta"),
+           ("PE-009_aurelia_dourada_costas", "De costas", "e mesmo assim olhando"),
+           ("PE-002_aurelia_retrato", "O primeiro estudo", "a deusa antes da direção dourada")]
+
+
+def aurelia():
+    P = f"{BA}/06_personagens"
+    lista = [(f"{P}/{k}.png", t, x) for k, t, x in AURELIA]
+    pg = [heroi(f"{B4}/06_personagens/PE-012_aurelia_dourada_retrato_4x.jpg", "A Senhora dos Limiares", "Aurelia, deusa das portas, das passagens e das tarifas.")]
+    for i in range(1, len(lista), 4):
+        pg.append(galeria("A Senhora dos Limiares", lista[i:i + 4], 2, 88))
+    pg.append(placa(f"{BA}/06_personagens/PE-015_aurelia_reclinada_templo.png", "No templo", "Aurelia em repouso", "A Senhora dos Limiares"))
     return pg
 
 
+def galeria_acervo():
+    P = f"{DR}/personagens"; V = f"{DR}/producao_v2"
+    a = [(f"{P}/P01_Ilan_Varek_Master.png", "Ilan Varek", "estudo de figurino"), (f"{P}/P03V2_Mara_Quen_Master_v2.png", "Mara Quen", "a auditora"),
+         (f"{P}/P04_Nara_Voss_Master.png", "Nara Voss", "a oficina"), (f"{P}/P05_Sevran_Master.png", "Sevran", "a cozinha"),
+         (f"{V}/P04_01.png", "Nara na bancada", "cobre e cerâmica"), (f"{V}/P05_01.png", "A sopa da Cozinha do Lento", "ninguém trabalha bem com fome")]
+    b = [(f"{P}/P07_Thor_Master.png", "Thor", "senhor do trovão dos Reinos da Tempestade"), (f"{P}/P08_Anubis_Master.png", "Anúbis", "guardião da Necrópole do Poente"),
+         (f"{P}/P06_Cassia_Vale_Master.png", "Cassia Vale", "comissária da Câmara dos Pactos"), (f"{P}/P09_Eron_Tahl_Master.png", "Eron Tahl", "a Linha Seca"),
+         (f"{P}/P11_Ithren_Master.png", "Mestre Ithren", "o homem de muitos rostos"), (f"{P}/P10_Iolanthe_Ness_Master.png", "A velha mestra", "uma sala sobre um armazém, no oeste")]
+    c = [(f"{V}/P02_01.png", "Aurelia à porta dourada", "inverno no Átrio"), (f"{V}/P01_01.png", "Ilan na escadaria", "a noite de Vhalessa"),
+         (f"{P}/P12_Estudo_Reservado_v1.png", "Estudo reservado", "o leito de gelo"), (f"{DR}/cenarios/S03_Oficina_Voss.png", "A Oficina Voss", "o primeiro estudo"),
+         (f"{DR}/cenarios/S04_Cozinha_do_Lento.png", "A Cozinha do Lento", "o primeiro estudo"), (f"{DR}/cenarios/S02_Atrio_da_Soleira.png", "O Átrio de Soleira", "o salão das portas")]
+    return [galeria("Os nossos", a, 3, 62), galeria("Em Vhalessa e além", b, 3, 62), galeria("Estudos e cenários", c, 3, 62)]
+
+
+def expressoes():
+    V = f"{DR}/producao_v2"
+    return [placa(f"{V}/F0{i}.png", t, "folha de expressões", "Galeria de personagens") for i, t in
+            ((1, "Ilan Varek"), (2, "Aurelia"), (3, "Mara Quen"), (4, "Nara Voss"), (5, "Sevran"))]
+
+
+def arsenal():
+    A = f"{DR}/artefatos"
+    itens = [(f"{A}/A01_Manopla_Esquerda_Tres_Celulas.png", "A manopla de Ilan", "couro, aço e três células de cerâmica"),
+             (f"{A}/A02_Espada_de_Ilan.png", "A espada de Ilan", "ferro simples, guarda simples"),
+             (f"{A}/A03_Martelo_de_Thor.png", "O martelo de Thor", "cabo curto demais para o dono"),
+             (f"{A}/A04_Chave_e_Circlet_de_Aurelia.png", "A chave de bronze", "e o diadema da Senhora dos Limiares"),
+             (f"{A}/A05_Maleta_de_Placas_Mara.png", "As placas de Mara", "vidro fino que mede o que passa"),
+             (f"{A}/A06_Favo_Termico.png", "O favo térmico", "células de seis lados, cintas de bronze")]
+    return [galeria("Arsenal e artefatos", itens, 2, 52),
+            galeria("Arsenal e artefatos", [(f"{A}/A07_Fiel_Agulha_de_Bronze.png", "O fiel", "uma agulha de bronze, longa e fina"),
+                                            (f"{DR}/producao_v2/W01_v2.png", "A manopla, aberta", "estudo de engenharia"),
+                                            (f"{BA}/04_objetos/OB-007_artefatos_de_colecao.png", "Peças de coleção", "medalhão, sinete e anel"),
+                                            (f"{BA}/01_identidade/ID-009_emblema_medalhao.png", "O emblema da saga", "a lâmina, a balança e o arco")], 2, 52)]
+
+
+def engenharia():
+    R = f"{B4}/12_referencias"
+    return [placa(f"{R}/RF-004_registro_das_leis_4x.jpg", "Registro das Leis", "“Os deuses também as obedecem. A diferença é que eles têm tempo demais para disfarçar.”", "Engenharia arcana"),
+            placa(f"{R}/RF-005_instrumentos_4x.jpg", "Instrumentos arcano-técnicos", "bastão · círculo · orbe · selo · códice · matriz", "Engenharia arcana"),
+            placa(f"{R}/RF-006_diagramas_de_circuitos_4x.jpg", "Diagramas de circuitos", "círculo de contenção · canal de transposição · feitiço de estrutura", "Engenharia arcana")]
+
+
 CSS_ARM = f"""
-.arm{{position:absolute;inset:0;padding:16mm 12mm 14mm;color:{MARFIM};text-align:center;display:flex;flex-direction:column}}
-.armg{{display:grid;grid-template-columns:52mm 1fr;gap:5mm;align-items:center;margin-top:5mm;flex:1}}
-.ad{{display:flex;flex-direction:column;gap:7mm;align-items:center}}
-.he{{width:50mm;height:100mm}} .hb{{width:56mm;height:66mm}} .hf{{width:66mm;height:44mm}}
-.al{{font:400 7.5pt AT;letter-spacing:1.6mm;color:#9A8A6A;text-transform:uppercase;margin-top:1.4mm}}
-.lema{{font:italic 12pt EBG;color:#E6DCC6;margin:3mm 0 10mm}}
+.pl,.gal,.her{{position:absolute;inset:0;color:{MARFIM};text-align:center;display:flex;flex-direction:column;align-items:center}}
+.pl{{padding:9mm 14mm 8mm;justify-content:center}} .gal{{padding:15mm 12mm 10mm}} .her{{justify-content:flex-end;padding:0 16mm 24mm}}
+.plt{{font:700 17pt/1.15 AT;color:#E2C47E;letter-spacing:.8mm;margin:1.5mm 0 3mm}}
+.pll{{font:italic 10pt/1.4 EBG;color:#D9CFB8;margin-top:3.5mm;max-width:190mm}}
+.mol{{position:relative;width:100%;padding:2.4mm;background:linear-gradient(145deg,#2A241B,#0F0D0B);box-shadow:0 1mm 4mm rgba(0,0,0,.6),inset 0 0 0 .35mm #8A6E3A}}
+.moli{{width:100%;height:100%;background-size:cover;background-repeat:no-repeat;box-shadow:inset 0 0 0 .3mm #C9A15A}}
+.ct{{position:absolute;width:7mm;height:7mm;left:-1.2mm;top:-1.2mm}} .c2{{left:auto;right:-1.2mm;transform:scaleX(-1)}}
+.c3{{top:auto;bottom:-1.2mm;transform:scaleY(-1)}} .c4{{left:auto;top:auto;right:-1.2mm;bottom:-1.2mm;transform:scale(-1,-1)}}
+.gg2{{display:grid;gap:6mm 5mm;width:100%;margin-top:3mm;text-align:center}}
+.gt{{font:700 8.8pt AT;color:#E2C47E;margin-top:2mm;letter-spacing:.4mm}} .gx{{font:italic 8.2pt/1.25 EBG;color:#CFC4AC}}
+.insg{{display:grid;grid-template-columns:repeat(3,1fr);gap:5mm 4mm;width:100%;margin-top:5mm}}
+.ins img{{width:32mm;height:32mm;object-fit:contain;mix-blend-mode:lighten}}
 """
