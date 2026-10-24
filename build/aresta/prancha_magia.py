@@ -275,7 +275,7 @@ def salva(nome, arr):
 
 
 DISC = [("pulso", pulso, "Impetus", "movimento e impulso", "#4F8BD6",
-         "Poeira e neve em estrias retas, anéis de choque no ar, e o contragolpe na âncora: chão trincado, bota que afunda."),
+         "Poeira e neve em estrias retas, anéis de choque no ar, e o contragolpe no selo: chão trincado, bota que afunda."),
         ("brasa", brasa, "Igneo", "energia térmica", "#C8332F",
          "Ar que tremula, vapor, metal em brasa. O calor sempre sai de algum lugar: lá fica a geada."),
         ("trama", trama, "Nexo", "ligações e tensões", "#C9A15A",
@@ -293,7 +293,7 @@ def prancha_8():
     b.append(panel(0, 0, 1448, 128, img=A("06_personagens/PE-021_ilan_afericao.png"), pos="center 38%",
                    extra='<div class="img fade-r"></div>'
                          '<div style="position:absolute;left:30px;top:22px;z-index:4" class="h1"><span style="font-size:23px">LINGUAGEM VISUAL DA MAGIA ◆ TRANSPOSIÇÃO</span>'
-                         '<div class="sc" style="font-size:11.5px;margin-top:6px;letter-spacing:3px">Fonte · Âncora · Elo · Destino · Controle · Retorno</div></div>'
+                         '<div class="sc" style="font-size:11.5px;margin-top:6px;letter-spacing:3px">Fonte · Selo · Vínculo · Destino · Controle · Retorno</div></div>'
                          '<div class="q" style="position:absolute;left:30px;top:84px;font-size:14px;z-index:4">A magia não sai das mãos: passa pelas coisas, e a conta sempre aparece.</div>'
                          '<div class="sc" style="position:absolute;left:30px;top:108px;font-size:8.5px;z-index:4;color:#9C8A66">Proposta · aguardando aprovação do autor</div>'))
     for i, (k, fn, nome, prop, cor, txt) in enumerate(DISC):
@@ -314,7 +314,7 @@ def prancha_8():
     lst = lambda tit, it, cor: (f'<div class="sc" style="font-size:10.5px;color:{cor};margin:0 0 6px">{tit}</div><ul class="b">'
                                 + "".join(f"<li>{t}</li>" for t in it) + "</ul>")
     b.append(panel(1132, 752, 308, 326, "", extra='<div style="position:absolute;left:16px;top:14px;right:12px">'
-                   + lst("Sempre", ["fonte, âncora, elo e destino", "efeito físico de verdade", "linhas retas e tensas",
+                   + lst("Sempre", ["fonte, selo, vínculo e destino", "efeito físico de verdade", "linhas retas e tensas",
                                     "marcas técnicas a giz", "o custo no corpo ou no equipamento"], "#C9A15A")
                    + '<div style="height:12px"></div>'
                    + lst("Nunca", ["fumaça colorida das mãos", "runas e círculos genéricos", "portal em redemoinho",
