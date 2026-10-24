@@ -15,6 +15,7 @@ P = {
     "estandartes": f"{B.BA}/04_objetos/OB-004_estandartes.png",
     "livro": f"{B.BA}/08_editorial/ED-001_livro_aberto_capitulo1.png",
     "texturas": f"{B.BA}/08_editorial/ED-003_texturas_e_materiais.png",
+    "capa1": f"{B.BA}/07_capas/CA-001_capa_vol1_o_deus_que_caiu_do_ceu.png",
     "grupo": f"{B.BA}/06_personagens/PE-006_dinamica_do_grupo.png",
     "templo": f"{B.BA}/05_mundo/MU-007_interiores_sagrados.png",
     "veu": f"{B.BA}/06_personagens/PE-013_aurelia_veu_dourado_vento.png",
@@ -148,6 +149,47 @@ def lei_img(k):
         c = cv2.resize(c, (c.shape[1] * 2, c.shape[0] * 2), interpolation=cv2.INTER_LANCZOS4)
         _LEIS_IMG[k] = _recorte_escuro(c)
     return _LEIS_IMG[k]
+
+
+_GEADA = {}
+
+
+def geada(img, g):
+    """Geada que cresce das bordas do quadro em direção ao centro: cristais ramificados e um véu branco."""
+    if g <= 0:
+        return img
+    k = (B.W, B.H)
+    if k not in _GEADA:
+        rng = np.random.default_rng(17)
+        L = np.zeros((B.H, B.W), np.float32); T = np.full((B.H, B.W), 9.0, np.float32)
+        s = B.H / 1080
+        for _ in range(170):
+            lado = rng.integers(0, 4)
+            if lado == 0: x, y, a = rng.uniform(0, B.W), 0, math.pi / 2
+            elif lado == 1: x, y, a = rng.uniform(0, B.W), B.H, -math.pi / 2
+            elif lado == 2: x, y, a = 0, rng.uniform(0, B.H), 0
+            else: x, y, a = B.W, rng.uniform(0, B.H), math.pi
+            a += rng.normal(0, .5); d = 0.0
+            for _ in range(int(rng.integers(8, 30))):
+                nx, ny = x + math.cos(a) * 9 * s, y + math.sin(a) * 9 * s
+                cv2.line(L, (int(x), int(y)), (int(nx), int(ny)), 1.0, 1, cv2.LINE_AA)
+                cv2.line(T, (int(x), int(y)), (int(nx), int(ny)), d, 3)
+                for lado_r in (-1, 1):                      # agulhas laterais (cristal)
+                    if rng.random() < .35:
+                        aa = a + lado_r * 1.0; c = rng.uniform(4, 12) * s
+                        cv2.line(L, (int(nx), int(ny)), (int(nx + math.cos(aa) * c), int(ny + math.sin(aa) * c)), .7, 1, cv2.LINE_AA)
+                        cv2.line(T, (int(nx), int(ny)), (int(nx + math.cos(aa) * c), int(ny + math.sin(aa) * c)), d, 3)
+                x, y, d = nx, ny, d + 1
+                a += rng.normal(0, .25)
+        T = cv2.erode(T, np.ones((3, 3), np.uint8)); T[T < 9] /= 30
+        yy, xx = np.mgrid[0:B.H, 0:B.W].astype(np.float32)
+        borda = np.minimum(np.minimum(xx, B.W - xx) / B.W, np.minimum(yy, B.H - yy) / B.H) * 2
+        _GEADA[k] = (L, T, borda, B.campo(B.H, B.W, 0, 6, (0, 0), 3))
+    L, T, borda, ruido = _GEADA[k]
+    cristais = L * np.clip((g * 1.05 - T) / .05, 0, 1)
+    veu = np.clip((g * .3 - borda) / .1, 0, 1) * (.55 + .25 * ruido)
+    img = B.misturar(img, np.array((.86, .92, 1.0), np.float32), np.clip(veu * .55, 0, .6))
+    return B.soma(img, cv2.GaussianBlur(cristais, (0, 0), .8)[..., None] * np.array((.88, .95, 1.0), np.float32), .75)
 
 
 def selo_ordem():
@@ -428,31 +470,42 @@ def cena05(t):
         r = env(tt, 2.6, 2.85, 3.1, 3.5)
         img = B.misturar(img, np.array((.85, .88, .92), np.float32), B.nevoa(tt * 3, (.9, 0), .55, 1.2, 3) * r)
     img = B.graduar(img, (.03, .04, .06), (.92, .94, .97), .7, 1.05)
-    if t > T_CONGELA:     # congela e vira gravura de tinta
-        g = eio(seg(t, T_CONGELA + .05, T_CONGELA + .65))
-        img = B.gravura(img, t=g)
-        if t > T_CONGELA + .5:
-            a = eio(seg(t, T_CONGELA + .5, T_CONGELA + 1.3))
-            papel = np.array((.86, .81, .70), np.float32)
+    if t > T_CONGELA:     # o tempo para: a neve fica suspensa, a cor esfria e o gelo cresce das bordas
+        tc = t - T_CONGELA
+        z = 1 + .035 * eo(seg(tc, 0, .22)) + .02 * seg(tc, .22, 4.5)          # um avanço seco e depois lento
+        M = cv2.getRotationMatrix2D((B.W / 2, B.H * .45), 0, z)
+        img = cv2.warpAffine(img, M, (B.W, B.H), borderMode=cv2.BORDER_REFLECT)
+        g = eio(seg(tc, .05, 1.4))
+        l = img.mean(2, keepdims=True)
+        frio = np.clip(l * 1.15 + .03, 0, 1) * np.array((.84, .92, 1.05), np.float32)
+        img = img * (1 - .7 * g) + frio * .7 * g
+        img = B.soma(img, np.ones_like(img) * np.array((.8, .88, 1.0), np.float32), .35 * env(tc, 0, .02, .05, .3))   # lampejo
+        img = geada(img, eo(seg(tc, .1, 2.2)))
+        if tc > .5:
+            a = eio(seg(tc, .5, 1.3))
             ex, ey = B.W * (.82 if B.W > B.H else .76), B.H * (.36 if B.W > B.H else .44)
-            # o selo de cera da Ordem desce sobre a gravura e assenta (prensado)
+            # o selo de cera da Ordem cai, prensa a imagem congelada e assenta
             selo = selo_ordem()
             d = 330 * B.H / 1080 if B.W > B.H else 340 * B.W / 1080
-            pr = eo(seg(t, T_CONGELA + .5, T_CONGELA + .85))
-            esc_s = d / selo.shape[1] * lerp(1.35, 1.0, pr)
+            pr = seg(tc, .5, .78)
+            esc_s = d / selo.shape[1] * (lerp(1.6, 1.0, ei(pr)) if pr < 1 else 1 + .04 * math.exp(-(tc - .78) * 12) * math.cos((tc - .78) * 40))
             sombra = np.zeros((B.H, B.W), np.float32)
-            cv2.circle(sombra, (int(ex + 10 * B.H / 1080), int(ey + 16 * B.H / 1080)), int(d * .5 * lerp(1.2, 1.0, pr)), 1.0, -1, cv2.LINE_AA)
-            img = img * (1 - .55 * a * cv2.GaussianBlur(sombra, (0, 0), lerp(30, 10, pr) * B.H / 1080)[..., None])
-            B.colar(img, selo, ex, ey, a, esc_s)
-            a2 = seg(t, T_CONGELA + .9, T_CONGELA + 2.2)
-            fx = np.zeros((B.H, B.W), np.float32)
-            bx = .22 if B.W > B.H else .06
-            cv2.rectangle(fx, (int(B.W * bx), int(B.H * .72)), (int(B.W * (1 - bx)), int(B.H * (.86 if B.W > B.H else .8))), 1.0, -1)
-            img = B.misturar(img, papel, cv2.GaussianBlur(fx, (0, 0), 2) * eio(seg(t, T_CONGELA + .7, T_CONGELA + 1.2)))
-            for yy in ((.735, .845) if B.W > B.H else (.728, .792)):
-                cv2.line(img, (int(B.W * (bx + .02)), int(B.H * yy)), (int(B.W * (.98 - bx)), int(B.H * yy)), (.08, .06, .05), 1, cv2.LINE_AA)
-            B.colar(img, B.texto("O ÚLTIMO CARRASCO", "ArestaTitular-Regular.ttf", 64 if B.W > B.H else 40, (.08, .06, .05), .18 if B.W > B.H else .1, sombra=False),
-                    B.W / 2, B.H * (.79 if B.W > B.H else .76), 1.0, 1.0, mascara_x=eio(a2))
+            cv2.circle(sombra, (int(ex + lerp(40, 10, pr) * B.H / 1080), int(ey + lerp(60, 16, pr) * B.H / 1080)), int(d * .5 * lerp(1.3, 1.0, pr)), 1.0, -1, cv2.LINE_AA)
+            img = img * (1 - .55 * a * cv2.GaussianBlur(sombra, (0, 0), lerp(40, 10, pr) * B.H / 1080)[..., None])
+            B.colar(img, selo, ex, ey, min(1, pr * 3), esc_s)
+            if tc > .78:                                    # o golpe do selo trinca a geada em volta
+                anel = np.zeros((B.H, B.W), np.float32)
+                cv2.circle(anel, (int(ex), int(ey)), int(d * lerp(.55, 1.4, eo(seg(tc, .78, 1.4)))), 1.0, max(2, int(3 * B.H / 1080)), cv2.LINE_AA)
+                img = B.soma(img, cv2.GaussianBlur(anel, (0, 0), 3)[..., None] * np.array((.8, .9, 1.0), np.float32), .35 * (1 - seg(tc, .78, 1.4)))
+        if tc > .9:                                         # o título: letras de marfim que entram e um brilho que passa
+            a2 = eio(seg(tc, .9, 1.9))
+            yb = B.H * (.8 if B.W > B.H else .76)
+            yy = np.arange(B.H, dtype=np.float32)[:, None]
+            faixa = np.exp(-((yy - yb) / (B.H * .07)) ** 2) * np.exp(-(np.linspace(-1, 1, B.W, dtype=np.float32)[None, :] / .7) ** 2)
+            img = img * (1 - .7 * eio(seg(tc, .8, 1.3)) * faixa[..., None])
+            tx = B.texto("O ÚLTIMO CARRASCO", "ArestaTitular-Regular.ttf", 64 if B.W > B.H else 40, (.95, .9, .78), .18 if B.W > B.H else .1)
+            tx = varredura(tx, seg(tc, 1.6, 2.6))
+            B.colar(img, tx, B.W / 2, yb, a2, 1.0, mascara_x=a2)
     img = img * (1 - seg(t, 9.7, 10.0) * .0)
     return B.vinheta(img, .45)
 
@@ -483,39 +536,100 @@ def estandarte(t, x_rel):
     return out, a
 
 
+# O livro aberto (ED-001) sobre veludo; medidas na imagem original: lombada, metades e topo/base das páginas
+LOMB, ESQ, DIR, TOPO, BASE = 776, 30, 1508, 36, 960
+TELA_OFF = (720, 240)                     # onde a foto do livro fica na tela maior de veludo
+T_BATE = .62                              # instante em que a capa bate (o som do livro fechando está aqui)
+_LV = {}
+
+
+def tela_livro():
+    """Tela maior que a foto, com veludo escuro em volta, para a câmera poder andar; e o veludo sem o livro."""
+    if _LV:
+        return _LV
+    src = V("livro", 1600)
+    h, w = src.shape[:2]
+    H2, W2 = h + 2 * TELA_OFF[1], w + 2 * TELA_OFF[0]
+    canto = np.concatenate([src[:20, :20].reshape(-1, 3), src[-20:, :20].reshape(-1, 3), src[:20, -20:].reshape(-1, 3), src[-20:, -20:].reshape(-1, 3)]).mean(0)
+    dobras = cv2.resize(B.campo(H2 // 8, W2 // 8, 0, 3.0, (0, 0), 1), (W2, H2))
+    fino = cv2.resize(B.campo(H2 // 2, W2 // 2, 0, 18.0, (0, 0), 2), (W2, H2))
+    veludo = np.clip(canto[None, None, :] * (1 + .35 * dobras[..., None] + .08 * fino[..., None]), 0, 1).astype(np.float32)
+    tela = veludo.copy()
+    m = np.zeros((h, w), np.float32); m[8:-8, 8:-8] = 1
+    m = cv2.GaussianBlur(m, (0, 0), 14)[..., None]
+    oy, ox = TELA_OFF[1], TELA_OFF[0]
+    tela[oy:oy + h, ox:ox + w] = src * m + tela[oy:oy + h, ox:ox + w] * (1 - m)
+    # a capa do volume 1, cortada só nas margens do fundo e levemente ajustada à proporção da metade do livro
+    capa = V("capa1", 1600)
+    ch, cw = capa.shape[:2]
+    capa = capa[int(ch * .02):int(ch * .955)]
+    _LV.update(tela=tela, veludo=veludo, capa=np.ascontiguousarray(capa))
+    return _LV
+
+
 def livro(t):
-    """O livro aberto se fecha com firmeza: a metade direita gira sobre a lombada (perspectiva) e mostra a capa de couro."""
-    base = B.camera(V("livro", 1600), 768, 512, 900)
-    capa = B.camera(V("texturas", 1600), 945, 690, 330)
-    ang = ei(seg(t, .1, .62)) * math.pi                  # acelera e bate
-    lomb = B.W * .5
-    out = base.copy()
+    """O livro se fecha: a metade da esquerda (capa e páginas) gira sobre a lombada e cai sobre a da direita;
+    passando da metade do giro, aparece o lado de fora, que é a capa do volume 1. Depois do baque, a câmera
+    desliza até enquadrar o livro fechado."""
+    L = tela_livro()
+    tela = L["tela"].copy()
+    ox, oy = TELA_OFF
+    lomb, esq, dir_, topo, base = LOMB + ox, ESQ + ox, DIR + ox, TOPO + oy, BASE + oy
+    ang = ei(seg(t, .1, T_BATE)) * math.pi                # acelera e bate
     if ang > 0:
-        sombra = np.linspace(1, .35, B.W - int(lomb))[None, :, None] * (ang / math.pi)
-        vazio = seg(ang, math.pi * .5, math.pi * .95)
-        out[:, int(lomb):] = base[:, int(lomb):] * (1 - sombra) * (1 - .93 * vazio)
-        R = B.W - lomb
-        xb = lomb + R * math.cos(ang)                    # borda livre da metade que gira
-        lev = R * math.sin(ang) * .16                    # sobe na direção da câmera
-        src = np.float32([[0, 0], [R, 0], [R, B.H], [0, B.H]])
-        dst = np.float32([[lomb, 0], [xb, -lev], [xb, B.H + lev], [lomb, B.H]])
-        face = base[:, int(lomb):] if ang < math.pi / 2 else cv2.flip(capa, 1)[:, :int(R)] * .8
-        face = np.ascontiguousarray(face[:, :int(R)])
-        M = cv2.getPerspectiveTransform(src, dst)
-        cam = cv2.warpPerspective(face, M, (B.W, B.H), borderMode=cv2.BORDER_CONSTANT)
-        msk = cv2.warpPerspective(np.ones(face.shape[:2], np.float32), M, (B.W, B.H))
-        luz = .55 + .45 * abs(math.cos(ang))
-        out = B.misturar(out, cam * luz, msk)
-    if t > .62:   # bateu: poeira e a câmera sacode
-        k = seg(t, .62, 1.3)
-        dx, dy = B.tremor(t, 7 * (1 - k), 55)
+        # onde estava a metade esquerda agora aparece o veludo; a borda junto da lombada fica na sombra do livro
+        xs = np.arange(tela.shape[1], dtype=np.float32)
+        m = np.clip((lomb + 4 - xs) / 6, 0, 1)[None, :, None] * np.ones((tela.shape[0], 1, 1), np.float32)
+        sombra_mesa = np.clip(1 - (lomb - xs) / 160, 0, 1)[None, :, None] * .6
+        tela = tela * (1 - m) + L["veludo"] * (1 - sombra_mesa) * m
+        # sombra da metade que se ergue sobre a página da direita
+        d = np.clip((np.arange(tela.shape[1], dtype=np.float32) - lomb) / max(1, (dir_ - lomb) * math.sin(ang / 2) * 1.1 + 1), 0, 1)
+        somb = (1 - d) * .6 * math.sin(min(ang, math.pi * .97))
+        tela[topo:base, lomb:dir_] *= (1 - somb[None, lomb:dir_, None])
+        # a metade que gira, em perspectiva: a borda livre sobe em direção à câmera e fica maior
+        R = lomb - esq
+        xb = lomb - R * math.cos(ang)
+        lev = R * math.sin(ang) * .14
+        if ang < math.pi / 2:
+            face = L["tela"][topo:base, esq:lomb]
+            src_q = np.float32([[0, 0], [face.shape[1], 0], [face.shape[1], face.shape[0]], [0, face.shape[0]]])
+            dst_q = np.float32([[xb, topo - lev], [lomb, topo], [lomb, base], [xb, base + lev]])
+            luz = .45 + .55 * math.cos(ang)
+        else:
+            face = L["capa"]
+            src_q = np.float32([[0, 0], [face.shape[1], 0], [face.shape[1], face.shape[0]], [0, face.shape[0]]])
+            dst_q = np.float32([[lomb, topo + 4], [xb - 12, topo - lev + 4], [xb - 12, base + lev - 4], [lomb, base - 4]])
+            luz = .5 + .5 * abs(math.cos(ang))
+        Mq = cv2.getPerspectiveTransform(src_q, dst_q)
+        cam = cv2.warpPerspective(np.ascontiguousarray(face), Mq, (tela.shape[1], tela.shape[0]))
+        msk = cv2.warpPerspective(np.ones(face.shape[:2], np.float32), Mq, (tela.shape[1], tela.shape[0]))
+        if ang >= math.pi / 2:                                  # borda da capa (cartão de couro) escurecida
+            er = cv2.erode(msk, np.ones((9, 9), np.uint8))
+            cam = cam * (er[..., None] * .8 + .2)
+        tela = B.misturar(tela, cam * luz, msk)
+    # câmera: começa no livro aberto e, depois do baque, desliza até o livro fechado
+    k = eio(seg(t, T_BATE + .05, 1.8))
+    cx = lerp(768 + ox, (lomb + dir_) / 2, k); cy = lerp(512 + oy, (topo + base) / 2, k)
+    vista = lerp(900, 1080, k)
+    out = B.camera(tela, cx, cy, vista)
+    if t > T_BATE:   # bateu: a câmera sacode e a poeira sai de baixo da capa
+        kk = seg(t, T_BATE, T_BATE + .8)
+        dx, dy = B.tremor(t, 9 * (1 - kk), 55)
         out = np.roll(out, (int(dy), int(dx)), (0, 1))
+        esc = B.H / vista
+        px0, py0 = (lomb - cx) * esc + B.W / 2, ((topo + base) / 2 - cy) * esc + B.H / 2
+        meia_w, meia_h = (dir_ - lomb) / 2 * esc, (base - topo) / 2 * esc
         cam = np.zeros((B.H, B.W), np.float32); rng = np.random.default_rng(3)
-        for _ in range(90):
-            a = rng.uniform(-.5, .5) + (math.pi if rng.random() < .5 else 0); v = rng.uniform(.3, 1)
-            x = lomb + math.cos(a) * v * 420 * eo(k) * B.W / 1920; y = B.H * .5 + math.sin(a) * v * 120 * eo(k) - 60 * k
-            cv2.circle(cam, (int(x), int(y)), 2, float(1 - k), -1, cv2.LINE_AA)
-        out = B.soma(out, cv2.GaussianBlur(cam, (0, 0), 1.5)[..., None] * np.array((.9, .8, .6), np.float32), .5)
+        for _ in range(140):
+            lado = rng.integers(0, 4); u = rng.uniform(-1, 1); v = rng.uniform(.3, 1)
+            cxl = px0 + meia_w                                   # centro do livro fechado na tela
+            if lado == 0: x, y, vx, vy = cxl + u * meia_w, py0 - meia_h, u * .3, -1
+            elif lado == 1: x, y, vx, vy = cxl + u * meia_w, py0 + meia_h, u * .3, 1
+            elif lado == 2: x, y, vx, vy = cxl - meia_w, py0 + u * meia_h, -1, u * .3
+            else: x, y, vx, vy = cxl + meia_w, py0 + u * meia_h, 1, u * .3
+            dist = v * 160 * eo(kk) * B.H / 1080
+            cv2.circle(cam, (int(x + vx * dist), int(y + vy * dist - 30 * kk)), 2, float(1 - kk), -1, cv2.LINE_AA)
+        out = B.soma(out, cv2.GaussianBlur(cam, (0, 0), 1.6)[..., None] * np.array((.9, .82, .65), np.float32), .45)
     return out
 
 
@@ -539,10 +653,10 @@ def cena06(t):
         fundo = livro(0) * .6
         s, a = estandarte(t, f)
         img = B.misturar(fundo, s, a)
-    elif t < 6.8:      # o livro se fecha com firmeza
+    elif t < 7.4:      # o livro se fecha com firmeza e a câmera enquadra o livro fechado
         img = livro(t - 5.6)
     else:              # silhuetas diante da arquitetura
-        k = eio(seg(t, 6.8, 9.0))
+        k = eio(seg(t, 7.4, 9.0))
         img = plano("grupo", t, 768, lerp(540, 520, k), lerp(900, 820, k), par=(0, 0), dolly=.3 * k)
         img = B.raios(img, (.5, .25), t, .35)
     img = B.brilho_pontos(img, .8, 14, .4)
@@ -583,20 +697,61 @@ def cena07(t):
 CORTES08 = [0.0, 1.3, 2.7, 4.0, 5.5, 7.1, 8.6, 10.1, 12.0]
 
 
-def rachadura(t, cx, cy, crescer, seed=1):
+_RACHAS = {}
+
+
+def rede_racha(cx, cy, seed=1):
+    """Rede de fissuras que se ramificam a partir do ponto de impacto: traço (L) e instante de chegada (T, 0..1)."""
+    k = (int(cx), int(cy), seed, B.W, B.H)
+    if k in _RACHAS:
+        return _RACHAS[k]
     rng = np.random.default_rng(seed)
-    cam = np.zeros((B.H, B.W), np.float32)
-    for r in range(7):
-        x, y = cx, cy; a = rng.uniform(0, 6.28)
-        passos = int(60 * crescer)
-        for i in range(passos):
-            a += rng.normal(0, .14)
-            nx, ny = x + math.cos(a) * 9 * B.W / 1920, y + math.sin(a) * 9 * B.W / 1920
-            cv2.line(cam, (int(x), int(y)), (int(nx), int(ny)), 1.0, 1 if i > 20 else 2, cv2.LINE_AA)
-            x, y = nx, ny
-            if rng.random() < .05:
-                a += rng.choice([-1, 1]) * .9
-    return cam
+    L = np.zeros((B.H, B.W), np.float32); T = np.full((B.H, B.W), 9.0, np.float32)
+    s = B.W / 1920
+    ramos = [(cx, cy, a, 0.0, 3.4, int(rng.integers(70, 120))) for a in np.linspace(0, 2 * np.pi, 5, endpoint=False) + rng.uniform(0, .8)]
+    total = 0
+    while ramos and total < 70:
+        total += 1
+        x, y, a, d, esp, passos = ramos.pop(0)
+        for _ in range(passos):
+            a += rng.normal(0, .12)
+            nx, ny = x + math.cos(a) * 7 * s, y + math.sin(a) * 7 * s
+            cv2.line(L, (int(x), int(y)), (int(nx), int(ny)), 1.0, max(1, int(round(esp))), cv2.LINE_AA)
+            cv2.line(T, (int(x), int(y)), (int(nx), int(ny)), float(d), max(2, int(round(esp)) + 2))
+            x, y, d = nx, ny, d + .009
+            esp = max(.8, esp * .992)
+            if rng.random() < .03 and total + len(ramos) < 30:
+                ramos.append((x, y, a + rng.choice([-1, 1]) * rng.uniform(.5, 1.1), d, esp * .6, int(rng.integers(15, 55))))
+    # anel de fratura em volta do impacto (o gelo cede em círculo)
+    for j in range(3):
+        rr = (38 + 30 * j) * s
+        a0 = rng.uniform(0, 6.28)
+        pts = [(cx + math.cos(a0 + q) * rr * (1 + .08 * math.sin(q * 5)), cy + math.sin(a0 + q) * rr * .55 * (1 + .08 * math.sin(q * 5))) for q in np.linspace(0, rng.uniform(3.5, 5.5), 40)]
+        for (x0, y0), (x1, y1) in zip(pts[:-1], pts[1:]):
+            cv2.line(L, (int(x0), int(y0)), (int(x1), int(y1)), .8, 1, cv2.LINE_AA)
+            cv2.line(T, (int(x0), int(y0)), (int(x1), int(y1)), .25 + .15 * j, 3)
+    T = cv2.erode(T, np.ones((3, 3), np.uint8))
+    T = T / max(1e-6, T[T < 9].max())
+    _RACHAS[k] = (L, T)
+    return L, T
+
+
+def rachadura(img, cx, cy, crescer, seed=1):
+    """O gelo racha: fissuras escuras e finas com fio de luz na borda, fraturas leitosas por dentro e refração em volta."""
+    L, T = rede_racha(cx, cy, seed)
+    vis = L * np.clip((crescer * 1.02 - T) / .02, 0, 1)
+    if vis.max() <= 0:
+        return img
+    s = B.W / 1920
+    # refração: o gelo em volta da fissura desloca um pouco a imagem
+    off = cv2.GaussianBlur(vis, (0, 0), 5 * s) * 7 * s
+    yy, xx = np.mgrid[0:B.H, 0:B.W].astype(np.float32)
+    img = cv2.remap(img, xx + off, yy + off * .6, cv2.INTER_LINEAR, borderMode=cv2.BORDER_REFLECT)
+    leite = cv2.GaussianBlur(vis, (0, 0), 7 * s)
+    img = B.misturar(img, np.array((.78, .84, .9), np.float32), np.clip(leite * .45, 0, .45))          # fratura leitosa
+    img = B.misturar(img, np.array((.03, .04, .06), np.float32), np.clip(vis * .7, 0, 1))               # o corte escuro
+    borda = np.roll(vis, (-1, -1), (0, 1)) * (1 - vis)
+    return B.soma(img, borda[..., None] * np.array((.85, .92, 1.0), np.float32), .5)                     # fio de luz na borda
 
 
 def cena08(t):
@@ -626,11 +781,11 @@ def cena08(t):
         cx, cy, vista = 2900, 2080, 620
         d = B.tremor(t, 3, 30)
         img = plano("ponte", t, cx + d[0], cy + d[1], vista)
-        cam = rachadura(t, B.W * .52, B.H * .55, eo(seg(tl, .1, 1.2)))
-        cam = cv2.dilate(cam, np.ones((3, 3), np.uint8))
-        img = B.misturar(img, np.array((.02, .03, .05), np.float32), cv2.GaussianBlur(cam, (0, 0), 2.5) * .8)
-        img = B.misturar(img, np.array((.85, .95, 1.0), np.float32), cam * .95)
-        img = B.soma(img, cv2.GaussianBlur(cam, (0, 0), 8)[..., None] * np.array((.5, .75, 1.0)), .6)
+        cr = eo(seg(tl, .08, 1.2))
+        if 0 < cr < 1:                                    # a câmera acusa cada avanço da fissura
+            d2 = B.tremor(t * 3, 4 * (1 - cr), 60)
+            img = np.roll(img, (int(d2[1]), int(d2[0])), (0, 1))
+        img = rachadura(img, B.W * .52, B.H * .55, cr)
     elif i == 4:   # E: Ilan gira o corpo e saca a espada
         k = eo(seg(tl, 0, .45))
         cx = lerp(330, 460, k); vista = lerp(660, 600, seg(tl, 0, 1.6))
@@ -1063,12 +1218,43 @@ def letreiro(img, t):
         xx = np.linspace(-1, 1, B.W, dtype=np.float32)[None, :]
         faixa = faixa * np.exp(-(xx / .62) ** 2)
         img = img * (1 - .5 * al * faixa[..., None])
-        for j, l in enumerate(ls):
+        n = 0
+        for j, l in enumerate(ls):                        # cada palavra sobe, sai do desfoque e acende, em sequência
             el = B.texto(l, "ArestaTitular-Regular.ttf", tam, (.95, .9, .78), .16)
-            if ent < 1:                                   # entra do desfocado para o nítido
-                el = el.copy(); el[..., 3] = cv2.GaussianBlur(el[..., 3], (0, 0), .1 + 3 * (1 - ent))
-            B.colar(img, el, B.W / 2, y0 + j * alt - 6 * (1 - ent), al)
+            esq = B.W / 2 - el.shape[1] / 2
+            for x0, x1 in _palavras(l, tam, .16):
+                k = eo(seg(t, a + n * .075, a + n * .075 + .5)); n += 1
+                if k <= 0:
+                    continue
+                sub = el[:, max(0, int(x0) - 3):int(x1) + 3]
+                if k < 1:
+                    sub = sub.copy(); sub[..., 3] = cv2.GaussianBlur(sub[..., 3], (0, 0), .1 + 2.5 * (1 - k))
+                B.colar(img, sub, esq + (max(0, int(x0) - 3) + int(x1) + 3) / 2, y0 + j * alt + 16 * (1 - k) * B.H / 1080, k * sai)
     return img
+
+
+_PAL = {}
+
+
+def _palavras(l, tam, esp):
+    """Onde cada palavra começa e termina dentro do bloco que B.texto desenha (mesma conta de avanço)."""
+    k = (l, tam, esp, B.W, B.H)
+    if k not in _PAL:
+        from PIL import ImageFont
+        tam_px = int(tam * B.W / 1920) if B.W > B.H else int(tam * B.W / 1080)
+        f = ImageFont.truetype(f"{B.FT}/ArestaTitular-Regular.ttf", tam_px)
+        x, spans, cur = 20.0, [], None
+        for c in l:
+            w = f.getlength(c) + esp * tam_px
+            if c == " ":
+                if cur: spans.append(cur)
+                cur = None
+            else:
+                cur = [x, x + w] if cur is None else [cur[0], x + w]
+            x += w
+        if cur: spans.append(cur)
+        _PAL[k] = spans
+    return _PAL[k]
 
 
 def quadro(t, barras=False, textos=True):

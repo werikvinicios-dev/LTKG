@@ -255,7 +255,7 @@ def efeitos():
         por(s, S(f"footstep_snow_00{k % 5}", vel=.35), 35.6 + k * .62, pan=-.1)
     por(s, G("1022", 1, 1.8, .7), 40.45)                                 # o golpe que congela
     por(s, G("0148", 0, 1.6, .5), 40.5); por(s, G("2209", 9, 1.2, .5), 40.6)
-    por(s, G("0785", 2, 1.2, .3), 41.0)
+    por(s, S("impactSoft_heavy_000", vel=.75), 35 + C.T_CONGELA + .78); por(s, S("impactPlate_heavy_001", vel=.25), 35 + C.T_CONGELA + .78)   # o selo prensado
     # 06 os rostos: papel, engrenagens, o estandarte, o livro, passos
     por(s, S("0164", vel=.45), 45.2); por(s, G("0785", 4, .8, .3), 46.8)
     por(s, S("1567", 1.0, 1.9, .35, .05, .3), 48.0); por(s, G("0378", 3, .6, .35), 48.2)
@@ -264,7 +264,7 @@ def efeitos():
     por(s, S("bookFlip2", vel=.4), 50.65)
     por(s, S("bookClose", vel=.9), 51.22); por(s, S("1588", vel=.45), 51.22)   # o livro se fecha com firmeza
     for k in range(5):
-        por(s, G("0606", k, .7, .25), 52.0 + k * .45, pan=(k - 2) * .15)
+        por(s, G("0606", k, .7, .25), 52.5 + k * .4, pan=(k - 2) * .15)
     # 07 Aurelia: quase silêncio, brilhos finos, respiração
     for k in range(6):
         por(s, PC("Triangle3-HitM_v1_*.wav", .06), 54.4 + k * 1.7, pan=rng.uniform(-.6, .6))

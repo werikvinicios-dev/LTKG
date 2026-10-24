@@ -29,7 +29,8 @@ O projeto é o código em `build/trailer/`. Cada plano é uma função com câme
 - `banco.py`: baixa os bancos de som e escreve os créditos.
 - `render.py`: render paralelo. Uso: `python3 render.py 16x9 saida.mp4 audio.wav`. Com `SEM_TEXTO=1`, sai sem letreiros.
 - `primeiro_som.py`: a cena 1 (o fio e a gota).
-- `remontar.sh`: renderiza só as cenas refeitas e emenda com os trechos que não mudaram.
+- `remontar.sh` e `remontar2.sh`: renderizam só as cenas refeitas e emendam com os trechos que não mudaram.
+- `letreiros.py`: aplica os letreiros animados sobre um vídeo sem textos.
 - `versoes.py`: teasers, versão sem música, stems e linha do tempo.
 
 ## Como foi feito
@@ -38,7 +39,10 @@ O projeto é o código em `build/trailer/`. Cada plano é uma função com câme
 - **Magia como engenharia.** Nenhum raio sai das mãos e não há círculo mágico decorativo. O que aparece é um fio sob tensão que vibra e para no contato da gota, uma gota no aço, calor numa célula da manopla, rachaduras no gelo, uma onda de choque que levanta neve e metal vibrando. Os símbolos oficiais das sete leis aparecem gravados na matéria, cada um com um fenômeno físico curto.
 - **Personagens oficiais.** Ilan (PE-001, PE-025 e as cenas do capítulo 1) aparece com a manopla no antebraço esquerdo. Nenhuma imagem foi espelhada. Mara é a do PE-003, de coque escuro e óculos redondos. Aurelia aparece nas versões douradas aprovadas (PE-012 e PE-013).
 - **O primeiro som.** Plano macro: um fio de prata vibra, a gota presa nele se solta e a câmera desce com ela até uma chapa de aço escovado molhada, onde ela respinga e levanta um jato d'água.
-- **As sete leis.** São os brasões pintados (SI-001). Cada lei se monta: o eixo cresce do centro para as pontas, a estrutura é traçada em volta e as pérolas descem pelo eixo e travam. A câmera acompanha de perto e no fim recua para mostrar as sete. Em "O último carrasco", o selo de cera da Ordem da Última Sentença (FA-001) é prensado sobre a gravura.
+- **As sete leis.** São os brasões pintados (SI-001). Cada lei se monta: o eixo cresce do centro para as pontas, a estrutura é traçada em volta e as pérolas descem pelo eixo e travam. A câmera acompanha de perto e no fim recua para mostrar as sete. Em "O último carrasco" o tempo para: a neve fica suspensa, a cor esfria, a geada cresce das bordas e o selo de cera da Ordem da Última Sentença (FA-001) cai e é prensado sobre a imagem congelada.
+- **O livro.** A metade esquerda gira sobre a lombada e cai sobre a outra; passando do meio do giro, aparece a capa do volume 1 (CA-001). Depois do baque, a câmera enquadra o livro fechado.
+- **O gelo racha.** Fissuras escuras que se ramificam a partir do impacto, com anel de fratura, borda de luz, fratura leitosa e refração do gelo em volta.
+- **Letreiros.** Cada palavra entra em sequência, subindo e saindo do desfoque.
 - **Título.** O emblema e o letreiro oficiais (ID-008 e ID-006) se montam peça por peça. O arco se fecha e o estandarte se desenrola. A espada desce do alto, passa pelo anel da coroa e se crava, tremendo, com faíscas e um tranco na imagem. A balança pousa na guarda da espada, oscila e para nivelada, e as sete pérolas acendem. O halo de raios fecha com uma onda de choque e as letras do título encaixam uma a uma. Cada encaixe tem o seu golpe de metal e de orquestra. As peças são recortes do desenho oficial, sem redesenho.
 - **Som.** Não há mais som sintetizado. A trilha é tocada com a orquestra gravada do VSCO-2-CE (cordas, metais, flauta, harpa, tímpanos, bumbo, gongo e pratos). Os efeitos são gravações reais do BigSoundBank, do Kenney e do OpenGameArt: vento, sino, gota, cordas sob tensão, lâminas, gelo, fogo, papel, livro, relógio, corrente, tecido, passos na neve, respiração e a espada (cortando o ar, entrando como numa bainha e vibrando presa). Todos os bancos são CC0, uso comercial livre.
 
