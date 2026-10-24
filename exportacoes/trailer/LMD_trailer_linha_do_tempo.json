@@ -1,0 +1,266 @@
+{
+ "duracao": 90.0,
+ "fps": 24,
+ "formato": "1920x1080",
+ "planos": [
+  {
+   "inicio": 0.0,
+   "fim": 7.0,
+   "plano": "01 O primeiro som",
+   "fonte": "procedural: fio de prata, gota, aço escovado",
+   "movimento": "plano fixo, revelação lenta"
+  },
+  {
+   "inicio": 7.0,
+   "fim": 11.45,
+   "plano": "02a Vhalessa",
+   "fonte": "05_mundo/MU-009 (4x)",
+   "movimento": "travelling 2.5D para dentro da rua; neve, fumaça, janelas"
+  },
+  {
+   "inicio": 11.45,
+   "fim": 16.0,
+   "plano": "02b O rio e a torre",
+   "fonte": "11_edicao/C02-2",
+   "movimento": "panorâmica lateral com parallax"
+  },
+  {
+   "inicio": 16.0,
+   "fim": 25.0,
+   "plano": "03 As sete leis",
+   "fonte": "identidade_aresta/simbolos/leis/*",
+   "movimento": "gravação progressiva + fenômeno físico de cada lei"
+  },
+  {
+   "inicio": 25.0,
+   "fim": 35.0,
+   "plano": "04 Ilan Varek",
+   "fonte": "06_personagens/PE-001 (4x)",
+   "movimento": "close na manopla (antebraço esquerdo) e tilt até o rosto"
+  },
+  {
+   "inicio": 35.0,
+   "fim": 40.45,
+   "plano": "05a A ponte",
+   "fonte": "06_personagens/PE-025 (4x)",
+   "movimento": "acompanhamento lateral na nevasca"
+  },
+  {
+   "inicio": 40.45,
+   "fim": 45.0,
+   "plano": "05b O último carrasco",
+   "fonte": "PE-025 + simbolos/instituicoes/ordem_da_ultima_sentenca",
+   "movimento": "congela e vira gravura"
+  },
+  {
+   "inicio": 45.0,
+   "fim": 48.0,
+   "plano": "06a Mara Quen",
+   "fonte": "06_personagens/PE-003 (4x)",
+   "movimento": "tilt da escrita ao rosto; close nos olhos"
+  },
+  {
+   "inicio": 48.0,
+   "fim": 49.8,
+   "plano": "06b Nara Voss",
+   "fonte": "06_personagens/PE-029",
+   "movimento": "instrumento, faíscas"
+  },
+  {
+   "inicio": 49.8,
+   "fim": 50.6,
+   "plano": "06c Estandarte",
+   "fonte": "04_objetos/OB-004",
+   "movimento": "transição por objeto"
+  },
+  {
+   "inicio": 50.6,
+   "fim": 51.8,
+   "plano": "06d O livro",
+   "fonte": "08_editorial/ED-001 + ED-003 (couro)",
+   "movimento": "o livro se fecha com firmeza"
+  },
+  {
+   "inicio": 51.8,
+   "fim": 54.0,
+   "plano": "06e Silhuetas",
+   "fonte": "06_personagens/PE-006",
+   "movimento": "push-in com raios de luz"
+  },
+  {
+   "inicio": 54.0,
+   "fim": 56.2,
+   "plano": "07a Luz dourada",
+   "fonte": "05_mundo/MU-007",
+   "movimento": "raios volumétricos"
+  },
+  {
+   "inicio": 56.2,
+   "fim": 59.6,
+   "plano": "07b Tecido e mão",
+   "fonte": "06_personagens/PE-013",
+   "movimento": "véu ao vento"
+  },
+  {
+   "inicio": 59.6,
+   "fim": 65.0,
+   "plano": "07c Aurelia",
+   "fonte": "06_personagens/PE-012 (4x)",
+   "movimento": "tilt de revelação; cabelo ao vento"
+  },
+  {
+   "inicio": 65.0,
+   "fim": 77.0,
+   "plano": "08 O impossível",
+   "fonte": "procedural + PE-021, PE-001, PE-025, C01-a, C01-c",
+   "movimento": "8 cortes na percussão"
+  },
+  {
+   "inicio": 77.0,
+   "fim": 83.7,
+   "plano": "09 A pergunta",
+   "fonte": "09_engenharia_arcana/EA-006",
+   "movimento": "push-in lento; silêncio; corte para preto"
+  },
+  {
+   "inicio": 84.0,
+   "fim": 90.0,
+   "plano": "10 Título",
+   "fonte": "01_identidade/ID-008 + ID-006",
+   "movimento": "reflexo metálico; crédito do autor"
+  }
+ ],
+ "letreiros": [
+  {
+   "inicio": 8.0,
+   "fim": 11.45,
+   "linhas": [
+    "EM ARESTA, A MAGIA NÃO CRIA PODER."
+   ]
+  },
+  {
+   "inicio": 9.9,
+   "fim": 11.45,
+   "linhas": [
+    "ELA O MOVE."
+   ]
+  },
+  {
+   "inicio": 22.5,
+   "fim": 24.75,
+   "linhas": [
+    "E TUDO QUE SE MOVE…"
+   ]
+  },
+  {
+   "inicio": 23.6,
+   "fim": 24.75,
+   "linhas": [
+    "DEIXA UM PREÇO."
+   ]
+  },
+  {
+   "inicio": 30.3,
+   "fim": 34.7,
+   "linhas": [
+    "SETE LEIS."
+   ]
+  },
+  {
+   "inicio": 31.2,
+   "fim": 34.7,
+   "linhas": [
+    "NENHUMA ESCOLHA SEM CONSEQUÊNCIA."
+   ]
+  },
+  {
+   "inicio": 36.4,
+   "fim": 40.3,
+   "linhas": [
+    "ILAN VAREK CONHECIA O PESO DE UMA SENTENÇA."
+   ]
+  },
+  {
+   "inicio": 60.5,
+   "fim": 64.8,
+   "linhas": [
+    "MAS HÁ PODERES QUE SE ACOSTUMARAM",
+    "A NUNCA SER QUESTIONADOS."
+   ]
+  },
+  {
+   "inicio": 70.6,
+   "fim": 72.5,
+   "linhas": [
+    "ELES PODEM PARECER ETERNOS."
+   ]
+  },
+  {
+   "inicio": 73.3,
+   "fim": 76.6,
+   "linhas": [
+    "ISSO NÃO SIGNIFICA",
+    "QUE SEJAM INTOCÁVEIS."
+   ]
+  },
+  {
+   "inicio": 78.2,
+   "fim": 80.6,
+   "linhas": [
+    "PARA DERRUBAR UM DEUS…"
+   ]
+  },
+  {
+   "inicio": 80.9,
+   "fim": 83.7,
+   "linhas": [
+    "…BASTA DESCOBRIR",
+    "O QUE O SUSTENTA."
+   ]
+  }
+ ],
+ "teaser_30s": [
+  [
+   7.9,
+   11.45
+  ],
+  [
+   30.2,
+   34.8
+  ],
+  [
+   36.3,
+   40.45
+  ],
+  [
+   40.45,
+   43.0
+  ],
+  [
+   60.4,
+   64.9
+  ],
+  [
+   65.0,
+   72.5
+  ],
+  [
+   84.0,
+   87.5
+  ]
+ ],
+ "teaser_15s": [
+  [
+   36.3,
+   40.45
+  ],
+  [
+   65.0,
+   70.5
+  ],
+  [
+   84.0,
+   89.4
+  ]
+ ]
+}
