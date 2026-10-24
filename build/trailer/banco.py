@@ -4,6 +4,7 @@ Baixa o que faltar para _cache/fontes/ e escreve a lista de créditos. Uso: pyth
 - VSCO-2-CE (Versilian Studios Chamber Orchestra, Community Edition): orquestra de câmara gravada, CC0.
 - BigSoundBank (Joseph Sardin): efeitos gravados, CC0.
 - Kenney RPG Audio e Impact Sounds: foley, CC0.
+- OpenGameArt (pacotes CC0): espadas, bainhas e golpes de lâmina.
 """
 import os, subprocess
 
@@ -36,6 +37,13 @@ KENNEY = {"rpg-audio": "https://kenney.nl/media/pages/assets/rpg-audio/8e99002d7
           "impact-sounds": "https://kenney.nl/media/pages/assets/impact-sounds/87b4ddecda-1677589768/kenney_impact-sounds.zip"}
 
 
+# OpenGameArt: pacotes CC0 (licença conferida na página de cada um)
+OGA = {"weapons-apparel": ("https://opengameart.org/sites/default/files/weapons-apparel.zip", "Fantasy Weapons and Apparel SFX Library (Jan Schupke)", "lâmina entrando na bainha"),
+       "sword_-_starninjas_1": ("https://opengameart.org/sites/default/files/sword_-_starninjas_1.zip", "20 Sword Sound Effects: espadas (StarNinjas)", "espada cortando o ar"),
+       "sword_clash_-_starninjas_0": ("https://opengameart.org/sites/default/files/sword_clash_-_starninjas_0.zip", "20 Sword Sound Effects: choques (StarNinjas)", "metal da espada vibrando"),
+       "80-CC0-RPG-SFX_0": ("https://opengameart.org/sites/default/files/80-CC0-RPG-SFX_0.zip", "80 CC0 RPG SFX", "lâminas e metais curtos")}
+
+
 def sh(*a, **k):
     subprocess.run(a, check=True, **k)
 
@@ -57,6 +65,14 @@ def baixar():
                 os.remove(dst)
             else:
                 break
+    for nome, (url, _, _) in OGA.items():
+        d = f"{F}/oga/{nome}"
+        if not os.path.isdir(d):
+            os.makedirs(d, exist_ok=True)
+            z = f"{F}/oga/{nome}.zip"
+            sh("curl", "-sL", "-m", "120", "-o", z, url)
+            sh("unzip", "-q", "-o", z, "-d", d)
+            os.remove(z)
     os.makedirs(f"{F}/kenney", exist_ok=True)
     if len(os.listdir(f"{F}/kenney")) < 100:
         for nome, url in KENNEY.items():
@@ -78,7 +94,8 @@ def creditos():
          "| Nº | Som | Uso |", "|---|---|---|"]
     l += [f"| {n} | {a} | {b} |" for n, (a, b) in BSB.items()]
     l += ["", "## Efeitos: Kenney (RPG Audio e Impact Sounds), CC0", "https://kenney.nl",
-          "Passos na neve, livro, tecido, lâmina saindo da bainha, impactos de metal e sino."]
+          "Passos na neve, livro, tecido, lâmina saindo da bainha, impactos de metal e sino.", "",
+          "## Efeitos: OpenGameArt (pacotes CC0)", "https://opengameart.org", ""] + [f"- {a}: {b}" for _, a, b in OGA.values()] + [""]
     return "\n".join(l) + "\n"
 
 

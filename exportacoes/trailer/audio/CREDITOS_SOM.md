@@ -51,3 +51,12 @@ https://bigsoundbank.com
 ## Efeitos: Kenney (RPG Audio e Impact Sounds), CC0
 https://kenney.nl
 Passos na neve, livro, tecido, lâmina saindo da bainha, impactos de metal e sino.
+
+## Efeitos: OpenGameArt (pacotes CC0)
+https://opengameart.org
+
+- Fantasy Weapons and Apparel SFX Library (Jan Schupke): lâmina entrando na bainha
+- 20 Sword Sound Effects: espadas (StarNinjas): espada cortando o ar
+- 20 Sword Sound Effects: choques (StarNinjas): metal da espada vibrando
+- 80 CC0 RPG SFX: lâminas e metais curtos
+

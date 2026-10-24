@@ -183,11 +183,113 @@ def metal_escuro():
     return np.clip(base[..., None] * np.array((.92, .9, .86), np.float32), 0, 1)
 
 
-T_LEI = [0.55 + i * 0.92 for i in range(7)]
+# Cada lei se monta: o eixo cresce do centro para as pontas, a estrutura (anéis, luas, taça) é traçada em volta
+# e as pérolas descem pelo eixo e travam. T_LEI = início de cada montagem; MONTA = duração até ficar completa.
+T_LEI = [0.4 + i * 1.2 for i in range(7)]
+MONTA = 1.4
+T_RECUO = (7.2, 10.0)          # a câmera se afasta para mostrar as sete
+T_NOMES = 9.6
+_PECAS_LEI = {}
+
+
+def pecas_lei(k):
+    """Separa o brasão pintado em eixo, estrutura, pérolas e gema (pela cor e pela posição)."""
+    if k in _PECAS_LEI:
+        return _PECAS_LEI[k]
+    el = lei_img(k)
+    h, w = el.shape[:2]
+    a = el[..., 3]
+    rgb = el[..., :3]
+    yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
+    ax = float(np.argmax((a[int(h * .1):int(h * .9)] > .5).sum(0)))      # coluna do eixo
+    ponta = (yy < h * .14) | (yy > h * .86)
+    eixo = (np.abs(xx - ax) < np.where(ponta, 15, 6.5)) & (a > .05)
+    lum = rgb.mean(2); sat = rgb.max(2) - rgb.min(2)
+    perola = (lum > .5) & (sat < .16) & (a > .5)
+    gema = (rgb[..., 0] > .3) & (rgb[..., 0] > rgb[..., 1] * 1.8) & (a > .3)
+    pecas = []
+    for m, tipo in ((perola, "perola"), (gema, "gema")):
+        m8 = cv2.dilate(m.astype(np.uint8), np.ones((5, 5), np.uint8))
+        n, lab, st, cen = cv2.connectedComponentsWithStats(m8)
+        for j in range(1, n):
+            x_, y_, w_, h_, ar = st[j]
+            redonda = .72 < w_ / max(h_, 1) < 1.38 and ar / max(w_ * h_, 1) > .55
+            if not redonda or w_ < (16 if tipo == "perola" else 30) or ar < (150 if tipo == "perola" else 600):
+                continue
+            cx, cy = cen[j]; cy += h_ * .18                # o brilho fica no alto da pérola; o corpo desce mais
+            rr = max(w_, h_) * (1.22 if tipo == "perola" else .75) + 6
+            if k == "compatibilidade":                     # o brilho no centro é o da gema vermelha
+                tipo, rr = "gema", max(w_, h_) * 1.35 + 8
+            disco = ((xx - cx) ** 2 + (yy - cy) ** 2 < rr ** 2)
+            pecas.append((tipo, disco, (cx, cy)))
+    usada = eixo.copy()
+    for _, d, _ in pecas:
+        usada |= d
+    estrutura = (a > .02) & ~usada
+    def camada(m):
+        out = el.copy(); out[..., 3] *= cv2.GaussianBlur(m.astype(np.float32), (0, 0), .8); return out
+    ys, xs = np.nonzero(estrutura & (a > .4))
+    cen_e = (float(xs.mean()), float(ys.mean())) if len(xs) else (ax, h / 2)
+    _PECAS_LEI[k] = dict(eixo=camada(eixo), ax=ax, estrutura=camada(estrutura), cen=cen_e,
+                         pecas=[(tp, camada(d), c) for tp, d, c in sorted(pecas, key=lambda p: p[2][1])], hw=(h, w))
+    return _PECAS_LEI[k]
+
+
+def lei_montada(k, u):
+    """O brasão da lei k no instante u da sua montagem (u >= MONTA: completo). Devolve RGBA e um brilho de encaixe."""
+    P_ = pecas_lei(k)
+    h, w = P_["hw"]
+    yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
+    tela = np.zeros((h, w, 4), np.float32)
+    brilho = 0.0
+    # estrutura: traçada como a compasso a partir do alto, dos dois lados ao mesmo tempo, girando até assentar
+    ke = seg(u, .28, 1.0)
+    if ke > 0:
+        cx, cy = P_["cen"]
+        ang = np.abs(np.arctan2(xx - cx, -(yy - cy))) / math.pi         # 0 no alto, 1 embaixo
+        frente = eo(ke) * 1.08
+        m = np.clip((frente - ang) / .04, 0, 1)
+        borda = np.exp(-((ang - frente) / .025) ** 2) * (ke < 1)
+        e = P_["estrutura"].copy()
+        rot = (1 - eob(seg(u, .28, 1.15), 1.4)) * 22
+        if abs(rot) > .05:
+            M = cv2.getRotationMatrix2D((cx, cy), rot, 1.0)
+            e = cv2.warpAffine(e, M, (w, h)); m = cv2.warpAffine(m, M, (w, h)); borda = cv2.warpAffine(borda.astype(np.float32), M, (w, h))
+        e[..., 3] *= m
+        tela = _sobre(tela, e)
+        g = np.zeros((h, w, 4), np.float32); g[..., :3] = np.array((1, .62, .25)); g[..., 3] = np.clip(borda * 1.2, 0, 1) * (e[..., 3] > 0.01)
+        tela = _sobre(tela, g * np.array([1, 1, 1, .8], np.float32))
+    # eixo: cresce do centro para as duas pontas, com ponta incandescente
+    kx = seg(u, 0, .45)
+    if kx > 0:
+        ext = eo(kx) * h * .52
+        m = np.clip((ext - np.abs(yy - h / 2)) / 6, 0, 1)
+        e = P_["eixo"].copy(); e[..., 3] *= m
+        tela = _sobre(tela, e)
+        if kx < 1:
+            g = np.zeros((h, w, 4), np.float32); g[..., :3] = np.array((1, .75, .4))
+            pont = np.exp(-(((np.abs(yy - h / 2) - ext) / 10) ** 2 + ((xx - P_["ax"]) / 9) ** 2))
+            g[..., 3] = np.clip(pont, 0, 1)
+            tela = _sobre(tela, g)
+        brilho = max(brilho, env(u, .45, .47, .5, .7) * .6)
+    # pérolas descem pelo eixo e travam; a gema cresce do centro
+    for j, (tipo, c, (px, py)) in enumerate(P_["pecas"]):
+        tj = .82 + j * .09
+        kp = seg(u, tj, tj + .3)
+        if kp <= 0:
+            continue
+        if tipo == "perola":
+            dy = -(1 - eob(kp, 2.2)) * h * .28
+            tela = _sobre(tela, _mover(c, dy=dy, cx=px, cy=py) * np.array([1, 1, 1, min(1, kp * 3)], np.float32))
+        else:
+            tela = _sobre(tela, _mover(c, esc=max(.02, eob(kp, 2.6)), cx=px, cy=py))
+        brilho = max(brilho, .5 * env(u, tj + .3, tj + .31, tj + .33, tj + .55))
+    brilho = max(brilho, 1.2 * env(u, MONTA, MONTA + .03, MONTA + .08, MONTA + .6))
+    return tela, brilho
 
 
 def pos_lei(i):
-    """Centro e altura de cada brasão: uma fileira no 16:9, duas (4 + 3) no vertical."""
+    """Centro e altura de cada brasão no quadro aberto: uma fileira no 16:9, duas (4 + 3) no vertical."""
     if B.W > B.H:
         return B.W * (.11 + .13 * i), B.H * .4, B.H * .6
     lin, col = (0, i) if i < 4 else (1, i - 4)
@@ -195,80 +297,93 @@ def pos_lei(i):
     return B.W * ((col + .5) / n), B.H * (.22 if lin == 0 else .52), B.H * .26
 
 
+def camera_leis(t):
+    """Câmera que acompanha a lei que está se montando e depois recua para o quadro aberto."""
+    f = clamp((t - T_LEI[0] - .5) / 1.2, 0, 6)
+    i0 = int(f); i1 = min(6, i0 + 1); fr = eio(f - i0)
+    x0, y0, _ = pos_lei(i0); x1, y1, _ = pos_lei(i1)
+    k = eio(seg(t, *T_RECUO))
+    z = lerp(1.45 if B.W > B.H else 1.4, 1.0, k)
+    return lerp(lerp(x0, x1, fr), B.W / 2, k), lerp(lerp(y0, y1, fr), B.H / 2, k), z
+
+
 def cena03(t):
-    img = metal_escuro().copy() * seg(t, 0, .4)
-    n = len(LEIS)
-    vert = B.W < B.H
+    cxc, cyc, z = camera_leis(t)
+    def tela_xy(x, y):
+        return (x - cxc) * z + B.W / 2, (y - cyc) * z + B.H / 2
+    M = np.float32([[z, 0, B.W / 2 - cxc * z], [0, z, B.H / 2 - cyc * z]])
+    img = cv2.warpAffine(metal_escuro(), M, (B.W, B.H), borderMode=cv2.BORDER_REFLECT) * seg(t, 0, .4)
     for i, (k, nome) in enumerate(LEIS):
         t0 = T_LEI[i]
         if t < t0:
             continue
-        cx, cy, alt = pos_lei(i)
-        el = lei_img(k)
-        esc = alt / el.shape[0]
-        dx = dy = 0.0; rot = 0.0
-        if k == "conservacao":
-            rot = .18 * math.exp(-(t - t0) * 2.2) * math.cos((t - t0) * 9)
-        if k == "capacidade":
-            tr = clamp((t - t0) / .8)
-            if tr < 1:
-                dx, dy = B.tremor(t, 2 + 9 * tr, 40)
-        k_rev = eo(seg(t, t0, t0 + .55))
-        # gravação: máscara radial que cresce + borda incandescente
-        h, w = el.shape[:2]
-        if rot:
-            M = cv2.getRotationMatrix2D((w / 2, h / 2), math.degrees(rot), 1.0)
-            el = cv2.warpAffine(el, M, (w, h))
-        yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
-        r = np.abs(yy - h / 2) / (h * .5) * .85 + np.abs(xx - w / 2) / (w * .5) * .25
-        m = np.clip((k_rev * 1.25 - r) / .12, 0, 1)
-        borda = np.clip(1 - np.abs(k_rev * 1.25 - r) / .05, 0, 1) * (k_rev < 1)
-        e2 = el.copy(); e2[..., 3] *= m
-        e2[..., :3] = np.clip(e2[..., :3] + borda[..., None] * np.array((1, .55, .2)) * el[..., 3:4] * 1.5, 0, 1)
-        B.colar(img, e2, cx + dx, cy + dy, 1.0, esc)
+        u = t - t0
+        wx, wy, alt = pos_lei(i)
+        cx, cy = tela_xy(wx, wy)
+        el, flash = lei_montada(k, u)
+        esc = alt / el.shape[0] * z
+        dx = dy = 0.0
+        tm = t0 + MONTA                                        # a lei completa; o fenômeno físico começa aqui
+        if u > MONTA:
+            dy = math.sin((t - tm) * 1.6 + i) * 3 * z * B.H / 1080   # depois de montada, respira devagar
+        if k == "capacidade" and 0 < t - tm < .8:
+            dx, dy = B.tremor(t, 2 + 9 * (t - tm) / .8, 40)
+        if k == "conservacao" and u > MONTA:
+            rr = .18 * math.exp(-(t - tm) * 2.2) * math.cos((t - tm) * 9)
+            if abs(rr) > .005:
+                h_, w_ = el.shape[:2]
+                el = cv2.warpAffine(el, cv2.getRotationMatrix2D((w_ / 2, h_ / 2), math.degrees(rr), 1.0), (w_, h_))
+        B.colar(img, el, cx + dx, cy + dy, 1.0, esc)
+        if flash > 0:
+            g = np.zeros((B.H, B.W), np.float32)
+            cv2.circle(g, (int(cx), int(cy)), int(alt * z * .22), 1.0, -1)
+            img = B.soma(img, cv2.GaussianBlur(g, (0, 0), alt * z * .12)[..., None] * np.array((1, .78, .45), np.float32), .35 * flash)
+        if t < tm:
+            continue
         # fenômeno físico de cada lei
         if k == "vinculo" and i > 0:
-            tens = math.exp(-(t - t0) * 2.0)
-            px = pos_lei(i - 1)[0]
-            img = fio(img, t, px + 40 * B.H / 1080, cx - 40 * B.H / 1080, cy, eo(seg(t, t0, t0 + .3)) * (1 - seg(t, t0 + 1.4, t0 + 2.2)), 10 * tens, 50, brilho=.55)
+            tens = math.exp(-(t - tm) * 2.0)
+            px, py = tela_xy(*pos_lei(i - 1)[:2])
+            img = fio(img, t, px + 40 * z * B.H / 1080, cx - 40 * z * B.H / 1080, cy, eo(seg(t, tm, tm + .3)) * (1 - seg(t, tm + 1.4, tm + 2.2)), 10 * tens * z, 50, brilho=.55)
         if k == "compatibilidade":
             g = np.zeros((B.H, B.W), np.float32)
-            cv2.circle(g, (int(cx), int(cy)), int(70 * B.W / 1920), 1.0, -1)
-            g = cv2.GaussianBlur(g, (0, 0), 35 * B.W / 1920) * env(t, t0, t0 + .3, t0 + .7, t0 + 2.0)
-            img = B.soma(img, g[..., None] * np.array((1.0, .38, .08), np.float32), .9)
+            cv2.circle(g, (int(cx), int(cy)), int(70 * z * B.W / 1920), 1.0, -1)
+            g = cv2.GaussianBlur(g, (0, 0), 35 * z * B.W / 1920) * env(t, tm, tm + .3, tm + .7, tm + 2.0)
+            img = B.soma(img, g[..., None] * np.array((1.0, .38, .08), np.float32), .55)
         if k == "vazao":
-            kk = seg(t, t0 + .15, t0 + .5)
+            kk = seg(t, tm + .15, tm + .5)
             if kk > 0:
                 cam = np.zeros((B.H, B.W), np.float32); rng = np.random.default_rng(9)
                 for a in rng.uniform(0, 6.28, 9):
-                    L = (40 + rng.uniform(30, 90)) * kk * B.W / 1920
-                    cv2.line(cam, (int(cx + 60 * math.cos(a)), int(cy + 60 * math.sin(a))), (int(cx + (60 + L) * math.cos(a)), int(cy + (60 + L) * math.sin(a))), 1.0, 1, cv2.LINE_AA)
-                img = B.soma(img, cam[..., None] * np.array((.75, .82, .9), np.float32), .7 * (1 - seg(t, t0 + 1, t0 + 2)))
+                    r0 = 60 * z; L = (40 + rng.uniform(30, 90)) * kk * z * B.W / 1920
+                    cv2.line(cam, (int(cx + r0 * math.cos(a)), int(cy + r0 * math.sin(a))), (int(cx + (r0 + L) * math.cos(a)), int(cy + (r0 + L) * math.sin(a))), 1.0, 1, cv2.LINE_AA)
+                img = B.soma(img, cam[..., None] * np.array((.75, .82, .9), np.float32), .7 * (1 - seg(t, tm + 1, tm + 2)))
         if k == "dissipacao":
-            cam = np.zeros((B.H, B.W), np.float32); rng = np.random.default_rng(12)
+            cam = np.zeros((B.H, B.W), np.float32)
             for j in range(40):
-                f = ((t - t0) * .6 + j / 40) % 1
+                f = ((t - tm) * .6 + j / 40) % 1
                 ang = -1.2 + f * 2.6
-                rr = 110 + 25 * math.sin(j)
-                x = cx + rr * math.cos(ang) * B.W / 1920; y = cy - 120 + f * 240 + 20 * math.sin(ang * 2)
-                cv2.circle(cam, (int(x), int(y)), 2, float(math.sin(f * math.pi)), -1, cv2.LINE_AA)
-            img = B.soma(img, cv2.GaussianBlur(cam, (0, 0), 1)[..., None] * np.array((.6, .75, .95), np.float32), .55 * env(t, t0, t0 + .4, t0 + 2.4, t0 + 3.2))
-    # retorno: um pulso de luz percorre a fileira de volta
-    tp = T_LEI[6] + .7
+                rr = (110 + 25 * math.sin(j)) * z
+                x = cx + rr * math.cos(ang) * B.W / 1920; y = cy + (-120 + f * 240 + 20 * math.sin(ang * 2)) * z
+                cv2.circle(cam, (int(x), int(y)), max(1, int(2 * z)), float(math.sin(f * math.pi)), -1, cv2.LINE_AA)
+            img = B.soma(img, cv2.GaussianBlur(cam, (0, 0), 1)[..., None] * np.array((.6, .75, .95), np.float32), .55 * env(t, tm, tm + .4, tm + 2.4, tm + 3.2))
+    # retorno: um pulso de luz percorre a fileira de volta, já no quadro aberto
+    tp = T_LEI[6] + MONTA + .2
     if t > tp and B.W > B.H:
         f = seg(t, tp, tp + 1.0)
-        x = B.W * (.89 - .78 * f)
+        x, y = tela_xy(B.W * (.89 - .78 * f), B.H * .4)
         g = np.zeros((B.H, B.W), np.float32)
-        cv2.ellipse(g, (int(x), int(B.H * .4)), (int(90 * B.W / 1920), int(260 * B.W / 1920)), 0, 0, 360, 1.0, -1)
+        cv2.ellipse(g, (int(x), int(y)), (int(90 * z * B.W / 1920), int(260 * z * B.W / 1920)), 0, 0, 360, 1.0, -1)
         img = B.soma(img, cv2.GaussianBlur(g, (0, 0), 40)[..., None] * np.array((1, .8, .45), np.float32), .5 * math.sin(f * math.pi))
-    # nomes das leis e composição final
-    if t > 6.9:
-        a = eio(seg(t, 6.9, 7.6))
+    # nomes das leis no quadro aberto
+    if t > T_NOMES:
+        a = eio(seg(t, T_NOMES, T_NOMES + .7))
         for i, (k, nome) in enumerate(LEIS):
-            cx, cy, alt = pos_lei(i)
-            B.colar(img, B.texto(nome, "Cinzel-Regular.ttf", 21 if B.W > B.H else 15, (.9, .8, .58), .2), cx, cy + alt * .54, a)
+            wx, wy, alt = pos_lei(i)
+            x, y = tela_xy(wx, wy + alt * .54)
+            B.colar(img, B.texto(nome, "Cinzel-Regular.ttf", 21 if B.W > B.H else 15, (.9, .8, .58), .2), x, y, a)
     img = B.brilho_pontos(img, .7, 14, .45)
-    img = img * (1 - seg(t, 8.75, 9.0))
+    img = img * (1 - seg(t, 12.25, 12.5))
     return B.vinheta(img, .55)
 
 
@@ -585,10 +700,13 @@ def varredura(el, f):
 
 
 # A logo se monta por partes. Instantes (s, relativos a 84) em que cada peça trava no lugar; o áudio usa os mesmos.
-T_PECAS = {"eixo": .38, "estandarte": .72, "arco": 1.02, "balanca": 1.3, "halo": 1.9}
-T_PEROLAS = [1.38 + i * .065 for i in range(7)]
-T_LETRAS = (1.95, 2.75)                       # as letras do título entram em sequência neste intervalo
-T_FILETE, T_SUB, T_CREDITO = 2.7, 2.95, 3.25
+T_PECAS = {"arco": .45, "estandarte": .8, "eixo": 1.32, "balanca": 1.85, "halo": 3.9}
+T_PEROLAS = [2.1 + i * .075 for i in range(7)]
+T_LETRAS = (4.0, 4.8)                        # as letras do título entram em sequência neste intervalo
+T_FILETE, T_SUB, T_CREDITO = 4.75, 5.0, 5.3
+T_FIM10 = (7.4, 8.2)
+PONTA = (512, 990)                           # ponta da espada no desenho (onde ela se crava)
+PIVO = (512, 268)                            # onde a balança se apoia na guarda da espada
 PEROLAS = [(512, y) for y in (310, 381, 453, 524, 596, 666, 737)]
 _PECAS = {}
 
@@ -619,9 +737,24 @@ def pecas_emblema():
         m = cv2.GaussianBlur(m.astype(np.float32), (0, 0), .7)
         out = em.copy(); out[..., 3] *= m
         return out
-    _PECAS.update(eixo=peca(eixo), estandarte=peca(estandarte), balanca=peca(balanca),
+    coroa = (eixo | halo) & (yy < 140) & (np.abs(xx - 512) < 78) & (np.abs(xx - 512) > 11)
+    eixo &= ~coroa; halo &= ~coroa
+    trav = balanca & (yy < 292)
+    # a lâmina continua por baixo das pérolas (para não ficar furada antes de elas chegarem)
+    furo = (perola & (np.abs(xx - 512) < 15)).astype(np.uint8)
+    perfil = em[790:800, :, :3].mean(0)                   # corte da lâmina logo abaixo da última pérola
+    lamina = np.broadcast_to(perfil[None], em[..., :3].shape)
+    def peca_eixo():
+        out = peca(eixo)
+        out[..., :3] = np.where(furo[..., None] > 0, lamina, out[..., :3])
+        out[..., 3] = np.maximum(out[..., 3], cv2.GaussianBlur(furo.astype(np.float32), (0, 0), .8))
+        return out
+    _PECAS.update(eixo=peca_eixo(), estandarte=peca(estandarte), coroa=peca(coroa),
+                  travessao=peca(trav), prato_e=peca(balanca & ~trav & (xx < 512)), prato_d=peca(balanca & ~trav & (xx >= 512)),
                   arco_e=peca(arco & (xx < 512)), arco_d=peca(arco & (xx >= 512)), halo=peca(halo),
                   perolas=[peca((xx - cx) ** 2 + (yy - cy) ** 2 < 33 ** 2) for cx, cy in PEROLAS])
+    xs = np.nonzero(trav.any(0))[0]
+    _PECAS["ganchos"] = ((float(xs.min()) + 6, 268.0), (float(xs.max()) - 6, 268.0))
     return _PECAS
 
 
@@ -642,6 +775,26 @@ def eob(x, s=1.9):
     """Sai com um pequeno passo além do alvo e volta (o encaixe)."""
     x = clamp(x, 0, 1) - 1
     return 1 + (s + 1) * x ** 3 + s * x ** 2
+
+
+def balanca_angulo(t):
+    """Inclinação (graus) do travessão: oscila presa na guarda da espada e para nivelada."""
+    tau = t - T_PECAS["balanca"]
+    if tau <= 0:
+        return 0.0
+    return 15 * math.exp(-tau * 1.45) * math.cos(2 * math.pi * 1.05 * tau) * (1 - seg(tau, 1.6, 2.1))
+
+
+def espada_estado(t):
+    """Queda da espada (deslocamento vertical) e tremor depois de cravar (ângulo em torno da ponta)."""
+    te = T_PECAS["eixo"]
+    k = seg(t, te - .34, te)
+    if t < te:
+        return -(1 - k ** 2) * 1150, 0.0
+    tau = t - te
+    afunda = 16 * math.sin(min(tau / .1, 1) * math.pi) * (tau < .1)   # entra um pouco além e volta
+    tremor = 2.4 * math.exp(-tau * 5.5) * math.sin(2 * math.pi * 8.5 * tau)
+    return afunda, tremor
 
 
 def emblema_montado(t):
@@ -668,30 +821,80 @@ def emblema_montado(t):
         yy = np.arange(1024, dtype=np.float32)[:, None]
         est[..., 3] *= np.clip((corte - yy) / 18, 0, 1)
         tela = _sobre(tela, est)
-    # balança: cai de cima e assenta
-    k = seg(t, T_PECAS["balanca"] - .34, T_PECAS["balanca"])
+    # balança: desce, pousa na guarda da espada e oscila; os pratos continuam pendurados na vertical
+    tb = T_PECAS["balanca"]
+    k = seg(t, tb - .3, tb)
     if k > 0:
-        e = eob(k, 2.4)
-        tela = _sobre(tela, _mover(pc["balanca"], dy=-(1 - e) * 260, ang=(1 - e) * 6, cx=512, cy=265) * np.array([1, 1, 1, eo(k * 1.5)], np.float32))
-    # eixo (a espada): desce do alto como uma estaca
-    k = seg(t, T_PECAS["eixo"] - .3, T_PECAS["eixo"])
+        queda = -(1 - k ** 2) * 240
+        th = balanca_angulo(t)
+        a_ = min(1, k * 2.5)
+        tela = _sobre(tela, _mover(pc["travessao"], dy=queda, ang=th, cx=PIVO[0], cy=PIVO[1]) * np.array([1, 1, 1, a_], np.float32))
+        for nome, (gx, gy) in zip(("prato_e", "prato_d"), pc["ganchos"]):
+            r = math.radians(th)
+            nx = PIVO[0] + (gx - PIVO[0]) * math.cos(r) + (gy - PIVO[1]) * math.sin(r)
+            ny = PIVO[1] - (gx - PIVO[0]) * math.sin(r) + (gy - PIVO[1]) * math.cos(r)
+            balanco = -th * .35                                   # o prato balança um pouco atrasado
+            pr = _mover(pc[nome], ang=balanco, cx=gx, cy=gy)
+            pr = _mover(pr, dx=nx - gx, dy=ny - gy + queda)
+            tela = _sobre(tela, pr * np.array([1, 1, 1, a_], np.float32))
+    # espada: desce do alto, atravessa o anel da coroa e se crava; depois treme presa pela ponta
+    dy, tr = espada_estado(t)
+    if t > T_PECAS["eixo"] - .34:
+        esp = _mover(pc["eixo"], dy=dy)
+        if abs(tr) > .01:
+            esp = _mover(esp, ang=tr, cx=PONTA[0], cy=PONTA[1])
+        if t < T_PECAS["eixo"]:                            # borrão de movimento na queda
+            k = seg(t, T_PECAS["eixo"] - .34, T_PECAS["eixo"])
+            n = int(2 + 40 * k)
+            esp = cv2.blur(esp, (1, max(1, n)))
+        tela = _sobre(tela, esp)
+    # coroa (anel e luas do alto) entra com o arco; fica na frente, então a espada passa por dentro dela
+    k = seg(t, T_PECAS["arco"] - .1, T_PECAS["arco"] + .25)
     if k > 0:
-        e = ei(k)
-        tela = _sobre(tela, _mover(pc["eixo"], dy=-(1 - e) * 900))
-    # pérolas: acendem uma a uma, de cima para baixo
+        tela = _sobre(tela, _mover(pc["coroa"], esc=lerp(.6, 1, eob(k)), cx=512, cy=110) * np.array([1, 1, 1, min(1, k * 2)], np.float32))
+    # pérolas: acendem uma a uma, de cima para baixo, já sobre a lâmina
     for i, tp in enumerate(T_PEROLAS):
         k = seg(t, tp - .12, tp)
         if k > 0:
             e = eob(k, 2.6)
             cx, cy = PEROLAS[i]
-            tela = _sobre(tela, _mover(pc["perolas"][i], esc=max(.01, e), cx=cx, cy=cy) * np.array([1, 1, 1, min(1, k * 2)], np.float32))
+            p_ = _mover(pc["perolas"][i], esc=max(.01, e), cx=cx, cy=cy)
+            if abs(tr) > .01:
+                p_ = _mover(p_, ang=tr, cx=PONTA[0], cy=PONTA[1])
+            tela = _sobre(tela, p_ * np.array([1, 1, 1, min(1, k * 2)], np.float32))
             brilhos.append((cx, cy, .5 * env(t, tp, tp + .02, tp + .05, tp + .35)))
-    for nome, (cx, cy) in (("eixo", (512, 880)), ("estandarte", (512, 820)), ("arco", (512, 140)), ("balanca", (512, 270)), ("halo", (512, 400))):
+    for nome, (cx, cy) in (("eixo", PONTA), ("estandarte", (512, 820)), ("arco", (512, 140)), ("balanca", PIVO), ("halo", (512, 400))):
         tp = T_PECAS[nome]
-        f = env(t, tp, tp + .015, tp + .06, tp + (.9 if nome == "halo" else .45))
+        f = env(t, tp, tp + .015, tp + .06, tp + (.9 if nome in ("halo", "eixo") else .45))
         if f > 0:
-            brilhos.append((cx, cy, f * (1.4 if nome == "halo" else 1.0)))
+            brilhos.append((cx, cy, f * (1.4 if nome in ("halo", "eixo") else 1.0)))
     return tela, brilhos
+
+
+def faiscas(img, t, px, py, esc):
+    """Faíscas e pó que saltam da ponta quando a espada se crava."""
+    tau = t - T_PECAS["eixo"]
+    if not 0 < tau < .9:
+        return img
+    r = np.random.default_rng(31)
+    m = np.zeros((B.H, B.W), np.float32)
+    g = 3200 * B.H / 1080
+    for _ in range(34):
+        ang = r.uniform(-math.pi * .95, -math.pi * .05)
+        v = r.uniform(300, 900) * B.H / 1080
+        vida = r.uniform(.25, .75)
+        if tau > vida:
+            continue
+        for tt, br in ((tau, 1.0), (max(0, tau - .025), .5)):
+            x = px + v * math.cos(ang) * tt
+            y = py + v * math.sin(ang) * tt + .5 * g * tt ** 2
+            cv2.circle(m, (int(x), int(y)), max(1, int(2 * B.H / 1080)), br * (1 - tau / vida), -1, cv2.LINE_AA)
+    img = B.soma(img, cv2.GaussianBlur(m, (0, 0), 1.2)[..., None] * np.array((1, .72, .35), np.float32), 1.6)
+    # poeira que sobe do ponto de impacto
+    k = seg(tau, 0, .9)
+    p = np.zeros((B.H, B.W), np.float32)
+    cv2.ellipse(p, (int(px), int(py - 10 * k * B.H / 1080)), (int(lerp(20, 170, eo(k)) * B.H / 1080), int(lerp(8, 50, eo(k)) * B.H / 1080)), 0, 0, 360, 1.0, -1)
+    return B.soma(img, cv2.GaussianBlur(p, (0, 0), 22 * B.H / 1080)[..., None] * np.array((.55, .5, .42), np.float32), .22 * (1 - k))
 
 
 _LETRAS = []
@@ -756,13 +959,19 @@ def cena10(t):
     if fl > 0:
         em = varredura(em, fl)
     ey = B.H * (.32 if not vert else .3)
-    esc = (.42 if not vert else .36) * B.H / 1024 * (1.0 + .035 * seg(t, 0, 6))
-    B.colar(img, em, B.W / 2, ey, 1.0, esc)
+    esc = (.42 if not vert else .36) * B.H / 1024 * (1.0 + .035 * seg(t, 0, 8))
+    tau = t - T_PECAS["eixo"]
+    sx = sy = 0.0
+    if 0 < tau < .45:                                    # o tranco do impacto
+        f = math.exp(-tau * 9) * 12 * B.H / 1080
+        sx, sy = f * math.sin(tau * 95), f * math.cos(tau * 71) * 1.4
+    B.colar(img, em, B.W / 2 + sx, ey + sy, 1.0, esc)
+    img = faiscas(img, t, B.W / 2 + sx, ey + sy + (PONTA[1] - 512) * esc, esc)
     # luz quente atrás do emblema quando ele fecha
     g = np.zeros((B.H, B.W), np.float32)
     cv2.circle(g, (int(B.W / 2), int(ey)), int(B.H * .2), 1.0, -1)
     img = B.soma(img, cv2.GaussianBlur(g, (0, 0), 120)[..., None] * np.array((.5, .38, .18)),
-                 .3 * env(t, T_PECAS["halo"], T_PECAS["halo"] + .1, T_PECAS["halo"] + .8, 4.5))
+                 .3 * env(t, T_PECAS["halo"], T_PECAS["halo"] + .1, T_PECAS["halo"] + .8, T_PECAS["halo"] + 3.0))
     # faíscas de cada encaixe
     for cx, cy, f in brilhos:
         px, py = B.W / 2 + (cx - 512) * esc, ey + (cy - 512) * esc
@@ -783,14 +992,22 @@ def cena10(t):
     B.colar(img, le, B.W / 2, B.H * (.66 if not vert else .58), 1.0, (1.02 if not vert else .95) * B.W / 1024 * (.62 if not vert else 1))
     a3 = eio(seg(t, T_CREDITO, T_CREDITO + .7))
     B.colar(img, B.texto("UMA SAGA DE WERIK MARTINS", "Cinzel-Regular.ttf", 24, (.82, .72, .52), .35), B.W / 2, B.H * (.9 if not vert else .7), a3)
-    img = img * (1 - seg(t, 5.2, 6.0))
+    img = img * (1 - seg(t, *T_FIM10))
     return img
 
 
 # ------------------------------------------------------------------ linha do tempo
-LINHA = [(0.0, 7.0, cena01), (7.0, 16.0, cena02), (16.0, 25.0, cena03), (25.0, 35.0, cena04), (35.0, 45.0, cena05),
-         (45.0, 54.0, cena06), (54.0, 65.0, cena07), (65.0, 77.0, cena08), (77.0, 84.0, cena09), (84.0, 90.0, cena10)]
-DUR = 90.0
+# A cena 3 (as leis se montando) passou de 9 para 12,5 s e o título de 6 para 8,2 s; o resto ficou igual.
+D3, D10 = 3.5, 2.2
+LINHA = [(0.0, 7.0, cena01), (7.0, 16.0, cena02), (16.0, 28.5, cena03), (28.5, 38.5, cena04), (38.5, 48.5, cena05),
+         (48.5, 57.5, cena06), (57.5, 68.5, cena07), (68.5, 80.5, cena08), (80.5, 87.5, cena09), (87.5, 95.7, cena10)]
+DUR = 95.7
+INICIO = {i + 1: a for i, (a, _, _) in enumerate(LINHA)}
+
+
+def novo(t):
+    """Converte um instante da montagem antiga (90 s) para a atual. Vale fora das cenas 3 e 10, que foram refeitas."""
+    return t if t < 25.0 else t + D3
 
 
 # ------------------------------------------------------------------ letreiros (no lugar da narração)
@@ -798,8 +1015,9 @@ DUR = 90.0
 LETREIROS = [
     (8.0, 11.45, ["EM ARESTA, A MAGIA NÃO CRIA PODER."], .8, 0.0),
     (9.9, 11.45, ["ELA O MOVE."], .87, 0.0),
-    (22.5, 24.75, ["E TUDO QUE SE MOVE…"], .83, 0.0),
-    (23.6, 24.75, ["DEIXA UM PREÇO."], .9, 0.0),
+    (26.0, 28.25, ["E TUDO QUE SE MOVE…"], .83, 0.0),
+    (27.1, 28.25, ["DEIXA UM PREÇO."], .9, 0.0),
+] + [(novo(a), novo(b), l, y, d) for a, b, l, y, d in [
     (30.3, 34.7, ["SETE LEIS."], .8, 0.0),
     (31.2, 34.7, ["NENHUMA ESCOLHA SEM CONSEQUÊNCIA."], .87, 0.0),
     (36.4, 40.3, ["ILAN VAREK CONHECIA O PESO DE UMA SENTENÇA."], .86, 0.0),
@@ -808,7 +1026,7 @@ LETREIROS = [
     (73.3, 76.6, ["ISSO NÃO SIGNIFICA", "QUE SEJAM INTOCÁVEIS."], .82, 0.0),
     (78.2, 80.6, ["PARA DERRUBAR UM DEUS…"], .8, 0.0),
     (80.9, 83.7, ["…BASTA DESCOBRIR", "O QUE O SUSTENTA."], .8, 0.0),
-]
+]]
 
 
 def _quebra(linhas):
@@ -830,7 +1048,7 @@ def letreiro(img, t):
         if not (a <= t < b):
             continue
         ent = eo(seg(t, a, a + .7)); sai = 1 - seg(t, b - .35, b) if b - t > .02 else 0.0
-        if b in (11.45, 83.7):
+        if b in (11.45, novo(83.7)):
             sai = 1.0                                     # some junto com o corte seco
         al = ent * sai
         ls = _quebra(linhas)

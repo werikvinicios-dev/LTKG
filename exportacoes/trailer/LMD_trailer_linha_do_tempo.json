@@ -1,5 +1,5 @@
 {
- "duracao": 90.0,
+ "duracao": 95.7,
  "fps": 24,
  "formato": "1920x1080",
  "planos": [
@@ -7,8 +7,8 @@
    "inicio": 0.0,
    "fim": 7.0,
    "plano": "01 O primeiro som",
-   "fonte": "procedural: fio de prata, gota, aço escovado (som gravado)",
-   "movimento": "plano fixo, revelação lenta"
+   "fonte": "procedural: fio de prata, gota, chapa de aço escovado",
+   "movimento": "macro; o fio vibra, a gota se solta e a câmera desce com ela"
   },
   {
    "inicio": 7.0,
@@ -26,108 +26,108 @@
   },
   {
    "inicio": 16.0,
-   "fim": 25.0,
+   "fim": 28.5,
    "plano": "03 As sete leis",
-   "fonte": "identidade_aresta/simbolos/leis/*",
-   "movimento": "gravação progressiva + fenômeno físico de cada lei"
+   "fonte": "02_simbolos/SI-001 (brasões pintados)",
+   "movimento": "cada lei se monta (eixo, estrutura, pérolas); a câmera acompanha e recua"
   },
   {
-   "inicio": 25.0,
-   "fim": 35.0,
+   "inicio": 28.5,
+   "fim": 38.5,
    "plano": "04 Ilan Varek",
    "fonte": "06_personagens/PE-001 (4x)",
    "movimento": "close na manopla (antebraço esquerdo) e tilt até o rosto"
   },
   {
-   "inicio": 35.0,
-   "fim": 40.45,
+   "inicio": 38.5,
+   "fim": 43.95,
    "plano": "05a A ponte",
    "fonte": "06_personagens/PE-025 (4x)",
    "movimento": "acompanhamento lateral na nevasca"
   },
   {
-   "inicio": 40.45,
-   "fim": 45.0,
+   "inicio": 43.95,
+   "fim": 48.5,
    "plano": "05b O último carrasco",
-   "fonte": "PE-025 + simbolos/instituicoes/ordem_da_ultima_sentenca",
-   "movimento": "congela e vira gravura"
+   "fonte": "PE-025 + 03_faccoes/FA-001 (selo de cera da Ordem)",
+   "movimento": "congela, vira gravura e o selo é prensado"
   },
   {
-   "inicio": 45.0,
-   "fim": 48.0,
+   "inicio": 48.5,
+   "fim": 51.5,
    "plano": "06a Mara Quen",
    "fonte": "06_personagens/PE-003 (4x)",
    "movimento": "tilt da escrita ao rosto; close nos olhos"
   },
   {
-   "inicio": 48.0,
-   "fim": 49.8,
+   "inicio": 51.5,
+   "fim": 53.3,
    "plano": "06b Nara Voss",
    "fonte": "06_personagens/PE-029",
    "movimento": "instrumento, faíscas"
   },
   {
-   "inicio": 49.8,
-   "fim": 50.6,
+   "inicio": 53.3,
+   "fim": 54.1,
    "plano": "06c Estandarte",
    "fonte": "04_objetos/OB-004",
    "movimento": "transição por objeto"
   },
   {
-   "inicio": 50.6,
-   "fim": 51.8,
+   "inicio": 54.1,
+   "fim": 55.3,
    "plano": "06d O livro",
    "fonte": "08_editorial/ED-001 + ED-003 (couro)",
    "movimento": "o livro se fecha com firmeza"
   },
   {
-   "inicio": 51.8,
-   "fim": 54.0,
+   "inicio": 55.3,
+   "fim": 57.5,
    "plano": "06e Silhuetas",
    "fonte": "06_personagens/PE-006",
    "movimento": "push-in com raios de luz"
   },
   {
-   "inicio": 54.0,
-   "fim": 56.2,
+   "inicio": 57.5,
+   "fim": 59.7,
    "plano": "07a Luz dourada",
    "fonte": "05_mundo/MU-007",
    "movimento": "raios volumétricos"
   },
   {
-   "inicio": 56.2,
-   "fim": 59.6,
+   "inicio": 59.7,
+   "fim": 63.1,
    "plano": "07b Tecido e mão",
    "fonte": "06_personagens/PE-013",
    "movimento": "véu ao vento"
   },
   {
-   "inicio": 59.6,
-   "fim": 65.0,
+   "inicio": 63.1,
+   "fim": 68.5,
    "plano": "07c Aurelia",
    "fonte": "06_personagens/PE-012 (4x)",
    "movimento": "tilt de revelação; cabelo ao vento"
   },
   {
-   "inicio": 65.0,
-   "fim": 77.0,
+   "inicio": 68.5,
+   "fim": 80.5,
    "plano": "08 O impossível",
    "fonte": "procedural + PE-021, PE-001, PE-025, C01-a, C01-c",
    "movimento": "8 cortes na percussão"
   },
   {
-   "inicio": 77.0,
-   "fim": 83.7,
+   "inicio": 80.5,
+   "fim": 87.2,
    "plano": "09 A pergunta",
    "fonte": "09_engenharia_arcana/EA-006",
    "movimento": "push-in lento; silêncio; corte para preto"
   },
   {
-   "inicio": 84.0,
-   "fim": 90.0,
+   "inicio": 87.5,
+   "fim": 95.7,
    "plano": "10 Título",
    "fonte": "01_identidade/ID-008 + ID-006",
-   "movimento": "a logo se monta peça por peça; letras encaixam; crédito do autor"
+   "movimento": "a logo se monta: a espada se crava, a balança oscila e para; letras encaixam"
   }
  ],
  "letreiros": [
@@ -146,73 +146,73 @@
    ]
   },
   {
-   "inicio": 22.5,
-   "fim": 24.75,
+   "inicio": 26.0,
+   "fim": 28.25,
    "linhas": [
     "E TUDO QUE SE MOVE…"
    ]
   },
   {
-   "inicio": 23.6,
-   "fim": 24.75,
+   "inicio": 27.1,
+   "fim": 28.25,
    "linhas": [
     "DEIXA UM PREÇO."
    ]
   },
   {
-   "inicio": 30.3,
-   "fim": 34.7,
+   "inicio": 33.8,
+   "fim": 38.2,
    "linhas": [
     "SETE LEIS."
    ]
   },
   {
-   "inicio": 31.2,
-   "fim": 34.7,
+   "inicio": 34.7,
+   "fim": 38.2,
    "linhas": [
     "NENHUMA ESCOLHA SEM CONSEQUÊNCIA."
    ]
   },
   {
-   "inicio": 36.4,
-   "fim": 40.3,
+   "inicio": 39.9,
+   "fim": 43.8,
    "linhas": [
     "ILAN VAREK CONHECIA O PESO DE UMA SENTENÇA."
    ]
   },
   {
-   "inicio": 60.5,
-   "fim": 64.8,
+   "inicio": 64.0,
+   "fim": 68.3,
    "linhas": [
     "MAS HÁ PODERES QUE SE ACOSTUMARAM",
     "A NUNCA SER QUESTIONADOS."
    ]
   },
   {
-   "inicio": 70.6,
-   "fim": 72.5,
+   "inicio": 74.1,
+   "fim": 76.0,
    "linhas": [
     "ELES PODEM PARECER ETERNOS."
    ]
   },
   {
-   "inicio": 73.3,
-   "fim": 76.6,
+   "inicio": 76.8,
+   "fim": 80.1,
    "linhas": [
     "ISSO NÃO SIGNIFICA",
     "QUE SEJAM INTOCÁVEIS."
    ]
   },
   {
-   "inicio": 78.2,
-   "fim": 80.6,
+   "inicio": 81.7,
+   "fim": 84.1,
    "linhas": [
     "PARA DERRUBAR UM DEUS…"
    ]
   },
   {
-   "inicio": 80.9,
-   "fim": 83.7,
+   "inicio": 84.4,
+   "fim": 87.2,
    "linhas": [
     "…BASTA DESCOBRIR",
     "O QUE O SUSTENTA."
@@ -225,42 +225,42 @@
    11.45
   ],
   [
-   30.2,
-   34.8
+   33.7,
+   38.3
   ],
   [
-   36.3,
-   40.45
+   39.8,
+   43.95
   ],
   [
-   40.45,
-   43.0
+   43.95,
+   46.5
   ],
   [
-   60.4,
-   64.9
+   63.9,
+   68.4
   ],
   [
-   65.0,
-   72.5
+   68.5,
+   74.0
   ],
   [
-   84.0,
-   87.5
+   87.5,
+   93.1
   ]
  ],
  "teaser_15s": [
   [
-   36.3,
-   40.45
+   39.8,
+   43.95
   ],
   [
-   65.0,
-   70.5
+   68.5,
+   73.0
   ],
   [
-   84.0,
-   89.4
+   87.7,
+   94.0
   ]
  ]
 }

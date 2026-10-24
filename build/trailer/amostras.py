@@ -1,4 +1,4 @@
-"""Sampler das gravações reais (VSCO-2-CE, BigSoundBank, Kenney). Tudo em 48 kHz estéreo float32.
+"""Sampler das gravações reais (VSCO-2-CE, BigSoundBank, Kenney, OpenGameArt). Tudo em 48 kHz estéreo float32.
 - instrumento(): toca uma nota de um naipe gravado, com transposição curta a partir da amostra mais próxima,
   camada de dinâmica pela intensidade, laço com fusão cruzada quando a nota é mais longa que a gravação, e soltura.
 - som(): um efeito gravado (trecho por tempo) ; golpes(): os ataques isolados de um arquivo com vários golpes.
@@ -127,6 +127,8 @@ def tympano(midi, vel=.8, dur=None):
 
 
 def arquivo(nome):
+    if nome.startswith("oga:"):                       # OpenGameArt (pacotes CC0): caminho dentro de _cache/fontes/oga
+        return f"{F}/oga/{nome[4:]}"
     if re.fullmatch(r"\d{4}", nome):
         for e in ("flac", "aiff"):
             c = f"{F}/bsb/{nome}.{e}"

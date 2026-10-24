@@ -24,7 +24,8 @@ def trecho(args):
 if __name__ == "__main__":
     fmt, saida = sys.argv[1], sys.argv[2]
     audio = sys.argv[3] if len(sys.argv) > 3 and sys.argv[3] != "-" else None
-    t0, t1 = (float(sys.argv[4]), float(sys.argv[5])) if len(sys.argv) > 5 else (0.0, 90.0)
+    t0, t1 = (float(sys.argv[4]), float(sys.argv[5])) if len(sys.argv) > 5 else (0.0, __import__("cenas").DUR)
+    TMP = f"{TMP}/{os.path.splitext(os.path.basename(saida))[0]}"
     os.makedirs(TMP, exist_ok=True)
     f0, f1 = int(t0 * 24), int(t1 * 24)
     n = 4

@@ -9,7 +9,7 @@ import amostras as A
 from amostras import instrumento as I, acorde as AC, percussao as PC, tympano as TP, som as S, golpe as G
 
 SR = 48000
-DUR = 90.0
+DUR = C.DUR
 N = int(SR * DUR)
 OUT = "/home/user/LTKG/build/trailer/_cache/audio"
 os.makedirs(OUT, exist_ok=True)
@@ -21,9 +21,10 @@ def lp(x, f, o=2): return signal.sosfilt(signal.butter(o, f / (SR / 2), "low", o
 def hp(x, f, o=2): return signal.sosfilt(signal.butter(o, f / (SR / 2), "high", output="sos"), x, axis=0).astype(np.float32)
 
 
-def por(buf, x, t, g=1.0, pan=0.0):
-    """Coloca o som x (estéreo) em t segundos, com ganho e balanço (-1..1)."""
-    i = int(t * SR)
+def por(buf, x, t, g=1.0, pan=0.0, bruto=False):
+    """Coloca o som x (estéreo) em t segundos, com ganho e balanço (-1..1).
+    t vem na contagem da montagem antiga e é convertido (C.novo); bruto=True usa t já na montagem atual."""
+    i = int((t if bruto else C.novo(t)) * SR)
     if i >= buf.shape[0] or x is None or len(x) == 0:
         return
     if x.ndim == 1:
@@ -82,6 +83,13 @@ def melodia(buf, naipe, tema, t, vel=.55, transp=0, ritmo=1.0, pan=0.0, liga=.35
     return t
 
 
+def melodia_b(buf, naipe, tema, t, vel=.55, transp=0, ritmo=1.0, pan=0.0, liga=.35):
+    """melodia() com t já na montagem atual."""
+    for n_, d in tema:
+        por(buf, I(naipe, n_ + transp, d * ritmo + liga, vel, solta=.9, ataque=.12), t, pan=pan, bruto=True)
+        t += d * ritmo
+
+
 def metais(notas, dur, vel=.9, ataque=.25):
     """Acorde de metais graves (trompas, trombone e tuba): o "braam" gravado."""
     partes = [AC("trompas", [n + 12 for n in notas], dur, vel, 1.2, ataque) * .9,
@@ -109,13 +117,18 @@ def trilha():
     por(m, I("contrabaixo", 38, 9.0, .35, 2.0, 3.0), 7.0)
     por(m, I("violoncelos", 45, 8.5, .25, 2.0, 3.0), 7.2, pan=.2)
     melodia(m, "violoncelos", TEMA_A, 8.0, .5, pan=-.15)
-    por(m, AC("violas", [50, 57], 9.0, .3, 1.5, 1.5), 16.0, pan=.15)
-    por(m, I("contrabaixo", 38, 9.0, .3, 1.5, 1.5), 16.0)
-    harpa = [62, 64, 65, 67, 69, 70, 72]                       # uma nota de harpa para cada lei gravada
+    # 16–28,5 as leis se montando: pedal de cordas e, a cada lei completa, uma nota de harpa e um tímpano leve
+    s3 = C.INICIO[3]
+    por(m, AC("violas", [50, 57], 12.5, .3, 1.5, 1.5), s3, pan=.15, bruto=True)
+    por(m, I("contrabaixo", 38, 12.5, .3, 1.5, 1.5), s3, bruto=True)
+    harpa = [62, 64, 65, 67, 69, 70, 72]
     for i, tl in enumerate(C.T_LEI):
-        por(m, TP(38, .35), 16 + tl, pan=(i - 3) * .1)
-        por(m, I("harpa", harpa[i], 2.2, .45, 1.2), 16 + tl, pan=(i - 3) * .12)
-    por(m, I("violoncelos", 45, 3.2, .45, 1.0, .2), 21.8); por(m, I("violoncelos", 50, 2.5, .42, 1.0, .2), 24.0)
+        tm = s3 + tl + C.MONTA
+        por(m, TP(38, .35), tm, pan=(i - 3) * .1, bruto=True)
+        por(m, I("harpa", harpa[i], 2.2, .45, 1.2), tm, pan=(i - 3) * .12, bruto=True)
+    por(m, I("violoncelos", 45, 3.2, .45, 1.0, .2), s3 + 7.4, bruto=True)
+    por(m, I("violoncelos", 50, 3.0, .42, 1.0, .2), s3 + 9.6, bruto=True)
+    por(m, PC("susCymb1-cresc-Median_v1.wav", .25), s3 + 9.8, bruto=True)
     # 25–54 tensão crescente: ostinato de cordas em spiccato e percussão grave
     b = 60 / 96
     for i in range(int((54 - 25) / (b / 2))):
@@ -167,28 +180,31 @@ def trilha():
     por(m, PC("cymbal-crash1_ff_*.wav"), 73.6, .35)
     # 77–84 suspensão: a música corta (só um resto de reverberação)
     # 84–90 assinatura: cada peça da logo trava com um golpe; o halo fecha com a orquestra
-    t0, tp = 84.0, C.T_PECAS
-    por(m, impacto(.9, 38), t0 + tp["eixo"])
-    por(m, I("contrabaixo", 38, 5.0, .35, 1.0, .6), t0 + tp["eixo"])
-    por(m, TP(41, .6), t0 + tp["estandarte"])
-    por(m, TP(45, .7), t0 + tp["arco"], pan=-.2); por(m, PC("Anvil_Hit1_v2_Sum.wav", .3), t0 + tp["arco"], pan=.2)
-    por(m, TP(50, .75), t0 + tp["balanca"]); por(m, PC("BrakeDrum1_Hammer_v2_Sum.wav", .25), t0 + tp["balanca"])
+    t0, tp = C.INICIO[10], C.T_PECAS
+    por(m, I("contrabaixo", 38, 7.0, .3, 1.0, .6), t0 + tp["arco"], bruto=True)
+    por(m, TP(45, .7), t0 + tp["arco"], pan=-.2, bruto=True); por(m, PC("Anvil_Hit1_v2_Sum.wav", .3), t0 + tp["arco"], pan=.2, bruto=True)
+    por(m, TP(41, .6), t0 + tp["estandarte"], bruto=True)
+    por(m, impacto(1.0, 38), t0 + tp["eixo"], bruto=True)                    # a espada se crava
+    por(m, PC("BDrumNewhit_v7_*.wav", .8), t0 + tp["eixo"], bruto=True)
+    por(m, TP(50, .75), t0 + tp["balanca"], bruto=True); por(m, PC("BrakeDrum1_Hammer_v2_Sum.wav", .25), t0 + tp["balanca"], bruto=True)
+    for j in range(4):                                         # a balança oscilando: pizzicato leve a cada extremo
+        por(m, I("harpa", [57, 53, 57, 55][j], 1.2, .22 * (1 - j * .2), .8), t0 + tp["balanca"] + .48 * (j + 1), pan=(-1) ** j * .3, bruto=True)
     for i, tq in enumerate(C.T_PEROLAS):                         # as pérolas sobem o arpejo no glockenspiel
-        por(m, A.transpor(PC("Glock/glock_medium_C6.wav", .32), [2, 5, 9, 14, 17, 21, 26][i] - 12), t0 + tq, pan=(i - 3) * .08)
-    por(m, PC("susCymb1-cresc-Short_v1.wav", .35), t0 + tp["halo"] - 1.4)
-    por(m, impacto(1.0, 38), t0 + tp["halo"]); por(m, PC("gongHit_fff.wav", .5), t0 + tp["halo"])
-    por(m, PC("cymbal-crash1_ff_*.wav", .35), t0 + tp["halo"])
-    por(m, metais([38, 45, 50, 53], 3.6, 1.0, .05), t0 + tp["halo"])
+        por(m, A.transpor(PC("Glock/glock_medium_C6.wav", .32), [2, 5, 9, 14, 17, 21, 26][i] - 12), t0 + tq, pan=(i - 3) * .08, bruto=True)
+    por(m, PC("susCymb1-cresc-Short_v1.wav", .35), t0 + tp["halo"] - 1.4, bruto=True)
+    por(m, impacto(1.0, 38), t0 + tp["halo"], bruto=True); por(m, PC("gongHit_fff.wav", .5), t0 + tp["halo"], bruto=True)
+    por(m, PC("cymbal-crash1_ff_*.wav", .35), t0 + tp["halo"], bruto=True)
+    por(m, metais([38, 45, 50, 53], 3.6, 1.0, .05), t0 + tp["halo"], bruto=True)
     a0, a1 = C.T_LETRAS
     harpa = [62, 65, 69, 72, 74, 77, 81, 84, 86, 89, 93, 96, 98, 101, 105]
     for k, nn in enumerate(harpa):                              # glissando de harpa enquanto as letras entram
-        por(m, I("harpa", nn, 1.8, .3, 1.2), t0 + a0 + (a1 - a0) * k / (len(harpa) - 1), pan=-.5 + k / (len(harpa) - 1))
-    melodia(m, "violinos", TEMA_A, t0 + 2.2, .4, transp=12, ritmo=.75, liga=.5)
-    por(m, I("violoncelos", 38, 3.6, .5, 1.2, .1), t0 + tp["halo"])
+        por(m, I("harpa", nn, 1.8, .3, 1.2), t0 + a0 + (a1 - a0) * k / (len(harpa) - 1), pan=-.5 + k / (len(harpa) - 1), bruto=True)
+    melodia_b(m, "violinos", TEMA_A, t0 + tp["halo"] + .3, .4, transp=12, ritmo=.75, liga=.5)
+    por(m, I("violoncelos", 38, 3.6, .5, 1.2, .1), t0 + tp["halo"], bruto=True)
     m = reverb(m, ir, .3)
-    corte = int(77.05 * SR)                                     # suspensão: silêncio total
-    m[corte:int(84 * SR)] *= np.concatenate([np.linspace(1, 0, int(.08 * SR)), np.zeros(int(84 * SR) - corte - int(.08 * SR))])[:, None]
-    m[int(89.2 * SR):] *= np.linspace(1, 0, N - int(89.2 * SR))[:, None]
+    corte, volta = int(C.novo(77.05) * SR), int(C.INICIO[10] * SR)   # suspensão: silêncio total
+    m[corte:volta] *= np.concatenate([np.linspace(1, 0, int(.08 * SR)), np.zeros(volta - corte - int(.08 * SR))])[:, None]
+    m[int((DUR - .8) * SR):] *= np.linspace(1, 0, N - int((DUR - .8) * SR))[:, None]
     return m
 
 
@@ -212,15 +228,20 @@ def efeitos():
     por(s, vento(10, 9, .45, True, 1.5), 7.0)
     por(s, longe(G("0135", 0, 4.0), 1800, .35), 9.2, pan=.5); por(s, longe(G("0135", 1, 4.0), 1500, .25), 12.8, pan=-.5)
     por(s, vento(40, 1.4, .5, True, .3, .6), 11.0)
-    # 03 as leis: cada símbolo é gravado na matéria
-    for i, tl in enumerate(C.T_LEI):
-        pan = (i - 3) * .12
-        por(s, G("0833", i, .5, .45), 16 + tl, pan=pan)                   # lâmina riscando metal
-        por(s, S(f"impactMetal_light_00{i % 5}", vel=.35), 16 + tl, pan=pan)
-    por(s, G("3426", 2, 1.2, .35), 16 + C.T_LEI[1])                      # tensão de corda
-    por(s, G("2209", 4, .8, .5), 16 + C.T_LEI[3] + .15)                  # gelo estalando
-    por(s, S("2131", 0, 1.4, .4), 16 + C.T_LEI[5])                       # o calor acende
-    por(s, vento(55, 1.4, .45, False, .3, .6), 16 + C.T_LEI[6] + .6)
+    # 03 as leis se montando: o eixo risca o metal, a estrutura é traçada, as pérolas travam; depois o fenômeno de cada lei
+    s3 = C.INICIO[3]
+    for i, (k, _) in enumerate(C.LEIS):
+        t0 = s3 + C.T_LEI[i]; pan = (i - 3) * .12
+        por(s, G("0833", i, .5, .32), t0, pan=pan, bruto=True)                     # o eixo crescendo (lâmina no metal)
+        por(s, G("0832", i, .7, .22), t0 + .3, pan=pan, bruto=True)                # a estrutura sendo traçada
+        for j in range(len(C.pecas_lei(k)["pecas"])):
+            por(s, S(f"impactGlass_light_00{(i + j) % 5}", vel=.2), t0 + .82 + j * .09 + .3, pan=pan, bruto=True)   # cada pérola travando
+        por(s, S(f"impactMetal_light_00{i % 5}", vel=.4), t0 + C.MONTA, pan=pan, bruto=True)               # a lei completa
+    tm = [s3 + tl + C.MONTA for tl in C.T_LEI]
+    por(s, G("3426", 2, 1.2, .35), tm[1], bruto=True)                            # tensão de corda (vínculo)
+    por(s, G("2209", 4, .8, .5), tm[3] + .15, bruto=True)                        # gelo estalando (vazão)
+    por(s, S("2131", 0, 1.4, .4), tm[5], bruto=True)                             # o calor acende (capacidade)
+    por(s, vento(55, 1.4, .45, False, .3, .6), tm[6] + .4, bruto=True)           # o retorno percorre a fileira
     # 04 Ilan: vento, a manopla, respiração
     por(s, vento(30, 10, .35, entra=1.0), 25.0)
     por(s, G("0359", 0, 1.6, .4), 25.4, pan=-.3)                         # metal da manopla
@@ -260,21 +281,31 @@ def efeitos():
     por(s, S("1404", 2.6, 1.3, .25), 75.3)
     # 09 a pergunta: vento e respiração
     por(s, vento(5, 6.8, .3, entra=.3, sai=.5), 77.0); por(s, S("2195", 10, 1.8, .2, .2, .4), 79.6)
-    # 10 título: o som de cada peça da logo travando no lugar
-    t0, tp = 84.0, C.T_PECAS
-    por(s, S("0128", vel=.5), t0 + tp["eixo"] - .3)                       # a espada caindo
-    por(s, S("impactMetal_heavy_001", vel=.9), t0 + tp["eixo"]); por(s, G("1022", 5, 1.2, .5), t0 + tp["eixo"])
-    por(s, S("cloth3", vel=.6), t0 + tp["estandarte"] - .35); por(s, S("0399", 9.0, .6, .4, .05, .2), t0 + tp["estandarte"] - .3)
-    por(s, S("impactMetal_heavy_002", vel=.8), t0 + tp["arco"], pan=-.5); por(s, S("impactMetal_heavy_003", vel=.8), t0 + tp["arco"] + .015, pan=.5)
-    por(s, G("0619", 4, .6, .45), t0 + tp["balanca"] - .1); por(s, S("impactPlate_heavy_000", vel=.6), t0 + tp["balanca"])
+    # 10 título: cada peça da logo travando; a espada desce e se crava; a balança range enquanto oscila
+    t0, tp = C.INICIO[10], C.T_PECAS
+    por(s, S("impactMetal_heavy_002", vel=.8), t0 + tp["arco"], pan=-.5, bruto=True); por(s, S("impactMetal_heavy_003", vel=.8), t0 + tp["arco"] + .015, pan=.5, bruto=True)
+    por(s, S("cloth3", vel=.6), t0 + tp["estandarte"] - .35, bruto=True); por(s, S("0399", 9.0, .6, .4, .05, .2), t0 + tp["estandarte"] - .3, bruto=True)
+    te = t0 + tp["eixo"]
+    por(s, S("oga:sword_-_starninjas_1/sword - StarNinjas/sword.2.ogg", vel=.75), te - .37, bruto=True)        # a lâmina corta o ar na descida
+    por(s, S("0128", vel=.5), te - .22, bruto=True)
+    por(s, S("oga:weapons-apparel/sfx/seax-sheathe-03.wav", vel=1.0), te - .63, bruto=True)                  # entrando: o pico do som cai no impacto
+    por(s, G("1022", 5, 1.4, .8), te, bruto=True)                                                            # o golpe seco
+    por(s, S("impactMetal_heavy_001", vel=.9), te, bruto=True)
+    por(s, S("oga:sword_clash_-_starninjas_0/sword_clash.1.ogg", vel=.55), te + .02, bruto=True)             # o metal vibrando, preso
+    por(s, S("oga:80-CC0-RPG-SFX_0/blade_02.ogg", vel=.4), te + .05, pan=.2, bruto=True)
+    tb = t0 + tp["balanca"]
+    por(s, G("0619", 4, .6, .5), tb - .05, bruto=True); por(s, S("impactPlate_heavy_000", vel=.6), tb, bruto=True)
+    for j in range(4):                                                                                       # rangido a cada extremo da oscilação
+        por(s, S(f"creak{1 + j % 3}", vel=.22 * (1 - j * .2)), tb + .48 * (j + 1) - .1, pan=(-1) ** j * .35, bruto=True)
+        por(s, G("0619", 6 + j, .4, .18 * (1 - j * .2)), tb + .48 * (j + 1), pan=(-1) ** j * .35, bruto=True)
     for i, tq in enumerate(C.T_PEROLAS):
-        por(s, S(f"impactGlass_light_00{i % 5}", vel=.25), t0 + tq, pan=(i - 3) * .08)
-    por(s, S("0128", vel=.5), t0 + tp["halo"] - .25)
-    por(s, S("impactBell_heavy_000", vel=.9), t0 + tp["halo"]); por(s, S("impactMetal_heavy_004", vel=.9), t0 + tp["halo"])
+        por(s, S(f"impactGlass_light_00{i % 5}", vel=.25), t0 + tq, pan=(i - 3) * .08, bruto=True)
+    por(s, S("0128", vel=.5), t0 + tp["halo"] - .25, bruto=True)
+    por(s, S("impactBell_heavy_000", vel=.9), t0 + tp["halo"], bruto=True); por(s, S("impactMetal_heavy_004", vel=.9), t0 + tp["halo"], bruto=True)
     centros = C.letras_titulo()[1]
     a0, a1 = C.T_LETRAS
     for k, (cx, cy) in enumerate(centros):
-        por(s, S(f"impactMetal_light_00{k % 5}", vel=.18), t0 + a0 + (a1 - a0) * k / max(1, len(centros) - 1), pan=(cx - 512) / 600)
+        por(s, S(f"impactMetal_light_00{k % 5}", vel=.18), t0 + a0 + (a1 - a0) * k / max(1, len(centros) - 1), pan=(cx - 512) / 600, bruto=True)
     return reverb(s, ir, .18)
 
 
