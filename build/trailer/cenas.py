@@ -130,12 +130,44 @@ def cena02(t):
 
 # ------------------------------------------------------------------ CENA 03 — as sete leis (16–25)
 _LEIS_IMG = {}
+# brasões pintados das sete leis (SI-001), na mesma ordem de LEIS; divisórias das colunas medidas na imagem
+_DIV_LEIS = [5, 218, 434, 656, 874, 1093, 1310, 1528]
+
+
+def _recorte_escuro(c, lim=.15, k=.22):
+    """Tira o fundo quase preto da pintura: a transparência vem do brilho."""
+    a = np.clip((c.max(2) - lim) / k, 0, 1)
+    return np.dstack([c, cv2.GaussianBlur(a, (0, 0), .6)]).astype(np.float32)
 
 
 def lei_img(k):
     if k not in _LEIS_IMG:
-        _LEIS_IMG[k] = B.rgba(f"{B.SIM}/leis/{k}_decorativa.png", 800)
+        im = B.rgba(f"{B.BA}/02_simbolos/SI-001_sete_leis.png", 1536)[..., :3]
+        i = [n for n, _ in LEIS].index(k)
+        c = im[76:906, _DIV_LEIS[i] + 7:_DIV_LEIS[i + 1] - 6]
+        c = cv2.resize(c, (c.shape[1] * 2, c.shape[0] * 2), interpolation=cv2.INTER_LANCZOS4)
+        _LEIS_IMG[k] = _recorte_escuro(c)
     return _LEIS_IMG[k]
+
+
+def selo_ordem():
+    """Selo de cera da Ordem da Última Sentença (FA-001), recortado pela cera."""
+    if "selo" not in _LEIS_IMG:
+        im = B.rgba(f"{B.BA}/03_faccoes/FA-001_seis_faccoes.png", 1536)[..., :3]
+        c = im[575:1000, 18:245]
+        c = cv2.resize(c, (c.shape[1] * 3, c.shape[0] * 3), interpolation=cv2.INTER_LANCZOS4)
+        r, g, b = c[..., 0], c[..., 1], c[..., 2]
+        cera = np.clip((r - np.maximum(g, b) * 1.05 - .03) / .08, 0, 1)
+        m = cv2.morphologyEx((cera > .5).astype(np.uint8), cv2.MORPH_CLOSE, np.ones((25, 25), np.uint8))
+        n, lab, st, _ = cv2.connectedComponentsWithStats(m)
+        maior = 1 + int(np.argmax(st[1:, 4]))
+        m = (lab == maior).astype(np.uint8)
+        cnt, _ = cv2.findContours(m, cv2.RETR_EXTERNAL, cv2.CHAIN_APPROX_NONE)
+        cheio = np.zeros_like(m); cv2.drawContours(cheio, cnt, -1, 1, -1)
+        a = cv2.GaussianBlur(cheio.astype(np.float32), (0, 0), 1.2)
+        ys, xs = np.nonzero(cheio)
+        _LEIS_IMG["selo"] = np.dstack([c, a])[ys.min():ys.max() + 1, xs.min():xs.max() + 1].copy()
+    return _LEIS_IMG["selo"]
 
 
 def metal_escuro():
@@ -154,6 +186,15 @@ def metal_escuro():
 T_LEI = [0.55 + i * 0.92 for i in range(7)]
 
 
+def pos_lei(i):
+    """Centro e altura de cada brasão: uma fileira no 16:9, duas (4 + 3) no vertical."""
+    if B.W > B.H:
+        return B.W * (.11 + .13 * i), B.H * .4, B.H * .6
+    lin, col = (0, i) if i < 4 else (1, i - 4)
+    n = 4 if lin == 0 else 3
+    return B.W * ((col + .5) / n), B.H * (.22 if lin == 0 else .52), B.H * .26
+
+
 def cena03(t):
     img = metal_escuro().copy() * seg(t, 0, .4)
     n = len(LEIS)
@@ -162,14 +203,9 @@ def cena03(t):
         t0 = T_LEI[i]
         if t < t0:
             continue
-        if vert:
-            cx = B.W * (.3 if i % 2 == 0 else .7) if i < 6 else B.W * .5
-            cy = B.H * (.1 + .083 * i)
-            esc = .2
-        else:
-            cx = B.W * (.11 + .13 * i); cy = B.H * .46
-            esc = .26
+        cx, cy, alt = pos_lei(i)
         el = lei_img(k)
+        esc = alt / el.shape[0]
         dx = dy = 0.0; rot = 0.0
         if k == "conservacao":
             rot = .18 * math.exp(-(t - t0) * 2.2) * math.cos((t - t0) * 9)
@@ -184,17 +220,17 @@ def cena03(t):
             M = cv2.getRotationMatrix2D((w / 2, h / 2), math.degrees(rot), 1.0)
             el = cv2.warpAffine(el, M, (w, h))
         yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
-        r = np.sqrt((xx - w / 2) ** 2 + (yy - h / 2) ** 2) / (w * .5)
+        r = np.abs(yy - h / 2) / (h * .5) * .85 + np.abs(xx - w / 2) / (w * .5) * .25
         m = np.clip((k_rev * 1.25 - r) / .12, 0, 1)
         borda = np.clip(1 - np.abs(k_rev * 1.25 - r) / .05, 0, 1) * (k_rev < 1)
         e2 = el.copy(); e2[..., 3] *= m
         e2[..., :3] = np.clip(e2[..., :3] + borda[..., None] * np.array((1, .55, .2)) * el[..., 3:4] * 1.5, 0, 1)
-        B.colar(img, e2, cx + dx, cy + dy, 1.0, esc * B.W / 1920 * (2 if vert else 1))
+        B.colar(img, e2, cx + dx, cy + dy, 1.0, esc)
         # fenômeno físico de cada lei
         if k == "vinculo" and i > 0:
             tens = math.exp(-(t - t0) * 2.0)
-            px = B.W * (.11 + .13 * (i - 1)) if not vert else B.W * .3
-            img = fio(img, t, px + 40, cx - 40, cy + (95 if not vert else 0), eo(seg(t, t0, t0 + .3)), 10 * tens, 50, brilho=.55)
+            px = pos_lei(i - 1)[0]
+            img = fio(img, t, px + 40 * B.H / 1080, cx - 40 * B.H / 1080, cy, eo(seg(t, t0, t0 + .3)) * (1 - seg(t, t0 + 1.4, t0 + 2.2)), 10 * tens, 50, brilho=.55)
         if k == "compatibilidade":
             g = np.zeros((B.H, B.W), np.float32)
             cv2.circle(g, (int(cx), int(cy)), int(70 * B.W / 1920), 1.0, -1)
@@ -207,7 +243,7 @@ def cena03(t):
                 for a in rng.uniform(0, 6.28, 9):
                     L = (40 + rng.uniform(30, 90)) * kk * B.W / 1920
                     cv2.line(cam, (int(cx + 60 * math.cos(a)), int(cy + 60 * math.sin(a))), (int(cx + (60 + L) * math.cos(a)), int(cy + (60 + L) * math.sin(a))), 1.0, 1, cv2.LINE_AA)
-                img = B.soma(img, cam[..., None] * np.array((.75, .82, .9), np.float32), .7 * (1 - .6 * seg(t, t0 + 1, t0 + 2)))
+                img = B.soma(img, cam[..., None] * np.array((.75, .82, .9), np.float32), .7 * (1 - seg(t, t0 + 1, t0 + 2)))
         if k == "dissipacao":
             cam = np.zeros((B.H, B.W), np.float32); rng = np.random.default_rng(12)
             for j in range(40):
@@ -223,17 +259,14 @@ def cena03(t):
         f = seg(t, tp, tp + 1.0)
         x = B.W * (.89 - .78 * f)
         g = np.zeros((B.H, B.W), np.float32)
-        cv2.ellipse(g, (int(x), int(B.H * .46)), (int(90 * B.W / 1920), int(160 * B.W / 1920)), 0, 0, 360, 1.0, -1)
+        cv2.ellipse(g, (int(x), int(B.H * .4)), (int(90 * B.W / 1920), int(260 * B.W / 1920)), 0, 0, 360, 1.0, -1)
         img = B.soma(img, cv2.GaussianBlur(g, (0, 0), 40)[..., None] * np.array((1, .8, .45), np.float32), .5 * math.sin(f * math.pi))
     # nomes das leis e composição final
     if t > 6.9:
         a = eio(seg(t, 6.9, 7.6))
         for i, (k, nome) in enumerate(LEIS):
-            if B.W > B.H:
-                cx = B.W * (.11 + .13 * i); cy = B.H * .66
-            else:
-                cx = B.W * (.3 if i % 2 == 0 else .7) if i < 6 else B.W * .5; cy = B.H * (.1 + .083 * i) + 95
-            B.colar(img, B.texto(nome, "Cinzel-Regular.ttf", 21, (.9, .8, .58), .2), cx, cy, a)
+            cx, cy, alt = pos_lei(i)
+            B.colar(img, B.texto(nome, "Cinzel-Regular.ttf", 21 if B.W > B.H else 15, (.9, .8, .58), .2), cx, cy + alt * .54, a)
     img = B.brilho_pontos(img, .7, 14, .45)
     img = img * (1 - seg(t, 8.75, 9.0))
     return B.vinheta(img, .55)
@@ -286,14 +319,16 @@ def cena05(t):
         if t > T_CONGELA + .5:
             a = eio(seg(t, T_CONGELA + .5, T_CONGELA + 1.3))
             papel = np.array((.86, .81, .70), np.float32)
-            ex, ey = B.W * (.82 if B.W > B.H else .5), B.H * (.36 if B.W > B.H else .5)
-            m = np.zeros((B.H, B.W), np.float32)
-            cv2.circle(m, (int(ex), int(ey)), int(150 * B.W / 1920 * (2 if B.W < B.H else 1)), 1.0, -1, cv2.LINE_AA)
-            img = B.misturar(img, papel, cv2.GaussianBlur(m, (0, 0), 3) * a)
-            cv2.circle(img, (int(ex), int(ey)), int(150 * B.W / 1920 * (2 if B.W < B.H else 1)), (.08, .06, .05), 2, cv2.LINE_AA)
-            em = B.rgba(P["ordem"], 700)
-            emb = em.copy(); emb[..., :3] = emb[..., :3] * .3      # o brasão impresso em tinta
-            B.colar(img, emb, ex, ey, a, .36 * B.W / 1920 * (2 if B.W < B.H else 1))
+            ex, ey = B.W * (.82 if B.W > B.H else .76), B.H * (.36 if B.W > B.H else .44)
+            # o selo de cera da Ordem desce sobre a gravura e assenta (prensado)
+            selo = selo_ordem()
+            d = 330 * B.H / 1080 if B.W > B.H else 340 * B.W / 1080
+            pr = eo(seg(t, T_CONGELA + .5, T_CONGELA + .85))
+            esc_s = d / selo.shape[1] * lerp(1.35, 1.0, pr)
+            sombra = np.zeros((B.H, B.W), np.float32)
+            cv2.circle(sombra, (int(ex + 10 * B.H / 1080), int(ey + 16 * B.H / 1080)), int(d * .5 * lerp(1.2, 1.0, pr)), 1.0, -1, cv2.LINE_AA)
+            img = img * (1 - .55 * a * cv2.GaussianBlur(sombra, (0, 0), lerp(30, 10, pr) * B.H / 1080)[..., None])
+            B.colar(img, selo, ex, ey, a, esc_s)
             a2 = seg(t, T_CONGELA + .9, T_CONGELA + 2.2)
             fx = np.zeros((B.H, B.W), np.float32)
             bx = .22 if B.W > B.H else .06
