@@ -580,23 +580,206 @@ def varredura(el, f):
     return out
 
 
+# A logo se monta por partes. Instantes (s, relativos a 84) em que cada peça trava no lugar; o áudio usa os mesmos.
+T_PECAS = {"eixo": .38, "estandarte": .72, "arco": 1.02, "balanca": 1.3, "halo": 1.9}
+T_PEROLAS = [1.38 + i * .065 for i in range(7)]
+T_LETRAS = (1.95, 2.75)                       # as letras do título entram em sequência neste intervalo
+T_FILETE, T_SUB, T_CREDITO = 2.7, 2.95, 3.25
+PEROLAS = [(512, y) for y in (310, 381, 453, 524, 596, 666, 737)]
+_PECAS = {}
+
+
+def pecas_emblema():
+    """Divide o emblema oficial em peças pela geometria do desenho (sem redesenhar nada)."""
+    if _PECAS:
+        return _PECAS
+    em = B.rgba(P["emblema"], 1024)
+    h, w = em.shape[:2]
+    yy, xx = np.mgrid[0:h, 0:w].astype(np.float32)
+    a = em[..., 3] > .02
+    r, g, b_ = em[..., 0], em[..., 1], em[..., 2]
+    perola = np.zeros((h, w), bool)
+    for cx, cy in PEROLAS:
+        perola |= (xx - cx) ** 2 + (yy - cy) ** 2 < 33 ** 2
+    eixo = a & (np.abs(xx - 512) < 40) & ((yy < 135) | (yy > 205) | (np.abs(xx - 512) < 15)) & ~perola
+    vermelho = (r > g * 1.5) & (r > b_ * 1.4) & (r > .12)
+    estandarte = a & (np.abs(xx - 512) < 102) & (yy > 212) & (yy < 870) & ~eixo & ~perola
+    estandarte &= vermelho | (np.abs(np.abs(xx - 512) - 92) < 12) | (yy > 760)
+    balanca = a & (xx > 330) & (xx < 692) & (yy > 248) & (yy < 482) & ~eixo & ~estandarte & ~perola
+    balanca &= ((yy >= 300) | ((xx > 376) & (xx < 650))) & (xx > 336) & (xx < 688)
+    # arco: o que fica dentro do contorno externo do arco (elipse no topo + pilares)
+    dentro = (((xx - 512) / 262) ** 2 + ((yy - 420) / 290) ** 2 < 1) | ((np.abs(xx - 512) < 262) & (yy > 420))
+    arco = a & dentro & ~eixo & ~estandarte & ~balanca & ~perola
+    halo = a & ~eixo & ~estandarte & ~balanca & ~arco & ~perola
+    def peca(m):
+        m = cv2.GaussianBlur(m.astype(np.float32), (0, 0), .7)
+        out = em.copy(); out[..., 3] *= m
+        return out
+    _PECAS.update(eixo=peca(eixo), estandarte=peca(estandarte), balanca=peca(balanca),
+                  arco_e=peca(arco & (xx < 512)), arco_d=peca(arco & (xx >= 512)), halo=peca(halo),
+                  perolas=[peca((xx - cx) ** 2 + (yy - cy) ** 2 < 33 ** 2) for cx, cy in PEROLAS])
+    return _PECAS
+
+
+def _sobre(base, el):
+    a = el[..., 3:4]
+    out = base.copy()
+    out[..., :3] = el[..., :3] * a + base[..., :3] * (1 - a)
+    out[..., 3:4] = a + base[..., 3:4] * (1 - a)
+    return out
+
+
+def _mover(el, dx=0., dy=0., ang=0., esc=1., cx=512, cy=512):
+    M = cv2.getRotationMatrix2D((cx, cy), ang, esc); M[0, 2] += dx; M[1, 2] += dy
+    return cv2.warpAffine(el, M, (el.shape[1], el.shape[0]), flags=cv2.INTER_LINEAR, borderValue=(0, 0, 0, 0))
+
+
+def eob(x, s=1.9):
+    """Sai com um pequeno passo além do alvo e volta (o encaixe)."""
+    x = clamp(x, 0, 1) - 1
+    return 1 + (s + 1) * x ** 3 + s * x ** 2
+
+
+def emblema_montado(t):
+    pc = pecas_emblema()
+    tela = np.zeros_like(pc["eixo"])
+    brilhos = []                                         # (cx, cy, força) dos encaixes, para as faíscas
+    # halo: os raios vêm de fora para dentro, girando
+    k = seg(t, T_PECAS["halo"] - .5, T_PECAS["halo"])
+    if k > 0:
+        e = eob(k, 1.2)
+        tela = _sobre(tela, _mover(pc["halo"], ang=(1 - e) * -28, esc=lerp(1.7, 1.0, e)) * np.array([1, 1, 1, eo(k)], np.float32))
+    # arco: as duas metades deslizam dos lados
+    k = seg(t, T_PECAS["arco"] - .42, T_PECAS["arco"])
+    if k > 0:
+        e = eob(k)
+        for nome, lado in (("arco_e", -1), ("arco_d", 1)):
+            tela = _sobre(tela, _mover(pc[nome], dx=lado * (1 - e) * 420, ang=lado * (1 - e) * 9) * np.array([1, 1, 1, eo(k * 1.6)], np.float32))
+    # estandarte: desenrola de cima para baixo
+    k = seg(t, T_PECAS["estandarte"] - .36, T_PECAS["estandarte"])
+    if k > 0:
+        e = eo(k)
+        est = pc["estandarte"].copy()
+        corte = lerp(195, 875, e)
+        yy = np.arange(1024, dtype=np.float32)[:, None]
+        est[..., 3] *= np.clip((corte - yy) / 18, 0, 1)
+        tela = _sobre(tela, est)
+    # balança: cai de cima e assenta
+    k = seg(t, T_PECAS["balanca"] - .34, T_PECAS["balanca"])
+    if k > 0:
+        e = eob(k, 2.4)
+        tela = _sobre(tela, _mover(pc["balanca"], dy=-(1 - e) * 260, ang=(1 - e) * 6, cx=512, cy=265) * np.array([1, 1, 1, eo(k * 1.5)], np.float32))
+    # eixo (a espada): desce do alto como uma estaca
+    k = seg(t, T_PECAS["eixo"] - .3, T_PECAS["eixo"])
+    if k > 0:
+        e = ei(k)
+        tela = _sobre(tela, _mover(pc["eixo"], dy=-(1 - e) * 900))
+    # pérolas: acendem uma a uma, de cima para baixo
+    for i, tp in enumerate(T_PEROLAS):
+        k = seg(t, tp - .12, tp)
+        if k > 0:
+            e = eob(k, 2.6)
+            cx, cy = PEROLAS[i]
+            tela = _sobre(tela, _mover(pc["perolas"][i], esc=max(.01, e), cx=cx, cy=cy) * np.array([1, 1, 1, min(1, k * 2)], np.float32))
+            brilhos.append((cx, cy, .5 * env(t, tp, tp + .02, tp + .05, tp + .35)))
+    for nome, (cx, cy) in (("eixo", (512, 880)), ("estandarte", (512, 820)), ("arco", (512, 140)), ("balanca", (512, 270)), ("halo", (512, 400))):
+        tp = T_PECAS[nome]
+        f = env(t, tp, tp + .015, tp + .06, tp + (.9 if nome == "halo" else .45))
+        if f > 0:
+            brilhos.append((cx, cy, f * (1.4 if nome == "halo" else 1.0)))
+    return tela, brilhos
+
+
+_LETRAS = []
+
+
+def letras_titulo():
+    """Glifos do letreiro oficial (componentes ligados após uma dilatação), ordenados por linha e da esquerda à direita."""
+    if _LETRAS:
+        return _LETRAS
+    le = B.rgba(P["lettering"], 1024)
+    a = (le[..., 3] > .08).astype(np.uint8)
+    d = cv2.dilate(a, np.ones((9, 3), np.uint8))
+    n, lab, st, cen = cv2.connectedComponentsWithStats(d)
+    glifos = []
+    for i in range(1, n):
+        x, y, w, h, area = st[i]
+        if area < 1200 or h < 40 or y > 280 or x < 50 or x + w > 990:   # fora: riscos da textura, filete e subtítulo
+            continue
+        m = (lab == i) & (a > 0)
+        glifos.append((0 if cen[i][1] < 150 else 1, x, m, cen[i]))
+    glifos.sort(key=lambda g: (g[0], g[1]))
+    resto = np.ones(a.shape, np.float32)
+    for g in glifos:
+        resto[g[2]] = 0
+    yy = np.arange(le.shape[0])[:, None] * np.ones((1, le.shape[1]))
+    filete = (yy > 280) & (yy < 318); sub = yy >= 318
+    def camada(m):
+        out = le.copy(); out[..., 3] *= m.astype(np.float32); return out
+    _LETRAS.extend([[camada(g[2]) for g in glifos], [tuple(g[3]) for g in glifos],
+                    camada(filete * resto), camada(sub * resto)])
+    return _LETRAS
+
+
+def letreiro_montado(t):
+    glifos, centros, filete, sub = letras_titulo()
+    tela = np.zeros_like(filete)
+    a0, a1 = T_LETRAS
+    for i, (g, (cx, cy)) in enumerate(zip(glifos, centros)):
+        tp = lerp(a0, a1, i / max(1, len(glifos) - 1))
+        k = seg(t, tp - .22, tp)
+        if k <= 0:
+            continue
+        e = eob(k, 2.2)
+        lado = -1 if i % 2 else 1
+        tela = _sobre(tela, _mover(g, dy=-(1 - e) * 60, ang=lado * (1 - e) * 14, esc=lerp(1.25, 1, e), cx=cx, cy=cy)
+                      * np.array([1, 1, 1, min(1, k * 2.2)], np.float32))
+    k = eio(seg(t, T_FILETE, T_FILETE + .4))
+    if k > 0:                                            # o filete cresce do losango para os lados
+        f = filete.copy(); xx = np.abs(np.arange(1024, dtype=np.float32) - 512)[None, :]
+        f[..., 3] *= np.clip((k * 380 - xx) / 14, 0, 1); tela = _sobre(tela, f)
+    k = eo(seg(t, T_SUB, T_SUB + .5))
+    if k > 0:
+        tela = _sobre(tela, _mover(sub, dy=(1 - k) * 14) * np.array([1, 1, 1, k], np.float32))
+    return tela
+
+
 def cena10(t):
     img = np.zeros((B.H, B.W, 3), np.float32)
     vert = B.W < B.H
-    em = B.rgba(P["emblema"], 1024)
-    a = eo(seg(t, .05, 1.2))
-    sw = varredura(em, seg(t, .6, 2.4))
-    esc = (.42 if not vert else .36) * B.H / 1024 * (1.0 + .04 * seg(t, 0, 6))
-    B.colar(img, sw, B.W / 2, B.H * (.32 if not vert else .3), a, esc)
+    em, brilhos = emblema_montado(t)
+    fl = seg(t, T_PECAS["halo"] + .05, T_PECAS["halo"] + 1.0)
+    if fl > 0:
+        em = varredura(em, fl)
+    ey = B.H * (.32 if not vert else .3)
+    esc = (.42 if not vert else .36) * B.H / 1024 * (1.0 + .035 * seg(t, 0, 6))
+    B.colar(img, em, B.W / 2, ey, 1.0, esc)
+    # luz quente atrás do emblema quando ele fecha
     g = np.zeros((B.H, B.W), np.float32)
-    cv2.circle(g, (int(B.W / 2), int(B.H * (.32 if not vert else .3))), int(B.H * .2), 1.0, -1)
-    img = B.soma(img, cv2.GaussianBlur(g, (0, 0), 120)[..., None] * np.array((.5, .38, .18)), .25 * env(t, 0, .4, 1.4, 3.5))
-    le = B.rgba(P["lettering"], 1024)
-    a2 = eio(seg(t, 1.1, 2.3))
-    B.colar(img, varredura(le, seg(t, 1.8, 3.6)), B.W / 2, B.H * (.66 if not vert else .58), a2, (1.02 if not vert else .95) * B.W / 1024 * (.62 if not vert else 1))
-    a3 = eio(seg(t, 2.4, 3.3))
+    cv2.circle(g, (int(B.W / 2), int(ey)), int(B.H * .2), 1.0, -1)
+    img = B.soma(img, cv2.GaussianBlur(g, (0, 0), 120)[..., None] * np.array((.5, .38, .18)),
+                 .3 * env(t, T_PECAS["halo"], T_PECAS["halo"] + .1, T_PECAS["halo"] + .8, 4.5))
+    # faíscas de cada encaixe
+    for cx, cy, f in brilhos:
+        px, py = B.W / 2 + (cx - 512) * esc, ey + (cy - 512) * esc
+        m = np.zeros((B.H, B.W), np.float32)
+        cv2.circle(m, (int(px), int(py)), max(2, int(6 * esc * 2)), 1.0, -1)
+        img = B.soma(img, cv2.GaussianBlur(m, (0, 0), 14 * B.H / 1080)[..., None] * np.array((1., .82, .5)), 1.6 * f)
+    # onda de choque quando o halo trava
+    th = T_PECAS["halo"]
+    k = seg(t, th, th + .7)
+    if 0 < k < 1:
+        m = np.zeros((B.H, B.W), np.float32)
+        cv2.circle(m, (int(B.W / 2), int(ey)), int(lerp(.1, .75, eo(k)) * B.H), 1.0, max(2, int(10 * B.H / 1080)))
+        img = B.soma(img, cv2.GaussianBlur(m, (0, 0), 6)[..., None] * np.array((.9, .75, .45)), .45 * (1 - k))
+    le = letreiro_montado(t)
+    fl2 = seg(t, T_LETRAS[1] + .1, T_LETRAS[1] + 1.2)
+    if 0 < fl2 < 1:
+        le = varredura(le, fl2)
+    B.colar(img, le, B.W / 2, B.H * (.66 if not vert else .58), 1.0, (1.02 if not vert else .95) * B.W / 1024 * (.62 if not vert else 1))
+    a3 = eio(seg(t, T_CREDITO, T_CREDITO + .7))
     B.colar(img, B.texto("UMA SAGA DE WERIK MARTINS", "Cinzel-Regular.ttf", 24, (.82, .72, .52), .35), B.W / 2, B.H * (.9 if not vert else .7), a3)
-    img = img * (1 - seg(t, 5.0, 6.0))
+    img = img * (1 - seg(t, 5.2, 6.0))
     return img
 
 

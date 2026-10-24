@@ -40,7 +40,7 @@ def wav_final(entrada, saida):
 
 
 EDL = [
-    (0.0, 7.0, "01 O primeiro som", "procedural: fio de prata, gota, aço escovado", "plano fixo, revelação lenta"),
+    (0.0, 7.0, "01 O primeiro som", "procedural: fio de prata, gota, aço escovado (som gravado)", "plano fixo, revelação lenta"),
     (7.0, 11.45, "02a Vhalessa", "05_mundo/MU-009 (4x)", "travelling 2.5D para dentro da rua; neve, fumaça, janelas"),
     (11.45, 16.0, "02b O rio e a torre", "11_edicao/C02-2", "panorâmica lateral com parallax"),
     (16.0, 25.0, "03 As sete leis", "identidade_aresta/simbolos/leis/*", "gravação progressiva + fenômeno físico de cada lei"),
@@ -57,7 +57,7 @@ EDL = [
     (59.6, 65.0, "07c Aurelia", "06_personagens/PE-012 (4x)", "tilt de revelação; cabelo ao vento"),
     (65.0, 77.0, "08 O impossível", "procedural + PE-021, PE-001, PE-025, C01-a, C01-c", "8 cortes na percussão"),
     (77.0, 83.7, "09 A pergunta", "09_engenharia_arcana/EA-006", "push-in lento; silêncio; corte para preto"),
-    (84.0, 90.0, "10 Título", "01_identidade/ID-008 + ID-006", "reflexo metálico; crédito do autor"),
+    (84.0, 90.0, "10 Título", "01_identidade/ID-008 + ID-006", "a logo se monta peça por peça; letras encaixam; crédito do autor"),
 ]
 
 if __name__ == "__main__":

@@ -7,7 +7,7 @@
    "inicio": 0.0,
    "fim": 7.0,
    "plano": "01 O primeiro som",
-   "fonte": "procedural: fio de prata, gota, aço escovado",
+   "fonte": "procedural: fio de prata, gota, aço escovado (som gravado)",
    "movimento": "plano fixo, revelação lenta"
   },
   {
@@ -127,7 +127,7 @@
    "fim": 90.0,
    "plano": "10 Título",
    "fonte": "01_identidade/ID-008 + ID-006",
-   "movimento": "reflexo metálico; crédito do autor"
+   "movimento": "a logo se monta peça por peça; letras encaixam; crédito do autor"
   }
  ],
  "letreiros": [
