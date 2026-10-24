@@ -15,7 +15,7 @@ os.makedirs(CACHE, exist_ok=True)
 
 W, H = 160, 240                     # mm, proporção 2:3 (tablet e celular)
 OURO, MARFIM, NEGRO, CARMIM = "#C9A15A", "#EFE8DA", "#0D0C0B", "#8E1B22"
-COR = {"Pulso": "#4F8BD6", "Brasa": "#C8332F", "Trama": "#C9A15A", "Clarão": "#F2E6C2", "Eco": "#9FB7D6", "Carga": "#D7B46A"}
+COR = {"Impetus": "#4F8BD6", "Igneo": "#C8332F", "Nexo": "#C9A15A", "Lume": "#F2E6C2", "Eco": "#9FB7D6", "Fuso": "#D7B46A"}
 
 _hy = pyphen.Pyphen(lang="pt_BR")
 

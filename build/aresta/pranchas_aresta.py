@@ -66,7 +66,7 @@ LEIS_LONG = [("I · Conservação", "Nada é criado. Tudo se transforma."), ("II
              ("III · Compatibilidade", "O que não ressoa se rompe."), ("IV · Vazão", "Toda passagem tem um limite."),
              ("V · Dissipação", "Nada permanece para sempre."), ("VI · Capacidade", "Todo ser, objeto ou lugar tem um limite."),
              ("VII · Retorno", "Toda ação retorna.")]
-DISC = [("Pulso", "Movimento."), ("Brasa", "Transformação."), ("Trama", "Estrutura."), ("Clarão", "Revelação."), ("Eco", "Ressonância."), ("Carga", "Acúmulo.")]
+DISC = [("Impetus", "Movimento."), ("Igneo", "Transformação."), ("Nexo", "Estrutura."), ("Lume", "Revelação."), ("Eco", "Ressonância."), ("Fuso", "Acúmulo.")]
 FAC = [("Ordem da Última Sentença", "A lei acima de tudo."), ("O Carrasco", "Cortar para que permaneça."), ("Coroa dos Limiares", "Entre mundos, há um trono."),
        ("Convergência de Limiar", "Portais exigem testemunhas."), ("Cidades Livres", "Povos escolhem. Aresta resiste."), ("Os Dragões", "Memória mais antiga que os deuses.")]
 CASAS = [("Aurelia", "Limiares, soberania, escolhas."), ("Ilan Varek", "Sobrevivência é princípio."), ("Arquivistas", "Tudo deixa registro."),

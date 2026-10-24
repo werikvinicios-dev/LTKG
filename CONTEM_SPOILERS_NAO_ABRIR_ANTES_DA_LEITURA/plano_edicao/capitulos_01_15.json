@@ -2,7 +2,7 @@
  {
   "cap": 1,
   "pov": "Ilan",
-  "resumo": "Ilan Varek, último Carrasco conhecido da Ordem da Última Sentença, aceita da seguradora Arrimo (com uma cláusula estranha de permanência de três dias) o serviço de desligar o reservatório ilegal do doutor Orsk no cortiço Sete Chaminés, na Fornalha Velha, que desvia para o sótão o calor das brasas de parede do deus Calvenor. Depois da sopa de Sevran, ex-sacerdote que escreveu à Arrimo, ele atravessa Gorm, o barbudo e o besteiro e, no sótão, inverte o fluxo do favo de 324 células, devolvendo o calor às paredes ao preço de uma célula rachada da manopla e da mão queimada. Guarda um caco do favo com marca de fabricante, olha a Torre do Meio-Dia com o Sol apagado na véspera do Acendimento e sonha com uma balança.",
+  "resumo": "Ilan Varek, último Carrasco conhecido da Ordem da Última Sentença, aceita da seguradora Arrimo (com uma cláusula estranha de permanência de três dias) o serviço de desligar o reservatório ilegal do doutor Orsk no cortiço Sete Chaminés, na Fornalha Velha, que desvia para o sótão o calor dos igneos de parede do deus Calvenor. Depois da sopa de Sevran, ex-sacerdote que escreveu à Arrimo, ele atravessa Gorm, o barbudo e o besteiro e, no sótão, inverte o fluxo do favo de 324 células, devolvendo o calor às paredes ao preço de uma célula rachada da manopla e da mão queimada. Guarda um caco do favo com marca de fabricante, olha a Torre do Meio-Dia com o Sol apagado na véspera do Acendimento e sonha com uma balança.",
   "locais": [
    {
     "nome": "Sete Chaminés",
@@ -14,14 +14,14 @@
    {
     "nome": "Cozinha do Lento",
     "cidade_ou_regiao": "Vhalessa — Fornalha Velha (térreo do Sete Chaminés)",
-    "descricao_fisica": "Salão de teto baixo, mesas compridas, bancos, fogão de ferro do tamanho de uma carroça; atrás do fogão, embutida no tijolo, uma brasa de parede de bronze do tamanho de um prato brilhando em laranja.",
+    "descricao_fisica": "Salão de teto baixo, mesas compridas, bancos, fogão de ferro do tamanho de uma carroça; atrás do fogão, embutida no tijolo, um igneo de parede de bronze do tamanho de um prato brilhando em laranja.",
     "relacao_espacial": "Ocupa o térreo inteiro do Sete Chaminés; a escada para os andares sai dela.",
     "citacao_curta": "A Cozinha do Lento ocupava o térreo inteiro: um salão de teto baixo, mesas compridas, bancos, um fogão de ferro do tamanho de uma carroça e um calor tão bom que doía nas orelhas."
    },
    {
     "nome": "Escada e corredores do Sete Chaminés",
     "cidade_ou_regiao": "Vhalessa — Fornalha Velha",
-    "descricao_fisica": "Escada de madeira estreita em caracol quadrado em volta de um poço com roupa congelada em forma de gente; queda brusca de temperatura entre o 2º e o 3º andar; corredor do 5º comprido, portas dos dois lados, janela fosca de gelo no fundo, uma única lâmpada de vidro de Clarão no teto.",
+    "descricao_fisica": "Escada de madeira estreita em caracol quadrado em volta de um poço com roupa congelada em forma de gente; queda brusca de temperatura entre o 2º e o 3º andar; corredor do 5º comprido, portas dos dois lados, janela fosca de gelo no fundo, uma única lâmpada de vidro de Lume no teto.",
     "relacao_espacial": "Sobe da Cozinha (térreo) até o 6º andar; Gorm guarda o patamar do 4º; o corredor do 5º termina numa janela.",
     "citacao_curta": "A escada do Sete Chaminés era de madeira, estreita, um caracol quadrado em volta de um poço onde alguém tinha pendurado roupa para secar."
    },
@@ -55,8 +55,8 @@
   ],
   "faccoes_casas_guildas": [
    "Companhia Arrimo (seguradora) — contrato de onze páginas; agente Pelle Dorn, miúdo, cachecol verde, caderninho de anotações; nenhum brasão descrito",
-   "Casa da Fornalha — mantém as brasas de parede (placas de bronze do tamanho de um prato, brilho laranja, uma a cada dois quartos); teria de arrancar os pregos no dia seguinte",
-   "Coroa de Calvenor — Rede de centenas de milhares de brasas de parede, acesas de novembro a março",
+   "Casa da Fornalha — mantém os igneos de parede (placas de bronze do tamanho de um prato, brilho laranja, uma a cada dois quartos); teria de arrancar os pregos no dia seguinte",
+   "Coroa de Calvenor — Rede de centenas de milhares de igneos de parede, acesos de novembro a março",
    "Conselho de Vhalessa — mandou um fiscal que 'tomou uma sopa e foi embora'",
    "Banhos públicos da rua das Tinas — ex-compradores do calor penhorado de Orsk (cheiro de enxofre nos cabos)",
    "Ordem da Última Sentença — apenas na fala de Orsk ('o senhor é o Carrasco') e no sonho da balança"
@@ -72,7 +72,7 @@
    "bastão ferrado de Gorm",
    "duas meias-luas de ferro presas aos punhos (barbudo)",
    "besta pequena de repetição",
-   "lâmpada de vidro de Clarão",
+   "lâmpada de vidro de Lume",
    "favo de 324 células cintado de bronze, painel de alavancas e reguladores",
    "pregos pequenos de cobre de cabeça chata pintados da cor da parede",
    "caixas-d'água de madeira cintada de ferro",
@@ -81,42 +81,42 @@
   ],
   "magia_em_uso": [
    {
-    "disciplina": "Brasa (Rede coronal de Calvenor)",
-    "o_que_acontece": "As brasas de parede do deus aquecem os tijolos do prédio.",
+    "disciplina": "Igneo (Rede coronal de Calvenor)",
+    "o_que_acontece": "Os igneos de parede do deus aquecem os tijolos do prédio.",
     "visual_com_selos": "Cada placa de bronze é um selo coronal gravado, em ouro, com a marca do sol de Calvenor; brilha laranja e solta no tijolo um leque de riscos vermelhos finos."
    },
    {
-    "disciplina": "Brasa (instalação de Orsk)",
-    "o_que_acontece": "A dois dedos de cada brasa, Orsk fixou um ponto próprio que rouba o calor do tijolo e o manda pelo elo até o sótão.",
+    "disciplina": "Igneo (instalação de Orsk)",
+    "o_que_acontece": "A dois dedos de cada igneo, Orsk fixou um ponto próprio que rouba o calor do tijolo e o manda pelo elo até o sótão.",
     "visual_com_selos": "Selos gravados no tijolo (os antigos 'pregos'), escuros e quase invisíveis, que acendem em vermelho com a cauda apontada para cima; um traço vermelho sobe pela alvenaria até o telhado. Sob a lente de aferição, franjas coloridas inclinadas para cima e para a esquerda."
    },
    {
-    "disciplina": "Pulso (Gorm)",
+    "disciplina": "Impetus (Gorm)",
     "o_que_acontece": "Gorm acopla o calcanhar ao piso para golpear com o peso do prédio; Ilan corta o elo e ele perde o equilíbrio.",
     "visual_com_selos": "Selo conjurado azul sob o calcanhar de Gorm, com traço de terra no assoalho; Ilan apaga o traço com a palma da manopla e o selo se desfaz em fiapos azuis."
    },
    {
-    "disciplina": "Pulso — Passo Vetorial",
+    "disciplina": "Impetus — Passo Vetorial",
     "o_que_acontece": "Ilan se desloca meio metro sem saltar, empurrando contra a quina do degrau.",
     "visual_com_selos": "Um selo azul do tamanho de uma unha acende na quina do degrau sob a placa de ferro da bota e some no mesmo instante."
    },
    {
-    "disciplina": "Pulso — Guarda de Retorno e Marca de Cobrança",
+    "disciplina": "Impetus — Guarda de Retorno e Marca de Cobrança",
     "o_que_acontece": "Ilan apara a meia-lua e manda o golpe para a viga mestra; depois toma por meio segundo o impulso guardado no apoio de parede do barbudo e o devolve.",
     "visual_com_selos": "Três selos azuis em fila (manopla, placa da bota, assoalho) com o traço de terra cravado na viga, que solta pó; no prego da parede, o selo do barbudo 'muda de letra' quando Ilan escreve a própria marca por cima, e o fluxo dá meia-volta."
    },
    {
-    "disciplina": "Pulso (besta)",
+    "disciplina": "Impetus (besta)",
     "o_que_acontece": "O selo no arco da besta dá empurrão extra ao virote e leva três segundos para se refazer.",
     "visual_com_selos": "Selo gravado no arco da besta que pisca azul a cada disparo e se reacende devagar."
    },
    {
-    "disciplina": "Clarão",
+    "disciplina": "Lume",
     "o_que_acontece": "Ilan arranca e trinca a lâmpada; a luz do dia guardada escapa de uma vez e cega o besteiro.",
     "visual_com_selos": "Explosão branco-marfim que enche o corredor 'como água enche uma garrafa'."
    },
    {
-    "disciplina": "Brasa — descarga do favo",
+    "disciplina": "Igneo — descarga do favo",
     "o_que_acontece": "Ilan marca a braçadeira de bronze, entra no vínculo aberto para a caixa-d'água, guarda a primeira onda nas três células e solta os reguladores um a um, na batida fraca do favo, até a terceira célula rachar no 19º.",
     "visual_com_selos": "Selo conjurado vermelho na braçadeira, ligado à manopla por um fio vermelho; as três células acendem em sequência; os reguladores soltam riscos vermelhos que descem pelos cabos ao longo da diagonal das janelas."
    }
@@ -133,14 +133,14 @@
     "tipo": "spot",
     "momento": "luta com Gorm na escada, ~35%",
     "trecho_ancora": "Ilan já não estava ali.",
-    "descricao_visual": "Narrow square-spiral wooden staircase, frozen laundry hanging in the stairwell shaped like people. A huge round-faced young man swings an iron-shod staff into the creaking banister; Ilan Varek (tall, lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes; coat removed, dark wool shirt and leather vest with too many pockets; steel gauntlet with three white ceramic cells on the LEFT forearm; plain iron longsword at the hip; iron plates on boot soles) has already slid half a metre aside without jumping, a fingernail-sized blue seal flaring on the edge of the step under his iron boot plate, a faint blue seal under the young man's heel. Magic is shown as seals: thin lines of light in the discipline colour (Pulso blue #4F8BD6, Brasa red #C8332F, Trama old gold #C9A15A, Clarão ivory #F2E6C2, Eco ice-blue #9FB7D6, Carga electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
+    "descricao_visual": "Narrow square-spiral wooden staircase, frozen laundry hanging in the stairwell shaped like people. A huge round-faced young man swings an iron-shod staff into the creaking banister; Ilan Varek (tall, lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes; coat removed, dark wool shirt and leather vest with too many pockets; steel gauntlet with three white ceramic cells on the LEFT forearm; plain iron longsword at the hip; iron plates on boot soles) has already slid half a metre aside without jumping, a fingernail-sized blue seal flaring on the edge of the step under his iron boot plate, a faint blue seal under the young man's heel. Magic is shown as seals: thin lines of light in the discipline colour (Impetus blue #4F8BD6, Igneo red #C8332F, Nexo old gold #C9A15A, Lume ivory #F2E6C2, Eco ice-blue #9FB7D6, Fuso electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": false
    },
    {
     "tipo": "pagina_inteira",
     "momento": "sótão, descarga do favo, ~75%",
     "trecho_ancora": "Ilan apontou a manopla para o painel e soltou o primeiro regulador.",
-    "descricao_visual": "Steaming attic under sloping rafters dripping hot meltwater. A cabinet-sized honeycomb reservoir of hundreds of white hexagonal ceramic cells banded in bronze glows dull red, one cell cracking orange; copper cables run down from it like roots into walls and floor. Ilan Varek (tall, lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes; coat removed, dark wool shirt and leather vest with too many pockets; steel gauntlet with three white ceramic cells on the LEFT forearm; plain iron longsword at the hip; iron plates on boot soles) stands with his left gauntlet raised toward a lever panel, the three ceramic cells on his forearm glowing in sequence, a thin red line of light running from his fingers to a bronze clamp on a rafter; red seal-lines pour down the cables. A bald sweating man with a trimmed moustache in an open silk shirt cowers against the wall, barefoot on a thick rug. Magic is shown as seals: thin lines of light in the discipline colour (Pulso blue #4F8BD6, Brasa red #C8332F, Trama old gold #C9A15A, Clarão ivory #F2E6C2, Eco ice-blue #9FB7D6, Carga electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
+    "descricao_visual": "Steaming attic under sloping rafters dripping hot meltwater. A cabinet-sized honeycomb reservoir of hundreds of white hexagonal ceramic cells banded in bronze glows dull red, one cell cracking orange; copper cables run down from it like roots into walls and floor. Ilan Varek (tall, lean, short dark-brown slightly messy hair, three-day stubble, thin chin scar, grey eyes; coat removed, dark wool shirt and leather vest with too many pockets; steel gauntlet with three white ceramic cells on the LEFT forearm; plain iron longsword at the hip; iron plates on boot soles) stands with his left gauntlet raised toward a lever panel, the three ceramic cells on his forearm glowing in sequence, a thin red line of light running from his fingers to a bronze clamp on a rafter; red seal-lines pour down the cables. A bald sweating man with a trimmed moustache in an open silk shirt cowers against the wall, barefoot on a thick rug. Magic is shown as seals: thin lines of light in the discipline colour (Impetus blue #4F8BD6, Igneo red #C8332F, Nexo old gold #C9A15A, Lume ivory #F2E6C2, Eco ice-blue #9FB7D6, Fuso electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": false
    },
    {
@@ -186,7 +186,7 @@
    {
     "nome": "Oficina Voss",
     "cidade_ou_regiao": "Vhalessa — Cobre",
-    "descricao_fisica": "Maior por dentro do que por fora; sem brasas de parede; calor seco que vem do chão e de serpentinas de cobre que sobem pelas paredes como hera, ligadas a cilindros de cerâmica num armário de ferro no canto; bancada coberta de peças.",
+    "descricao_fisica": "Maior por dentro do que por fora; sem igneos de parede; calor seco que vem do chão e de serpentinas de cobre que sobem pelas paredes como hera, ligadas a cilindros de cerâmica num armário de ferro no canto; bancada coberta de peças.",
     "relacao_espacial": "No fundo de um pátio, entre uma serralheria e uma fábrica de botões; porta verde com frase a giz.",
     "citacao_curta": "A Oficina Voss ficava no fundo de um pátio no Cobre, entre uma serralheria e uma fábrica de botões, atrás de uma porta pintada de verde"
    },
@@ -214,7 +214,7 @@
    {
     "nome": "Alta Mesa (vista do Cobre)",
     "cidade_ou_regiao": "Vhalessa — margem norte, parte alta",
-    "descricao_fisica": "Bairro alto de prédios novos com brasas extras; sinos em várias torres; janelas que embaçam no primeiro bafo; debaixo dela ficam as Cisternas Quentes.",
+    "descricao_fisica": "Bairro alto de prédios novos com igneos extras; sinos em várias torres; janelas que embaçam no primeiro bafo; debaixo dela ficam as Cisternas Quentes.",
     "relacao_espacial": "Do outro lado do rio em relação ao Cobre; 'lá de cima'.",
     "citacao_curta": "Do outro lado do rio, as janelas embaçadas da Alta Mesa começaram a clarear."
    }
@@ -253,12 +253,12 @@
   ],
   "magia_em_uso": [
    {
-    "disciplina": "Brasa (Rede Cívica da Cooperativa)",
+    "disciplina": "Igneo (Rede Cívica da Cooperativa)",
     "o_que_acontece": "Aquecimento próprio a partir de cilindros de cerâmica, sem passar pela Rede do deus; continua quente depois da queda.",
     "visual_com_selos": "Selos gravados vermelho-escuros, sem ouro nenhum, nas junções das serpentinas de cobre que sobem pelas paredes; acendem de leve, num ritmo próprio, diferente do da cidade."
    },
    {
-    "disciplina": "Brasa (Coroa de Calvenor — Acendimento)",
+    "disciplina": "Igneo (Coroa de Calvenor — Acendimento)",
     "o_que_acontece": "A Rede inteira desperta em sincronia e se alinha para o alto da torre; o deus ergue os braços, o Sol acende cor de mel e o 'primeiro bafo' corre pela cidade em círculo.",
     "visual_com_selos": "Milhares de selos coronais dourados com a marca do sol acendem ao mesmo tempo em todas as paredes da cidade e suas caudas giram para o topo da torre 'como limalha de ferro para um ímã'; um anel de calor visível parte da torre ao longo dos riscos dourados."
    },
@@ -292,14 +292,14 @@
     "tipo": "pagina_inteira",
     "momento": "o Acendimento, ~70%",
     "trecho_ancora": "O Sol acendeu.",
-    "descricao_visual": "From a flat warehouse roof with a brick parapet on a slope, a city at night lit end to end; the frozen river below is a white avenue crowded with an ice fair like a spilled constellation; across it a great square and a 220-metre grey stone and bronze tower. At its top a glowing orange humanoid figure of light raises long arms beside a huge round lens that has just ignited honey-gold; thousands of small gold coronal seals with a sun mark light up on walls across the whole city, their tails all turned toward the tower; a visible ring of warmth spreads outward. In the foreground Nara Voss (short and broad-shouldered, long thick copper-red braid with escaping curls, freckles, brass magnifying goggles pushed up on the forehead, sleeveless leather vest, fingerless gloves, heavy tool belt, old burn scars on both forearms like river maps) with a mug of mulled wine, Ilan Varek (tall, lean man, 34, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, steel gauntlet with three white ceramic cells on the LEFT forearm, plain iron longsword, iron ballast plates on the soles of his boots) beside her, his face changing. Magic is shown as seals: thin lines of light in the discipline colour (Pulso blue #4F8BD6, Brasa red #C8332F, Trama old gold #C9A15A, Clarão ivory #F2E6C2, Eco ice-blue #9FB7D6, Carga electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
+    "descricao_visual": "From a flat warehouse roof with a brick parapet on a slope, a city at night lit end to end; the frozen river below is a white avenue crowded with an ice fair like a spilled constellation; across it a great square and a 220-metre grey stone and bronze tower. At its top a glowing orange humanoid figure of light raises long arms beside a huge round lens that has just ignited honey-gold; thousands of small gold coronal seals with a sun mark light up on walls across the whole city, their tails all turned toward the tower; a visible ring of warmth spreads outward. In the foreground Nara Voss (short and broad-shouldered, long thick copper-red braid with escaping curls, freckles, brass magnifying goggles pushed up on the forehead, sleeveless leather vest, fingerless gloves, heavy tool belt, old burn scars on both forearms like river maps) with a mug of mulled wine, Ilan Varek (tall, lean man, 34, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, steel gauntlet with three white ceramic cells on the LEFT forearm, plain iron longsword, iron ballast plates on the soles of his boots) beside her, his face changing. Magic is shown as seals: thin lines of light in the discipline colour (Impetus blue #4F8BD6, Igneo red #C8332F, Nexo old gold #C9A15A, Lume ivory #F2E6C2, Eco ice-blue #9FB7D6, Fuso electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": false
    },
    {
     "tipo": "dupla",
     "momento": "a queda do deus, ~82%",
     "trecho_ancora": "A figura de luz estava caindo.",
-    "descricao_visual": "Two-page panorama at night: the tower's huge lens has just gone dark; a white halo of vapour hangs around its top where snow on gargoyles flashed to steam; a figure of white-hot light, like molten metal, falls backwards with open arms past the gargoyles, trailing sparks and vapour, toward the frozen river crowded with tens of thousands of tiny upturned faces and lanterns. Across the city the gold seals on the walls are going out like a receding tide. A tiny yellow lantern light descends the narrow windows of the tower's east face. Magic is shown as seals: thin lines of light in the discipline colour (Pulso blue #4F8BD6, Brasa red #C8332F, Trama old gold #C9A15A, Clarão ivory #F2E6C2, Eco ice-blue #9FB7D6, Carga electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
+    "descricao_visual": "Two-page panorama at night: the tower's huge lens has just gone dark; a white halo of vapour hangs around its top where snow on gargoyles flashed to steam; a figure of white-hot light, like molten metal, falls backwards with open arms past the gargoyles, trailing sparks and vapour, toward the frozen river crowded with tens of thousands of tiny upturned faces and lanterns. Across the city the gold seals on the walls are going out like a receding tide. A tiny yellow lantern light descends the narrow windows of the tower's east face. Magic is shown as seals: thin lines of light in the discipline colour (Impetus blue #4F8BD6, Igneo red #C8332F, Nexo old gold #C9A15A, Lume ivory #F2E6C2, Eco ice-blue #9FB7D6, Fuso electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": true
    },
    {
@@ -333,7 +333,7 @@
    {
     "nome": "Salão das Tarifas",
     "cidade_ou_regiao": "Soleira — Átrio",
-    "descricao_fisica": "Estrado de pedra clara com cadeira de espaldar alto; acústica desenhada por Aurelia, que leva a voz do estrado a todos os bancos; colunas; debaixo dele, um banco de compensação de Pulso.",
+    "descricao_fisica": "Estrado de pedra clara com cadeira de espaldar alto; acústica desenhada por Aurelia, que leva a voz do estrado a todos os bancos; colunas; debaixo dele, um banco de compensação de Impetus.",
     "relacao_espacial": "Dentro do Átrio de Soleira; o banco de compensação fica debaixo do salão.",
     "citacao_curta": "num estrado de pedra clara, no meio do Salão das Tarifas do Átrio de Soleira"
    },
@@ -368,9 +368,9 @@
    {
     "nome": "Saguão da Estação das Portas de Vhalessa",
     "cidade_ou_regiao": "Vhalessa",
-    "descricao_fisica": "Piso de lajotas de ardósia, colunas de ferro, lâmpadas de Clarão; 84 portas; -26°C sem as brasas do deus; nível de serviço embaixo, de onde não se vê a torre.",
+    "descricao_fisica": "Piso de lajotas de ardósia, colunas de ferro, lâmpadas de Lume; 84 portas; -26°C sem os igneos do deus; nível de serviço embaixo, de onde não se vê a torre.",
     "relacao_espacial": "A torre é visível da estação (dito por Aurelia); a porta para a rua dá para a cidade escura.",
-    "citacao_curta": "o saguão principal da Estação das Portas de Vhalessa, com piso de lajotas de ardósia, colunas de ferro e lâmpadas de Clarão acesas."
+    "citacao_curta": "o saguão principal da Estação das Portas de Vhalessa, com piso de lajotas de ardósia, colunas de ferro e lâmpadas de Lume acesas."
    }
   ],
   "personagens_em_cena": [
@@ -413,12 +413,12 @@
     "visual_com_selos": "Selos de limiar gravados nas pedras de cada arco, em ouro com a marca da chave; acendem baixo quando ela toca o batente; o vão adensa como vidro antigo, sem luz nem som teatral."
    },
    {
-    "disciplina": "Pulso (banco de compensação)",
+    "disciplina": "Impetus (banco de compensação)",
     "o_que_acontece": "A energia de descida dos fardos de Dunmar vai para um banco que precisa ser descarregado a cada nove dias.",
     "visual_com_selos": "Rede de selos gravados azuis num armário sob o salão (não mostrado em cena)."
    },
    {
-    "disciplina": "Brasa (anomalia das 19h02)",
+    "disciplina": "Igneo (anomalia das 19h02)",
     "o_que_acontece": "Uma onda de calor concentrado entra nas selos do nível de serviço da estação de Vhalessa e algo 'passa' por um segundo e meio.",
     "visual_com_selos": "Representar indiretamente: a pedra da balaustrada trincando sob os dedos de Aurelia; no mostrador de Vhalessa, um ponteiro em repouso 'que parecia zombar dela'."
    }
@@ -435,7 +435,7 @@
     "tipo": "dupla",
     "momento": "a descrição do Átrio, ~25%",
     "trecho_ancora": "Àquela hora, pela maioria delas não passava ninguém, e os arcos mostravam o lugar distante do outro lado, como janelas",
-    "descricao_visual": "Two-page interior of an immense circle of white stone nearly 500 metres across under a bronze-and-glass dome at evening; three tiers of galleries lined with hundreds of stone arches with bronze jambs, each opening like a window onto a different distant place — a dark warehouse, a torchlit courtyard, a mosaic-floored room, a snowbound station where a sleepy watchman stamps his feet. Faint gold engraved seals with a key mark glow in the arch stones. A tall woman eats fritters from a corn leaf at a west staircase balustrade. Magic is shown as seals: thin lines of light in the discipline colour (Pulso blue #4F8BD6, Brasa red #C8332F, Trama old gold #C9A15A, Clarão ivory #F2E6C2, Eco ice-blue #9FB7D6, Carga electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
+    "descricao_visual": "Two-page interior of an immense circle of white stone nearly 500 metres across under a bronze-and-glass dome at evening; three tiers of galleries lined with hundreds of stone arches with bronze jambs, each opening like a window onto a different distant place — a dark warehouse, a torchlit courtyard, a mosaic-floored room, a snowbound station where a sleepy watchman stamps his feet. Faint gold engraved seals with a key mark glow in the arch stones. A tall woman eats fritters from a corn leaf at a west staircase balustrade. Magic is shown as seals: thin lines of light in the discipline colour (Impetus blue #4F8BD6, Igneo red #C8332F, Nexo old gold #C9A15A, Lume ivory #F2E6C2, Eco ice-blue #9FB7D6, Fuso electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": false
    },
    {
@@ -449,7 +449,7 @@
     "tipo": "pagina_inteira",
     "momento": "a travessia, ~90%",
     "trecho_ancora": "Do outro lado, o ar bateu nela como uma parede.",
-    "descricao_visual": "Aurelia, Sovereign of Thresholds (very tall woman, noticeably taller than Ilan, long wavy golden-blonde hair worn in a winter bun pierced by a bronze key, amber eyes, gold filigree collar with a diamond pendant, heavy fur coat with hood) steps through an old stone arch whose bronze jambs have a unique green patina, out of a warm, lit white gallery into a freezing station hall with slate floor, iron columns and pale Clarão lamps; frost breath, eyes watering, pulling up her hood. Waiting in the empty hall: a woman with dark coat and black braided hair, hands behind her back, flanked by two guards in grey uniforms. Through the arch behind, a small upright old chancellor watching her go. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
+    "descricao_visual": "Aurelia, Sovereign of Thresholds (very tall woman, noticeably taller than Ilan, long wavy golden-blonde hair worn in a winter bun pierced by a bronze key, amber eyes, gold filigree collar with a diamond pendant, heavy fur coat with hood) steps through an old stone arch whose bronze jambs have a unique green patina, out of a warm, lit white gallery into a freezing station hall with slate floor, iron columns and pale Lume lamps; frost breath, eyes watering, pulling up her hood. Waiting in the empty hall: a woman with dark coat and black braided hair, hands behind her back, flanked by two guards in grey uniforms. Through the arch behind, a small upright old chancellor watching her go. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": false
    },
    {
@@ -512,14 +512,14 @@
    {
     "nome": "Delegação da Câmara dos Pactos — porão",
     "cidade_ou_regiao": "Vhalessa — Alta Mesa",
-    "descricao_fisica": "Prédio de pedra de três andares; no porão, quatro celas limpas com catres de madeira, cobertores e uma brasa de parede de bronze fria em cada parede do fundo; ~-15°C à noite.",
+    "descricao_fisica": "Prédio de pedra de três andares; no porão, quatro celas limpas com catres de madeira, cobertores e um igneo de parede de bronze frio em cada parede do fundo; ~-15°C à noite.",
     "relacao_espacial": "Entre o Conselho e o Banco de Reservas.",
     "citacao_curta": "ocupava um prédio de pedra de três andares na Alta Mesa, entre o Conselho e o Banco de Reservas."
    },
    {
     "nome": "Sala de interrogatório",
     "cidade_ou_regiao": "Vhalessa — Alta Mesa (térreo da delegação)",
-    "descricao_fisica": "Mesa comprida de madeira escura, três cadeiras, braseiro de ferro fumegante no canto, brasa de bronze fria 'como um olho morto'.",
+    "descricao_fisica": "Mesa comprida de madeira escura, três cadeiras, braseiro de ferro fumegante no canto, igneo de bronze frio 'como um olho morto'.",
     "relacao_espacial": "No térreo, com janela alta voltada para o norte.",
     "citacao_curta": "Tinha uma janela alta voltada para o norte, por onde entrava a luz cinzenta de um céu fechado"
    }
@@ -559,7 +559,7 @@
   ],
   "magia_em_uso": [
    {
-    "disciplina": "Brasa (contato improvisado, sem manopla)",
+    "disciplina": "Igneo (contato improvisado, sem manopla)",
     "o_que_acontece": "Ilan usa a grade de ferro como condutora até a lanterna e desvia para o catre o calor que subiria ao teto; precisa segurar o vínculo a noite inteira.",
     "visual_com_selos": "Selo conjurado vermelho, pequeno, na barra de ferro sob os dedos de Ilan, refeito sem parar (selos conjurados duram segundos); um risco vermelho fino corre pela grade até o gancho e o globo e volta como um véu morno sobre o catre."
    },
@@ -586,7 +586,7 @@
     "tipo": "pagina_inteira",
     "momento": "a noite na cela, ~30%",
     "trecho_ancora": "O guarda de bochechas vermelhas também não dormiu.",
-    "descricao_visual": "Freezing stone basement cell, frost on the walls, a cold bronze wall plate like a dead eye. Ilan Varek (tall, lean man, 34, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, steel gauntlet with three white ceramic cells on the LEFT forearm, plain iron longsword, iron ballast plates on the soles of his boots) (left hand bandaged, no gauntlet) sits awake on a wooden cot with his bare right hand on the iron bars; a thin red line of light runs along the bars to an oil lantern hanging on the hook outside, and a faint warm veil settles over an old purple-nosed man asleep under four blankets beside him. In the corridor a young red-cheeked guard in thick gloves stands watching, arms crossed. Magic is shown as seals: thin lines of light in the discipline colour (Pulso blue #4F8BD6, Brasa red #C8332F, Trama old gold #C9A15A, Clarão ivory #F2E6C2, Eco ice-blue #9FB7D6, Carga electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
+    "descricao_visual": "Freezing stone basement cell, frost on the walls, a cold bronze wall plate like a dead eye. Ilan Varek (tall, lean man, 34, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, steel gauntlet with three white ceramic cells on the LEFT forearm, plain iron longsword, iron ballast plates on the soles of his boots) (left hand bandaged, no gauntlet) sits awake on a wooden cot with his bare right hand on the iron bars; a thin red line of light runs along the bars to an oil lantern hanging on the hook outside, and a faint warm veil settles over an old purple-nosed man asleep under four blankets beside him. In the corridor a young red-cheeked guard in thick gloves stands watching, arms crossed. Magic is shown as seals: thin lines of light in the discipline colour (Impetus blue #4F8BD6, Igneo red #C8332F, Nexo old gold #C9A15A, Lume ivory #F2E6C2, Eco ice-blue #9FB7D6, Fuso electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": false
    },
    {
@@ -688,7 +688,7 @@
   ],
   "magia_em_uso": [
    {
-    "disciplina": "Brasa (Ilan)",
+    "disciplina": "Igneo (Ilan)",
     "o_que_acontece": "Ilan segura o calor do braseiro num bolsão em volta do catre; ao apertar a mão de Aurelia, perde a concentração e o calor sobe 'como um suspiro'.",
     "visual_com_selos": "Cúpula de ar morno desenhada por quatro selos vermelhos conjurados nos cantos do catre, ligados por riscos finos; no aperto de mão, os riscos se soltam e sobem em espiral para o teto."
    }
@@ -712,7 +712,7 @@
     "tipo": "pagina_inteira",
     "momento": "o acordo na grade, ~85%",
     "trecho_ancora": "No instante em que as mãos se tocaram, o bolsão de calor se desfez.",
-    "descricao_visual": "Cell bars in a frozen basement. Aurelia, Sovereign of Thresholds (very tall woman, noticeably taller than Ilan, long wavy golden-blonde hair worn in a winter bun pierced by a bronze key, amber eyes, gold filigree collar with a diamond pendant, heavy fur coat with hood), glove just removed, shakes hands through the bars with Ilan Varek (tall, lean man, 34, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, steel gauntlet with three white ceramic cells on the LEFT forearm, plain iron longsword, iron ballast plates on the soles of his boots) (left hand bandaged to the wrist and held against his body, tired eyes with lighter flecks near the pupil like ice). A faint dome of warm air outlined by small red seals around the cot is coming apart, red threads spiralling up toward the ceiling. On a stool in the corridor, Mara Quen (32, tall and thin, dark hair in a firm bun, round thin-rimmed glasses, dark high-collared coat over a burgundy waistcoat, leather case of thin glass gauging plates) has stopped recording, a glass plate forgotten in her hand, faint delight on her long face. Magic is shown as seals: thin lines of light in the discipline colour (Pulso blue #4F8BD6, Brasa red #C8332F, Trama old gold #C9A15A, Clarão ivory #F2E6C2, Eco ice-blue #9FB7D6, Carga electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
+    "descricao_visual": "Cell bars in a frozen basement. Aurelia, Sovereign of Thresholds (very tall woman, noticeably taller than Ilan, long wavy golden-blonde hair worn in a winter bun pierced by a bronze key, amber eyes, gold filigree collar with a diamond pendant, heavy fur coat with hood), glove just removed, shakes hands through the bars with Ilan Varek (tall, lean man, 34, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, steel gauntlet with three white ceramic cells on the LEFT forearm, plain iron longsword, iron ballast plates on the soles of his boots) (left hand bandaged to the wrist and held against his body, tired eyes with lighter flecks near the pupil like ice). A faint dome of warm air outlined by small red seals around the cot is coming apart, red threads spiralling up toward the ceiling. On a stool in the corridor, Mara Quen (32, tall and thin, dark hair in a firm bun, round thin-rimmed glasses, dark high-collared coat over a burgundy waistcoat, leather case of thin glass gauging plates) has stopped recording, a glass plate forgotten in her hand, faint delight on her long face. Magic is shown as seals: thin lines of light in the discipline colour (Impetus blue #4F8BD6, Igneo red #C8332F, Nexo old gold #C9A15A, Lume ivory #F2E6C2, Eco ice-blue #9FB7D6, Fuso electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": false
    },
    {
@@ -796,7 +796,7 @@
    "Ordem da Última Sentença / Casa do Fiel — doutrina 'de fora para dentro'; fórmula 'A conta está fechada'"
   ],
   "objetos_e_armas": [
-   "corda em estacas de ferro com oferendas (velas, carvão, pães, maçãs secas, fitas de lã laranja, vinténs de cobre, bonecos de palha, luvas de criança, uma pequena brasa de parede arrancada de casa)",
+   "corda em estacas de ferro com oferendas (velas, carvão, pães, maçãs secas, fitas de lã laranja, vinténs de cobre, bonecos de palha, luvas de criança, um pequeno igneo de parede arrancado de casa)",
    "pedaços de gelo atirados",
    "tenda de lona encerada",
    "prancha de ferro sobre blocos de gelo",
@@ -836,14 +836,14 @@
     "tipo": "pagina_inteira",
     "momento": "a leitura do corpo, ~55%",
     "trecho_ancora": "Ilan se agachou ao lado da prancha. Não se ajoelhou.",
-    "descricao_visual": "Inside a dripping lantern-lit tent: on an iron plank resting on ice blocks lies a two-and-a-half-metre god-avatar — broad shoulders, long arms, huge thin-fingered hands, long serene face with closed eyes, shaved head — skin of old bronze and oxidised copper, cracked like ancient glaze, faint ember-red glow in the cracks. Ilan Varek (tall, lean man, 34, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, steel gauntlet with three white ceramic cells on the LEFT forearm, plain iron longsword, iron ballast plates on the soles of his boots) crouches (not kneeling), lens to his right eye, bare right hand below the left collarbone, burned left palm on the sternum; a constellation of dark gold seal-points in concentric rings across the body. Aurelia, Sovereign of Thresholds (very tall woman, noticeably taller than Ilan, long wavy golden-blonde hair worn in a winter bun pierced by a bronze key, amber eyes, gold filigree collar with a diamond pendant, heavy fur coat with hood) watches, Mara Quen (32, tall and thin, dark hair in a firm bun, round thin-rimmed glasses, dark high-collared coat over a burgundy waistcoat, leather case of thin glass gauging plates) holds a glass plate, the bandaged Intendant stands at the head; three orange-caped watchers sit by the canvas. Magic is shown as seals: thin lines of light in the discipline colour (Pulso blue #4F8BD6, Brasa red #C8332F, Trama old gold #C9A15A, Clarão ivory #F2E6C2, Eco ice-blue #9FB7D6, Carga electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
+    "descricao_visual": "Inside a dripping lantern-lit tent: on an iron plank resting on ice blocks lies a two-and-a-half-metre god-avatar — broad shoulders, long arms, huge thin-fingered hands, long serene face with closed eyes, shaved head — skin of old bronze and oxidised copper, cracked like ancient glaze, faint ember-red glow in the cracks. Ilan Varek (tall, lean man, 34, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, steel gauntlet with three white ceramic cells on the LEFT forearm, plain iron longsword, iron ballast plates on the soles of his boots) crouches (not kneeling), lens to his right eye, bare right hand below the left collarbone, burned left palm on the sternum; a constellation of dark gold seal-points in concentric rings across the body. Aurelia, Sovereign of Thresholds (very tall woman, noticeably taller than Ilan, long wavy golden-blonde hair worn in a winter bun pierced by a bronze key, amber eyes, gold filigree collar with a diamond pendant, heavy fur coat with hood) watches, Mara Quen (32, tall and thin, dark hair in a firm bun, round thin-rimmed glasses, dark high-collared coat over a burgundy waistcoat, leather case of thin glass gauging plates) holds a glass plate, the bandaged Intendant stands at the head; three orange-caped watchers sit by the canvas. Magic is shown as seals: thin lines of light in the discipline colour (Impetus blue #4F8BD6, Igneo red #C8332F, Nexo old gold #C9A15A, Lume ivory #F2E6C2, Eco ice-blue #9FB7D6, Fuso electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": true
    },
    {
     "tipo": "spot",
     "momento": "a descoberta das marcas, ~70%",
     "trecho_ancora": "Conhecia porque era a dele.",
-    "descricao_visual": "Extreme close-up through a round aferição lens: beside a dark gold node-seal on cracked bronze skin, three tiny regular seals of cold white light, each with a little comma-like tail to the left; a scarred fingertip hovering, just withdrawn. Magic is shown as seals: thin lines of light in the discipline colour (Pulso blue #4F8BD6, Brasa red #C8332F, Trama old gold #C9A15A, Clarão ivory #F2E6C2, Eco ice-blue #9FB7D6, Carga electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
+    "descricao_visual": "Extreme close-up through a round aferição lens: beside a dark gold node-seal on cracked bronze skin, three tiny regular seals of cold white light, each with a little comma-like tail to the left; a scarred fingertip hovering, just withdrawn. Magic is shown as seals: thin lines of light in the discipline colour (Impetus blue #4F8BD6, Igneo red #C8332F, Nexo old gold #C9A15A, Lume ivory #F2E6C2, Eco ice-blue #9FB7D6, Fuso electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": true
    },
    {
@@ -943,9 +943,9 @@
     "visual_com_selos": "Os selos de limiar gravados nas pedras do arco acendem em ouro com a marca da chave; o vão adensa como vidro antigo; uma lufada de névoa morna rola pelo chão de ardósia."
    },
    {
-    "disciplina": "Brasa fina e Trama (embalsamadores)",
+    "disciplina": "Igneo fino e Nexo (embalsamadores)",
     "o_que_acontece": "Os embalsamadores reconduzem o calor do avatar em circuito fechado pelos fios de prata, para que não esfrie de uma vez nem rache mais.",
-    "visual_com_selos": "Fios de prata paralelos sobre o corpo com pequenos selos ouro-velho (Trama) nas pinças e riscos vermelhos (Brasa) correndo pelos fios; a condensação para de pingar."
+    "visual_com_selos": "Fios de prata paralelos sobre o corpo com pequenos selos ouro-velho (Nexo) nas pinças e riscos vermelhos (Igneo) correndo pelos fios; a condensação para de pingar."
    },
    {
     "disciplina": "Leitura do Guardião",
@@ -958,7 +958,7 @@
     "tipo": "vinheta_abertura",
     "momento": "abertura do arco",
     "trecho_ancora": "Ela deixou passar.",
-    "descricao_visual": "A frozen slate-floored station hall with iron columns and pale lamps; through an old stone arch a warm adobe station by a canal under a starry window; a plume of warm mist rolls across the cold floor; six grey-uniformed guards in a semicircle, one closing his eyes. Aurelia, Sovereign of Thresholds (very tall woman, noticeably taller than Ilan, long wavy golden-blonde hair worn in a winter bun pierced by a bronze key, amber eyes, gold filigree collar with a diamond pendant, heavy fur coat with hood) with her hand on the bronze jamb, gold seals with a key mark glowing in the arch stones. Magic is shown as seals: thin lines of light in the discipline colour (Pulso blue #4F8BD6, Brasa red #C8332F, Trama old gold #C9A15A, Clarão ivory #F2E6C2, Eco ice-blue #9FB7D6, Carga electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
+    "descricao_visual": "A frozen slate-floored station hall with iron columns and pale lamps; through an old stone arch a warm adobe station by a canal under a starry window; a plume of warm mist rolls across the cold floor; six grey-uniformed guards in a semicircle, one closing his eyes. Aurelia, Sovereign of Thresholds (very tall woman, noticeably taller than Ilan, long wavy golden-blonde hair worn in a winter bun pierced by a bronze key, amber eyes, gold filigree collar with a diamond pendant, heavy fur coat with hood) with her hand on the bronze jamb, gold seals with a key mark glowing in the arch stones. Magic is shown as seals: thin lines of light in the discipline colour (Impetus blue #4F8BD6, Igneo red #C8332F, Nexo old gold #C9A15A, Lume ivory #F2E6C2, Eco ice-blue #9FB7D6, Fuso electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": false
    },
    {
@@ -972,7 +972,7 @@
     "tipo": "spot",
     "momento": "a tábua, ~50%",
     "trecho_ancora": "Era o corpo.",
-    "descricao_visual": "Close on a palm-sized polished stone tablet with ultra-fine spiral grooves resting on a bronze-copper chest under silver threads; red ember light in the grooves forms a star-map of a body; near the centre three tiny cold white points. A long black hand rests on it. Magic is shown as seals: thin lines of light in the discipline colour (Pulso blue #4F8BD6, Brasa red #C8332F, Trama old gold #C9A15A, Clarão ivory #F2E6C2, Eco ice-blue #9FB7D6, Carga electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
+    "descricao_visual": "Close on a palm-sized polished stone tablet with ultra-fine spiral grooves resting on a bronze-copper chest under silver threads; red ember light in the grooves forms a star-map of a body; near the centre three tiny cold white points. A long black hand rests on it. Magic is shown as seals: thin lines of light in the discipline colour (Impetus blue #4F8BD6, Igneo red #C8332F, Nexo old gold #C9A15A, Lume ivory #F2E6C2, Eco ice-blue #9FB7D6, Fuso electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": true
    },
    {
@@ -1013,7 +1013,7 @@
    {
     "nome": "Casa da Fornalha — rotunda",
     "cidade_ou_regiao": "Vhalessa — Alta Mesa",
-    "descricao_fisica": "Rotunda de pedra amarelada com colunatas e cúpula de bronze verde; por dentro, paredes inteiras de brasas (placas de bronze lado a lado como escamas), agora escuras; no centro, sobre pedestal, a Fornalha: bacia redonda de bronze enorme, cheia das oferendas.",
+    "descricao_fisica": "Rotunda de pedra amarelada com colunatas e cúpula de bronze verde; por dentro, paredes inteiras de igneos (placas de bronze lado a lado como escamas), agora escuras; no centro, sobre pedestal, a Fornalha: bacia redonda de bronze enorme, cheia das oferendas.",
     "relacao_espacial": "Na Alta Mesa; o arquivo fica no subsolo.",
     "citacao_curta": "O prédio era uma rotunda de pedra amarelada, com colunatas em volta e uma cúpula de bronze verde no alto."
    },
@@ -1082,17 +1082,17 @@
     "visual_com_selos": "Fila de selos gravados no bronze fuliginoso que acendem iguais, como vivos; na segunda sondagem fora de ritmo, acendem de novo com a mesma intensidade e o mesmo atraso — um Selo Vazio que parece vivo e não leva a nada."
    },
    {
-    "disciplina": "Brasa + Carga (acumulador)",
+    "disciplina": "Igneo + Fuso (acumulador)",
     "o_que_acontece": "A bota ferrada de Bertil fecha o circuito; a descarga corre pela trilha falsa até Ilan.",
-    "visual_com_selos": "Clarão branco-azulado saltando do piso com fios vermelhos e ouro-elétrico entrelaçados."
+    "visual_com_selos": "Lume branco-azulado saltando do piso com fios vermelhos e ouro-elétrico entrelaçados."
    },
    {
-    "disciplina": "Pulso — marca à distância e Guarda de Retorno",
+    "disciplina": "Impetus — marca à distância e Guarda de Retorno",
     "o_que_acontece": "Ilan põe uma marca efêmera no ombro de Bertil a 4 m e o puxa; acopla a bota à base da armação e manda a descarga manopla→bota→armação→troncos→chão.",
     "visual_com_selos": "Selo azul conjurado no ombro do rapaz ligado por um risco à manopla; fila de três selos (manopla, placa da bota, base da armação) com traço de terra na armação, que geme como um sino."
    },
    {
-    "disciplina": "Brasa (troncos da torre)",
+    "disciplina": "Igneo (troncos da torre)",
     "o_que_acontece": "Os quatro troncos estão frios mas sob tensão fraca e constante para baixo, rumo às Cisternas.",
     "visual_com_selos": "Pela lente: selos coronais do anel de distribuição sob o piso, em ouro baço, com um fluxo tênue escorrendo para baixo como corrente de fundo."
    }
@@ -1123,7 +1123,7 @@
     "tipo": "pagina_inteira",
     "momento": "a armadilha, ~70%",
     "trecho_ancora": "Bertil foi arrancado de cima da selo como um peixe fisgado.",
-    "descricao_visual": "Bronze ring platform 220 metres up around a 15-metre cracked amber lens set in a bronze flower of petals; north-west balustrade bent outward, two petals fallen; a melted pedestal. A blue-white discharge erupts from the floor where a young orange-caped technician's iron-shod boot just was; he is yanked backward through the air by a small blue seal on his shoulder tied by a line of light to the raised gauntlet of Ilan Varek (tall, lean man, 34, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, steel gauntlet with three white ceramic cells on the LEFT forearm, plain iron longsword, iron ballast plates on the soles of his boots), whose iron boot is seal-locked to the lens armature, three blue seals in a row from gauntlet to boot to armature, the armature ringing like a bell. Aurelia, Sovereign of Thresholds (very tall woman, noticeably taller than Ilan, long wavy golden-blonde hair worn in a winter bun pierced by a bronze key, amber eyes, gold filigree collar with a diamond pendant, heavy fur coat with hood) lunges toward the west balustrade; Mara Quen (32, tall and thin, dark hair in a firm bun, round thin-rimmed glasses, dark high-collared coat over a burgundy waistcoat, leather case of thin glass gauging plates) holds a cracking glass plate. Grey sky, vertigo below. Magic is shown as seals: thin lines of light in the discipline colour (Pulso blue #4F8BD6, Brasa red #C8332F, Trama old gold #C9A15A, Clarão ivory #F2E6C2, Eco ice-blue #9FB7D6, Carga electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
+    "descricao_visual": "Bronze ring platform 220 metres up around a 15-metre cracked amber lens set in a bronze flower of petals; north-west balustrade bent outward, two petals fallen; a melted pedestal. A blue-white discharge erupts from the floor where a young orange-caped technician's iron-shod boot just was; he is yanked backward through the air by a small blue seal on his shoulder tied by a line of light to the raised gauntlet of Ilan Varek (tall, lean man, 34, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, steel gauntlet with three white ceramic cells on the LEFT forearm, plain iron longsword, iron ballast plates on the soles of his boots), whose iron boot is seal-locked to the lens armature, three blue seals in a row from gauntlet to boot to armature, the armature ringing like a bell. Aurelia, Sovereign of Thresholds (very tall woman, noticeably taller than Ilan, long wavy golden-blonde hair worn in a winter bun pierced by a bronze key, amber eyes, gold filigree collar with a diamond pendant, heavy fur coat with hood) lunges toward the west balustrade; Mara Quen (32, tall and thin, dark hair in a firm bun, round thin-rimmed glasses, dark high-collared coat over a burgundy waistcoat, leather case of thin glass gauging plates) holds a cracking glass plate. Grey sky, vertigo below. Magic is shown as seals: thin lines of light in the discipline colour (Impetus blue #4F8BD6, Igneo red #C8332F, Nexo old gold #C9A15A, Lume ivory #F2E6C2, Eco ice-blue #9FB7D6, Fuso electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": true
    },
    {
@@ -1219,12 +1219,12 @@
   ],
   "magia_em_uso": [
    {
-    "disciplina": "Brasa (Rede Cívica)",
+    "disciplina": "Igneo (Rede Cívica)",
     "o_que_acontece": "Banco de reservatórios no porão da serralheria (carregado no verão por espelhos no telhado e agora por um forno de carvão) aquece 400 m² e está sendo esticado para 600.",
     "visual_com_selos": "Pequenos selos gravados vermelhos, na 'letra' de Nara, em cada emenda de cobre; riscos vermelhos fracos correndo dentro dos tubos que atravessam paredes; no telhado, trilhas de neve derretida seguem os tubos."
    },
    {
-    "disciplina": "Clarão→Brasa (espelhos de verão)",
+    "disciplina": "Lume→Igneo (espelhos de verão)",
     "o_que_acontece": "Os espelhos do telhado carregam os reservatórios no verão; agora estão cobertos de neve.",
     "visual_com_selos": "Selos marfim apagados nas molduras dos espelhos sob a neve."
    }
@@ -1248,7 +1248,7 @@
     "tipo": "pagina_inteira",
     "momento": "a ilha aquecida do Cobre, ~35%",
     "trecho_ancora": "Uma ilha. Na rua diante dela, uma multidão.",
-    "descricao_visual": "A dark snowbound working-class district at night where one block glows: windows lit and free of frost, doors open spilling warmth; queues of hundreds wrap around the block in the snow; at a locksmith's door a sturdy square-jawed middle-aged woman with a headscarf and a list lets people in by tens; through open doors, copper pipes along walls with small red engraved seals glowing at every joint. A tall fur-clad woman and a lean man in a long dark coat approach. Magic is shown as seals: thin lines of light in the discipline colour (Pulso blue #4F8BD6, Brasa red #C8332F, Trama old gold #C9A15A, Clarão ivory #F2E6C2, Eco ice-blue #9FB7D6, Carga electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
+    "descricao_visual": "A dark snowbound working-class district at night where one block glows: windows lit and free of frost, doors open spilling warmth; queues of hundreds wrap around the block in the snow; at a locksmith's door a sturdy square-jawed middle-aged woman with a headscarf and a list lets people in by tens; through open doors, copper pipes along walls with small red engraved seals glowing at every joint. A tall fur-clad woman and a lean man in a long dark coat approach. Magic is shown as seals: thin lines of light in the discipline colour (Impetus blue #4F8BD6, Igneo red #C8332F, Nexo old gold #C9A15A, Lume ivory #F2E6C2, Eco ice-blue #9FB7D6, Fuso electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": false
    },
    {
@@ -1296,7 +1296,7 @@
    {
     "nome": "Quartinho atrás da despensa",
     "cidade_ou_regiao": "Vhalessa — Fornalha Velha",
-    "descricao_fisica": "Catre, cadeira de perna bamba, baú de madeira, prateleira com doze livros, prego vazio onde pendia uma brasa de altar.",
+    "descricao_fisica": "Catre, cadeira de perna bamba, baú de madeira, prateleira com doze livros, prego vazio onde pendia um igneo de altar.",
     "relacao_espacial": "Atrás da despensa da Cozinha; único cômodo com porta que fecha.",
     "citacao_curta": "Levou os dois para o quartinho atrás da despensa."
    },
@@ -1310,7 +1310,7 @@
    {
     "nome": "Casa da Fornalha — anéis e gabinete do Intendente",
     "cidade_ou_regiao": "Vhalessa — Alta Mesa",
-    "descricao_fisica": "Porta dos fundos dos sacerdotes; corredor do segundo anel com sacerdotes sentados junto às paredes de brasas apagadas; celas do terceiro anel; gabinete com mesa de carvalho, estantes, papéis por toda parte e janela redonda para a cúpula de bronze verde coberta de neve.",
+    "descricao_fisica": "Porta dos fundos dos sacerdotes; corredor do segundo anel com sacerdotes sentados junto às paredes de igneos apagadas; celas do terceiro anel; gabinete com mesa de carvalho, estantes, papéis por toda parte e janela redonda para a cúpula de bronze verde coberta de neve.",
     "relacao_espacial": "O gabinete fica no terceiro anel, em cima da rotunda.",
     "citacao_curta": "O gabinete do Intendente ficava no terceiro anel, em cima da rotunda, com uma janela redonda que dava para a cúpula."
    }
@@ -1331,7 +1331,7 @@
   ],
   "faccoes_casas_guildas": [
    "Casa da Fornalha — sino das vigílias às 4h30; sacerdotes de turno descalços; fórmula da manhã; pregador dos domingos; sinete do sol e cera laranja; tratado Do Sol que se Dá",
-   "Companhia Arrimo — segura metade da Fornalha Velha; acordo de inspeção das brasas com a Casa",
+   "Companhia Arrimo — segura metade da Fornalha Velha; acordo de inspeção dos igneos com a Casa",
    "Conselho, Companhia Kaltz e Comissão de Continuidade — citados por Calvenor como partes de um plano",
    "Câmara dos Pactos — arquivo central em Tamsin; artigo 22 usado por Mara para 'requisitar' carvão",
    "Pacto de Calvenor com a cidade — vencia em 1188"
@@ -1340,7 +1340,7 @@
    "machado pequeno",
    "chave de fenda emprestada de Gorm",
    "tábua com o nome do marido de Ruta entalhado",
-   "brasa de parede de altar (pequeno disco de bronze) fria no fundo do baú",
+   "igneo de parede de altar (pequeno disco de bronze) fria no fundo do baú",
    "carta lacrada com cera laranja e sinete do sol, embrulhada em linho",
    "prancheta de Tibo",
    "placas de mica",
@@ -1351,13 +1351,13 @@
   ],
   "magia_em_uso": [
    {
-    "disciplina": "Brasa (diagnóstico do favo)",
+    "disciplina": "Igneo (diagnóstico do favo)",
     "o_que_acontece": "Nara toca cada alvéolo e classifica: bom, cansado, morto.",
     "visual_com_selos": "Cada célula tem um pequeno selo gravado; nos bons, acende um vermelho limpo ao toque; nos cansados, tremula; nos mortos, o traço está partido."
    },
    {
     "disciplina": "Coroa de Calvenor (memória)",
-    "o_que_acontece": "Calvenor sentado na Fornalha, com as paredes de brasas acesas.",
+    "o_que_acontece": "Calvenor sentado na Fornalha, com as paredes de igneos acesas.",
     "visual_com_selos": "Centenas de selos coronais dourados com a marca do sol nas paredes da rotunda, todos acesos em laranja baixo."
    }
   ],
@@ -1373,7 +1373,7 @@
     "tipo": "pagina_inteira",
     "momento": "a confissão do deus (memória), ~45%",
     "trecho_ancora": "E me contou que estava morrendo.",
-    "descricao_visual": "Memory scene, night, warm: a yellow-stone rotunda whose walls are covered with glowing bronze plates like fish scales, each a gold seal with a sun mark lit low orange; in the huge round bronze basin at the centre sits a 2.5-metre god-avatar with old-bronze and copper skin, shaved head, long serene tired face; on the basin's step sits a younger stooped priest with a broom laid across his knees, listening. Magic is shown as seals: thin lines of light in the discipline colour (Pulso blue #4F8BD6, Brasa red #C8332F, Trama old gold #C9A15A, Clarão ivory #F2E6C2, Eco ice-blue #9FB7D6, Carga electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
+    "descricao_visual": "Memory scene, night, warm: a yellow-stone rotunda whose walls are covered with glowing bronze plates like fish scales, each a gold seal with a sun mark lit low orange; in the huge round bronze basin at the centre sits a 2.5-metre god-avatar with old-bronze and copper skin, shaved head, long serene tired face; on the basin's step sits a younger stooped priest with a broom laid across his knees, listening. Magic is shown as seals: thin lines of light in the discipline colour (Impetus blue #4F8BD6, Igneo red #C8332F, Nexo old gold #C9A15A, Lume ivory #F2E6C2, Eco ice-blue #9FB7D6, Fuso electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": true
    },
    {
@@ -1393,7 +1393,7 @@
    {
     "tipo": "respiro",
     "momento": "fim da visita, ~85%",
-    "trecho_ancora": "porque a cúpula, sem o calor das paredes de brasas embaixo, estava agora tão fria quanto a neve e não a segurava mais.",
+    "trecho_ancora": "porque a cúpula, sem o calor das paredes de igneos embaixo, estava agora tão fria quanto a neve e não a segurava mais.",
     "descricao_visual": "Quiet image seen through a round window: snow sliding in slow plates off a green bronze dome under a grey sky; a hushed, mournful stillness. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": false
    }
@@ -1433,9 +1433,9 @@
    {
     "nome": "Companhia Térmica Kaltz e Filhas",
     "cidade_ou_regiao": "Vhalessa — Alta Mesa",
-    "descricao_fisica": "Prédio inteiro de cinco andares, fachada de granito rosado, janelas altas de vidro de Clarão; único quente da Alta Mesa (fornalha a carvão no porão há ~10 anos, grades de ventilação na calçada); saguão de mármore, porteiro de libré sem casaco, balcão de nogueira, placa de bronze com o K na chama; contabilidade no 3º andar com paredes de livros-razão em couro verde; arquivo de patentes no 4º.",
+    "descricao_fisica": "Prédio inteiro de cinco andares, fachada de granito rosado, janelas altas de vidro de Lume; único quente da Alta Mesa (fornalha a carvão no porão há ~10 anos, grades de ventilação na calçada); saguão de mármore, porteiro de libré sem casaco, balcão de nogueira, placa de bronze com o K na chama; contabilidade no 3º andar com paredes de livros-razão em couro verde; arquivo de patentes no 4º.",
     "relacao_espacial": "Na Alta Mesa; a sala do 3º andar tem janelas para a Alta Mesa.",
-    "citacao_curta": "A Companhia Térmica Kaltz e Filhas ocupava um prédio inteiro na Alta Mesa: cinco andares, fachada de granito rosado, janelas altas de vidro de Clarão."
+    "citacao_curta": "A Companhia Térmica Kaltz e Filhas ocupava um prédio inteiro na Alta Mesa: cinco andares, fachada de granito rosado, janelas altas de vidro de Lume."
    },
    {
     "nome": "Armazém 14",
@@ -1489,7 +1489,7 @@
   ],
   "magia_em_uso": [
    {
-    "disciplina": "Vestígios de bancada de teste (Brasa/Carga)",
+    "disciplina": "Vestígios de bancada de teste (Igneo/Fuso)",
     "o_que_acontece": "Alguém montou ali uma bancada de selos de piso para carregar as células antes de levá-las; tudo foi arrancado.",
     "visual_com_selos": "Na terra varrida, fileira de buracos onde houve selos gravados em estacas; nenhum brilho — só o negativo deles."
    },
@@ -1629,27 +1629,27 @@
   ],
   "magia_em_uso": [
    {
-    "disciplina": "Pulso (Halsey)",
+    "disciplina": "Impetus (Halsey)",
     "o_que_acontece": "Ela salta 4 m da ponte e manda a pancada para a camada grossa do gelo.",
     "visual_com_selos": "Dois selos azuis conjurados sob as botas no impacto, com traço de terra no gelo grosso."
    },
    {
-    "disciplina": "Pulso — Linha Seca (Eron Tahl)",
+    "disciplina": "Impetus — Linha Seca (Eron Tahl)",
     "o_que_acontece": "Selos no calcanhar e no punho que nascem e morrem no instante do movimento, sem deixar nada carregado para ser lido ou tomado.",
     "visual_com_selos": "Faíscas: um selo azul do tamanho de uma moeda acende no calcanhar ou nos nós dos dedos e some no mesmo quadro, sem cauda nem rastro; nada fica pendurado."
    },
    {
-    "disciplina": "Pulso — Guarda de Retorno e Fio de Interdição (Ilan)",
+    "disciplina": "Impetus — Guarda de Retorno e Fio de Interdição (Ilan)",
     "o_que_acontece": "Ilan recebe o golpe e o manda manopla→bota→gelo grosso; depois prepara no gelo o apagamento do traço onde o calcanhar esquerdo de Eron vai pousar — e Eron avança com o direito.",
     "visual_com_selos": "Fila de selos azuis até o gelo; no ponto previsto, uma pequena rasura escura num risco de luz no gelo, que fica ali, inútil."
    },
    {
-    "disciplina": "Pulso — gelo partido",
+    "disciplina": "Impetus — gelo partido",
     "o_que_acontece": "Eron empurra o gelo atrás de Dorn; o impulso passa do gelo médio para o fino, que se inclina como tampo de mesa.",
     "visual_com_selos": "Selo azul no calcanhar e uma onda azul correndo pelo gelo até rachaduras brancas."
    },
    {
-    "disciplina": "Pulso — Passo Vetorial e fio de prata",
+    "disciplina": "Impetus — Passo Vetorial e fio de prata",
     "o_que_acontece": "Ilan acopla a bota à fundação do pilar e atravessa 15 m em dois toques rasantes; acopla ao pilar a ponta de um fio de prata e se iça com Dorn pela pedra da ponte.",
     "visual_com_selos": "Selos azuis do tamanho de uma unha no pilar e em dois pontos do gelo; o fio de prata esticado brilha azul de ponta a ponta, do pilar ao pulso direito."
    }
@@ -1666,14 +1666,14 @@
     "tipo": "dupla",
     "momento": "a cena do canal vista da ponte, ~25%",
     "trecho_ancora": "Lá embaixo, no gelo, a uns vinte metros da ponte, havia três pessoas.",
-    "descricao_visual": "Two-page night scene from a stone bridge over a narrow frozen canal between two rows of red-brick bathhouses with stone outflow mouths at ice level; the ice is thick and opaque near the bridge pier, medium mid-canal, glass-thin before the mouths. Mid-canal a small man in a white shirt kneels with hands tied behind; beside him a thin shaven-headed man in a short open dark leather coat holds a thick leather folder in one hand and a half-eaten apple in the other; between them a little iron brazier burns, papers piled by it. A grey-uniformed woman lieutenant drops from the balustrade, two blue seals flaring under her boots on landing. Magic is shown as seals: thin lines of light in the discipline colour (Pulso blue #4F8BD6, Brasa red #C8332F, Trama old gold #C9A15A, Clarão ivory #F2E6C2, Eco ice-blue #9FB7D6, Carga electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
+    "descricao_visual": "Two-page night scene from a stone bridge over a narrow frozen canal between two rows of red-brick bathhouses with stone outflow mouths at ice level; the ice is thick and opaque near the bridge pier, medium mid-canal, glass-thin before the mouths. Mid-canal a small man in a white shirt kneels with hands tied behind; beside him a thin shaven-headed man in a short open dark leather coat holds a thick leather folder in one hand and a half-eaten apple in the other; between them a little iron brazier burns, papers piled by it. A grey-uniformed woman lieutenant drops from the balustrade, two blue seals flaring under her boots on landing. Magic is shown as seals: thin lines of light in the discipline colour (Impetus blue #4F8BD6, Igneo red #C8332F, Nexo old gold #C9A15A, Lume ivory #F2E6C2, Eco ice-blue #9FB7D6, Fuso electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": false
    },
    {
     "tipo": "pagina_inteira",
     "momento": "o resgate, ~70%",
     "trecho_ancora": "No terceiro mergulho, tocou cabelo.",
-    "descricao_visual": "At a broken tilted slab of thin ice, Ilan Varek (tall, lean man, 34, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, steel gauntlet with three white ceramic cells on the LEFT forearm, plain iron longsword, iron ballast plates on the soles of his boots) (ribs broken, coat on, gauntlet on the left) lies on the edge plunging his bare right arm and head into black steaming water; a silver thread wrapped round his right wrist runs taut fifteen metres back to the stone bridge pier, glowing blue from end to end; a nail-sized blue seal on the pier. Far behind, a brazier burns on the ice and a wounded lieutenant sits holding her arm; on a bathhouse roof thirty metres away, a thin silhouette without a hat. Magic is shown as seals: thin lines of light in the discipline colour (Pulso blue #4F8BD6, Brasa red #C8332F, Trama old gold #C9A15A, Clarão ivory #F2E6C2, Eco ice-blue #9FB7D6, Carga electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
+    "descricao_visual": "At a broken tilted slab of thin ice, Ilan Varek (tall, lean man, 34, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, steel gauntlet with three white ceramic cells on the LEFT forearm, plain iron longsword, iron ballast plates on the soles of his boots) (ribs broken, coat on, gauntlet on the left) lies on the edge plunging his bare right arm and head into black steaming water; a silver thread wrapped round his right wrist runs taut fifteen metres back to the stone bridge pier, glowing blue from end to end; a nail-sized blue seal on the pier. Far behind, a brazier burns on the ice and a wounded lieutenant sits holding her arm; on a bathhouse roof thirty metres away, a thin silhouette without a hat. Magic is shown as seals: thin lines of light in the discipline colour (Impetus blue #4F8BD6, Igneo red #C8332F, Nexo old gold #C9A15A, Lume ivory #F2E6C2, Eco ice-blue #9FB7D6, Fuso electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": false
    },
    {
@@ -1793,8 +1793,8 @@
     "visual_com_selos": "Placa de vidro sobre a boca do tubo com franjas coloridas tênues, mais fracas do que deveriam."
    },
    {
-    "disciplina": "Brasa (o elo invisível)",
-    "o_que_acontece": "As contas indicam um elo de Brasa 'com a seção de uma porta' tirando ~6° por dia das Cisternas.",
+    "disciplina": "Igneo (o elo invisível)",
+    "o_que_acontece": "As contas indicam um elo de Igneo 'com a seção de uma porta' tirando ~6° por dia das Cisternas.",
     "visual_com_selos": "Não mostrar — o leitor só vê os números."
    }
   ],
@@ -1863,7 +1863,7 @@
    {
     "nome": "Rua da delegação, Alta Mesa",
     "cidade_ou_regiao": "Vhalessa — Alta Mesa",
-    "descricao_fisica": "Seis degraus de pedra até a rua; postes com lâmpadas de Clarão fracas depois de um dia cinzento; neve começando a cair em flocos grandes.",
+    "descricao_fisica": "Seis degraus de pedra até a rua; postes com lâmpadas de Lume fracas depois de um dia cinzento; neve começando a cair em flocos grandes.",
     "relacao_espacial": "No fim da rua, a Alta Mesa desce em ladeira até o rio; lá embaixo, as fogueiras da Feira e a torre escura.",
     "citacao_curta": "onde a Alta Mesa descia em ladeira até o rio e de onde se viam, lá embaixo, as fogueiras da Feira do Gelo e a torre escura."
    },
@@ -1910,7 +1910,7 @@
    "Soberania dos Limiares — Chaves de Custódia (delegações aos regentes) num livro de capa de couro vermelho; selo da chave de bronze; molho de chaves de bronze das portas comuns"
   ],
   "objetos_e_armas": [
-   "lâmpadas de Clarão dos postes",
+   "lâmpadas de Lume dos postes",
    "corrente e cadeado da Câmara",
    "molho de chaves de bronze no bolso interno do casaco",
    "estufa de ferro a carvão com chaleira",
@@ -1925,7 +1925,7 @@
    {
     "disciplina": "Limiar (bancos de compensação)",
     "o_que_acontece": "Cada banco guarda a diferença de pressão, altura, calor e movimento de uma porta; Aurelia os sente como pulsação.",
-    "visual_com_selos": "Em cada banco, um selo coronal gravado em ouro com a marca da chave, pulsando muito de leve; bancos de portas mais quentes com riscos vermelhos (Brasa), de portas mais altas com riscos azuis (Pulso)."
+    "visual_com_selos": "Em cada banco, um selo coronal gravado em ouro com a marca da chave, pulsando muito de leve; bancos de portas mais quentes com riscos vermelhos (Igneo), de portas mais altas com riscos azuis (Impetus)."
    },
    {
     "disciplina": "Limiar (porta 61 adormecida)",
@@ -1952,7 +1952,7 @@
     "tipo": "pagina_inteira",
     "momento": "o banco da porta 61, ~60%",
     "trecho_ancora": "Era como uma sala onde ninguém respirava.",
-    "descricao_visual": "A huge low-ceilinged basement on iron columns crowded with eighty-four man-sized iron-and-ceramic compensation banks, lids leaning on columns, open cable channels in the floor, bronze columns rising into the ceiling. Each bank bears a softly pulsing gold seal with a key mark, some veined red, some blue. At the far end Aurelia, Sovereign of Thresholds (very tall woman, noticeably taller than Ilan, long wavy golden-blonde hair worn in a winter bun pierced by a bronze key, amber eyes, gold filigree collar with a diamond pendant, heavy fur coat with hood) rests her hand on one bank whose gold seal is utterly dark and still; behind her a big man holds a lantern. Magic is shown as seals: thin lines of light in the discipline colour (Pulso blue #4F8BD6, Brasa red #C8332F, Trama old gold #C9A15A, Clarão ivory #F2E6C2, Eco ice-blue #9FB7D6, Carga electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
+    "descricao_visual": "A huge low-ceilinged basement on iron columns crowded with eighty-four man-sized iron-and-ceramic compensation banks, lids leaning on columns, open cable channels in the floor, bronze columns rising into the ceiling. Each bank bears a softly pulsing gold seal with a key mark, some veined red, some blue. At the far end Aurelia, Sovereign of Thresholds (very tall woman, noticeably taller than Ilan, long wavy golden-blonde hair worn in a winter bun pierced by a bronze key, amber eyes, gold filigree collar with a diamond pendant, heavy fur coat with hood) rests her hand on one bank whose gold seal is utterly dark and still; behind her a big man holds a lantern. Magic is shown as seals: thin lines of light in the discipline colour (Impetus blue #4F8BD6, Igneo red #C8332F, Nexo old gold #C9A15A, Lume ivory #F2E6C2, Eco ice-blue #9FB7D6, Fuso electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": true
    },
    {
@@ -1993,7 +1993,7 @@
  {
   "cap": 15,
   "pov": "Ilan",
-  "resumo": "A inspeção da Câmara (engenheiro Ostrander) passa cinco horas sem achar nada — o banco da porta 61 consta 'adormecido, sem tensão residual, conforme' —, mas Ilan vê a palma de Brannoc recém-enfaixada, que ele atribui a um braseiro do São Brúlio. Thor chega pela Porta da Neve com dezenas de trenós de carvão puxados por bodes, descarrega sacos com as mãos e, no Mercado do Sal, informado de que Ilan é o Carrasco, quer levá-lo à assembleia de Skarsvik; Ilan se esquiva sem lutar, protegendo a fila de baldes, até que a tenente Halsey desembainha, Thor reage com um empurrão de Pulso e Ilan se põe na frente, é arremessado e faz o deus rir e aceitar ouvir. No jantar de carneiro na Feira, Thor conta que Calvenor lhe pediu 'cuida dos meus', reconhece em Ilan o menino de 19 anos a quem deu as luvas em Hrímvald, aceita que a Ordem não executou Ysmera sem plano, fala de trovões de dragões nas cristas do noroeste e pressiona Aurelia a abrir as portas; ela decide ir ao Cartório de Limiar 'ler uma coisa que já leu'.",
+  "resumo": "A inspeção da Câmara (engenheiro Ostrander) passa cinco horas sem achar nada — o banco da porta 61 consta 'adormecido, sem tensão residual, conforme' —, mas Ilan vê a palma de Brannoc recém-enfaixada, que ele atribui a um braseiro do São Brúlio. Thor chega pela Porta da Neve com dezenas de trenós de carvão puxados por bodes, descarrega sacos com as mãos e, no Mercado do Sal, informado de que Ilan é o Carrasco, quer levá-lo à assembleia de Skarsvik; Ilan se esquiva sem lutar, protegendo a fila de baldes, até que a tenente Halsey desembainha, Thor reage com um empurrão de Impetus e Ilan se põe na frente, é arremessado e faz o deus rir e aceitar ouvir. No jantar de carneiro na Feira, Thor conta que Calvenor lhe pediu 'cuida dos meus', reconhece em Ilan o menino de 19 anos a quem deu as luvas em Hrímvald, aceita que a Ordem não executou Ysmera sem plano, fala de trovões de dragões nas cristas do noroeste e pressiona Aurelia a abrir as portas; ela decide ir ao Cartório de Limiar 'ler uma coisa que já leu'.",
   "locais": [
    {
     "nome": "Saguão e nível de serviço da estação",
@@ -2070,17 +2070,17 @@
   ],
   "magia_em_uso": [
    {
-    "disciplina": "Carga (Thor)",
+    "disciplina": "Fuso (Thor)",
     "o_que_acontece": "Thor acumula carga devagar no martelo, só para mostrar que poderia derrubar Ilan com uma descarga mínima.",
     "visual_com_selos": "Selos ouro-elétricos rastejando pela cabeça de ferro e pelo cabo curto, emoldurados pela marca dourada da Coroa dele; a neve estala 'como papel de seda' em volta das botas; pelos dos braços arrepiados; cheiro de pedra molhada."
    },
    {
-    "disciplina": "Pulso (Thor)",
+    "disciplina": "Impetus (Thor)",
     "o_que_acontece": "Ao ouvir a lâmina sair da bainha, a mão esquerda varre o ar num empurrão acoplado ao chão da praça.",
     "visual_com_selos": "Um selo azul grande na palma aberta e outro sob as botas; uma onda azul atravessa a praça como parede."
    },
    {
-    "disciplina": "Pulso — Guarda de Retorno (Ilan)",
+    "disciplina": "Impetus — Guarda de Retorno (Ilan)",
     "o_que_acontece": "Ilan põe a manopla à frente; as três células enchem, a provisória satura, o chão de lajes recebe parte e ele é jogado 5 m.",
     "visual_com_selos": "Fila de selos azuis manopla→botas→lajes, rompida no fim; a célula provisória brilha, fosca, com rachaduras capilares."
    }
@@ -2104,7 +2104,7 @@
     "tipo": "pagina_inteira",
     "momento": "o empurrão no Mercado do Sal, ~65%",
     "trecho_ancora": "O empurrão bateu nela como uma parede desabando.",
-    "descricao_visual": "A market square with a frozen fountain and coal depots, bucket queues of women, children and old people, a sled with four goats. Thor (about 2.15–2.20 m and enormously broad, shoulders like a door, barrel chest, forearms bare to the elbow with red hair and scars, long red beard in two braids held with iron rings, red hair tied at the nape, small very pale blue eyes, short open bearskin coat over a dark wool tunic, belt a hand wide studded with iron plates, iron gloves, a small square dark-iron hammer with an oddly short haft hanging at the right hip) half-turned, left hand sweeping open with a big blue seal on the palm and a blue wave crossing the square, electric-gold seals crawling over the short-hafted hammer at his hip; between him and a grey-uniformed woman lieutenant (arm in a sling, sword just drawn) Ilan Varek (tall, lean man, 34, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, steel gauntlet with three white ceramic cells on the LEFT forearm, plain iron longsword, iron ballast plates on the soles of his boots) has stepped in, gauntlet thrust forward, a row of blue seals from gauntlet to boots to flagstones breaking as he is hurled backward. Snow bursting. Magic is shown as seals: thin lines of light in the discipline colour (Pulso blue #4F8BD6, Brasa red #C8332F, Trama old gold #C9A15A, Clarão ivory #F2E6C2, Eco ice-blue #9FB7D6, Carga electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
+    "descricao_visual": "A market square with a frozen fountain and coal depots, bucket queues of women, children and old people, a sled with four goats. Thor (about 2.15–2.20 m and enormously broad, shoulders like a door, barrel chest, forearms bare to the elbow with red hair and scars, long red beard in two braids held with iron rings, red hair tied at the nape, small very pale blue eyes, short open bearskin coat over a dark wool tunic, belt a hand wide studded with iron plates, iron gloves, a small square dark-iron hammer with an oddly short haft hanging at the right hip) half-turned, left hand sweeping open with a big blue seal on the palm and a blue wave crossing the square, electric-gold seals crawling over the short-hafted hammer at his hip; between him and a grey-uniformed woman lieutenant (arm in a sling, sword just drawn) Ilan Varek (tall, lean man, 34, short dark-brown slightly messy hair, three-day stubble, thin scar on the chin, grey eyes, long charcoal-black high-collared coat, steel gauntlet with three white ceramic cells on the LEFT forearm, plain iron longsword, iron ballast plates on the soles of his boots) has stepped in, gauntlet thrust forward, a row of blue seals from gauntlet to boots to flagstones breaking as he is hurled backward. Snow bursting. Magic is shown as seals: thin lines of light in the discipline colour (Impetus blue #4F8BD6, Igneo red #C8332F, Nexo old gold #C9A15A, Lume ivory #F2E6C2, Eco ice-blue #9FB7D6, Fuso electric gold #D7B46A); engraved seals are dark, almost invisible marks that light up when used; coronal seals are always gold and bear the god's mark. Cinematic dark fantasy oil painting, canon-accurate, painterly texture, no text, no letters, no logos.",
     "spoiler": false
    },
    {

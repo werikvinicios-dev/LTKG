@@ -78,9 +78,9 @@ def d_eco():     # ressonância: anéis que se repetem a partir da mira
 def d_carga():   # acúmulo: anéis empilhados no eixo, a pérola no topo
     return S([f"M{C},8 L{C},192", arc(C, 66, 26, 0, 360), arc(C, 118, 34, 0, 360), arc(C, 164, 20, 180, 360)], [(C, 24, 11)])
 
-DISC = [("Pulso", "Movimento", "#4F8BD6", d_pulso), ("Brasa", "Transformação", "#C8332F", d_brasa),
-        ("Trama", "Estrutura", "#C9A15A", d_trama), ("Clarão", "Revelação", "#F2E6C2", d_clarao),
-        ("Eco", "Ressonância", "#9FB7D6", d_eco), ("Carga", "Acúmulo", "#D7B46A", d_carga)]
+DISC = [("Impetus", "Movimento", "#4F8BD6", d_pulso), ("Igneo", "Transformação", "#C8332F", d_brasa),
+        ("Nexo", "Estrutura", "#C9A15A", d_trama), ("Lume", "Revelação", "#F2E6C2", d_clarao),
+        ("Eco", "Ressonância", "#9FB7D6", d_eco), ("Fuso", "Acúmulo", "#D7B46A", d_carga)]
 
 # ------------------------------------------------------------------ ETAPAS DA TRANSPOSIÇÃO
 def e_fonte():     # de onde vem: pérola com raios para fora

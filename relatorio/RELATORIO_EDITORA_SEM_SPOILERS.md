@@ -306,7 +306,7 @@ O banco de arte cobre:
 
 ## 9. Critérios de aceitação
 
-- [x] Trama, mistérios e acontecimentos intactos (conferência automática e notas por capítulo).
+- [x] Nexo, mistérios e acontecimentos intactos (conferência automática e notas por capítulo).
 - [x] Texto perceptivelmente menos rebuscado e mais natural (seção 4).
 - [x] Magia explicada com clareza, sem alterar as regras.
 - [x] Cenas de ação acompanháveis visualmente.

@@ -82,7 +82,7 @@ inscrições, cláusulas e citações — **texto de documento citado é preserv
 
 Cânone intocável: as sete leis (Conservação, Vínculo, Compatibilidade, Vazão, Dissipação,
 Capacidade, Retorno); a Transposição (Fonte, Âncora, Elo, Destino, Controle, Retorno);
-os seis princípios (Pulso, Brasa, Trama, Clarão, Eco, Carga); Matrizes, fusões, Assinaturas,
+os seis princípios (Impetus, Igneo, Nexo, Lume, Eco, Fuso); Matrizes, fusões, Assinaturas,
 Cláusulas, Jurisdições, Coroas (Identidade, Rede, Mandato, Sustentação), Soberanias, Artes dos
 Carrascos (Revelação, Interdição, Sentença; Fio de Interdição; Fechamento de Contas; Plano de
 Dissolução), Vetor Passante, Contrapasso, Linha Seca, Segunda Muralha, Escuta das Pedras, Ponte de
@@ -206,7 +206,7 @@ na nota do capítulo.
    Ajustar menções nos caps. 28–29 que repitam "sem âncora".
 2. **Cap. 27 — "faísca azul":** a manopla não tem carga utilizável naquele ponto (a célula 1 estourou
    no cap. 18; as demais foram esvaziadas no cap. 26). Trocar a faísca por Ilan quebrando uma
-   lâmpada de vidro de Clarão do vestíbulo/pátio — clarão branco, eco do cap. 1 — e ajustar a fala
+   lâmpada de vidro de Lume do vestíbulo/pátio — clarão branco, eco do cap. 1 — e ajustar a fala
    de reação de Ulvra/terceiros, se houver.
 3. **Epílogo — último parágrafo:** contradiz "não neva nunca" (Tarvel, cap. 1) e o "Não este ano"
    do cap. 30. Reescrever a imagem final como: um terreno nas colinas de Tarvel, ainda sem

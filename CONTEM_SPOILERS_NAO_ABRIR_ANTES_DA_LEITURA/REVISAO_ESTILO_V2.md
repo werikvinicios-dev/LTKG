@@ -1,8 +1,8 @@
-# Revisão de estilo da V2 — PROPOSTA (nada aplicado ainda)
+# Revisão de estilo da V2 — aplicada
 
 Contém spoilers: cita trechos de todos os capítulos.
 
-Total: 186 propostas em 31 capítulos. Critério: a menor alteração que resolve o problema; frase inteira reescrita só quando a construção era o problema.
+Total: 186 trocas aplicadas em 31 capítulos. Critério: a menor alteração que resolve o problema; frase inteira reescrita só quando a construção era o problema.
 
 ## O que foi procurado
 
@@ -20,14 +20,14 @@ Total: 186 propostas em 31 capítulos. Critério: a menor alteração que resolv
 - Contrastes na fala dos personagens ("Não é uma oração. É uma constatação.") e os que fecham uma revelação ("O terceiro registro não era de papel. Era Sevran.").
 - Termos de contrato e de inquérito nas cenas de Dorn, Cassia Vale e Mara: são humor e caracterização.
 
-## Propostas por capítulo (~~atual~~ → proposta)
+## Trocas por capítulo (~~antes~~ → depois)
 
 ### Capítulo 1
 
 - ~~Ilan parou de olhar para o papel e olhou para o prédio.~~ → Ilan desistiu do papel e olhou para o prédio.
 - ~~o que é o tipo de coisa que não deveria acontecer numa cidade~~ → o que não devia acontecer numa cidade
 - ~~olhos cinzentos que pareciam estar sempre medindo~~ → olhos cinzentos que viviam medindo
-- ~~Quem tinha feito aquilo não tinha mexido nas brasas do deus.~~ → Quem tinha esfriado o prédio não tinha mexido nas brasas do deus.
+- ~~Quem tinha feito aquilo não tinha mexido nos igneos do deus.~~ → Quem tinha esfriado o prédio não tinha mexido nos igneos do deus.
 - ~~Alguém tinha passado meses gravando aquilo, um quarto~~ → Alguém tinha passado meses gravando aqueles selos, um quarto
 - ~~havia uma coisa parecida com uma colmeia do tamanho de um armário~~ → havia uma espécie de colmeia do tamanho de um armário
 - ~~Quem projetou aquilo sabia~~ → Quem projetou aquela colmeia sabia
@@ -80,7 +80,7 @@ Total: 186 propostas em 31 capítulos. Critério: a menor alteração que resolv
 ### Capítulo 6
 
 - ~~Ilan guardou a informação na gaveta onde guardava as coisas sobre Mara Quen.~~ → Ilan guardou a informação na gaveta onde guardava o que sabia de Mara Quen.
-- ~~Alguém devia ter arrancado aquilo da parede da própria casa~~ → Alguém devia ter arrancado a brasa da parede da própria casa
+- ~~Alguém devia ter arrancado aquilo da parede da própria casa~~ → Alguém devia ter arrancado o igneo da parede da própria casa
 - ~~Deixavam a coisa, ficavam olhando~~ → Deixavam a oferenda, ficavam olhando
 - ~~Ilan sentiu, sem precisar olhar, a forma que aquilo começava a tomar.~~ → Ilan sentiu, sem precisar olhar, que aquele grupo começava a virar turba.
 - ~~Parecia mais curiosidade, ou cansaço,~~ → Podia ser curiosidade, ou cansaço,
@@ -217,7 +217,7 @@ Total: 186 propostas em 31 capítulos. Critério: a menor alteração que resolv
 - ~~— falou, devagar, escolhendo as palavras como quem tira coisas de uma gaveta —~~ → — falou, devagar, uma palavra de cada vez —
 - ~~Ilan tinha esquecido aquilo. Tinha esquecido por doze anos~~ → Ilan tinha esquecido aquela conversa. Tinha esquecido por doze anos
 - ~~Sevran viu Ilan entrar e viu alguma coisa no rosto dele.~~ → Sevran viu Ilan entrar e não gostou da cara dele.
-- ~~Uma coisa sem nome foi chegando devagar, como o frio que entra pelas botas. Não era bem surpresa. Era aquilo que a gente sente quando desce uma escada~~ → Uma inquietação foi chegando devagar, como o frio que entra pelas botas. Não era bem surpresa: era o tranco de quem desce uma escada
+- ~~Uma coisa sem nome foi chegando devagar, como o frio que entra pelas botas. Não era bem surpresa. Era aquilo que a gente sente quando desce uma escada~~ → Uma inquietação foi chegando devagar, como o frio que entra pelas botas. Não era bem surpresa: era o contragolpe de quem desce uma escada
 - ~~E, acima dela, a torre, escura, com o Sol apagado lá no alto como um olho fechado.~~ → E, acima dela, a torre, escura, com o Sol apagado lá no alto.
 
 ### Capítulo 21
@@ -251,7 +251,7 @@ Total: 186 propostas em 31 capítulos. Critério: a menor alteração que resolv
 - ~~Os selos da pele estão ligados por outra coisa, mais fina.~~ → Os selos da pele estão ligados por outra malha, mais fina.
 - ~~Depois viu Nara repetir aquilo dezessete vezes~~ → Depois viu Nara repetir o gesto dezessete vezes
 - ~~Mara não sabia o que era aquilo.~~ → Mara não sabia para que servia o disco.
-- ~~Não era Clarão. Era o calor.~~ → A luz vinha do calor, não de Clarão.
+- ~~Não era Lume. Era o calor.~~ → A luz vinha do calor, não de Lume.
 - ~~Não estava escondido. Estava ali, à vista, na luz.~~ → Estava ali, à vista, na luz, sem esconderijo nenhum.
 - ~~nítido como uma assinatura~~ → nítido como tinta fresca
 

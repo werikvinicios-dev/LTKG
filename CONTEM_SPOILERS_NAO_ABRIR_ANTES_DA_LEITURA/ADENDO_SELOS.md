@@ -19,7 +19,7 @@ Retorno**: só o nome e a aparência do ponto de fixação mudaram.
 | Como nasce | sai do operador na hora, com um gesto, um toque ou um olhar treinado | fixado num material com tempo e ferramenta (ponta, buril, brasa, tinta mineral) |
 | Aparência | risco fino de luz na cor da disciplina; **todo mundo vê**; dura segundos | desenho escuro, quase invisível a olho nu; acende quando é usado |
 | Força | fraco, rápido, cansa o operador | forte, estável, dura dias ou anos |
-| Risco | se o operador errar o traço, o tranco volta nele | se for descoberto, pode ser raspado, rasurado ou tomado |
+| Risco | se o operador errar o traço, o contragolpe volta nele | se for descoberto, pode ser raspado, rasurado ou tomado |
 | Equivale ao antigo | âncora improvisada | âncora calibrada; ligado a uma rede = âncora integrada |
 
 Qualquer pessoa treinada pode conjurar. **Talento muda o quanto**: tamanho, precisão, velocidade, quantos selos ao
@@ -27,14 +27,14 @@ mesmo tempo.
 
 ## 3. Gramática do selo (o que o leitor pode ver)
 
-1. **Sinal da disciplina** no centro (Pulso, Brasa, Trama, Clarão, Eco, Carga).
+1. **Sinal da disciplina** no centro (Impetus, Igneo, Nexo, Lume, Eco, Fuso).
 2. **Cauda**: por onde o fluxo *pode* passar. Não decide o sentido sozinha; quem decide é a física (quente para
    frio, alto para baixo, carga para terra).
 3. **Tamanho**: quanto pode passar (Vazão).
-4. **Traço de terra**: para onde vai o tranco (Retorno). **Sem traço de terra, o tranco volta para quem fez o selo.**
+4. **Traço de terra**: para onde vai o contragolpe (Retorno). **Sem traço de terra, o contragolpe volta para quem fez o selo.**
 
-Cores: Pulso azul `#4F8BD6`, Brasa vermelho `#C8332F`, Trama ouro velho `#C9A15A`, Clarão branco-marfim `#F2E6C2`,
-Eco azul-gelo `#9FB7D6`, Carga ouro-elétrico `#D7B46A`. Selo de Coroa (coronal) é sempre em ouro e tem a marca do deus.
+Cores: Impetus azul `#4F8BD6`, Igneo vermelho `#C8332F`, Nexo ouro velho `#C9A15A`, Lume branco-marfim `#F2E6C2`,
+Eco azul-gelo `#9FB7D6`, Fuso ouro-elétrico `#D7B46A`. Selo de Coroa (coronal) é sempre em ouro e tem a marca do deus.
 
 ## 4. Tabela de troca de termos (usar no livro inteiro)
 
@@ -49,7 +49,7 @@ Eco azul-gelo `#9FB7D6`, Carga ouro-elétrico `#D7B46A`. Selo de Coroa (coronal)
 | âncora coronal, âncoras da Coroa | selos coronais, selos da Coroa |
 | âncora de limiar | selo de limiar (gravado nas pedras do arco) |
 | âncora falsa / Âncora Vazia | selo falso / Selo Vazio (desenho que parece vivo e não leva a nada) |
-| âncora portátil (Pivô de Cobre de Nara) | o Pivô de Cobre é uma peça com selo de Carga gravado; continua portátil |
+| âncora portátil (Pivô de Cobre de Nara) | o Pivô de Cobre é uma peça com selo de Fuso gravado; continua portátil |
 | Três Fundamentos (três âncoras) | três selos de apoio |
 | "economia de âncoras" (Eron, Linha Curta) | "economia de selos": poucos, pequenos, perfeitos |
 | engenheira de âncoras (Nara) | gravadora de selos / engenheira de selos |

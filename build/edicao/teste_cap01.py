@@ -9,7 +9,7 @@ contrato = documento('<div class="dt">Companhia Arrimo · Seguros e Garantias</d
 ins = {6: contrato, 40: banda(f"{A}/cenarios/S04_Cozinha_do_Lento.png", "center 45%", 70, "A Cozinha do Lento: o calor do salão vinha da brasa de parede.")}
 pecas = [imagem_cheia("exportacoes/capa_v2/capa_ebook.jpg"),
          abertura_parte("I", "O Frio", "Em Vhalessa ninguém queimava lenha para esquentar a casa. Quem esquentava as casas era o deus.", "exportacoes/banco_de_arte/05_mundo/MU-009_vhalessa_fornalha_velha_noite.png"),
-         abertura_capitulo(1, tit, "exportacoes/banco_de_arte_4x/06_personagens/PE-024_ilan_estalagem_4x.jpg", "center 30%", "Brasa", "Toda ação retorna. — Sétima Lei"),
+         abertura_capitulo(1, tit, "exportacoes/banco_de_arte_4x/06_personagens/PE-024_ilan_estalagem_4x.jpg", "center 30%", "Igneo", "Toda ação retorna. — Sétima Lei"),
          capitulo_texto(1, "Onze páginas de contrato", corpo, ins),
          respiro(f"{A}/cenarios/S01_Vhalessa_Inverno.png", "E no Sete Chaminés, por uma hora, foi verão.", autor="Capítulo 1")]
 p = compor(pecas, [(1, "Onze páginas de contrato")], "/tmp/claude-0/-home-user-LTKG/0ae43a17-9955-54f0-9172-040bd4d1f0e3/scratchpad/teste_cap01.pdf")

@@ -97,12 +97,12 @@ Aplicadas pelo coordenador antes desta etapa; conferidas agora no texto revisado
   pagando o custo inteiro com ele"); 29 (duas menções: "usando as próprias mãos como extremidades";
   "com as próprias mãos no lugar das extremidades"). Nenhuma menção restante a "sem âncora".
 
-**2. Cap. 27 — "faísca azul" → globo de Clarão.**
+**2. Cap. 27 — "faísca azul" → globo de Lume.**
 - *Problema:* o V1 tirava a faísca de um "resíduo de carga que tinha sobrado da descarga do leão de
   bronze… guardado na célula velha", mas esse resíduo foi recebido pela célula 1, que estourou
   (cap. 18). A manopla não tinha carga utilizável naquele ponto.
 - *Solução:* ao lado da porta da fachada da estação do Passo Cinzento há um globo antigo de vidro de
-  Clarão, cheio até a borda por quarenta anos de luz sem uso (lei da Capacidade); Ilan o solta da
+  Lume, cheio até a borda por quarenta anos de luz sem uso (lei da Capacidade); Ilan o solta da
   argola, sai ao pátio e o esmaga contra a quina do arco: clarão branco, eco do globo do corredor do
   Sete Chaminés (cap. 1). Fala de Ulvra ajustada: "Você quebrou uma luz no meu vale. Foi recado ou
   foi tolice?" (V1: "Você acendeu uma faísca azul. Foi um recado ou foi tolice?"). Apoio no mesmo
@@ -186,7 +186,7 @@ explícita.
 | 17 | P11-1 | 11 (cf. 13) | Último parágrafo: Mara guarda a recusa "ao lado do disco do Consórcio", mas às 19h o disco já está com a Comissária (ela o examina no saguão; no 13, "A Comissária está com ele", e Halsey o entrega a Aurelia). | "ao lado da placa de vidro trincada" (que o capítulo põe na maleta). | Média. Objeto-pista no lugar errado. |
 | 18 | P11-3 | 11 | "Chegaram lá às quatro e meia — as três, a tenente Halsey e os dois guardas": "as três" sugere que Liesl Kaltz foi ao armazém, mas ela não é mencionada lá. | Decidir se Liesl vai (e citá-la uma vez) ou trocar por "as duas". | Média. Quem estava presente numa cena de descoberta. |
 | 19 | P16-1 | 16 (cf. 14) | "O espaço vazio na mesa onde a moldura de madeira tinha estado durante trinta anos": a miniatura mostra Lys aos dezesseis, ela morreu em março de 1178, e em 1178 Brannoc era regente em Tollsund. O retrato não pode estar naquela mesa de Vhalessa há trinta anos ("trinta anos" é o tempo de serviço de Brannoc). | "durante anos" ou "desde que ele chegara a Vhalessa". | Média. Detalhe ligado ao motivo do antagonista. |
-| 20 | P21-1 | 1, 21 | Brasas de parede: "uma das centenas de milhares" (cap. 1) × "as quarenta e tantas mil brasas de parede" (inventário do Plano, cap. 21). | O autor fixa o número. Para 600 mil habitantes, "centenas de milhares" parece o mais coerente (trocar no 21); ou o cap. 1 passa a "dezenas de milhares". | Média. Número de mundo. |
+| 20 | P21-1 | 1, 21 | Brasas de parede: "uma das centenas de milhares" (cap. 1) × "as quarenta e tantos mil igneos de parede" (inventário do Plano, cap. 21). | O autor fixa o número. Para 600 mil habitantes, "centenas de milhares" parece o mais coerente (trocar no 21); ou o cap. 1 passa a "dezenas de milhares". | Média. Número de mundo. |
 | 21 | P09-1 | 9 (cf. 2, 11) | Cronologia de Hanne: marido morto "faz quinze anos" (≈ 1172), Nara descobre "dez anos depois" (≈ 1182), e "uma semana depois" a companhia registra o favo; mas a patente é 1181-07 (cap. 11) e o favo foi desenhado "faz seis anos" (≈ 1181, cap. 2). Diferença de cerca de um ano. | "faz dezesseis anos" ou "nove anos depois"; ou aceitar como aproximação na fala de Hanne. | Média. Datas de fundo. |
 | 22 | P14-1 | 14 (cf. 16) | Brannoc diz que o Consórcio instalou as válvulas dos prédios da rua de trás "no ano passado"; no 16, os registros das válvulas 1–3 são "da primavera de 1187" ("como Brannoc tinha dito"). | Se não for imprecisão deliberada de Brannoc (ele está encobrindo a válvula 4), "na primavera". | Média. Fala de antagonista; pode ser deliberada. |
 | 23 | P07-2 | 7 (cf. 3, 5) | Aurelia: "A senhora mesma disse ao Conselho que é para isso que existem inquéritos." Cassia disse isso a Aurelia no saguão da estação (cap. 3) e não o repete no Conselho (cap. 5). | "A senhora mesma me disse, na estação, que é para isso que existem inquéritos." Ou manter como retórica de Aurelia. | Média. Atribuição de fala. |
@@ -278,7 +278,7 @@ Coerência interna: 161 (D5) → 141 (D8) ≈ 6,7 °C/dia; 141 (D8) → 123 (D11
 | Cap. 18 (D8) | **a mais antiga ("a de seis anos") recebe o resíduo do tentáculo e estoura**; queimadura de 2º grau no dorso da mão esquerda | antiga | nº 3, "a última porcelana de Hanne Voss" |
 | Cap. 19 (D9) | **nova**: hexagonal, cinza-escura, irregular, feita por Nara com a cerâmica das 2 células mortas do favo de Orsk, mais caulim e pó de ferro; calibrada durante uma hora | "a segunda, a última das antigas" | "a de porcelana de Hanne, rendada de rachaduras" (ver N3) |
 | Caps. 25–26 (D13) | cinza-escura | velha | porcelana de Hanne; manopla acoplada às sete marcas do Fechamento; nenhuma descarga ou esvaziamento narrado |
-| Cap. 27 (D13) | "Todas vivas. Todas vazias, porque ele já tinha gastado o que tinha" | | o clarão vem do globo de Clarão (§2, item 2) |
+| Cap. 27 (D13) | "Todas vivas. Todas vazias, porque ele já tinha gastado o que tinha" | | o clarão vem do globo de Lume (§2, item 2) |
 | Cap. 30 | cinza-escura: "Trincada… Mas inteira" ("Traz ela de volta… Quando trincar de vez") | velha | "a de porcelana da mãe dela" |
 
 Retificação de registro: a nota 26 diz que a célula 3 dos caps. 25–30 é "a provisória de porcelana
@@ -305,7 +305,7 @@ de Hanne, rendada de trincas desde o cap. 15". Pelo texto, é a **nº 3**, posta
   dias depois da encomenda" (cap. 11) → válvula 4 registrada em 22 de setembro de 1187 (cap. 16);
   renovação da delegação em 9 de setembro de 1187 (caps. 14 e 16); carta à Arrimo recebida em 29 de
   outubro de 1187 (cap. 20). Coerente.
-- **Calvenor:** acende o Sol "havia quase trezentos anos" (cap. 1); as brasas da Casa "em quase três
+- **Calvenor:** acende o Sol "havia quase trezentos anos" (cap. 1); os igneos da Casa "em quase três
   séculos" nunca conheceram o inverno (cap. 8). Coerente.
 
 ### 5.6 Anel par de soleiras
@@ -375,7 +375,7 @@ depois"; "Ainda não sei." (Calvenor/Ilan, cap. 20); "o preço" / "a única de v
 sabia o preço" (caps. 18, 21, 29); "Toda coroa é uma dívida…" (tratado de Oriel, carta de Brannoc,
 Ithren); "o menino mede bem" (folha do Plano, caps. 21 e 29; "O homem que media bem" no epílogo); o
 bolo de mel e a porta dos fundos aberta até a metade "para não ranger" (caps. 21, 23 e 26); o clarão
-branco de um globo de Clarão quebrado (caps. 1 e 27). Textos de documento citados (contrato Arrimo,
+branco de um globo de Lume quebrado (caps. 1 e 27). Textos de documento citados (contrato Arrimo,
 ofício da Câmara, folha da agência, encomenda 1187-44, caderno de Dorn, carta à Arrimo, carta de
 Calvenor, Plano, carta de Brannoc, tratado no gelo, nota a lápis de Pimm) permanecem literais
 (conferidos nas notas por capítulo); o script confirma que os trechos entre aspas são idênticos em

@@ -85,8 +85,8 @@ pages.append(pg("01 · Alma visual", "Místico · Marcial · Divino", f'''<div c
 <p class="q" style="margin-top:6mm;font-size:12.5pt">Um universo belo, perigoso, antigo e vivo: a grandeza da fantasia épica cinematográfica com a mão de uma ilustração autoral.</p>'''))
 PAL = [("#0B0B0C", "Obsidiana / negro mineral", "fundos, capas, páginas de nível 3"), ("#1C1B1A", "Grafite", "painéis, sombras"),
        ("#A8823E", "Ouro antigo", "lettering, filetes, hot stamping"), ("#C9A15A", "Ouro claro", "títulos, ícones"),
-       ("#7A1218", "Sangue / vermelho mineral", "estandarte, Carrascos, Brasa"), ("#E6DCC6", "Osso / marfim", "miolo, pérolas"),
-       ("#5C6168", "Aresta / prata fria", "arco-limiar, metal"), ("#1E3A5C", "Céu de Limiar / azul profundo", "Pulso, Eco, portais"),
+       ("#7A1218", "Sangue / vermelho mineral", "estandarte, Carrascos, Igneo"), ("#E6DCC6", "Osso / marfim", "miolo, pérolas"),
+       ("#5C6168", "Aresta / prata fria", "arco-limiar, metal"), ("#1E3A5C", "Céu de Limiar / azul profundo", "Impetus, Eco, portais"),
        ("#1F3A32", "Floresta sombria", "Delta, acentos raros")]
 pages.append(pg("02 · Cor e tipografia", "Paleta-base e tipos", '<div class="cols"><div>' + "".join(
     f'<div class="chip"><b style="background:{c}"></b><div><span class="k" style="font-size:7.5pt">{n}</span><br><span style="font-size:9.5pt">{c} · {u}</span></div></div>' for c, n, u in PAL)
@@ -114,7 +114,7 @@ pages.append(pg("04 · Emblema", "Anatomia do brasão", f'''<div class="cols"><d
 <p class="q" style="margin-top:4mm">Versões: metal sobre negro, transparente, medalhão para papel claro e vetor de uma cor para gráfica.</p></div></div>'''))
 pages.append(pg("05 · Sistema de símbolos", "Leis, disciplinas e etapas", f'''{im('02_simbolos/SI-001_sete_leis.png', 261, 60, "background-position:center 40%")}
 <div class="cols" style="margin-top:4mm"><div>{im('02_simbolos/SI-002_seis_disciplinas.png', 125, 52, "background-position:center 20%")}
-<p style="margin-top:2mm">Disciplinas com cor própria: Pulso azul-gelo, Brasa vermelho, Trama ouro, Clarão branco-ouro, Eco azul-prata, Carga ouro.</p></div>
+<p style="margin-top:2mm">Disciplinas com cor própria: Impetus azul-gelo, Igneo vermelho, Nexo ouro, Lume branco-ouro, Eco azul-prata, Fuso ouro.</p></div>
 <div>{im('02_simbolos/SI-003_etapas_da_transposicao.png', 125, 52)}<p style="margin-top:2mm">Gramática comum: eixo vertical, círculo de campo e pérola de energia.
 Cada sinal comunica o conceito sem inventar regra nova.</p></div></div>'''))
 pages.append(pg("06 · Heráldica", "Facções, casas e objetos", f'''<div class="cols"><div>{im('03_faccoes/FA-001_seis_faccoes.png', 125, 84, "background-position:center 10%")}

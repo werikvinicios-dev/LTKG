@@ -78,7 +78,7 @@
   - Fica [INFERIDO] que, de quem desce do norte para o rio (olhando para o sul), a esquerda é o **leste**. A estação ficaria, então, a leste do pé da ladeira da Alta Mesa. Há ainda um caminho a pé pelo cais "até a ponte" (14).
 - **A torre é visível da estação** [CERTO]: "A torre é visível da estação" (3, Aurelia). Só do nível de serviço não se vê (3, 5).
 - **Exterior** [CERTO, 14]: tem degraus na entrada principal e porta lateral de serviço "do lado do cais". O escritório do regente fica "no primeiro andar, à direita da entrada principal", e a Sala dos Ferrolhos "ao lado do escritório". Do outro lado da rua há um banco de pedra sob um poste (14, 15). Três prédios "da rua de trás" têm válvulas do Consórcio (14).
-- **Interior** [CERTO]: o saguão tem "piso de lajotas de ardósia, colunas de ferro e lâmpadas de Clarão" (3) e 84 portas (3, 13, 14). O arco do Delta fica "no fundo do saguão principal, à esquerda, entre o de Tollsund e o de um entreposto de peles das Cidades Livres" (7). A porta 61 é um "arco emparedado" (14). O nível de serviço fica "sete metros abaixo do saguão principal", com 84 bancos, um sob cada porta (14).
+- **Interior** [CERTO]: o saguão tem "piso de lajotas de ardósia, colunas de ferro e lâmpadas de Lume" (3) e 84 portas (3, 13, 14). O arco do Delta fica "no fundo do saguão principal, à esquerda, entre o de Tollsund e o de um entreposto de peles das Cidades Livres" (7). A porta 61 é um "arco emparedado" (14). O nível de serviço fica "sete metros abaixo do saguão principal", com 84 bancos, um sob cada porta (14).
 - **A posição das portas de Neska e de Tollsund no saguão de Vhalessa** fica [ABERTO]. O que se sabe é a posição delas no Átrio de Soleira: a de Vhalessa fica "entre a de Neska e a de Tollsund" (3).
 
 ### 3.4 Mercado do Sal, Porta da Neve e estrada do norte
@@ -109,7 +109,7 @@
 - **É vizinha do Cobre** [CERTO]: "O Sete Chaminés fica a dois quilômetros daqui — disse Nara. — Do outro lado da Fornalha Velha" (9, falando da Oficina Voss).
   - Fica [INFERIDO] que, saindo do Cobre, atravessa-se a Fornalha Velha inteira para chegar ao Sete Chaminés, na borda oposta, a cerca de 2 km. O lado (leste ou oeste do Cobre) fica [ABERTO].
 - **Sete Chaminés e Cozinha do Lento** ficam no mesmo prédio. A Cozinha "Era um armazém de sal" (10). Há uma "rua de trás" (1) e uma esquina com termômetro (1).
-- Prédios antigos têm brasas "no lugar errado" (2). A Conselheira Maren Duur é "Da bancada da Fornalha Velha" (5).
+- Prédios antigos têm igneos "no lugar errado" (2). A Conselheira Maren Duur é "Da bancada da Fornalha Velha" (5).
 
 ### 4.3 Hospital de São Brúlio
 - **Fica na margem sul** [CERTO]: "o pátio do Hospital de São Brúlio, na margem sul do Lento" (5). É um "casarão de pedra de quatro andares" (5). Do canal das Tinas, fica "a quinze minutos daqui. Pela rua dos Cordoeiros" (12).

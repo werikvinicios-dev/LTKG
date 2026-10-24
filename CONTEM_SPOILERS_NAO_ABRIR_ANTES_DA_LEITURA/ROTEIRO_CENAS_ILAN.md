@@ -42,10 +42,10 @@ IL-S01 a IL-S07 mostram magia em uso: só gerar depois que os selos mágicos for
   - Mara (32 anos, alta, magra, cabelo escuro em coque, óculos redondos, casaco escuro de gola alta, colete cor de vinho, maleta de placas de aferição) anota.
 - **IL-S03**, cap. 12, Linha Seca:
   - Ilan, ferido pelo frio, tira Dorn da água gelada.
-  - Eron Tahl (≈41 anos, magro, cabeça raspada) golpeia com Pulso entre duas âncoras, calcanhar e punho.
+  - Eron Tahl (≈41 anos, magro, cabeça raspada) golpeia com Impetus entre duas âncoras, calcanhar e punho.
   - Ilan está perdendo.
 - **IL-S04**, cap. 15, Ilan × Thor:
-  - Thor é enorme, com o martelo carregado de raios (Pulso acoplado, descarga de Carga).
+  - Thor é enorme, com o martelo carregado de raios (Impetus acoplado, descarga de Fuso).
   - Trenós de carvão e bodes ficam entre os dois.
   - No gelo, com as chapas de lastro, Ilan ergue uma única Guarda de Retorno da manopla e satura a célula.
   - Comboio dos Reinos ao fundo.
@@ -61,7 +61,7 @@ IL-S01 a IL-S07 mostram magia em uso: só gerar depois que os selos mágicos for
   - Aurelia (loira) sincroniza os limiares.
   - Ilan entra com impulso lateral e sai atrás de Eron, acertando-lhe o ombro.
 - **IL-S07**, cap. 26, Fechamento de Contas:
-  - Rede de elos de Brasa vermelhos e sete pontos marcados.
+  - Rede de elos de Igneo vermelhos e sete pontos marcados.
   - Ilan conduz o Retorno para o lago de degelo, numa explosão de vapor.
   - A manopla se despedaça e o antebraço esquerdo queima.
   - Aurelia fecha o corredor com a Fronteira em ouro.

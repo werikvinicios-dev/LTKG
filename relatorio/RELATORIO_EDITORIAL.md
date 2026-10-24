@@ -87,7 +87,7 @@ Pacote de bíblias original preservado em `/home/user/LTKG/pacote_original/`.
   Dissipação, Capacidade, Retorno): preservadas e usadas como motor dramático. Nenhuma
   técnica decisiva do volume suspende uma lei. Cada efeito grande tem fonte, âncora,
   elo, destino, controle, retorno e contramedida identificáveis.
-- **Seis disciplinas** (Pulso, Brasa, Trama, Clarão, Eco, Carga): empregadas conforme a
+- **Seis disciplinas** (Impetus, Igneo, Nexo, Lume, Eco, Fuso): empregadas conforme a
   bíblia técnica; sem morte instantânea à distância, sem portal dentro de corpos, sem
   absorção infinita, sem ressurreição livre, sem solo como dissipador infinito.
 - **Ilan:** poderoso e inteligente desde a abertura; vence por competência e perde

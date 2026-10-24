@@ -274,17 +274,17 @@ def salva(nome, arr):
     p = f"{TMP}/{nome}.png"; Image.fromarray(np.clip(arr, 0, 255).astype(np.uint8)).save(p); return f"file://{p}"
 
 
-DISC = [("pulso", pulso, "Pulso", "movimento e impulso", "#4F8BD6",
+DISC = [("pulso", pulso, "Impetus", "movimento e impulso", "#4F8BD6",
          "Poeira e neve em estrias retas, anéis de choque no ar, e o contragolpe na âncora: chão trincado, bota que afunda."),
-        ("brasa", brasa, "Brasa", "energia térmica", "#C8332F",
+        ("brasa", brasa, "Igneo", "energia térmica", "#C8332F",
          "Ar que tremula, vapor, metal em brasa. O calor sempre sai de algum lugar: lá fica a geada."),
-        ("trama", trama, "Trama", "ligações e tensões", "#C9A15A",
+        ("trama", trama, "Nexo", "ligações e tensões", "#C9A15A",
          "Pedra e metal que rangem; veios de tensão em faixas; fissuras que correm onde a tração é maior."),
-        ("clarao", clarao, "Clarão", "luz", "#F2E6C2",
+        ("clarao", clarao, "Lume", "luz", "#F2E6C2",
          "Luz real desviada por lente, espelho ou gelo: feixes, cáusticas, bordas de arco-íris. Onde a luz foi tirada, escurece."),
         ("eco", eco, "Eco", "vibração e ressonância", "#9FB7D6",
          "Figuras na poeira, na neve e na água; vidro que canta; sinos e pedras sintônicas."),
-        ("carga", carga, "Carga", "cargas elétricas", "#D7B46A",
+        ("carga", carga, "Fuso", "cargas elétricas", "#D7B46A",
          "Arco branco-azulado com origem e terra, cheiro de ozônio, cabelo arrepiado, ramos queimados na superfície.")]
 
 

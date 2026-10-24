@@ -161,8 +161,8 @@ NOMES_LEIS = ["Conservação", "Vínculo", "Compatibilidade", "Vazão", "Dissipa
 FRASES_LEIS = ["Nada se cria.", "Tudo se conecta.", "O que não ressoa, rompe.", "Toda passagem tem limite.", "Nada permanece.", "Tudo tem limite.", "Toda ação retorna."]
 ROM = ["I", "II", "III", "IV", "V", "VI", "VII"]
 ETAPAS = ["Fonte", "Âncora", "Elo", "Destino", "Controle", "Retorno"]
-DISC_N = [("Pulso", "Movimento", (80, 140, 230)), ("Brasa", "Transformação", (220, 70, 45)), ("Trama", "Estrutura", (220, 175, 90)),
-          ("Clarão", "Revelação", (255, 240, 205)), ("Eco", "Ressonância", (160, 190, 230)), ("Carga", "Acúmulo", (225, 185, 100))]
+DISC_N = [("Impetus", "Movimento", (80, 140, 230)), ("Igneo", "Transformação", (220, 70, 45)), ("Nexo", "Estrutura", (220, 175, 90)),
+          ("Lume", "Revelação", (255, 240, 205)), ("Eco", "Ressonância", (160, 190, 230)), ("Fuso", "Acúmulo", (225, 185, 100))]
 for _, _, col in DISC_N: LIGHT_COL[col] = radial(col, .85)
 
 GOLD, SOFT, IVORY = (226, 196, 126), (200, 186, 158), (236, 228, 210)

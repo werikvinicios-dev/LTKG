@@ -70,7 +70,7 @@
 - Aurelia e Ilan passam a usar os nomes.
 
 ### Cap. 8 (Dia 2)
-- Casa da Fornalha: rotunda com paredes de brasas; Fornalha (bacia de bronze) com oferendas.
+- Casa da Fornalha: rotunda com paredes de igneos; Fornalha (bacia de bronze) com oferendas.
 - Pasta vazia; tira "Recolhido pela Câmara dos Pactos, inverno de 1176. Ver auto." Papel da papelaria Osk (Neska), marca roda de 3 raios, fabricado desde 1181; Oriel explica a recópia de 1183 (verdade: todo o arquivo tem o mesmo papel). Velho Brask (arquivista, †1180). Intendente Haskel recebeu a cópia (†1177). Oriel era "sacerdote da cripta" em 1183 / "de turno" em 1175.
 - Chaves: principal (guarda cerimonial), serviço (técnicos de lente + Intendente), plataforma do Sol (só Oriel e Calvenor).
 - Bertil: técnico de lente, ~20, sardento. Escada de serviço: 1.140 degraus (Mara confere); porta de serviço encontrada escancarada após a queda.
@@ -98,7 +98,7 @@
 ### Cap. 10 (Dia 3, Sevran)
 - Sevran: acorda 4h30 há 29 anos; entrou na Casa aos 23 (1158); 26 anos na Casa; pregador dos domingos nos últimos 8; saiu em 1184 após 4 domingos repetindo a fórmula "O Sol não se apaga. O Sol de Inverno é eterno como o inverno."
 - Palavras da manhã: "Que o Sol se lembre de nós no frio. Que nós nos lembremos dele no calor."
-- Quartinho: catre, cadeira bamba, baú (carta lacrada com cera laranja e sinete do sol, embrulhada em linho, sob a brasa de altar fria), 12 livros.
+- Quartinho: catre, cadeira bamba, baú (carta lacrada com cera laranja e sinete do sol, embrulhada em linho, sob o igneo de altar frio), 12 livros.
 - Mesa de Avó Ruta com o nome do marido entalhado (tábua guardada). Gorm e a mãe dormem na Cozinha.
 - Nara: favo de Orsk — 2 células mortas, 6 cansadas; plano: coletor na chaminé + favo (3 dias); cobre: ~300 m de cabos de Orsk.
 - Revelação de Sevran (fev. 1184): Calvenor morrendo — há 30 anos tira mais das Cisternas do que o verão devolve; põe a diferença da Identidade; 5–10 invernos; quer "acabar direito", "entregar a casa arrumada"; Pacto vence em 1188.
@@ -244,8 +244,8 @@
 - Abóbada externa norte: sal-gema, ~60 m diâmetro, ~30 m altura, paredes ~108 °C, brilho avermelhado. Válvula = arco de pedra branca com batentes de bronze, 4 m × 3 m, raízes de cabos de cobre e prata; pelo vão, a noite do Passo Cinzento.
 - Pele: 23 discos falsos (iscas para placa) + 19 âncoras verdadeiras enterradas ~2 palmos sob o sal. Contraprova: placa (mente) × sonda (disco à temperatura do sal, 108) × Escuta das Pedras.
 - 1ª explosão: jorro de ar a ~200 °C; guarda de bigode ralo queimado (vive). **Segunda Muralha** de Cassia: 3 muralhas preparadas no caminho; 1ª rompe.
-- Ithren: véu de Clarão (rosto que não se fixa); sabe da recusa de Mara ao Decanato; "a Ordem estava errada… não sobre como. Sobre o quê… nenhuma está [bem]… A minha mestra descobriu… e a Ordem não quis ouvir. Então a Ordem caiu."; "toda coroa é uma dívida… a questão é só quem". Foge por **galeria de mineração** antiga (sai no leito do Lento, a 2 km, sob a Fornalha Velha; reaberta em outubro).
-- 2ª explosão: Nara queimada levemente; última muralha "gasta". **Placa de registro luminoso** (vidro de Clarão com sais de prata do Arquipélago; 3 por ano) registra o rosto real: comprido, magro, maçãs salientes, nariz curvo partido e mal consertado, olhos fundos claros, sobrancelhas brancas, cicatriz no canto esquerdo da boca.
+- Ithren: véu de Lume (rosto que não se fixa); sabe da recusa de Mara ao Decanato; "a Ordem estava errada… não sobre como. Sobre o quê… nenhuma está [bem]… A minha mestra descobriu… e a Ordem não quis ouvir. Então a Ordem caiu."; "toda coroa é uma dívida… a questão é só quem". Foge por **galeria de mineração** antiga (sai no leito do Lento, a 2 km, sob a Fornalha Velha; reaberta em outubro).
+- 2ª explosão: Nara queimada levemente; última muralha "gasta". **Placa de registro luminoso** (vidro de Lume com sais de prata do Arquipélago; 3 por ano) registra o rosto real: comprido, magro, maçãs salientes, nariz curvo partido e mal consertado, olhos fundos claros, sobrancelhas brancas, cicatriz no canto esquerdo da boca.
 - Restam 17 âncoras; Sevran e Nara atravessam (20 min); Nara põe 17 **âncoras de sacrifício** (cerâmica das células do Orsk) nos caminhos junto à base do arco. 5h32: pele cai; Aurelia sente a ferida inteira.
 - Oriel ajoelhado junto à base do batente com o **fiel** encostado ao bronze.
 
@@ -258,6 +258,6 @@
 - Trenó de vela no pátio: caixa (Mandato de Calvenor) com 3 cabos ao telhado; 12 cães; Eron Tahl. Partem ao amanhecer (6h20) com vento do glaciar.
 - Vetor Passante/Contrapasso no saguão: portas 3 e 9 (30 m). Aurelia segura a âncora do calcanhar de Eron contra a pedra dela (ele cai). Ilan chega à 7ª, segura o Fechamento; Aurelia fecha a porta. Eron escolhe o trenó e parte.
 - Retorno volta pelo cano da Rede Cívica → Cobre + 3 abrigos (noite tropical) + troncos da torre (Gorm/alavanca vermelha). Cisternas ficam ~118 °C (resto preservado).
-- Ulvra leva Ilan, Aurelia e Pell à barragem. **Thor** segura a barragem há 1 dia congelando o gelo (Brasa reversa); Hvel (pessoas/cabras) no alto; 12 casas perdidas.
+- Ulvra leva Ilan, Aurelia e Pell à barragem. **Thor** segura a barragem há 1 dia congelando o gelo (Igneo reverso); Hvel (pessoas/cabras) no alto; 12 casas perdidas.
 - Ilan pula no trenó (pego por Ulvra). Eron ajuda a abrir a caixa ("cumprindo o contrato de um jeito que o cliente não vai poder reclamar"). Aurelia abre uma soleira improvisada da água do lago (0 °C) sobre a caixa; cerâmica de lastro racha; **o Mandato de Calvenor se desfaz** (não é entregue a ninguém). Custo físico alto para Aurelia.
 - MUDANÇA vs. plano: a Matriz/Mandato é destruída, não entregue a Iolanthe. Credores seguem existindo; Ithren escapou (galeria de mineração); Brannoc preso? (resolver cap. 28). Epílogo ajustado.

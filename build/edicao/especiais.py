@@ -9,10 +9,10 @@ LEIS = [("I", "Conservação", "conservacao", "Nada se cria. Tudo muda de lugar.
         ("IV", "Vazão", "vazao", "Toda passagem tem um limite."),
         ("V", "Dissipação", "dissipacao", "Nada fica para sempre."),
         ("VI", "Capacidade", "capacidade", "Tudo tem um tamanho."),
-        ("VII", "Retorno", "retorno", "Todo tranco volta para algum lugar.")]
-DISC = [("Pulso", "pulso", "movimento e impulso", "azul"), ("Brasa", "brasa", "calor e frio", "vermelho"),
-        ("Trama", "trama", "ligações e estruturas", "ouro velho"), ("Clarão", "clarao", "luz", "marfim"),
-        ("Eco", "eco", "vibração e som", "azul-gelo"), ("Carga", "carga", "carga e raio", "ouro elétrico")]
+        ("VII", "Retorno", "retorno", "Todo contragolpe volta para algum lugar.")]
+DISC = [("Impetus", "impetus", "movimento e impulso", "azul"), ("Igneo", "igneo", "calor e frio", "vermelho"),
+        ("Nexo", "nexo", "ligações e estruturas", "ouro velho"), ("Lume", "lume", "luz", "marfim"),
+        ("Eco", "eco", "vibração e som", "azul-gelo"), ("Fuso", "fuso", "carga e raio", "ouro elétrico")]
 
 
 def leis():
@@ -30,7 +30,7 @@ def disciplinas():
 
 
 def gramatica_selo():
-    vermelho = COR["Brasa"]
+    vermelho = COR["Igneo"]
     svg = f'''<svg viewBox="0 0 400 330" width="128mm" height="106mm">
 <defs><filter id="gl"><feGaussianBlur stdDeviation="2.2"/></filter></defs>
 <g stroke="{vermelho}" fill="none" stroke-linecap="round">
@@ -48,7 +48,7 @@ def gramatica_selo():
  <text x="4" y="52">1 · SINAL</text><text x="330" y="14">2 · CAUDA</text><text x="2" y="186">3 · TAMANHO</text><text x="4" y="298">4 · TRAÇO DE TERRA</text></g>
 <g font-family="EBG" font-size="10.5" fill="#E6DCC6" font-style="italic">
  <text x="4" y="66">qual disciplina passa</text><text x="300" y="34">por onde pode passar</text>
- <text x="2" y="200">o anel diz quanto cabe</text><text x="4" y="312">para onde vai o tranco</text></g>
+ <text x="2" y="200">o anel diz quanto cabe</text><text x="4" y="312">para onde vai o contragolpe</text></g>
 </svg>'''
     return pagina(f'''<div class="esp"><div class="ek">Como se lê um selo</div><div class="et">A gramática do selo</div>{ornamento()}
 <div class="fig">{svg}</div>
@@ -57,7 +57,7 @@ Dura segundos. É rápido, é fraco e cansa.</p></div>
 <div><div class="ch">Selo gravado</div><p>Fixado em pedra, couro, bronze ou osso, com tempo e ferramenta. Quase invisível até ser usado.
 É forte e dura anos. Pode ser raspado, rasurado ou tomado.</p></div></div>
 <div class="enota">Um selo não é uma força. É um endereço. Quem paga a conta é o mundo: o degrau, a viga, a parede, o lago.
-Selo sem traço de terra devolve o tranco a quem fez.</div></div>''', "noite")
+Selo sem traço de terra devolve o contragolpe a quem fez.</div></div>''', "noite")
 
 
 def arquitetura():
@@ -68,7 +68,7 @@ def arquitetura():
     return pagina(f'''<div class="esp"><div class="ek">A Transposição</div><div class="et">Toda magia, em seis passos</div>{ornamento()}
 <div class="egrid">{itens}</div>
 <div class="enota">A magia não cria nada. Ela muda de lugar o que já existe: calor, movimento, luz, som, carga, tensão.
-Quem esquece o Retorno descobre, do pior jeito, para onde o tranco foi.</div></div>''', "noite")
+Quem esquece o Retorno descobre, do pior jeito, para onde o contragolpe foi.</div></div>''', "noite")
 
 
 CSS_ESP = f"""

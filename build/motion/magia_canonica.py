@@ -40,7 +40,7 @@ def afericao(t):
     global PAREDE
     if PAREDE is None: PAREDE = _parede()
     if t < 2.9:
-        a_img = abertura(t, "06_personagens/PE-021_ilan_afericao.png", "AFERIÇÃO", "LEITURA COM A LENTE · BRASA", "capítulo 1").render()
+        a_img = abertura(t, "06_personagens/PE-021_ilan_afericao.png", "AFERIÇÃO", "LEITURA COM A LENTE · IGNEO", "capítulo 1").render()
         if t < 2.5: return a_img
     q = Quadro(PAREDE)
     caminho = PREGOS + [TELHADO]
@@ -71,7 +71,7 @@ def afericao(t):
                 if e >= 1:
                     ang = math.atan2(dy, dx)
                     for s in (2.6, -2.6): giz(q, [a1, (a1[0] + 22 * math.cos(ang + s), a1[1] + 22 * math.sin(ang + s))])
-    cabecalho(q, t, "AFERIÇÃO", "LEITURA · BRASA · CAPÍTULO 1", 2.7, 10.9)
+    cabecalho(q, t, "AFERIÇÃO", "LEITURA · IGNEO · CAPÍTULO 1", 2.7, 10.9)
     rotulo(q, t, 3.6, 6.6, "ÂNCORAS: PREGOS DE COBRE, PINTADOS DA COR DA PAREDE", 470, 940, PREGOS[0], 25)
     rotulo(q, t, 5.4, 8.8, "ELO: SÓ A LENTE MOSTRA", 980, 760, (900, 590), 25)
     a = env(t, 5.6, 6.0, 8.4, 8.8); cola(q, texto("as franjas se inclinam no sentido do fluxo", "EBGaramond-Italic.ttf", 28, (220, 206, 178), 0), 1000, 800, a)
@@ -98,7 +98,7 @@ def _ember(k, j): return (BX0 + 40 + 266 * j + 40, PISO[k] - 30)
 
 def sifao(t):
     if t < 2.9:
-        a_img = abertura(t, "06_personagens/PE-020_ilan_sete_chamines.png", "REVERSÃO DO SIFÃO", "SALDO FINAL · BRASA", "capítulo 1").render()
+        a_img = abertura(t, "06_personagens/PE-020_ilan_sete_chamines.png", "REVERSÃO DO SIFÃO", "SALDO FINAL · IGNEO", "capítulo 1").render()
         if t < 2.5: return a_img
     q = Quadro()
     lin = IVORY + (170,)
@@ -147,8 +147,8 @@ def sifao(t):
         for k, (x, y) in enumerate(tanques): vapor(q, (x + 40, y - 4), t, 10.2, 45, 70, 360, .9, 20 + k)
     rach = (1,) if t > 10.9 else ()
     celulas(q, 1560, 760, [.3, .82 if t < 10.9 else 0.0, .45], 1.1, rach)
-    cabecalho(q, t, "REVERSÃO DO SIFÃO", "SALDO FINAL · BRASA · CAPÍTULO 1", 2.7, 12.9)
-    rotulo(q, t, 2.9, 5.6, "FONTE: BRASAS DE PAREDE DE CALVENOR", 120, 310, _ember(4, 0), 20)
+    cabecalho(q, t, "REVERSÃO DO SIFÃO", "SALDO FINAL · IGNEO · CAPÍTULO 1", 2.7, 12.9)
+    rotulo(q, t, 2.9, 5.6, "FONTE: IGNEOS DE PAREDE DE CALVENOR", 120, 310, _ember(4, 0), 20)
     rotulo(q, t, 3.6, 5.8, "SIFÃO DE ORSK: DESVIA O CALOR ANTES DOS CÔMODOS", 1000, 190, (CANO_X, 300), 20)
     rotulo(q, t, 4.2, 6.4, "RESERVATÓRIO SUPERAQUECIDO", 380, 1020, (RES[0] - 120, RES[1] + 10), 20)
     rotulo(q, t, 5.6, 7.6, "ILAN DESACOPLA O CONTROLE DE ORSK", 1330, 640, (1203, 846), 20)
@@ -258,7 +258,7 @@ def _bode(q, x):
 
 def guarda(t):
     if t < 2.9:
-        a_img = abertura(t, "05_mundo/MU-002_reinos_do_norte.png", "GUARDA DE RETORNO", "SALDO FINAL · CARGA E PULSO", "capítulo 15").render()
+        a_img = abertura(t, "05_mundo/MU-002_reinos_do_norte.png", "GUARDA DE RETORNO", "SALDO FINAL · FUSO E IMPETUS", "capítulo 15").render()
         if t < 2.5: return a_img
     q = Quadro()
     q.dt.rectangle([0, GELO, W, H], fill=(20, 26, 32, 255)); q.dt.line([(0, GELO), (W, GELO)], fill=(150, 175, 195, 200), width=3)
@@ -284,8 +284,8 @@ def guarda(t):
     if 8.1 < t < 8.8: estrias(q, (px + 60, GELO - 40), t, 8.1, .7, 60, 260, semente=5, dir=0.0)
     c3 = .3 + .67 * seg(t, 5.8, 7.0) if t < 10 else lerp(.97, .5, seg(t, 10, 11))
     celulas(q, 1700, 120, [.36, .4, c3], 1.0)
-    cabecalho(q, t, "GUARDA DE RETORNO", "SALDO FINAL · CARGA E PULSO · CAPÍTULO 15", 2.7, 10.9)
-    rotulo(q, t, 3.0, 5.6, "THOR: PULSO ACOPLADO AO MARTELO E DESCARGA DE CARGA", 900, 300, (cab[0] - 30, cab[1]), 22)
+    cabecalho(q, t, "GUARDA DE RETORNO", "SALDO FINAL · FUSO E IMPETUS · CAPÍTULO 15", 2.7, 10.9)
+    rotulo(q, t, 3.0, 5.6, "THOR: IMPETUS ACOPLADO AO MARTELO E DESCARGA DE FUSO", 900, 300, (cab[0] - 30, cab[1]), 22)
     rotulo(q, t, 3.8, 6.0, "ENTRE OS DOIS: TRENÓS DE CARVÃO E BODES", 640, 880, (1000, GELO - 60), 22)
     rotulo(q, t, 5.9, 8.2, "O GOLPE ENTRA NA CÉLULA", 120, 360, (mao[0], mao[1]), 22)
     rotulo(q, t, 6.4, 8.8, "O CONTRAGOLPE DESCE PELAS CHAPAS DE LASTRO", 120, 900, (px, GELO), 22)
@@ -326,7 +326,7 @@ def _dragao(q, a=1.0):
 
 def descarga_ulvra(t):
     if t < 2.9:
-        a_img = abertura(t, "09_engenharia_arcana/EA-008_redes_divinas_draconicas.png", "DESVIO DA DESCARGA", "SALDO FINAL · CARGA · FIO DE INTERDIÇÃO", "capítulo 18").render()
+        a_img = abertura(t, "09_engenharia_arcana/EA-008_redes_divinas_draconicas.png", "DESVIO DA DESCARGA", "SALDO FINAL · FUSO · FIO DE INTERDIÇÃO", "capítulo 18").render()
         if t < 2.5: return a_img
     q = Quadro(); lin = IVORY + (170,)
     q.dt.line([(0, CHAO), (W, CHAO)], fill=lin, width=3)
@@ -368,7 +368,7 @@ def descarga_ulvra(t):
     queima = t > 9.8
     celulas(q, 1680, 120, [.5 + .45 * seg(t, 6, 9.6) if not queima else 0.0, .4, .42], 1.0, (0,) if queima else ())
     if 9.8 < t < 10.4: brilho(q, (1697, 166), 80, AMBER, 1 - seg(t, 9.8, 10.4))
-    cabecalho(q, t, "DESVIO DA DESCARGA", "SALDO FINAL · CARGA · CAPÍTULO 18", 2.7, 11.9)
+    cabecalho(q, t, "DESVIO DA DESCARGA", "SALDO FINAL · FUSO · CAPÍTULO 18", 2.7, 11.9)
     rotulo(q, t, 3.0, 5.4, "CANAL IONIZADO DA CRISTA DE ULVRA", 900, 150, (780, 480), 22)
     rotulo(q, t, 5.5, 8.0, "PIVÔ DE COBRE DE NARA: ÂNCORA INTERMEDIÁRIA", 640, 960, PIVO, 22)
     rotulo(q, t, 6.2, 8.8, "SOL DA TORRE: BRONZE ATERRADO", 1060, 150, (SOL[0] - 60, SOL[1]), 22)
@@ -454,7 +454,7 @@ def _costura(q, x, u, k=1.0):
 
 def vetor(t):
     if t < 2.9:
-        a_img = abertura(t, "09_engenharia_arcana/EA-006_transposicao_portal.png", "VETOR PASSANTE", "LIMIARES E PULSO · ILAN E AURELIA", "capítulo 26").render()
+        a_img = abertura(t, "09_engenharia_arcana/EA-006_transposicao_portal.png", "VETOR PASSANTE", "LIMIARES E IMPETUS · ILAN E AURELIA", "capítulo 26").render()
         if t < 2.5: return a_img
     q = Quadro()
     q.dt.line([(0, CHAO_V), (W, CHAO_V)], fill=IVORY + (170,), width=3)
@@ -485,11 +485,11 @@ def vetor(t):
             q.dl.arc([ombro[0] - 110, ombro[1] - 110, ombro[0] + 110, ombro[1] + 110], 200, 300, fill=mul(PRATA, hit), width=5)
     if 6.2 < t < 6.8:
         cola(q, texto("½ s", "EBGaramond-Italic.ttf", 44, (255, 226, 150), 0), 960, 300, env(t, 6.2, 6.3, 6.6, 6.8), "cc")
-    cabecalho(q, t, "VETOR PASSANTE", "LIMIARES E PULSO · CAPÍTULO 26", 2.7, 10.9)
+    cabecalho(q, t, "VETOR PASSANTE", "LIMIARES E IMPETUS · CAPÍTULO 26", 2.7, 10.9)
     rotulo(q, t, 3.1, 5.4, "COSTURA DE LIMIARES: AURELIA SINCRONIZA OS DOIS ARCOS", 620, 150, (960, CHAO_V - 200), 22)
     rotulo(q, t, 4.7, 6.4, "ILAN ENTRA COM IMPULSO LATERAL", 120, 330, (ARCO_A - 60, CHAO_V - 120), 22)
     rotulo(q, t, 6.1, 7.4, "JANELA DE MEIO SEGUNDO, VISÍVEL PARA QUEM SABE", 600, 220, (ARCO_B, CHAO_V - 380), 22)
-    rotulo(q, t, 6.8, 9.4, "NO TRÂNSITO: PULSO NO PRÓPRIO CORPO, COM APOIO NO PISO DO ARCO DE SAÍDA", 220, 940, (ARCO_B, CHAO_V), 22)
+    rotulo(q, t, 6.8, 9.4, "NO TRÂNSITO: IMPETUS NO PRÓPRIO CORPO, COM APOIO NO PISO DO ARCO DE SAÍDA", 220, 940, (ARCO_B, CHAO_V), 22)
     rotulo(q, t, 7.9, 10.4, "ERON ANTECIPA EM PARTE: O GOLPE ACERTA O OMBRO", 1100, 330, (eron_x + 12, CHAO_V - 150), 22)
     lei(q, t, "Conservação do momento: o impulso muda de direção, não aparece do nada.", 9.4, 11.0)
     img = q.render()

@@ -185,10 +185,10 @@ def montar():
     L.doc("mundo1", "Os Seis Sinais", "<h2>Os Seis Sinais</h2>" + figura(L, f"{ME.R4}/RF-003_seis_disciplinas_4x.jpg") +
           "".join(f'<p class="lei"><b>{H.escape(n)}.</b> {H.escape(x)}; acende os selos em luz {c}.</p>' for n, _, x, c in especiais.DISC), toc_mundo)
     L.doc("mundo2", "A gramática do selo", "<h2>A gramática do selo</h2>" + figura(L, fig_gramatica()) +
-          '<p class="lei"><b>1 · Sinal:</b> qual disciplina passa. <b>2 · Cauda:</b> por onde pode passar. <b>3 · Tamanho:</b> quanto cabe. <b>4 · Traço de terra:</b> para onde vai o tranco.</p>'
+          '<p class="lei"><b>1 · Sinal:</b> qual disciplina passa. <b>2 · Cauda:</b> por onde pode passar. <b>3 · Tamanho:</b> quanto cabe. <b>4 · Traço de terra:</b> para onde vai o contragolpe.</p>'
           '<p class="lei"><b>Selo conjurado.</b> Sai da mão, do pé ou do olhar treinado. Um risco fino de luz que todo mundo vê. Dura segundos. É rápido, fraco e cansa.</p>'
           '<p class="lei"><b>Selo gravado.</b> Fixado em pedra, couro, bronze ou osso, com tempo e ferramenta. Forte, dura anos. Pode ser raspado, rasurado ou tomado.</p>'
-          '<p class="nota">Um selo não é uma força. É um endereço. Quem paga a conta é o mundo. Selo sem traço de terra devolve o tranco a quem fez.</p>', toc_mundo)
+          '<p class="nota">Um selo não é uma força. É um endereço. Quem paga a conta é o mundo. Selo sem traço de terra devolve o contragolpe a quem fez.</p>', toc_mundo)
     L.doc("mundo3", "Toda magia, em seis passos", "<h2>Toda magia, em seis passos</h2>" + figura(L, f"{ME.BA}/02_simbolos/SI-003_etapas_da_transposicao.png") +
           '<p class="lei">Fonte (de onde sai) · Selo (onde se prende) · Vínculo (por onde passa) · Destino (para onde vai) · Controle (quem segura) · Retorno (o que volta).</p>'
           '<p class="nota">A magia não cria nada. Ela muda de lugar o que já existe.</p>', toc_mundo)

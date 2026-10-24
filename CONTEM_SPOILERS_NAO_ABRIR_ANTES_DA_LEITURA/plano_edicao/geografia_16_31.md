@@ -29,7 +29,7 @@ No fim há um apêndice curto com confirmações vindas dos caps. 1–15. Elas e
 ### Montanhas em volta
 - **[CERTO]** Há montanhas ao **norte**, para além da Alta Mesa. Cap. 18, sobre o gabinete da delegação: «A do gabinete dava para o norte: para os telhados da Alta Mesa e, além deles, as montanhas.»
 - **[CERTO]** As **cristas do noroeste** são a direção do Passo Cinzento e de Ulvra. Cap. 18: «Do noroeste, por cima das cristas, vinha uma nuvem.»; cap. 17: «trovões fora de estação nas cristas do noroeste»; cap. 22: «Três. Do noroeste, por cima das montanhas».
-- **[CERTO]** Os **Campos de Espelho** ficam nas encostas e os **poços**, a leste (cap. 20, carta de Calvenor: «As Cisternas, os Campos de Espelho, os poços do leste, as brasas»; «dos que puseram os espelhos nas encostas»). O cap. 6 precisa: «encostas do sul».
+- **[CERTO]** Os **Campos de Espelho** ficam nas encostas e os **poços**, a leste (cap. 20, carta de Calvenor: «As Cisternas, os Campos de Espelho, os poços do leste, os igneos»; «dos que puseram os espelhos nas encostas»). O cap. 6 precisa: «encostas do sul».
 
 ---
 
@@ -118,7 +118,7 @@ No fim há um apêndice curto com confirmações vindas dos caps. 1–15. Elas e
 Tudo [CERTO], salvo indicação.
 - **Porta da frente** na «rua da Casa», vigiada pelos guardas à paisana do outro lado da rua (cap. 23).
 - **Porta dos fundos dos sacerdotes**: «dava para um beco estreito entre a Casa e o muro do jardim do Banco de Reservas» (cap. 23). Range depois da metade do giro.
-- **Corredor do primeiro anel**: as paredes são «paredes de brasas», fileiras de discos de bronze (cap. 21).
+- **Corredor do primeiro anel**: as paredes são «paredes de igneos», fileiras de discos de bronze (cap. 21).
 - **Rotunda** sob a cúpula; a luz das lanternas não passa de uns 10 m de altura (cap. 21).
   - No centro, a **Fornalha**: «a grande bacia redonda de bronze, da largura de uma carroça», sobre um pedestal de pedra com **cinco degraus de pedra amarelada**.
   - O **degrau norte**, o de baixo, é mais largo e fica «de costas para a porta da rotunda» (cap. 21). O Plano estava escondido sob a laje.
@@ -144,7 +144,7 @@ Tudo [CERTO], salvo indicação.
 
 **Percurso de descida (cap. 24)**, tudo [CERTO]:
 1. Porta da galeria 3, no subsolo da Casa, lado leste.
-2. A galeria «descia em rampa por uns duzentos metros, por dentro da rocha da Alta Mesa». O túnel tem a largura de duas pessoas, teto em arco, tijolo refratário e lâmpadas de Clarão a cada 30 m.
+2. A galeria «descia em rampa por uns duzentos metros, por dentro da rocha da Alta Mesa». O túnel tem a largura de duas pessoas, teto em arco, tijolo refratário e lâmpadas de Lume a cada 30 m.
 3. **Antecâmara** redonda «com quatro saídas», a mais de 40 °C.
 4. A **saída norte**, um arco mais largo, dá na **abóbada externa norte**: «redonda, com uns sessenta metros de diâmetro e talvez trinta de altura», com paredes de sal branco, rosado e cinzento e um brilho avermelhado.
 5. No centro da abóbada fica o **arco da válvula**, de 4 × 3 m. Cabos de cobre e prata partem dele até as paredes. Há um círculo de discos a ~10 m do arco.
@@ -164,7 +164,7 @@ Tudo [CERTO], salvo indicação.
 
 - **[CERTO]** Fica no cais da margem norte, a 400 m da praça (cap. 18). Tem porta principal e **porta lateral do cais** (caps. 16 e 18).
 - **[CERTO]** Tem **84 portas** (cap. 16: «nas oitenta e quatro portas»). São arcos de pedra branca com batentes de bronze (cap. 22).
-- **[CERTO]** O saguão tem colunas de ferro, lâmpadas de Clarão e piso de ardósia (caps. 19 e 30).
+- **[CERTO]** O saguão tem colunas de ferro, lâmpadas de Lume e piso de ardósia (caps. 19 e 30).
 - **[CERTO]** **Galeria norte**:
   - Lá fica o **arco de Soleira**, «o de bronze esverdeado, que ela tinha construído no ano setecentos e oito» (cap. 18).
   - Lá fica também a **porta 61**, no fundo. Cap. 30: «A sessenta e um reaberta no fundo da galeria norte».
@@ -200,7 +200,7 @@ Tudo [CERTO], salvo indicação.
   - A **parede do fundo é o gelo do glaciar** (o muro de pedra dos mineiros foi derrubado).
   - Um **rio de degelo** «saía por uma abertura na parede da direita — para fora, para baixo, para o vale.» Vai «para o lago atrás da barragem».
 - **Vestíbulo**: «uma sala estreita de pedra que corria ao longo da fachada», entre o saguão e a porta grande.
-- **Pátio**: «um quadrado de pedra diante da fachada, cercado por um muro baixo». Em 1187 está alagado e fumegante, com uma plataforma de pedra no meio. Junto à porta da fachada há um globo de Clarão preso numa argola de ferro (cap. 27).
+- **Pátio**: «um quadrado de pedra diante da fachada, cercado por um muro baixo». Em 1187 está alagado e fumegante, com uma plataforma de pedra no meio. Junto à porta da fachada há um globo de Lume preso numa argola de ferro (cap. 27).
 - **Glaciar da Garganta**: «se apoiava no telhado da estação como uma mão gigante apoiada numa mesa». Desce da crista (cap. 25).
 
 ### O vale

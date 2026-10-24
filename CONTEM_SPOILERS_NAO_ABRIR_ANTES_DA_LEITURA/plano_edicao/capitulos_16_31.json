@@ -85,9 +85,9 @@
     "visual_com_selos": "On the red ledger page, her engraved coronal gold seals bearing the bronze-key mark of the Crown of Thresholds flares and then goes dark; across the station 84 doors' small engraved gold seals switch off one by one like lamps — except a single gold seal, far away in black rock, that stays lit."
    },
    {
-    "disciplina": "Brasa (passagem clandestina)",
+    "disciplina": "Igneo (passagem clandestina)",
     "o_que_acontece": "A extremidade clandestina está aberta e drena calor das Cisternas, seis graus por dia.",
-    "visual_com_selos": "A door-sized gold seal under the rock with a thick Brasa red (#C8332F) flow line bleeding steadily out of it toward an unseen far side."
+    "visual_com_selos": "A door-sized gold seal under the rock with a thick Igneo red (#C8332F) flow line bleeding steadily out of it toward an unseen far side."
    },
    {
     "disciplina": "Selos falsos (pele falsa)",
@@ -229,7 +229,7 @@
    },
    {
     "disciplina": "Manopla de células (Ilan)",
-    "o_que_acontece": "Nara examina a célula provisória que absorveu o tranco do deus do trovão.",
+    "o_que_acontece": "Nara examina a célula provisória que absorveu o contragolpe do deus do trovão.",
     "visual_com_selos": "No active seal: the cracked porcelain cell shows a fine web of hairline fractures against the window light; the gauntlet's own engraved seals are dark and cold."
    }
   ],
@@ -378,19 +378,19 @@
   ],
   "magia_em_uso": [
    {
-    "disciplina": "Carga / Pulso (biologia dracônica)",
-    "o_que_acontece": "Ulvra voa sustentada por Pulso acoplado à pressão do ar, carrega a crista em ondas de pouco mais de um segundo e descarrega na quarta.",
+    "disciplina": "Fuso / Impetus (biologia dracônica)",
+    "o_que_acontece": "Ulvra voa sustentada por Impetus acoplado à pressão do ar, carrega a crista em ondas de pouco mais de um segundo e descarrega na quarta.",
     "visual_com_selos": "Natural charge, no seals: her translucent ice-blade spines light from nape to tail in waves, blue-white then white; hundreds of branching tentacles of ionized air fan out toward the bronze lens frame."
    },
    {
-    "disciplina": "Carga — Pivô de Cobre",
+    "disciplina": "Fuso — Pivô de Cobre",
     "o_que_acontece": "O raio hesita na junção ruim da base da torre e encontra a saída limpa do pivô cravado no gelo e cabeado ao tronco leste.",
-    "visual_com_selos": "The copper stake carries an engraved Carga electric gold (#D7B46A) seal with a clear ground-stroke; at the strike it blazes like a sun, the discharge diving through it into the earth; afterwards a puddle of molten copper and white ceramic shards in a glassy crater."
+    "visual_com_selos": "The copper stake carries an engraved Fuso electric gold (#D7B46A) seal with a clear ground-stroke; at the strike it blazes like a sun, the discharge diving through it into the earth; afterwards a puddle of molten copper and white ceramic shards in a glassy crater."
    },
    {
     "disciplina": "Fio de Interdição + Marca de Cobrança (Ilan)",
     "o_que_acontece": "Ilan escreve a própria marca na pata molhada do leão de bronze e estende dela um fio cortado; o tentáculo que descia para a multidão hesita e se desfaz.",
-    "visual_com_selos": "A fingernail-sized conjured seal in Carga electric gold (#D7B46A) flickers on the raised bronze paw, Ilan's own crooked handwriting; above it a hair-thin line of light that ends in a deliberate gap — the erased ground-stroke; the descending tentacle frays against it."
+    "visual_com_selos": "A fingernail-sized conjured seal in Fuso electric gold (#D7B46A) flickers on the raised bronze paw, Ilan's own crooked handwriting; above it a hair-thin line of light that ends in a deliberate gap — the erased ground-stroke; the descending tentacle frays against it."
    },
    {
     "disciplina": "Coroa (Limiares) — Ponte de Custódia",
@@ -458,7 +458,7 @@
    {
     "nome": "Saguão da Estação das Portas — portas 12, 31 e 40",
     "cidade_ou_regiao": "Vhalessa — margem norte",
-    "descricao_fisica": "Saguão de colunas de ferro, lâmpadas de Clarão, piso de ardósia; a 31 fica a 30 m da 12, virada para o sul; a 40 fica de lado; banco do porteiro com braseiro.",
+    "descricao_fisica": "Saguão de colunas de ferro, lâmpadas de Lume, piso de ardósia; a 31 fica a 30 m da 12, virada para o sul; a 40 fica de lado; banco do porteiro com braseiro.",
     "relacao_espacial": "Portas da mesma estação, à mesma altura, a trinta metros uma da outra.",
     "citacao_curta": "de pé entre a porta doze e a porta trinta e um, no saguão vazio e escuro"
    },
@@ -536,9 +536,9 @@
     "visual_com_selos": "Both arches' engraved coronal gold seals bearing the bronze-key mark of the Crown of Thresholds light in the same heartbeat, joined by a single taut gold thread across thirty metres of dark hall."
    },
    {
-    "disciplina": "Pulso — Passo Vetorial dentro da porta",
+    "disciplina": "Impetus — Passo Vetorial dentro da porta",
     "o_que_acontece": "Ilan empurra contra o piso do arco de saída no instante em que Aurelia diz 'agora' pelo anel, e sai em ângulo reto.",
-    "visual_com_selos": "A fingernail-sized conjured Pulso blue (#4F8BD6) seal blooms under his boot sole on the exit floor and fades in a second; his body bends east as if turning a corner inside the door."
+    "visual_com_selos": "A fingernail-sized conjured Impetus blue (#4F8BD6) seal blooms under his boot sole on the exit floor and fades in a second; his body bends east as if turning a corner inside the door."
    },
    {
     "disciplina": "Coroa (Limiares) — Contrapasso",
@@ -673,7 +673,7 @@
    "cachecol verde de Pelle Dorn",
    "prancheta, folha e lápis",
    "cópia do dossiê da Arrimo (18 folhas)",
-   "brasa de parede de altar (disco de bronze frio)",
+   "igneo de parede de altar (disco de bronze frio)",
    "embrulho de linho branco amarrado com cordão",
    "carta lacrada com cera laranja e sinete de sol: 'Ao último Carrasco, se ele vier.'",
    "giz de aferição e lente de vidro presa ao colete (flashback)",
@@ -744,7 +744,7 @@
    {
     "nome": "Casa da Fornalha — porta dos fundos e corredor do primeiro anel",
     "cidade_ou_regiao": "Vhalessa — Alta Mesa",
-    "descricao_fisica": "Porta que range depois da metade; corredor gelado com cheiro de cera fria e pedra; paredes de brasas (discos de bronze apagados) que refletem a lanterna como olhos de peixe.",
+    "descricao_fisica": "Porta que range depois da metade; corredor gelado com cheiro de cera fria e pedra; paredes de igneos (discos de bronze apagados) que refletem a lanterna como olhos de peixe.",
     "relacao_espacial": "Porta dos fundos dos sacerdotes, num beco da Alta Mesa.",
     "citacao_curta": "O corredor do primeiro anel estava escuro e gelado e cheirava a cera fria e a pedra."
    },
@@ -803,7 +803,7 @@
   "objetos_e_armas": [
    "lanternas de Sevran e Mara",
    "chave da porta dos fundos dos sacerdotes",
-   "oferendas na Fornalha (velas, pães duros, carvão, luvas de criança, bonecos de palha, moedas, fitas laranja, uma brasa de parede pequena)",
+   "oferendas na Fornalha (velas, pães duros, carvão, luvas de criança, bonecos de palha, moedas, fitas laranja, um igneo de parede pequeno)",
    "cilindro de latão do comprimento de um antebraço, tampas de rosca, sinetes laranja e preto",
    "42 folhas de papel de trapo enroladas numa vareta, fita preta, letra minúscula",
    "lupa de aro de bronze de Mara",
@@ -813,9 +813,9 @@
   ],
   "magia_em_uso": [
    {
-    "disciplina": "Pulso — Passo Vetorial (força de alavanca)",
+    "disciplina": "Impetus — Passo Vetorial (força de alavanca)",
     "o_que_acontece": "Ilan acopla a sola da bota ao chão e ergue a laje com a manopla, só o necessário.",
-    "visual_com_selos": "A small Pulso blue (#4F8BD6) conjured seal under his left boot, a second faint one under the gauntlet's palm on the stone; the slab tilts up a hand's breadth."
+    "visual_com_selos": "A small Impetus blue (#4F8BD6) conjured seal under his left boot, a second faint one under the gauntlet's palm on the stone; the slab tilts up a hand's breadth."
    },
    {
     "disciplina": "Ausência de selos (esconderijo divino)",
@@ -972,7 +972,7 @@
     "visual_com_selos": "The engraved threshold seals in the white arch stones are dark, almost invisible; when she looks, they answer with a uniform, too-smooth faint gold — a perfect sleep with no breathing."
    },
    {
-    "disciplina": "Pulso (dragão)",
+    "disciplina": "Impetus (dragão)",
     "o_que_acontece": "Ulvra passa alto com as asas imóveis e solta a bolsa sobre a praça.",
     "visual_com_selos": "Natural, no seals: a grey shape against a red dusk band, crest faintly blue."
    }
@@ -1186,7 +1186,7 @@
  {
   "cap": 24,
   "pov": "Mara Quen (terceira pessoa próxima)",
-  "resumo": "Mara acorda Ilan na serralheria; ele avisa Aurelia pelo anel e o entrega a Mara, porque a equipe das Cisternas precisará mais dele. Às 4h10 a equipe desce pela galeria 3 até a abóbada externa norte, uma caverna de sal-gema incandescente onde a válvula (agora aberta ao dobro por Oriel) mostra a noite do Passo Cinzento; Mara desconfia da própria placa, descobre que os 23 discos brancos são iscas e que as selos verdadeiras estão enterradas no sal, e a Comissária salva um guarda com a Segunda Muralha. Ithren aparece com o rosto velado por Clarão, provoca, explica que 'a Ordem estava errada' e foge por uma galeria de mineração até o leito do Lento — mas a placa de registro luminoso de Mara fixa o seu rosto verdadeiro; Sevran, ouvindo as pedras, guia Nara até o arco, que neutraliza as 17 selos com selos de sacrifício, e às 5h32 a pele cai — e Oriel, ajoelhado junto ao batente, encosta nele o fiel.",
+  "resumo": "Mara acorda Ilan na serralheria; ele avisa Aurelia pelo anel e o entrega a Mara, porque a equipe das Cisternas precisará mais dele. Às 4h10 a equipe desce pela galeria 3 até a abóbada externa norte, uma caverna de sal-gema incandescente onde a válvula (agora aberta ao dobro por Oriel) mostra a noite do Passo Cinzento; Mara desconfia da própria placa, descobre que os 23 discos brancos são iscas e que as selos verdadeiras estão enterradas no sal, e a Comissária salva um guarda com a Segunda Muralha. Ithren aparece com o rosto velado por Lume, provoca, explica que 'a Ordem estava errada' e foge por uma galeria de mineração até o leito do Lento — mas a placa de registro luminoso de Mara fixa o seu rosto verdadeiro; Sevran, ouvindo as pedras, guia Nara até o arco, que neutraliza as 17 selos com selos de sacrifício, e às 5h32 a pele cai — e Oriel, ajoelhado junto ao batente, encosta nele o fiel.",
   "locais": [
    {
     "nome": "Serralheria de Gunnar — quarto dos fundos e pátio",
@@ -1198,7 +1198,7 @@
    {
     "nome": "Galeria técnica n.º 3 (rampa)",
     "cidade_ou_regiao": "Vhalessa — subsolo da Alta Mesa",
-    "descricao_fisica": "Túnel de pedra cortada da largura de duas pessoas, teto em arco, tijolo refratário, lâmpadas de Clarão a cada 30 m; calor de padaria que aumenta a cada vinte passos.",
+    "descricao_fisica": "Túnel de pedra cortada da largura de duas pessoas, teto em arco, tijolo refratário, lâmpadas de Lume a cada 30 m; calor de padaria que aumenta a cada vinte passos.",
     "relacao_espacial": "Desce uns 200 m em rampa da porta da Casa da Fornalha por dentro da rocha da Alta Mesa; a galeria dois (escada do terceiro anel) liga-se a ela mais adiante.",
     "citacao_curta": "a galeria três descia em rampa por uns duzentos metros, por dentro da rocha da Alta Mesa"
    },
@@ -1240,7 +1240,7 @@
   ],
   "faccoes_casas_guildas": [
    "Câmara dos Pactos — uniformes cinzentos, lanternas, espadas, duas bestas; a Segunda Muralha da Comissária",
-   "Colégio dos Auditores de Pacto — placas de vidro de aferição; placa de registro luminoso (vidro de Clarão com sais de prata do Arquipélago, três por ano por auditor); o Decanato e a 'instrução reservada' recusada",
+   "Colégio dos Auditores de Pacto — placas de vidro de aferição; placa de registro luminoso (vidro de Lume com sais de prata do Arquipélago, três por ano por auditor); o Decanato e a 'instrução reservada' recusada",
    "Cooperativa dos Reparadores — onze capuzes e mantos de lã costurados na véspera",
    "Credores — Ithren e sua pele de discos falsos e selos enterradas",
    "Casa da Fornalha — Oriel de capa laranja ajoelhado junto ao arco"
@@ -1259,29 +1259,29 @@
   ],
   "magia_em_uso": [
    {
-    "disciplina": "Selos falsos / Brasa (pele de Ithren)",
+    "disciplina": "Selos falsos / Igneo (pele de Ithren)",
     "o_que_acontece": "Os 23 discos devolvem à placa exatamente a tensão esperada; as 19 selos reais estão dois palmos dentro do sal; perto de ferro, soltam cones de ar a 200 graus.",
-    "visual_com_selos": "On each white disc a pale, perfectly even engraved seal that glows like a living one but has no tail and no ground-stroke — Selos Vazios; two palms beneath the salt, dark engraved Brasa red (#C8332F) seals that wake when a boot approaches and vent a red-orange cone of superheated air."
+    "visual_com_selos": "On each white disc a pale, perfectly even engraved seal that glows like a living one but has no tail and no ground-stroke — Selos Vazios; two palms beneath the salt, dark engraved Igneo red (#C8332F) seals that wake when a boot approaches and vent a red-orange cone of superheated air."
    },
    {
-    "disciplina": "Trama + Pulso — Segunda Muralha (Comissária Vale)",
+    "disciplina": "Nexo + Impetus — Segunda Muralha (Comissária Vale)",
     "o_que_acontece": "Três muralhas em camadas, montadas ao longo do caminho com selos pequenas no chão e nas paredes, recebem o jorro e o espalham para o sal; a primeira se rompe, a segunda segura.",
-    "visual_com_selos": "Three ranks of small engraved seals flare up between her open hands and the heat — rows of Trama old gold (#C9A15A) interlaced with Pulso blue (#4F8BD6) — each rank a translucent wall that ripples the hot air aside like water against a rock; the first rank shatters into falling sparks."
+    "visual_com_selos": "Three ranks of small engraved seals flare up between her open hands and the heat — rows of Nexo old gold (#C9A15A) interlaced with Impetus blue (#4F8BD6) — each rank a translucent wall that ripples the hot air aside like water against a rock; the first rank shatters into falling sparks."
    },
    {
-    "disciplina": "Clarão — véu de Ithren",
+    "disciplina": "Lume — véu de Ithren",
     "o_que_acontece": "Uma camada de luz desviada em volta da cabeça faz o olhar escorregar: a cada olhada, outro rosto.",
     "visual_com_selos": "A crown of hair-thin Clarao ivory-white (#F2E6C2) seal-lines orbiting his head, bending light so his face keeps changing (old man, girl with a braid, Sevran, a fat grey-bearded man)."
    },
    {
-    "disciplina": "Clarão — placa de registro luminoso (Mara)",
+    "disciplina": "Lume — placa de registro luminoso (Mara)",
     "o_que_acontece": "No meio segundo do clarão de outra selo, o vidro fixa a luz que cai nele e revela o rosto verdadeiro.",
     "visual_com_selos": "The silver-grey plate catches the white-orange flash; on it, like a photograph, the man crouching at the tunnel mouth with a clear, unveiled face."
    },
    {
     "disciplina": "Selos de sacrifício (Nara)",
     "o_que_acontece": "Em 17 pontos indicados por Sevran, Nara aperta discos cinza-escuros que oferecem a cada caminho uma saída melhor que o arco; a pele cai às 5h32.",
-    "visual_com_selos": "Nara presses a fingernail-sized grey ceramic disc into the salt; its engraved seal lights Brasa red (#C8332F) and the faint tail-line of a buried seal bends toward it, abandoning the arch; one by one the false skin's lines go slack."
+    "visual_com_selos": "Nara presses a fingernail-sized grey ceramic disc into the salt; its engraved seal lights Igneo red (#C8332F) and the faint tail-line of a buried seal bends toward it, abandoning the arch; one by one the false skin's lines go slack."
    },
    {
     "disciplina": "Coroa (Limiares) — anel",
@@ -1300,7 +1300,7 @@
    {
     "tipo": "respiro",
     "momento": "~19%",
-    "trecho_ancora": "iluminado de trinta em trinta metros por lâmpadas de Clarão que ainda guardavam um resto da luz de algum verão.",
+    "trecho_ancora": "iluminado de trinta em trinta metros por lâmpadas de Lume que ainda guardavam um resto da luz de algum verão.",
     "descricao_visual": "Quiet descending tunnel: a long arched gallery of refractory brick sloping down into the rock, faint ivory lamps every thirty metres holding the last light of some summer, heat shimmer, small figures in soaked wool hoods receding into the depth. Cinematic dark fantasy painting, painterly realism, cold winter palette with warm practical light, canon-accurate costumes, NO text, NO lettering, NO watermarks.",
     "spoiler": false
    },
@@ -1429,19 +1429,19 @@
     "visual_com_selos": "Engraved threshold seals in the arch stones wake one by one after forty years, coronal gold sluggish and uneven like stiff joints; the opening fills with a distant darkness."
    },
    {
-    "disciplina": "Brasa — Jurisdição de distribuição",
+    "disciplina": "Igneo — Jurisdição de distribuição",
     "o_que_acontece": "O anel de ferro recebe os elos da sétima porta e os divide entre a rocha (reserva), o poço para a caixa e a parede de gelo.",
-    "visual_com_selos": "Dozens of thick Brasa red (#C8332F) seal-lines hang from the cavern ceiling like roots of an upside-down tree into an 8 m iron ring studded with engraved seals glowing dirty orange; seven larger, darker seals among them; more red seals driven into the blue ice wall, steaming cavities around each."
+    "visual_com_selos": "Dozens of thick Igneo red (#C8332F) seal-lines hang from the cavern ceiling like roots of an upside-down tree into an 8 m iron ring studded with engraved seals glowing dirty orange; seven larger, darker seals among them; more red seals driven into the blue ice wall, steaming cavities around each."
    },
    {
     "disciplina": "Marca de Cobrança (Ilan)",
-    "o_que_acontece": "Ilan escreve a própria marca numa selo de Brasa submersa e desvia um fio de calor: a água nas botas do homem da besta vai de 60 a 90 graus.",
+    "o_que_acontece": "Ilan escreve a própria marca num selo de Igneo submerso e desvia um fio de calor: a água nas botas do homem da besta vai de 60 a 90 graus.",
     "visual_com_selos": "From twelve metres away a small mark in Ilan's crooked hand appears over an underwater red seal — the seal 'changes handwriting' — and a thread of red light flicks into the water around the man's boots."
    },
    {
-    "disciplina": "Pulso — Passo Vetorial e devolução de impulso",
+    "disciplina": "Impetus — Passo Vetorial e devolução de impulso",
     "o_que_acontece": "Dois deslocamentos rasantes sobre boa rocha; depois Ilan puxa o acoplamento ainda carregado do pé do homem da faca e devolve o impulso.",
-    "visual_com_selos": "Fingernail Pulso blue (#4F8BD6) seals blink under Ilan's boot on the wet rock; under the knife-man's left heel a still-lit blue seal is overwritten by Ilan's mark and snaps the man sideways into the wall."
+    "visual_com_selos": "Fingernail Impetus blue (#4F8BD6) seals blink under Ilan's boot on the wet rock; under the knife-man's left heel a still-lit blue seal is overwritten by Ilan's mark and snaps the man sideways into the wall."
    },
    {
     "disciplina": "Fechamento de Contas (preparação)",
@@ -1500,7 +1500,7 @@
    },
    {
     "tipo": "contrato",
-    "conteudo": "Contrato de escolta (E. Tahl): escoltar a carga até o fim do vale e entregar a quem estiver esperando lá. Ao amanhecer. Carga: quente, frágil, não pode esfriar. Não se fazem perguntas.",
+    "conteudo": "Contrato de escolta (E. Tahl): escoltar a carga até o fim do vale e entregar a quem estiver esperando lá. Ao amanhecer. Fuso: quente, frágil, não pode esfriar. Não se fazem perguntas.",
     "onde_entra": "Escoltar a carga até o fim do vale e entregar a quem estiver esperando lá."
    }
   ],
@@ -1565,7 +1565,7 @@
    {
     "disciplina": "Coroa (Limiares) — Costura + Vetor Passante",
     "o_que_acontece": "A terceira porta solta a extremidade distante e se liga à nona; no 'agora' de Aurelia, Ilan empurra contra o piso do arco de saída e sai para o leste.",
-    "visual_com_selos": "A taut gold thread between the third and ninth arches; a tiny Pulso blue (#4F8BD6) seal flowering under Ilan's boot inside the exit arch; Aurelia's compensation as a gold glow along the threshold so the arch does not misalign."
+    "visual_com_selos": "A taut gold thread between the third and ninth arches; a tiny Impetus blue (#4F8BD6) seal flowering under Ilan's boot inside the exit arch; Aurelia's compensation as a gold glow along the threshold so the arch does not misalign."
    },
    {
     "disciplina": "Coroa (Limiares) segurando a Linha Seca",
@@ -1580,7 +1580,7 @@
    {
     "disciplina": "Coroa (Limiares) — fechamento da sétima / Retorno para a Rede Cívica",
     "o_que_acontece": "Com duas mãos no batente (a dela e a manopla de Ilan), Aurelia fecha a sétima; o Retorno volta pelo cano da galeria 3 para o Cobre.",
-    "visual_com_selos": "The great arch's gold seals contract inward like an iris closing; far away a Brasa red (#C8332F) line runs along a felt-wrapped copper pipe into a whole district's walls."
+    "visual_com_selos": "The great arch's gold seals contract inward like an iris closing; far away o Igneo red (#C8332F) line runs along a felt-wrapped copper pipe into a whole district's walls."
    }
   ],
   "ilustracoes": [
@@ -1633,7 +1633,7 @@
  {
   "cap": 27,
   "pov": "Nara (abertura), panorama do Cobre, depois Ilan",
-  "resumo": "Na galeria 3, o cano esquenta de uma vez: Nara distribui o Retorno entre os ramais da Rede Cívica e manda o excedente, pela alavanca vermelha de Gorm, para os quatro troncos mortos da torre; o Cobre e três abrigos da margem norte têm três horas de noite de verão, e a maior parte do calor fica nas Cisternas. No Passo Cinzento, Ilan quebra um globo de Clarão de quarenta anos como sinal, a Velha das Cristas vem e leva Ilan, Aurelia e Pell até a barragem da Garganta, onde Thor segura a muralha de gelo tirando calor dela há um dia. Ilan salta da encosta, é apanhado pela dragoa e solto dentro do trenó; Eron, sem contrato, ajuda a abrir a caixa, e Aurelia faz das próprias mãos as duas extremidades de uma passagem que despeja a água do lago sobre o Mandato do Sol de Inverno, cuja luz cor de mel se apaga.",
+  "resumo": "Na galeria 3, o cano esquenta de uma vez: Nara distribui o Retorno entre os ramais da Rede Cívica e manda o excedente, pela alavanca vermelha de Gorm, para os quatro troncos mortos da torre; o Cobre e três abrigos da margem norte têm três horas de noite de verão, e a maior parte do calor fica nas Cisternas. No Passo Cinzento, Ilan quebra um globo de Lume de quarenta anos como sinal, a Velha das Cristas vem e leva Ilan, Aurelia e Pell até a barragem da Garganta, onde Thor segura a muralha de gelo tirando calor dela há um dia. Ilan salta da encosta, é apanhado pela dragoa e solto dentro do trenó; Eron, sem contrato, ajuda a abrir a caixa, e Aurelia faz das próprias mãos as duas extremidades de uma passagem que despeja a água do lago sobre o Mandato do Sol de Inverno, cuja luz cor de mel se apaga.",
   "locais": [
    {
     "nome": "Galeria técnica n.º 3 — junção da abóbada norte",
@@ -1652,7 +1652,7 @@
    {
     "nome": "Pátio da estação do Passo Cinzento",
     "cidade_ou_regiao": "Passo Cinzento",
-    "descricao_fisica": "Lago raso fumegante; globo antigo de vidro de Clarão preso por argola de ferro ao lado da porta da fachada.",
+    "descricao_fisica": "Lago raso fumegante; globo antigo de vidro de Lume preso por argola de ferro ao lado da porta da fachada.",
     "relacao_espacial": "A estação é o único ponto de Aurelia num raio de 100 km; a barragem fica 20–30 km vale abaixo.",
     "citacao_curta": "A estação é o único ponto meu num raio de cem quilômetros."
    },
@@ -1695,7 +1695,7 @@
   "objetos_e_armas": [
    "alavanca vermelha e painelzinho de reguladores",
    "cano da Rede Cívica",
-   "globo de vidro de Clarão de quarenta anos",
+   "globo de vidro de Lume de quarenta anos",
    "espinhos da crista da dragoa (onde se agarram)",
    "trenó encalhado, correias cortadas pela faca de Eron, fechos de bronze da tampa",
    "caixa com cerâmica de lastro cinza-escura",
@@ -1704,19 +1704,19 @@
   ],
   "magia_em_uso": [
    {
-    "disciplina": "Brasa — Retorno na Rede Cívica",
+    "disciplina": "Igneo — Retorno na Rede Cívica",
     "o_que_acontece": "O que o corredor devolve corre pelo cano para dois ramais; o excedente sobe pelos troncos da torre e se perde na pedra.",
-    "visual_com_selos": "Bright Brasa red (#C8332F) flow-lines racing along felt-wrapped copper into the Copper district's walls; a second surge climbing the four dead bronze trunks of the Tower of Noon and fading into stone."
+    "visual_com_selos": "Bright Igneo red (#C8332F) flow-lines racing along felt-wrapped copper into the Copper district's walls; a second surge climbing the four dead bronze trunks of the Tower of Noon and fading into stone."
    },
    {
-    "disciplina": "Clarão — globo de quarenta anos",
+    "disciplina": "Lume — globo de quarenta anos",
     "o_que_acontece": "Ilan esmaga o globo cheio de luz acumulada: um clarão branco absoluto que bate nas paredes do vale como sinal.",
     "visual_com_selos": "A burst of Clarao ivory-white (#F2E6C2) light filling the courtyard and the valley walls for an instant, its old engraved Clarao seal cracking open like an eggshell."
    },
    {
-    "disciplina": "Brasa invertida — Thor segurando a barragem",
+    "disciplina": "Igneo invertido — Thor segurando a barragem",
     "o_que_acontece": "Thor tira calor da água, do ar e do próprio corpo e congela a base da barragem; o ar em volta dele treme de quente.",
-    "visual_com_selos": "From his raised hands into the ice base runs a fan of red Brasa seal-lines framed in coronal gold bearing his own mark, drawing heat OUT: frost knitting the cracks shut behind him while the air around his body ripples with heat and the snow is melted in a twenty-metre ring."
+    "visual_com_selos": "From his raised hands into the ice base runs a fan of red Igneo seal-lines framed in coronal gold bearing his own mark, drawing heat OUT: frost knitting the cracks shut behind him while the air around his body ripples with heat and the snow is melted in a twenty-metre ring."
    },
    {
     "disciplina": "Coroa (Limiares) — passagem de carne e osso",
@@ -1880,9 +1880,9 @@
     "visual_com_selos": "The last red seal-lines on the iron ring and in the ice wall going dark one by one under an engineer's hands."
    },
    {
-    "disciplina": "Brasa — Rede Cívica em expansão",
+    "disciplina": "Igneo — Rede Cívica em expansão",
     "o_que_acontece": "A Rede tira das Cisternas o que precisa para aquecer a cidade, com menos eficiência e mais custo.",
-    "visual_com_selos": "New copper pipes along streets carrying modest Brasa red (#C8332F) seal-lines, small and many, mortal-made, without any coronal gold."
+    "visual_com_selos": "New copper pipes along streets carrying modest Igneo red (#C8332F) seal-lines, small and many, mortal-made, without any coronal gold."
    }
   ],
   "ilustracoes": [
@@ -2073,7 +2073,7 @@
    {
     "nome": "Saguão da estação e arco de Soleira",
     "cidade_ou_regiao": "Vhalessa — Estação das Portas",
-    "descricao_fisica": "Colunas de ferro, lâmpadas de Clarão, 84 portas; arco de Soleira de bronze esverdeado (ano 708); a 61 reaberta no fundo da galeria norte com dois guardas da Câmara; pela porta principal, a margem norte, a Feira sendo desmontada, a praça e a torre.",
+    "descricao_fisica": "Colunas de ferro, lâmpadas de Lume, 84 portas; arco de Soleira de bronze esverdeado (ano 708); a 61 reaberta no fundo da galeria norte com dois guardas da Câmara; pela porta principal, a margem norte, a Feira sendo desmontada, a praça e a torre.",
     "relacao_espacial": "Na margem norte; do outro lado do arco, a galeria norte do Átrio de Soleira.",
     "citacao_curta": "A sessenta e um reaberta no fundo da galeria norte, guardada agora por dois guardas da Câmara"
    },

@@ -22,7 +22,7 @@ PARTES = [("I", "A Noite Mais Longa", 1, 5, "Nada se cria. Tudo muda de lugar.",
           ("II", "Custódia dos Mortos", 6, 10, "Sem ligação, nada passa.", "Segunda Lei · Vínculo", f"{DR}/producao_v2/P01_01.png", "center 30%"),
           ("III", "Livros-razão", 11, 17, "Tudo tem um tamanho.", "Sexta Lei · Capacidade", f"{DR}/producao_v2/S09_01.png", "center"),
           ("IV", "A Velha das Cristas", 18, 23, "Toda passagem tem um limite.", "Quarta Lei · Vazão", f"{DR}/producao_v2/D01_v2.png", "center"),
-          ("V", "Fechamento de Contas", 24, 28, "Todo tranco volta para algum lugar.", "Sétima Lei · Retorno", f"{DR}/cenarios/S05_Passo_Cinzento.png", "center"),
+          ("V", "Fechamento de Contas", 24, 28, "Todo contragolpe volta para algum lugar.", "Sétima Lei · Retorno", f"{DR}/cenarios/S05_Passo_Cinzento.png", "center"),
           ("VI", "O Que Fica", 29, 31, "Nada fica para sempre.", "Quinta Lei · Dissipação", f"{DR}/producao_v2/CV01.png", "center")]
 
 # por capítulo: abertura (retrato), bandas (no meio do texto, paisagem), finais (depois do capítulo)
@@ -220,13 +220,13 @@ def grade(titulo, itens, cols=2, alt=56):
 
 GLOSSARIO = [("Selo", "o ponto onde o vínculo se prende ao mundo. Conjurado (luz, segundos) ou gravado (forte, anos)."),
              ("Vínculo", "a ligação por onde algo passa: calor, movimento, luz, som, carga ou tensão."),
-             ("Traço de terra", "a parte do selo que diz para onde vai o tranco. Sem ele, o tranco volta para quem fez."),
+             ("Traço de terra", "a parte do selo que diz para onde vai o contragolpe. Sem ele, o contragolpe volta para quem fez."),
              ("Coroa", "a rede com que um deus segura o que governa: selos, mandato, sustento e identidade."),
-             ("Brasa de parede", "placa de bronze com o selo da Casa da Fornalha; aquece as casas de Vhalessa de novembro a março."),
+             ("Igneo de parede", "placa de bronze com o selo da Casa da Fornalha; aquece as casas de Vhalessa de novembro a março."),
              ("Carrasco", "quem aprendeu a desmontar Coroas. A Ordem que os formava caiu há doze anos."),
              ("Dobra", "a moeda que paga contratos, sopas e células de cerâmica."),
              ("Manopla", "luva de couro e aço com células de cerâmica que guardam carga por pouco tempo."),
-             ("Pulso, Brasa, Trama, Clarão, Eco, Carga", "as seis disciplinas: movimento, calor, estrutura, luz, vibração e eletricidade."),
+             ("Impetus, Igneo, Nexo, Lume, Eco, Fuso", "as seis disciplinas: movimento, calor, estrutura, luz, vibração e eletricidade."),
              ("Jurisdição", "rede de selos gravados preparada num território. Ajuda muito; não acerta sozinha."),
              ("Átrio de Soleira", "o grande salão das portas de Aurelia, no outro extremo do continente."),
              ("Feira do Gelo", "a cidade de lonas que nasce todo inverno sobre o rio Lento, diante da Praça do Meio-Dia.")]
@@ -295,7 +295,7 @@ def livro(paginas_caps):
     pecas.append(legenda_vhalessa(ims))
     pecas.append(divisor("Antes de começar", "O que todo mundo em Aresta aprende criança, e quase todo mundo esquece."))
     pecas += [placa(f"{R4}/RF-002_sete_leis_4x.jpg", "As Sete Leis", "Valem para mortais, deuses e dragões. Nenhum selo, nenhuma coroa e nenhuma prece muda uma vírgula delas.", "O que todo mago aprende primeiro"),
-              placa(f"{R4}/RF-003_seis_disciplinas_4x.jpg", "Os Seis Sinais", "Pulso · Brasa · Trama · Clarão · Eco · Carga. Fogo, gelo, raio e vento são misturas destes seis.", "O que a magia move"),
+              placa(f"{R4}/RF-003_seis_disciplinas_4x.jpg", "Os Seis Sinais", "Impetus · Igneo · Nexo · Lume · Eco · Fuso. Fogo, gelo, raio e vento são misturas destes seis.", "O que a magia move"),
               gramatica_selo(),
               placa(f"{BA}/02_simbolos/SI-003_etapas_da_transposicao.png", "Toda magia, em seis passos", "Fonte · Selo · Vínculo · Destino · Controle · Retorno. A magia não cria nada: muda de lugar o que já existe.", "A Transposição"),
               elenco()]

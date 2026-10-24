@@ -244,7 +244,7 @@ TILES = [
      "“Âncoras de cerâmica branca cravadas a intervalos regulares, todas brilhando num laranja sujo.” Sete, maiores e escuras, seguram as outras.",
      []),
     ("Coronal: a infraestrutura", "caps. 3 e 6", t_coronal,
-     "“Brasas de parede, Campos de Espelho nas encostas, poços geotérmicos.” Não se pinta em separado: é a arquitetura.",
+     "“Igneos de parede, Campos de Espelho nas encostas, poços geotérmicos.” Não se pinta em separado: é a arquitetura.",
      [tag(600, 190, "SOL DE BRONZE"), tag(520, 410, "CAMPO DE ESPELHOS")]),
     ("De limiar: anéis de bronze", "cap. 17", t_limiar,
      "Dois anéis de bronze, as pontas de um limiar mínimo. Passam voz, papel dobrado e ar. A borda interna acende num filete de ouro.",
@@ -268,7 +268,7 @@ def prancha_9():
     L = lambda a, c: f'<div style="margin:0 0 9px"><span class="sc" style="font-size:9.6px;letter-spacing:1.4px">{a}</span> <span style="color:#D7CBB2">{c}</span></div>'
     lista = ("".join([L("Temperatura", "esquenta ou esfria (caps. 3 e 24)."), L("Som", "zumbe numa nota (cap. 24)."),
                       L("Lente e placas", "o elo vira franjas coloridas (caps. 1, 6 e 24)."),
-                      L("Carga", "a cerâmica brilha do vermelho sujo ao laranja (cap. 25)."),
+                      L("Fuso", "a cerâmica brilha do vermelho sujo ao laranja (cap. 25)."),
                       L("Marca de cobrança", "quase invisível e efêmera, com a assinatura de Ilan (caps. 4, 18 e 25)."),
                       L("Lacre", "as âncoras oficiais têm selo (cap. 13).")]))
     b.append(panel(968, 756, PW, PH, "Como se denuncia", extra=

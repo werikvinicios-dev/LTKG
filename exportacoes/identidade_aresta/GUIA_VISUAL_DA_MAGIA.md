@@ -40,16 +40,16 @@ Energia que surge do nada contradiz a primeira lei, então não entra.
 
 A **cor de leitura** é o código da saga, o mesmo dos símbolos, das pranchas e do motion. Ela aparece nas franjas da
 lente, nos diagramas e nos elos visíveis. O fenômeno físico mantém a própria cor: um raio é branco-azulado mesmo
-quando a cor de leitura da Carga é ouro pálido.
+quando a cor de leitura do Fuso é ouro pálido.
 
 | Disciplina | Cor de leitura | A olho nu | Padrão gráfico | Âncoras típicas | Evitar |
 |---|---|---|---|---|---|
-| **Pulso** (movimento) | azul-aço `#4F8BD6` | poeira e neve em estrias retas, anéis de choque no ar, contragolpe na âncora | estrias radiais e anéis interrompidos | paredes, chão, chapas de ferro, meias-luas nos punhos | bola de energia azul |
-| **Brasa** (calor) | vermelho-brasa `#C8332F` | ar tremulando, vapor, metal em brasa, gelo que recua ou se forma | escala de incandescência (vermelho sujo, laranja, âmbar, branco) e, do outro lado, geada | pregos e cabos de cobre, colmeias cerâmicas, reservatórios | fogo saindo da mão sem combustível |
-| **Trama** (estrutura) | ouro velho `#C9A15A` | pedra e metal que rangem, fissuras que correm, veios de reforço | faixas de tensão concêntricas, como fotoelasticidade, em volta do ponto de esforço | a própria estrutura | aura dourada em volta de objetos |
-| **Clarão** (luz) | marfim-luz `#F2E6C2` | feixes desviados por lente, espelho ou gelo; cáusticas; bordas finas de arco-íris; sombra onde a luz foi tirada | redes de cáusticas e bordas espectrais | lentes, espelhos, vidro, gelo, lâmpadas de Clarão | luz sem fonte |
+| **Impetus** (movimento) | azul-aço `#4F8BD6` | poeira e neve em estrias retas, anéis de choque no ar, contragolpe na âncora | estrias radiais e anéis interrompidos | paredes, chão, chapas de ferro, meias-luas nos punhos | bola de energia azul |
+| **Igneo** (calor) | vermelho-brasa `#C8332F` | ar tremulando, vapor, metal em brasa, gelo que recua ou se forma | escala de incandescência (vermelho sujo, laranja, âmbar, branco) e, do outro lado, geada | pregos e cabos de cobre, colmeias cerâmicas, reservatórios | fogo saindo da mão sem combustível |
+| **Nexo** (estrutura) | ouro velho `#C9A15A` | pedra e metal que rangem, fissuras que correm, veios de reforço | faixas de tensão concêntricas, como fotoelasticidade, em volta do ponto de esforço | a própria estrutura | aura dourada em volta de objetos |
+| **Lume** (luz) | marfim-luz `#F2E6C2` | feixes desviados por lente, espelho ou gelo; cáusticas; bordas finas de arco-íris; sombra onde a luz foi tirada | redes de cáusticas e bordas espectrais | lentes, espelhos, vidro, gelo, lâmpadas de Lume | luz sem fonte |
 | **Eco** (vibração) | azul-prata `#9FB7D6` | figuras na poeira, na neve e na areia; água em padrão; vidro que canta | figuras nodais (Chladni) e anéis de interferência | sinos, pedras sintônicas, placas, cordas | ondas sonoras de desenho animado |
-| **Carga** (eletricidade) | ouro pálido `#D7B46A` | arco branco-azulado com origem e terra, ozônio, cabelo arrepiado, ramos queimados na superfície | ramificação de Lichtenberg | cobre, bronze aterrado, células | raio dourado, raio sem caminho |
+| **Fuso** (eletricidade) | ouro pálido `#D7B46A` | arco branco-azulado com origem e terra, ozônio, cabelo arrepiado, ramos queimados na superfície | ramificação de Lichtenberg | cobre, bronze aterrado, células | raio dourado, raio sem caminho |
 
 As fusões, como a Lança de Tempestade ou o Véu de Geada, somam os sinais das disciplinas que usam. Não ganham cor
 nova.
@@ -110,7 +110,7 @@ A cidade é industrial-arcana: latão, cobre, cerâmica e fuligem.
 - pregos de cobre pintados da cor da parede;
 - cabos de cobre descendo como raízes;
 - colmeias de células cerâmicas que vão do vermelho sujo ao laranja;
-- lâmpadas de Clarão e o Sol de bronze da torre;
+- lâmpadas de Lume e o Sol de bronze da torre;
 - espelhos nas encostas e o sal das Cisternas em brilho avermelhado.
 
 ## 9. Sempre e nunca
@@ -192,13 +192,13 @@ um símbolo nem uma luz. Em geral parece comum. O que a revela é o que passa po
 
 | Tipo | Como aparece | Cap. |
 |---|---|---|
-| Improvisada | prego de cobre de cabeça chata, pintado da cor da parede, cravado a dois dedos de cada brasa; grade de ferro tocada com a mão | 1, 4 |
+| Improvisada | prego de cobre de cabeça chata, pintado da cor da parede, cravado a dois dedos de cada igneo; grade de ferro tocada com a mão | 1, 4 |
 | No corpo | dois pontos em cada sola e um prego da parede; calcanhar e punho, onde a âncora "nasce" e some | 1, 12, 26 |
 | Inercial | chapas de ferro (lastro) nas botas | 15 |
 | Portátil | Pivô de Cobre: estaca do comprimento de um antebraço, grossa como dois dedos, base larga de cerâmica, argola no alto para o cabo | 18 |
 | Trilha de contato | pontos de apoio cravados no piso a intervalos regulares; discos de bronze na superfície; cerâmica enterrada no sal | 8, 24 |
 | Carregada | anel de ferro de oito metros com âncoras de cerâmica branca "brilhando num laranja sujo"; sete maiores e escuras seguram as outras | 25 |
-| Coronal | a infraestrutura do deus: brasas de parede, Campos de Espelho, poços geotérmicos, sóis de bronze, até a pata de um leão de bronze | 3, 6, 18 |
+| Coronal | a infraestrutura do deus: igneos de parede, Campos de Espelho, poços geotérmicos, sóis de bronze, até a pata de um leão de bronze | 3, 6, 18 |
 | De limiar | anéis de bronze, arcos de pedra, piso de ardósia e colunas de ferro | 3, 17, 26 |
 | Marca de cobrança | quase invisível e efêmera, feita com giz de aferição ou dois dedos da manopla | 4, 18, 25 |
 

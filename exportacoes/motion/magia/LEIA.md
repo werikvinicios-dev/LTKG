@@ -10,8 +10,8 @@ físicas, elo como fio tenso com franjas na cor da disciplina, custo à vista (c
 
 | Arquivo | Técnica | Capítulo |
 |---|---|---|
-| `MG-01_afericao.mp4` | Aferição: leitura com a lente (Brasa) | 1 |
-| `MG-02_reversao_do_sifao.mp4` | Reversão do sifão: Saldo Final (Brasa) | 1 |
+| `MG-01_afericao.mp4` | Aferição: leitura com a lente (Igneo) | 1 |
+| `MG-02_reversao_do_sifao.mp4` | Reversão do sifão: Saldo Final (Igneo) | 1 |
 
 As outras seis animações mostram técnicas de capítulos posteriores. Elas ficam na pasta de spoilers, junto com o
 rolo completo.
