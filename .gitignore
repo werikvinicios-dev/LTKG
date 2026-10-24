@@ -10,3 +10,6 @@ build/edicao/_img/
 build/edicao/_armorial/
 build/edicao/_epub/
 build/edicao/_html_*
+build/trailer/_modelos/
+build/trailer/_cache/
+build/trailer/_frames/
