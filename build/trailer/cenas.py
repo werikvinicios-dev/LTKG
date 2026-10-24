@@ -102,38 +102,7 @@ def aco(t):
     return np.clip(base, 0, 1)
 
 
-def cena01(t):
-    img = aco(t) * seg(t, .2, 2.5)
-    yf = B.H * .47
-    rev = eo(seg(t, .55, 2.9))
-    vib = 0.0
-    if t > 3.05:
-        vib = 18 * B.H / 1080 * math.exp(-(t - 3.05) * .55) * (1 if t < 5.62 else 0)
-    img = fio(img, t, B.W * .08, B.W * .92, yf, rev, vib, 38.0, brilho=.6 + .6 * seg(t, .6, 2.0) + (.7 if 3.0 < t < 3.15 else 0), esp=2.2)
-    # gota em câmera lenta até o aço (contato em 5.62)
-    if 4.35 < t < 5.62:
-        k = ei(seg(t, 4.35, 5.62))
-        gx, gy = B.W * .5, lerp(-20, B.H * .74, k)
-        r = 7 * B.W / 1920
-        cam = np.zeros((B.H, B.W), np.float32)
-        cv2.ellipse(cam, (int(gx), int(gy)), (int(r), int(r * 1.35)), 0, 0, 360, 1.0, -1, cv2.LINE_AA)
-        cam = cv2.GaussianBlur(cam, (0, 0), 1.2)
-        img = B.misturar(img, np.array((.75, .82, .9), np.float32), cam * .85)
-        img = B.soma(img, cv2.GaussianBlur(cam, (0, 0), 10)[..., None] * np.array((.6, .7, .85), np.float32), .25)
-    if t >= 5.62:
-        k = seg(t, 5.62, 6.9)
-        cam = np.zeros((B.H, B.W), np.float32)
-        for i, atraso in enumerate((0, .12, .26)):
-            kk = seg(t, 5.62 + atraso, 6.9)
-            if kk > 0:
-                cv2.ellipse(cam, (int(B.W * .5), int(B.H * .74)), (int(30 + 520 * kk), int(6 + 70 * kk)), 0, 0, 360, (1 - kk) * (1 - i * .25), 2, cv2.LINE_AA)
-        img = B.soma(img, cv2.GaussianBlur(cam, (0, 0), 1.5)[..., None] * np.array((.7, .8, .95), np.float32), .7)
-        # condensação discreta no aço
-        n = B.campo(B.H, B.W, 0, 5, (0, 0), 1)
-        m = np.clip((n - .2), 0, 1) * np.clip((np.linspace(0, 1, B.H)[:, None] - .62) * 4, 0, 1) * seg(t, 5.7, 6.6)
-        img = B.misturar(img, np.array((.5, .56, .62), np.float32), m * .18)
-    img = img * (1 - seg(t, 6.55, 7.0))
-    return B.vinheta(img, .55)
+from primeiro_som import cena01          # o plano macro do fio e da gota está em primeiro_som.py
 
 
 # ------------------------------------------------------------------ CENA 02 — o mundo de Aresta (7–16)
