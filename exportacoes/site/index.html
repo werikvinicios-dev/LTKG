@@ -1,0 +1,92 @@
+<title>Leis para Matar Deuses</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="Leis para Matar Deuses, de Werik Martins: o Volume I completo, ilustrado, com o Registro das Leis, o Atlas de Aresta e a Galeria.">
+<meta name="theme-color" content="#07080b">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap">
+<link rel="preload" href="fontes/aresta-titular.woff2" as="font" type="font/woff2" crossorigin>
+<link rel="stylesheet" href="css/estilo.css">
+
+<a class="pular" href="#conteudo">Pular para o conteúdo</a>
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-portico" viewBox="0 0 24 24"><path d="M4 21V10l8-6 8 6v11"/><path d="M9 21v-6h6v6"/><path d="M12 4V2"/></symbol>
+  <symbol id="i-livro" viewBox="0 0 24 24"><path d="M4 5.5c3-1.4 5.6-1.4 8 .4 2.4-1.8 5-1.8 8-.4v13c-3-1.4-5.6-1.4-8 .4-2.4-1.8-5-1.8-8-.4z"/><path d="M12 5.9v13"/></symbol>
+  <symbol id="i-registro" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="2.4"/><path d="M12 2v5M12 17v5"/></symbol>
+  <symbol id="i-mapa" viewBox="0 0 24 24"><path d="M3.5 6.5l5.5-2 6 2 5.5-2v13l-5.5 2-6-2-5.5 2z"/><path d="M9 4.5v13M15 6.5v13"/></symbol>
+  <symbol id="i-galeria" viewBox="0 0 24 24"><rect x="3.5" y="5" width="17" height="14"/><path d="M3.5 16l5-5 4 4 3-3 5 5"/><circle cx="15.5" cy="9" r="1.4"/></symbol>
+  <symbol id="i-busca" viewBox="0 0 24 24"><circle cx="10.5" cy="10.5" r="6"/><path d="M15 15l5.5 5.5"/></symbol>
+  <symbol id="i-som" viewBox="0 0 24 24"><path d="M4 9.5h3.5L12 6v12l-4.5-3.5H4z"/><path d="M15.5 9a4 4 0 010 6M18 6.5a7.5 7.5 0 010 11"/></symbol>
+  <symbol id="i-ajustes" viewBox="0 0 24 24"><path d="M4 7h10M18 7h2M4 17h4M12 17h8"/><circle cx="16" cy="7" r="2"/><circle cx="10" cy="17" r="2"/></symbol>
+  <symbol id="i-fechar" viewBox="0 0 24 24"><path d="M6 6l12 12M18 6L6 18"/></symbol>
+  <symbol id="i-sumario" viewBox="0 0 24 24"><path d="M9 6.5h11M9 12h11M9 17.5h11M4.5 6.5h.5M4.5 12h.5M4.5 17.5h.5"/></symbol>
+  <symbol id="i-marcador" viewBox="0 0 24 24"><path d="M7 3.5h10v17l-5-3.6-5 3.6z"/></symbol>
+  <symbol id="i-texto" viewBox="0 0 24 24"><path d="M3.5 18.5l4.6-12h.8l4.6 12M5.3 14h6.4"/><path d="M14.5 18.5l2.9-7.6h.6l2.9 7.6M15.6 15.8h4.2"/></symbol>
+  <symbol id="i-play" viewBox="0 0 24 24"><path d="M6 4l14 8-14 8z"/></symbol>
+</svg>
+
+<header class="barra" id="barra" data-oculta="false">
+  <a class="marca" href="#portico"><b>Leis para Matar Deuses</b><span>Volume I</span></a>
+  <nav class="nav" aria-label="Salas do livro">
+    <a href="#biblioteca" data-sala="biblioteca">Biblioteca</a>
+    <a href="#registro" data-sala="registro">Registro</a>
+    <a href="#atlas" data-sala="atlas">Atlas</a>
+    <a href="#galeria" data-sala="galeria">Galeria</a>
+  </nav>
+  <div class="acoes">
+    <button class="ib" id="b-busca" type="button" aria-label="Buscar no livro"><svg><use href="#i-busca"/></svg></button>
+    <button class="ib" id="b-som" type="button" aria-label="Som" aria-pressed="false"><svg><use href="#i-som"/></svg></button>
+  </div>
+</header>
+
+<canvas id="neve" aria-hidden="true"></canvas>
+<main id="conteudo" tabindex="-1">
+  <section class="ato abertura" aria-label="Leis para Matar Deuses">
+    <div class="fundo"></div>
+    <div class="palco-logo">
+      <p class="olho">Werik Martins apresenta</p>
+      <h1 class="titulo" style="font-size:clamp(2.2rem,7vw,4rem)">Leis para Matar Deuses</h1>
+      <p class="credito">Volume I · Saga Aresta</p>
+    </div>
+  </section>
+</main>
+
+<nav class="dock" aria-label="Salas do livro">
+  <a href="#portico" data-sala="portico"><svg aria-hidden="true"><use href="#i-portico"/></svg>Pórtico</a>
+  <a href="#biblioteca" data-sala="biblioteca"><svg aria-hidden="true"><use href="#i-livro"/></svg>Livro</a>
+  <a href="#registro" data-sala="registro"><svg aria-hidden="true"><use href="#i-registro"/></svg>Registro</a>
+  <a href="#atlas" data-sala="atlas"><svg aria-hidden="true"><use href="#i-mapa"/></svg>Atlas</a>
+  <a href="#galeria" data-sala="galeria"><svg aria-hidden="true"><use href="#i-galeria"/></svg>Galeria</a>
+</nav>
+
+<aside class="painel som-p" id="p-som" aria-label="Som" aria-hidden="true">
+  <button class="ib fechar" type="button" data-fechar aria-label="Fechar"><svg><use href="#i-fechar"/></svg></button>
+  <h2>Som</h2>
+  <div class="grupo"><span>Ambiente</span>
+    <div class="faixa-som"><p>Vento de Vhalessa. Uma gravação real, em laço.</p><button class="botao" type="button" id="s-vento">Ligar</button></div>
+    <div class="faixa-som"><p>Tema de leitura: violoncelo, harpa e flauta da trilha do trailer.</p><button class="botao" type="button" id="s-tema">Ligar</button></div>
+  </div>
+  <div class="grupo"><span>Volume</span><input id="s-volume" type="range" min="0" max="1" step="0.05" value="0.5" aria-label="Volume"></div>
+</aside>
+<aside class="painel" id="p-ajustes" aria-label="Ajustes de leitura" aria-hidden="true">
+  <button class="ib fechar" type="button" data-fechar aria-label="Fechar"><svg><use href="#i-fechar"/></svg></button>
+  <h2>Leitura</h2>
+  <div class="grupo"><span>Página</span><div class="opcoes" id="a-tema">
+    <button type="button" data-v="noite">Noite</button><button type="button" data-v="pergaminho">Pergaminho</button><button type="button" data-v="marfim">Marfim</button></div></div>
+  <div class="grupo"><span>Tamanho da letra</span><input id="a-fonte" type="range" min="0.95" max="1.6" step="0.05" aria-label="Tamanho da letra"></div>
+  <div class="grupo"><span>Entrelinha</span><input id="a-entre" type="range" min="1.4" max="2" step="0.05" aria-label="Entrelinha"></div>
+  <div class="grupo"><span>Largura da coluna</span><input id="a-largura" type="range" min="28" max="44" step="1" aria-label="Largura da coluna"></div>
+  <div class="grupo"><span>Seus dados</span><p style="margin:0 0 .6rem;color:var(--marfim-baixo);font-size:.9rem">O progresso, os marcadores e os ajustes ficam só neste navegador.</p>
+    <div id="apagar-c"><button class="botao" type="button" id="b-apagar">Apagar progresso</button></div></div>
+</aside>
+<aside class="painel" id="p-sumario" aria-label="Sumário e marcadores" aria-hidden="true">
+  <button class="ib fechar" type="button" data-fechar aria-label="Fechar"><svg><use href="#i-fechar"/></svg></button>
+  <h2>Sumário</h2>
+  <div id="sumario"></div>
+  <h2 style="margin-top:2rem">Marcadores</h2>
+  <div id="marcadores"></div>
+</aside>
+<div class="veu" id="veu"><img src="pecas/selo_ordem.webp" alt=""></div>
+<div class="aviso" id="aviso" role="status" aria-live="polite"></div>
+
+<script type="module" src="js/app.js"></script>
